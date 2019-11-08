@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+	<title>{{ T "uoc_head_title"}}</title>&#x9;
+	<meta charset="UTF-8">&#x9;
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">&#x9;
+	<meta name="robots" content="all">&#x9;
+	<meta name="author" content='{{ T "uoc_meta_autor"}}'>&#x9;
+	<meta name="keywords" content='{{ T "uoc_meta_keywords"}}'>&#x9;
+	<meta name="description" content='{{ T "uoc_meta_description"}}'>
+	<link rel="stylesheet" href="http://cv.uoc.edu/UOC/GEFv2/gef/css/gef.css">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+
+<body>
+	<header id="main-header-4" class="brand-header brand-ri header-4 uoc-ri" style="margin-bottom:0">
+		<div class="header-container clearfix">
+			<div class="col-xs-12 col-clear nav-menu-top">
+				<div class="col-xs-2 col-sm-1 top-logo top-logo-desktop">
+					<h1 tabindex="-1" data-element-id="hmap-0" class="top-h1 visually-hidden">{{ T "uoc_head_description"}}</h1><a href="#"
+						class="hidden-xs hidden-sm hidden-md"><img src="/img/logo-uoc-ri-white.png"
+							alt="Logo UOC"></a><a href="#" class="hidden-lg hidden-xl"><img
+							src="/img/logo-uoc-white.png" alt="Logo UOC"></a>
+				</div>
+				<div class="col-xs-10 col-md-8 col-lg-8"><span
+						class="ruler ruler--dynamic ruler--white w100-inline-block"></span>
+					<p class="nav-menu-title title-more-size"> {{ T "uoc_ri"}}</p><span
+						class="ruler ruler--dynamic ruler--white w100-inline-block"></span>
+				</div>
+				<div class="col-md-2 hidden-xs hidden-md"><span
+						class="ruler ruler--dynamic ruler--white w100-inline-block"></span>
+					<p class="nav-menu-title-aside"> {{ T "uoc_title"}}</p><span
+						class="ruler ruler--dynamic ruler--white w100-inline-block"></span>
+				</div>
+				<div class="col-md-1 hidden-xs hidden-md"><span
+						class="ruler ruler--dynamic ruler--white w100-inline-block">
+						<div data-dropdown="" class="dropdown language-drop-down">
+							<button data-dropdown-trigger="" aria-label="Cambio de idioma" aria-expanded="false"
+								aria-controls="dropdown__content4"
+								class="btn btn--primary dropdown__trigger">{{ T "uoc_lang_button" }}<span
+									class="icon icon--arrow-down icon--small bold m-left-x2"></span></button>
+							<div id="dropdown__content3" role="menu" class="dropdown__content dropdown__list">
+								<button aria-label="Cerrar idioma" aria-controls="dropdown__content3"
+									data-dropdown-trigger="" class="btn btn--primary close"><span aria-hidden="true"
+									class="icon icon--close"></span></button>
+								{{ if .IsTranslated }}
+									<ul data-animated="false">
+										{{ range .AllTranslations }}
+											{{ if eq $.Site.Language.LanguageName .Language.LanguageName }}
+												<li role="menuitem" class="dropdown__item is-active">
+													<a href="#" class="dropdown__link">{{ .Language.LanguageName }}</a>
+												</li>
+											{{ else }}
+												<li role="menuitem" class="dropdown__item">
+													<a href="{{ .Permalink }}" lang="{{ .Language }}"
+														class="dropdown__link">{{ .Language.LanguageName }}</a>
+												</li>
+											{{ end }}
+										{{ end}}
+									</ul>
+								{{ end }}
+							</div>
+						</div>
+					</span><span class="ruler ruler--dynamic ruler--white w100-inline-block"></span><span
+						class="col-xs-1 hidden-lg hidden-xl">
+						<!-- botón de menú en tablet-->
+						<button title="Menu" aria-label="Menu" accesskey="m" aria-expanded="false"
+							aria-controls="main-nav-menu" data-scroll-toggle="" data-scroll-container="#main-header"
+							data-toggle="#main-nav-menu, .mobile-menu"
+							data-toggle-hide-class="hidden-xs hidden-sm hidden-md"
+							data-toggle-class-target-value="active" data-toggle-class-target="#main-header" tabindex="0"
+							class="mobile-button mobile-button-tablet p-bottom-y noscript"><span aria-hidden="true"
+								class="icon icon--zhamburguer"></span></button>
+						<noscript><a href="#main-nav-menu" aria-label="Menu" accesskey="m" aria-expanded="false"
+								aria-controls="search-form-container-mobile" data-toggle="#main-nav-menu, .mobile-menu"
+								data-toggle-hide-class="hidden-xs hidden-sm hidden-md"
+								data-toggle-class-target-value="active" data-toggle-class-target="#main-header"
+								tabindex="0" class="mobile-button mobile-button-tablet p-bottom-y"><span
+									aria-hidden="true" class="icon icon--zhamburguer"></span></a></noscript></span>
+				</div>
+			</div>
+			<div class="col-xs-12 col-clear nav-menu-top">
+				<!-- Desktop Header-->
+				<div class="hidden-xs hidden-sm">
+					<div class="col-xs-2 col-sm-1 top-logo hidden-lg hidden-xl hidden-sm hidden-md"><a href=""
+							class="top-logo"><img src="/img/logo-uoc-ri-mobile.png" alt="Logo UOC"></a></div>
+				</div>
+				<!-- Mobile Header-->
+				<div class="hidden-lg hidden-xl">
+					<!-- header-mobile.inc-->
+					<!-- Menu closed-->
+					<div class="mobile-menu">
+						<div class="menu-mobile-container">
+							<div class="mobile-buttons">
+								<div class="col-xs-4 p-left-x2">
+									<button aria-label="Menu" title="Menu" accesskey="m" aria-expanded="false"
+										aria-controls="main-nav-menu" data-scroll-toggle=""
+										data-scroll-container="#main-header" data-toggle="#main-nav-menu, .mobile-menu"
+										data-toggle-hide-class="hidden-xs hidden-sm hidden-md"
+										data-toggle-class-target-value="active" data-toggle-class-target="#main-header"
+										tabindex="0"
+										class="mobile-button non-active-color hover--dynamic-hover noscript menu-bar"><span
+											aria-hidden="true" class="icon icon--zhamburguer"></span></button>
+									<noscript><a href="#main-nav-menu" aria-label="Menu" title="Menu" accesskey="m"
+											aria-expanded="false" aria-controls="search-form-container-mobile"
+											data-toggle="#main-nav-menu, .mobile-menu"
+											data-toggle-hide-class="hidden-xs hidden-sm hidden-md" tabindex="0"
+											class="mobile-button non-active-color hover--dynamic-hover"><span
+												aria-hidden="true" class="icon icon--zhamburguer"></span></a></noscript>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Menu open-->
+					<div class="hidden-xs hidden-sm hidden-md mobile-menu">
+						<button data-scroll-unlock="" data-scroll-container="#main-header"
+							data-toggle="#main-nav-menu, .mobile-menu"
+							data-toggle-hide-class="hidden-xs hidden-sm hidden-md"
+							data-toggle-class-target-value="active"
+							data-toggle-class-target="#main-header, .mobile-menu" aria-label="Tancar menú"
+							class="pull-right clickable btn-close"><span aria-hidden="true"
+								class="icon icon--close"></span></button>
+					</div>
+				</div>
+			</div>
+			<span id="campus-page-overlay" data-toggle-class-target="#campus-page-overlay"
+				data-toggle="#login-dropdown header" data-toggle-group=".dropdown-button-header"
+				class="page-overlay clickable hide"></span>
+		</div>
+	</header>
+	<div class="site-wrapper">
+		<section class="info-general">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-title title-border-green">
+						<h2>{{ .Params.nom }}</h2>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-9">
+					<section
+						style="background-image: linear-gradient(to right, rgba(56, 255, 144, 1), rgba(56, 255, 144, 0.20)), {{ if and (isset .Params "imatge") (ne .Params.imatge nil) }} url('{{ .Params.imatge.url }}'); {{ end }} "
+						class="bg-secondary">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4 col-lg-6">
+									<h2>
+										{{ range .Params.descripcioList }}{{ .descripcio }}{{ end }}
+									</h2>
+								</div>
+								<div class="col-md-6"></div>
+								<div data-dropdown="" class="dropdown">
+									<button data-dropdown-trigger="" aria-label="Texto descriptivo"
+										aria-expanded="false" aria-controls="dropdown__content1"
+										class="btn btn--primary dropdown__trigger">{{ T "uoc_social"}}<span aria-hidden="true"
+											class="icon icon--share"></span></button>
+									<ul id="dropdown__content1" role="menu" class="dropdown__content dropdown__list">
+										<li class="social">
+											<ul>
+												<li><a href="{{ range .Params.xarxesList }}{{ .twitter }}{{ end }}"
+														title="Texto descriptivo" class="icon icon--social-twitter"></a>
+												</li>
+												<li><a href="{{ range .Params.xarxesList }}{{ .linkedin }}{{ end }}"
+														title="Texto descriptivo"
+														class="icon icon--social-linkedin"></a></li>
+												<li><a href="{{ range .Params.xarxesList }}{{ .email }}{{ end }}"
+														title="Texto descriptivo" class="icon icon--mail"></a></li>
+											</ul>
+										</li>
+										{{ range .Params.xarxesList }}
+										{{ range .altres }}
+										<li role="menuitem" class="dropdown__item"><a href="{{ .erl }}"
+												title="{{ .text }}" aria-label="Texto descriptivo"
+												class="dropdown__link">{{ .text }}</a></li>
+										{{ end }}
+										{{ end }}
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<div class="ficha-detail">
+						<div class="box">
+							<div class="boxGrey">
+								<p><strong>{{ T "uoc_grup_investigator"}}:</strong>{{ .Params.investigadorPrincipalId.nom }}
+									{{ .Params.investigadorPrincipalId.cognom }}
+									{{ .Params.investigadorPrincipalId.cognom2 }}</p>
+								<p><strong>{{ T "uoc_grup_ambit"}}:</strong> {{ range ( index .Params.ambits 0 ).textAmbit }}{{ .descripcio }}{{ end }}</p>
+								<p><strong>{{ T "uoc_grup_center"}}:</strong>
+									{{ range .Params.centreList }}{{ range .textCentre }}{{ .descripcio }}
+									{{ end }}{{ end }}</p>
+								<p><strong>{{ T "uoc_grup_code_unesco"}}:</strong>{{ range $index, $codiUnesco := .Params.codisUnesco }}{{ if (gt $index 0) }}, {{ end }}{{ $codiUnesco.codi }} {{ end }}</p>
+								<p class="mb5"><strong>{{ T "uoc_grup_ods"}}:</strong></p>
+								{{ range .Params.odsList }}
+								<div class="wrap-img"><img src="{{ .imatge.url }}" alt="url"></div>
+								{{ end}}
+							</div>
+							<div class="boxGrey">
+								{{ if and (isset .Params.investigadorPrincipalId "imatge") (ne .Params.investigadorPrincipalId.imatge nil) }}
+								<div class="wrap-logo"><img src="{{ .Params.investigadorPrincipalId.imatge.text }}"
+										alt="{{ range .Params.investigadorPrincipalId.imatge.textImatge }}{{ .alt }}{{ end }}">
+								</div>
+								{{ end }}
+								<div class="js-collapse-group">
+									<div class="collapse">
+										<div class="head-collapse js-collapse notTop">
+											<p><a href="#collapse1" aria-expanded="false"
+													class="js-collapseClick">{{ T "uoc_grup_expert"}}...<span
+														class="icon icon--arrow-down"></span></a></p>
+										</div>
+										<div id="collapse1" class="contentCollapse">
+											<div class="absolute">{{range .Params.expertsList }}<span
+													class="tag">{{ range .textExperts}}{{ .descripcio }}{{ end }}</span>{{ end }}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section data-tab-system="" class="ficha-detail mT60">
+			<div class="row">
+				<div class="col-xs-12 col-md-3">
+					<ul role="tablalist" data-sticky="data-sticky" class="list-group borderTopGrey toStick">
+						<li role="presentation"><a id="tab-10" href="#tab-content-10" role="tab"
+								aria-controls="tab-content-10" aria-selected="true" data-tab-trigger=""
+								class="tab is-active js-width-final"><span>{{ T "uoc_grup_menu_about"}}</span></a></li>
+						<li role="presentation"><a id="tab-11" href="#tab-content-11" role="tab"
+								aria-controls="tab-content-11" aria-selected="false" data-tab-trigger=""
+								class="tab"><span>{{ T "uoc_grup_menu_members"}}</span></a>
+						</li>
+						<li role="presentation"><a id="tab-12" href="#tab-content-12" role="tab"
+								aria-controls="tab-content-12" aria-selected="false" data-tab-trigger=""
+								class="tab"><span>{{ T "uoc_grup_menu_research"}}</span></a>
+						</li>
+						<li role="presentation"><a id="tab-13" href="#tab-content-13" role="tab"
+								aria-controls="tab-content-13" aria-selected="false" data-tab-trigger=""
+								class="tab"><span>{{ T "uoc_grup_menu_publications"}}</span></a></li>
+						<li role="presentation"><a id="tab-15" href="#tab-content-15" role="tab"
+								aria-controls="tab-content-15" aria-selected="false" data-tab-trigger=""
+								class="tab"><span>{{ T "uoc_grup_menu_contact"}}</span></a>
+						</li>
+					</ul>
+					<div class="content-for-sticky"></div>
+				</div>
+				<div class="col-xs-12 col-md-9">
+					<div id="tab-content-10" data-tab-content="" role="tabpanel" aria-labelledby="tab-10"
+						aria-hidden="false" class="tab-content is-active">
+						<div class="js-collapse-group">
+							<div class="collapse">
+								<div class="head-collapse js-collapse">
+									<p><a href="#collapse2" aria-expanded="false"
+											class="js-collapseClick">{{ T "uoc_grup_menu_about"}}<span
+												class="icon icon--arrow-down"></span></a></p>
+								</div>
+								<div id="collapse2" class="contentCollapse show">
+									<div class="wrap-richText">
+										{{ range .Params.sobreElGrup }}{{ .descripcio | safeHTML }}{{ end }}
+									</div>
+								</div>
+							</div>
+							<div class="collapse">
+								<div class="head-collapse js-collapse">
+									<p><a href="#collapse3" aria-expanded="false"
+											class="js-collapseClick">{{ T "uoc_grup_research_lines"}}<span
+												class="icon icon--arrow-down"></span></a></p>
+								</div>
+								<div id="collapse3" class="contentCollapse">
+									<div class="wrap-richText">
+										{{ range .Params.recercaTransferencia.liniesDeRecerca }}
+										{{ range .liniaRecerca}}
+											<p><strong>{{ .text | safeHTML }}</strong></p>
+										{{ end }}
+
+										{{ range .codisOds}}
+										<img src="{{ .imatge.url }}" alt="{{ range .textImatge }} {{ .alt }} {{ end }}">
+										{{ end }}
+										{{ end }}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab-content-11" data-tab-content="" role="tabpanel" aria-labelledby="tab-11"
+						aria-hidden="true" class="tab-content">
+						<div class="collapse">
+							<div class="head-collapse js-collapse">
+								<p><a href="#collapse1" aria-expanded="false"
+										class="js-collapseClick">{{ T "uoc_grup_menu_members"}}<span
+											class="icon icon--arrow-down"></span></a></p>
+							</div>
+							<div id="collapse1" class="contentCollapse">
+								<div class="card-in-acordeon">
+									<div class="row list-members">
+										{{ range .Params.membresId }}
+										<div class="col-xs-12 col-md-4 card-members item-visible">
+											<div role="region" class="card card-people">
+												<div class="card__contents img-wpr">
+													{{ if and (isset . "imatge") (ne .imatge nil) }}
+													<img src="{{ .imatge.url }}" alt="{{ range .textImatge }} {{ .alt }} {{ end }}"	class="img-wpr__cover">
+													{{ end }}
+													<div class="img-wpr__contents">
+														<p class="title">{{ .nom }} {{ .cognom }} {{ .cognom2 }}</p>
+													</div><span class="author">{{ T "uoc_grup_members_main"}}</span>
+												</div>
+											</div>
+										</div>
+										{{ end }}
+										<div class="row">
+											<div class="col-xs-12">
+												<ul role="navigation" class="pagination-members"></ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab-content-12" data-tab-content="" role="tabpanel" aria-labelledby="tab-12"
+						aria-hidden="true" class="tab-content">
+						<div class="collapse">
+							<div class="head-collapse js-collapse">
+								<p><a href="#collapse2" aria-expanded="false"
+										class="js-collapseClick">{{ T "uoc_grup_research_projects"}} <span
+											class="icon icon--arrow-down"></span></a></p>
+							</div>
+							<div id="collapse2" class="contentCollapse">
+								<div class="row list-projects">
+									{{range where .Params.recercaTransferencia.llistaProjectes ".visible" true}}
+									<div class="col-md-4 card-projects item-visible">
+										<div class="card card-normal card--with-footer bg-ri-light"><a
+												href="javascript:;" title="Internet Interdisciplinary Institute (IN3)"
+												aria-hidden="true" target="_blank"
+												onclick="_gaq.push(['_trackEvent','Recerca Home', 'org-recerca_in3']);"
+												aria-labelledby="card-title-1" class="card-absolute-link"> </a>
+											<div class="card__contents type-light">
+												{{ range .projecte.projecteText}}
+												<h3 id="card-title-1" class="h3 card-title"><a tabindex="-1"
+														href="javascript:;" target="_blank">{{ .nom }}</a></h3>
+												<div class="card-body">
+													<p>{{ .descripcio }}</p>
+												</div>
+												<div class="card__footer">
+													<div role="complementary" aria-label="tags" class="float-left"><span
+															aria-hidden="true"
+															class="icon icon--small icon--external-link icon--responsive-mobile"></span><span
+															class="icon-alt">{{ .tipus }}</span></div>
+												</div>
+												{{ end }}
+											</div>
+										</div>
+									</div>
+									{{ end }}
+									<div class="row">
+										<div class="col-xs-12">
+											<ul role="navigation" class="pagination-projects"></ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="collapse">
+							<div class="head-collapse js-collapse">
+								<p><a href="#collapse6" aria-expanded="false"
+										class="js-collapseClick">{{ T "uoc_grup_research_transfer"}} <span
+											class="icon icon--arrow-down"></span></a></p>
+							</div>
+							<div id="collapse6" class="contentCollapse show">
+								<div class="wrap-richText">
+									{{ range .Params.recercaTransferencia.transferencia }} {{ .text | safeHTML }}
+									{{ end }}
+								</div>
+							</div>
+						</div>
+						<div class="collapse">
+							<div class="head-collapse js-collapse">
+								<p><a href="#collapse9" aria-expanded="false"
+										class="js-collapseClick">{{ T "uoc_grup_research_other"}}
+										<span class="icon icon--arrow-down"></span></a></p>
+							</div>
+							<div id="collapse6" class="contentCollapse show">
+								<div class="wrap-richText">
+									{{ range .Params.recercaTransferencia.altresActivitats }} {{ .text | safeHTML }}
+									{{ end }}
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab-content-13" data-tab-content="" role="tabpanel" aria-labelledby="tab-13"
+						aria-hidden="true" class="tab-content">
+						<div class="collapse">
+							<div class="head-collapse js-collapse">
+								<p><a href="#collapse10" aria-expanded="false"
+										class="js-collapseClick">{{ T "uoc_grup_menu_publications"}}<span
+											class="icon icon--arrow-down"></span></a></p>
+							</div>
+							<div id="collapse10" class="contentCollapse show">
+								<div class="card-in-acordeon">
+									<div class="row list-publications">
+										{{ range where .Params.publicacionsList ".visible" true}}
+										<div class="col-xs-12 col-md-4 card-publications item-visible">
+											<div class="card card-noimg">
+												<div class="card__contents">
+													<p class="title">Game<span>{{ .publicacio.any }} |
+															{{ range .publicacio.publicacioText }}
+															{{ .tipus }} {{ end }}</span><span>
+															{{ range .publicacio.autors}} {{ . }} {{ end }}</span>
+													</p>
+													<p>{{ range .publicacio.publicacioText }} {{ .descripcio }}
+														{{ end }}</p><span class="icon icon--word"> </span>
+												</div>
+											</div>
+										</div>
+										{{end}}
+										<div class="row">
+											<div class="col-xs-12">
+												<ul role="navigation" class="pagination-publications"></ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab-content-15" data-tab-content="" role="tabpanel" aria-labelledby="tab-15"
+						aria-hidden="false" class="tab-content">
+						<div class="collapse">
+							<div class="head-collapse js-collapse">
+								<p><a href="#collapse12" aria-expanded="true"
+										class="js-collapseClick">{{ T "uoc_grup_menu_contact"}}<span
+											class="icon icon--arrow-down"></span></a></p>
+							</div>
+							<div id="collapse12" class="contentCollapse show">
+								<div class="contact-list-icon">
+									<div class="row">
+										<div class="col-xs-12 col-md-9">
+											<div class="wrap-img">
+												<p><img src="/img/detalle-noticia.jpg" alt=""></p>
+											</div>
+											<div class="wrap-content">
+												{{ range .Params.contacteList }} {{ .descripcio }} {{ end }}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="blue">
+			<div class="page-footer-container footer-brand">
+				<div class="col-xs-12 col-clear">
+					<div class="footer-bg footer-bg-left"></div>
+					<div class="brand-box footer-bg footer-bg-right"></div>
+					<div class="col-xs-12 col-clear page-footer-top flexbox-layout">
+						<div class="col-xs-12 col-md-2 default-bg">
+							<div class="ruler ruler--secondary">
+								<div class="footer-top-title hidden-xs hidden-sm">
+									<h2 class="h6">{{ T "uoc_grup_footer_ri"}}</h2>
+								</div>
+								<div aria-expanded="false" data-toggle="#footer-1"
+									data-toggle-hide-class="hidden-xs hidden-sm" data-custom-focus-enabled="true"
+									class="footer-top-title hidden-md hidden-lg hidden-xl">
+									<h2 class="h6">
+										<button class="custom-focus btnlink">{{ T "uoc_grup_footer_ri"}}</button>
+										<span aria-hidden="true" class="icon icon--arrow-down pull-right"></span>
+										<span aria-hidden="true" class="icon icon--arrow-up pull-right"></span>
+									</h2>
+								</div>
+								<div id="footer-1" class="hidden-xs hidden-sm">
+									<ul class="footer-list">
+										<li><a onclick="" target="_self" title="Graus" href="">{{ T "uoc_grup_footer_ri_org"}}</a></li>
+										<li><a onclick="" target="_self" title="Graus" href="">{{ T "uoc_grup_footer_ri_transfer"}}</a></li>
+										<li><a onclick="" target="_self" title="Graus" href="">{{ T "uoc_grup_footer_ri_collab"}}</a></li>
+										<li><a onclick="" target="_self" title="Graus" href="">{{ T "uoc_grup_footer_ri_researchers"}}</a></li>
+										<li><a onclick="" target="_self" title="Graus" href="">{{ T "uoc_grup_footer_ri_visitants"}}</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-2 default-bg">
+							<div class="ruler ruler--secondary">
+								<div class="footer-top-title hidden-xs hidden-sm">
+									<h2 class="h6">{{ T "uoc_grup_footer_explore"}}</h2>
+								</div>
+								<div aria-expanded="false" data-toggle="#footer-5"
+									data-toggle-hide-class="hidden-xs hidden-sm" data-custom-focus-enabled="true"
+									class="footer-top-title hidden-md hidden-lg hidden-xl">
+									<h2 class="h6">
+										<button class="custom-focus btnlink">{{ T "uoc_grup_footer_explore"}}</button>
+										<span aria-hidden="true" class="icon icon--arrow-down pull-right"></span>
+										<span aria-hidden="true" class="icon icon--arrow-up pull-right"></span>
+									</h2>
+								</div>
+								<div id="footer-5" class="hidden-xs hidden-sm">
+									<ul class="footer-list">
+										<li><a onclick="" target="_self" title="" href="">{{ T "uoc_grup_footer_explore_days"}}</a></li>
+										<li><a onclick="" target="_self" title="" href="">{{ T "uoc_grup_footer_explore_prod"}}</a></li>
+										<li><a onclick="" target="_self" title="" href="">{{ T "uoc_grup_footer_explore_projects"}}</a></li>
+										<li><a onclick="" target="_self" title="" href="">{{ T "uoc_grup_footer_explore_memos"}}</a></li>
+										<li><a onclick="" target="_self" title="" href="">{{ T "uoc_grup_footer_explore_catalog"}}</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-2 default-bg">
+							<div class="ruler ruler--secondary">
+								<div class="footer-top-title hidden-xs hidden-sm">
+									<h2 class="h6">{{ T "uoc_grup_footer_support"}}</h2>
+								</div>
+								<div aria-expanded="false" data-toggle="#footer-2"
+									data-toggle-hide-class="hidden-xs hidden-sm" data-custom-focus-enabled="true"
+									class="footer-top-title hidden-md hidden-lg hidden-xl">
+									<h2 class="h6">
+										<button
+											class="custom-focus btnlink">{{ T "uoc_grup_footer_support"}}</button><span
+											aria-hidden="true" class="icon icon--arrow-down pull-right"></span><span
+											aria-hidden="true" class="icon icon--arrow-up pull-right"></span>
+									</h2>
+								</div>
+								<div id="footer-2" class="hidden-xs hidden-sm">
+									<ul class="footer-list">
+										<li><a onclick="" target="_self" title="Graus" href="">{{ T "uoc_grup_footer_support_library"}}</a></li>
+										<li><a onclick="" target="_self" title="Graus" href="">{{ T "uoc_grup_footer_support_vigilance"}}</a></li>
+										<li><a onclick="" target="_self" title="Graus" href="">{{ T "uoc_grup_footer_support_intranet"}}</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-2 default-bg">
+							<div class="ruler ruler--secondary">
+								<div class="footer-top-title hidden-xs hidden-sm">
+									<h2 class="h6">{{ T "uoc_grup_footer_osrt"}}</h2>
+								</div>
+								<div aria-expanded="false" data-toggle="#footer-3"
+									data-toggle-hide-class="hidden-xs hidden-sm" data-custom-focus-enabled="true"
+									class="footer-top-title hidden-md hidden-lg hidden-xl">
+									<h2 class="h6">
+										<button class="custom-focus btnlink">{{ T "uoc_grup_footer_osrt"}}</button>
+										<span aria-hidden="true" class="icon icon--arrow-down pull-right"></span>
+										<span aria-hidden="true" class="icon icon--arrow-up pull-right"></span>
+									</h2>
+								</div>
+								<div id="footer-3" class="hidden-xs hidden-sm">
+									<ul class="footer-list">
+										<li><a onclick="" target="_self" title="Graus" href="">{{ T "uoc_grup_footer_osrt_contact"}}</a></li>
+										<li><a onclick="" target="_self" title="Graus" href="">{{ T "uoc_grup_footer_osrt_team"}}</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-2 default-bg">
+							<div class="ruler ruler--secondary">
+								<div class="footer-top-title hidden-xs hidden-sm">
+									<h2 class="h6">{{ T "uoc_grup_footer_about"}}</h2>
+								</div>
+								<div aria-expanded="false" data-toggle="#footer-4"
+									data-toggle-hide-class="hidden-xs hidden-sm" data-custom-focus-enabled="true"
+									class="footer-top-title hidden-md hidden-lg hidden-xl">
+									<h2 class="h6">
+										<button
+											class="custom-focus btnlink">{{ T "uoc_grup_footer_about"}}</button>
+											<span aria-hidden="true" class="icon icon--arrow-down pull-right"></span>
+											<span aria-hidden="true" class="icon icon--arrow-up pull-right"></span>
+									</h2>
+								</div>
+								<div id="footer-4" class="hidden-xs hidden-sm">
+									<ul class="footer-list">
+										<li><a onclick="" target="_self" title="Graus" href="">{{ T "uoc_grup_footer_about_rss"}}</a></li>
+										<li><a onclick="" target="_self" title="Graus" href="">{{ T "uoc_grup_footer_about_legal"}}</a></li>
+										<li><a onclick="" target="_self" title="Graus" href="">{{ T "uoc_grup_footer_about_access"}}</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-2 col-lg-2 col-clear page-bg">
+							<div class="ruler ruler--dynamic brand-box flexbox--item">
+								<div id="footer-twitter" class="brand-box-content">
+									<ul class="tweet_list">
+										<li class="tweet_first tweet_odd">
+											<div class="footer-top-title inherited-color">
+												{{ T "uoc_grup_footer_social_twitter_account1"}}
+											</div>
+											<div class="footer-group__list">
+												<p>
+													<span class="tweet_text">Sabíeu que el nombre de <a href="https://twitter.com/search?q=%23cooperatives&amp;src=hash&amp;lang=all" class="tweet_hashtag">#cooperatives</a> 
+														de consum <a href="https://twitter.com/search?q=%23agroecològic&amp;src=hash&amp;lang=all" class="tweet_hashtag">#agroecològic</a> ha augmentat un 58%
+														a Barcelona en l'última dècada? És una de les conclusions de la	tesi doctoral de l'investigador i <a href="https://twitter.com/search?q=%23expertUOC&amp;src=hash&amp;lang=all" class="tweet_hashtag">#expertUOC</a>
+														<span class="at">@</span><a href="//twitter.com/ricardespelt">ricardespelt</a><a href="http://ow.ly/3Oya50rJsvW">ow.ly/3Oya50rJsvW</a> via <span class="at">@</span><a href="//twitter.com/UOCNews">UOCNews</a> 
+														cc <span class="at">@</span><a href="//twitter.com/dimmonsnet">dimmonsnet</a><span class="at">@</span><a href="//twitter.com/IN3_UOC">IN3_UOC</a>
+														<a	href="https://twitter.com/UOCuniversitat/status/1121360734619865088/photo/1">pic.twitter.com/PqfXq61hEX</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="tweet_even">
+											<div class="footer-top-title inherited-color">
+												{{ T "uoc_grup_footer_social_twitter_account2"}}</div>
+											<div class="footer-group__list">
+												<p>
+													<span class="tweet_text"><span class="at">@</span><a href="//twitter.com/calderon1_618">calderon1_618</a> 
+														Te ponemos en contacto con <span class="at">@</span><a href="//twitter.com/UOCrespon">UOCrespon</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="tweet_odd">
+											<div class="footer-top-title inherited-color">
+												{{ T "uoc_grup_footer_social_twitter_account2"}}</div>
+											<div class="footer-group__list">
+												<p>
+													<span class="tweet_text">RT <span class="at">@</span><a href="//twitter.com/UOCosrt">UOCosrt</a> ? 8a trobada de gestors de projectes 
+														europeus de Catalunya: fem xarxa i compartim experiències. <a href="http://bit.ly/2Zwyo9I">bit.ly/2Zwyo9I</a>? 11/06?‍?? Amb la possibilitat de presentar-hi pòsters? A l'
+														<span class="at">@</span><a	href="//twitter.com/EP350">EP350</a>. Coorganitza AGAUR i <span class="at">@</span><a href="//twitter.com/UOCuniversitat">UOCuniversitat</a>cc
+														<span class="at">@</span><a	href="//twitter.com/recercat">recercat</a>#gestorsRDI <a href="https://twitter.com/search?q=%23recerca&amp;src=hash&amp;lang=all" class="tweet_hashtag">#recerca</a>
+														<a href="https://twitter.com/search?q=%23HorizonEU&amp;src=hash&amp;lang=all" class="tweet_hashtag">#HorizonEU</a><a href="https://t.co/NK0Npt4aAc">https://t.co/NK0Npt4aAc</a>
+													</span>
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-clear col-xs-12 col-clear page-footer-bottom">
+						<div class="col-xs-12 col-md-3 col-lg-2 col-clear page-bg pull-right">
+							<div class="brand-box">
+								<div class="brand-box-content">
+									<ul class="social-links ruler ruler--thin ruler--secondary">
+										<li><a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Facebook']);" href="http://www.facebook.com/UOC.universitat" target="_blank"
+												title='Facebook {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Facebook {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-facebook"> </span></a></li>
+										<li><a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Twitter']);"	href="http://twitter.com/UOCuniversitat" target="_blank"
+												title='Twitter {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Twitter {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-twitter"> </span></a></li>
+										<li><a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'LinkedIn']);" href="https://www.linkedin.com/school/uoc/" target="_blank"	
+												title='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}' aria-label='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-linkedin"> </span></a></li>
+										<li class="float-right"><a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', {{ T "uoc_grup_footer_social_more"}}]);" href="//www.uoc.edu/portal/ca/universitat/contacte-seus/xarxes-socials/index.html" target="_blank" 
+												title='{{ T "uoc_grup_footer_social_more"}}' aria-label='{{ T "uoc_grup_footer_social_more"}} {{ T "uoc_grup_footer_links_new_window"}}'><span class="6 icon icon--plus"> </span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-9 col-lg-10 default-bg">
+							<ul class="footer-text">
+								<li><a onclick="_gaq.push(['_trackEvent','Footer','Footer Links(Associacions)', '{{ T "uoc_grup_footer_links_acup_acronym"}} ({{ T "uoclang"}})']);" href="http://www.acup.cat/index.php?lang=ca" target="_blank"
+										title='{{ T "uoc_grup_footer_links_acup_acronym"}} {{ T "uoc_grup_footer_links_new_window"}}' aria-label='{{ T "uoc_grup_footer_links_acup_acronym"}} {{ T "uoc_grup_footer_links_new_window"}}'>{{ T "uoc_grup_footer_links_acup"}}</a></li>
+								<li><a onclick="_gaq.push(['_trackEvent','Footer','Footer Links(Associacions)', '{{ T "uoc_grup_footer_links_vives"}} ({{ T "uoclang"}})']);" href="http://www.vives.org" target="_blank" 
+										title='{{ T "uoc_grup_footer_links_vives"}} {{ T "uoc_grup_footer_links_new_window"}}' aria-label='{{ T "uoc_grup_footer_links_vives"}} {{ T "uoc_grup_footer_links_new_window"}}'>{{ T "uoc_grup_footer_links_vives"}}</a></li>
+								<li><a onclick="_gaq.push(['_trackEvent','Footer','Footer Links(Associacions)', '{{ T "uoc_grup_footer_links_eua"}} ({{ T "uoclang"}})']);" href="http://www.eua.be/" target="_blank" 
+										title='{{ T "uoc_grup_footer_links_eua"}} {{ T "uoc_grup_footer_links_new_window"}}' aria-label='{{ T "uoc_grup_footer_links_eua"}} {{ T "uoc_grup_footer_links_new_window"}}'> {{ T "uoc_grup_footer_links_eua"}}</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav aria-label="Marques UOC"
+				class="col-xs-offset-3 col-xs-6 col-clear nav-brands-container nav-brands-reverse col-clear nav-brands-desktop">
+				<ul class="nav-brands">
+					<li class="col-xs-12 col-md-2 selected"><a tabindex="0"	onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc"}}']);" href="https://www.uoc.edu/portal/ca/index.html" 
+						target="_self" title='{{ T "uoc"}}' class="w100-inline-block ruler ruler--secondary"><span class="brand-text">{{ T "uoc"}}</span></a></li>
+					<li class="col-xs-12 col-md-2"><a tabindex="0" onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc_title_ri"}}']);"	href="https://www.uoc.edu/portal/ca/ri/index.html" 
+						target="_self" title='{{ T "uoc_title_ri"}}' class="w100-inline-block ruler ruler--ri"><span class="brand-text">{{ T "uoc_title_ri"}}</span></a></li>
+					<li class="col-xs-12 col-md-2"><a tabindex="0" onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc_x"}}']);" href="//x.uoc.edu/?ac=2535&amp;src=2535&amp;utm_source=LinkWebUOC&amp;utm_medium=Referrals&amp;utm_campaign=WebUOC&amp;utm_term&amp;utm_content=LinkEstudis"
+						target="_self" title='{{ T "uoc_x"}}' class="w100-inline-block ruler ruler--x"><span class="brand-text">{{ T "uoc_x"}}</span></a></li>
+					<li class="col-xs-12 col-md-2"><a tabindex="0" onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc_corp"}}']);" href="https://www.uoc.edu/portal/ca/corporate/index.html" 
+						target="_self" title='{{ T "uoc_corp"}}' class="w100-inline-block ruler ruler--corporate"><span class="brand-text">{{ T "uoc_corp"}}</span></a></li>
+					<li class="col-xs-12 col-md-2"><a tabindex="0" onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc_alumni"}}']);" href="https://alumni.uoc.edu/opencms_alumni/opencms/ca/index.html" 
+						target="_self" title='{{ T "uoc_alumni"}}' class="w100-inline-block ruler ruler--alumni"><span class="brand-text">{{ T "uoc_alumni"}}</span></a></li>
+					<li class="col-xs-12 col-md-2"><a tabindex="0" onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc_media"}}']);" href="https://www.uoc.edu/portal/ca/media/index.html" 
+						target="_self" title='{{ T "uoc_media"}}' class="w100-inline-block ruler ruler--media"><span class="brand-text">{{ T "uoc_media"}}</span></a></li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+	<script src="/js/lib/jquery-3.3.1.min.js"></script>
+	<script src="/js/scripts.js"></script>
+	<script src="/js/custom.js"></script>
+	<script src="/js/lib/sticky.min.js"></script>
+	<script src="/js/lib/portal.min.ca.js"></script>
+	<script src="/js/lib/jquery.jold.paginator.min.js"></script>
+	<script type="text/javascript">
+
+		var paginatorMembers = new $('.list-members').joldPaginator({
+			// the number of items per page
+			'perPage': 9,
+
+			// selectors
+			'items': '.card-members',
+			'paginator': '.pagination-members',
+
+			// indicator
+			'indicator': {
+				'selector': '',
+				'text': '',
+			}
+		});
+
+		var paginatorPublications = new $('.list-publications').joldPaginator({
+			// the number of items per page
+			'perPage': 9,
+
+			// selectors
+			'items': '.card-publications',
+			'paginator': '.pagination-publications',
+
+			// indicator
+			'indicator': {
+				'selector': '',
+				'text': '',
+			}
+		});
+
+		var paginatorProjects = new $('.list-projects').joldPaginator({
+			// the number of items per page
+			'perPage': 9,
+
+			// selectors
+			'items': '.card-projects',
+			'paginator': '.pagination-projects',
+
+			// indicator
+			'indicator': {
+				'selector': '',
+				'text': '',
+			}
+		});
+
+		$('ul[class^="pagination-"]').each(function () {
+			var children = $(this).find('li');
+			children.each(function (index) {
+
+				if (index != children.length - 1) {
+					$(this).addClass("col-md-1");
+				} else {
+					$(this).attr("style", "position : relative");
+
+					var mod = children.length % 12;
+					if (mod > 0) {
+						$(this).addClass("col-md-" + (13 - mod));
+					} else {
+						$(this).addClass("col-md-1");
+					}
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>

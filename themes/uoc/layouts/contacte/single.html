@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+	{{ partial "head.html" . }}
+</head>
+
+<body>
+	{{ partial "header.html" . }}
+	<div class="site-wrapper"> 
+		{{ range $index, $elem := .Params.sections }}
+			{{ if eq $elem.form "true" }}
+				<section data-collapse-system="" class="destacado-contacto">
+					<div class="row">
+						<div data-collapse="" class="col-xs-12 col-clear collapse__wrapper uncollapsed">
+							<div class="page-title title-border-green">
+								<h2>{{$elem.title}}</h2>
+								<div class="page-title-collapsible"><a data-collapse-trigger="" data-collapse-system-trigger="" href="#" role="button" title="Texto descriptivo" aria-label="Texto descriptivo" aria-expanded="true" aria-controls="collapse__content{{ $index }}" class="collapse__trigger"><span aria-hidden="false" class="icon icon--arrow-down icon--after is-active-hidden float-right"></span><span aria-hidden="true" class="icon icon--arrow-up icon--after is-active-visible float-right"></span></a></div>
+							</div>
+							<div data-collapse-content="" id="collapse__content{{ $index }}" aria-hidden="false" class="collapse__content">
+								<div data-collapse-inner="" class="row">
+									<div class="col-xs-12 col-md-6">
+										<div class="contact-form bg-gray">
+											<h3>{{ T "uoc_contact_parlem" }}</h3><span> <strong>{{ T "uoc_contact_parlem_subtitle" }}</strong></span>
+											<form action="">
+												<div class="form-group">
+													<label for="motiu" aria-label="selecciona" class="select--custom sr-only">{{ T "uoc_contact_selecciona" }}</label>
+													<select name="txtOpcion" id="motiu" onchange="canviaMotiuName();" class="form-item motiu">
+														{{ range .Params.motius }}
+															<option value="{{ .value }}">{{ .display_name }}</option>
+														{{ end }}
+													</select>
+												</div>
+												<div class="form-group">
+													<fieldset>
+														<label aria-label="nom" for="nom" class="sr-only">{{ T "uoc_contact_fields_name" }}</label>
+														<input aria-label="nom_input" id="nom" name="nom" type="text" size="26" maxlength="30" placeholder="{{ T "uoc_contact_fields_name" }}" value="" class="form-item">
+													</fieldset>
+												</div>
+												<div class="form-group row">
+													<div class="col-xs-12 col-md-6">
+							                          <fieldset>
+							                            <label aria-label="cognom" for="cognom" class="sr-only">{{ T "uoc_contact_fields_middlename" }}</label>
+							                            <input aria-label="cognom_input" id="cognom" name="cognom" type="text" size="26" maxlength="30" placeholder="{{ T "uoc_contact_fields_middlename" }}" value="" class="form-item m-bottom-y-mobile">
+							                          </fieldset>
+							                        </div>
+							                        <div class="col-xs-12 col-md-6">
+							                          <fieldset>
+							                            <label aria-label="cognom2" for="cognom2" class="sr-only">{{ T "uoc_contact_fields_lastname" }}</label>
+							                            <input aria-label="cognom2_input" id="cognom2" name="cognom2" type="text" size="26" maxlength="30" placeholder="{{ T "uoc_contact_fields_lastname" }}" value="" class="form-item">
+							                          </fieldset>
+							                        </div>
+							                      </div>
+							                      <div class="form-group">
+							                        <fieldset>
+							                          <label aria-label="nom2" for="nom2" class="sr-only">{{ T "uoc_contact_fields_3_1" }}</label>
+							                          <input aria-label="nom2_input" id="nom2" name="{{ T "uoc_contact_fields_lastname" }}" type="text" size="26" maxlength="30" placeholder="{{ T "uoc_contact_fields_3_1" }}" value="" class="form-item">
+							                        </fieldset>
+							                      </div>
+							                      <div class="form-group row">
+							                        <div class="col-xs-12 col-md-6">
+							                          <fieldset>
+							                            <label aria-label="cognom1" for="cognom1" class="sr-only">{{ T "uoc_contact_fields_3_2" }}</label>
+							                            <input aria-label="cognom1_input" id="cognom1" name="cognom1" type="text" size="26" maxlength="30" placeholder="{{ T "uoc_contact_fields_3_2" }}" value="" class="form-item m-bottom-y-mobile">
+							                          </fieldset>
+							                        </div>
+							                        <div class="col-xs-12 col-md-6">
+							                          <fieldset>
+							                            <label aria-label="cognom3" for="cognom3" class="sr-only">{{ T "uoc_contact_fields_3_3" }}</label>
+							                            <input aria-label="cognom3_input" id="cognom3" name="cognom3" type="text" size="26" maxlength="30" placeholder="{{ T "uoc_contact_fields_3_3" }}" value="" class="form-item">
+							                          </fieldset>
+							                        </div>
+							                      </div>
+							                      <div class="form-group">
+							                        <label for="ENTRADA" aria-label="entrada" class="sr-only">{{ T "uoc_contact_fields_textarea" }}</label>
+							                        <textarea name="ENTRADA" id="ENTRADA" rows="3" cols="40" type="text" maxlength="2500" size="2500" placeholder="{{ T "uoc_contact_fields_textarea" }}" class="form-item"></textarea>
+							                      </div>
+							                      <button type="submit" name="form_estudiants" class="btn btn--primary btn--block">{{ T "uoc_contact_send" }}</button>
+											</form>
+										</div>
+									</div>
+									<div class="col-xs-12 col-md-6 p-4x p-2y">
+										<div class="contact-dates">
+											<h3>{{$elem.name}}</h3>
+											<p>{{$elem.addr_1}}<br>{{$elem.addr_2}}</p>
+											{{ range $elem.phones }}
+												<p>{{ . }}</p>
+											{{ end }}
+											<p>
+												{{ range $elem.urls }}
+													{{ . }}<br>
+												{{ end }}
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			{{ else }}
+				<section class="destacado-contacto">
+					<div class="col-xs-12 col-clear">
+						<div class="page-title title-border-blue">
+							<h2>{{$elem.title}}</h2>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<div class="contact-dates">
+								<h3>{{$elem.name}}</h3>
+								<p>{{$elem.addr_1}}<br>{{$elem.addr_2}}</p>
+								{{ range $elem.phones }}
+									<p>{{ . }}</p>
+								{{ end }}
+								<p>
+									{{ range $elem.urls }}
+										{{ . }}<br>
+									{{ end }}
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			{{ end }}
+		{{ end }}
+		{{ partial "footer.html" . }}
+	</div>
+	{{ partial "ri_js_imports.html" . }}
+	<script src="/js/search_mapa.js"></script>
+</body>
+</html>
