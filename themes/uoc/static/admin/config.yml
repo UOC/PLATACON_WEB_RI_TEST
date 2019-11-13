@@ -2,7 +2,7 @@
 backend:
   name: github # FALTA CONFIGURAR GIT Y NERTLIFY PARA QUE SE COMUNIQUEN!!!!!!!!!
   repo: albirasolutions/UOC_WebRI
-  branch: master
+  branch: victor
   #base_url: https://netlify-oauth.azurewebsites.net
   #client_id: b135b68c2ba0bd0c422a
   #name: git-gateway
