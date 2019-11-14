@@ -15,10 +15,10 @@ collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
     folder: "content/principal/"
-    #format: "json"
+    format: "json"
     #filter: {field: "contenttype", value: "section"}    
     create: true
-    #slug: "principal.{{language}}"
+    slug: "principal.{{language}}"
     fields:
           - {label: title, name: title, widget: string}
           - label: ambits_especialitzacio
