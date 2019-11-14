@@ -15,7 +15,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
     folder: "content/principal/"
-    format: "json-formatter"
+    format: "json-frontmatter"
     extension: "json"
     #filter: {field: "contenttype", value: "section"}    
     create: true
