@@ -23,25 +23,6 @@ collections: # A list of collections the CMS should be able to edit
     #identifier_field: title
     fields:
           - {label: Title, name: title, widget: string}
-          - label: ambits_especialitzacio
-            name : ambits_especialitzacio
-            widget: list
-            fields : 
-              - {label: display_name, name: display_name, widget: string }
-              - {label: value, name: value, widget: string }
-          - label: ods
-            name : ods 
-            widget: list 
-            fields : 
-              - { label : display_name, name: display_name, widget: string }
-              - { label : value, name: value, widget: string }
-              - { label : color, name : color, widget : string }
-          - label: centre
-            name : centre 
-            widget: list
-            fields : 
-              - { label : display_name, name: display_name, widget: string }
-              - { label : value, name: value, widget: string }
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
     editor:
