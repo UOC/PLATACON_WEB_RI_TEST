@@ -14,15 +14,15 @@ public_folder: "/img"
 collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
-    folder: "content/principal/"
+    folder: "content/principal"
     #format: "md"
     #extension: "json"
     #filter: {field: "contenttype", value: "section"}    
     create: true
     #slug: "principal.{{language}}"
-    identifier_field: title
+    #identifier_field: title
     fields:
-          - {label: title, name: title, widget: string}
+          - {label: Title, name: title, widget: string}
           - label: ambits_especialitzacio
             name : ambits_especialitzacio
             widget: list
@@ -30,7 +30,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: display_name, name: display_name, widget: string }
               - {label: value, name: value, widget: string }
           - label: ods
-            name : ods, 
+            name : ods 
             widget: list 
             fields : 
               - { label : display_name, name: display_name, widget: string }
