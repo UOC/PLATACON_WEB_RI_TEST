@@ -4,7 +4,7 @@ backend:
   repo: albirasolutions/UOC_WebRI
   branch: victor
   #base_url: https://netlify-oauth.azurewebsites.net
-  client_id: 05de47c07b638caed5f9
+  #client_id: 05de47c07b638caed5f9
   #name: git-gateway
 
 media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
