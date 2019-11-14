@@ -15,7 +15,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
     folder: "content/principal"
-    format: "md"
+    extension: "md"
     #filter: {field: "contenttype", value: "section"}    
     create: true
     #slug: "principal.{{language}}"
