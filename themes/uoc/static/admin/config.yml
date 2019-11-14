@@ -14,7 +14,7 @@ public_folder: "/img"
 collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
-    folder: "content/principal/"
+    folder: "content/principal"
     extension: "json"
     #filter: {field: "contenttype", value: "section"}    
     create: true
