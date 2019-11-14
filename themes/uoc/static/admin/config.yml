@@ -25,74 +25,9 @@ collections: # A list of collections the CMS should be able to edit
         name: "principal"
         fields:
           - {label: Title, name: title, widget: string}
-      - file: "content/principal/principal.{{language}}.md"
+      - file: "content/principal/{{slug}}.md"
         label: "Menu"
         name: "menu"
-        fields:
-          - {label: ambits_especialitzacio, name: ambits_especialitzacio, widget: list, 
-              fields:[
-                - {label: display_name, name : display_name, widget: string}
-                - {label: value, name: value, widget: string}
-              ]
-            }
-          - {label: ods, name: ods, widget: list, 
-              fields:[
-                - {label: display_name, name : display_name, widget: string}
-                - {label: value, name: value, widget: string}
-                - {label: img, name: img, widget : image}
-              ]
-            }
-          - {label: centre , name: centre , widget: list,
-              fields:[
-                - {label: display_value, name: display_value, widget : string}
-                - {label: value, name: value, widget: string}
-              ]
-            }
-      - file: "content/mapa-ambits-recerca/mapa-ambits-recerca.{{language}}.md"
-        label: "mapa-ambits-recerca"
-        name: "mapa-ambits-recerca"
-        fields:
-          - {label: ambits_especialitzacio, name: ambits_especialitzacio, widget: list, 
-              fields:[
-                - {label: display_name, name : display_name, widget: string}
-                - {label: value, name: value, widget: string}
-              ]
-            }
-          - {label: ambits, name: ambits, widget: list, 
-              fields:[
-                - {label: display_name, name : display_name, widget: string}
-                - {label: value, name: value, widget: string}
-              ]
-            }
-      - file: "content/contacte/contacte.{{language}}.md"
-        label: "contacte"
-        name: "contacte"
-        fields:
-          - {label: title, name: title, widget: string}
-          - {label: section,name: section ,widget: list, 
-              fields:[
-                - {label: title, name : title, widget: string}
-                - {label: form, name: form, widget: boolean}
-                - {label: name, name : name, widget: string}
-                - {label: addr_1, name: addr_1, widget: Text}
-                - {label: addr_2, name: addr_2, widget: Text}
-                - {label: phones, name: phones, widget: list, 
-                    field: {widget: number, valueType: int}
-                  }
-                - {label: urls, name: urls, widget: list, 
-                    field: {widget: Text}
-                  }
-              ]
-            }
-          - {label: motius, name: motius, widget: list, 
-              fields:[
-                - {label: display_name, name : display_name, widget: string}
-                - {label: value, name: value, widget: Text}
-              ]
-            }
-      - file: "content/cercador/cercador.{{language}}.md"
-        label: "Cercador"
-        name: "cercador"
         fields:
           - {label: ambits_especialitzacio, name: ambits_especialitzacio, widget: list, 
               fields:[
