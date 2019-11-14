@@ -22,8 +22,8 @@ collections: # A list of collections the CMS should be able to edit
     fields:
           - {label: Title, name: title, widget: string}
           - {label: ambits_especialitzacio, name : ambits_especialitzacio, widget: list, fields : 
-              - { label : display_name, name: display_name, widget: string }
-              - { label : value, name: value, widget: Text }
+              - {label: display_name, name: display_name, widget: string }
+              - {label: value, name: value, widget: Text }
             }
           - {label: ods, name : ods, widget: list, fields : 
               - { label : display_name, name: display_name, widget: string }
