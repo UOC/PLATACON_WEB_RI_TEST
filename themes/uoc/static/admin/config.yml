@@ -14,14 +14,11 @@ public_folder: "/img"
 collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
-    folder: "content/principal"
-    #format: "md"
-    #extension: "json"
-    #filter: {field: "contenttype", value: "section"}    
-    create: true
-    #slug: "principal.{{language}}"
-    #identifier_field: title
-    fields:
+    files:
+      - label: "Title"
+        name: "title"
+        file: "content/principal/principal.md"
+        fields:
           - {label: title, name: title, widget: string}
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
