@@ -18,7 +18,6 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Title"
         name: "title"
         file: "content/principal/principal.md"
-        create: true
         fields:
           - {label: title, name: title, widget: string}
     meta:

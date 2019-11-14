@@ -28,6 +28,20 @@ disableKinds = ["home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
     languageName = "English"
 
 
+[deployment]
+# By default, files are uploaded in an arbitrary order.
+# Files that match the regular expressions in the "Order" list
+# will be uploaded first, in the listed order.
+order = [".jpg$", ".gif$"]
+
+
+[[deployment.targets]]
+# An arbitrary name for this target.
+name = "dev"
+# S3; see https://gocloud.dev/howto/blob/#s3
+# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+# URL = "s3://<Bucket Name>?region=<AWS region>"
+URL = " http://uoc-web-ri.s3-website-eu-west-1.amazonaws.com"
 
 [outputs]
   page = ["HTML"]
