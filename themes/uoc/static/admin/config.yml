@@ -29,15 +29,15 @@ collections: # A list of collections the CMS should be able to edit
         label: "Menu"
         name: "menu"
         fields:
-          - {label: ambits_especialitzacio, name: ambits_especialitzacio, widget: list, fields:[
+          - {label: ambits_especialitzacio, name: ambits_especialitzacio, widget: list, fields: [
                - {label: display_name, name : display_name, widget: string}
                - {label: value, name: value, widget: string}]}
-          - {label: ods, name: ods, widget: list, fields:[
+          - {label: ods, name: ods, widget: list, fields: [
                 - {label: display_name, name : display_name, widget: string}
                 - {label: value, name: value, widget: string}
                 - {label: img, name: img, widget : image}]
             }
-          - {label: centre , name: centre , widget: list, fields:[
+          - {label: centre , name: centre , widget: list, fields: [
                 - {label: display_value, name: display_value, widget : string}
                 - {label: value, name: value, widget: string}]
             }
