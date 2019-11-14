@@ -40,7 +40,6 @@ collections: # A list of collections the CMS should be able to edit
             fields : 
               - { label : display_name, name: display_name, widget: string }
               - { label : value, name: value, widget: Text }
-            
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
     editor:
