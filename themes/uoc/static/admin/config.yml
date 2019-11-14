@@ -20,7 +20,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     #slug: "principal.{{language}}"
     fields:
-          - {label: Title, name: title, widget: string}
+          - {label: title, name: title, widget: string}
           - label: ambits_especialitzacio
             name : ambits_especialitzacio
             widget: list
