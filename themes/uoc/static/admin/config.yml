@@ -18,12 +18,8 @@ collections: # A list of collections the CMS should be able to edit
     format: "json"
     #filter: {field: "contenttype", value: "section"}    
     create: true
-    slug: "principal.{{language}}"
-    files:
-      - file: "content/principal/principal.md"
-        label: "Principal"
-        name: "principal"
-        fields:
+    #slug: "principal.{{language}}"
+    fields:
           - {label: Title, name: title, widget: string}
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
