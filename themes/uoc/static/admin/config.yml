@@ -14,8 +14,8 @@ public_folder: "/img"
 collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
-    folder: "content/principal"
-    extension: "json"
+    folder: "content/principal/"
+    #format: "json"
     #filter: {field: "contenttype", value: "section"}    
     create: true
     #slug: "principal.{{language}}"
@@ -26,20 +26,20 @@ collections: # A list of collections the CMS should be able to edit
             widget: list
             fields : 
               - {label: display_name, name: display_name, widget: string }
-              - {label: value, name: value, widget: Text }
+              - {label: value, name: value, widget: string }
           - label: ods
             name : ods, 
             widget: list 
             fields : 
               - { label : display_name, name: display_name, widget: string }
-              - { label : value, name: value, widget: Text }
+              - { label : value, name: value, widget: string }
               - { label : color, name : color, widget : string }
           - label: centre
             name : centre 
             widget: list
             fields : 
               - { label : display_name, name: display_name, widget: string }
-              - { label : value, name: value, widget: Text }
+              - { label : value, name: value, widget: string }
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
     editor:
