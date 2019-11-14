@@ -41,7 +41,7 @@ name = "dev"
 # S3; see https://gocloud.dev/howto/blob/#s3
 # For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
 # URL = "s3://<Bucket Name>?region=<AWS region>"
-URL = " http://uoc-web-ri.s3-website-eu-west-1.amazonaws.com"
+URL = "s3://uoc-web-ri?region=eu-west-1"
 
 [outputs]
   page = ["HTML"]
