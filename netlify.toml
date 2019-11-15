@@ -5,7 +5,6 @@ command = "hugo --gc --minify"
 [context.production.environment]
 HUGO_VERSION = "0.59.1"
 HUGO_ENV = "production"
-BASE_URL = "http://uoc-web-ri.s3-eu-west-1.amazonaws.com/"
 
 [context.split1]
 command = "hugo --gc --minify --enableGitInfo"
