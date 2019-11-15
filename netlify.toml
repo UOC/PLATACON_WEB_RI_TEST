@@ -22,7 +22,7 @@ HUGO_VERSION = "0.59.1"
 HUGO_ENV = "dev"
 
 [context.branch-deploy]
-command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --minify -b https://uoc-web-ri.s3-eu-west-1.amazonaws.com/"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.59.1"
