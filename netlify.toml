@@ -5,6 +5,7 @@ command = "hugo --gc --minify"
 [context.production.environment]
 HUGO_VERSION = "0.59.1"
 HUGO_ENV = "production"
+BASE_URL = "https://uoc-web-ri.s3-eu-west-1.amazonaws.com/"
 
 [context.split1]
 command = "hugo --gc --minify --enableGitInfo"
@@ -14,7 +15,7 @@ HUGO_VERSION = "0.59.1"
 HUGO_ENV = "production"
 
 [context.deploy-preview]
-command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --minify --buildFuture -b https://uoc-web-ri.s3-eu-west-1.amazonaws.com/"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.59.1"
