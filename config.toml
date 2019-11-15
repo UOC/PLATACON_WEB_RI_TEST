@@ -1,4 +1,4 @@
-baseURL = "/https://uoc-web-ri.s3-eu-west-1.amazonaws.com/"
+baseURL = "/"
 languageCode = "en-us"
 title = "My New Hugo Site"
  
