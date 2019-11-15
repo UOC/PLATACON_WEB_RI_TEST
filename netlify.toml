@@ -15,14 +15,14 @@ HUGO_VERSION = "0.59.1"
 HUGO_ENV = "production"
 
 [context.deploy-preview]
-command = "hugo --gc --minify --buildFuture -b https://uoc-web-ri.s3-eu-west-1.amazonaws.com/"
+command = "hugo --gc --minify --buildFuture -b $BASE_URL"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.59.1"
 HUGO_ENV = "dev"
 
 [context.branch-deploy]
-command = "hugo --gc --minify -b https://uoc-web-ri.s3-eu-west-1.amazonaws.com/"
+command = "hugo --gc --minify -b $BASE_URL"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.59.1"
