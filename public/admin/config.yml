@@ -35,6 +35,12 @@ collections: # A list of collections the CMS should be able to edit
           - { label : display_name, name: display_name, widget: string }
           - { label : value, name: value, widget: string }
           - { label : color, name : color, widget : string }
+      - label: sector_productiu
+        name : sector_productiu 
+        widget: list 
+        fields : 
+          - { label : display_name, name: display_name, widget: string }
+          - { label : value, name: value, widget: string }
       - label: centre
         name : centre 
         widget: list
