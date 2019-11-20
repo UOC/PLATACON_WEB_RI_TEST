@@ -24,9 +24,9 @@ collections: # A list of collections the CMS should be able to edit
       #     - {label: title, name: title, widget: string}
       - label: "CA"
         name: "ca"
-        file: "content/principal/principal_test.ca.md"
-        #format: "json"
-        #extension: "json"
+        file: "content/principal/principal_test.ca.json"
+        format: "json"
+        extension: "json"
         create: true
         fields:
           - {label: "Títol", name: "title", widget: string}
