@@ -31,6 +31,10 @@
 		{"display_name" : "(es) Pau, justícia i institucions sòlides", "value" : "Pau, justícia i institucions sòlides", "img":"/img/icons/icon_ods_color_16.svg"},
 		{"display_name" : "(es) Aliança pel objectius", "value" : "Aliança pel objectius", "img":"/img/icons/icon_ods_color_17.svg"}
 	],
+    "sector_productiu" : [
+      {"display_name" : "Sector Productiu 1", "value" : "Sector Productiu 1"},
+      {"display_name" : "Sector Productiu 2", "value" : "Sector Productiu 2"} 
+    ],
 	"centre" : [
 		{"display_name" : "Tota la UOC", "value" : ""},
 		{"display_name" : "IN3", "value" : "IN3"},
