@@ -168,7 +168,7 @@ collections: # A list of collections the CMS should be able to edit
             fields :
               - name: form
                 label: form
-                widget : object
+                widget : map
                 fields :
                   - {label: form, name: form, widget: boolean}
                   - {label: name, name : name, widget: string}
