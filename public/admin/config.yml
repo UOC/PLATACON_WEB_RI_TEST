@@ -15,20 +15,20 @@ collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
     files:
-      - label : "Title"
-        name: "title"
-        file: "content/principal/principal.md"
-        create: true
-        #format: "json"
-        field:
-          - {label: title, name: title, widget: string}
+      # - label : "Title"
+      #   name: "title"
+      #   file: "content/principal/principal.md"
+      #   create: true
+      #   #format: "json"
+      #   field:
+      #     - {label: title, name: title, widget: string}
       - label: "CA"
         name: "ca"
         file: "content/principal/principal.ca.md"
         #format: "json"
         create: true
         fields:
-          - {label: "Title", name: "title", widget: string}
+          - {label: "Títol", name: "title", widget: string}
           - label: "ambits_especialitzacio"
             name: "ambits_especialitzacio"
             widget: "list"
@@ -54,6 +54,70 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: "Camp", name: "display_name", widget: string}
               - {label: "valor", name: "value", widget: string}   
+      - label: "ES"
+        name: "es"
+        file: "content/principal/principal.es.md"
+        #format: "json"
+        create: true
+        fields:
+          - {label: "Título", name: "title", widget: string}
+          - label: "ambits_especialitzacio"
+            name: "ambits_especialitzacio"
+            widget: "list"
+            fields:
+              - {label: "Campo", name: "display_name", widget: string}
+              - {label: "Valor", name: "value", widget: string}
+          - label: "ods"
+            name: "ods"
+            widget: "list"
+            fields:
+              - {label: "Campo", name: "display_name", widget: string}
+              - {label: "Valor", name: "value", widget: string}
+              - {label: "Imagen", name: "img", widget: image}
+          - label: "sector_productiu"
+            name: "sector_productiu"
+            widget: "list"
+            fields:
+              - {label: "Campo", name: "display_name", widget: string}
+              - {label: "Valor", name: "value", widget: string}
+          - label: "centre"
+            name: "centre"
+            widget: list
+            fields:
+              - {label: "Campo", name: "display_name", widget: string}
+              - {label: "valor", name: "value", widget: string}
+      - label: "EN"
+        name: "en"
+        file: "content/principal/principal.en.md"
+        #format: "json"
+        create: true
+        fields:
+          - {label: "Title", name: "title", widget: string}
+          - label: "ambits_especialitzacio"
+            name: "ambits_especialitzacio"
+            widget: "list"
+            fields:
+              - {label: "Field", name: "display_name", widget: string}
+              - {label: "Value", name: "value", widget: string}
+          - label: "ods"
+            name: "ods"
+            widget: "list"
+            fields:
+              - {label: "Field", name: "display_name", widget: string}
+              - {label: "Value", name: "value", widget: string}
+              - {label: "Image", name: "img", widget: image}
+          - label: "sector_productiu"
+            name: "sector_productiu"
+            widget: "list"
+            fields:
+              - {label: "Field", name: "display_name", widget: string}
+              - {label: "Value", name: "value", widget: string}
+          - label: "centre"
+            name: "centre"
+            widget: list
+            fields:
+              - {label: "Field", name: "display_name", widget: string}
+              - {label: "Value", name: "value", widget: string}
     # folder: "content/principal"
     # format: "json-frontmatter"
     # #extension: "json"
