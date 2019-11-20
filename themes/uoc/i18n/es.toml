@@ -95,6 +95,7 @@
 [uoc_ri_cercadortab_text] other = "¿Prefieres hacer una búsqueda por palabras?"
 
 [uoc_ri_cercador_cercaper] other = "Busca por:"
+[uoc_ri_cercador_cercapersector] other = "Busca por sector productivo:"
 [uoc_ri_cercador_esborrafiltres] other = "Borrar filtros"
 [uoc_ri_cercador_cercar] other = "Buscar"
 

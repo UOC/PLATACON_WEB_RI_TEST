@@ -114,6 +114,29 @@
 							</div>
 						</form>
 					</div>
+					<div id="tab-content-3" data-tab-content="" role="tabpanel" aria-labelledby="tab-1" aria-hidden="true" class="filters-main__content tab-content cercaFiltres">
+						<form action="" class="radio-accordeon search-form-container">
+								<div class="more-filter-options">
+									<h4>{{ T "uoc_ri_cercador_cercapersector" }}</h4>
+									<ul class="tag-list centre">
+										{{ range $i, $el := .Params.sector_productivo }}
+											<li>{{$el.display_name}}</li>
+										{{ end }}
+									</ul>
+								</div>
+								<div class="more-filter-options">
+									<h4>{{ T "uoc_ri_cercador_filtres_centre" }}</h4>
+									<ul class="tag-list centre">
+										{{ range $index, $element := .Params.centre }}
+											<li>{{$element.display_name}}</li>
+										{{ end }}
+									</ul>
+									<div class="filter-btn">
+										<button class="btn btn--primary">{{ T "uoc_ri_home_search_aplicafiltres" }}</button>
+									</div>
+								</div>
+							</form>
+					</div>
 				</div>
 			</div>
 		</section>

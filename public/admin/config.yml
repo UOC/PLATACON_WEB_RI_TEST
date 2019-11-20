@@ -26,36 +26,36 @@ collections: # A list of collections the CMS should be able to edit
         name: "principal"
         fields:
           - {label: Title, name: title, widget: string}
-      - file: "content/principal/principal.{{language}}.md"
-        label: "Menu"
-        name: "menu"
-        fields:
-          - {label: title, name: title, widget: string}
-          - label: ambits_especialitzacio
-            name : ambits_especialitzacio
-            widget: list
-            fields : 
-              - {label: display_name, name: display_name, widget: string }
-              - {label: value, name: value, widget: string }
-          - label: ods
-            name : ods 
-            widget: list 
-            fields : 
-              - { label : display_name, name: display_name, widget: string }
-              - { label : value, name: value, widget: string }
-              - { label : color, name : color, widget : string }
-          - label: sector_productiu
-            name : sector_productiu 
-            widget: list 
-            fields : 
-              - { label : display_name, name: display_name, widget: string }
-              - { label : value, name: value, widget: string }
-          - label: centre
-            name : centre 
-            widget: list
-            fields : 
-              - { label : display_name, name: display_name, widget: string }
-              - { label : value, name: value, widget: string }
+      # - file: "content/principal/principal.{{language}}.md"
+      #   label: "Menu"
+      #   name: "menu"
+      #   fields:
+      #     - {label: title, name: title, widget: string}
+      #     - label: ambits_especialitzacio
+      #       name : ambits_especialitzacio
+      #       widget: list
+      #       fields : 
+      #         - {label: display_name, name: display_name, widget: string }
+      #         - {label: value, name: value, widget: string }
+      #     - label: ods
+      #       name : ods 
+      #       widget: list 
+      #       fields : 
+      #         - { label : display_name, name: display_name, widget: string }
+      #         - { label : value, name: value, widget: string }
+      #         - { label : color, name : color, widget : string }
+      #     - label: sector_productiu
+      #       name : sector_productiu 
+      #       widget: list 
+      #       fields : 
+      #         - { label : display_name, name: display_name, widget: string }
+      #         - { label : value, name: value, widget: string }
+      #     - label: centre
+      #       name : centre 
+      #       widget: list
+      #       fields : 
+      #         - { label : display_name, name: display_name, widget: string }
+      #         - { label : value, name: value, widget: string }
   - name: "cercador"
     label: "Cercador"
     folder: "content/cercador"
