@@ -88,11 +88,11 @@ collections: # A list of collections the CMS should be able to edit
               - { label : display_name, name: display_name, widget: string }
               - { label : value, name: value, widget: string }
   - name: "mapa-ambits-recerca"
-    label: "mapa-ambits-recerca"
+    label: "Mapa Ambits Recerca"
     folder: "content/mapa-ambits-recerca"
-    format: "json"
+    #format: "json"
     #filter: {field: "contenttype", value: "section"}    
-    create: true
+    #create: true
     #slug: "mapa-ambits-recerca.{{language}}"
     files:
       - file: "content/cercador/mapa-ambits-recerca.{{language}}.md"
@@ -116,14 +116,14 @@ collections: # A list of collections the CMS should be able to edit
   - name: "contacte"
     label: "contacte"
     folder: "content/contacte"
-    format: "json"
+    #format: "json"
     #filter: {field: "contenttype", value: "section"}    
-    create: true
+    #create: true
     #slug: "mapa-ambits-recerca.{{language}}"
     files:
       - file: "content/contacte/contacte.{{language}}.md"
         name: "contacte"
-        label: "contacte"
+        label: "Contacte"
         fields:
           - {label: title, name: title, widget: string}
           - label: section
