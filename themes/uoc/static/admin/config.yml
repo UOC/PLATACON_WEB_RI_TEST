@@ -17,7 +17,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - label : "Title"
         name: "title"
-        file: "content/principal/principal.md"
+        file: "content/principal/principal.json"
         format : "json"
         fields:
           - {label: title, name: title, widget: string}
