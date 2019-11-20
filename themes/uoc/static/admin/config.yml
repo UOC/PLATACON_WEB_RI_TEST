@@ -15,13 +15,13 @@ collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
     files:
-      - label : "Title"
-        name: "title"
-        file: "content/principal/principal.md"
-        create: true
-        #format: "json"
-        field:
-          - {label: title, name: title, widget: string}
+      # - label : "Title"
+      #   name: "title"
+      #   file: "content/principal/principal.md"
+      #   create: true
+      #   #format: "json"
+      #   field:
+      #     - {label: title, name: title, widget: string}
       - label: "CA"
         name: "ca"
         file: "content/principal/principal.ca.md"
