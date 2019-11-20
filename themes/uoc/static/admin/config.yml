@@ -19,14 +19,14 @@ collections: # A list of collections the CMS should be able to edit
     extension: "json"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
-    slug: "principal.{{language}}"
+    #slug: "principal.{{language}}"
     files:
       - file: "content/principal/principal.md"
         label: "Principal"
         name: "principal"
         fields:
           - {label: Title, name: title, widget: string}
-      - file: "content/principal/{{slug}}.md"
+      - file: "content/principal/principal.{{language}}.md"
         label: "Menu"
         name: "menu"
         fields:
@@ -175,11 +175,11 @@ collections: # A list of collections the CMS should be able to edit
                   - label: phones
                     name: phones
                     widget: list 
-                    field: {name : phone, widget: string, pattern: ['^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$'] }
+                    field: {widget: string, pattern: ['^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$'] }
                   - label: urls
                     name: urls
                     widget: list
-                    field: {name: url, widget: string}
+                    field: {widget: string}
           - label: motius
             name: motius
             widget: list 
