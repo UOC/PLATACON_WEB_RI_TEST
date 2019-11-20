@@ -14,10 +14,19 @@ public_folder: "/img"
 collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
-    #folder: "content/principal"
+    folder: "content/principal"
     #format: "json-frontmatter"
     extension: "json"
-    file: "content/principal/principal.{{language}}.md"
+    #filter: {field: "contenttype", value: "section"}    
+    #create: true
+    slug: "principal.{{language}}"
+    files:
+      - file: "content/principal/principal.md"
+        label: "Principal"
+        name: "principal"
+        fields:
+          - {label: Title, name: title, widget: string}
+      - file: "content/principal/{{slug}}.md"
         label: "Menu"
         name: "menu"
         fields:
@@ -47,45 +56,6 @@ collections: # A list of collections the CMS should be able to edit
             fields : 
               - { label : display_name, name: display_name, widget: string }
               - { label : value, name: value, widget: string }
-    #filter: {field: "contenttype", value: "section"}    
-    #create: true
-    #slug: "principal.{{language}}"
-    # files:
-    #   - file: "content/principal/principal.md"
-    #     label: "Principal"
-    #     name: "principal"
-    #     fields:
-    #       - {label: Title, name: title, widget: string}
-    #   - file: "content/principal/principal.{{language}}.md"
-    #     label: "Menu"
-    #     name: "menu"
-    #     fields:
-    #       - {label: title, name: title, widget: string}
-    #       - label: ambits_especialitzacio
-    #         name : ambits_especialitzacio
-    #         widget: list
-    #         fields : 
-    #           - {label: display_name, name: display_name, widget: string }
-    #           - {label: value, name: value, widget: string }
-    #       - label: ods
-    #         name : ods 
-    #         widget: list 
-    #         fields : 
-    #           - { label : display_name, name: display_name, widget: string }
-    #           - { label : value, name: value, widget: string }
-    #           - { label : color, name : color, widget : string }
-    #       - label: sector_productiu
-    #         name : sector_productiu 
-    #         widget: list 
-    #         fields : 
-    #           - { label : display_name, name: display_name, widget: string }
-    #           - { label : value, name: value, widget: string }
-    #       - label: centre
-    #         name : centre 
-    #         widget: list
-    #         fields : 
-    #           - { label : display_name, name: display_name, widget: string }
-    #           - { label : value, name: value, widget: string }
   - name: "cercador"
     label: "Cercador"
     folder: "content/cercador"
@@ -205,11 +175,11 @@ collections: # A list of collections the CMS should be able to edit
                   - label: phones
                     name: phones
                     widget: list 
-                    field: {widget: string, pattern: ['^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$'] }
+                    field: {name : phone, widget: string, pattern: ['^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$'] }
                   - label: urls
                     name: urls
                     widget: list
-                    field: {widget: string}
+                    field: {name: url, widget: string}
           - label: motius
             name: motius
             widget: list 
