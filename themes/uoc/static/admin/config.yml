@@ -15,7 +15,8 @@ collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
     folder: "content/principal"
-    format: "md"
+    #format: "json-frontmatter"
+    #extension: "json"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
     #slug: "principal.{{language}}"
@@ -58,73 +59,108 @@ collections: # A list of collections the CMS should be able to edit
   - name: "cercador"
     label: "Cercador"
     folder: "content/cercador"
-    format: "md"
+    #format: "json-frontmatter"
+    #extension : "json"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
     #slug: "cercador.{{language}}"
-    files:
-      - file: "content/cercador/cercador.{{language}}.md"
-        label: "cercador"
-        name: "Cercador"
-        fields:
-          - {label: title, name: title, widget: string}
-          - label: ambits_especialitzacio
-            name : ambits_especialitzacio
-            widget: list
-            fields : 
-              - {label: display_name, name: display_name, widget: string }
-              - {label: value, name: value, widget: string }
-          - label: ods
-            name : ods 
-            widget: list 
-            fields : 
-              - { label : display_name, name: display_name, widget: string }
-              - { label : value, name: value, widget: string }
-              - { label : color, name : color, widget : string }
-          - label: centre
-            name : centre 
-            widget: list
-            fields : 
-              - { label : display_name, name: display_name, widget: string }
-              - { label : value, name: value, widget: string }
+    fields:
+      - {label: title, name: title, widget: string}
+      - label: ambits_especialitzacio
+        name : ambits_especialitzacio
+        widget: list
+        fields : 
+          - {label: display_name, name: display_name, widget: string }
+          - {label: value, name: value, widget: string }
+      - label: ods
+        name : ods 
+        widget: list 
+        fields : 
+          - { label : display_name, name: display_name, widget: string }
+          - { label : value, name: value, widget: string }
+          - { label : color, name : color, widget : string }
+      - label: centre
+        name : centre 
+        widget: list
+        fields : 
+          - { label : display_name, name: display_name, widget: string }
+          - { label : value, name: value, widget: string }
+    # files:
+    #   - file: "content/cercador/cercador.{{language}}.md"
+    #     label: "cercador"
+    #     name: "Cercador"
+    #     fields:
+    #       - {label: title, name: title, widget: string}
+    #       - label: ambits_especialitzacio
+    #         name : ambits_especialitzacio
+    #         widget: list
+    #         fields : 
+    #           - {label: display_name, name: display_name, widget: string }
+    #           - {label: value, name: value, widget: string }
+    #       - label: ods
+    #         name : ods 
+    #         widget: list 
+    #         fields : 
+    #           - { label : display_name, name: display_name, widget: string }
+    #           - { label : value, name: value, widget: string }
+    #           - { label : color, name : color, widget : string }
+    #       - label: centre
+    #         name : centre 
+    #         widget: list
+    #         fields : 
+    #           - { label : display_name, name: display_name, widget: string }
+    #           - { label : value, name: value, widget: string }
   - name: "mapa-ambits-recerca"
     label: "Mapa Ambits Recerca"
     folder: "content/mapa-ambits-recerca"
-    format: "md"
+    #format: "json-frontmatter"
+    #extension : "json"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
     #slug: "mapa-ambits-recerca.{{language}}"
-    files:
-      - file: "content/cercador/mapa-ambits-recerca.{{language}}.md"
-        label: "mapa-ambits-recerca"
-        name: "mapa-ambits-recerca"
-        fields:
-          - {label: title, name: title, widget: string}
-          - label: ambits_especialitzacio
-            name : ambits_especialitzacio
-            widget: list
-            fields : 
-              - {label: display_name, name: display_name, widget: string }
-              - {label: value, name: value, widget: string }
-          - label: ambit
-            name : ambit 
-            widget: list 
-            fields : 
-              - { label : display_name, name: display_name, widget: string }
-              - { label : value, name: value, widget: string }
-              - { label : color, name : color, widget : string }
+    fields:
+      - {label: title, name: title, widget: string}
+      - label: ambits_especialitzacio
+        name : ambits_especialitzacio
+        widget: list
+        fields : 
+          - {label: display_name, name: display_name, widget: string }
+          - {label: value, name: value, widget: string }
+      - label: ambit
+        name : ambit 
+        widget: list 
+        fields : 
+          - { label : display_name, name: display_name, widget: string }
+          - { label : value, name: value, widget: string }
+          - { label : color, name : color, widget : string }
+    # files:
+    #   - file: "content/cercador/mapa-ambits-recerca.{{language}}.md"
+    #     label: "mapa-ambits-recerca"
+    #     name: "mapa-ambits-recerca"
+    #     fields:
+    #       - {label: title, name: title, widget: string}
+    #       - label: ambits_especialitzacio
+    #         name : ambits_especialitzacio
+    #         widget: list
+    #         fields : 
+    #           - {label: display_name, name: display_name, widget: string }
+    #           - {label: value, name: value, widget: string }
+    #       - label: ambit
+    #         name : ambit 
+    #         widget: list 
+    #         fields : 
+    #           - { label : display_name, name: display_name, widget: string }
+    #           - { label : value, name: value, widget: string }
+    #           - { label : color, name : color, widget : string }
   - name: "contacte"
     label: "Contacte"
     folder: "content/contacte"
-    format: "md"
+    #format: "json-frontmatter"
+    #extension : "json"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
     #slug: "mapa-ambits-recerca.{{language}}"
-    files:
-      - file: "content/contacte/contacte.{{language}}.md"
-        name: "contacte"
-        label: "Contacte"
-        fields:
+    fields:
           - {label: title, name: title, widget: string}
           - label: section
             name: section
@@ -152,6 +188,38 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: display_name, name : display_name, widget: string}
               - {label: value, name: value, widget: Text}
+    # files:
+    #   - file: "content/contacte/contacte.{{language}}.md"
+    #     name: "contacte"
+    #     label: "Contacte"
+    #     fields:
+    #       - {label: title, name: title, widget: string}
+    #       - label: section
+    #         name: section
+    #         widget: list 
+    #         fields:
+    #             - label: contact_obj
+    #               name: contact_obj
+    #               widget: object,
+    #               fields :
+    #                 - {label: form, name: form, widget: boolean}
+    #                 - {label: name, name : name, widget: string}
+    #                 - {label: addr_1, name: addr_1, widget: Text}
+    #                 - {label: addr_2, name: addr_2, widget: Text}
+    #                 - label: phones
+    #                   name: phones
+    #                   widget: list 
+    #                   field: {widget: number, valueType: int}
+    #                 - label: urls
+    #                   name: urls
+    #                   widget: list
+    #                   field: {widget: Text}
+    #       - label: motius
+    #         name: motius
+    #         widget: list 
+    #         fields:
+    #           - {label: display_name, name : display_name, widget: string}
+    #           - {label: value, name: value, widget: Text}
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
     editor:
