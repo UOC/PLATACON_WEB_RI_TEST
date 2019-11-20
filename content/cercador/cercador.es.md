@@ -44,10 +44,6 @@
     {
       "display_name": "Economia colaborativa",
       "value": "Economia colaborativa"
-    },
-    {
-      "display_name": "Test Test",
-      "value": "Test"
     }
   ],
   "ods": [
