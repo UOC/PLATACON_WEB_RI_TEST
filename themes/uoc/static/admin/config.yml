@@ -164,7 +164,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: title, name: title, widget: string}
           - label: section
             name: section
-            widget: map
+            widget: list
             fields :
               - widget : object
                 fields :
