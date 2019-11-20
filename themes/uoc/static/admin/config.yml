@@ -15,9 +15,9 @@ collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
     folder: "content/principal"
-    format: "json"
+    #format: "json"
     #filter: {field: "contenttype", value: "section"}    
-    create: true
+    #create: true
     #slug: "principal.{{language}}"
     files:
       - file: "content/principal/principal.md"
@@ -58,9 +58,9 @@ collections: # A list of collections the CMS should be able to edit
   - name: "cercador"
     label: "Cercador"
     folder: "content/cercador"
-    format: "json"
+    #format: "json"
     #filter: {field: "contenttype", value: "section"}    
-    create: true
+    #create: true
     #slug: "cercador.{{language}}"
     files:
       - file: "content/cercador/cercador.{{language}}.md"
