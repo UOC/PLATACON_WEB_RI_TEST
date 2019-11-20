@@ -15,7 +15,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
     folder: "content/principal"
-    #format: "json"
+    format: "md"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
     #slug: "principal.{{language}}"
@@ -58,7 +58,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "cercador"
     label: "Cercador"
     folder: "content/cercador"
-    #format: "json"
+    format: "md"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
     #slug: "cercador.{{language}}"
@@ -90,7 +90,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "mapa-ambits-recerca"
     label: "Mapa Ambits Recerca"
     folder: "content/mapa-ambits-recerca"
-    #format: "json"
+    format: "md"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
     #slug: "mapa-ambits-recerca.{{language}}"
@@ -114,9 +114,9 @@ collections: # A list of collections the CMS should be able to edit
               - { label : value, name: value, widget: string }
               - { label : color, name : color, widget : string }
   - name: "contacte"
-    label: "contacte"
+    label: "Contacte"
     folder: "content/contacte"
-    #format: "json"
+    format: "md"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
     #slug: "mapa-ambits-recerca.{{language}}"
