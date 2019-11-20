@@ -16,9 +16,9 @@ ods:
     value: Fam zero
 sector_productiu:
   - display_name: Sector Productiu 1
-    value: Sector Productiu 1.1ES
+    value: Sector Productiu 1..ES
   - display_name: Sector Productiu 2
-    value: Sector Productiu 2.2ES
+    value: Sector Productiu 2..ES
 centre:
   - display_name: Tota la UOC
     value: ''
