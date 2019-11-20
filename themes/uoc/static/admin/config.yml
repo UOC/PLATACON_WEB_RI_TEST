@@ -164,26 +164,28 @@ collections: # A list of collections the CMS should be able to edit
           - {label: title, name: title, widget: string}
           - label: section
             name: section
-            widget: list 
+            widget: list
             fields :
-              - {label: form, name: form, widget: boolean}
-              - {label: name, name : name, widget: string}
-              - {label: addr_1, name: addr_1, widget: Text}
-              - {label: addr_2, name: addr_2, widget: Text}
-              - label: phones
-                name: phones
-                widget: list 
-                field: {widget: number, valueType: int}
-              - label: urls
-                name: urls
-                widget: list
-                field: {widget: Text}
+              - widget : object
+                fields :
+                  - {label: form, name: form, widget: boolean}
+                  - {label: name, name : name, widget: string}
+                  - {label: addr_1, name: addr_1, widget: string}
+                  - {label: addr_2, name: addr_2, widget: string}
+                  - label: phones
+                    name: phones
+                    widget: list 
+                    field: {widget: string, pattern: ['^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$'] }
+                  - label: urls
+                    name: urls
+                    widget: list
+                    field: {widget: string}
           - label: motius
             name: motius
             widget: list 
             fields:
               - {label: display_name, name : display_name, widget: string}
-              - {label: value, name: value, widget: Text}
+              - {label: value, name: value, widget: string}
     # files:
     #   - file: "content/contacte/contacte.{{language}}.md"
     #     name: "contacte"
@@ -200,8 +202,8 @@ collections: # A list of collections the CMS should be able to edit
     #               fields :
     #                 - {label: form, name: form, widget: boolean}
     #                 - {label: name, name : name, widget: string}
-    #                 - {label: addr_1, name: addr_1, widget: Text}
-    #                 - {label: addr_2, name: addr_2, widget: Text}
+    #                 - {label: addr_1, name: addr_1, widget: string}
+    #                 - {label: addr_2, name: addr_2, widget: string}
     #                 - label: phones
     #                   name: phones
     #                   widget: list 
@@ -209,13 +211,13 @@ collections: # A list of collections the CMS should be able to edit
     #                 - label: urls
     #                   name: urls
     #                   widget: list
-    #                   field: {widget: Text}
+    #                   field: {widget: string}
     #       - label: motius
     #         name: motius
     #         widget: list 
     #         fields:
     #           - {label: display_name, name : display_name, widget: string}
-    #           - {label: value, name: value, widget: Text}
+    #           - {label: value, name: value, widget: string}
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
     editor:
