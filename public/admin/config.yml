@@ -15,7 +15,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
     folder: "content/principal"
-    #format: "json-frontmatter"
+    format: "json-frontmatter"
     #extension: "json"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
@@ -59,7 +59,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "cercador"
     label: "Cercador"
     folder: "content/cercador"
-    #format: "json-frontmatter"
+    format: "json-frontmatter"
     #extension : "json"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
@@ -113,7 +113,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "mapa-ambits-recerca"
     label: "Mapa Ambits Recerca"
     folder: "content/mapa-ambits-recerca"
-    #format: "json-frontmatter"
+    format: "json-frontmatter"
     #extension : "json"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
@@ -155,7 +155,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "contacte"
     label: "Contacte"
     folder: "content/contacte"
-    #format: "json-frontmatter"
+    format: "json-frontmatter"
     #extension : "json"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
@@ -166,7 +166,9 @@ collections: # A list of collections the CMS should be able to edit
             name: section
             widget: list
             fields :
-              - widget : object
+              - name: form
+                label: form
+                widget : object
                 fields :
                   - {label: form, name: form, widget: boolean}
                   - {label: name, name : name, widget: string}
@@ -175,49 +177,17 @@ collections: # A list of collections the CMS should be able to edit
                   - label: phones
                     name: phones
                     widget: list 
-                    field: {widget: string, pattern: ['^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$'] }
+                    field: {label: phone, name : phone ,widget: string, pattern: ['^(?:0|\(?\+34\)?\s?)[1-79](?:[\.\-\s]?\d\d){4}$','missmatch pattern']}
                   - label: urls
                     name: urls
                     widget: list
-                    field: {widget: string}
+                    field: {label: url, name: url, widget: string}
           - label: motius
             name: motius
             widget: list 
             fields:
               - {label: display_name, name : display_name, widget: string}
               - {label: value, name: value, widget: string}
-    # files:
-    #   - file: "content/contacte/contacte.{{language}}.md"
-    #     name: "contacte"
-    #     label: "Contacte"
-    #     fields:
-    #       - {label: title, name: title, widget: string}
-    #       - label: section
-    #         name: section
-    #         widget: list 
-    #         fields:
-    #             - label: contact_obj
-    #               name: contact_obj
-    #               widget: object,
-    #               fields :
-    #                 - {label: form, name: form, widget: boolean}
-    #                 - {label: name, name : name, widget: string}
-    #                 - {label: addr_1, name: addr_1, widget: string}
-    #                 - {label: addr_2, name: addr_2, widget: string}
-    #                 - label: phones
-    #                   name: phones
-    #                   widget: list 
-    #                   field: {widget: number, valueType: int}
-    #                 - label: urls
-    #                   name: urls
-    #                   widget: list
-    #                   field: {widget: string}
-    #       - label: motius
-    #         name: motius
-    #         widget: list 
-    #         fields:
-    #           - {label: display_name, name : display_name, widget: string}
-    #           - {label: value, name: value, widget: string}
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
     editor:
