@@ -26,7 +26,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "ca"
         file: "content/principal/principal_test.ca.md"
         #format: "json"
-        extension: "json"
+        #extension: "json"
         create: true
         fields:
           - {label: "Títol", name: "title", widget: string}
@@ -59,7 +59,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "es"
         file: "content/principal/principal_test.es.md"
         #format: "json"
-        extension: "json"
+        #extension: "json"
         create: true
         fields:
           - {label: "Título", name: "title", widget: string}
