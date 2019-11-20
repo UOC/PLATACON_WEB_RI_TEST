@@ -165,23 +165,19 @@ collections: # A list of collections the CMS should be able to edit
           - label: section
             name: section
             widget: list 
-            fields:
-                - label: contact_obj
-                  name: contact_obj
-                  widget: object,
-                  fields :
-                    - {label: form, name: form, widget: boolean}
-                    - {label: name, name : name, widget: string}
-                    - {label: addr_1, name: addr_1, widget: Text}
-                    - {label: addr_2, name: addr_2, widget: Text}
-                    - label: phones
-                      name: phones
-                      widget: list 
-                      field: {widget: number, valueType: int}
-                    - label: urls
-                      name: urls
-                      widget: list
-                      field: {widget: Text}
+            fields :
+              - {label: form, name: form, widget: boolean}
+              - {label: name, name : name, widget: string}
+              - {label: addr_1, name: addr_1, widget: Text}
+              - {label: addr_2, name: addr_2, widget: Text}
+              - label: phones
+                name: phones
+                widget: list 
+                field: {widget: number, valueType: int}
+              - label: urls
+                name: urls
+                widget: list
+                field: {widget: Text}
           - label: motius
             name: motius
             widget: list 
