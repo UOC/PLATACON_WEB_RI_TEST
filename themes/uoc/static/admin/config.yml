@@ -16,7 +16,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Principal"
     folder: "content/principal"
     #format: "json-frontmatter"
-    extension: "json"
+    #extension: "json"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
     #slug: "principal.{{language}}"
@@ -60,7 +60,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Cercador"
     folder: "content/cercador"
     #format: "json-frontmatter"
-    extension : "json"
+    #extension : "json"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
     #slug: "cercador.{{language}}"
@@ -114,7 +114,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Mapa Ambits Recerca"
     folder: "content/mapa-ambits-recerca"
     #format: "json-frontmatter"
-    extension : "json"
+    #extension : "json"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
     #slug: "mapa-ambits-recerca.{{language}}"
@@ -156,7 +156,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Contacte"
     folder: "content/contacte"
     #format: "json-frontmatter"
-    extension : "json"
+    #extension : "json"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
     #slug: "mapa-ambits-recerca.{{language}}"
