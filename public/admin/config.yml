@@ -14,19 +14,10 @@ public_folder: "/img"
 collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
-    folder: "content/principal"
+    #folder: "content/principal"
     #format: "json-frontmatter"
-    #extension: "json"
-    #filter: {field: "contenttype", value: "section"}    
-    #create: true
-    #slug: "principal.{{language}}"
-    files:
-      - file: "content/principal/principal.md"
-        label: "Principal"
-        name: "principal"
-        fields:
-          - {label: Title, name: title, widget: string}
-      - file: "content/principal/principal.{{language}}.md"
+    extension: "json"
+    file: "content/principal/principal.{{language}}.md"
         label: "Menu"
         name: "menu"
         fields:
@@ -56,11 +47,50 @@ collections: # A list of collections the CMS should be able to edit
             fields : 
               - { label : display_name, name: display_name, widget: string }
               - { label : value, name: value, widget: string }
+    #filter: {field: "contenttype", value: "section"}    
+    #create: true
+    #slug: "principal.{{language}}"
+    # files:
+    #   - file: "content/principal/principal.md"
+    #     label: "Principal"
+    #     name: "principal"
+    #     fields:
+    #       - {label: Title, name: title, widget: string}
+    #   - file: "content/principal/principal.{{language}}.md"
+    #     label: "Menu"
+    #     name: "menu"
+    #     fields:
+    #       - {label: title, name: title, widget: string}
+    #       - label: ambits_especialitzacio
+    #         name : ambits_especialitzacio
+    #         widget: list
+    #         fields : 
+    #           - {label: display_name, name: display_name, widget: string }
+    #           - {label: value, name: value, widget: string }
+    #       - label: ods
+    #         name : ods 
+    #         widget: list 
+    #         fields : 
+    #           - { label : display_name, name: display_name, widget: string }
+    #           - { label : value, name: value, widget: string }
+    #           - { label : color, name : color, widget : string }
+    #       - label: sector_productiu
+    #         name : sector_productiu 
+    #         widget: list 
+    #         fields : 
+    #           - { label : display_name, name: display_name, widget: string }
+    #           - { label : value, name: value, widget: string }
+    #       - label: centre
+    #         name : centre 
+    #         widget: list
+    #         fields : 
+    #           - { label : display_name, name: display_name, widget: string }
+    #           - { label : value, name: value, widget: string }
   - name: "cercador"
     label: "Cercador"
     folder: "content/cercador"
     #format: "json-frontmatter"
-    #extension : "json"
+    extension : "json"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
     #slug: "cercador.{{language}}"
@@ -68,7 +98,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: title, name: title, widget: string}
       - label: ambits_especialitzacio
         name : ambits_especialitzacio
-        widget: list
+        widget : list
         fields : 
           - {label: display_name, name: display_name, widget: string }
           - {label: value, name: value, widget: string }
@@ -114,7 +144,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Mapa Ambits Recerca"
     folder: "content/mapa-ambits-recerca"
     #format: "json-frontmatter"
-    #extension : "json"
+    extension : "json"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
     #slug: "mapa-ambits-recerca.{{language}}"
@@ -156,7 +186,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Contacte"
     folder: "content/contacte"
     #format: "json-frontmatter"
-    #extension : "json"
+    extension : "json"
     #filter: {field: "contenttype", value: "section"}    
     #create: true
     #slug: "mapa-ambits-recerca.{{language}}"
@@ -164,7 +194,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: title, name: title, widget: string}
           - label: section
             name: section
-            widget: list
+            widget: map
             fields :
               - widget : object
                 fields :
