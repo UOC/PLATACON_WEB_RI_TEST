@@ -15,11 +15,6 @@ collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
     files:
-      - file : "content/principal/principal.md"
-        label: "Title"
-        name: "title"
-        fields:
-          - {label: title, name: title, widget: string}
       - file : "content/principal/principal.{{language}}.md"
         label: "Home Page"
         name : "homePage"
