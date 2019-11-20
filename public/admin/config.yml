@@ -14,39 +14,40 @@ public_folder: "/img"
 collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
-    folder: "content/principal"
-    format: "json-frontmatter"
-    #extension: "json"
-    #filter: {field: "contenttype", value: "section"}    
-    #create: true
-    #slug: "principal.{{language}}"
-    fields:
-      - {label: title, name: title, widget: string}
-      - label: ambits_especialitzacio
-        name : ambits_especialitzacio
-        widget : list
-        fields : 
-          - {label: display_name, name: display_name, widget: string }
-          - {label: value, name: value, widget: string }
-      - label: ods
-        name : ods 
-        widget: list 
-        fields : 
-          - { label : display_name, name: display_name, widget: string }
-          - { label : value, name: value, widget: string }
-          - { label : color, name : color, widget : string }
-      - label: sector_productiu
-        name : sector_productiu 
-        widget: list 
-        fields : 
-          - { label : display_name, name: display_name, widget: string }
-          - { label : value, name: value, widget: string }
-      - label: centre
-        name : centre 
-        widget: list
-        fields : 
-          - { label : display_name, name: display_name, widget: string }
-          - { label : value, name: value, widget: string }
+    files:
+      - label : "Title"
+        name: "title"
+        file: "content/principal/principal.md"
+        format : "json-frontmatter"
+        fields:
+          - {label: title, name: title, widget: string}
+    # folder: "content/principal"
+    # format: "json-frontmatter"
+    # #extension: "json"
+    # #filter: {field: "contenttype", value: "section"}    
+    # #create: true
+    # #slug: "principal.{{language}}"
+    # fields:
+    #   - {label: title, name: title, widget: string}
+    #   - label: ambits_especialitzacio
+    #     name : ambits_especialitzacio
+    #     widget : list
+    #     fields : 
+    #       - {label: display_name, name: display_name, widget: string }
+    #       - {label: value, name: value, widget: string }
+    #   - label: ods
+    #     name : ods 
+    #     widget: list 
+    #     fields : 
+    #       - { label : display_name, name: display_name, widget: string }
+    #       - { label : value, name: value, widget: string }
+    #       - { label : color, name : color, widget : string }
+    #   - label: centre
+    #     name : centre 
+    #     widget: list
+    #     fields : 
+    #       - { label : display_name, name: display_name, widget: string }
+    #       - { label : value, name: value, widget: string }
       # - file: "content/principal/principal.{{language}}.md"
       #   label: "Menu"
       #   name: "menu"
@@ -189,7 +190,7 @@ collections: # A list of collections the CMS should be able to edit
             fields :
               - name: form
                 label: form
-                widget : map
+                widget : object
                 fields :
                   - {label: form, name: form, widget: boolean}
                   - {label: name, name : name, widget: string}
@@ -198,11 +199,13 @@ collections: # A list of collections the CMS should be able to edit
                   - label: phones
                     name: phones
                     widget: list 
-                    field: {label: phone, name : phone ,widget: string, pattern: ['^(?:0|\(?\+34\)?\s?)[1-79](?:[\.\-\s]?\d\d){4}$','missmatch pattern']}
+                    fields:
+                      - {label: phone, name : phone ,widget: string}
                   - label: urls
                     name: urls
                     widget: list
-                    field: {label: url, name: url, widget: string}
+                    fields:
+                      - {label: url, name: url, widget: string}
           - label: motius
             name: motius
             widget: list 
