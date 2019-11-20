@@ -30,6 +30,10 @@
       {"display_name" : "Vida terrestre", "value" : "Vida terrestre", "color":"light-blue"}, 
       {"display_name" : "Pau, justícia i institucions sòlides", "value" : "Pau, justícia i institucions sòlides", "color":"blue"}, 
       {"display_name" : "Aliança pel objectius", "value" : "Aliança pel objectius", "color":"orange"} 
+    ],
+    "sector_productiu" : [
+      {"display_name" : "Sector Productiu 1", "value" : "Sector Productiu 1"},
+      {"display_name" : "Sector Productiu 2", "value" : "Sector Productiu 2"} 
     ], 
     "centre" : [ 
       {"display_name" : "Tota la UOC", "value" : ""}, 
@@ -37,5 +41,5 @@
       {"display_name" : "e-Health Center", "value" : "e-Health Center"}, 
       {"display_name" : "e-Learn Center", "value" : "e-Learn Center"}, 
       {"display_name" : "Estudis", "value" : "Estudis"} 
-    ] 
+    ]
 }
