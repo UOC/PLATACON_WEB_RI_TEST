@@ -18,7 +18,7 @@ collections: # A list of collections the CMS should be able to edit
       - label : "Title"
         name: "title"
         file: "content/principal/principal.md"
-        format : "json-frontmatter"
+        #format : "json-frontmatter"
         fields:
           - {label: title, name: title, widget: string}
     # folder: "content/principal"
