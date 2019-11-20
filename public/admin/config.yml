@@ -18,9 +18,42 @@ collections: # A list of collections the CMS should be able to edit
       - label : "Title"
         name: "title"
         file: "content/principal/principal.json"
-        format : "json"
+        create: true
+        format: "json"
         fields:
           - {label: title, name: title, widget: string}
+      - label: "CA"
+        name: "ca"
+        file: "content/principal/principal.ca.json"
+        format: "json"
+        create: true
+        fields:
+          - {label: "Title", name: "title", widget: string}
+          - label: "ambits_especialitzacio"
+            name: "ambits_especialitzacio"
+            widget: "list"
+            fields:
+              - {label: "Camp", name: "display_name", widget: string}
+              - {label: "Valor", name: "value", widget: string}
+          - label: "ods"
+            name: "ods"
+            widget: "list"
+            fields:
+              - {label: "Camp", name: "display_name", widget: string}
+              - {label: "Valor", name: "value", widget: string}
+              - {label: "Color", name: "color", widget: string}
+          - label: "sector_productiu"
+            name: "sector_productiu"
+            widget: "list"
+            fields:
+              - {label: "Camp", name: "display_name", widget: string}
+              - {label: "Valor", name: "value", widget: string}
+          - label: "centre"
+            name: "centre"
+            widget: list
+            fields:
+              - {label: "Camp", name: "display_name", widget: string}
+              - {label: "valor", name: "value", widget: string}   
     # folder: "content/principal"
     # format: "json-frontmatter"
     # #extension: "json"
