@@ -100,7 +100,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: "Camp", name: "display_name", widget: string}
               - {label: "valor", name: "value", widget: string}
-        - label: "EN"
+      - label: "EN"
         name: "en"
         file: "content/principal/principal.en.md"
         #format: "json"
