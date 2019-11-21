@@ -74,10 +74,22 @@ ods:
     img: /img/icons/icon_ods_color_17.svg
     value: Aliança pel objectius
 sector_productiu:
-  - display_name: Sector Productiu 1
-    value: Sector Productiu 1
-  - display_name: Sector Productiu 2
-    value: Sector Productiu 2
+  - display_name: All
+    value: ''
+  - display_name: 'Art, Turisms and Languages'
+    value: 'Art, Turisms and Languages'
+  - display_name: Law and governance
+    value: Law and governance
+  - display_name: Network society
+    value: Network society
+  - display_name: 'Economy, business and ICT'
+    value: 'Economy, business and ICT'
+  - display_name: Industry 4.0
+    value: Industry 4.0
+  - display_name: eHealth
+    value: eHealth
+  - display_name: Education - eLearning
+    value: Education - eLearning
 centre:
   - display_name: All
     value: ''
