@@ -119,7 +119,7 @@
 									<h4>{{ T "uoc_ri_cercador_cercapersector" }}</h4>
 									<ul class="tag-list centre">
 										{{ range $i, $el := .Params.sector_productiu }}
-											<li>{{$el.value}}</li>
+											<li>{{$el.display_name}}</li>
 										{{ end }}
 									</ul>
 								</div>
