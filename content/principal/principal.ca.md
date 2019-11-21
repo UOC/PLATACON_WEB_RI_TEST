@@ -76,12 +76,22 @@ ods:
     display_name: Aliança pel objectius
     value: Aliança pel objectius
 sector_productiu:
-  - display_name: Sector Productiu 1
-    value: Sector Productiu 1
-  - display_name: Sector Productiu 2
-    value: Sector Productiu 2
-  - display_name: Sector Productiu 3
-    value: Sector Productiu 3
+  - display_name: Tots
+    value: ''
+  - display_name: 'Art, Turisme i Llengües'
+    value: 'Art, Turisme i Llengües'
+  - display_name: Dret i governança
+    value: Dret i governança
+  - display_name: Societat en xarxa
+    value: Societat en xarxa
+  - display_name: 'Economia, empresa i TIC'
+    value: 'Economia, empresa i TIC'
+  - display_name: Indústria 4.0
+    value: Indústria 4.0
+  - display_name: Educació - eLearning
+    value: Educació - eLearning
+  - display_name: Salut - eHealth
+    value: Salut - eHealth
 centre:
   - display_name: Tota la UOC
     value: ''
