@@ -168,5 +168,15 @@
       "display_name": "Estudis",
       "value": "Estudis"
     }
+  ],
+  "albiraContent" : [
+    {
+      "display_name" : "Project Manager",
+      "value": "Albira Solutions 1"
+    },
+    {
+      "display_name" : "Responsable técnic",
+      "value" : "Albira Solutions 2"
+    }
   ]
 }
