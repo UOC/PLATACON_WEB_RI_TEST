@@ -94,5 +94,7 @@ centre:
 albiraContent:
   - display_name: Albira Solutions 1 ES
     value: Albira Solutions 1 ES
+  - display_name: Albira Solutiuons 2 ES
+    value: Albira Solutions 2 Es
 ---
 
