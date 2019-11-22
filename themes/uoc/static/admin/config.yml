@@ -236,6 +236,18 @@ collections: # A list of collections the CMS should be able to edit
         create: true
         fields:
           - {label: title, name: title, widget: string}
+          - label: sectors_productius
+            name : sector_productiu
+            widget : list
+            fields : 
+              - {label: display_name, name: display_name, widget: string }
+              - {label: value, name: value, widget: string }
+          - label: centre
+            name : centre
+            widget : list
+            fields : 
+              - {label: display_name, name: display_name, widget: string }
+              - {label: value, name: value, widget: string }
           - label: solucions_tecnologiques
             name : solucions_tecnologiques
             widget : list
@@ -271,6 +283,18 @@ collections: # A list of collections the CMS should be able to edit
         create: true
         fields:
           - {label: title, name: title, widget: string}
+          - label: sectors_productius
+            name : sector_productiu
+            widget : list
+            fields : 
+              - {label: display_name, name: display_name, widget: string }
+              - {label: value, name: value, widget: string }
+          - label: centre
+            name : centre
+            widget : list
+            fields : 
+              - {label: display_name, name: display_name, widget: string }
+              - {label: value, name: value, widget: string }
           - label: solucions_tecnologiques
             name : solucions_tecnologiques
             widget : list
@@ -306,6 +330,18 @@ collections: # A list of collections the CMS should be able to edit
         create: true
         fields:
           - {label: title, name: title, widget: string}
+          - label: sectors_productius
+            name : sector_productiu
+            widget : list
+            fields : 
+              - {label: display_name, name: display_name, widget: string }
+              - {label: value, name: value, widget: string }
+          - label: centre
+            name : centre
+            widget : list
+            fields : 
+              - {label: display_name, name: display_name, widget: string }
+              - {label: value, name: value, widget: string }
           - label: solucions_tecnologiques
             name : solucions_tecnologiques
             widget : list
