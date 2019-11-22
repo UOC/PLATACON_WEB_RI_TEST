@@ -44,4 +44,4 @@ name = "dev"
 URL = "s3://uocwebrisupport?region=eu-west-1"
 
 [outputs]
-  page = ["HTML"]
+  page = ["HTML","json"]
