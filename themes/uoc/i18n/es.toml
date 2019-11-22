@@ -105,9 +105,16 @@
 [uoc_ri_cercador_filtres_unesco] other = "Código UNESCO"
 [uoc_ri_cercador_filtres_centre] other = "Selecciona el centro:"
 [uoc_ri_cercador_filtres_visualitzacio] other = "Visualiza los resultados por:"
+[uoc_ri_cercador_filtres_sectors_productius] other = "Sectores productivos"
 
 [uoc_ri_cercador_grups] other = "Grupos de investigación"
 [uoc_ri_cercador_investigadors] other = "Investigadores"
+[uoc_ri_cercador_solucions] other = "Soluciones Innovadoras"
+[uoc_ri_cercador_solucions_tec] other ="Soluciones Tecnologicas"
+[uoc_ri_cercador_solucions_patents] other = "Patentes"
+[uoc_ri_cercador_solucions_serveis] other = "Servicio a la empresa"
+[uoc_ri_cercador_spin_off] other = "Spin-Offs"
+
 
 [uoc_ri_mapaambits_cercaper_especialitzacio] other = "Busca por ámbito de especialización"
 [uoc_ri_mapaambits_cercaper_ambit] other = "Busca por ámbito"

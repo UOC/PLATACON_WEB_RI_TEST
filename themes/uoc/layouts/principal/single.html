@@ -152,13 +152,13 @@
 									<div class="wrap-richText">
 										<section class="card-home">
 											<div class="row">
-												{{ range $i, $sequence :=  (seq 4) }}
+												{{ range $i, $c :=  .Params.centre }}
 													<div class="col-xs-12 col-md-3">
 														<div class="card card--brand-corporate">
 															<div class="card__contents">
-																<h3>Nulla vel accumsan dui</h3>
+																<h3>{{$c.display_name}}</h3>
 																<p>Centre de recerca especialitzat el’estudi d’internet i dels efectes de la interacció de les tecnologies digitals amb l’activitat humana.</p>
-																<a href="" class="card-link"><span class="icon icon--external-link"></span></a>
+																<a href="/centre/{{ . | urlize }}" class="card-link"><span class="icon icon--external-link"></span></a>
 															</div>
 														</div>
 													</div>
@@ -180,6 +180,7 @@
 	<script src="/js/search_home.js"></script>
 	<script type="text/javascript">
 		var cercadorURL = '{{ "cercador/cercador.html" | relLangURL }}';
+      var cercadorSectorURL = '{{ "solucions/solucions.html" | relLangURL }}';
 	</script>
 </body>
 

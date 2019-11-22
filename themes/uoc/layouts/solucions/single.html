@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="{{.Site.Language.Lang}}">
+
+<head>
+  {{ partial "head.html" . }}
+  {{ $solucions_tecnologiques := .Params.solucions_tecnologiques}}
+  {{ $patents := .Params.patents }}
+  {{ $serveis := .Params.serveis }}
+  {{ $spin_offs := .Params.spin_offs }}
+</head>
+
+<body>
+  {{ partial "header.html" . }}
+  <div class="site-wrapper"> 
+    <section data-tab-system="" class="filters-main search-list-collapse">
+      <div class="row">
+        <div class="filters-main-block">
+          <div class="filters-main__box border-green box-green col-xs-12">
+            <a id="tab-1" href="#tab-content-1" role="tab" aria-controls="tab-content-1" aria-selected="true" data-tab-trigger="" class="tab is-active cercadorFiltres">
+              <h3>{{ T "uoc_ri_cercadortab_filtres" }}</h3>
+            </a>
+          </div>
+          <div class="filters-main__box border-green box-green-selected col-xs-12">
+            <a id="tab-2" href="#tab-content-2" role="tab" aria-controls="tab-content-2" aria-selected="true" data-tab-trigger="" class="tab is-active cercadorFiltres">
+              <h3>{{ T "uoc_ri_cercadortab_sectors" }}</h3>
+            </a>
+          </div>
+          <div class="filters-main__box border-green col-xs-12">
+            <a id="tab-3" href="#tab-content-3" role="tab" aria-controls="tab-content-3" aria-selected="false" data-tab-trigger="" class="tab cercadorTextual">
+              <h3>{{ T "uoc_ri_cercadortab_text" }}</h3>
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div id="tab-content-1" data-tab-content="" role="tabpanel" aria-labelledby="tab-1" aria-hidden="true" class="tab-content is-active cercadorFiltres">
+            <section data-tab-system="" class="filters-list-cercador mT60">
+              <div class="row">
+                <div class="col-xs-6">
+                  <p class="search"></p>
+                </div>
+                <div class="col-xs-6">
+                  <div class="list-vist">
+                    <ul>
+                      <li class="vist-column js-Column active"><a href=""><span class="icon icon--list-full"></span></a></li>
+                      <li class="vist-list js-List"><a href=""><span class="icon icon--list-simple"></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-lg-3">
+                  <div class="collapse-filter">
+                    <form action="">
+                      <p>{{ T "uoc_ri_cercador_cercaper" }}<span class="filters-mobile"><a href="">{{ T "uoc_ri_cercador_esborrafiltres" }} </a><span class="icon icon--arrow-down js-displayMobile"></span></span></p>
+                      <div class="collapse">
+                        <div class="head-collapse js-collapse js-collapseAll">
+                          <p>
+                            <a href="#collapse-sector_productiu" aria-expanded="false" class="js-collapseClick">
+                              <span class="icon icon--arrow-down"></span>{{ T "uoc_ri_cercador_filtres_sectors_productius" }}
+                            </a>
+                          </p>
+                        </div>
+                        <div id="collapse-sector_productiu" class="contentCollapse">
+                          {{ range $index, $el := .Params.sector_productiu }}
+                          <div class="wrap-input">
+                            <fieldset>
+                              <input role="group" aria-label="input{{$index}}" type="checkbox" id="sector_productiu_{{$index}}" value="{{$el.value}}">
+                              <label aria-label="label{{$index}}" for="sector_productiu_{{$index}}">{{$el.display_name}}</label>
+                            </fieldset>
+                          </div>
+                          {{ end }}
+                        </div>
+                      </div>
+                    </form>
+                    <div class="general-filter centre">
+                      <form action="">
+                        <p>{{ T "uoc_ri_cercador_filtres_centre"}}</p>
+                        {{ range $index, $element := .Params.centre }}
+                        <div class="wrap-input">
+                          <fieldset>
+                            <input role="group" aria-label="{{$element.display_name}}" type="checkbox" id="center_{{$index}}" value="{{$element.value}}">
+                            <label aria-label="{{$element.display_name}}" for="center_{{$index}}">{{$element.display_name}}</label>
+                          </fieldset>
+                        </div>
+                        {{ end }}
+                      </form>
+                    </div>
+                    <div class="general-filter visualitzacio">
+                      <form action="">
+                        <p>{{ T "uoc_ri_cercador_filtres_visualitzacio"}}</p>
+                        <!-- <div class="wrap-input">
+                          <fieldset>
+                            <input role="group" aria-label="Grups de recerca" type="checkbox" id="visual_1" value="grup">
+                            <label aria-label="Grups de recerca" for="visual_1">{{ T "uoc_ri_cercador_grups"}}</label>
+                          </fieldset>
+                        </div>
+                        <div class="wrap-input">
+                          <fieldset>
+                            <input role="group" aria-label="Investigadors" type="checkbox" id="visual_2" value="fitxa">
+                            <label aria-label="Investigadors" for="visual_2">{{ T "uoc_ri_cercador_investigadors"}}</label>
+                          </fieldset>
+                        </div> -->
+                      </form>
+                      <p class="wrap-btn"><a href="#" title="Enlace siguiente" aria-label="Cercar" rel="next" class="btn btn--primary uoc_submitSearch">{{ T "uoc_ri_cercador_cercar"}}</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-lg-9">
+                  <div class="collapse grup results">
+                    <div class="head-collapse js-collapse">
+                      <p><a href="#collapse3" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions"}}<span class="icon icon--arrow-down"></span></a></p>
+                    </div>
+                    {{if gt (len $solucions_tecnologiques) 0}}
+                    <div class="head-collapse subCollapse js-collapse">
+                      <p><a href="#collapse4" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_tec"}}<span class="icon icon--arrow-down"></span></a></p>
+                    </div>
+                    <div id="collapse4" class="contentCollapse show ajaxLoading solucionsTecResults">
+                      <div class="card-in-acordeon js-changeVist">
+                        <div class="row">
+                          {{ range $i, $solTec :=  $solucions_tecnologiques }}
+                          <div class="col-xs-12 col-md-4">
+                            <div class="uoc_card_placeholder">
+                              <img src="{{$solTec.img_background}}"/>
+                              <div class="title">{{$solTec.display_name}}</div>
+                              <div class="line-long"></div>
+                              <div class="line-short"></div>
+                              <div class="line-medium"></div>
+                            </div>
+                          </div>
+                          {{ end }}
+                        </div>
+                      </div>
+                    </div>
+                    {{end}}
+                    {{if gt (len $patents ) 0}}
+                    <div class="head-collapse subCollapse js-collapse">
+                      <p><a href="#collapse5" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_patents"}}<span class="icon icon--arrow-down"></span></a></p>
+                    </div>
+                    <div id="collapse5" class="contentCollapse show ajaxLoading solucionsPatentsResults">
+                      <div class="card-in-acordeon js-changeVist">
+                        <div class="row">
+                          {{ range $i, $pat :=  $patents }}
+                          <div class="col-xs-12 col-md-4">
+                            <div class="uoc_card_placeholder">
+                              <img src="{{$pat.img_background}}"/>
+                              <div class="title">{{$pat.display_name}}</div>
+                              <div class="line-long"></div>
+                              <div class="line-short"></div>
+                              <div class="line-medium"></div>
+                            </div>
+                          </div>
+                          {{ end }}
+                        </div>
+                      </div>
+                    </div>
+                    {{end}}
+                    {{if gt (len $serveis ) 0}}
+                    <div class="head-collapse subCollapse js-collapse">
+                        <p><a href="#collapse6" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_serveis"}}<span class="icon icon--arrow-down"></span></a></p>
+                      </div>
+                    <div id="collapse6" class="contentCollapse show ajaxLoading solucionsServeissResults">
+                      <div class="card-in-acordeon js-changeVist">
+                        <div class="row">
+                          {{ range $i, $serv :=  $serveis }}
+                          <div class="col-xs-12 col-md-4">
+                            <div class="uoc_card_placeholder">
+                                <img src="{{$serv.img_background}}"/>
+                              <div class="title">{{$serv.display_name}}</div>
+                              <div class="line-long"></div>
+                              <div class="line-short"></div>
+                              <div class="line-medium"></div>
+                            </div>
+                          </div>
+                          {{ end }}
+                        </div>
+                      </div>
+                    </div>
+                    {{end}}
+                  </div>
+                  {{if gt (len $spin_offs ) 0}}
+                  <div class="collapse fitxa results">
+                    <div class="head-collapse js-collapse">
+                      <p><a href="#collapse8" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_spin_off"}}<span class="icon icon--arrow-down"></span></a></p>
+                      <p class="result"></p>
+                    </div>
+                    <div id="collapse8" class="contentCollapse show ajaxLoading fitxaResults">
+                      <div class="card-in-acordeon js-changeVist">
+                        <div class="row">
+                          {{ range $i, $spin :=  $spin_offs }}
+                          <div class="col-xs-12 col-md-4">
+                            <div class="uoc_card_placeholder">
+                              <div class="title">{{$spin.display_name}}</div>
+                              <div class="line-long"></div>
+                              <div class="line-short"></div>
+                              <div class="line-medium"></div>
+                            </div>
+                          </div>
+                          {{ end }}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {{ end }}
+                </div>
+              </div>
+              
+            </section>
+          </div>
+          <div id="tab-content-3" data-tab-content="" role="tabpanel" aria-labelledby="tab-3" aria-hidden="false" class="tab-content cercadorTextual">
+            <form action="" class="search-form-container filters-main-search">
+              <div class="full-width search-container-top">
+                <div class="col-xs-2 col-md-1"><span class="icon-container hover--dynamic-hover bg-grey">
+                  <input type="submit" value="Cerca" name="search_sbm" title="Buscar" onclick="" class="w100-inline-block"><span class="icon icon--search"></span></span>
+                </div>
+                <div class="col-xs-10 col-md-11">
+                  <input type="search" id="search" aria-label="Paraules a cercar" placeholder="Paraules a cercar" name="searchWords" tabindex="0" value="" title="Paraules a cercar" class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{ partial "footer.html" . }}
+  </div>
+  {{ partial "ri_js_imports.html" . }}
+<!--script src="/js/search.js"></script-->
+</body>
+</html>

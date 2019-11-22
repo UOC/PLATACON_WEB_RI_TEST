@@ -105,9 +105,15 @@
 [uoc_ri_cercador_filtres_unesco] other = "UNESCO code"
 [uoc_ri_cercador_filtres_centre] other = "Select a centre:"
 [uoc_ri_cercador_filtres_visualitzacio] other = "View results by:"
+[uoc_ri_cercador_filtres_sectors_productius] other = "Productive Sectors"
 
 [uoc_ri_cercador_grups] other = "Research groups"
 [uoc_ri_cercador_investigadors] other = "Researchers"
+[uoc_ri_cercador_solucions] other = "Innovate Solutions"
+[uoc_ri_cercador_solucions_tec] other ="Technology Solutions"
+[uoc_ri_cercador_solucions_patents] other = "Patents"
+[uoc_ri_cercador_solucions_serveis] other = "Business Service"
+[uoc_ri_cercador_spin_off] other = "Spin-Offs"
 
 [uoc_ri_mapaambits_cercaper_especialitzacio] other = "Search by specialized areas"
 [uoc_ri_mapaambits_cercaper_ambit] other = "Search by areas"
