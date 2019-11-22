@@ -1,5 +1,4 @@
-{
-	"ambits_especialitzacio" : [
+"ambits_especialitzacio" : [
 		{"display_name" : "Todos", "value" : ""},
 		{"display_name" : "Educación y TIC", "value" : "Educación y TIC"},
 		{"display_name" : "Sociedad en red", "value" : "Sociedad en red"},
@@ -38,4 +37,3 @@
 		{"display_name" : "e-Learn Center", "value" : "e-Learn Center"},
 		{"display_name" : "Estudis", "value" : "Estudis"}
 	]
-}
