@@ -265,76 +265,76 @@ collections: # A list of collections the CMS should be able to edit
               - { label : display_name, name: display_name, widget: string }
               - { label : value, name: value, widget: string }
               - { label : img_background, name : img_background, widget : image }
-        - label : "ES"
-          name: "es"
-          file: "content/solucions/solucions.es.md"
-          create: true
-          fields:
-            - {label: title, name: title, widget: string}
-            - label: solucions_tecnologiques
-              name : solucions_tecnologiques
-              widget : list
-              fields : 
-                - {label: display_name, name: display_name, widget: string }
-                - {label: value, name: value, widget: string }
-                - { label : img_background, name : img_background, widget : image }
-            - label: patents
-              name : patents 
-              widget: list 
-              fields : 
-                - { label : display_name, name: display_name, widget: string }
-                - { label : value, name: value, widget: string }
-                - { label : color, name : color, widget : string }
-                - { label : img_background, name : img_background, widget : image }
-            - label: serveis
-              name : serveis 
-              widget: list
-              fields : 
-                - { label : display_name, name: display_name, widget: string }
-                - { label : value, name: value, widget: string }
-                - { label : img_background, name : img_background, widget : image }
-            - label: spin_offs
-              name : spin_offs 
-              widget: list
-              fields : 
-                - { label : display_name, name: display_name, widget: string }
-                - { label : value, name: value, widget: string }
-                - { label : img_background, name : img_background, widget : image }
-        - label : "EN"
-          name: "en"
-          file: "content/solucions/solucions.en.md"
-          create: true
-          fields:
-            - {label: title, name: title, widget: string}
-            - label: solucions_tecnologiques
-              name : solucions_tecnologiques
-              widget : list
-              fields : 
-                - {label: display_name, name: display_name, widget: string }
-                - {label: value, name: value, widget: string }
-                - { label : img_background, name : img_background, widget : image }
-            - label: patents
-              name : patents 
-              widget: list 
-              fields : 
-                - { label : display_name, name: display_name, widget: string }
-                - { label : value, name: value, widget: string }
-                - { label : color, name : color, widget : string }
-                - { label : img_background, name : img_background, widget : image }
-            - label: serveis
-              name : serveis 
-              widget: list
-              fields : 
-                - { label : display_name, name: display_name, widget: string }
-                - { label : value, name: value, widget: string }
-                - { label : img_background, name : img_background, widget : image }
-            - label: spin_offs
-              name : spin_offs 
-              widget: list
-              fields : 
-                - { label : display_name, name: display_name, widget: string }
-                - { label : value, name: value, widget: string }
-                - { label : img_background, name : img_background, widget : image }
+      - label : "ES"
+        name: "es"
+        file: "content/solucions/solucions.es.md"
+        create: true
+        fields:
+          - {label: title, name: title, widget: string}
+          - label: solucions_tecnologiques
+            name : solucions_tecnologiques
+            widget : list
+            fields : 
+              - {label: display_name, name: display_name, widget: string }
+              - {label: value, name: value, widget: string }
+              - { label : img_background, name : img_background, widget : image }
+          - label: patents
+            name : patents 
+            widget: list 
+            fields : 
+              - { label : display_name, name: display_name, widget: string }
+              - { label : value, name: value, widget: string }
+              - { label : color, name : color, widget : string }
+              - { label : img_background, name : img_background, widget : image }
+          - label: serveis
+            name : serveis 
+            widget: list
+            fields : 
+              - { label : display_name, name: display_name, widget: string }
+              - { label : value, name: value, widget: string }
+              - { label : img_background, name : img_background, widget : image }
+          - label: spin_offs
+            name : spin_offs 
+            widget: list
+            fields : 
+              - { label : display_name, name: display_name, widget: string }
+              - { label : value, name: value, widget: string }
+              - { label : img_background, name : img_background, widget : image }
+      - label : "EN"
+        name: "en"
+        file: "content/solucions/solucions.en.md"
+        create: true
+        fields:
+          - {label: title, name: title, widget: string}
+          - label: solucions_tecnologiques
+            name : solucions_tecnologiques
+            widget : list
+            fields : 
+              - {label: display_name, name: display_name, widget: string }
+              - {label: value, name: value, widget: string }
+              - { label : img_background, name : img_background, widget : image }
+          - label: patents
+            name : patents 
+            widget: list 
+            fields : 
+              - { label : display_name, name: display_name, widget: string }
+              - { label : value, name: value, widget: string }
+              - { label : color, name : color, widget : string }
+              - { label : img_background, name : img_background, widget : image }
+          - label: serveis
+            name : serveis 
+            widget: list
+            fields : 
+              - { label : display_name, name: display_name, widget: string }
+              - { label : value, name: value, widget: string }
+              - { label : img_background, name : img_background, widget : image }
+          - label: spin_offs
+            name : spin_offs 
+            widget: list
+            fields : 
+              - { label : display_name, name: display_name, widget: string }
+              - { label : value, name: value, widget: string }
+              - { label : img_background, name : img_background, widget : image }
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
     editor:
