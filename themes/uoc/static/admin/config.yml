@@ -140,6 +140,10 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Key", name: "display_name", widget: string}
               - {label: "Value", name: "value", widget: string}
               - {label: "Selector custom", name: "selector", widget: "selector_custom"}
+          - label: "Albira Content2"
+            name: "albiraContent2"
+            widget: selector_custom
+                    
 #  - label: "Dummy - PoC widgets"
 #    name: "dummy"
 #    folder: "dummy"
