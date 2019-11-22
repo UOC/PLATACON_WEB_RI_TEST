@@ -228,7 +228,6 @@ collections: # A list of collections the CMS should be able to edit
               - {label: value, name: value, widget: string}
   - name: "solucions"
     label: "Solucions"
-    folder: "content/solucions"
     files:
       - label : "CA"
         name: "ca"
