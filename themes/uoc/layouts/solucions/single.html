@@ -166,8 +166,9 @@
                           {{ range $i, $serv :=  $serveis }}
                           {{ if isset $serv "value" }}
                           <div class="col-xs-12 col-md-4">
+                            <a href="" onclick="" class="card-absolute-link"></a>
                             <div class="uoc_card_placeholder">
-                                <img src="{{$serv.img_background}}"/>
+                              <img src="{{$serv.img_background}}"/>
                               <div class="title">{{$serv.display_name}}</div>
                               <div class="line-long"></div>
                               <div class="line-short"></div>
@@ -231,5 +232,11 @@
   </div>
   {{ partial "ri_js_imports.html" . }}
 <!--script src="/js/search.js"></script-->
+<script type="text/javascript">
+  $('.uoc_card_placeholder').click(function(event){
+    console.log('clicking solucio tecnologica--->',event);
+    //coger nombre del archivo y añadirlo a {{ "file_name" | relLangURL }}
+  });
+</script>
 </body>
 </html>

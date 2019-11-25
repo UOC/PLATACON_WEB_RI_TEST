@@ -38,7 +38,7 @@
 					</div>
 					<div class="filters-main__box border-green">
 						<h3>{{ T "uoc_ri_cercadortab_sectors" }}</h3>
-						<p><a id="tab-3" href="#tab-content-3" role="tab" aria-controls="tab-content-3" aria-selected="true" data-tab-trigger="" class="tab cercadorFiltres"><span class="icon icon--arrow-down"></span></p>
+						<p><a id="tab-3" href="#tab-content-3" role="tab" aria-controls="tab-content-3" aria-selected="true" data-tab-trigger="" class="tab cercaSectors"><span class="icon icon--arrow-down"></span></p>
 					</div>
 					<div class="filters-main__box border-green">
 						<h3>{{ T "uoc_ri_cercadortab_text" }}</h3>
@@ -113,11 +113,11 @@
 							</div>
 						</form>
 					</div>
-					<div id="tab-content-3" data-tab-content="" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true" class="filters-main__content tab-content cercaFiltres">
+					<div id="tab-content-3" data-tab-content="" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true" class="filters-main__content tab-content cercaSectors">
 						<form action="" class="radio-accordeon search-form-container">
 								<div class="more-filter-options">
 									<h4>{{ T "uoc_ri_cercador_cercapersector" }}</h4>
-									<ul class="tag-list centre">
+									<ul class="tag-list sector_productiu">
 										{{ range $i, $el := .Params.sector_productiu }}
 											<li>{{$el.display_name}}</li>
 										{{ end }}
@@ -180,7 +180,7 @@
 	<script src="/js/search_home.js"></script>
 	<script type="text/javascript">
 		var cercadorURL = '{{ "cercador/cercador.html" | relLangURL }}';
-      var cercadorSectorURL = '{{ "solucions/solucions.html" | relLangURL }}';
+        var cercadorSectorURL = '{{ "solucions/solucions.html" | relLangURL }}';
 	</script>
 </body>
 

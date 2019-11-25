@@ -8,13 +8,18 @@ function initCercaHome(){
 	$(".tab-content.cercaFiltres form").on('submit', function(e){
 		e.preventDefault();
 		searchParams=getFormValues();
-		window.location = buildURL(searchParams);
+		window.location = buildURL(searchParams,'filtres');
 	});
 	$(".tab-content.cercaTextual form").on('submit', function(e){
 		e.preventDefault();
 		searchParams={};
 		searchParams.s = $(".tab-content.cercaTextual form input#search").val();
-		window.location = buildURL(searchParams);
+		window.location = buildURL(searchParams,'text');
+	});
+	$(".tab-content.cercaSectors form").on('submit', function(e){
+		e.preventDefault();
+		searchParams=getFormValues();
+		window.location = buildURL(searchParams,'sectors');
 	});
 }
 function getFormValues(){
@@ -46,9 +51,19 @@ function getFormValues(){
 			delete searchParams["centre"];
 		}
 	}
+	if($(".tab-content.cercaSectors .tag-list.sector_productiu .active").length>0){									//sector_productiu checked
+		searchParams.sector_productiu = [];
+		$(".tab-content.cercaSectors .tag-list.sector_productiu .active").each(function( index ) {
+			searchParams.sector_productiu.push($(this).text());
+		});	
+		if(searchParams.sector_productiu.includes($($(".tab-content.cercaSectors .tag-list.sector_productiu li")[0]).text())){
+			delete searchParams["sector_productiu"];
+		}
+	}
+	console.log('gettingFormValues in searchParams in search_home js value...',searchParams);
 	return searchParams;
 }
-function buildURL(searchParams){
+function buildURL(searchParams,redir2){
 	//var cercadorURL comes from HUGO layout for home page
 	if(searchParams!=null){
 		var queryString = "?";
@@ -56,8 +71,14 @@ function buildURL(searchParams){
 			queryString+=key+"="+searchParams[key]+"&";
 		}
 		queryString = queryString.substring(0,queryString.length-1);
-		cercadorURL += queryString;	
+		if(redir2 != 'sectors'){
+			cercadorURL += queryString;
+			return cercadorURL;
+		} else {
+			cercadorSectorURL += queryString;
+			return cercadorSectorURL;
+		}
 	}
-	return cercadorURL;
+	return;
 	
 }
