@@ -142,17 +142,17 @@ function getCurrentLanguage(){
 }
 
 function loadTab2Search(tab){
-	console.log('showing tab number...#tab-content-',tab)
-	console.log('tab-content',$("div.filters-main__box"));
+	//console.log('showing tab number...#tab-content-',tab)
+	//console.log('tab-content',$("div.filters-main__box"));
 	var filtersBox = $("div.filters-main__box");
 	for(var filter = 0 ; filter <= (filtersBox.length - 1) ;filter ++){
-		console.log('filtersBox[filter]-->',filtersBox[filter]);
+		//console.log('filtersBox[filter]-->',filtersBox[filter]);
 		if(filter==(tab-1)){
 			filtersBox[filter].classList.add("box-green-selected")
 		} else {
 			filtersBox[filter].classList.remove("box-green-selected")
 		}
-		console.log('filter-->',filter);
+		//console.log('filter-->',filter);
 	}
 	$("#tab-content-"+tab).show().siblings("div").hide();
 }
