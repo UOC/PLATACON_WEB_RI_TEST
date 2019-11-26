@@ -1,8 +1,14 @@
 { 
     "title" : "R&I a la UOC",
     "sector_productiu" : [
-        {"display_name" : "sector_productiu_1", "value" : "sector_productiu_1"},
-        {"display_name" : "sector_productiu_2", "value" : "sector_productiu_2"}
+        {"display_name" : "All", "value" : ""},
+        {"display_name" : "Art, Turisms and Languages", "value" : "Art, Turisms and Languages"},
+        {"display_name" : "Law and governance", "value" : "Law and governance"},
+        {"display_name" : "Network society", "value" : "Network society"},
+        {"display_name" : "Economy, business and ICT", "value" : "Economy, business and ICT"},
+        {"display_name" : "Industry 4.0", "value" : "Industry 4.0"},
+        {"display_name" : "Education - eLearning", "value" : "Education - eLearning"},
+        {"display_name" : "eHealth", "value" : "eHealth"}
     ],
     "centre" : [
         {"display_name" : "Tota la UOC", "value" : ""}, 

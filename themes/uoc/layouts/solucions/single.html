@@ -21,7 +21,7 @@
             </a>
           </div>
           <div class="filters-main__box border-green box-green-selected col-xs-12">
-            <a id="tab-2" href="#tab-content-2" role="tab" aria-controls="tab-content-2" aria-selected="true" data-tab-trigger="" class="tab is-active cercadorFiltres">
+            <a id="tab-2" href="#tab-content-2" role="tab" aria-controls="tab-content-2" aria-selected="true" data-tab-trigger="" class="tab is-active cercadorSectors">
               <h3>{{ T "uoc_ri_cercadortab_sectors" }}</h3>
             </a>
           </div>
@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="col-xs-12">
-          <div id="tab-content-1" data-tab-content="" role="tabpanel" aria-labelledby="tab-1" aria-hidden="true" class="tab-content is-active cercadorFiltres">
+          <div id="tab-content-2" data-tab-content="" role="tabpanel" aria-labelledby="tab-1" aria-hidden="true" class="tab-content is-active cercadorSectors">
             <section data-tab-system="" class="filters-list-cercador mT60">
               <div class="row">
                 <div class="col-xs-6">
@@ -86,18 +86,18 @@
                     <div class="general-filter visualitzacio">
                       <form action="">
                         <p>{{ T "uoc_ri_cercador_filtres_visualitzacio"}}</p>
-                        <!-- <div class="wrap-input">
+                        <div class="wrap-input">
                           <fieldset>
-                            <input role="group" aria-label="Grups de recerca" type="checkbox" id="visual_1" value="grup">
-                            <label aria-label="Grups de recerca" for="visual_1">{{ T "uoc_ri_cercador_grups"}}</label>
+                            <input role="sols_innov" aria-label='{{ T "uoc_ri_cercador_solucions" }}' type="checkbox" id="visual_1" value="sols_innov">
+                            <label aria-label='{{ T "uoc_ri_cercador_solucions" }}' for="visual_1">{{ T "uoc_ri_cercador_solucions"}}</label>
                           </fieldset>
                         </div>
                         <div class="wrap-input">
                           <fieldset>
-                            <input role="group" aria-label="Investigadors" type="checkbox" id="visual_2" value="fitxa">
-                            <label aria-label="Investigadors" for="visual_2">{{ T "uoc_ri_cercador_investigadors"}}</label>
+                            <input role="spin_offs" aria-label='{{ T "uoc_ri_cercador_spin_off"}}' type="checkbox" id="visual_2" value="spin_offs">
+                            <label aria-label='{{ T "uoc_ri_cercador_spin_off"}}' for="visual_2">{{ T "uoc_ri_cercador_spin_off"}}</label>
                           </fieldset>
-                        </div> -->
+                        </div>
                       </form>
                       <p class="wrap-btn"><a href="#" title="Enlace siguiente" aria-label="Cercar" rel="next" class="btn btn--primary uoc_submitSearch">{{ T "uoc_ri_cercador_cercar"}}</a></p>
                     </div>

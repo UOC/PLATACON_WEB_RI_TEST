@@ -8,18 +8,18 @@ function initCercaHome(){
 	$(".tab-content.cercaFiltres form").on('submit', function(e){
 		e.preventDefault();
 		searchParams=getFormValues();
-		window.location = buildURL(searchParams,'filtres');
+		window.location = buildURL(searchParams,'1');
 	});
 	$(".tab-content.cercaTextual form").on('submit', function(e){
 		e.preventDefault();
 		searchParams={};
 		searchParams.s = $(".tab-content.cercaTextual form input#search").val();
-		window.location = buildURL(searchParams,'text');
+		window.location = buildURL(searchParams,'3');
 	});
 	$(".tab-content.cercaSectors form").on('submit', function(e){
 		e.preventDefault();
 		searchParams=getFormValues();
-		window.location = buildURL(searchParams,'sectors');
+		window.location = buildURL(searchParams,'2');
 	});
 }
 function getFormValues(){
@@ -63,22 +63,19 @@ function getFormValues(){
 	console.log('gettingFormValues in searchParams in search_home js value...',searchParams);
 	return searchParams;
 }
-function buildURL(searchParams,redir2){
+function buildURL(searchParams,target){
 	//var cercadorURL comes from HUGO layout for home page
 	if(searchParams!=null){
 		var queryString = "?";
 		for (var key in searchParams) {
 			queryString+=key+"="+searchParams[key]+"&";
 		}
-		queryString = queryString.substring(0,queryString.length-1);
-		if(redir2 != 'sectors'){
-			cercadorURL += queryString;
-			return cercadorURL;
-		} else {
-			cercadorSectorURL += queryString;
-			return cercadorSectorURL;
-		}
+		queryString+="target="+target.trim()+"&";
+		queryString = queryString.substring(0,queryString.length-1);		
+		cercadorURL += queryString;
+		//return cercadorURL;
+		
 	}
-	return;
+	return cercadorURL;
 	
 }

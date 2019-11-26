@@ -2,7 +2,8 @@
 
 $(document).ready(function () {
     var url = location.href.replace(/\/$/, "");
-
+    console.log('url cliqued...',url);
+    console.log('location cliqued...',location);
     if (location.hash) {
         var hash = url.split("#");
         $('#myTab a[href="#' + hash[1] + '"]').tab("show");

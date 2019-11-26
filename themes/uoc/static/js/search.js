@@ -93,12 +93,14 @@ jQuery(document).ready(function ($) {
 			s: freeTextQuery
 		};
 		$(".tab.cercadorFiltres h3").click();
+		$(".tab.cercadorSectors h3").click();
 		querySearchEngine(searchParams);
 		
 	});
 	searchParams=parseQueryString(location.search);
 	querySearchEngine(searchParams);				//All results in first load
-	console.log(searchParams);
+	console.log('incoming Params :: ',searchParams);
+	loadTab2Search(searchParams["target"]);
 	$(document).on('click', ".pagination__item", function(e){
 		$(".pagination__item").unbind();
 		e.stopImmediatePropagation();
@@ -137,6 +139,22 @@ function getCurrentLanguage(){
 		lang = 'ca';
 	}
 	return lang;
+}
+
+function loadTab2Search(tab){
+	console.log('showing tab number...#tab-content-',tab)
+	console.log('tab-content',$("div.filters-main__box"));
+	var filtersBox = $("div.filters-main__box");
+	for(var filter = 0 ; filter <= (filtersBox.length - 1) ;filter ++){
+		console.log('filtersBox[filter]-->',filtersBox[filter]);
+		if(filter==(tab-1)){
+			filtersBox[filter].classList.add("box-green-selected")
+		} else {
+			filtersBox[filter].classList.remove("box-green-selected")
+		}
+		console.log('filter-->',filter);
+	}
+	$("#tab-content-"+tab).show().siblings("div").hide();
 }
 
 /***********************************************************************
@@ -179,6 +197,34 @@ function getSearchFormValues(){
 			searchParams.centre.push($(this).val());
 		});	
 	}
+
+	if($(".general-filter.solucions_tecnologiques input:checked").length>0){								//sol_tec checked
+		searchParams.solucions_tecnologiques = [];
+		$(".general-filter.solucions_tecnologiques input:checked").each(function( index ) {
+			searchParams.solucions_tecnologiques.push($(this).val());
+		});	
+	}
+
+	if($(".general-filter.patents input:checked").length>0){								//patents checked
+		searchParams.patents = [];
+		$(".general-filter.patents input:checked").each(function( index ) {
+			searchParams.patents.push($(this).val());
+		});	
+	}
+
+	if($(".general-filter.serveis input:checked").length>0){								//serveis checked
+		searchParams.serveis = [];
+		$(".general-filter.serveis input:checked").each(function( index ) {
+			searchParams.serveis.push($(this).val());
+		});	
+	}
+
+	if($(".general-filter.spin_offs input:checked").length>0){								//spin-offs checked
+		searchParams.spin_offs = [];
+		$(".general-filter.spin_offs input:checked").each(function( index ) {
+			searchParams.spin_offs.push($(this).val());
+		});	
+	}
 	if($(".general-filter.visualitzacio input:checked").length>0){						//Visualitza per checked
 		searchParams.visualitzacio = [];
 		$(".general-filter.visualitzacio input:checked").each(function( index ) {
@@ -188,6 +234,8 @@ function getSearchFormValues(){
 		searchParams.visualitzacio = [];
 		searchParams.visualitzacio.push("grup");
 		searchParams.visualitzacio.push("fitxa");
+		searchParams.visualitzacio.push("sol_innov");
+		searchParams.visualitzacio.push("spin_offs");
 	}
 }
 
@@ -206,7 +254,7 @@ function buildQuery(searchParams){
 	}
 	return  endpointURI+queryString;
 }
-function querySearchEngine(searchParams){
+function querySearchEngine(searchParams,target){
 	var fitxaResults = $(".fitxaResults .row");
 	var grupResults = $(".grupResults .row");
 	var fitxaURL = buildQuery(searchParams)+"&tipus=fitxa";

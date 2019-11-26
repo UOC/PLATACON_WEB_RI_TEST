@@ -3,92 +3,99 @@
 
 <head>
     {{ partial "head.html" . }}
-    <!-- {{ $solucions_tecnologiques := .Params.t}}
-    {{ $patents := .Params.patents }}
-    {{ $serveis := .Params.serveis }}
-    {{ $spin_offs := .Params.spin_offs }} -->
+    {{ $generalInfo := index (.Params.general) 0 }}
+    {{ $sobreTec := index (.Params.sobre_tecnologia) 0 }}
+    {{ $aspectesInnova := index (.Params.aspectes_innovadors) 0 }}
+    {{ $apps := index (.Params.aplicacions) 0 }}
+    {{ $grupsRecerca := index (.Params.grups_recerca) 0 }}
+    {{ $contacte := index (.Params.contacte) 0 }}
 </head>
 
 <body>
     {{ partial "header.html" . }}
-    <main id="main-global" role="main" class="col-xs-12 ">
+    <div class="site-wrapper">
         
-        <div class="clearfix">
-            <div class="col-xs-12 col-md-3 col-clear-left hidden-xs hidden-sm">
-                <div class="component-header ruler  ruler--dynamic p-right-4x"> 
-                    <!-- <span class="h4"><a target="_self" href="/portal/es/ri/projectes-publicacions/index.html">Qué se investiga</a></span> -->
-                </div>
-            </div>
-            
-            <div class="col-xs-9 col-md-7 col-lg-8 col-sm-10 col-clear-right">
-                <div class="component-header ruler m-bottom-4y ruler--dynamic p-right-4x"> 
-                    
-                    <!-- <h2 class="h1 h1-responsive">Proyectos</h2> -->
-                    
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-2 col-xs-3 col-lg-1 col-clear-right col-clear-left">
-                <div class="speaker-menu-wrapper ruler ruler--dynamic p-left-x " id="read-speaker-menu">
-                    
-                    <a href="#" id="nav-inner-button" class="nav-menu-collapse-button" data-toggle-animate="#nav-inner-content" data-toggle-class-target="#nav-inner-button" data-toggle-class-target-value="is-trigger-active" aria-expanded="false" style="display: none;">
-                        <span class="menu-text">Menú</span>
-                        <span class="is-active-visible icon icon--arrow-up icon--big" aria-hidden="true"></span>
-                        <span class="is-active-hidden icon icon--arrow-down icon--big" aria-hidden="true"></span>
-                    </a>
-                </div>
-            </div>
-            
-            
-        </div>
+        <main id="main-global" role="main" class="col-xs-12 ">
         
-        
-        <div id="main-contents">
+            <div class="clearfix">
 
-            
-            <div class="col-xs-12 col-md-3"></div>
-            <div class="projectDetail col-xs-12 col-md-6">
-                
-                
-                <div class="paragraph"><span class="bold"></span></div>
-                
-                
-                <div class="paragraph"><span class="bold"></span> 
-                    
+                <div class="col-xs-12 col-md-12 col-lg-12 col-sm-10 col-clear-right">
+                    <div class="component-header ruler m-bottom-4y ruler--dynamic p-right-4x"> 
+                        
+                        <h2 class="h1 h1-responsive">{{ $generalInfo.nom_solucio }}</h2>
+                        
+                    </div>
                 </div>
-                
-                
-                <div class="paragraph">
-                    <span class="bold"></span>
-                </div>
-                
-                
-                <div class="paragraph">
-                    <span class="bold"></span>  
 
-                    
-                </div>
-                
-                
-                <div class="paragraph">
-                    <span class="bold"></span>
-                    
-                    
-                </div>
-                
-                
-                
-                <div class="paragraph">
-                    <span class="bold"></span>
-                    
-                </div>
-                
-                <div class="paragraph"><span class="bold"></span></div>
-                <div class="paragraph"><span class="bold">:</span></div>
+                <div class="col-xs-12 col-md-12 col-lg-12 col-sm-10 col-clear-right">
+
+                        <div class="col-xs-9 col-md-7 col-lg-8 col-sm-10 col-clear-right">
+                            <div class="component-header ruler m-bottom-4y ruler--dynamic p-right-4x"> 
+                                
+                                <!-- <h2 class="h1 h1-responsive">Proyectos</h2> IMAGEN + DESCRIPCION GENERAL -->
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3 col-clear-left hidden-xs hidden-sm">
+                            <div class="component-header ruler  ruler--dynamic p-right-4x"> 
+                                <!-- <span class="h4"><a target="_self" href="/portal/es/ri/projectes-publicacions/index.html">Qué se investiga</a></span> INFO GENERAL DE LA SOLUCION -->
+                            </div>
+                        </div>
+
+                </div>                
                 
             </div>
             
-        </div>
-    </main>
+            
+            <div id="main-contents">
+    
+                
+                <div class="col-xs-12 col-md-3"></div>
+                <div class="projectDetail col-xs-12 col-md-6">
+                    
+                    
+                    <div class="paragraph"><span class="bold"></span></div>
+                    
+                    
+                    <div class="paragraph"><span class="bold"></span> 
+                        
+                    </div>
+                    
+                    
+                    <div class="paragraph">
+                        <span class="bold"></span>
+                    </div>
+                    
+                    
+                    <div class="paragraph">
+                        <span class="bold"></span>  
+    
+                        
+                    </div>
+                    
+                    
+                    <div class="paragraph">
+                        <span class="bold"></span>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    <div class="paragraph">
+                        <span class="bold"></span>
+                        
+                    </div>
+                    
+                    <div class="paragraph"><span class="bold"></span></div>
+                    <div class="paragraph"><span class="bold">:</span></div>
+                    
+                </div>
+                
+            </div>
+        </main>
+    </div>    
     {{ partial "footer.html" . }}
 </div>
 {{ partial "ri_js_imports.html" . }}

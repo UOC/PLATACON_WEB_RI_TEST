@@ -38,7 +38,7 @@
 					</div>
 					<div class="filters-main__box border-green">
 						<h3>{{ T "uoc_ri_cercadortab_sectors" }}</h3>
-						<p><a id="tab-3" href="#tab-content-3" role="tab" aria-controls="tab-content-3" aria-selected="true" data-tab-trigger="" class="tab cercaSectors"><span class="icon icon--arrow-down"></span></p>
+						<p><a id="tab-3" href="#tab-content-3" role="tab" aria-controls="tab-content-3" aria-selected="false" data-tab-trigger="" class="tab cercaSectors"><span class="icon icon--arrow-down"></span></a></p>
 					</div>
 					<div class="filters-main__box border-green">
 						<h3>{{ T "uoc_ri_cercadortab_text" }}</h3>
@@ -99,20 +99,6 @@
 							</div>
 						</form>
 					</div>
-					<div id="tab-content-2" data-tab-content="" role="tabpanel" aria-labelledby="tab-2" aria-hidden="false" class="filters-main__content tab-content cercaTextual">
-						<form action="" class="search-form-container filters-main-search">
-							<div class="full-width search-container-top">
-								<div class="col-xs-2 col-md-1">
-									<span class="icon-container hover--dynamic-hover bg-grey">
-										<input type="submit" value="Cerca" name="search_sbm" title="Buscar" onclick="" class="w100-inline-block"><span class="icon icon--search"></span>
-									</span>
-								</div>
-								<div class="col-xs-10 col-md-11">
-									<input type="search" id="search" aria-label="Paraules a cercar" placeholder="Paraules a cercar" name="searchWords" tabindex="0" value="" title="Paraules a cercar" class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1">
-								</div>
-							</div>
-						</form>
-					</div>
 					<div id="tab-content-3" data-tab-content="" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true" class="filters-main__content tab-content cercaSectors">
 						<form action="" class="radio-accordeon search-form-container">
 								<div class="more-filter-options">
@@ -135,6 +121,20 @@
 									</div>
 								</div>
 							</form>
+					</div>
+					<div id="tab-content-2" data-tab-content="" role="tabpanel" aria-labelledby="tab-2" aria-hidden="false" class="filters-main__content tab-content cercaTextual">
+						<form action="" class="search-form-container filters-main-search">
+							<div class="full-width search-container-top">
+								<div class="col-xs-2 col-md-1">
+									<span class="icon-container hover--dynamic-hover bg-grey">
+										<input type="submit" value="Cerca" name="search_sbm" title="Buscar" onclick="" class="w100-inline-block"><span class="icon icon--search"></span>
+									</span>
+								</div>
+								<div class="col-xs-10 col-md-11">
+									<input type="search" id="search" aria-label="Paraules a cercar" placeholder="Paraules a cercar" name="searchWords" tabindex="0" value="" title="Paraules a cercar" class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1">
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -180,7 +180,7 @@
 	<script src="/js/search_home.js"></script>
 	<script type="text/javascript">
 		var cercadorURL = '{{ "cercador/cercador.html" | relLangURL }}';
-        var cercadorSectorURL = '{{ "solucions/solucions.html" | relLangURL }}';
+        //var cercadorSectorURL = '{{ "solucions/solucions.html" | relLangURL }}';
 	</script>
 </body>
 
