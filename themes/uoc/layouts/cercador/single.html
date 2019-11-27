@@ -11,9 +11,6 @@
 </head>
 
 <body>
-    {{ range $index, $element := $solucions_tecnologiques }}
-	<li>{{ $element.display_name }}</li>
-	{{end}}
 	{{ partial "header.html" . }}
 	<div class="site-wrapper"> 
 		<section data-tab-system="" class="filters-main search-list-collapse">
@@ -276,7 +273,7 @@
 								  </div>
 								</div>
 								<div class="col-xs-12 col-lg-9">
-								  <div class="collapse grup results">
+								  <div class="collapse solucions results">
 									<div class="head-collapse js-collapse">
 									  <p><a href="#collapse3" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions"}}<span class="icon icon--arrow-down"></span></a></p>
 									</div>
@@ -331,7 +328,7 @@
 									
 									<div class="head-collapse subCollapse js-collapse">
 										<p><a href="#collapse6" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_serveis"}}<span class="icon icon--arrow-down"></span></a></p>
-									  </div>
+									</div>
 									<div id="collapse6" class="contentCollapse show ajaxLoading solucionsServeissResults">
 									  <div class="card-in-acordeon js-changeVist">
 										<div class="row">
@@ -355,12 +352,12 @@
 									
 								  </div>
 								  
-								  <div class="collapse fitxa results">
+								  <div class="collapse spin results">
 									<div class="head-collapse js-collapse">
 									  <p><a href="#collapse8" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_spin_off"}}<span class="icon icon--arrow-down"></span></a></p>
 									  <p class="result"></p>
 									</div>
-									<div id="collapse8" class="contentCollapse show ajaxLoading fitxaResults">
+									<div id="collapse8" class="contentCollapse show ajaxLoading spinResults">
 									  <div class="card-in-acordeon js-changeVist">
 										<div class="row">
 										  {{ range $i, $spin :=  $spin_offs }}
@@ -398,6 +395,198 @@
 								</div>
 							</div>
 						</form>
+						<div class="col-xs-12 col-lg-3">
+							<div class="collapse-filter">						  
+								<div class="general-filter visualitzacio">
+								<form action="">
+									<p>{{ T "uoc_ri_cercador_filtres_visualitzacio"}}</p>
+									<div class="wrap-input">
+										<fieldset>
+											<input role="group" aria-label="Grups de recerca" type="checkbox" id="visual_1" value="grup">
+											<label aria-label="Grups de recerca" for="visual_1">{{ T "uoc_ri_cercador_grups"}}</label>
+										</fieldset>
+									</div>
+									<div class="wrap-input">
+										<fieldset>
+											<input role="group" aria-label="Investigadors" type="checkbox" id="visual_2" value="fitxa">
+											<label aria-label="Investigadors" for="visual_2">{{ T "uoc_ri_cercador_investigadors"}}</label>
+										</fieldset>
+									</div>
+									<div class="wrap-input">
+										<fieldset>
+											<input role="sols_innov" aria-label='{{ T "uoc_ri_cercador_solucions" }}' type="checkbox" id="visual_3" value="sols_innov">
+											<label aria-label='{{ T "uoc_ri_cercador_solucions" }}' for="visual_3">{{ T "uoc_ri_cercador_solucions"}}</label>
+										</fieldset>
+									</div>
+									<div class="wrap-input">
+										<fieldset>
+											<input role="spin_offs" aria-label='{{ T "uoc_ri_cercador_spin_off"}}' type="checkbox" id="visual_4" value="spin_offs">
+											<label aria-label='{{ T "uoc_ri_cercador_spin_off"}}' for="visual_4">{{ T "uoc_ri_cercador_spin_off"}}</label>
+										</fieldset>
+									</div>
+								</form>
+								<p class="wrap-btn"><a href="#" title="Enlace siguiente" aria-label="Cercar" rel="next" class="btn btn--primary uoc_submitSearch">{{ T "uoc_ri_cercador_cercar"}}</a></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-lg-9">
+								<div class="collapse grup results">
+									<div class="head-collapse js-collapse">
+											<p><a href="#collapse4" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_grups"}}<span class="icon icon--arrow-down"></span></a></p>
+									</div>
+									
+									<div id="collapse4" class="contentCollapse show ajaxLoading grupResults">
+										<div class="card-in-acordeon js-changeVist">
+											<div class="row">
+											{{ range $i, $solTec := .Params.solucions_tecnologiques }}
+											{{ if isset $solTec "value" }}
+											<div class="col-xs-12 col-md-4">
+												<div class="uoc_card_placeholder">
+												<img src="{{$solTec.img_background}}"/>
+												<div class="title">{{$solTec.display_name}}</div>
+												<div class="line-long"></div>
+												<div class="line-short"></div>
+												<div class="line-medium"></div>
+												</div>
+											</div>
+											{{ end }}
+											{{ end }}
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="collapse fitxa results">
+									<div class="head-collapse js-collapse">
+										<p><a href="#collapse2" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_investigadors"}}<span class="icon icon--arrow-down"></span></a></p>
+										<p class="result"></p>
+									</div>
+									<div id="collapse2" class="contentCollapse show ajaxLoading fitxaResults">
+										<div class="card-in-acordeon js-changeVist">
+											<div class="row">
+												{{ range $i, $sequence :=  (seq 3) }}
+													<div class="col-xs-12 col-md-4">
+														<div class="uoc_card_placeholder">
+															<div class="title"></div>
+															<div class="line-long"></div>
+															<div class="line-short"></div>
+															<div class="line-medium"></div>
+														</div>
+													</div>
+												{{ end }}
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="collapse solucions results">
+									<div class="head-collapse js-collapse">
+										<p><a href="#collapse3" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions"}}<span class="icon icon--arrow-down"></span></a></p>
+									</div>
+										
+									<div class="head-collapse subCollapse js-collapse">
+									<p><a href="#collapse4" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_tec"}}<span class="icon icon--arrow-down"></span></a></p>
+									</div>
+									<div id="collapse4" class="contentCollapse show ajaxLoading solucionsTecResults">
+									<div class="card-in-acordeon js-changeVist">
+										<div class="row">
+										{{ range $i, $solTec := .Params.solucions_tecnologiques }}
+										{{ if isset $solTec "value" }}
+										<div class="col-xs-12 col-md-4">
+											<div class="uoc_card_placeholder">
+											<img src="{{$solTec.img_background}}"/>
+											<div class="title">{{$solTec.display_name}}</div>
+											<div class="line-long"></div>
+											<div class="line-short"></div>
+											<div class="line-medium"></div>
+											</div>
+										</div>
+										{{ end }}
+										{{ end }}
+										</div>
+									</div>
+									</div>
+										
+										
+									<div class="head-collapse subCollapse js-collapse">
+									<p><a href="#collapse5" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_patents"}}<span class="icon icon--arrow-down"></span></a></p>
+									</div>
+									<div id="collapse5" class="contentCollapse show ajaxLoading solucionsPatentsResults">
+									<div class="card-in-acordeon js-changeVist">
+										<div class="row">
+										{{ range $i, $pat :=  $patents }}
+										{{ if isset $pat "value" }}
+										<div class="col-xs-12 col-md-4">
+											<div class="uoc_card_placeholder">
+											<img src="{{$pat.img_background}}"/>
+											<div class="title">{{$pat.display_name}}</div>
+											<div class="line-long"></div>
+											<div class="line-short"></div>
+											<div class="line-medium"></div>
+											</div>
+										</div>
+										{{ end }}
+										{{ end }}
+										</div>
+									</div>
+									</div>
+										
+										
+									<div class="head-collapse subCollapse js-collapse">
+										<p><a href="#collapse6" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_serveis"}}<span class="icon icon--arrow-down"></span></a></p>
+									</div>
+									<div id="collapse6" class="contentCollapse show ajaxLoading solucionsServeissResults">
+									<div class="card-in-acordeon js-changeVist">
+										<div class="row">
+										{{ range $i, $serv :=  $serveis }}
+										{{ if isset $serv "value" }}
+										<div class="col-xs-12 col-md-4">
+											<a href="" onclick="" class="card-absolute-link"></a>
+											<div class="uoc_card_placeholder">
+											<img src="{{$serv.img_background}}"/>
+											<div class="title">{{$serv.display_name}}</div>
+											<div class="line-long"></div>
+											<div class="line-short"></div>
+											<div class="line-medium"></div>
+											</div>
+										</div>
+										{{ end }}
+										{{ end }}
+										</div>
+									</div>
+									</div>
+										
+								</div>
+								
+								<div class="collapse spin results">
+									<div class="head-collapse js-collapse">
+									<p><a href="#collapse8" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_spin_off"}}<span class="icon icon--arrow-down"></span></a></p>
+									<p class="result"></p>
+									</div>
+									<div id="collapse8" class="contentCollapse show ajaxLoading spinResults">
+									<div class="card-in-acordeon js-changeVist">
+										<div class="row">
+										{{ range $i, $spin :=  $spin_offs }}
+										{{ if isset $spin "value" }}
+										<div class="col-xs-12 col-md-4">
+											<div class="uoc_card_placeholder">
+											<div class="title">{{$spin.display_name}}</div>
+											<div class="line-long"></div>
+											<div class="line-short"></div>
+											<div class="line-medium"></div>
+											</div>
+										</div>
+										{{ end }}
+										{{ end }}
+										</div>
+									</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
 					</div>
 				</div>
 			</div>
