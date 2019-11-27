@@ -322,7 +322,29 @@
 										  {{ end }}
 										  {{ end }}
 										</div>
-									  </div>
+                    </div>
+                    
+                    <ul role="navigation" class="pagination">
+                      <li class="col-md-1 pagination__item is-active">
+                        <span title="Pagina 1" aria-label="Pagina 1" aria-selected="true" class="pagination__link">01</span>
+                      </li>
+                      <li class="col-md-1 pagination__item">
+                        <a href="#" title="Pagina 2" aria-label="Pagina 2" aria-selected="false" class="pagination__link">02</a>
+                      </li>
+                      <li class="col-md-1 pagination__item">
+                        <a href="#" title="Pagina 3" aria-label="Pagina 3" aria-selected="false"  class="pagination__link">03</a>
+                      </li>
+                      <li class="col-md-1 pagination__item">
+                        <a href="#" title="Pagina 4" aria-label="Pagina 4" aria-selected="false" class="pagination__link">04</a>
+                      </li>
+                      <li class="col-md-5 pagination__item">
+                        <a href="#" title="Pagina 5" aria-label="Pagina 5" aria-selected="false" class="pagination__link">05</a>
+                      </li>
+                      <li class="col-xs-12 col-md-3 pagination__item pagination__item--next">
+                        <a href="#" title="Enlace siguiente" aria-label="Enlace siguiente" rel="next" class="btn btn--primary">Siguiente</a>
+                      </li>
+                    </ul>
+
 									</div>
 									
 									
@@ -347,34 +369,58 @@
 										  {{ end }}
 										  {{ end }}
 										</div>
-									  </div>
+                    </div>
+
 									</div>
 									
 								  </div>
 								  
 								  <div class="collapse spin results">
-									<div class="head-collapse js-collapse">
-									  <p><a href="#collapse8" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_spin_off"}}<span class="icon icon--arrow-down"></span></a></p>
-									  <p class="result"></p>
-									</div>
-									<div id="collapse8" class="contentCollapse show ajaxLoading spinResults">
-									  <div class="card-in-acordeon js-changeVist">
-										<div class="row">
-										  {{ range $i, $spin :=  $spin_offs }}
-										  {{ if isset $spin "value" }}
-										  <div class="col-xs-12 col-md-4">
-											<div class="uoc_card_placeholder">
-											  <div class="title">{{$spin.display_name}}</div>
-											  <div class="line-long"></div>
-											  <div class="line-short"></div>
-											  <div class="line-medium"></div>
-											</div>
-										  </div>
-										  {{ end }}
-										  {{ end }}
-										</div>
-									  </div>
-									</div>
+                    <div class="head-collapse js-collapse">
+                      <p><a href="#collapse8" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_spin_off"}}<span class="icon icon--arrow-down"></span></a></p>
+                      <p class="result"></p>
+                    </div>
+                    <div id="collapse8" class="contentCollapse show ajaxLoading spinResults">
+                      <div class="card-in-acordeon js-changeVist">
+                      <div class="row">
+                        {{ range $i, $spin :=  $spin_offs }}
+                        {{ if isset $spin "value" }}
+                        <div class="col-xs-12 col-md-4">
+                          <div class="uoc_card_placeholder">
+                            <div class="title">{{$spin.display_name}}</div>
+                            <div class="line-long"></div>
+                            <div class="line-short"></div>
+                            <div class="line-medium"></div>
+                          </div>
+                        </div>
+                        {{ end }}
+                        {{ end }}
+                      </div>
+                      </div>
+
+                      <ul role="navigation" class="pagination">
+                        <li class="col-md-1 pagination__item is-active">
+                          <span title="Pagina 1" aria-label="Pagina 1" aria-selected="true" class="pagination__link">01</span>
+                        </li>
+                        <li class="col-md-1 pagination__item">
+                          <a href="#" title="Pagina 2" aria-label="Pagina 2" aria-selected="false" class="pagination__link">02</a>
+                        </li>
+                        <li class="col-md-1 pagination__item">
+                          <a href="#" title="Pagina 3" aria-label="Pagina 3" aria-selected="false"  class="pagination__link">03</a>
+                        </li>
+                        <li class="col-md-1 pagination__item">
+                          <a href="#" title="Pagina 4" aria-label="Pagina 4" aria-selected="false" class="pagination__link">04</a>
+                        </li>
+                        <li class="col-md-5 pagination__item">
+                          <a href="#" title="Pagina 5" aria-label="Pagina 5" aria-selected="false" class="pagination__link">05</a>
+                        </li>
+                        <li class="col-xs-12 col-md-3 pagination__item pagination__item--next">
+                          <a href="#" title="Enlace siguiente" aria-label="Enlace siguiente" rel="next" class="btn btn--primary">Siguiente</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                    
 								  </div>
 								  
 								</div>
