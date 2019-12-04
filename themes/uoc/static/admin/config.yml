@@ -1,12 +1,13 @@
  
 backend:
-  name: github # FALTA CONFIGURAR GIT Y NERTLIFY PARA QUE SE COMUNIQUEN!!!!!!!!!
+  name: git-gateway
+  accept_roles: #optional - accepts all users if left out
+    - admin
+    - editor
   repo: albirasolutions/UOC_WebRI
   branch: victor
   #base_url: http://uocwebrisupport.s3-website-eu-west-1.amazonaws.com
   #client_id: 05de47c07b638caed5f9
-  #name: git-gateway
-
 media_folder: "static/img" # Media files will be stored in the repo under static/img/
 public_folder: "/img"
 #publish_mode: editorial_workflow
