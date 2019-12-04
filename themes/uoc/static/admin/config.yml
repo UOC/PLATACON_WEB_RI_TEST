@@ -1,9 +1,8 @@
  
 backend:
   name: github
+  branch: master
   repo: albirasolutions/UOC_WebRI
-  branch: victor
-  base_url: https://app.netlify.com/sites/clever-jackson-347844
 media_folder: "static/img" # Media files will be stored in the repo under static/img/
 public_folder: "/img"
 #publish_mode: editorial_workflow
