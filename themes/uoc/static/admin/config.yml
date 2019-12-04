@@ -1,14 +1,12 @@
  
 backend:
-  name: git-gateway
+  name: github
   repo: albirasolutions/UOC_WebRI
   branch: victor
-  #base_url: http://uocwebrisupport.s3-website-eu-west-1.amazonaws.com
-  #client_id: 05de47c07b638caed5f9
+  base_url: https://app.netlify.com/sites/clever-jackson-347844
 media_folder: "static/img" # Media files will be stored in the repo under static/img/
 public_folder: "/img"
 #publish_mode: editorial_workflow
-
 collections: # A list of collections the CMS should be able to edit
   - name: "principal"
     label: "Principal"
