@@ -1,9 +1,6 @@
  
 backend:
   name: git-gateway
-  accept_roles: #optional - accepts all users if left out
-    - admin
-    - editor
   repo: albirasolutions/UOC_WebRI
   branch: victor
   #base_url: http://uocwebrisupport.s3-website-eu-west-1.amazonaws.com
