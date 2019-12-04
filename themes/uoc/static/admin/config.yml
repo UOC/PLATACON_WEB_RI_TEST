@@ -1,8 +1,6 @@
  
 backend:
-  name: github
-  branch: master
-  repo: albirasolutions/UOC_WebRI
+  name: git-gateway
 media_folder: "static/img" # Media files will be stored in the repo under static/img/
 public_folder: "/img"
 #publish_mode: editorial_workflow
