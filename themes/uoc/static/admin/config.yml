@@ -3,6 +3,9 @@ backend:
   name: github
   branch: master
   repo: albirasolutions/UOC_WebRI
+  base_url: https://eh7d3mcjpg.execute-api.eu-west-1.amazonaws.com # Path to ext auth provider
+  auth_endpoint: prod/auth  
+
 media_folder: "static/img" # Media files will be stored in the repo under static/img/
 public_folder: "/img"
 #publish_mode: editorial_workflow
