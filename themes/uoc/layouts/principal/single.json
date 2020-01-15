@@ -1,0 +1,60 @@
+{{ $.Scratch.Set "len" 0 }}
+{{ range $i, $s := .Site.AllPages }}
+	{{- if and ( or (eq $s.Type "solucio_tec") (eq $s.Type "patent") (eq $s.Type "servei") (eq $s.Type "spin_off")) (ne $s.File.UniqueID "")}}
+	{{ $.Scratch.Set "len" (add ($.Scratch.Get "len") 1) }}
+	{{end}}
+{{end}}
+{{ $.Scratch.Set "counter" 0 }}
+[{{ range $i, $s := .Site.AllPages }}{{- if and ( or (eq $s.Type "solucio_tec") (eq $s.Type "patent") (eq $s.Type "servei") (eq $s.Type "spin_off")) (ne $s.File.UniqueID "")}}{
+	  {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+	  "type" : "add",
+    "id" : {{ $s.File.UniqueID | jsonify }},
+    "fields" : {
+		{{- if and (isset $s.Params "language") (ne $s.Params.language nil) }}
+		"idioma": {{$s.Params.language | jsonify}},{{- end }}{{- if and (isset $s.Params "title") (ne $s.Params.title nil) }}
+		"title": {{$s.Params.title | jsonify}},{{- end }}{{- if and (isset $s.Params "general") (ne $s.Params.general nil) }}{{$general := index ($s.Params.general) 0 }}
+		"name": {{if eq $s.Type "solucio_tec" }}{{$general.nom_solucio | jsonify}}{{else if eq $s.Type "patent"}}{{$general.nom_patent | jsonify}}{{else if eq $s.Type "servei"}}{{$general.nom_servei | jsonify}}{{else}}{{$general.nom_spinoff | jsonify}}{{end}},
+		"text_breu": {{$general.text_breu | jsonify}},
+		"eslogan": {{- if ne $general.slogan nil}}{{ $general.slogan | jsonify }}{{else}}""{{end}},
+		"imatge_alt": {{$s.Params.title | jsonify}},
+		"imatge_title": {{$s.Params.title | jsonify}},
+		"imatge_url": {{if ne $general.img_background nil }}{{$general.img_background | jsonify}}{{else}}""{{end}},
+		"centre": {{if or (eq $s.Type "servei") (eq $general.centre nil)}}""{{else}}{{$general.centre | jsonify}}{{end}},
+		"sector": {{$general.sector | jsonify}},
+		"logo_url": {{if ne $general.logo nil }}{{$general.logo | jsonify}}{{else}}""{{end}},{{$keywords := slice ""}}{{- range $k := $general.keywords}}{{if isset $k "value"}}{{$keywords := slice $k.value }}{{end}}{{end}}{{- if ne $keywords nil }}
+		"keywords": {{$keywords | jsonify}},{{end}}{{$xarxesList := slice ""}}{{$xarxesAddress := slice ""}}{{- range $x := $general.xarxes}}{{$xarxesList := slice $x.xarxa }}{{$xarxesAddress := slice $x.address }}{{end}}{{- if ne $xarxesList nil }}
+		"xarxes_list": {{$xarxesList | jsonify}},{{end}}{{- if ne $xarxesAddress nil }}
+		"xarxes_address": {{$xarxesAddress | jsonify}},{{end}}{{- end }}{{if eq $s.Type "solucio_tec" }}{{- if and (isset $s.Params "sobre_tecnologia") (ne $s.Params.sobre_tecnologia nil) }}{{$sobre_tecnologia := index ($s.Params.sobre_tecnologia) 0 }}
+		"sobre_tec_title": {{$sobre_tecnologia.titol | jsonify}},
+		"sobre_tec_descripcio": {{$sobre_tecnologia.descripcio | jsonify}},{{end}}{{else if eq $s.Type "patent"}}{{- if and (isset $s.Params "sobre_patent") (ne $s.Params.sobre_patent nil) }}{{$sobre_patent := index ($s.Params.sobre_patent) 0 }}
+		"sobre_pat_title": {{$sobre_patent.titol | jsonify}},
+		"sobre_pat_descripcio": {{$sobre_patent.descripcio | jsonify}},{{end}}{{else if eq $s.Type "servei"}}{{- if and (isset $s.Params "sobre_servei") (ne $s.Params.sobre_servei nil) }}{{$sobre_servei := index ($s.Params.sobre_servei) 0 }}
+		"sobre_servei_title": {{$sobre_servei.titol | jsonify}},
+		"sobre_servei_descripcio": {{$sobre_servei.descripcio | jsonify}},{{end}}{{else}}{{- if and (isset $s.Params "sobre_spinoff") (ne $s.Params.sobre_spinoff nil) }}{{$sobre_spinoff := index ($s.Params.sobre_spinoff) 0 }}
+		"sobre_spin_title": {{$sobre_spinoff.titol | jsonify}},
+		"sobre_spin_descripcio": {{$sobre_spinoff.descripcio | jsonify}},{{end}}{{end}}{{if or (eq $s.Type "solucio_tec") (eq $s.Type "pantent")}}{{- if and (isset $s.Params "aspectes_innovadors") (ne $s.Params.aspectes_innovadors nil) }}{{$aspectes_innovadors := index ($s.Params.aspectes_innovadors) 0 }}
+		"asp_innov_title": {{$aspectes_innovadors.titol | jsonify}},
+		"asp_innov_descripcio": {{$aspectes_innovadors.descripcio | jsonify}},{{end}}{{- if and (isset $s.Params "aplicacions") (ne $s.Params.aplicacions nil) }}{{$aplicacions := index ($s.Params.aplicacions) 0 }}
+		"app_title": {{- if ne $aplicacions.titol nil}}{{ $aplicacions.titol | jsonify }}{{else}}""{{end}},
+		"app_descripcio": {{- if ne $aplicacions.descripcio nil}}{{ $aplicacions.descripcio | jsonify }}{{else}}""{{end}},{{end}}{{end}}{{if or (eq $s.Type "servei") (eq $s.Type "spin_off")}}{{- if and (isset $s.Params "casos_exit") (ne $s.Params.casos_exit nil) }}{{$casos_exit := index ($s.Params.casos_exit) 0 }}
+		"casos_exit_title":{{$casos_exit.titol | jsonify}},
+		"casos_exit_descripcio":{{$casos_exit.descripcio | jsonify}},
+		"casos_exit_img":{{$casos_exit.img | jsonify}},
+		"casos_exit_url_success":{{$casos_exit.url_success | jsonify}},{{end}}{{if eq $s.Type "spin_off"}}{{- if and (isset $s.Params "productes_serveis") (ne $s.Params.productes_serveis nil) }}{{$productes_serveis := index ($s.Params.productes_serveis) 0 }}
+		"productes_serveis_titol" : {{$productes_serveis.titol | jsonify }},
+		"productes_serveis_descripcio" : {{$productes_serveis.descripcio | jsonify }},{{end}}{{- if and (isset $s.Params "clients") (ne $s.Params.clients nil) }}{{$clients := index ($s.Params.clients) 0 }}
+		"clients_title" : {{$clients.titol | jsonify }},
+		"clients_descripcio" : {{$clients.descripcio | jsonify }},{{end}}{{end}}{{end}}{{- if and (isset $s.Params "grups_recerca") (ne $s.Params.grups_recerca nil) }}{{$grupsList := slice ""}}{{$invList := slice ""}}{{range $gr := $s.Params.grups_recerca }}{{$grupsList := $gr.grups }}{{$invList := $gr.investigadors }}{{end}}
+		"grups": {{if ne $grupsList nil}}{{$grupsList | jsonify}}{{else}}""{{end}},
+		"investigadors": {{if ne $invList nil}}{{$invList | jsonify}}{{else}}""{{end}},{{end}}{{- if and (isset $s.Params "contacte") (ne $s.Params.contacte nil) }}{{$contacte := index $s.Params.contacte 0}}
+		"contacts_email" : {{- if ne $contacte.email nil}}{{ $contacte.email | jsonify }}{{else}}""{{end}},
+		"contacts_address" : {{- if ne $contacte.address nil}}{{ $contacte.address | jsonify }}{{else}}""{{end}},
+		"contacts_name" : {{- if ne $contacte.text nil}}{{ $contacte.text | jsonify }}{{else}}""{{end}},
+		"contacts_phone" : {{- if ne $contacte.telefon nil}}{{ $contacte.telefon | jsonify }}{{else}}""{{end}},{{end}}
+		"content" : "transfer",
+		"content_encoding": "utf-8",
+		"content_type" : {{$s.Type | jsonify}},
+		"resourcename" : {{$s.Params.title | jsonify}},
+		"url" : {{ $s.Permalink | jsonify }}
+    }
+}{{ if ne ($.Scratch.Get "len") ($.Scratch.Get "counter")}},{{end}}{{end}}{{end}}]

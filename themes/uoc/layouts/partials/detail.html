@@ -1,0 +1,1188 @@
+<!-- Aqui tendremos la comprobación del campo que nos dira que html cargar según el contenido a mostrar-->
+{{$type := .Type}}
+{{$.Scratch.Add "solTecContent" (slice "sobre_tecnologia" "aspectes_innovadors" "aplicacions" "grups_recerca" "contacte") }}
+{{$.Scratch.Add "patentContent" (slice "sobre_patent" "aspectes_innovadors" "aplicacions" "grups_recerca" "contacte") }}
+{{$.Scratch.Add "serveiContent" (slice "sobre_servei" "casos_exit" "grups_recerca" "contacte") }}
+{{$.Scratch.Add "spinContent" (slice "sobre_spinoff" "productes_serveis" "clients" "casos_exit" "grups_recerca" "contacte") }}
+
+
+{{if eq $type "solucio_tec"}}
+{{ $generalInfo := index (.Params.general) 0 }}
+{{ $sobreTec := index (.Params.sobre_tecnologia) 0 }}
+{{ $aspectesInnova := index (.Params.aspectes_innovadors) 0 }}
+{{ $apps := index (.Params.aplicacions) 0 }}
+{{ $grupsRecerca := index (.Params.grups_recerca) 0 }}
+{{ $contacte := index (.Params.contacte) 0 }}
+<section class="info-general">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="page-title title-border-green">
+                <h2>{{ $generalInfo.nom_solucio }}</h2>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-9">
+            <section class="bg-main " style="background-image: url({{$generalInfo.img_background}});">
+                <div class="img--tint"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-xs-6">
+                            <h2>{{ $generalInfo.text_breu}}</h2>
+                        </div>
+                        <div class="col-md-12"></div>
+                        <div class="col-md-8 col-lg-8 col-xs-8">
+                            <h5>{{ $generalInfo.slogan}}</h5>
+                        </div>
+                        <div data-dropdown="" class="dropdown">
+                            <button data-dropdown-trigger="" aria-label="Texto descriptivo"
+                            aria-expanded="false" aria-controls="dropdown__content1"
+                            class="btn btn--primary dropdown__trigger">{{ T "uoc_ri_detail_social_media" }}<span aria-hidden="true"
+                            class="icon icon--share"></span></button>
+                            <ul role="menu" id="dropdown__content1" data-dropdown-content="" class="dropdown__content dropdown__list">
+                                
+                                <li role="menuitem" data-dropdown-content="" class="dropdown__item">
+                                    <p class="text-small">
+                                        
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-xs-12 col-md-3">
+            <div class="ficha-detail">
+                <div class="box">
+                    <div class="boxGrey">
+                        <p><strong>{{ T "uoc_ri_tipologia" }} :</strong>{{ $generalInfo.tipologia}}</p>
+                        <p><strong>{{ T "uoc_ri_sector" }} :</strong>{{ $generalInfo.sector}}</p>
+                        <p><strong>{{ T "uoc_ri_centre" }} :</strong><a href="#"><u>{{ $generalInfo.centre}}</u></a></p>
+                        <p>
+                            <div class="row">
+                                
+                                <div class="img--y col-xs-12 col-md-12">
+                                    <div class="img-wpr img-wpr--horizontal">
+                                        <img class="img-wpr__cover" src="{{$generalInfo.logo}}" alt="{{ $generalInfo.nom_solucio }}" />
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </p>
+                        <p>
+                            <div class="row">
+
+                                <div class="col-xs-12">
+
+                                    <div data-dropdown="" aria-label="" class="dropdown">
+                                        <h5 data-dropdown-trigger="" class="dropdown-trigger" aria-expanded="false" aria-controls="dropdown__content1">{{ T "uoc_ri_keywords" }}
+                                            <span aria-hidden="true" class="icon icon--arrow-down icon--after is-active-hidden float-right"></span>
+                                            <span aria-hidden="true" class="icon icon--arrow-up icon--after is-active-visible float-right"></span>
+                                        </h5>
+                                        <ul role="menu" id="dropdown__content1" data-dropdown-content="" class="dropdown__content dropdown__list">
+                                            {{ range $k := $generalInfo.keywords }}
+                                            <li role="menuitem" data-dropdown-content="" class="dropdown__item">
+                                                <p class="text-small">
+                                                    {{$k.value}}
+                                                </p>
+                                            </li>
+                                            {{end}}
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                  
+
+                            </div>
+                                                      
+                        </p>
+                    </div>	
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        
+<section data-tab-system="" class="ficha-detail mT60">
+        <div class="row" style="margin-bottom:25px;">
+            <div class="col-xs-12">
+                <h2>
+                    <span class="icon icon--material-pdf icon--header float-right" aria-hidden="true"></span>
+                </h2>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-3">
+            <ul role="tablalist" data-sticky="data-sticky" class="list-group borderTopGrey toStick">               
+                <li role="presentation">
+                    <a id="tab-10" href="#tab-content-10" role="tab"
+                    aria-controls="tab-content-10" aria-selected="true" data-tab-trigger=""
+                    class="tab is-active js-width-final"><span>{{ T "uoc_ri_about_tec" }}</span></a>
+                </li>                   
+                <li role="presentation">
+                    <a id="tab-11" href="#tab-content-11" role="tab"
+                    aria-controls="tab-content-11" aria-selected="false" data-tab-trigger=""
+                    class="tab"><span>{{ T "uoc_ri_aspect_innov" }}</span></a>
+                </li>                         
+                <li role="presentation">
+                    <a id="tab-12" href="#tab-content-12" role="tab"
+                    aria-controls="tab-content-12" aria-selected="false" data-tab-trigger=""
+                    class="tab"><span>{{ T "uoc_ri_apps" }}</span></a>
+                </li>                   
+                <li role="presentation">
+                    <a id="tab-13" href="#tab-content-13" role="tab"
+                    aria-controls="tab-content-13" aria-selected="false" data-tab-trigger=""
+                    class="tab"><span>{{ T "uoc_ri_research_groups" }}</span></a>
+                </li>       
+                <li role="presentation">
+                    <a id="tab-14" href="#tab-content-14" role="tab"
+                    aria-controls="tab-content-14" aria-selected="false" data-tab-trigger=""
+                    class="tab"><span>{{ T "uoc_ri_contacte" }}</span></a>
+                </li>
+            </ul>
+            <div class="content-for-sticky"></div>
+        </div>
+        <div class="col-xs-12 col-md-9">
+            <div id="tab-content-10" data-tab-content="" role="tabpanel" aria-labelledby="tab-10"
+            aria-hidden="false" class="tab-content is-active">
+                <div class="js-collapse-group">
+                    <div class="collapse">
+                        <div class="head-collapse js-collapse">
+                            <p>
+                                <a href="#collapse2" aria-expanded="false"
+                                class="js-collapseClick">{{ T "uoc_ri_about_tec" }}<span
+                                class="icon icon--arrow-down"></span></a>
+                            </p>
+                        </div>
+                        <div id="collapse2" class="contentCollapse show">
+                            <div class="card-in-acordeon">
+                                <div class="wrap-richText">
+                                    {{ safeHTML (markdownify $sobreTec.descripcio) }}
+                                </div>
+                            </div>
+                            <div class="card-in-acordeon">
+                                <h4>{{ T "uoc_ri_docs" }}</h4>
+
+                                <ul class="list--unstyled">
+                                <li>Lorem ipsum dolor sit amet</li>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>                
+            <div id="tab-content-11" data-tab-content="" role="tabpanel" aria-labelledby="tab-11"
+                aria-hidden="true" class="tab-content">
+                <div class="js-collapse-group">
+                    <div class="collapse">
+                        <div class="head-collapse js-collapse">
+                            <p>
+                                <a href="#collapse1" aria-expanded="false" class="js-collapseClick">{{ T "uoc_ri_aspect_innov" }}<span
+                                    class="icon icon--arrow-down"></span>
+                                </a>
+                            </p>
+                        </div>
+                        <div id="collapse1" class="contentCollapse">
+                            <div class="card-in-acordeon">
+                                <div class="wrap-richText">
+                                    <p>{{ $aspectesInnova.descripcio}}</p>
+                                </div>
+                            </div>
+                            <div class="card-in-acordeon">
+                                <h4>{{ T "uoc_ri_docs" }}</h4>
+                                <div class="wrap-richText">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-content-12" data-tab-content="" role="tabpanel" aria-labelledby="tab-12"
+            aria-hidden="true" class="tab-content">
+                <div class="js-collapse-group">
+                    <div class="collapse">
+                        <div class="head-collapse js-collapse">
+                            <p>
+                                <a href="#collapseApps" aria-expanded="false" class="js-collapseClick">{{ T "uoc_ri_apps" }}<span
+                                    class="icon icon--arrow-down"></span>
+                                </a>
+                            </p>
+                        </div>
+                        <div id="collapseApps" class="contentCollapse">
+                            <div class="card-in-acordeon">
+                                <div class="wrap-richText">
+                                    <p>{{ $apps.descripcio}}</p>
+                                </div>
+                            </div>
+                            <div class="card-in-acordeon">
+                                <h4>{{ T "uoc_ri_docs" }}</h4>
+                                <div class="wrap-richText">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div id="tab-content-13" data-tab-content="" role="tabpanel" aria-labelledby="tab-13"
+            aria-hidden="true" class="tab-content">
+                <div class="collapse">
+                    <div class="head-collapse js-collapse">
+                        <p><a href="#collapse10_1" aria-expanded="false"
+                            class="js-collapseClick">{{ T "uoc_ri_research_groups" }}<span
+                            class="icon icon--arrow-down"></span></a></p>
+                    </div>
+                    <div id="collapse10_1" class="contentCollapse show">
+                        <div class="card-in-acordeon">
+                            <div class="row list-grups">
+                                <div class="row data-grups"></div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <ul role="navigation" class="pagination-grups"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse">
+                    <div class="head-collapse js-collapse">
+                        <p><a href="#collapse10_2" aria-expanded="false"
+                            class="js-collapseClick">{{ T "uoc_ri_researchers" }}<span
+                            class="icon icon--arrow-down"></span></a></p>
+                    </div>
+                    <div id="collapse10_2" class="contentCollapse show">
+                        <div class="card-in-acordeon">
+                            <div class="row list-investigadors">
+                                <div class="row data-investigadors"></div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <ul role="navigation" class="pagination-investigadors"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+            <div id="tab-content-14" data-tab-content="" role="tabpanel" aria-labelledby="tab-14"
+            aria-hidden="false" class="tab-content">
+                <div class="collapse">
+                    <div class="head-collapse js-collapse">
+                        <p>
+                            <a href="#collapse12" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_contacte" }}<span
+                            class="icon icon--arrow-down"></span></a>
+                        </p>
+                    </div>
+                    <div id="collapse12" class="contentCollapse show">
+                        <div class="contact-list-icon">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-9">
+                                    <div class="wrap-content">
+                                        <p >{{ $contacte.text}}</p>
+                                        <p >{{ $contacte.address}}</p>
+                                        <p >{{ $contacte.telefon}}</p>
+                                        <p >{{ $contacte.email}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{else if eq $type "patent"}}
+
+{{ $generalInfo := index (.Params.general) 0 }}
+{{ $sobrePat := index (.Params.sobre_patent) 0 }}
+{{ $aspectesInnova := index (.Params.aspectes_innovadors) 0 }}
+{{ $apps := index (.Params.aplicacions) 0 }}
+{{ $grupsRecerca := index (.Params.grups_recerca) 0 }}
+{{ $contacte := index (.Params.contacte) 0 }}
+
+<section class="info-general">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="page-title title-border-green">
+                <h2>{{ $generalInfo.nom_patent }}</h2>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-9">
+            <section class="bg-main " style="background-image: url({{$generalInfo.img_background}});">
+                <div class="img--tint"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-xs-6">
+                            <h2>{{ $generalInfo.text_breu}}</h2>
+                        </div>
+                        <div class="col-md-12"></div>
+                        <div class="col-md-8 col-lg-8 col-xs-8">
+                            <h5>{{ $generalInfo.slogan}}</h5>
+                        </div>
+                        <div data-dropdown="" class="dropdown">
+                            <button data-dropdown-trigger="" aria-label="Texto descriptivo"
+                            aria-expanded="false" aria-controls="dropdown__content1"
+                            class="btn btn--primary dropdown__trigger">{{ T "uoc_ri_detail_social_media" }}<span aria-hidden="true"
+                            class="icon icon--share"></span></button>
+                            <ul role="menu" id="dropdown__content1" data-dropdown-content="" class="dropdown__content dropdown__list">
+                                
+                                <li role="menuitem" data-dropdown-content="" class="dropdown__item">
+                                    <p class="text-small">
+                                        
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-xs-12 col-md-3">
+            <div class="ficha-detail">
+                <div class="box">
+                    <div class="boxGrey">
+                        <p><strong>{{ T "uoc_ri_tipologia" }} :</strong>{{ $generalInfo.tipologia}}</p>
+                        <p><strong>{{ T "uoc_ri_sector" }} :</strong>{{ $generalInfo.sector}}</p>
+                        <p><strong>{{ T "uoc_ri_centre" }} :</strong><a href="#"><u>{{ $generalInfo.centre}}</u></a></p>
+                        <p>
+                            <div class="row">
+                                
+                                <div class="img--y col-xs-12 col-md-12">
+                                    <div class="img-wpr img-wpr--horizontal">
+                                        <img class="img-wpr__cover" src="{{$generalInfo.logo}}" alt="{{ $generalInfo.nom_solucio }}" />
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </p>
+                        <p>
+                            <div class="row">
+
+                                <div class="col-xs-12">
+
+                                    <div data-dropdown="" aria-label="" class="dropdown">
+                                        <h5 data-dropdown-trigger="" class="dropdown-trigger" aria-expanded="false" aria-controls="dropdown__content1">{{ T "uoc_ri_keywords" }}
+                                            <span aria-hidden="true" class="icon icon--arrow-down icon--after is-active-hidden float-right"></span>
+                                            <span aria-hidden="true" class="icon icon--arrow-up icon--after is-active-visible float-right"></span>
+                                        </h5>
+                                        <ul role="menu" id="dropdown__content1" data-dropdown-content="" class="dropdown__content dropdown__list">
+                                            {{ range $k := $generalInfo.keywords }}
+                                            <li role="menuitem" data-dropdown-content="" class="dropdown__item">
+                                                <p class="text-small">
+                                                    {{$k.value}}
+                                                </p>
+                                            </li>
+                                            {{end}}
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                  
+
+                            </div>
+                                                      
+                        </p>
+                    </div>	
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        
+<section data-tab-system="" class="ficha-detail mT60">
+        <div class="row" style="margin-bottom:25px;">
+            <div class="col-xs-12">
+                <h2>
+                    <span class="icon icon--material-pdf icon--header float-right" aria-hidden="true"></span>
+                </h2>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-3">
+            <ul role="tablalist" data-sticky="data-sticky" class="list-group borderTopGrey toStick">               
+                <li role="presentation">
+                    <a id="tab-10" href="#tab-content-10" role="tab"
+                    aria-controls="tab-content-10" aria-selected="true" data-tab-trigger=""
+                    class="tab is-active js-width-final"><span>{{ T "uoc_ri_about_pat" }}</span></a>
+                </li>                   
+                <li role="presentation">
+                    <a id="tab-11" href="#tab-content-11" role="tab"
+                    aria-controls="tab-content-11" aria-selected="false" data-tab-trigger=""
+                    class="tab"><span>{{ T "uoc_ri_aspect_innov" }}</span></a>
+                </li>                         
+                <li role="presentation">
+                    <a id="tab-12" href="#tab-content-12" role="tab"
+                    aria-controls="tab-content-12" aria-selected="false" data-tab-trigger=""
+                    class="tab"><span>{{ T "uoc_ri_apps" }}</span></a>
+                </li>                   
+                <li role="presentation">
+                    <a id="tab-13" href="#tab-content-13" role="tab"
+                    aria-controls="tab-content-13" aria-selected="false" data-tab-trigger=""
+                    class="tab"><span>{{ T "uoc_ri_research_groups" }}</span></a>
+                </li>       
+                <li role="presentation">
+                    <a id="tab-14" href="#tab-content-14" role="tab"
+                    aria-controls="tab-content-14" aria-selected="false" data-tab-trigger=""
+                    class="tab"><span>{{ T "uoc_ri_contacte" }}</span></a>
+                </li>
+            </ul>
+            <div class="content-for-sticky"></div>
+        </div>
+        <div class="col-xs-12 col-md-9">
+            <div id="tab-content-10" data-tab-content="" role="tabpanel" aria-labelledby="tab-10"
+            aria-hidden="false" class="tab-content is-active">
+                <div class="js-collapse-group">
+                    <div class="collapse">
+                        <div class="head-collapse js-collapse">
+                            <p>
+                                <a href="#collapse2" aria-expanded="false"
+                                class="js-collapseClick">{{ T "uoc_ri_about_pat" }}<span
+                                class="icon icon--arrow-down"></span></a>
+                            </p>
+                        </div>
+                        <div id="collapse2" class="contentCollapse show">
+                            <div class="card-in-acordeon">
+                                <div class="wrap-richText">
+                                    {{ safeHTML (markdownify $sobrePat.descripcio) }}
+                                </div>
+                            </div>
+                            <div class="card-in-acordeon">
+                                <h4>{{ T "uoc_ri_docs" }}</h4>
+
+                                <ul class="list--unstyled">
+                                <li>Lorem ipsum dolor sit amet</li>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>                
+            <div id="tab-content-11" data-tab-content="" role="tabpanel" aria-labelledby="tab-11"
+                aria-hidden="true" class="tab-content">
+                <div class="js-collapse-group">
+                    <div class="collapse">
+                        <div class="head-collapse js-collapse">
+                            <p>
+                                <a href="#collapse1" aria-expanded="false" class="js-collapseClick">{{ T "uoc_ri_aspect_innov" }}<span
+                                    class="icon icon--arrow-down"></span>
+                                </a>
+                            </p>
+                        </div>
+                        <div id="collapse1" class="contentCollapse">
+                            <div class="card-in-acordeon">
+                                <div class="wrap-richText">
+                                    <p>{{ $aspectesInnova.descripcio}}</p>
+                                </div>
+                            </div>
+                            <div class="card-in-acordeon">
+                                <h4>{{ T "uoc_ri_docs" }}</h4>
+                                <div class="wrap-richText">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-content-12" data-tab-content="" role="tabpanel" aria-labelledby="tab-12"
+            aria-hidden="true" class="tab-content">
+                <div class="js-collapse-group">
+                    <div class="collapse">
+                        <div class="head-collapse js-collapse">
+                            <p>
+                                <a href="#collapseApps" aria-expanded="false" class="js-collapseClick">{{ T "uoc_ri_apps" }}<span
+                                    class="icon icon--arrow-down"></span>
+                                </a>
+                            </p>
+                        </div>
+                        <div id="collapseApps" class="contentCollapse">
+                            <div class="card-in-acordeon">
+                                <div class="wrap-richText">
+                                    <p>{{ $apps.descripcio}}</p>
+                                </div>
+                            </div>
+                            <div class="card-in-acordeon">
+                                <h4>{{ T "uoc_ri_docs" }}</h4>
+                                <div class="wrap-richText">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div id="tab-content-13" data-tab-content="" role="tabpanel" aria-labelledby="tab-13"
+            aria-hidden="true" class="tab-content">
+                <div class="collapse">
+                    <div class="head-collapse js-collapse">
+                        <p><a href="#collapse10_1" aria-expanded="false"
+                            class="js-collapseClick">{{ T "uoc_ri_research_groups" }}<span
+                            class="icon icon--arrow-down"></span></a></p>
+                    </div>
+                    <div id="collapse10_1" class="contentCollapse show">
+                        <div class="card-in-acordeon">
+                            <div class="row list-grups">
+                                <div class="row data-grups"></div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <ul role="navigation" class="pagination-grups"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse">
+                    <div class="head-collapse js-collapse">
+                        <p><a href="#collapse10_2" aria-expanded="false"
+                            class="js-collapseClick">{{ T "uoc_ri_researchers" }}<span
+                            class="icon icon--arrow-down"></span></a></p>
+                    </div>
+                    <div id="collapse10_2" class="contentCollapse show">
+                        <div class="card-in-acordeon">
+                            <div class="row list-investigadors">
+                                <div class="row data-investigadors"></div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <ul role="navigation" class="pagination-investigadors"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+            <div id="tab-content-14" data-tab-content="" role="tabpanel" aria-labelledby="tab-14"
+            aria-hidden="false" class="tab-content">
+                <div class="collapse">
+                    <div class="head-collapse js-collapse">
+                        <p>
+                            <a href="#collapse12" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_contacte" }}<span
+                            class="icon icon--arrow-down"></span></a>
+                        </p>
+                    </div>
+                    <div id="collapse12" class="contentCollapse show">
+                        <div class="contact-list-icon">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-9">
+                                    <div class="wrap-content">
+                                        <p >{{ $contacte.text}}</p>
+                                        <p >{{ $contacte.address}}</p>
+                                        <p >{{ $contacte.telefon}}</p>
+                                        <p >{{ $contacte.email}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{else if eq $type "servei"}}
+
+{{ $generalInfo := index (.Params.general) 0 }}
+{{ $sobreServ := index (.Params.sobre_servei) 0 }}
+{{ $casosExit := index (.Params.casos_exit) 0 }}
+{{ $grupsRecerca := index (.Params.grups_recerca) 0 }}
+{{ $contacte := index (.Params.contacte) 0 }}
+
+<section class="info-general">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="page-title title-border-green">
+                <h2>{{ $generalInfo.nom_servei }}</h2>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-9">
+            <section class="bg-main " style="background-image: url({{$generalInfo.img_background}});">
+                <div class="img--tint"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-xs-6">
+                            <h2>{{ $generalInfo.text_breu}}</h2>
+                        </div>
+                        <div class="col-md-12"></div>
+                        <div class="col-md-8 col-lg-8 col-xs-8">
+                            <h5>{{ $generalInfo.slogan}}</h5>
+                        </div>
+                        <div data-dropdown="" class="dropdown">
+                            <button data-dropdown-trigger="" aria-label="Texto descriptivo"
+                            aria-expanded="false" aria-controls="dropdown__content1"
+                            class="btn btn--primary dropdown__trigger">{{ T "uoc_ri_detail_social_media" }}<span aria-hidden="true"
+                            class="icon icon--share"></span></button>
+                            <ul role="menu" id="dropdown__content1" data-dropdown-content="" class="dropdown__content dropdown__list">
+                                
+                                <li role="menuitem" data-dropdown-content="" class="dropdown__item">
+                                    <p class="text-small">
+                                        
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-xs-12 col-md-3">
+            <div class="ficha-detail">
+                <div class="box">
+                    <div class="boxGrey">
+                        <p><strong>{{ T "uoc_ri_tipologia" }} :</strong>{{ $generalInfo.tipologia}}</p>
+                        <p><strong>{{ T "uoc_ri_sector" }} :</strong>{{ $generalInfo.sector}}</p>
+                        <p><strong>{{ T "uoc_ri_centre" }} :</strong><a href="#"><u>{{ $generalInfo.centre}}</u></a></p>
+                        <p>
+                            <div class="row">
+                                
+                                <div class="img--y col-xs-12 col-md-12">
+                                    <div class="img-wpr img-wpr--horizontal">
+                                        <img class="img-wpr__cover" src="{{$generalInfo.logo}}" alt="{{ $generalInfo.nom_servei }}" />
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </p>
+                        <p>
+                            <div class="row">
+
+                                <div class="col-xs-12">
+
+                                    <div data-dropdown="" aria-label="" class="dropdown">
+                                        <h5 data-dropdown-trigger="" class="dropdown-trigger" aria-expanded="false" aria-controls="dropdown__content1">{{ T "uoc_ri_keywords" }}
+                                            <span aria-hidden="true" class="icon icon--arrow-down icon--after is-active-hidden float-right"></span>
+                                            <span aria-hidden="true" class="icon icon--arrow-up icon--after is-active-visible float-right"></span>
+                                        </h5>
+                                        <ul role="menu" id="dropdown__content1" data-dropdown-content="" class="dropdown__content dropdown__list">
+                                            {{ range $k := $generalInfo.keywords }}
+                                            <li role="menuitem" data-dropdown-content="" class="dropdown__item">
+                                                <p class="text-small">
+                                                    {{$k.value}}
+                                                </p>
+                                            </li>
+                                            {{end}}
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                  
+
+                            </div>
+                                                      
+                        </p>
+                    </div>	
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        
+<section data-tab-system="" class="ficha-detail mT60">
+        <div class="row" style="margin-bottom:25px;">
+            <div class="col-xs-12">
+                <h2>
+                    <span class="icon icon--material-pdf icon--header float-right" aria-hidden="true"></span>
+                </h2>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-3">
+            <ul role="tablalist" data-sticky="data-sticky" class="list-group borderTopGrey toStick">               
+                <li role="presentation">
+                    <a id="tab-10" href="#tab-content-10" role="tab"
+                    aria-controls="tab-content-10" aria-selected="true" data-tab-trigger=""
+                    class="tab is-active js-width-final"><span>{{ T "uoc_ri_about_serv" }}</span></a>
+                </li>                   
+                <li role="presentation">
+                    <a id="tab-11" href="#tab-content-11" role="tab"
+                    aria-controls="tab-content-11" aria-selected="false" data-tab-trigger=""
+                    class="tab"><span>{{ T "uoc_ri_casos_exit" }}</span></a>
+                </li>                                          
+                <li role="presentation">
+                    <a id="tab-12" href="#tab-content-12" role="tab"
+                    aria-controls="tab-content-12" aria-selected="false" data-tab-trigger=""
+                    class="tab"><span>{{ T "uoc_ri_research_groups" }}</span></a>
+                </li>       
+                <li role="presentation">
+                    <a id="tab-13" href="#tab-content-13" role="tab"
+                    aria-controls="tab-content-13" aria-selected="false" data-tab-trigger=""
+                    class="tab"><span>{{ T "uoc_ri_contacte" }}</span></a>
+                </li>
+            </ul>
+            <div class="content-for-sticky"></div>
+        </div>
+        <div class="col-xs-12 col-md-9">
+            <div id="tab-content-10" data-tab-content="" role="tabpanel" aria-labelledby="tab-10"
+            aria-hidden="false" class="tab-content is-active">
+                <div class="js-collapse-group">
+                    <div class="collapse">
+                        <div class="head-collapse js-collapse">
+                            <p>
+                                <a href="#collapse2" aria-expanded="false"
+                                class="js-collapseClick">{{ T "uoc_ri_about_serv" }}<span
+                                class="icon icon--arrow-down"></span></a>
+                            </p>
+                        </div>
+                        <div id="collapse2" class="contentCollapse show">
+                            <div class="card-in-acordeon">
+                                <div class="wrap-richText">
+                                    {{ safeHTML (markdownify $sobreServ.descripcio) }}
+                                </div>
+                            </div>
+                            <div class="card-in-acordeon">
+                                <h4>{{ T "uoc_ri_docs" }}</h4>
+
+                                <ul class="list--unstyled">
+                                <li></li>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>                
+            <div id="tab-content-11" data-tab-content="" role="tabpanel" aria-labelledby="tab-11"
+                aria-hidden="true" class="tab-content">
+                <div class="js-collapse-group">
+                    <div class="collapse">
+                        <div class="head-collapse js-collapse">
+                            <p>
+                                <a href="#collapse1" aria-expanded="false" class="js-collapseClick">{{ T "uoc_ri_casos_exit" }}<span
+                                    class="icon icon--arrow-down"></span>
+                                </a>
+                            </p>
+                        </div>
+                        <div id="collapse1" class="contentCollapse">
+                            <div class="card-in-acordeon">
+                                <div class="wrap-richText">
+                                    {{ safeHTML (markdownify $casosExit.descripcio) }}
+                                </div>
+                            </div>
+                            <div class="card-in-acordeon">
+                                <h4>{{ T "uoc_ri_docs" }}</h4>
+
+                                <ul class="list--unstyled">
+                                <li><h4>{{$casosExit.titol}}</h4></li>
+                                <li>{{$casosExit.img}}</li>
+                                <li>{{$casosExit.url_success}}</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-content-12" data-tab-content="" role="tabpanel" aria-labelledby="tab-12"
+            aria-hidden="true" class="tab-content">
+                <div class="collapse">
+                    <div class="head-collapse js-collapse">
+                        <p><a href="#collapse10_1" aria-expanded="false"
+                            class="js-collapseClick">{{ T "uoc_ri_research_groups" }}<span
+                            class="icon icon--arrow-down"></span></a></p>
+                    </div>
+                    <div id="collapse10_1" class="contentCollapse show">
+                        <div class="card-in-acordeon">
+                            <div class="row list-grups">
+                                <div class="row data-grups"></div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <ul role="navigation" class="pagination-grups"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse">
+                    <div class="head-collapse js-collapse">
+                        <p><a href="#collapse10_2" aria-expanded="false"
+                            class="js-collapseClick">{{ T "uoc_ri_researchers" }}<span
+                            class="icon icon--arrow-down"></span></a></p>
+                    </div>
+                    <div id="collapse10_2" class="contentCollapse show">
+                        <div class="card-in-acordeon">
+                            <div class="row list-investigadors">
+                                <div class="row data-investigadors"></div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <ul role="navigation" class="pagination-investigadors"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+            <div id="tab-content-13" data-tab-content="" role="tabpanel" aria-labelledby="tab-13"
+            aria-hidden="false" class="tab-content">
+                <div class="collapse">
+                    <div class="head-collapse js-collapse">
+                        <p>
+                            <a href="#collapse12" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_contacte" }}<span
+                            class="icon icon--arrow-down"></span></a>
+                        </p>
+                    </div>
+                    <div id="collapse12" class="contentCollapse show">
+                        <div class="contact-list-icon">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-9">
+                                    <div class="wrap-content">
+                                        <p >{{ $contacte.text}}</p>
+                                        <p >{{ $contacte.address}}</p>
+                                        <p >{{ $contacte.telefon}}</p>
+                                        <p >{{ $contacte.email}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{else}}
+
+{{ $generalInfo := index (.Params.general) 0 }}
+{{ $sobreSpin := index (.Params.sobre_spinoff) 0 }}
+{{ $products_serveis := index (.Params.productes_serveis) 0 }}
+{{ $clients := index (.Params.clients) 0 }}
+{{ $casosExit := index (.Params.casos_exit) 0 }}
+{{ $grupsRecerca := index (.Params.grups_recerca) 0 }}
+{{ $contacte := index (.Params.contacte) 0 }}
+
+<section class="info-general">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="page-title title-border-green">
+                <h2>{{ $generalInfo.nom_spinoff }}</h2>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-9">
+            <section class="bg-main " style="background-image: url({{$generalInfo.img_background}});">
+                <div class="img--tint"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-xs-6">
+                            <h2>{{ $generalInfo.text_breu}}</h2>
+                        </div>
+                        <div class="col-md-12"></div>
+                        <div class="col-md-8 col-lg-8 col-xs-8">
+                            <h5>{{ $generalInfo.slogan}}</h5>
+                        </div>
+                        <div data-dropdown="" class="dropdown">
+                            <button data-dropdown-trigger="" aria-label="Texto descriptivo"
+                            aria-expanded="false" aria-controls="dropdown__content1"
+                            class="btn btn--primary dropdown__trigger">{{ T "uoc_ri_detail_social_media" }}<span aria-hidden="true"
+                            class="icon icon--share"></span></button>
+                            <ul role="menu" id="dropdown__content1" data-dropdown-content="" class="dropdown__content dropdown__list">
+                                
+                                <li role="menuitem" data-dropdown-content="" class="dropdown__item">
+                                    <p class="text-small">
+                                        
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-xs-12 col-md-3">
+            <div class="ficha-detail">
+                <div class="box">
+                    <div class="boxGrey">
+                        <p><strong>{{ T "uoc_ri_tipologia" }} :</strong>{{ $generalInfo.tipologia}}</p>
+                        <p><strong>{{ T "uoc_ri_sector" }} :</strong>{{ $generalInfo.sector}}</p>
+                        <p></p>
+                        <p>
+                            <div class="row">
+                                
+                                <div class="img--y col-xs-12 col-md-12">
+                                    <div class="img-wpr img-wpr--horizontal">
+                                        <img class="img-wpr__cover" src="{{$generalInfo.logo}}" alt="{{ $generalInfo.nom_spinoff }}" />
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </p>
+                        <p>
+                            <div class="row">
+
+                                <div class="col-xs-12">
+
+                                    <div data-dropdown="" aria-label="" class="dropdown">
+                                        <h5 data-dropdown-trigger="" class="dropdown-trigger" aria-expanded="false" aria-controls="dropdown__content1">{{ T "uoc_ri_keywords" }}
+                                            <span aria-hidden="true" class="icon icon--arrow-down icon--after is-active-hidden float-right"></span>
+                                            <span aria-hidden="true" class="icon icon--arrow-up icon--after is-active-visible float-right"></span>
+                                        </h5>
+                                        <ul role="menu" id="dropdown__content1" data-dropdown-content="" class="dropdown__content dropdown__list">
+                                            {{ range $k := $generalInfo.keywords }}
+                                            <li role="menuitem" data-dropdown-content="" class="dropdown__item">
+                                                <p class="text-small">
+                                                    {{$k.value}}
+                                                </p>
+                                            </li>
+                                            {{end}}
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                  
+
+                            </div>
+                                                      
+                        </p>
+                    </div>	
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        
+<section data-tab-system="" class="ficha-detail mT60">
+        <div class="row" style="margin-bottom:25px;">
+            <div class="col-xs-12">
+                <h2>
+                    <span class="icon icon--material-pdf icon--header float-right" aria-hidden="true"></span>
+                </h2>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-3">
+            <ul role="tablalist" data-sticky="data-sticky" class="list-group borderTopGrey toStick">               
+                <li role="presentation">
+                    <a id="tab-10" href="#tab-content-10" role="tab"
+                    aria-controls="tab-content-10" aria-selected="true" data-tab-trigger=""
+                    class="tab is-active js-width-final"><span>{{ T "uoc_ri_about_spin" }}</span></a>
+                </li>                   
+                <li role="presentation">
+                    <a id="tab-11" href="#tab-content-11" role="tab"
+                    aria-controls="tab-content-11" aria-selected="false" data-tab-trigger=""
+                    class="tab"><span>{{ T "uoc_ri_productes_serveis" }}</span></a>
+                </li>                         
+                <li role="presentation">
+                    <a id="tab-12" href="#tab-content-12" role="tab"
+                    aria-controls="tab-content-12" aria-selected="false" data-tab-trigger=""
+                    class="tab"><span>{{ T "uoc_ri_clients" }}</span></a>
+                </li> 
+                <li role="presentation">
+                    <a id="tab-13" href="#tab-content-13" role="tab"
+                    aria-controls="tab-content-13" aria-selected="false" data-tab-trigger=""
+                    class="tab"><span>{{ T "uoc_ri_casos_exit" }}</span></a>
+                </li>                   
+                <li role="presentation">
+                    <a id="tab-14" href="#tab-content-14" role="tab"
+                    aria-controls="tab-content-14" aria-selected="false" data-tab-trigger=""
+                    class="tab"><span>{{ T "uoc_ri_research_groups" }}</span></a>
+                </li>       
+                <li role="presentation">
+                    <a id="tab-15" href="#tab-content-15" role="tab"
+                    aria-controls="tab-content-15" aria-selected="false" data-tab-trigger=""
+                    class="tab"><span>{{ T "uoc_ri_contacte" }}</span></a>
+                </li>
+            </ul>
+            <div class="content-for-sticky"></div>
+        </div>
+        <div class="col-xs-12 col-md-9">
+            <div id="tab-content-10" data-tab-content="" role="tabpanel" aria-labelledby="tab-10"
+            aria-hidden="false" class="tab-content is-active">
+                <div class="js-collapse-group">
+                    <div class="collapse">
+                        <div class="head-collapse js-collapse">
+                            <p>
+                                <a href="#collapse2" aria-expanded="false"
+                                class="js-collapseClick">{{ T "uoc_ri_about_spin" }}<span
+                                class="icon icon--arrow-down"></span></a>
+                            </p>
+                        </div>
+                        <div id="collapse2" class="contentCollapse show">
+                            <div class="card-in-acordeon">
+                                <div class="wrap-richText">
+                                    {{ safeHTML (markdownify $sobreSpin.descripcio) }}
+                                </div>
+                            </div>
+                            <div class="card-in-acordeon">
+                                <h4>{{ T "uoc_ri_docs" }}</h4>
+
+                                <ul class="list--unstyled">
+                                <li>Lorem ipsum dolor sit amet</li>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>                
+            <div id="tab-content-11" data-tab-content="" role="tabpanel" aria-labelledby="tab-11"
+                aria-hidden="true" class="tab-content">
+                <div class="js-collapse-group">
+                    <div class="collapse">
+                        <div class="head-collapse js-collapse">
+                            <p>
+                                <a href="#collapse1" aria-expanded="false" class="js-collapseClick">{{ T "uoc_ri_productes_serveis" }}<span
+                                    class="icon icon--arrow-down"></span>
+                                </a>
+                            </p>
+                        </div>
+                        <div id="collapse1" class="contentCollapse">
+                            <div class="card-in-acordeon">
+                                <div class="wrap-richText">
+                                    <p>{{ $products_serveis.descripcio}}</p>
+                                </div>
+                            </div>
+                            <div class="card-in-acordeon">
+                                <h4>{{ T "uoc_ri_docs" }}</h4>
+                                <div class="wrap-richText">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-content-12" data-tab-content="" role="tabpanel" aria-labelledby="tab-12"
+            aria-hidden="true" class="tab-content">
+                <div class="js-collapse-group">
+                    <div class="collapse">
+                        <div class="head-collapse js-collapse">
+                            <p>
+                                <a href="#collapseApps" aria-expanded="false" class="js-collapseClick">{{ T "uoc_ri_clients" }}<span
+                                    class="icon icon--arrow-down"></span>
+                                </a>
+                            </p>
+                        </div>
+                        <div id="collapseApps" class="contentCollapse">
+                            <div class="card-in-acordeon">
+                                <div class="wrap-richText">
+                                    <p>{{ $clients.descripcio}}</p>
+                                </div>
+                            </div>
+                            <div class="card-in-acordeon">
+                                <h4>{{ T "uoc_ri_docs" }}</h4>
+                                <div class="wrap-richText">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-content-13" data-tab-content="" role="tabpanel" aria-labelledby="tab-13"
+                aria-hidden="true" class="tab-content">
+                <div class="js-collapse-group">
+                    <div class="collapse">
+                        <div class="head-collapse js-collapse">
+                            <p>
+                                <a href="#collapse1" aria-expanded="false" class="js-collapseClick">{{ T "uoc_ri_casos_exit" }}<span
+                                    class="icon icon--arrow-down"></span>
+                                </a>
+                            </p>
+                        </div>
+                        <div id="collapse1" class="contentCollapse">
+                            <div class="card-in-acordeon">
+                                <div class="wrap-richText">
+                                    {{ safeHTML (markdownify $casosExit.descripcio) }}
+                                </div>
+                            </div>
+                            <div class="card-in-acordeon">
+                                <h4>{{ T "uoc_ri_docs" }}</h4>
+
+                                <ul class="list--unstyled">
+                                <li><h4>{{$casosExit.titol}}</h4></li>
+                                <li>{{$casosExit.img}}</li>
+                                <li>{{$casosExit.url_success}}</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-content-14" data-tab-content="" role="tabpanel" aria-labelledby="tab-14"
+            aria-hidden="true" class="tab-content">
+                <div class="collapse">
+                    <div class="head-collapse js-collapse">
+                        <p><a href="#collapse10_1" aria-expanded="false"
+                            class="js-collapseClick">{{ T "uoc_ri_research_groups" }}<span
+                            class="icon icon--arrow-down"></span></a></p>
+                    </div>
+                    <div id="collapse10_1" class="contentCollapse show">
+                        <div class="card-in-acordeon">
+                            <div class="row list-grups">
+                                <div class="row data-grups"></div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <ul role="navigation" class="pagination-grups"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse">
+                    <div class="head-collapse js-collapse">
+                        <p><a href="#collapse10_2" aria-expanded="false"
+                            class="js-collapseClick">{{ T "uoc_ri_researchers" }}<span
+                            class="icon icon--arrow-down"></span></a></p>
+                    </div>
+                    <div id="collapse10_2" class="contentCollapse show">
+                        <div class="card-in-acordeon">
+                            <div class="row list-investigadors">
+                                <div class="row data-investigadors"></div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <ul role="navigation" class="pagination-investigadors"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+            <div id="tab-content-15" data-tab-content="" role="tabpanel" aria-labelledby="tab-15"
+            aria-hidden="false" class="tab-content">
+                <div class="collapse">
+                    <div class="head-collapse js-collapse">
+                        <p>
+                            <a href="#collapse12" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_contacte" }}<span
+                            class="icon icon--arrow-down"></span></a>
+                        </p>
+                    </div>
+                    <div id="collapse12" class="contentCollapse show">
+                        <div class="contact-list-icon">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-9">
+                                    <div class="wrap-content">
+                                        <p >{{ $contacte.text}}</p>
+                                        <p >{{ $contacte.address}}</p>
+                                        <p >{{ $contacte.telefon}}</p>
+                                        <p >{{ $contacte.email}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{end}}
+                

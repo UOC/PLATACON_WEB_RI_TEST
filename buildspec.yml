@@ -1,0 +1,28 @@
+version: 0.2
+
+env:
+  variables:
+    s3_output: "uocwebrisupport"
+    hugo_version: "0.59.1"
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - wget "https://github.com/gohugoio/hugo/releases/download/v${hugo_version}/hugo_${hugo_version}_Linux-64bit.deb"
+      - dpkg -i hugo_${hugo_version}_Linux-64bit.deb
+    finally:
+      - hugo version
+  pre_build:
+    commands:
+      - node ./bin/rename-languages.js
+    finally:
+      - echo "Finished renaming language files"
+  build:
+    commands:
+      - hugo
+      - cd public && aws s3 sync . s3://${s3_output} --delete --acl public-read
+      - aws cloudsearchdomain --endpoint-url http://doc-webri-2dz3yckt2f5cjq7hcsbois6nw4.eu-west-1.cloudsearch.amazonaws.com upload-documents --content-type application/json --documents ./ca/index.json
+    finally:
+      - echo "Script finished running"

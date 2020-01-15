@@ -1,0 +1,387 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
+
+  <!-- Include the styles for the Netlify CMS UI, after your own styles -->
+  <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.css" />
+
+  <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <!-- Include the script that builds the page and powers Netlify CMS -->
+  <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
+
+  <!-- Include the script that builds the page and powers Netlify CMS 
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+-->
+  <style>
+
+    .tags{
+      padding: 1em 0 1em 0;
+    }
+
+    label {
+      background: #5cb85c;
+      color: #fff;
+      padding: .5em;
+      margin: 0 .5em 0 0 ;
+      font-size: 10px;
+      border-radius: 3px;
+    }
+    label:after {
+        content: 'x';
+        font-weight: bold;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+  </style>
+
+  <script>
+
+    var SelectorControlGrup = createClass({
+      handleChange: function(e) {
+        console.log('event-->',e.currentTarget);
+        console.log('query_selected-->',document.getElementById('query_selected'));
+        //this.refreshGrupsLabel();
+        let items = document.getElementById("query_selected").children;
+        var grs = [];
+        console.log('retrieving change items...',items);
+        for(j=0;j<items.length;j++){
+          console.log('items[j]--->',items[j])
+          var queryValue = items[j].attributes["value"].value;
+          console.log('queryValue-->',queryValue);
+          var _id = queryValue.split("_");
+          let obj = {
+            name : items[j].innerText,
+            id : _id[1]
+          }
+          console.log('updating grups databse--->',obj);
+          grs.push(obj);
+        }
+        //var grups = this.generateGrupsObjView(grs);
+        this.props.onChange({value:grs});
+      },
+
+      requestData: function(e){
+        let results = document.getElementById("query_results");
+        if(!document.getElementById("text_query").value){
+          results.innerHTML = "";
+          return;
+        }
+        console.log('sending request to... https://transfer-research.am.pre.uoc.es/api/search?idioma=ca&q='+document.getElementById("text_query").value+'&tipus=grup');
+        fetch('https://transfer-research.am.pre.uoc.es/api/search?idioma=ca&q='+encodeURIComponent(document.getElementById("text_query").value)+'&tipus=grup',
+            { 
+              method: 'GET',
+              mode: 'cors'
+            }
+        )
+        .then(function(response) {
+          //console.log('getting response from ajax request--->',response);
+          return response.text()
+        })
+        .then(function(text){
+          results.innerHTML="";
+          text.split("\n").map(function(searchResponse){
+            //console.log('each item on response..',searchResponse);
+            let resObj = JSON.parse(searchResponse);
+            //console.log('jsonRes-->',resObj);
+            var grups = resObj.hits["hit"]
+            console.log('GRUPS___> ',grups);
+            for(var i = 0; i<=grups.length - 1;i++){
+              results.innerHTML += "<input type='checkbox' value='query_"+encodeURIComponent(grups[i].id)+"' onclick=\"document.getElementById('query_selected').innerHTML+='<label class=selector_tag value=query_" + encodeURIComponent(grups[i].id) + ">" + grups[i].fields["nom_grup"] + "</label>';document.getElementById('trigger').click()\"> " + grups[i].fields["nom_grup"] + "<br />";
+            }
+            //results.innerHTML += "<input type='checkbox' value='query_"+encodeURIComponent(item)+"' onclick=\"document.getElementById('query_selected').innerHTML+='<label class=selector_tag>"+item+"</label>';document.getElementById('trigger').click()\"> " + item + "<br />";
+          });
+        });      
+      },
+      generateGrupsObjView:function(items){
+
+        var entries = [];
+        for(var k=0;k<items.length;k++){ 
+          console.log('items[k]-->',items[k]);
+          let obj = {
+            name: items[k].name,
+            value: items[k].id
+          }
+          console.log('create obj ::',obj);
+          entries.push(obj);
+          //entries+="<input type='checkbox' value='query_"+encodeURIComponent(obj.id)+"' onclick=\"document.getElementById('query_selected').innerHTML+='<label class=selector_tag>" + encodeURIComponent(obj.name) + "</label>';document.getElementById('trigger').click()\"> " + encodeURIComponent(obj.name) + "<br />";
+        }
+        //console.log('values--->',values);
+        //console.log('entries--->',entries);
+
+        let viewObj = {
+          value: entries
+        }
+        //console.log('listViewObj-->',viewObj);
+        return viewObj;
+
+      },
+      createHfunction4GrupLabel: function(initObj){
+        
+        let hFuncObj = [];
+
+        for (var l=0;l < (initObj.value.length);l++){
+          let hF =  h('label',{
+            class: "selector_tag",
+            value: "query_" + initObj.value[l].value,
+            onClick: "document.getElementById('trigger').click();",
+          },initObj.value[l].name)
+          console.log('l value--->',l);
+          console.log('initObj.value.length--->',initObj.value.length);          
+          console.log('insertting label for grup-->',hF);
+          //hFuncObj = hF;
+          hFuncObj.push(hF);
+          hF = h();
+        }
+        console.log('hFunctionObj--->',hFuncObj.length);
+        return hFuncObj;
+      },
+      refreshGrupsLabel: function (){
+        let refreshedGrups = document.getElementById("query_selected");
+        while (refreshedGrups.firstChild) {
+          refreshedGrups.removeChild(refreshedGrups.firstChild);
+        }
+      },
+      render: function() {
+        console.log('entry values!!!! ---->',this.props.value);
+        var split = false;
+        console.log('typeof::',typeof this.props.value)
+        var value;
+        if(typeof this.props.value == 'string') value = this.props.value.split(","),split=true;
+        else value =this.props.value,split=false;
+        var values = [];
+        console.log('split-->',split);
+        if(!!split){
+          for(g=0;g<value.length;g++){
+            let splitGs = value[g].split("____")
+            let _g = {
+              name: splitGs[0],
+              id: splitGs[1]
+            }
+            values.push(_g);
+          }
+        } else {
+          values = value.value;
+        }
+        console.log('rendering...value-->',this.props.value);
+        console.log('...value-->',value);
+        console.log('...values-->',values);
+        console.log('returning h function -->',h());
+        var initGrupsObj = this.generateGrupsObjView(values);
+        return h('div', 
+                { 
+                  _style : {border: "1px solid #bbb", backgroundColor:"grey"}
+                },
+                  h('div',{
+                    id:'query_selected',
+                    class: "tags"
+                  },this.createHfunction4GrupLabel(initGrupsObj)
+                  ),
+                  h('input', {
+                      id : "text_query", 
+                      style : {border: "1px solid #bbb", backgroundColor:"grey"}
+                      //onChange: this.handleChange
+                    }
+                  ),
+                  h('button', {
+                      onClick: this.requestData
+                    },
+                    'cerca'
+                  ),
+                  h('div', {
+                      id: "query_results"
+                    }
+                  ),
+                  h('button', {
+                      id : "trigger",
+                      style : {
+                        display : "none"
+                      },
+                      onClick: this.handleChange
+                    },
+                    'trigger'
+                  )
+            );
+      }
+    });
+
+    var SelectorControlInvestigador = createClass({
+      handleChange: function(e) {
+        console.log('event-->',e.currentTarget);
+        console.log('query_selected-->',document.getElementById('query_selected'));
+        //this.refreshGrupsLabel();
+        let items = document.getElementById("query_selected").children;
+        var grs = [];
+        console.log('retrieving change items...',items);
+        for(j=0;j<items.length;j++){
+          console.log('items[j]--->',items[j])
+          var queryValue = items[j].attributes["value"].value;
+          console.log('queryValue-->',queryValue);
+          var _id = queryValue.split("_");
+          let obj = {
+            name : items[j].innerText,
+            id : _id[1]
+          }
+          console.log('updating grups databse--->',obj);
+          grs.push(obj);
+        }
+        //var grups = this.generateGrupsObjView(grs);
+        this.props.onChange({value:grs});
+      },
+
+      requestData: function(e){
+        let results = document.getElementById("query_results");
+        if(!document.getElementById("text_query").value){
+          results.innerHTML = "";
+          return;
+        }
+        console.log('sending request to... https://transfer-research.am.pre.uoc.es/api/search?idioma=ca&q='+document.getElementById("text_query").value+'&tipus=grup');
+        fetch('https://transfer-research.am.pre.uoc.es/api/search?idioma=ca&q='+encodeURIComponent(document.getElementById("text_query").value)+'&tipus=grup',
+            { 
+              method: 'GET',
+              mode: 'cors'
+            }
+        )
+        .then(function(response) {
+          //console.log('getting response from ajax request--->',response);
+          return response.text()
+        })
+        .then(function(text){
+          results.innerHTML="";
+          text.split("\n").map(function(searchResponse){
+            //console.log('each item on response..',searchResponse);
+            let resObj = JSON.parse(searchResponse);
+            //console.log('jsonRes-->',resObj);
+            var grups = resObj.hits["hit"]
+            console.log('GRUPS___> ',grups);
+            for(var i = 0; i<=grups.length - 1;i++){
+              results.innerHTML += "<input type='checkbox' value='query_"+encodeURIComponent(grups[i].id)+"' onclick=\"document.getElementById('query_selected').innerHTML+='<label class=selector_tag value=query_" + encodeURIComponent(grups[i].id) + ">" + grups[i].fields["nom_grup"] + "</label>';document.getElementById('trigger').click()\"> " + grups[i].fields["nom_grup"] + "<br />";
+            }
+            //results.innerHTML += "<input type='checkbox' value='query_"+encodeURIComponent(item)+"' onclick=\"document.getElementById('query_selected').innerHTML+='<label class=selector_tag>"+item+"</label>';document.getElementById('trigger').click()\"> " + item + "<br />";
+          });
+        });      
+      },
+      generateGrupsObjView:function(items){
+
+        var entries = [];
+        for(var k=0;k<items.length;k++){ 
+          console.log('items[k]-->',items[k]);
+          let obj = {
+            name: items[k].name,
+            value: items[k].id
+          }
+          console.log('create obj ::',obj);
+          entries.push(obj);
+          //entries+="<input type='checkbox' value='query_"+encodeURIComponent(obj.id)+"' onclick=\"document.getElementById('query_selected').innerHTML+='<label class=selector_tag>" + encodeURIComponent(obj.name) + "</label>';document.getElementById('trigger').click()\"> " + encodeURIComponent(obj.name) + "<br />";
+        }
+        //console.log('values--->',values);
+        //console.log('entries--->',entries);
+
+        let viewObj = {
+          value: entries
+        }
+        //console.log('listViewObj-->',viewObj);
+        return viewObj;
+
+      },
+      createHfunction4GrupLabel: function(initObj){
+        
+        let hFuncObj = [];
+
+        for (var l=0;l < (initObj.value.length);l++){
+          let hF =  h('label',{
+            class: "selector_tag",
+            value: "query_" + initObj.value[l].value,
+            onClick: "document.getElementById('trigger').click();",
+          },initObj.value[l].name)
+          console.log('l value--->',l);
+          console.log('initObj.value.length--->',initObj.value.length);          
+          console.log('insertting label for grup-->',hF);
+          //hFuncObj = hF;
+          hFuncObj.push(hF);
+          hF = h();
+        }
+        console.log('hFunctionObj--->',hFuncObj.length);
+        return hFuncObj;
+      },
+      refreshGrupsLabel: function (){
+        let refreshedGrups = document.getElementById("query_selected");
+        while (refreshedGrups.firstChild) {
+          refreshedGrups.removeChild(refreshedGrups.firstChild);
+        }
+      },
+      render: function() {
+        console.log('entry values!!!! ---->',this.props.value);
+        var split = false;
+        console.log('typeof::',typeof this.props.value)
+        var value;
+        if(typeof this.props.value == 'string') value = this.props.value.split(","),split=true;
+        else value =this.props.value,split=false;
+        var values = [];
+        console.log('split-->',split);
+        if(!!split){
+          for(g=0;g<value.length;g++){
+            let splitGs = value[g].split("____")
+            let _g = {
+              name: splitGs[0],
+              id: splitGs[1]
+            }
+            values.push(_g);
+          }
+        } else {
+          values = value.value;
+        }
+        console.log('rendering...value-->',this.props.value);
+        console.log('...value-->',value);
+        console.log('...values-->',values);
+        console.log('returning h function -->',h());
+        var initGrupsObj = this.generateGrupsObjView(values);
+        return h('div', 
+                { 
+                  _style : {border: "1px solid #bbb", backgroundColor:"grey"}
+                },
+                  h('div',{
+                    id:'query_selected',
+                    class: "tags"
+                  },this.createHfunction4GrupLabel(initGrupsObj)
+                  ),
+                  h('input', {
+                      id : "text_query", 
+                      style : {border: "1px solid #bbb", backgroundColor:"grey"}
+                      //onChange: this.handleChange
+                    }
+                  ),
+                  h('button', {
+                      onClick: this.requestData
+                    },
+                    'cerca'
+                  ),
+                  h('div', {
+                      id: "query_results"
+                    }
+                  ),
+                  h('button', {
+                      id : "trigger",
+                      style : {
+                        display : "none"
+                      },
+                      onClick: this.handleChange
+                    },
+                    'trigger'
+                  )
+            );
+      }
+    });
+
+    CMS.registerWidget('grups', SelectorControlGrup);
+    CMS.registerWidget('investigadors', SelectorControlInvestigador);
+  </script>
+
+
+</body>
+</html>

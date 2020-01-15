@@ -1,0 +1,206 @@
+{{$type := .Type }}
+{{$generalInfo := index (.Params.general) 0 }}
+{{$xarxes := $generalInfo.xarxes}}
+
+<section>
+    <div class="row">
+        <div class="col-xs-12 col-md-3">
+            <div class="page-title title-border-green ">
+                {{if eq $type "noticies"}}
+                <h3 class="col-xs-12 col-md-3"><strong>{{ T "uoc_ri_difusio_noticia"}}</strong></h3>
+                {{else}}
+                <h3 class="col-xs-12 col-md-3"><strong>{{ T "uoc_ri_difusio_esdeveniment"}}</strong></h3>
+                {{end}}
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-9">
+            <div class="page-title title-border-green">
+                <h1>{{ $generalInfo.titol}}</h1>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+            
+        </div>
+        
+        <div class="col-xs-12 col-md-9">
+            {{if eq $type "noticies"}}
+            <figure class="img-figure">
+                <img src={{$generalInfo.img}}>
+                <figcaption class="img-figcaption">
+                    <div class="float-left" id="img-figcaption1">
+                        <em class="text-extra-small">Foto: {{$generalInfo.img_autor}}</em>
+                        <br><br>
+                        {{dateFormat "02/01/2006" $generalInfo.data}} <br>  {{$generalInfo.autor}}
+                    </div>
+                    <div class="float-right" role="complementary" id="img-figcaption2">
+                        
+                        <div class="social-links unstyled">
+                            {{range $xarxes}}
+                                {{if eq .xarxa "facebook"}}
+                            <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Facebook']);" href="{{.address}}" target="_blank"
+                                    title='Facebook {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Facebook {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-facebook"> </span></a>
+                                {{end}}
+                                {{if eq .xarxa "twitter"}}
+                            <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Twitter']);"	href="{{.address}}" target="_blank"
+                                    title='Twitter {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Twitter {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-twitter"> </span></a>
+                                {{end}}
+                                {{if eq .xarxa "instagram"}}        
+                            <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Instagram']);" href="{{.address}}" target="_blank"	
+                                    title='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}' aria-label='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-instagram"> </span></a>
+                                {{end}}
+                            {{end}}
+                        </div>
+
+                    </div>
+                </figcaption>
+            </figure>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<div class="row">
+    <div class="ruler ruler--thin"></div><br>
+</div>
+<section>
+    <div class="row">
+        <div class="col-xs-12 col-md-3">
+            {{if eq $type "noticies"}}
+                {{$descMap := (index (index .Params.descripcio) 0) 0}}
+                <blockquote class="pullquote">{{$descMap.entrada}}</blockquote>
+            {{end}}
+        </div>
+        <div class="col-xs-12 col-md-9">
+            {{if eq $type "noticies"}}
+                {{$descMap := (index (index .Params.descripcio) 0) 0}}
+                <p>{{safeHTML (markdownify $descMap.descripcio)}}</p>
+            {{else}}
+                <p>{{$generalInfo.descripcio}}</p>
+                
+                    <div>
+                        <div class="card card--image-horizontal card--info col-xs-12 card--2y col-clear-right">
+                        <div class="card__contents col-xs-12 col-md-4">
+                            <h3 class="h4 ">{{ T "uoc_ri_esdeveniment_On" }}</h3>
+                            <p>{{ $generalInfo.lloc}}</p>
+                            <h3 class="h4 clear-both">{{ T "uoc_ri_esdeveniment_Quan" }}</h3>
+                            <p>
+                                {{dateFormat "02/01/2006 15:04" $generalInfo.data}}
+                            <p>
+                            &nbsp;</p>
+                        </div>
+                        <div class="card__contents col-xs-12 col-md-2"></div>
+                        <div class="card__image col-xs-12 col-md-6">
+                                <div tabindex="700" id="map" style="height: 100%;"></div>
+                                
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="row">
+                        
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="ruler ruler--thin"></div>
+                    </div>
+                    <br>
+                    <div class="float-right" role="complementary">
+                        
+                        <div class="social-links unstyled">
+                            {{range $xarxes}}
+                                {{if eq .xarxa "facebook"}}
+                            <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Facebook']);" href="{{.address}}" target="_blank"
+                                    title='Facebook {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Facebook {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-facebook"> </span></a>
+                                {{end}}
+                                {{if eq .xarxa "twitter"}}
+                            <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Twitter']);"	href="{{.address}}" target="_blank"
+                                    title='Twitter {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Twitter {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-twitter"> </span></a>
+                                {{end}}
+                                {{if eq .xarxa "instagram"}}        
+                            <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Instagram']);" href="{{.address}}" target="_blank"	
+                                    title='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}' aria-label='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-instagram"> </span></a>
+                                {{end}}
+                            {{end}}
+                        </div>
+
+                    </div>           
+                
+            {{end}}
+        </div>
+    </div>             
+</section>
+       
+<script src="/js/lib/ol.js"></script>
+<script src="/js/lib/leaflet.js"></script>
+<script src="/js/lib/esri-leaflet.js"></script>
+<script src="/js/lib/esri-leaflet-geocoder.js"></script>
+<script>
+    var layer0 = new ol.layer.Tile({
+        source: new ol.source.OSM({
+            crossOrigin: null,
+            url: 'https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        })
+    });
+    
+    var address = "{{ $generalInfo.lloc}}";
+    var lat = 0;
+    var lng = 0;
+    L.esri.Geocoding.geocode().text(address).run((err, results, response) => {
+        if (err) {
+            console.log(err);
+            return;
+        }
+        lat= results.results[0].latlng.lat;
+        lng= results.results[0].latlng.lng;
+        console.log(lat);
+        console.log(lng);
+        var Markers = [
+        {lat: lat, lng: lng},
+        ];
+        console.log(lat);
+        var mapa = new ol.Map({
+            
+            layers: [ layer0 ],
+            target: 'map',
+            view: new ol.View({
+                center: ol.proj.fromLonLat([lng, lat]),
+                zoom: 12
+            })
+        });
+        var features = [];
+        
+        
+        for (var i = 0; i < Markers.length; i++) {
+            var item = Markers[i];
+            var longitude = item.lng;
+            var latitude = item.lat;
+            
+            var iconFeature = new ol.Feature({
+                geometry: new ol.geom.Point(ol.proj.transform([longitude, latitude], 'EPSG:4326', 'EPSG:3857'))
+            });
+            
+            var iconStyle = new ol.style.Style({
+                image: new ol.style.Icon(({
+                    anchor: [0.5, 1],
+                    src: "http://cdn.mapmarker.io/api/v1/pin?text=P&size=50&hoffset=1"
+                }))
+            });
+            
+            iconFeature.setStyle(iconStyle);
+            features.push(iconFeature);
+            
+            var vectorSource = new ol.source.Vector({
+                features: features
+            });
+            
+            var vectorLayer = new ol.layer.Vector({
+                source: vectorSource
+            });
+            
+            
+            
+            mapa.addLayer(vectorLayer);
+            
+        }
+        
+    });</script>

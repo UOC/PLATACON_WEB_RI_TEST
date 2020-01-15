@@ -1,0 +1,11 @@
+[{
+	"type" : "add",
+	"id" : {{ .Params.id | jsonify }},
+	"fields" : {
+		"content": "",
+		"content_encoding": "utf-8",
+		"content_type": "solucions",
+		"resourcename": "{{ .Params.idp | jsonify }}",
+		"url": {{ .Params.uri | jsonify }}
+	}
+}]

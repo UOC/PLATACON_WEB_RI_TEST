@@ -1,0 +1,51 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+ 
+theme = "uoc"
+uglyurls = true
+
+DefaultContentLanguage = "ca"
+DefaultContentLanguageInSubdir = "true"
+
+disableKinds = ["home","section","taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+
+[permalinks]
+  grup = "grup/:filename"
+  principal = "/index"
+  solucio_tec = "/solucio_tec/:filename"
+  patent = "/patent/:filename"
+  servei = "/servei/:filename"
+  spin_off = "/spin_off/:filename"
+  
+[languages]
+  [languages.ca]
+    url = "/ca/"
+    languageName = "Català"
+
+  [languages.es]
+    url = "/es/"
+    languageName = "Castellano"
+
+  [languages.en]
+    url = "/en/"
+    languageName = "English"
+
+
+[deployment]
+# By default, files are uploaded in an arbitrary order.
+# Files that match the regular expressions in the "Order" list
+# will be uploaded first, in the listed order.
+order = [".jpg$", ".gif$"]
+
+
+[[deployment.targets]]
+# An arbitrary name for this target.
+name = "dev"
+# S3; see https://gocloud.dev/howto/blob/#s3
+# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+# URL = "s3://<Bucket Name>?region=<AWS region>"
+URL = "s3://uocwebrisupport?region=eu-west-1"
+
+[outputs]
+  page = ["HTML","json"]

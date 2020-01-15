@@ -1,0 +1,40 @@
+.ajaxLoading .uoc_card_placeholder{
+	background-color: #EEE;
+	min-height: 220px;
+	padding: 0.5em;
+	animation-name: loading-card;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes loading-card {
+    0%   {background: #EEE;}
+    50%  {background: #FFF;}
+    100% {background: #EEE;}
+}
+@keyframes loading-lines {
+    0%   {background: #DDD;}
+    50%  {background: #FFF;}
+    100% {background: #DDD;}
+}
+.ajaxLoading .uoc_card_placeholder .line-short, .ajaxLoading .uoc_card_placeholder .line-long, .ajaxLoading .uoc_card_placeholder .line-medium, .ajaxLoading .uoc_card_placeholder .title{
+	background-color: #DDD;
+	min-height: 24px;
+	margin-bottom: 0.3em;
+	animation-name: loading-lines;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.ajaxLoading .uoc_card_placeholder .line-short {
+	width: 70%;
+}
+.ajaxLoading .uoc_card_placeholder .line-medium {
+	width: 85%;
+}
+.ajaxLoading .uoc_card_placeholder .line-long {
+	width: 95%;
+}
+.ajaxLoading .uoc_card_placeholder .title {
+	width: 60%;
+	height: 48px;
+	margin-bottom: 1em;
+}

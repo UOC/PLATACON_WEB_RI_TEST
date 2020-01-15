@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="{{.Site.Language.Lang}}">
+
+<head>
+    {{ partial "head.html" . }}
+    {{$language := .Site.Language.Lang }}
+</head>
+
+<body>
+    {{ partial "google_code_body.html" . }}
+    {{ partial "header.html" . }}
+    <div class="site-wrapper">
+        <section class="titol-pagina">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-title title-border-green">
+                        <h2>{{ T "uoc_difusio" }}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-9 col-xs-9">
+                <div class="bg-simple img-wpr img-wpr--horizontal img--tint">
+                    <img src="/img/detalle-noticia.jpg" class="img-wpr__cover" >
+                    <div class="img-wpr__contents">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <p class="h3 inverse">Només un terç de les patents espanyoles són impulsades per dones.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-wpr__contents">
+                        <div class="row">
+                            <div class="float-right text-small inverse">Esdeveniment
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xs-6 col-md-3" role="article">
+                <a href="/{{$language}}/noticies/alfa.html" class="card-absolute-link"></a>
+                <div class="card" role="region" aria-label="Texto descriptivo" >
+                    <div class="card__image">
+                        <img src="/img/detall_solucions_principal2.png" alt="Texto alternativo">
+                    </div>
+                    <div class="card__contents" >
+                        <p class="text-big text font-alternate">El treballador fluid, un nou tipus d'empleat difícil de retenir a l'empresa</p>
+                    </div>
+                    <div class="card__footer">
+                        <div class="float-left p-left-x  icon icon--external-link"></div>
+                        <div class="float-right p-right-x">Esdeveniment</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="text-align-center text-small" style="margin-top:50px;margin-bottom:50px;">
+                        <h4><strong>{{ T "uoc_ri_difusio_novetats" }}</strong></h3>
+                            <p><a id="st1" href="" class="text-align-center text-small">
+                                <div class="icon icon--arrow-down"></div>
+                            </a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-lg-12" >
+                        
+                        <!-- Llistat de totes les noticies/esdeveniments (els 8 primers) -->
+                        <!-- Element de paginacio que ens actualitzará aquesta llista-->
+                        {{ range $i, $sequence :=  (seq 8) }}
+                        <div class="col-xs-6 col-md-3" role="article">
+                            
+                            <a href="/{{$language}}/noticies/alfa.html" class="card-absolute-link"></a>
+                            <div class="card" role="region" aria-label="Texto descriptivo" >
+                                <div class="card__image">
+                                    <img src="/img/detall_solucions_principal2.png" alt="Texto alternativo">
+                                </div>
+                                <div class="card__contents" >
+                                    <p class="text-big text font-alternate">El treballador fluid, un nou tipus d'empleat difícil de retenir a l'empresa</p>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="float-left p-left-x  icon icon--external-link"></div>
+                                    <div class="float-right p-right-x">Esdeveniment</div>
+                                </div>
+                            </div>
+                        </div>
+                        {{end}}
+                    </div>
+                </div>
+                
+                <ul role="navigation" class="pagination">
+                    <li class="col-md-1 pagination__item is-active">
+                        <span title="Pagina 1" aria-label="Pagina 1" aria-selected="true" class="pagination__link">01</span>
+                    </li>
+                    <li class="col-md-1 pagination__item">
+                        <a href="#" title="Pagina 2" aria-label="Pagina 2" aria-selected="false" class="pagination__link">02</a>
+                    </li>
+                    <li class="col-md-1 pagination__item">
+                        <a href="#" title="Pagina 3" aria-label="Pagina 3" aria-selected="false"  class="pagination__link">03</a>
+                    </li>
+                    <li class="col-md-1 pagination__item">
+                        <a href="#" title="Pagina 4" aria-label="Pagina 4" aria-selected="false" class="pagination__link">04</a>
+                    </li>
+                    <li class="col-md-5 pagination__item">
+                        <a href="#" title="Pagina 5" aria-label="Pagina 5" aria-selected="false" class="pagination__link">05</a>
+                    </li>
+                    <li class="col-xs-12 col-md-3 pagination__item pagination__item--next">
+                        <a href="#" title="Enlace siguiente" aria-label="Enlace siguiente" rel="next" class="btn btn--primary">Siguiente</a>
+                    </li>
+                </ul>
+                
+                <!-- <div class="">
+                    <div></div>
+                </div>
+                <div role="article" class="" data-video="">
+                    <a href="" aria-hidden="true" class="" target="_self" aria-labelledby="card-title-1575976596265">&nbsp;</a>
+                    <div class="card__image img--tint">
+                        <img data-set-id="3cols" data-src="" data-srcset="" data-sizes="(max-width: 767px) 100vw, (max-width: 1200px) 25vw, 300px" class="" alt="" data-lazy-load="" sizes="(max-width: 767px) 100vw, (max-width: 1200px) 25vw, 300px" srcset="" src="" data-was-processed="true">
+                        <a href="#modal-1575976596275" data-modal-trigger="" data-video-play="" class="" title="Visualització del video modal">&nbsp;</a>
+                        <div data-modal="" id="modal-1575976596275" class="">
+                            <div role="document" data-modal-dialog="" class="">
+                                <button accesskey="e" class="" data-modal-close="">
+                                    <span class="icon icon--close"></span>
+                                </button>
+                                <div class="modal__content">
+                                    <div class="">
+                                        <div class="">
+                                            <div class="" id="ytplayermodal-modal-1575976596275" data-video-id="B45q34vwH5s" data-video-autoplay="1" data-video-time="0">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=""><h3 id="card-title-1575976596265" class=""><a href="" target="_self">La UOC, protagonista d'un vídeo de la BBC Storyworks i la IAU</a></h3><div class="card__footer">
+                        <div class="float-left" role="complementary" aria-label="tags">#AimingHigher</div><div class="float-right" role="complementary" aria-label="tags">UOC News</div>
+                    </div>
+                </div> 
+            </div>   -->
+            
+            {{ partial "footer.html" . }}
+        </div>    
+        {{ partial "ri_js_imports.html" . }}
+    </section>
+</div>
+</body>
+</html>
+

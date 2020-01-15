@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{.Site.Language.Lang}}">
+
+<head>
+    {{ partial "head.html" . }}
+    {{ $generalInfo := index (.Params.general) 0 }}
+    {{ $sobreTec := index (.Params.sobre_tecnologia) 0 }}
+    {{ $aspectesInnova := index (.Params.aspectes_innovadors) 0 }}
+    {{ $apps := index (.Params.aplicacions) 0 }}
+    {{ $grupsRecerca := index (.Params.grups_recerca) 0 }}
+    {{ $contacte := index (.Params.contacte) 0 }}
+</head>
+
+<body>
+    {{ partial "google_code_body.html" . }}
+    {{ partial "header.html" . }}
+    <div class="site-wrapper">                  
+        {{ partial "detail.html" . }}   
+        {{ partial "footer.html" . }}
+    </div>    
+{{ partial "ri_js_imports.html" . }}
+<!--script src="/js/search.js"></script-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

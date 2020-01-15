@@ -1,0 +1,57 @@
+org: jccarhuas
+app: webri
+service: webri-cloudsearch
+
+provider:
+  name: aws
+  runtime: python3.6
+  region: eu-west-1
+  stage: ${opt:stage, self:custom.defaultStage}
+  #environment:
+    #CLOUDSEARCH_DOMAIN: "/uoc-web-ri/cloudsearch-upload/${opt:stage, self:provider.stage}/CLOUDSEARCH_DOMAIN"
+  #iamRoleStatements:
+  #  - Effect: 'Allow'
+  #    Action:
+  #      - 's3:ListBucket'
+  #    Resource:
+  #      Fn::Join:
+  #        - ''
+  #        - - 'arn:aws:s3:::'
+   #         - Ref: ServerlessDeploymentBucket
+   # - Effect: 'Allow'
+   #   Action:
+    #    - 's3:PutObject'
+    #  Resource:
+     #   Fn::Join:
+      #    - ''
+       #   - - 'arn:aws:s3:::'
+        #    - Ref: ServerlessDeploymentBucket
+         #   - '/*'
+
+functions:
+  #upload:
+    #handler: event.upload
+    #memorySize: 128
+    #events:
+    #  - s3:
+     #    bucket: uocwebrisupport
+      #   event: s3:ObjectCreated:*
+       #  rules:
+        #    - suffix: .json
+         #existing: true
+  test:
+    handler: event.test
+    events:
+      - http:
+          path: user/create
+          method: get
+          cors: true
+  search:
+    handler: event.search
+    events:
+      - http:
+          path: user/search
+          method: get
+          cors: true
+custom:
+  defaultStage: dev
