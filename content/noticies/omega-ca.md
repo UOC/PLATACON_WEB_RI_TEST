@@ -7,9 +7,15 @@ general:
     destacat: true
     img: /img/marvin-meyer-syto3xs06fu-unsplash.jpg
     img_autor: Temàtiques d'ensenyament
+    link_extern: www.google.com
     titol: >-
       El Ministeri de Ciència, Innovació i Universitats finança onze noves
       recerques de la UOC sobre la digitalització de la societat
+    xarxes:
+      - address: 'https://www.facebook.com/UOC.universitat'
+        xarxa: facebook
+      - address: 'https://twitter.com/UOCuniversitat'
+        xarxa: twitter
 descripcio:
   - descripcio: >-
       L'Agència Estatal de Recerca, mitjançant el Ministeri de Ciència,

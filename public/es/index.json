@@ -1,11 +1,5 @@
 
 
-
-
-
-
-
-
 	
 	
 
@@ -42,6 +36,50 @@
 	
 	
 
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+
+
+
+	
+	
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -63,42 +101,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	
 	
 
 	
 	
-
-	
-	
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -124,668 +131,686 @@
 
 [{
 	  
-	  "type" : "add",
-    "id" : "6d87b41430ed568513ff8f60885ac104",
-    "fields" : {
-		"idioma": "ca",
-		"title": "Alfa",
-		"name": "Patent Alfa",
-		"text_breu": "Text introdutori patent Alfa",
-		"eslogan":"Eslògan patent Alfa",
-		"imatge_alt": "Alfa",
-		"imatge_title": "Alfa",
-		"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"centre": "IN3",
-		"sector": "Indústria 4.0",
-		"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_pat_title": "Sobre la patent Alfa",
-		"sobre_pat_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"davidmr@gmail.com",
-		"contacts_address" :"",
-		"contacts_name" :"David Martí",
-		"contacts_phone" :"678234091",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "patent",
-		"resourcename" : "Alfa",
-		"url" : "/ca/patent/alfa.html"
-    }
-},{
+		"type" : "add",
+		"id" : "388cf393eddd1f09236afdcb4e755a91",
+		"fields" : {
+			"idioma": "ca",
+			"title": "Alfa",
+			"name":"Alfa",
+			"imatge_alt": "Alfa",
+			"imatge_title": "Alfa",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"lloc" : "Barcelona",
+			"data_difusio" : "2019-12-19T13:34:26+01:00",
+			"difusio_desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "esdeveniments",
+			"resourcename" : "Alfa",
+			"url" : "http://localhost/ca/esdeveniments/alfa.html"
+		}
+	},{
 	  
-	  "type" : "add",
-    "id" : "cbc0757bed4ed286db86e30c1722edd6",
-    "fields" : {
-		"idioma": "en",
-		"title": "Alfa",
-		"name": "Patent Alfa",
-		"text_breu": "Briefing text for patent Alfa",
-		"eslogan":"Slogan for patent Alfa",
-		"imatge_alt": "Alfa",
-		"imatge_title": "Alfa",
-		"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"centre": "IN3",
-		"sector": "Industry 4.0",
-		"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_pat_title": "About patent Alfa",
-		"sobre_pat_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"davidmr@gmail.com",
-		"contacts_address" :"",
-		"contacts_name" :"David Martí",
-		"contacts_phone" :"678234091",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "patent",
-		"resourcename" : "Alfa",
-		"url" : "/en/patent/alfa.html"
-    }
-},{
+		"type" : "add",
+		"id" : "8cc624c076a99b460c4f7bb60bc85309",
+		"fields" : {
+			"idioma": "en",
+			"title": "Alfa",
+			"name":"Alfa",
+			"imatge_alt": "Alfa",
+			"imatge_title": "Alfa",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"lloc" : "Barcelona",
+			"data_difusio" : "2019-12-19T13:36:31+01:00",
+			"difusio_desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "esdeveniments",
+			"resourcename" : "Alfa",
+			"url" : "http://localhost/en/esdeveniments/alfa.html"
+		}
+	},{
 	  
-	  "type" : "add",
-    "id" : "a70323cf5c78d8080e95e3ae5e6bed6a",
-    "fields" : {
-		"idioma": "es",
-		"title": "Alfa",
-		"name": "Patente Alfa",
-		"text_breu": "Texto introductorio Patente Alfa",
-		"eslogan":"Eslógan Patente Alfa",
-		"imatge_alt": "Alfa",
-		"imatge_title": "Alfa",
-		"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"centre": "IN3",
-		"sector": "industria 4.0",
-		"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_pat_title": "Sobre la patente Alfa",
-		"sobre_pat_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"davidmr@gmail.com",
-		"contacts_address" :"",
-		"contacts_name" :"David Martí",
-		"contacts_phone" :"678234091",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "patent",
-		"resourcename" : "Alfa",
-		"url" : "/es/patent/alfa.html"
-    }
-},{
+		"type" : "add",
+		"id" : "953e44abe41c93416c0ed912f5af8b33",
+		"fields" : {
+			"idioma": "es",
+			"title": "Alfa",
+			"name":"Alfa",
+			"imatge_alt": "Alfa",
+			"imatge_title": "Alfa",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"lloc" : "Barcelona",
+			"data_difusio" : "2019-12-19T13:35:47+01:00",
+			"difusio_desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "esdeveniments",
+			"resourcename" : "Alfa",
+			"url" : "http://localhost/es/esdeveniments/alfa.html"
+		}
+	},{
 	  
-	  "type" : "add",
-    "id" : "74ec0bacc959aa77b794b9f25c25137f",
-    "fields" : {
-		"idioma": "ca",
-		"title": "Alfa",
-		"name": "Servei alfa",
-		"text_breu": "Text introductori servei Alfa",
-		"eslogan":"",
-		"imatge_alt": "Alfa",
-		"imatge_title": "Alfa",
-		"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"centre": "",
-		"sector": "Educació - eLearning",
-		"logo_url": "",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_servei_title": "Sobre el servei Alfa",
-		"sobre_servei_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n![null](/img/0a5e3d8399408516a201716607daee9dc776694d.png)",
-		"casos_exit_title":"Cas d'èxit servei Alfa",
-		"casos_exit_descripcio":"## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"casos_exit_img":"/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"casos_exit_url_success":"https://www.uoc.edu/portal/en/index.html",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"mferrer20@gmail.com",
-		"contacts_address" :"",
-		"contacts_name" :"Manel Ferrer",
-		"contacts_phone" :"987654321",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "servei",
-		"resourcename" : "Alfa",
-		"url" : "/ca/servei/alfa.html"
-    }
-},{
+		"type" : "add",
+		"id" : "a81884810965c76f50a45b1fb5de4777",
+		"fields" : {
+			"idioma": "ca",
+			"title": "Alfa",
+			"name":"Alfa",
+			"imatge_alt": "Alfa",
+			"imatge_title": "Alfa",
+			"imatge_url": "/img/detall_solucions_principal.png",
+			"data_difusio" : "2019-12-17T13:33:49+01:00",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "noticies",
+			"resourcename" : "Alfa",
+			"url" : "http://localhost/ca/noticies/alfa.html"
+		}
+	},{
 	  
-	  "type" : "add",
-    "id" : "7eb69ef0bb8bcfd03c9a7f97763a3c7e",
-    "fields" : {
-		"idioma": "en",
-		"title": "Alfa",
-		"name": "Service alfa",
-		"text_breu": "Briefing text for service Alfa",
-		"eslogan":"",
-		"imatge_alt": "Alfa",
-		"imatge_title": "Alfa",
-		"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"centre": "",
-		"sector": "Education - eLearning",
-		"logo_url": "",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_servei_title": "About service Alfa",
-		"sobre_servei_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n![null](/img/0a5e3d8399408516a201716607daee9dc776694d.png)",
-		"casos_exit_title":"Case of success service Alfa ",
-		"casos_exit_descripcio":"## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"casos_exit_img":"/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"casos_exit_url_success":"https://www.uoc.edu/portal/en/index.html",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"mferrer20@gmail.com",
-		"contacts_address" :"",
-		"contacts_name" :"Manel Ferrer",
-		"contacts_phone" :"987654321",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "servei",
-		"resourcename" : "Alfa",
-		"url" : "/en/servei/alfa.html"
-    }
-},{
+		"type" : "add",
+		"id" : "5962466f8daa04a015214f367fdf500c",
+		"fields" : {
+			"idioma": "en",
+			"title": "Alfa",
+			"name":"Alfa",
+			"imatge_alt": "Alfa",
+			"imatge_title": "Alfa",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"data_difusio" : "2019-12-17T14:01:39+01:00",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "noticies",
+			"resourcename" : "Alfa",
+			"url" : "http://localhost/en/noticies/alfa.html"
+		}
+	},{
 	  
-	  "type" : "add",
-    "id" : "be2279fb83fa6f1b2b18b4e687e32f1e",
-    "fields" : {
-		"idioma": "es",
-		"title": "Alfa",
-		"name": "Servicio Alfa",
-		"text_breu": "Texto introductorio Servicio Alfa",
-		"eslogan":"",
-		"imatge_alt": "Alfa",
-		"imatge_title": "Alfa",
-		"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"centre": "",
-		"sector": "Educación - eLearning",
-		"logo_url": "",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_servei_title": "Sobre el servicio Alfa",
-		"sobre_servei_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"casos_exit_title":"Caso de exito servicio Alfa",
-		"casos_exit_descripcio":"## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"casos_exit_img":"/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"casos_exit_url_success":"https://www.uoc.edu/portal/en/index.html",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"mferrer20@gmail.com",
-		"contacts_address" :"",
-		"contacts_name" :"Manel Ferrer",
-		"contacts_phone" :"987654321",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "servei",
-		"resourcename" : "Alfa",
-		"url" : "/es/servei/alfa.html"
-    }
-},{
+		"type" : "add",
+		"id" : "a441127f34500424acb3cb7b4cca6477",
+		"fields" : {
+			"idioma": "es",
+			"title": "Alfa",
+			"name":"Alfa",
+			"imatge_alt": "Alfa",
+			"imatge_title": "Alfa",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"data_difusio" : "2019-12-17T13:59:06+01:00",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "noticies",
+			"resourcename" : "Alfa",
+			"url" : "http://localhost/es/noticies/alfa.html"
+		}
+	},{
 	  
-	  "type" : "add",
-    "id" : "9bf6b28b261bc7a671a93ebbe13969b5",
-    "fields" : {
-		"idioma": "ca",
-		"title": "Alfa",
-		"name": "Alfa",
-		"text_breu": "Text solució Alfa en català",
-		"eslogan":"#Alfa",
-		"imatge_alt": "Alfa",
-		"imatge_title": "Alfa",
-		"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"centre": "UOC",
-		"sector": "Dret i governança",
-		"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_tec_title": "Títol Alfa",
-		"sobre_tec_descripcio": "Descripció solució Alfa en català",
-		"asp_innov_title": "Aspecte innovador solució Alfa",
-		"asp_innov_descripcio": "Descripció aspecte innovador solució Alfa",
-		"app_title":"Aplicació solució Alfa",
-		"app_descripcio":"Descripció aplicació solució Alfa",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"e@mail.com",
-		"contacts_address" :"adreça",
-		"contacts_name" :"Javi",
-		"contacts_phone" :"123456789",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "solucio_tec",
-		"resourcename" : "Alfa",
-		"url" : "/ca/solucio_tec/alfa.html"
-    }
-},{
+		"type" : "add",
+		"id" : "6d87b41430ed568513ff8f60885ac104",
+		"fields" : {
+			"idioma": "ca",
+			"title": "Alfa",
+			"name": "Patent Alfa",
+			"text_breu": "Text introdutori patent Alfa",
+			"eslogan":"Eslògan patent Alfa",
+			"imatge_alt": "Alfa",
+			"imatge_title": "Alfa",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"centre": "IN3",
+			"sector": "Indústria 4.0",
+			"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"keywords": [""],
+			"xarxes_list": [""],
+			"xarxes_address": [""],
+			"sobre_pat_title": "Sobre la patent Alfa",
+			"sobre_pat_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"grups": [""],
+			"investigadors": [""],
+			"contacts_email" : "davidmr@gmail.com",
+			"contacts_name" : "David Martí",
+			"contacts_phone" : "678234091",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "patent",
+			"resourcename" : "Alfa",
+			"url" : "http://localhost/ca/patent/alfa.html"
+		}
+	},{
 	  
-	  "type" : "add",
-    "id" : "6eaaad90e42b310aa5d8e271de13a5ab",
-    "fields" : {
-		"idioma": "en",
-		"title": "Alfa",
-		"name": "Alfa",
-		"text_breu": "Alfa solution text in english",
-		"eslogan":"#Afla",
-		"imatge_alt": "Alfa",
-		"imatge_title": "Alfa",
-		"imatge_url": "",
-		"centre": "Estuids",
-		"sector": "Law and governance",
-		"logo_url": "",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_tec_title": "Alfa title",
-		"sobre_tec_descripcio": "Alfa solution description in english",
-		"asp_innov_title": "Alfa solution innovative aspect",
-		"asp_innov_descripcio": "Alfa solution innovative aspect description in english",
-		"app_title":"Alfa solution aplication",
-		"app_descripcio":"Alfa solution aplication description",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"e@mail.com",
-		"contacts_address" :"adress",
-		"contacts_name" :"Javi",
-		"contacts_phone" :"123456789",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "solucio_tec",
-		"resourcename" : "Alfa",
-		"url" : "/en/solucio_tec/alfa.html"
-    }
-},{
+		"type" : "add",
+		"id" : "cbc0757bed4ed286db86e30c1722edd6",
+		"fields" : {
+			"idioma": "en",
+			"title": "Alfa",
+			"name": "Patent Alfa",
+			"text_breu": "Briefing text for patent Alfa",
+			"eslogan":"Slogan for patent Alfa",
+			"imatge_alt": "Alfa",
+			"imatge_title": "Alfa",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"centre": "IN3",
+			"sector": "Industry 4.0",
+			"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"keywords": [""],
+			"xarxes_list": [""],
+			"xarxes_address": [""],
+			"sobre_pat_title": "About patent Alfa",
+			"sobre_pat_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"grups": [""],
+			"investigadors": [""],
+			"contacts_email" : "davidmr@gmail.com",
+			"contacts_name" : "David Martí",
+			"contacts_phone" : "678234091",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "patent",
+			"resourcename" : "Alfa",
+			"url" : "http://localhost/en/patent/alfa.html"
+		}
+	},{
 	  
-	  "type" : "add",
-    "id" : "afe3a9da45dfcca67443b6c3aa7b8895",
-    "fields" : {
-		"idioma": "es",
-		"title": "Alfa",
-		"name": "Alfa",
-		"text_breu": "Texto solución alfa en español",
-		"eslogan":"#Alfa",
-		"imatge_alt": "Alfa",
-		"imatge_title": "Alfa",
-		"imatge_url": "",
-		"centre": "Estuids",
-		"sector": "Derecho y gobernanza",
-		"logo_url": "",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_tec_title": "Título Alfa",
-		"sobre_tec_descripcio": "Descripción solución Alfa en español",
-		"asp_innov_title": "Aspecto innovador solución Alfa",
-		"asp_innov_descripcio": "Descripción aspecto innovador solución Alfa",
-		"app_title":"Descripción aplicación solución Alfa",
-		"app_descripcio":"",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"e@mail.com",
-		"contacts_address" :"Dirección",
-		"contacts_name" :"Javi",
-		"contacts_phone" :"123456789",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "solucio_tec",
-		"resourcename" : "Alfa",
-		"url" : "/es/solucio_tec/alfa.html"
-    }
-},{
+		"type" : "add",
+		"id" : "a70323cf5c78d8080e95e3ae5e6bed6a",
+		"fields" : {
+			"idioma": "es",
+			"title": "Alfa",
+			"name": "Patente Alfa",
+			"text_breu": "Texto introductorio Patente Alfa",
+			"eslogan":"Eslógan Patente Alfa",
+			"imatge_alt": "Alfa",
+			"imatge_title": "Alfa",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"centre": "IN3",
+			"sector": "industria 4.0",
+			"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"keywords": [""],
+			"xarxes_list": [""],
+			"xarxes_address": [""],
+			"sobre_pat_title": "Sobre la patente Alfa",
+			"sobre_pat_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"grups": [""],
+			"investigadors": [""],
+			"contacts_email" : "davidmr@gmail.com",
+			"contacts_name" : "David Martí",
+			"contacts_phone" : "678234091",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "patent",
+			"resourcename" : "Alfa",
+			"url" : "http://localhost/es/patent/alfa.html"
+		}
+	},{
 	  
-	  "type" : "add",
-    "id" : "c8978e035b714c08fa6346bdc77ade36",
-    "fields" : {
-		"idioma": "ca",
-		"title": "Alfa",
-		"name": "Spin-Off Alfa",
-		"text_breu": "Text introductori Spin-Off Alfa",
-		"eslogan":"Eslògan Spin-Off Alfa",
-		"imatge_alt": "Alfa",
-		"imatge_title": "Alfa",
-		"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"centre": "",
-		"sector": "Salut - eHealth",
-		"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_spin_title": "Sobre el Spin-Off Alfa",
-		"sobre_spin_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n* ## Ellentesque habitant morbi tristique senectus et netus.\n  * Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n* ## Ellentesque habitant morbi tristique senectus et netus.\n  * Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"casos_exit_title":"Cas d'èxit Spin-Off Alfa",
-		"casos_exit_descripcio":"## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"casos_exit_img":"/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"casos_exit_url_success":"https://www.uoc.edu/portal/en/index.html",
-		"productes_serveis_titol" : "Productes/serveis Spin-Off Alfa",
-		"productes_serveis_descripcio" : "## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"clients_title" : "Client 1",
-		"clients_descripcio" : "## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"",
-		"contacts_address" :"",
-		"contacts_name" :"Pere Fernández",
-		"contacts_phone" :"666666666",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "spin_off",
-		"resourcename" : "Alfa",
-		"url" : "/ca/spin_off/alfa.html"
-    }
-},{
+		"type" : "add",
+		"id" : "74ec0bacc959aa77b794b9f25c25137f",
+		"fields" : {
+			"idioma": "ca",
+			"title": "Alfa",
+			"name": "Servei alfa",
+			"text_breu": "Text introductori servei Alfa",
+			"eslogan":"",
+			"imatge_alt": "Alfa",
+			"imatge_title": "Alfa",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"centre": "",
+			"sector": "Educació - eLearning",
+			"logo_url": "",
+			"keywords": [""],
+			"xarxes_list": [""],
+			"xarxes_address": [""],
+			"sobre_servei_title": "Sobre el servei Alfa",
+			"sobre_servei_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n![null](/img/0a5e3d8399408516a201716607daee9dc776694d.png)",
+			"casos_exit_title":"Cas d'èxit servei Alfa",
+			"casos_exit_descripcio":"## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"casos_exit_img":"/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"casos_exit_url_success":"https://www.uoc.edu/portal/en/index.html",
+			"grups": [""],
+			"investigadors": [""],
+			"contacts_email" : "mferrer20@gmail.com",
+			"contacts_name" : "Manel Ferrer",
+			"contacts_phone" : "987654321",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "servei",
+			"resourcename" : "Alfa",
+			"url" : "http://localhost/ca/servei/alfa.html"
+		}
+	},{
 	  
-	  "type" : "add",
-    "id" : "a5e825fa27bedcb34b7a5a3454895965",
-    "fields" : {
-		"idioma": "en",
-		"title": "Alfa",
-		"name": "Spin-Off Alfa",
-		"text_breu": "Briefing text for Spin-Off Alfa",
-		"eslogan":"Slogan from Spin-Off Alfa",
-		"imatge_alt": "Alfa",
-		"imatge_title": "Alfa",
-		"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"centre": "",
-		"sector": "eHealth",
-		"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_spin_title": "About Spin-Off Alfa",
-		"sobre_spin_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n* ## Ellentesque habitant morbi tristique senectus et netus.\n  * Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n* ## Ellentesque habitant morbi tristique senectus et netus.\n  * Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"casos_exit_title":"Cases of success Spin-Off Alfa",
-		"casos_exit_descripcio":"## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"casos_exit_img":"/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"casos_exit_url_success":"https://www.uoc.edu/portal/en/index.html",
-		"productes_serveis_titol" : "Services/products Spin-Off Alfa",
-		"productes_serveis_descripcio" : "## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"clients_title" : "Client 1",
-		"clients_descripcio" : "## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"",
-		"contacts_address" :"",
-		"contacts_name" :"Pere Fernández",
-		"contacts_phone" :"666666666",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "spin_off",
-		"resourcename" : "Alfa",
-		"url" : "/en/spin_off/alfa.html"
-    }
-},{
+		"type" : "add",
+		"id" : "7eb69ef0bb8bcfd03c9a7f97763a3c7e",
+		"fields" : {
+			"idioma": "en",
+			"title": "Alfa",
+			"name": "Service alfa",
+			"text_breu": "Briefing text for service Alfa",
+			"eslogan":"",
+			"imatge_alt": "Alfa",
+			"imatge_title": "Alfa",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"centre": "",
+			"sector": "Education - eLearning",
+			"logo_url": "",
+			"keywords": [""],
+			"xarxes_list": [""],
+			"xarxes_address": [""],
+			"sobre_servei_title": "About service Alfa",
+			"sobre_servei_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n![null](/img/0a5e3d8399408516a201716607daee9dc776694d.png)",
+			"casos_exit_title":"Case of success service Alfa ",
+			"casos_exit_descripcio":"## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"casos_exit_img":"/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"casos_exit_url_success":"https://www.uoc.edu/portal/en/index.html",
+			"grups": [""],
+			"investigadors": [""],
+			"contacts_email" : "mferrer20@gmail.com",
+			"contacts_name" : "Manel Ferrer",
+			"contacts_phone" : "987654321",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "servei",
+			"resourcename" : "Alfa",
+			"url" : "http://localhost/en/servei/alfa.html"
+		}
+	},{
 	  
-	  "type" : "add",
-    "id" : "c03f703c1cbe578ac567fb17759c4394",
-    "fields" : {
-		"idioma": "es",
-		"title": "Alfa",
-		"name": "Spin-Off Alfa",
-		"text_breu": "Texto introductorio Spin-Off Alfa",
-		"eslogan":"Eslógan Spin-Off Alfa",
-		"imatge_alt": "Alfa",
-		"imatge_title": "Alfa",
-		"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"centre": "",
-		"sector": "Salud - eHealth",
-		"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_spin_title": "Sobre el Spin-Off Alfa",
-		"sobre_spin_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n* ## Ellentesque habitant morbi tristique senectus et netus.\n  * Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n* ## Ellentesque habitant morbi tristique senectus et netus.\n  * Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"casos_exit_title":"Cas d'èxit Spin-Offs Alfa",
-		"casos_exit_descripcio":"## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"casos_exit_img":"/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"casos_exit_url_success":"https://www.uoc.edu/portal/en/index.html",
-		"productes_serveis_titol" : "Productos/servicios Spin-Off Alfa",
-		"productes_serveis_descripcio" : "## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"clients_title" : "Cliente 1",
-		"clients_descripcio" : "## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"",
-		"contacts_address" :"",
-		"contacts_name" :"Pere Fernández",
-		"contacts_phone" :"666666666",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "spin_off",
-		"resourcename" : "Alfa",
-		"url" : "/es/spin_off/alfa.html"
-    }
-},{
+		"type" : "add",
+		"id" : "be2279fb83fa6f1b2b18b4e687e32f1e",
+		"fields" : {
+			"idioma": "es",
+			"title": "Alfa",
+			"name": "Servicio Alfa",
+			"text_breu": "Texto introductorio Servicio Alfa",
+			"eslogan":"",
+			"imatge_alt": "Alfa",
+			"imatge_title": "Alfa",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"centre": "",
+			"sector": "Educación - eLearning",
+			"logo_url": "",
+			"keywords": [""],
+			"xarxes_list": [""],
+			"xarxes_address": [""],
+			"sobre_servei_title": "Sobre el servicio Alfa",
+			"sobre_servei_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"casos_exit_title":"Caso de exito servicio Alfa",
+			"casos_exit_descripcio":"## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"casos_exit_img":"/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"casos_exit_url_success":"https://www.uoc.edu/portal/en/index.html",
+			"grups": [""],
+			"investigadors": [""],
+			"contacts_email" : "mferrer20@gmail.com",
+			"contacts_name" : "Manel Ferrer",
+			"contacts_phone" : "987654321",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "servei",
+			"resourcename" : "Alfa",
+			"url" : "http://localhost/es/servei/alfa.html"
+		}
+	},{
 	  
-	  "type" : "add",
-    "id" : "2c9802ae11d5900af7d94fa22d856196",
-    "fields" : {
-		"idioma": "ca",
-		"title": "Beta",
-		"name": "Solució Tecnològica Beta",
-		"text_breu": "Text breu introductori sobre la solució tecnológica Beta",
-		"eslogan":"Eslogan per a la solució tecnològica Beta",
-		"imatge_alt": "Beta",
-		"imatge_title": "Beta",
-		"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"centre": "Estuids",
-		"sector": "Dret i governança",
-		"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_tec_title": "Sobre la solució tecnológica BETA",
-		"sobre_tec_descripcio": "# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n![null](/img/0a5e3d8399408516a201716607daee9dc776694d.png)",
-		"asp_innov_title": "Aspectes innovadors sobre la solució tecnológica Beta",
-		"asp_innov_descripcio": "# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"app_title":"Aplicacions de la solució tecnológica Beta",
-		"app_descripcio":"# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"",
-		"contacts_address" :"Av. Sant Esteve 36 3r 1a",
-		"contacts_name" :"Josep Artur",
-		"contacts_phone" :"",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "solucio_tec",
-		"resourcename" : "Beta",
-		"url" : "/ca/solucio_tec/beta.html"
-    }
-},{
+		"type" : "add",
+		"id" : "9bf6b28b261bc7a671a93ebbe13969b5",
+		"fields" : {
+			"idioma": "ca",
+			"title": "Alfa",
+			"name": "alfa",
+			"text_breu": "alfa",
+			"eslogan":"alfa",
+			"imatge_alt": "Alfa",
+			"imatge_title": "Alfa",
+			"imatge_url": "/img/241-projectes-estatals-recerca-logo.jpg",
+			"centre": "alfa",
+			"sector": "alfa",
+			"logo_url": "/img/241-projectes-estatals-recerca-logo.jpg",
+			"keywords": [""],
+			"xarxes_list": [""],
+			"xarxes_address": [""],
+			"sobre_tec_title": "sobre tec",
+			"sobre_tec_descripcio": "adwawwdawdaw",
+			"asp_innov_title": "adwdaad",
+			"asp_innov_descripcio": "awdwawdwaaw",
+			"app_title":"awwdaaw",
+			"app_descripcio":"awdadwawddwawadwa",
+			"contacts_email" : "adwawdwad",
+			"contacts_address" : "awddawwad",
+			"contacts_name" : "sesfs",
+			"contacts_phone" : "6757657",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "solucio_tec",
+			"resourcename" : "Alfa",
+			"url" : "http://localhost/ca/solucio_tec/alfa.html"
+		}
+	},{
 	  
-	  "type" : "add",
-    "id" : "ebaace6ead0566c39e492fb29a3cb7fc",
-    "fields" : {
-		"idioma": "en",
-		"title": "Beta",
-		"name": "Technical Solution Beta",
-		"text_breu": "Briefing text for technical solution Beta",
-		"eslogan":"Slogan for technical solution Beta",
-		"imatge_alt": "Beta",
-		"imatge_title": "Beta",
-		"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"centre": "Estuids",
-		"sector": "Law and governance",
-		"logo_url": "",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_tec_title": "About techonolgy of technical solution Beta",
-		"sobre_tec_descripcio": "# Ellentesque habitant morbi tristique senectus et netus. \n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"asp_innov_title": "Innovative aspects from technical solution Beta",
-		"asp_innov_descripcio": "# Ellentesque habitant morbi tristique senectus et netus. \n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"app_title":"Applications for technical solution Beta",
-		"app_descripcio":"# Ellentesque habitant morbi tristique senectus et netus. \n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"",
-		"contacts_address" :"",
-		"contacts_name" :"James Arthur",
-		"contacts_phone" :"",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "solucio_tec",
-		"resourcename" : "Beta",
-		"url" : "/en/solucio_tec/beta.html"
-    }
-},{
+		"type" : "add",
+		"id" : "c8978e035b714c08fa6346bdc77ade36",
+		"fields" : {
+			"idioma": "ca",
+			"title": "Alfa",
+			"name": "Spin-Off Alfa",
+			"text_breu": "Text introductori Spin-Off Alfa",
+			"eslogan":"Eslògan Spin-Off Alfa",
+			"imatge_alt": "Alfa",
+			"imatge_title": "Alfa",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"centre": "",
+			"sector": "Salut - eHealth",
+			"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"keywords": [""],
+			"xarxes_list": [""],
+			"xarxes_address": [""],
+			"sobre_spin_title": "Sobre el Spin-Off Alfa",
+			"sobre_spin_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n* ## Ellentesque habitant morbi tristique senectus et netus.\n  * Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n* ## Ellentesque habitant morbi tristique senectus et netus.\n  * Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"casos_exit_title":"Cas d'èxit Spin-Off Alfa",
+			"casos_exit_descripcio":"## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"casos_exit_img":"/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"casos_exit_url_success":"https://www.uoc.edu/portal/en/index.html",
+			"productes_serveis_titol" : "Productes/serveis Spin-Off Alfa",
+			"productes_serveis_descripcio" : "## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"clients_title" : "Client 1",
+			"clients_descripcio" : "## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"grups": [""],
+			"investigadors": [""],
+			"contacts_name" : "Pere Fernández",
+			"contacts_phone" : "666666666",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "spin_off",
+			"resourcename" : "Alfa",
+			"url" : "http://localhost/ca/spin_off/alfa.html"
+		}
+	},{
 	  
-	  "type" : "add",
-    "id" : "bb772e3f57794cab22bb4ea499bb4380",
-    "fields" : {
-		"idioma": "es",
-		"title": "Beta",
-		"name": "Solución Tecnológica Beta",
-		"text_breu": "Texto breve para la solución tecnológica Beta",
-		"eslogan":"Eslogan para la solución Tecnologica Beta",
-		"imatge_alt": "Beta",
-		"imatge_title": "Beta",
-		"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"centre": "Estuids",
-		"sector": "Derecho y gobernanza",
-		"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_tec_title": "Sobre la solución tecnológica Beta",
-		"sobre_tec_descripcio": "# Ellentesque habitant morbi tristique senectus et netus. \n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"asp_innov_title": "Aspectos innovadores sobre la solución tecnológica Beta",
-		"asp_innov_descripcio": "# Ellentesque habitant morbi tristique senectus et netus. \n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"app_title":"Aplicaciones sobre la solución tecnológica Beta",
-		"app_descripcio":"# Ellentesque habitant morbi tristique senectus et netus. \n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"",
-		"contacts_address" :"Parc Audiovisual de Catalunya km 1.5 E22",
-		"contacts_name" :"Jesús Arturo",
-		"contacts_phone" :"666666555",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "solucio_tec",
-		"resourcename" : "Beta",
-		"url" : "/es/solucio_tec/beta.html"
-    }
-},{
+		"type" : "add",
+		"id" : "a5e825fa27bedcb34b7a5a3454895965",
+		"fields" : {
+			"idioma": "en",
+			"title": "Alfa",
+			"name": "Spin-Off Alfa",
+			"text_breu": "Briefing text for Spin-Off Alfa",
+			"eslogan":"Slogan from Spin-Off Alfa",
+			"imatge_alt": "Alfa",
+			"imatge_title": "Alfa",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"centre": "",
+			"sector": "eHealth",
+			"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"keywords": [""],
+			"xarxes_list": [""],
+			"xarxes_address": [""],
+			"sobre_spin_title": "About Spin-Off Alfa",
+			"sobre_spin_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n* ## Ellentesque habitant morbi tristique senectus et netus.\n  * Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n* ## Ellentesque habitant morbi tristique senectus et netus.\n  * Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"casos_exit_title":"Cases of success Spin-Off Alfa",
+			"casos_exit_descripcio":"## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"casos_exit_img":"/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"casos_exit_url_success":"https://www.uoc.edu/portal/en/index.html",
+			"productes_serveis_titol" : "Services/products Spin-Off Alfa",
+			"productes_serveis_descripcio" : "## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"clients_title" : "Client 1",
+			"clients_descripcio" : "## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"grups": [""],
+			"investigadors": [""],
+			"contacts_name" : "Pere Fernández",
+			"contacts_phone" : "666666666",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "spin_off",
+			"resourcename" : "Alfa",
+			"url" : "http://localhost/en/spin_off/alfa.html"
+		}
+	},{
 	  
-	  "type" : "add",
-    "id" : "456c3df00110d9063c7c69f06e7c443f",
-    "fields" : {
-		"idioma": "ca",
-		"title": "Gamma",
-		"name": "Gamma",
-		"text_breu": "Text breu introductori sobre la solució tecnológica Gamma",
-		"eslogan":"Eslogan per a la solució tecnològica Beta",
-		"imatge_alt": "Gamma",
-		"imatge_title": "Gamma",
-		"imatge_url": "/img/detall_solucions_principal.png",
-		"centre": "Estuids",
-		"sector": "Dret i governança",
-		"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_tec_title": "Sobre la solució tecnológica GAMMA",
-		"sobre_tec_descripcio": "1. Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n\\-Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
-		"asp_innov_title": "Aspectes innovadors sobre la solució tecnológica Gamma",
-		"asp_innov_descripcio": "# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus.",
-		"app_title":"Aplicacions de la solució tecnológica Gamma",
-		"app_descripcio":"# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, \n* Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus.",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"pau.domingo@gmail.com",
-		"contacts_address" :"",
-		"contacts_name" :"Pau Domingo Pérez",
-		"contacts_phone" :"",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "solucio_tec",
-		"resourcename" : "Gamma",
-		"url" : "/ca/solucio_tec/gamma.html"
-    }
-},{
+		"type" : "add",
+		"id" : "c03f703c1cbe578ac567fb17759c4394",
+		"fields" : {
+			"idioma": "es",
+			"title": "Alfa",
+			"name": "Spin-Off Alfa",
+			"text_breu": "Texto introductorio Spin-Off Alfa",
+			"eslogan":"Eslógan Spin-Off Alfa",
+			"imatge_alt": "Alfa",
+			"imatge_title": "Alfa",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"centre": "",
+			"sector": "Salud - eHealth",
+			"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"keywords": [""],
+			"xarxes_list": [""],
+			"xarxes_address": [""],
+			"sobre_spin_title": "Sobre el Spin-Off Alfa",
+			"sobre_spin_descripcio": "# Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n* ## Ellentesque habitant morbi tristique senectus et netus.\n  * Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n* ## Ellentesque habitant morbi tristique senectus et netus.\n  * Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"casos_exit_title":"Cas d'èxit Spin-Offs Alfa",
+			"casos_exit_descripcio":"## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"casos_exit_img":"/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"casos_exit_url_success":"https://www.uoc.edu/portal/en/index.html",
+			"productes_serveis_titol" : "Productos/servicios Spin-Off Alfa",
+			"productes_serveis_descripcio" : "## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"clients_title" : "Cliente 1",
+			"clients_descripcio" : "## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"grups": [""],
+			"investigadors": [""],
+			"contacts_name" : "Pere Fernández",
+			"contacts_phone" : "666666666",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "spin_off",
+			"resourcename" : "Alfa",
+			"url" : "http://localhost/es/spin_off/alfa.html"
+		}
+	},{
 	  
-	  "type" : "add",
-    "id" : "29314346abfc7365b732f838fe2d9bbe",
-    "fields" : {
-		"idioma": "en",
-		"title": "Gamma",
-		"name": "Technical Solution Gamma",
-		"text_breu": "Briefing text for technical solution Gamma",
-		"eslogan":"Slogan for technical solution Gamma",
-		"imatge_alt": "Gamma",
-		"imatge_title": "Gamma",
-		"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"centre": "Estuids",
-		"sector": "Law and governance",
-		"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_tec_title": "About techonolgy of technical solution Gamma",
-		"sobre_tec_descripcio": "# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n![null](/img/0a5e3d8399408516a201716607daee9dc776694d.png)",
-		"asp_innov_title": "Innovative aspects from technical solution Gamma",
-		"asp_innov_descripcio": "# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus.",
-		"app_title":"Applications for technical solution Beta",
-		"app_descripcio":"# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, \n* Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus.",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"pau.domingo@gmail.com",
-		"contacts_address" :"",
-		"contacts_name" :"Pau Domingo Pérez",
-		"contacts_phone" :"",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "solucio_tec",
-		"resourcename" : "Gamma",
-		"url" : "/en/solucio_tec/gamma.html"
-    }
-},{
+		"type" : "add",
+		"id" : "ebaace6ead0566c39e492fb29a3cb7fc",
+		"fields" : {
+			"idioma": "en",
+			"title": "Beta",
+			"name": "Technical Solution Beta",
+			"text_breu": "Briefing text for technical solution Beta",
+			"eslogan":"Slogan for technical solution Beta",
+			"imatge_alt": "Beta",
+			"imatge_title": "Beta",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"centre": "Estuids",
+			"sector": "Law and governance",
+			"logo_url": "",
+			"keywords": [""],
+			"xarxes_list": [""],
+			"xarxes_address": [""],
+			"sobre_tec_title": "About techonolgy of technical solution Beta",
+			"sobre_tec_descripcio": "# Ellentesque habitant morbi tristique senectus et netus. \n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"asp_innov_title": "Innovative aspects from technical solution Beta",
+			"asp_innov_descripcio": "# Ellentesque habitant morbi tristique senectus et netus. \n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"app_title":"Applications for technical solution Beta",
+			"app_descripcio":"# Ellentesque habitant morbi tristique senectus et netus. \n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"grups": [""],
+			"investigadors": [""],
+			"contacts_address" : "",
+			"contacts_name" : "James Arthur",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "solucio_tec",
+			"resourcename" : "Beta",
+			"url" : "http://localhost/en/solucio_tec/beta.html"
+		}
+	},{
 	  
-	  "type" : "add",
-    "id" : "593e79cb1358c9cbe9ff9d2cfa0e1db1",
-    "fields" : {
-		"idioma": "es",
-		"title": "Gamma",
-		"name": "Gamma",
-		"text_breu": "Texo breve introductorio sobre la solución tecnológica Gamma",
-		"eslogan":"Eslógan para la solución tecnológica Gamma",
-		"imatge_alt": "Gamma",
-		"imatge_title": "Gamma",
-		"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"centre": "Estuids",
-		"sector": "Derecho y gobernanza",
-		"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
-		"keywords": [""],
-		"xarxes_list": [""],
-		"xarxes_address": [""],
-		"sobre_tec_title": "Sobre la solución tecnológica Gamma",
-		"sobre_tec_descripcio": "# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n![imatge](/img/0a5e3d8399408516a201716607daee9dc776694d.png)",
-		"asp_innov_title": "Aspectos innovadores solución tecnológica Gamma",
-		"asp_innov_descripcio": "# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus.",
-		"app_title":"Aplicaciones sobre la solución tecnológica Gamma",
-		"app_descripcio":"# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, \n* Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus.",
-		"grups": [""],
-		"investigadors": [""],
-		"contacts_email" :"pau.domingo@gmail.com",
-		"contacts_address" :"",
-		"contacts_name" :"Pau Domingo Pérez",
-		"contacts_phone" :"",
-		"content" : "transfer",
-		"content_encoding": "utf-8",
-		"content_type" : "solucio_tec",
-		"resourcename" : "Gamma",
-		"url" : "/es/solucio_tec/gamma.html"
-    }
-}]
+		"type" : "add",
+		"id" : "bb772e3f57794cab22bb4ea499bb4380",
+		"fields" : {
+			"idioma": "es",
+			"title": "Beta",
+			"name": "Solución Tecnológica Beta",
+			"text_breu": "Texto breve para la solución tecnológica Beta",
+			"eslogan":"Eslogan para la solución Tecnologica Beta",
+			"imatge_alt": "Beta",
+			"imatge_title": "Beta",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"centre": "Estuids",
+			"sector": "Derecho y gobernanza",
+			"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"keywords": [""],
+			"xarxes_list": [""],
+			"xarxes_address": [""],
+			"sobre_tec_title": "Sobre la solución tecnológica Beta",
+			"sobre_tec_descripcio": "# Ellentesque habitant morbi tristique senectus et netus. \n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"asp_innov_title": "Aspectos innovadores sobre la solución tecnológica Beta",
+			"asp_innov_descripcio": "# Ellentesque habitant morbi tristique senectus et netus. \n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n2. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus.\n3. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"app_title":"Aplicaciones sobre la solución tecnológica Beta",
+			"app_descripcio":"# Ellentesque habitant morbi tristique senectus et netus. \n\nEllentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n## Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"grups": [""],
+			"investigadors": [""],
+			"contacts_address" : "Parc Audiovisual de Catalunya km 1.5 E22",
+			"contacts_name" : "Jesús Arturo",
+			"contacts_phone" : "666666555",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "solucio_tec",
+			"resourcename" : "Beta",
+			"url" : "http://localhost/es/solucio_tec/beta.html"
+		}
+	},{
+	  
+		"type" : "add",
+		"id" : "456c3df00110d9063c7c69f06e7c443f",
+		"fields" : {
+			"idioma": "ca",
+			"title": "Gamma",
+			"name": "Gamma",
+			"text_breu": "Text breu introductori sobre la solució tecnológica Gamma",
+			"eslogan":"Eslogan per a la solució tecnològica Beta",
+			"imatge_alt": "Gamma",
+			"imatge_title": "Gamma",
+			"imatge_url": "/img/detall_solucions_principal.png",
+			"centre": "Estuids",
+			"sector": "Dret i governança",
+			"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"keywords": [""],
+			"xarxes_list": [""],
+			"xarxes_address": [""],
+			"sobre_tec_title": "Sobre la solució tecnológica GAMMA",
+			"sobre_tec_descripcio": "1. Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n1. Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n\\-Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.",
+			"asp_innov_title": "Aspectes innovadors sobre la solució tecnológica Gamma",
+			"asp_innov_descripcio": "# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus.",
+			"app_title":"Aplicacions de la solució tecnológica Gamma",
+			"app_descripcio":"# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, \n* Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus.",
+			"grups": [""],
+			"investigadors": [""],
+			"contacts_email" : "pau.domingo@gmail.com",
+			"contacts_address" : "",
+			"contacts_name" : "Pau Domingo Pérez",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "solucio_tec",
+			"resourcename" : "Gamma",
+			"url" : "http://localhost/ca/solucio_tec/gamma.html"
+		}
+	},{
+	  
+		"type" : "add",
+		"id" : "29314346abfc7365b732f838fe2d9bbe",
+		"fields" : {
+			"idioma": "en",
+			"title": "Gamma",
+			"name": "Technical Solution Gamma",
+			"text_breu": "Briefing text for technical solution Gamma",
+			"eslogan":"Slogan for technical solution Gamma",
+			"imatge_alt": "Gamma",
+			"imatge_title": "Gamma",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"centre": "Estuids",
+			"sector": "Law and governance",
+			"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"keywords": [""],
+			"xarxes_list": [""],
+			"xarxes_address": [""],
+			"sobre_tec_title": "About techonolgy of technical solution Gamma",
+			"sobre_tec_descripcio": "# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n![null](/img/0a5e3d8399408516a201716607daee9dc776694d.png)",
+			"asp_innov_title": "Innovative aspects from technical solution Gamma",
+			"asp_innov_descripcio": "# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus.",
+			"app_title":"Applications for technical solution Beta",
+			"app_descripcio":"# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, \n* Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus.",
+			"grups": [""],
+			"investigadors": [""],
+			"contacts_email" : "pau.domingo@gmail.com",
+			"contacts_name" : "Pau Domingo Pérez",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "solucio_tec",
+			"resourcename" : "Gamma",
+			"url" : "http://localhost/en/solucio_tec/gamma.html"
+		}
+	},{
+	  
+		"type" : "add",
+		"id" : "593e79cb1358c9cbe9ff9d2cfa0e1db1",
+		"fields" : {
+			"idioma": "es",
+			"title": "Gamma",
+			"name": "Gamma",
+			"text_breu": "Texo breve introductorio sobre la solución tecnológica Gamma",
+			"eslogan":"Eslógan para la solución tecnológica Gamma",
+			"imatge_alt": "Gamma",
+			"imatge_title": "Gamma",
+			"imatge_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"centre": "Estuids",
+			"sector": "Derecho y gobernanza",
+			"logo_url": "/img/0a5e3d8399408516a201716607daee9dc776694d.png",
+			"keywords": [""],
+			"xarxes_list": [""],
+			"xarxes_address": [""],
+			"sobre_tec_title": "Sobre la solución tecnológica Gamma",
+			"sobre_tec_descripcio": "# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus Ellentesque habitant morbi tristique senectus et netus.\n\n![imatge](/img/0a5e3d8399408516a201716607daee9dc776694d.png)",
+			"asp_innov_title": "Aspectos innovadores solución tecnológica Gamma",
+			"asp_innov_descripcio": "# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus.",
+			"app_title":"Aplicaciones sobre la solución tecnológica Gamma",
+			"app_descripcio":"# Ellentesque habitant morbi tristique senectus et netus\n\n* Ellentesque habitant morbi tristique senectus et netus,Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus. Ellentesque habitant morbi tristique senectus et netus, \n* Ellentesque habitant morbi tristique senectus et netus\n* Ellentesque habitant morbi tristique senectus et netus.",
+			"grups": [""],
+			"investigadors": [""],
+			"contacts_email" : "pau.domingo@gmail.com",
+			"contacts_name" : "Pau Domingo Pérez",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "solucio_tec",
+			"resourcename" : "Gamma",
+			"url" : "http://localhost/es/solucio_tec/gamma.html"
+		}
+	},{
+	  
+		"type" : "add",
+		"id" : "b3515049b3ca2fe21328024adb4ea3d1",
+		"fields" : {
+			"idioma": "ca",
+			"title": "omega",
+			"name":" Conversa sobre pedagogia i neurociència entre Antonio Zabala i David Bueno",
+			"imatge_alt": "omega",
+			"imatge_title": "omega",
+			"lloc" : "Auditori del Campus del Poblenou Carrer de Roc Boronat, 138 08018 Barcelona Espanya",
+			"data_difusio" : "2020-02-10T18:30:33+01:00",
+			"difusio_desc" : "Aquesta trobada dels Dilluns del Màster serà una conversa entre dos professors amb una amplia carrera professional. Antonio Zabala és llicenciat en Filosofia i Ciències de l'Educació, i va fer els cursos del programa de doctorat en Psicologia de l'Educació. També és director de L'institut de Recursos i Investigació per la Formació (IRIF) i ha assessorat diverses administracions en l'elaboració de dissenys curriculars i plans de formació del professorat. David Bueno, d'altra banda, és doctor en biologia i professor de genètica a la Universitat de Barcelona. Ha centrat la seva carrera en la genètica del desenvolupament i la neurociència, i ha publicat molts llibres de divulgació científica.",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "esdeveniments",
+			"resourcename" : "omega",
+			"url" : "http://localhost/ca/esdeveniments/omega.html"
+		}
+	},{
+	  
+		"type" : "add",
+		"id" : "c72fc786379f3724e32676b5a506c393",
+		"fields" : {
+			"idioma": "ca",
+			"title": "omega",
+			"name":"El Ministeri de Ciència, Innovació i Universitats finança onze noves recerques de la UOC sobre la digitalització de la societat",
+			"imatge_alt": "omega",
+			"imatge_title": "omega",
+			"imatge_url": "/img/marvin-meyer-syto3xs06fu-unsplash.jpg",
+			"data_difusio" : "2019-09-26T11:03:28+02:00",
+			"content" : "transfer",
+			"content_encoding": "utf-8",
+			"content_type" : "noticies",
+			"resourcename" : "omega",
+			"url" : "http://localhost/ca/noticies/omega.html"
+		}
+	}]

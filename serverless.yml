@@ -1,57 +1,32 @@
-org: jccarhuas
+org: uoc
 app: webri
 service: webri-cloudsearch
 
 provider:
   name: aws
   runtime: python3.6
-  region: eu-west-1
+  region: ${opt:region, self:custom.defaultRegion}
   stage: ${opt:stage, self:custom.defaultStage}
-  #environment:
-    #CLOUDSEARCH_DOMAIN: "/uoc-web-ri/cloudsearch-upload/${opt:stage, self:provider.stage}/CLOUDSEARCH_DOMAIN"
-  #iamRoleStatements:
-  #  - Effect: 'Allow'
-  #    Action:
-  #      - 's3:ListBucket'
-  #    Resource:
-  #      Fn::Join:
-  #        - ''
-  #        - - 'arn:aws:s3:::'
-   #         - Ref: ServerlessDeploymentBucket
-   # - Effect: 'Allow'
-   #   Action:
-    #    - 's3:PutObject'
-    #  Resource:
-     #   Fn::Join:
-      #    - ''
-       #   - - 'arn:aws:s3:::'
-        #    - Ref: ServerlessDeploymentBucket
-         #   - '/*'
-
+   
+resources:
+  Resources:
+    GatewayResponseDefault4XX:
+      Type: 'AWS::ApiGateway::GatewayResponse'
+      Properties:
+        ResponseParameters:
+          gatewayresponse.header.Access-Control-Allow-Origin: "'*'"
+          gatewayresponse.header.Access-Control-Allow-Headers: "'*'"
+        ResponseType: DEFAULT_4XX
+        RestApiId:
+          Ref: 'ApiGatewayRestApi'
 functions:
-  #upload:
-    #handler: event.upload
-    #memorySize: 128
-    #events:
-    #  - s3:
-     #    bucket: uocwebrisupport
-      #   event: s3:ObjectCreated:*
-       #  rules:
-        #    - suffix: .json
-         #existing: true
-  test:
-    handler: event.test
-    events:
-      - http:
-          path: user/create
-          method: get
-          cors: true
   search:
     handler: event.search
     events:
       - http:
-          path: user/search
+          path: search
           method: get
           cors: true
 custom:
   defaultStage: dev
+  defaultRegion: eu-west-1

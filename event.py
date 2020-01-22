@@ -1,13 +1,14 @@
 import boto3
 import json
+from header import with_cors
 
+@with_cors
 def test(event,context):
     client = boto3.client('cloudsearchdomain', endpoint_url='https://search-webri-2dz3yckt2f5cjq7hcsbois6nw4.eu-west-1.cloudsearch.amazonaws.com')
     body=client.search(
         query="(and idioma: 'ca' sector: 'eLearning')",
         queryParser='lucene'
         )
-
     response ={
         "statusCode": 200,
         "body": json.dumps(body)
@@ -15,6 +16,7 @@ def test(event,context):
 
     return response
 
+@with_cors
 def search(event,context):
     client = boto3.client('cloudsearchdomain', endpoint_url='https://search-webri-2dz3yckt2f5cjq7hcsbois6nw4.eu-west-1.cloudsearch.amazonaws.com')
     args= event['queryStringParameters']
@@ -23,9 +25,14 @@ def search(event,context):
         response = client.search(
         query= simple,
         queryParser='simple')
+        headers={
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Credentials': True
+        }
         ret={
         "statusCode":200,
-        "body": json.dumps(response)}
+        "body": json.dumps(response)
+        }
         return ret
 
 

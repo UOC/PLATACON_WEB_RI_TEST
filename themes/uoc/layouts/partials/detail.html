@@ -11,8 +11,11 @@
 {{ $sobreTec := index (.Params.sobre_tecnologia) 0 }}
 {{ $aspectesInnova := index (.Params.aspectes_innovadors) 0 }}
 {{ $apps := index (.Params.aplicacions) 0 }}
-{{ $grupsRecerca := index (.Params.grups_recerca) 0 }}
-{{ $contacte := index (.Params.contacte) 0 }}
+{{ if isset .Params "grups_recerca" }}{{ $grupsRecerca := index (.Params.grups_recerca) 0}}{{end}}
+
+{{$contacte := index (.Params.contacte) 0 }}
+{{$xarxes := $generalInfo.xarxes}}
+{{$docs := $sobreTec.docs_rels}}
 <section class="info-general">
     <div class="row">
         <div class="col-xs-12">
@@ -34,19 +37,28 @@
                             <h5>{{ $generalInfo.slogan}}</h5>
                         </div>
                         <div data-dropdown="" class="dropdown">
-                            <button data-dropdown-trigger="" aria-label="Texto descriptivo"
-                            aria-expanded="false" aria-controls="dropdown__content1"
-                            class="btn btn--primary dropdown__trigger">{{ T "uoc_ri_detail_social_media" }}<span aria-hidden="true"
-                            class="icon icon--share"></span></button>
-                            <ul role="menu" id="dropdown__content1" data-dropdown-content="" class="dropdown__content dropdown__list">
-                                
-                                <li role="menuitem" data-dropdown-content="" class="dropdown__item">
-                                    <p class="text-small">
-                                        
-                                    </p>
-                                </li>
-                                
-                            </ul>
+                            <button data-dropdown-trigger="" aria-expanded="false" class="btn btn--primary">
+                                {{ T "uoc_ri_detail_social_media" }}
+                                <span class="icon icon--share"></span>
+                            </button>
+                            <div data-dropdown-content class="dropdown__content" style="background-color: white;">
+                                <div class="social-links unstyled">
+                                    {{range $xarxes}}
+                                        {{if eq .xarxa "facebook"}}
+                                    <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Facebook']);" href="{{.address}}" target="_blank"
+                                            title='Facebook {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Facebook {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-facebook"> </span></a>
+                                        {{end}}
+                                        {{if eq .xarxa "twitter"}}
+                                    <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Twitter']);"	href="{{.address}}" target="_blank"
+                                            title='Twitter {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Twitter {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-twitter"> </span></a>
+                                        {{end}}
+                                        {{if eq .xarxa "instagram"}}        
+                                    <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Instagram']);" href="{{.address}}" target="_blank"	
+                                            title='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}' aria-label='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-instagram"> </span></a>
+                                        {{end}}
+                                    {{end}}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -108,13 +120,7 @@
 </section>
         
 <section data-tab-system="" class="ficha-detail mT60">
-        <div class="row" style="margin-bottom:25px;">
-            <div class="col-xs-12">
-                <h2>
-                    <span class="icon icon--material-pdf icon--header float-right" aria-hidden="true"></span>
-                </h2>
-            </div>
-        </div>
+        
     <div class="row">
         <div class="col-xs-12 col-md-3">
             <ul role="tablalist" data-sticky="data-sticky" class="list-group borderTopGrey toStick">               
@@ -165,10 +171,23 @@
                                 </div>
                             </div>
                             <div class="card-in-acordeon">
+                                
                                 <h4>{{ T "uoc_ri_docs" }}</h4>
+                                
+                            
+                                {{ range $d := $sobreTec.docs_rels }}
+                                {{if isset $d "file" }}
+                                <div class="row" >
+                                   
+                                    {{$doc := split $d.file "/"}}
+                                    <a class="icon icon--material-pdf icon--header float-right" href="{{ $d.file }}" aria-hidden="true"></a>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
+                                   
+                                </div>
+                                {{end}}
+                                {{end}}
 
-                                <ul class="list--unstyled">
-                                <li>Lorem ipsum dolor sit amet</li>
+                                
                             </div>
                         </div>
                     </div> 
@@ -193,9 +212,17 @@
                             </div>
                             <div class="card-in-acordeon">
                                 <h4>{{ T "uoc_ri_docs" }}</h4>
-                                <div class="wrap-richText">
-                                    <p></p>
+                                {{ range $d := $aspectesInnova.docs_rels }}
+                                {{if isset $d "file" }}
+                                <div class="row" >
+                                   
+                                    {{$doc := split $d.file "/"}}
+                                    <a class="icon icon--material-pdf icon--header float-right" href="{{ $d.file }}" aria-hidden="true"></a>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
+                                   
                                 </div>
+                                {{end}}
+                                {{end}}
                             </div>
                         </div>
                     </div>
@@ -220,9 +247,17 @@
                             </div>
                             <div class="card-in-acordeon">
                                 <h4>{{ T "uoc_ri_docs" }}</h4>
-                                <div class="wrap-richText">
-                                    <p></p>
+                                {{ range $d := $apps.docs_rels }}
+                                {{if isset $d "file" }}
+                                <div class="row" >
+                                   
+                                    {{$doc := split $d.file "/"}}
+                                    <a class="icon icon--material-pdf icon--header float-right" href="{{ $d.file }}" aria-hidden="true"></a>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
+                                   
                                 </div>
+                                {{end}}
+                                {{end}}
                             </div>
                         </div>
                     </div>
