@@ -209,28 +209,9 @@ function loadTab2Search(tab){
 
 function setFilterValues(params){
 	var all =  true;
-	var gr = true,inv = true,sols_innov = true,spin_off = true;
 	console.log('paramsssssss->>>>>>>',params);
-	if(params.visualitzacio && params.visualitzacio.length > 0){
-		var visualitzacio = params.visualitzacio;
-		for(v=0;v>visualitzacio.length;v++){
+	console.log('visual',params.visualitzacio);
 
-			$(".general-filter.visualitzacio input").each(function(ev){
-				console.log('having visualitzacio per init value--->',$(this))
-				if($(this).attr("value")==visualitzacio[v]) {
-					$(this).attr("checked",true);
-					//añadir visualizar por, según valores, mostrar/esconder listas
-				} 
-			});
-		}
-		all=false;
-	} else {
-		$("input[id*='visual']").each(function(e){
-			//console.log('inpuuuuuuuuuuuut--->',event);
-			console.log($(this))
-			$(this).attr("checked",true);
-		});
-	}
 
 	switch (params["target"]? params["target"]: '1'){
 		case '1':
@@ -419,20 +400,20 @@ function getSearchFormValues(){
 		default:
 			break;
 	}
-	
-	if($(".general-filter.visualitzacio input:checked").length>0){						//Visualitza per checked
-		searchParams.visualitzacio = "";
-		$(".general-filter.visualitzacio input:checked").each(function( index ) {
-			//searchParams.visualitzacio.push($(this).val());
-			console.log('checked')
-			if(index<4){
-				if(searchParams.visualitzacio != "") searchParams.visualitzacio += ',' + $(this).val();
-				else searchParams.visualitzacio += $(this).val();
-			}
-			
-		});	
+
+	if($(".general-filter.visualitzacio input:checked").length>0){
+		var checkeds=$(".general-filter.visualitzacio input:checked");
+		var visual=[];
+		for(i=0; i<checkeds.length;i++){
+			visual.push(checkeds[i].value);
+		}
+		searchParams.visualitzacio=visual;
+		var freeTextQuery= $(".cercadorTextual input#search").val();
+		searchParams.s= freeTextQuery;
 	} else {
-		searchParams.visualitzacio = "grup,fitxa,sol_innov,spin_offs";
+		var freeTextQuery= $(".cercadorTextual input#search").val();
+		searchParams.s= freeTextQuery;
+		console.log('Cap checkbox actiu')
 	}
 
 	console.log('searchParams created for search ::', searchParams);
@@ -567,6 +548,7 @@ function buildAjaxQueryCallout2SearchInnovativeSolutions(queryUrl,results,type){
 	var patentsResults = $(".solucionsPatentsResults .row");
 	var serveisResults = $(" .solucionsServeissResults .row");
 	var spinResults = $(" .spinResults .row");
+	var r=[solucionsTecResults,patentsResults,serveisResults,spinResults];
 	console.log('querying...SolucionsInnovadores',queryUrl);
 	$.ajax({
 		url: queryUrl,
@@ -583,9 +565,17 @@ function buildAjaxQueryCallout2SearchInnovativeSolutions(queryUrl,results,type){
 			var spin_off=[];
 			var items=data.hits.hit;
 			for(var i =0;i < items.length;i++){
+				var idioma=getCurrentLanguage();
+				var idioma_contingut=items[i].fields.idioma;
 				var content_type=JSON.stringify(items[i].fields.content_type[0]);
-				content_type=content_type.replace(/["']/g, "")
-				if(lista.includes(content_type)){
+				if(idioma_contingut != null){
+					idioma_contingut=JSON.stringify(idioma_contingut[0]);
+					idioma_contingut=idioma_contingut.replace(/[""]/g, "");}
+				else{
+					idioma_contingut="ca";
+				}
+				content_type=content_type.replace(/["']/g, "");
+				if(lista.includes(content_type) && (idioma_contingut==idioma)){
 					console.log('item compleix condicio',items[i]);
 					switch(lista.indexOf(content_type)){
 						case 0:
@@ -645,15 +635,16 @@ function buildAjaxQueryCallout2SearchInnovativeSolutions(queryUrl,results,type){
 				}
 				spinResults.html(resultSpinoff);
 			}
-			console.log("MIDES",servei.length,",",patent.length);
-
+			console.log('idioma',getCurrentLanguage());
 		}
 
 	).fail(function(xhr, textStatus, errorThrown){
 		console.log(xhr);
 		console.log(textStatus);
-		console.log(errorThrown)
-		results.html("<p style='font-style:italic'>"+literals.results.connectionError[getCurrentLanguage()]+"</p>");
+		console.log(errorThrown);
+		for(i=0;i<r.length;i++){
+		r[i].html("<p style='font-style:italic'>"+literals.results.connectionError[getCurrentLanguage()]+"</p>");
+		}
 	});
 }
 
@@ -678,18 +669,18 @@ function querySearchEngine(searchParams){
 		case '2' :
 			console.log('calling transfer results...');
 			//var endpointUrl = "http://search-webri-2dz3yckt2f5cjq7hcsbois6nw4.eu-west-1.cloudsearch.amazonaws.com/2013-01-01/search";
-			var endpointUrl = "https://hhbr3knf8j.execute-api.eu-west-1.amazonaws.com/dev/public/search";
+			var endpointUrl = "https://hhbr3knf8j.execute-api.eu-west-1.amazonaws.com/dev/search";
 			var transferURL = buildQuery(endpointUrl,searchParams);
 			buildAjaxQueryCallout2TransfersAndProcessResultsFromCloudSearch(transferURL);
 			break;
 		case '3' :
-			console.log('calling text results...');
+			console.log('parametres',searchParams.visualitzacio);
 			var fitxaResults = $(".fitxaResults .row");
 			var grupResults = $(".grupResults .row");
 			//var endpointUrlAl = "http://search-webri-2dz3yckt2f5cjq7hcsbois6nw4.eu-west-1.cloudsearch.amazonaws.com/2013-01-01/search";
 			var endpointUrlAl = "https://transfer-research.am.pre.uoc.es/api/search";
 			var endpointUrlUoc = "https://transfer-research.am.pre.uoc.es/api/search";
-			var endpointUrlUocInnovSol = 'https://hhbr3knf8j.execute-api.eu-west-1.amazonaws.com/dev/public/search';
+			var endpointUrlUocInnovSol = "https://hhbr3knf8j.execute-api.eu-west-1.amazonaws.com/dev/search";
 			var fitxaURL = buildQuery(endpointUrlUoc,searchParams)+"&tipus=fitxa";
 			var grupURL = buildQuery(endpointUrlUoc,searchParams)+"&tipus=grup";
 			var transferURL = buildQuery(endpointUrlAl,searchParams)+"&tipus=transfer";

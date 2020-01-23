@@ -27,4 +27,5 @@ phases:
       - cd ../css && aws s3 sync . s3://${BUCKET_S3}/ri_live/css --acl public-read --delete
       - cd .. && aws cloudsearchdomain --endpoint-url ${CLOUDSEARCH_URL} upload-documents --content-type application/json --documents ./ca/index.json
     finally:
+      - aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --paths "/admin,/ca,/es,en/,js/,css/,img/"
       - echo "Script finished running"

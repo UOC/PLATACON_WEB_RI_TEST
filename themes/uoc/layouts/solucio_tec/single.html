@@ -3,12 +3,6 @@
 
 <head>
     {{ partial "head.html" . }}
-    {{ $generalInfo := index (.Params.general) 0 }}
-    {{ $sobreTec := index (.Params.sobre_tecnologia) 0 }}
-    {{ $aspectesInnova := index (.Params.aspectes_innovadors) 0 }}
-    {{ $apps := index (.Params.aplicacions) 0 }}
-    {{ if isset .Params "grups_recerca" }}{{ $grupsRecerca := index (.Params.grups_recerca) 0 }}{{end}}
-    {{ $contacte := index (.Params.contacte) 0 }}
 </head>
 
 <body>

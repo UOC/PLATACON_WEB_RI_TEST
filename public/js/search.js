@@ -461,7 +461,7 @@ function buildAjaxQueryCallout2GrupOrFitxaAndProcessResultsFromCloudSearch(query
 		function(data, returnCode, request){
 			console.log('returning code----->',returnCode);
 			console.log('returning request----->',request);
-			console.log('returning data----->',data);
+			console.log('returning data Investigadors>',data);
 			if(data.hits.found == 0){
 				results.html("<p style='font-style:italic'>"+literals.results.noresults[getCurrentLanguage()]+"</p>");
 			} else {
@@ -567,7 +567,6 @@ function buildAjaxQueryCallout2SearchInnovativeSolutions(queryUrl,results,type){
 	var patentsResults = $(".solucionsPatentsResults .row");
 	var serveisResults = $(" .solucionsServeissResults .row");
 	var spinResults = $(" .spinResults .row");
-	var res = [solucionsTecResults,patentsResults,serveisResults,spinResults];
 	console.log('querying...SolucionsInnovadores',queryUrl);
 	$.ajax({
 		url: queryUrl,
@@ -577,12 +576,6 @@ function buildAjaxQueryCallout2SearchInnovativeSolutions(queryUrl,results,type){
 			console.log('returning code----->',returnCode);
 			console.log('returning request----->',request);
 			console.log('returningSolucionsInnovadores----->',data);
-			if(data.hits.found == 0){
-				for(var r=0;r<res.length;r++) {
-					res[r].html("<p style='font-style:italic'>" + literals.results.noresults[getCurrentLanguage()] + "</p>");
-				}
-			}
-		else{
 			var lista=["solucio_tec","patent","servei","spin_off"];
 			var solucio_tec=[];
 			var patent=[];
@@ -612,8 +605,48 @@ function buildAjaxQueryCallout2SearchInnovativeSolutions(queryUrl,results,type){
 
 				}
 			}
-			console.log('lista de items a printar',solucio_tec,patent,servei,spin_off);
-		}
+			var resultPatent="";
+			var resultSolTec="";
+			var resultServei="";
+			var resultSpinoff="";
+
+			if(patent.length == 0){
+				patentsResults.html("<p style='font-style:italic'>" + literals.results.noresults[getCurrentLanguage()] + "</p>");
+			}else{
+				for(var i=0; i<patent.length;i++){
+					resultPatent+=getResultMarkup(patent[i],"patent",i);
+				}
+				patentsResults.html(resultPatent)
+			}
+
+			if(servei.length == 0){
+				serveisResults.html("<p style='font-style:italic'>" + literals.results.noresults[getCurrentLanguage()] + "</p>");
+			}else{
+				for(var i=0; i<servei.length;i++){
+					resultServei+=getResultMarkup(servei[i],"servei",i);
+				}
+				serveisResults.html(resultServei);
+			}
+
+			if(solucio_tec.length == 0){
+				solucionsTecResults.html("<p style='font-style:italic'>" + literals.results.noresults[getCurrentLanguage()] + "</p>");
+			}else{
+				for(var i=0; i<solucio_tec.length;i++){
+					resultSolTec+=getResultMarkup(solucio_tec[i],"solucio_tec",i);
+				}
+				solucionsTecResults.html(resultSolTec);
+			}
+
+			if(spin_off.length == 0){
+				spinResults.html("<p style='font-style:italic'>" + literals.results.noresults[getCurrentLanguage()] + "</p>");
+			}else{
+				for(var i=0; i<spin_off.length;i++){
+					resultSpinoff+=getResultMarkup(spin_off[i],"spin_off",i);
+				}
+				spinResults.html(resultSpinoff);
+			}
+			console.log("MIDES",servei.length,",",patent.length);
+
 		}
 
 	).fail(function(xhr, textStatus, errorThrown){
@@ -645,7 +678,7 @@ function querySearchEngine(searchParams){
 		case '2' :
 			console.log('calling transfer results...');
 			//var endpointUrl = "http://search-webri-2dz3yckt2f5cjq7hcsbois6nw4.eu-west-1.cloudsearch.amazonaws.com/2013-01-01/search";
-			var endpointUrl = "https://hhbr3knf8j.execute-api.eu-west-1.amazonaws.com/dev/user/search";
+			var endpointUrl = "https://hhbr3knf8j.execute-api.eu-west-1.amazonaws.com/dev/public/search";
 			var transferURL = buildQuery(endpointUrl,searchParams);
 			buildAjaxQueryCallout2TransfersAndProcessResultsFromCloudSearch(transferURL);
 			break;
@@ -656,7 +689,7 @@ function querySearchEngine(searchParams){
 			//var endpointUrlAl = "http://search-webri-2dz3yckt2f5cjq7hcsbois6nw4.eu-west-1.cloudsearch.amazonaws.com/2013-01-01/search";
 			var endpointUrlAl = "https://transfer-research.am.pre.uoc.es/api/search";
 			var endpointUrlUoc = "https://transfer-research.am.pre.uoc.es/api/search";
-			var endpointUrlUocInnovSol = 'https://hhbr3knf8j.execute-api.eu-west-1.amazonaws.com/dev/user/search';
+			var endpointUrlUocInnovSol = 'https://hhbr3knf8j.execute-api.eu-west-1.amazonaws.com/dev/public/search';
 			var fitxaURL = buildQuery(endpointUrlUoc,searchParams)+"&tipus=fitxa";
 			var grupURL = buildQuery(endpointUrlUoc,searchParams)+"&tipus=grup";
 			var transferURL = buildQuery(endpointUrlAl,searchParams)+"&tipus=transfer";
@@ -686,11 +719,33 @@ function getResultMarkup(item, content_type, idx){
 			markup+='<div id="'+item.id+'" aria-label="region" class="card card-noimg"><div class="card__contents">';
 			markup+='<p class="title">'+item.fields.nom_grup+'</p><p>'+item.fields.descripcio+'</p>';
 			markup+='</div></div></a>';
-	} else { // sols_tec, patent, servei, spin-off print view
+	} else if(content_type == "patent") { // sols_tec, patent, servei, spin-off print view
+
 			markup+="<a href='"+item.fields.url+"'>"
-			markup+='<div id="'+item.id+'" aria-label="region" class="card card-noimg"><div class="card__contents">';
-			markup+='<p class="title">'+item.fields.nom_grup+'</p><p>'+item.fields.descripcio+'</p>';
-			markup+='</div></div></a>';
+			markup+='<div id="'+item.id+'"  class="card card-people"><div class="card__contents img-wpr"><img src="'+item.fields.imatge_url+'" alt="" class="img-wpr__cover">';
+			markup+='<div class="img-wpr__contents"><p class="title">'+item.fields.name+'</p>';
+			markup+='</div></div></div></a>';
+	}
+	else if(content_type == "servei") {
+
+		markup+="<a href='"+item.fields.url+"'>"
+		markup+='<div id="'+item.id+'"  class="card card-people"><div class="card__contents img-wpr"><img src="'+item.fields.imatge_url+'" alt="" class="img-wpr__cover">';
+		markup+='<div class="img-wpr__contents"><p class="title">'+item.fields.name+'</p>';
+		markup+='</div></div></div></a>';
+	}
+	else if(content_type == "solucio_tec") {
+
+		markup+="<a href='"+item.fields.url+"'>"
+		markup+='<div id="'+item.id+'"  class="card card-people"><div class="card__contents img-wpr"><img src="'+item.fields.imatge_url+'" alt="" class="img-wpr__cover">';
+		markup+='<div class="img-wpr__contents"><p class="title">'+item.fields.name+'</p>';
+		markup+='</div></div></div></a>';
+	}
+	else if(content_type == "spin_off") {
+
+		markup+="<a href='"+item.fields.url+"'>"
+		markup+='<div id="'+item.id+'"  class="card card-people"><div class="card__contents img-wpr"><img src="'+item.fields.imatge_url+'" alt="" class="img-wpr__cover">';
+		markup+='<div class="img-wpr__contents"><p class="title">'+item.fields.name+'</p>';
+		markup+='</div></div></div></a>';
 	}
 	
 	markup+='</div>';

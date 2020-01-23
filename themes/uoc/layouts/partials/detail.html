@@ -7,15 +7,14 @@
 
 
 {{if eq $type "solucio_tec"}}
-{{ $generalInfo := index (.Params.general) 0 }}
-{{ $sobreTec := index (.Params.sobre_tecnologia) 0 }}
+{{ $generalInfo :=.Params.general }}
+{{ $sobreTec := .Params.sobre_tecnologia}}
 {{ $aspectesInnova := index (.Params.aspectes_innovadors) 0 }}
 {{ $apps := index (.Params.aplicacions) 0 }}
 {{ if isset .Params "grups_recerca" }}{{ $grupsRecerca := index (.Params.grups_recerca) 0}}{{end}}
 
 {{$contacte := index (.Params.contacte) 0 }}
 {{$xarxes := $generalInfo.xarxes}}
-{{$docs := $sobreTec.docs_rels}}
 <section class="info-general">
     <div class="row">
         <div class="col-xs-12">
@@ -159,7 +158,7 @@
                     <div class="collapse">
                         <div class="head-collapse js-collapse">
                             <p>
-                                <a href="#collapse2" aria-expanded="false"
+                                <a href="#collapse2" aria-expanded="true"
                                 class="js-collapseClick">{{ T "uoc_ri_about_tec" }}<span
                                 class="icon icon--arrow-down"></span></a>
                             </p>
@@ -176,7 +175,6 @@
                                 
                             
                                 {{ range $d := $sobreTec.docs_rels }}
-                                {{if isset $d "file" }}
                                 <div class="row" >
                                    
                                     {{$doc := split $d.file "/"}}
@@ -184,7 +182,6 @@
                                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
                                    
                                 </div>
-                                {{end}}
                                 {{end}}
 
                                 
@@ -207,13 +204,12 @@
                         <div id="collapse1" class="contentCollapse">
                             <div class="card-in-acordeon">
                                 <div class="wrap-richText">
-                                    <p>{{ $aspectesInnova.descripcio}}</p>
+                                    {{ safeHTML (markdownify $aspectesInnova.descripcio) }}
                                 </div>
                             </div>
                             <div class="card-in-acordeon">
                                 <h4>{{ T "uoc_ri_docs" }}</h4>
                                 {{ range $d := $aspectesInnova.docs_rels }}
-                                {{if isset $d "file" }}
                                 <div class="row" >
                                    
                                     {{$doc := split $d.file "/"}}
@@ -221,7 +217,6 @@
                                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
                                    
                                 </div>
-                                {{end}}
                                 {{end}}
                             </div>
                         </div>
@@ -242,13 +237,12 @@
                         <div id="collapseApps" class="contentCollapse">
                             <div class="card-in-acordeon">
                                 <div class="wrap-richText">
-                                    <p>{{ $apps.descripcio}}</p>
+                                    {{ safeHTML (markdownify $apps.descripcio) }}
                                 </div>
                             </div>
                             <div class="card-in-acordeon">
                                 <h4>{{ T "uoc_ri_docs" }}</h4>
                                 {{ range $d := $apps.docs_rels }}
-                                {{if isset $d "file" }}
                                 <div class="row" >
                                    
                                     {{$doc := split $d.file "/"}}
@@ -256,7 +250,6 @@
                                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
                                    
                                 </div>
-                                {{end}}
                                 {{end}}
                             </div>
                         </div>
@@ -335,12 +328,14 @@
 
 {{else if eq $type "patent"}}
 
-{{ $generalInfo := index (.Params.general) 0 }}
-{{ $sobrePat := index (.Params.sobre_patent) 0 }}
+{{ $generalInfo := .Params.general }}
+{{ $sobrePat := .Params.sobre_patent}}
 {{ $aspectesInnova := index (.Params.aspectes_innovadors) 0 }}
 {{ $apps := index (.Params.aplicacions) 0 }}
-{{ $grupsRecerca := index (.Params.grups_recerca) 0 }}
 {{ $contacte := index (.Params.contacte) 0 }}
+{{ if isset .Params "grups_recerca" }}{{ $grupsRecerca := index (.Params.grups_recerca) 0}}{{end}}
+
+{{$xarxes := $generalInfo.xarxes}}
 
 <section class="info-general">
     <div class="row">
@@ -363,19 +358,28 @@
                             <h5>{{ $generalInfo.slogan}}</h5>
                         </div>
                         <div data-dropdown="" class="dropdown">
-                            <button data-dropdown-trigger="" aria-label="Texto descriptivo"
-                            aria-expanded="false" aria-controls="dropdown__content1"
-                            class="btn btn--primary dropdown__trigger">{{ T "uoc_ri_detail_social_media" }}<span aria-hidden="true"
-                            class="icon icon--share"></span></button>
-                            <ul role="menu" id="dropdown__content1" data-dropdown-content="" class="dropdown__content dropdown__list">
-                                
-                                <li role="menuitem" data-dropdown-content="" class="dropdown__item">
-                                    <p class="text-small">
-                                        
-                                    </p>
-                                </li>
-                                
-                            </ul>
+                            <button data-dropdown-trigger="" aria-expanded="false" class="btn btn--primary">
+                                {{ T "uoc_ri_detail_social_media" }}
+                                <span class="icon icon--share"></span>
+                            </button>
+                            <div data-dropdown-content class="dropdown__content" style="background-color: white;">
+                                <div class="social-links unstyled">
+                                    {{range $xarxes}}
+                                        {{if eq .xarxa "facebook"}}
+                                    <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Facebook']);" href="{{.address}}" target="_blank"
+                                            title='Facebook {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Facebook {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-facebook"> </span></a>
+                                        {{end}}
+                                        {{if eq .xarxa "twitter"}}
+                                    <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Twitter']);"	href="{{.address}}" target="_blank"
+                                            title='Twitter {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Twitter {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-twitter"> </span></a>
+                                        {{end}}
+                                        {{if eq .xarxa "instagram"}}        
+                                    <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Instagram']);" href="{{.address}}" target="_blank"	
+                                            title='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}' aria-label='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-instagram"> </span></a>
+                                        {{end}}
+                                    {{end}}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -496,8 +500,15 @@
                             <div class="card-in-acordeon">
                                 <h4>{{ T "uoc_ri_docs" }}</h4>
 
-                                <ul class="list--unstyled">
-                                <li>Lorem ipsum dolor sit amet</li>
+                                {{ range $d := $sobrePat.docs_rels }}
+                                <div class="row" >
+                                   
+                                    {{$doc := split $d.file "/"}}
+                                    <a class="icon icon--material-pdf icon--header float-right" href="{{ $d.file }}" aria-hidden="true"></a>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
+                                   
+                                </div>
+                                {{end}}
                             </div>
                         </div>
                     </div> 
@@ -517,14 +528,20 @@
                         <div id="collapse1" class="contentCollapse">
                             <div class="card-in-acordeon">
                                 <div class="wrap-richText">
-                                    <p>{{ $aspectesInnova.descripcio}}</p>
+                                    {{ safeHTML (markdownify $aspectesInnova.descripcio) }}
                                 </div>
                             </div>
                             <div class="card-in-acordeon">
                                 <h4>{{ T "uoc_ri_docs" }}</h4>
-                                <div class="wrap-richText">
-                                    <p></p>
+                                {{ range $d := $aspectesInnova.docs_rels }}
+                                <div class="row" >
+                                   
+                                    {{$doc := split $d.file "/"}}
+                                    <a class="icon icon--material-pdf icon--header float-right" href="{{ $d.file }}" aria-hidden="true"></a>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
+                                   
                                 </div>
+                                {{end}}
                             </div>
                         </div>
                     </div>
@@ -544,14 +561,20 @@
                         <div id="collapseApps" class="contentCollapse">
                             <div class="card-in-acordeon">
                                 <div class="wrap-richText">
-                                    <p>{{ $apps.descripcio}}</p>
+                                    {{ safeHTML (markdownify $apps.descripcio) }}
                                 </div>
                             </div>
                             <div class="card-in-acordeon">
                                 <h4>{{ T "uoc_ri_docs" }}</h4>
-                                <div class="wrap-richText">
-                                    <p></p>
+                                {{ range $d := $apps.docs_rels }}
+                                <div class="row" >
+                                   
+                                    {{$doc := split $d.file "/"}}
+                                    <a class="icon icon--material-pdf icon--header float-right" href="{{ $d.file }}" aria-hidden="true"></a>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
+                                   
                                 </div>
+                                {{end}}
                             </div>
                         </div>
                     </div>
@@ -629,11 +652,13 @@
 
 {{else if eq $type "servei"}}
 
-{{ $generalInfo := index (.Params.general) 0 }}
-{{ $sobreServ := index (.Params.sobre_servei) 0 }}
+{{ $generalInfo := .Params.general }}
+{{ $sobreServ := .Params.sobre_servei }}
 {{ $casosExit := index (.Params.casos_exit) 0 }}
-{{ $grupsRecerca := index (.Params.grups_recerca) 0 }}
+{{ if isset .Params "grups_recerca" }}{{ $grupsRecerca := index (.Params.grups_recerca) 0}}{{end}}
 {{ $contacte := index (.Params.contacte) 0 }}
+
+{{$xarxes := $generalInfo.xarxes}}
 
 <section class="info-general">
     <div class="row">
@@ -656,19 +681,28 @@
                             <h5>{{ $generalInfo.slogan}}</h5>
                         </div>
                         <div data-dropdown="" class="dropdown">
-                            <button data-dropdown-trigger="" aria-label="Texto descriptivo"
-                            aria-expanded="false" aria-controls="dropdown__content1"
-                            class="btn btn--primary dropdown__trigger">{{ T "uoc_ri_detail_social_media" }}<span aria-hidden="true"
-                            class="icon icon--share"></span></button>
-                            <ul role="menu" id="dropdown__content1" data-dropdown-content="" class="dropdown__content dropdown__list">
-                                
-                                <li role="menuitem" data-dropdown-content="" class="dropdown__item">
-                                    <p class="text-small">
-                                        
-                                    </p>
-                                </li>
-                                
-                            </ul>
+                            <button data-dropdown-trigger="" aria-expanded="false" class="btn btn--primary">
+                                {{ T "uoc_ri_detail_social_media" }}
+                                <span class="icon icon--share"></span>
+                            </button>
+                            <div data-dropdown-content class="dropdown__content" style="background-color: white;">
+                                <div class="social-links unstyled">
+                                    {{range $xarxes}}
+                                        {{if eq .xarxa "facebook"}}
+                                    <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Facebook']);" href="{{.address}}" target="_blank"
+                                            title='Facebook {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Facebook {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-facebook"> </span></a>
+                                        {{end}}
+                                        {{if eq .xarxa "twitter"}}
+                                    <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Twitter']);"	href="{{.address}}" target="_blank"
+                                            title='Twitter {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Twitter {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-twitter"> </span></a>
+                                        {{end}}
+                                        {{if eq .xarxa "instagram"}}        
+                                    <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Instagram']);" href="{{.address}}" target="_blank"	
+                                            title='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}' aria-label='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-instagram"> </span></a>
+                                        {{end}}
+                                    {{end}}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -784,8 +818,15 @@
                             <div class="card-in-acordeon">
                                 <h4>{{ T "uoc_ri_docs" }}</h4>
 
-                                <ul class="list--unstyled">
-                                <li></li>
+                                {{ range $d := $sobreServ.docs_rels }}
+                                <div class="row" >
+                                   
+                                    {{$doc := split $d.file "/"}}
+                                    <a class="icon icon--material-pdf icon--header float-right" href="{{ $d.file }}" aria-hidden="true"></a>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
+                                   
+                                </div>
+                                {{end}}
                             </div>
                         </div>
                     </div> 
@@ -809,7 +850,6 @@
                                 </div>
                             </div>
                             <div class="card-in-acordeon">
-                                <h4>{{ T "uoc_ri_docs" }}</h4>
 
                                 <ul class="list--unstyled">
                                 <li><h4>{{$casosExit.titol}}</h4></li>
@@ -892,13 +932,15 @@
 
 {{else}}
 
-{{ $generalInfo := index (.Params.general) 0 }}
-{{ $sobreSpin := index (.Params.sobre_spinoff) 0 }}
+{{ $generalInfo := .Params.general }}
+{{ $sobreSpin := .Params.sobre_spinoff }}
 {{ $products_serveis := index (.Params.productes_serveis) 0 }}
 {{ $clients := index (.Params.clients) 0 }}
 {{ $casosExit := index (.Params.casos_exit) 0 }}
-{{ $grupsRecerca := index (.Params.grups_recerca) 0 }}
-{{ $contacte := index (.Params.contacte) 0 }}
+{{ if isset .Params "grups_recerca" }}{{ $grupsRecerca := index (.Params.grups_recerca) 0}}{{end}}
+
+{{$contacte := index (.Params.contacte) 0 }}
+{{$xarxes := $generalInfo.xarxes}}
 
 <section class="info-general">
     <div class="row">
@@ -921,19 +963,28 @@
                             <h5>{{ $generalInfo.slogan}}</h5>
                         </div>
                         <div data-dropdown="" class="dropdown">
-                            <button data-dropdown-trigger="" aria-label="Texto descriptivo"
-                            aria-expanded="false" aria-controls="dropdown__content1"
-                            class="btn btn--primary dropdown__trigger">{{ T "uoc_ri_detail_social_media" }}<span aria-hidden="true"
-                            class="icon icon--share"></span></button>
-                            <ul role="menu" id="dropdown__content1" data-dropdown-content="" class="dropdown__content dropdown__list">
-                                
-                                <li role="menuitem" data-dropdown-content="" class="dropdown__item">
-                                    <p class="text-small">
-                                        
-                                    </p>
-                                </li>
-                                
-                            </ul>
+                            <button data-dropdown-trigger="" aria-expanded="false" class="btn btn--primary">
+                                {{ T "uoc_ri_detail_social_media" }}
+                                <span class="icon icon--share"></span>
+                            </button>
+                            <div data-dropdown-content class="dropdown__content" style="background-color: white;">
+                                <div class="social-links unstyled">
+                                    {{range $xarxes}}
+                                        {{if eq .xarxa "facebook"}}
+                                    <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Facebook']);" href="{{.address}}" target="_blank"
+                                            title='Facebook {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Facebook {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-facebook"> </span></a>
+                                        {{end}}
+                                        {{if eq .xarxa "twitter"}}
+                                    <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Twitter']);"	href="{{.address}}" target="_blank"
+                                            title='Twitter {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Twitter {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-twitter"> </span></a>
+                                        {{end}}
+                                        {{if eq .xarxa "instagram"}}        
+                                    <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Instagram']);" href="{{.address}}" target="_blank"	
+                                            title='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}' aria-label='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-instagram"> </span></a>
+                                        {{end}}
+                                    {{end}}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1059,8 +1110,15 @@
                             <div class="card-in-acordeon">
                                 <h4>{{ T "uoc_ri_docs" }}</h4>
 
-                                <ul class="list--unstyled">
-                                <li>Lorem ipsum dolor sit amet</li>
+                                {{ range $d := $sobreSpin.docs_rels }}
+                                <div class="row" >
+                                   
+                                    {{$doc := split $d.file "/"}}
+                                    <a class="icon icon--material-pdf icon--header float-right" href="{{ $d.file }}" aria-hidden="true"></a>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
+                                   
+                                </div>
+                                {{end}}
                             </div>
                         </div>
                     </div> 
@@ -1080,14 +1138,20 @@
                         <div id="collapse1" class="contentCollapse">
                             <div class="card-in-acordeon">
                                 <div class="wrap-richText">
-                                    <p>{{ $products_serveis.descripcio}}</p>
+                                    {{ safeHTML (markdownify $products_serveis.descripcio) }}
                                 </div>
                             </div>
                             <div class="card-in-acordeon">
                                 <h4>{{ T "uoc_ri_docs" }}</h4>
-                                <div class="wrap-richText">
-                                    <p></p>
+                                {{ range $d := $products_serveis.docs_rels }}
+                                <div class="row" >
+                                   
+                                    {{$doc := split $d.file "/"}}
+                                    <a class="icon icon--material-pdf icon--header float-right" href="{{ $d.file }}" aria-hidden="true"></a>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
+                                   
                                 </div>
+                                {{end}}
                             </div>
                         </div>
                     </div>
@@ -1107,14 +1171,21 @@
                         <div id="collapseApps" class="contentCollapse">
                             <div class="card-in-acordeon">
                                 <div class="wrap-richText">
-                                    <p>{{ $clients.descripcio}}</p>
+                                    {{ safeHTML (markdownify $clients.descripcio) }}
                                 </div>
                             </div>
                             <div class="card-in-acordeon">
                                 <h4>{{ T "uoc_ri_docs" }}</h4>
-                                <div class="wrap-richText">
-                                    <p></p>
+
+                                {{ range $d := $clients.docs_rels }}
+                                <div class="row" >
+                                   
+                                    {{$doc := split $d.file "/"}}
+                                    <a class="icon icon--material-pdf icon--header float-right" href="{{ $d.file }}" aria-hidden="true"></a>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
+                                   
                                 </div>
+                                {{end}}
                             </div>
                         </div>
                     </div>
@@ -1126,24 +1197,33 @@
                     <div class="collapse">
                         <div class="head-collapse js-collapse">
                             <p>
-                                <a href="#collapse1" aria-expanded="false" class="js-collapseClick">{{ T "uoc_ri_casos_exit" }}<span
+                                <a href="#collapse1" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_casos_exit" }}<span
                                     class="icon icon--arrow-down"></span>
                                 </a>
                             </p>
                         </div>
-                        <div id="collapse1" class="contentCollapse">
-                            <div class="card-in-acordeon">
-                                <div class="wrap-richText">
-                                    {{ safeHTML (markdownify $casosExit.descripcio) }}
+                        <div id="collapse1" class="contentCollapse show">
+                            <div class="card-in-acordeon ">
+                                {{ range $c := .Params.casos_exit }}
+                                <div class="row" >
+                                
+                                    <ul class="list--unstyled">
+                                        <li><h2>{{ $c.titol }}</h2></li>
+                                        {{if isset $c "img" }}
+                                        <li><img src="{{$c.img}}"></li>
+                                        {{end}}
+                                        {{if isset $c "descripcio" }}
+                                        <li><div class="wrap-richText">{{ safeHTML (markdownify $c.descripcio) }}</div></li>
+                                        {{end}}
+                                        {{if isset $c "url_success" }}
+                                        <li><a href="{{$c.url_success}}"><h3>{{T "uoc_ri_casos_link"}}</h3></a></li>
+                                        {{end}}
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="card-in-acordeon">
-                                <h4>{{ T "uoc_ri_docs" }}</h4>
+                                
+                                
 
-                                <ul class="list--unstyled">
-                                <li><h4>{{$casosExit.titol}}</h4></li>
-                                <li>{{$casosExit.img}}</li>
-                                <li>{{$casosExit.url_success}}</li>
+                                {{end}}
                             </div>
                         </div>
                     </div>
@@ -1151,40 +1231,27 @@
             </div>
             <div id="tab-content-14" data-tab-content="" role="tabpanel" aria-labelledby="tab-14"
             aria-hidden="true" class="tab-content">
-                <div class="collapse">
+                <div class="collapse grup results">
                     <div class="head-collapse js-collapse">
-                        <p><a href="#collapse10_1" aria-expanded="false"
-                            class="js-collapseClick">{{ T "uoc_ri_research_groups" }}<span
-                            class="icon icon--arrow-down"></span></a></p>
+                        <p><a href="#collapse3" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_grups"}}<span class="icon icon--arrow-down"></span></a></p>
                     </div>
-                    <div id="collapse10_1" class="contentCollapse show">
-                        <div class="card-in-acordeon">
-                            <div class="row list-grups">
-                                <div class="row data-grups"></div>
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <ul role="navigation" class="pagination-grups"></ul>
-                                    </div>
-                                </div>
+                    <div id="collapse3" class="contentCollapse show ajaxLoading grupResults">
+                        <div class="card-in-acordeon js-changeVist">
+                            <div class="row">
+                                
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="collapse">
+                <div class="collapse fitxa results">
                     <div class="head-collapse js-collapse">
-                        <p><a href="#collapse10_2" aria-expanded="false"
-                            class="js-collapseClick">{{ T "uoc_ri_researchers" }}<span
-                            class="icon icon--arrow-down"></span></a></p>
+                        <p><a href="#collapse2" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_investigadors"}}<span class="icon icon--arrow-down"></span></a></p>
+                        <p class="result"></p>
                     </div>
-                    <div id="collapse10_2" class="contentCollapse show">
-                        <div class="card-in-acordeon">
-                            <div class="row list-investigadors">
-                                <div class="row data-investigadors"></div>
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <ul role="navigation" class="pagination-investigadors"></ul>
-                                    </div>
-                                </div>
+                    <div id="collapse2" class="contentCollapse show ajaxLoading fitxaResults">
+                        <div class="card-in-acordeon js-changeVist">
+                            <div class="row">
+                                
                             </div>
                         </div>
                     </div>

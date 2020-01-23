@@ -134,7 +134,6 @@
 [uoc_ri_home_centres] other = "Centres"
 [uoc_ri_home_difusions] other = "Difusiones destacadas"
 
-
 [uoc_difusio] other = "Broadcast"
 
 [uoc_contact_parlem] other = "Should we talk?"
@@ -172,3 +171,8 @@
 [uoc_ri_difusio_novetats] other = "Check out the last novelties, news and cases of success of the R&I at UOC"
 [uoc_ri_difusio_noticia] other = "Report"
 [uoc_ri_difusio_esdeveniment] other = "Event"
+
+[uoc_ri_esdeveniment_On] other = "Where"
+[uoc_ri_esdeveniment_Quan] other = "When"
+
+[uoc_ri_casos_link] other = "Link to the case of success"

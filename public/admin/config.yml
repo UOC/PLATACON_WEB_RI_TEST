@@ -7,7 +7,7 @@ backend:
   auth_endpoint: /prod/auth
 media_folder: "static/img" # Media files will be stored in the repo under static/media/
 public_folder: "/img"
-#publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 slug:
   encoding: "ascii"
   clean_accents: true
@@ -135,10 +135,10 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     fields:
       - {label: Títol, name: title, widget : string, required: true}
-      - {label: Idioma, name: language, widget : select, options: ["ca","es","en"],default: "ca", required: true}
+      - {label: Idioma, name: language, widget : hidden, default: "ca"}
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Nom Solucio", name: nom_solucio, widget: string, required: true}
           - {label: "Text", name: text_breu, widget: string}
@@ -177,7 +177,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: Sobre la Tecnología
         name: sobre_tecnologia 
         required: false     
-        widget: list
+        widget: object
         fields:
           - {label: titol, name: titol, widget: string}
           - {label: descripcio, name: descripcio, widget: markdown}
@@ -206,11 +206,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Aplicacions
         name: aplicacions   
         required: false   
@@ -224,28 +224,46 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
-      - label: Grups de Recerca
-        name: grups_recerca  
-        required: false    
-        widget: list
-        fields:
-          - label: Grups
-            name: grups
-            widget: grups
-            fields: 
-              - {label: Grup, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
-          - label: Investigadors
-            name: investigadors
-            widget: investigadors
-            fields: 
-              - {label: Investigador, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
+      - label: "Grups de Recerca"
+        name: grups_recerca
+        widget: "grups_custom_list"
+        fields: 
+          - label: Grup
+            name: id
+            widget: grups_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Descripcio
+            name: description
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
+      - label: "Investigadors"
+        name: investigadors
+        widget: "investigadors_custom_list"
+        fields: 
+          - label: Investigador
+            name: id
+            widget: investigadors_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
       - label: Contacte
         name: contacte
         required: true
@@ -272,7 +290,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Idioma, name: language, widget : select, options: ["ca","es","en"],default: "es", required: true}
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Nombre Solución", name: nom_solucio, widget: string, required: true}
           - {label: "Texto", name: text_breu, widget: string}
@@ -311,7 +329,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: Sobre la Tecnologia
         name: sobre_tecnologia 
         required: false     
-        widget: list
+        widget: object
         fields:
           - {label: Título, name: titol, widget: string}
           - {label: Descripción, name: descripcio, widget: markdown}
@@ -321,11 +339,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Aspectos Innovadores
         name: aspectes_innovadors  
         required: false   
@@ -339,11 +357,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Aplicaciones
         name: aplicacions   
         required: false   
@@ -357,28 +375,46 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
-      - label: Grupos de Investigación
-        name: grups_recerca  
-        required: false    
-        widget: list
-        fields:
-          - label: Grupos
-            name: grups
-            widget: grups
-            fields: 
-              - {label: Grupo, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
-          - label: Investigadores
-            name: investigadors
-            widget: investigadors
-            fields: 
-              - {label: Investigador, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
+      - label: "Grupos de Investigación"
+        name: grups_recerca
+        widget: "grups_custom_list"
+        fields: 
+          - label: Grup
+            name: id
+            widget: grups_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Descripcio
+            name: description
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
+      - label: "Investigadores"
+        name: investigadors
+        widget: "investigadors_custom_list"
+        fields: 
+          - label: Investigador
+            name: id
+            widget: investigadors_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
       - label: Contacto
         name: contacte
         required: true
@@ -405,10 +441,10 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Language, name: language, widget : select, options: ["ca","es","en"],default: "en", required: true}
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Solution name", name: nom_solucio, widget: string, required: true}
-          - {label: "Text", name: text_breu, widget: string}
+          - {label: "Text", name: text_breu, widget: string, required: true}
           - {label: "Slogan", name: slogan, widget: string}
           - {label: "Img Background", name: "img_background", widget: image, required: true}
           - {label: "Typology", name: tipologia, widget: select, options: ["Technical Solution","Patent", "Business Service","Spin-Off"], default: "Technical Solution"}
@@ -445,7 +481,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: About Technology
         name: sobre_tecnologia 
         required: false     
-        widget: list
+        widget: object
         fields:
           - {label: Title, name: titol, widget: string}
           - {label: description, name: descripcio, widget: markdown}
@@ -455,11 +491,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Innovative aspects
         name: aspectes_innovadors  
         required: false   
@@ -473,11 +509,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Applications
         name: aplicacions   
         required: false   
@@ -491,28 +527,46 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
-      - label: Research Groups
-        name: grups_recerca  
-        required: false    
-        widget: list
-        fields:
-          - label: Groups
-            name: grups
-            widget: grups
-            fields: 
-              - {label: Group, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
-          - label: Researchers
-            name: investigadors
-            widget: investigadors
-            fields: 
-              - {label: Researcher, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
+      - label: "Research Groups"
+        name: grups_recerca
+        widget: "grups_custom_list"
+        fields: 
+          - label: Grup
+            name: id
+            widget: grups_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Descripcio
+            name: description
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
+      - label: "Researchers"
+        name: investigadors
+        widget: "investigadors_custom_list"
+        fields: 
+          - label: Investigador
+            name: id
+            widget: investigadors_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
       - label: Contact
         name: contacte
         required: true
@@ -540,7 +594,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Idioma, name: language, widget : select, options: ["ca","es","en"],default: "ca", required: true}
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Nom Patent", name: nom_patent, widget: string, required: true}
           - {label: "Text", name: text_breu, widget: string}
@@ -579,7 +633,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: Sobre la Patent
         name: sobre_patent  
         required: false    
-        widget: list
+        widget: object
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
@@ -589,11 +643,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Aspectes Innovadors
         name: aspectes_innovadors    
         required: false 
@@ -607,11 +661,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Aplicacions
         name: aplicacions    
         required: false  
@@ -625,28 +679,46 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
-      - label: Grups de Recerca
+      - label: "Grups de Recerca"
         name: grups_recerca
-        required: false      
-        widget: list
-        fields:
-          - label: Grups
-            name: grups
-            widget: grups
-            fields: 
-              - {label: Grup, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
-          - label: Investigadors
-            name: investigadors
-            widget: investigadors
-            fields: 
-              - {label: Investigador, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
+        widget: "grups_custom_list"
+        fields: 
+          - label: Grup
+            name: id
+            widget: grups_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Descripcio
+            name: description
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
+      - label: "Investigadors"
+        name: investigadors
+        widget: "investigadors_custom_list"
+        fields: 
+          - label: Investigador
+            name: id
+            widget: investigadors_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
       - label: Contacte
         name: contacte
         required: false
@@ -673,7 +745,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Idioma, name: language, widget : select, options: ["ca","es","en"],default: "es", required: true}
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Nombre Patente", name: nom_patent, widget: string, required: true}
           - {label: "Texto", name: text_breu, widget: string}
@@ -712,7 +784,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: Sobre la Patente
         name: sobre_patent  
         required: false    
-        widget: list
+        widget: object
         fields:
           - {label: Título, name: titol, widget: string}
           - {label: Descripción, name: descripcio, widget: markdown}
@@ -722,11 +794,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Aspectos Innovadores
         name: aspectes_innovadors    
         required: false 
@@ -740,11 +812,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Aplicaciones
         name: aplicacions    
         required: false  
@@ -758,28 +830,46 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
-      - label: Grupos de Investigación
+      - label: "Grupos de Investigación"
         name: grups_recerca
-        required: false      
-        widget: list
-        fields:
-          - label: Grupos
-            name: grups
-            widget: grups
-            fields: 
-              - {label: Grupo, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
-          - label: Investigadores
-            name: investigadors
-            widget: investigadors
-            fields: 
-              - {label: Investigador, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
+        widget: "grups_custom_list"
+        fields: 
+          - label: Grup
+            name: id
+            widget: grups_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Descripcio
+            name: description
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
+      - label: "Investigadores"
+        name: investigadors
+        widget: "investigadors_custom_list"
+        fields: 
+          - label: Investigador
+            name: id
+            widget: investigadors_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
       - label: Contacto
         name: contacte
         required: false
@@ -806,7 +896,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Language, name: language, widget : select, options: ["ca","es","en"],default: "en", required: true}
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Patent name", name: nom_patent, widget: string, required: true}
           - {label: "Text", name: text_breu, widget: string}
@@ -845,7 +935,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: About the Patent
         name: sobre_patent  
         required: false    
-        widget: list
+        widget: object
         fields:
           - {label: Title, name: titol, widget: string}
           - {label: Description, name: descripcio, widget: markdown}
@@ -855,11 +945,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Innovating aspects
         name: aspectes_innovadors    
         required: false 
@@ -873,11 +963,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Aplicacions
         name: aplicacions    
         required: false  
@@ -891,28 +981,46 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
-      - label: Research groups
+      - label: "Research Groups"
         name: grups_recerca
-        required: false      
-        widget: list
-        fields:
-          - label: Groups
-            name: grups
-            widget: grups
-            fields: 
-              - {label: Group, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
-          - label: Researchers
-            name: investigadors
-            widget: investigadors
-            fields: 
-              - {label: Researcher, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
+        widget: "grups_custom_list"
+        fields: 
+          - label: Grup
+            name: id
+            widget: grups_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Descripcio
+            name: description
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
+      - label: "Researchers"
+        name: investigadors
+        widget: "investigadors_custom_list"
+        fields: 
+          - label: Investigador
+            name: id
+            widget: investigadors_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
       - label: Contact
         name: contacte
         required: false
@@ -940,7 +1048,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Idioma, name: language, widget : select, options: ["ca","es","en"],default: "ca", required: true}
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Nom Servei", name: nom_servei, widget: string, required: true}
           - {label: "Text", name: text_breu, widget: string}
@@ -987,36 +1095,54 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Casos d'Èxit
         name: casos_exit    
-        widget: list
+        widget: object
         fields:
           - {label: "Imatge", name: "img", widget: image, required: false}
           - {label: Títol, name: titol, widget: string, required: true}
           - {label: Descripció, name: descripcio, widget: markdown}
           - {label: Url Cas d'Èxit, name: url_success, widget: string}
-      - label: Grups de Recerca
+      - label: "Grups de Recerca"
         name: grups_recerca
-        required: false      
-        widget: list
-        fields:
-          - label: Grups
-            name: grups
-            widget: grups
-            fields: 
-              - {label: Grup, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
-          - label: Investigadors
-            name: investigadors
-            widget: investigadors
-            fields: 
-              - {label: Investigador, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
+        widget: "grups_custom_list"
+        fields: 
+          - label: Grup
+            name: id
+            widget: grups_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Descripcio
+            name: description
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
+      - label: "Investigadors"
+        name: investigadors
+        widget: "investigadors_custom_list"
+        fields: 
+          - label: Investigador
+            name: id
+            widget: investigadors_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
       - label: Contacte
         name: contacte
         required: false
@@ -1043,7 +1169,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Idioma, name: language, widget : select, options: ["ca","es","en"],default: "es", required: true}
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Nombre Servicio", name: nom_servei, widget: string, required: true}
           - {label: "Texto", name: text_breu, widget: string}
@@ -1080,7 +1206,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: Sobre el Servicio
         name: sobre_servei  
         required: false    
-        widget: list
+        widget: object
         fields:
           - {label: Título, name: titol, widget: string}
           - {label: Descripción, name: descripcio, widget: markdown}
@@ -1090,11 +1216,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Casos de Éxito
         name: casos_exit    
         widget: list
@@ -1103,23 +1229,41 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Título, name: titol, widget: string, required: true}
           - {label: Descripción, name: descripcio, widget: markdown}
           - {label: Url Caso de éxito, name: url_success, widget: string}
-      - label: Grupos de Investigación
+      - label: "Grupos de Investigación"
         name: grups_recerca
-        required: false      
-        widget: list
-        fields:
-          - label: Grupos
-            name: grups
-            widget: grups
-            fields: 
-              - {label: Grupo, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
-          - label: Investigadores
-            name: investigadors
-            widget: investigadors
-            fields: 
-              - {label: Investigador, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
+        widget: "grups_custom_list"
+        fields: 
+          - label: Grup
+            name: id
+            widget: grups_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Descripcio
+            name: description
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
+      - label: "Investigadores"
+        name: investigadors
+        widget: "investigadors_custom_list"
+        fields: 
+          - label: Investigador
+            name: id
+            widget: investigadors_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
       - label: Contacto
         name: contacte
         required: false
@@ -1146,7 +1290,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Language, name: language, widget : select, options: ["ca","es","en"],default: "en", required: true}
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Service Name", name: nom_servei, widget: string, required: true}
           - {label: "Text", name: text_breu, widget: string}
@@ -1183,7 +1327,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: About the service
         name: sobre_servei  
         required: false    
-        widget: list
+        widget: object
         fields:
           - {label: title, name: titol, widget: string}
           - {label: description, name: descripcio, widget: markdown}
@@ -1193,11 +1337,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Cases of success
         name: casos_exit    
         widget: list
@@ -1206,23 +1350,41 @@ collections: # A list of collections the CMS should be able to edit
           - {label: title, name: titol, widget: string, required: true}
           - {label: description, name: descripcio, widget: markdown}
           - {label: Url Success Case, name: url_success, widget: string}
-      - label: Research groups
+      - label: "Research Groups"
         name: grups_recerca
-        required: false      
-        widget: list
-        fields:
-          - label: Groups
-            name: grups
-            widget: grups
-            fields: 
-              - {label: Group, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
-          - label: Researchers
-            name: investigadors
-            widget: investigadors
-            fields: 
-              - {label: Researcher, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
+        widget: "grups_custom_list"
+        fields: 
+          - label: Grup
+            name: id
+            widget: grups_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Descripcio
+            name: description
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
+      - label: "Researchers"
+        name: investigadors
+        widget: "investigadors_custom_list"
+        fields: 
+          - label: Investigador
+            name: id
+            widget: investigadors_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
       - label: Contact
         name: contacte
         required: false
@@ -1250,7 +1412,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Idioma, name: language, widget : select, options: ["ca","es","en"],default: "ca", required: true}
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Nom Servei", name: nom_spinoff, widget: string, required: true}
           - {label: "Text", name: text_breu, widget: string}
@@ -1281,7 +1443,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: Sobre la Spin-Off
         name: sobre_spinoff  
         required: false    
-        widget: list
+        widget: object
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
@@ -1291,11 +1453,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Productes/Serveis
         name: productes_serveis  
         required: false    
@@ -1309,11 +1471,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Clients
         name: clients  
         required: false    
@@ -1327,11 +1489,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Casos d'Èxit
         name: casos_exit    
         widget: list
@@ -1340,23 +1502,41 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Títol, name: titol, widget: string, required: true}
           - {label: Descripció, name: descripcio, widget: markdown}
           - {label: Url Cas d'Èxit, name: url_success, widget: string}
-      - label: Grups de Recerca
+      - label: "Grups de Recerca"
         name: grups_recerca
-        required: false      
-        widget: list
-        fields:
-          - label: Grups
-            name: grups
-            widget: grups
-            fields: 
-              - {label: Grup, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
-          - label: Investigadors
-            name: investigadors
-            widget: investigadors
-            fields: 
-              - {label: Investigador, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
+        widget: "grups_custom_list"
+        fields: 
+          - label: Grup
+            name: id
+            widget: grups_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Descripcio
+            name: description
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
+      - label: "Investigadors"
+        name: investigadors
+        widget: "investigadors_custom_list"
+        fields: 
+          - label: Investigador
+            name: id
+            widget: investigadors_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
       - label: Contacte
         name: contacte
         required: false
@@ -1383,7 +1563,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Idioma, name: language, widget : select, options: ["ca","es","en"],default: "es", required: true}
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Nombre Servicio", name: nom_spinoff, widget: string, required: true}
           - {label: "Texto", name: text_breu, widget: string}
@@ -1414,7 +1594,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: Sobre la Spin-Off
         name: sobre_spinoff  
         required: false    
-        widget: list
+        widget: object
         fields:
           - {label: Título, name: titol, widget: string}
           - {label: Descripción, name: descripcio, widget: markdown}
@@ -1424,11 +1604,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Productos/Servicios
         name: productes_serveis  
         required: false    
@@ -1442,11 +1622,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Clientes
         name: clients  
         required: false    
@@ -1460,11 +1640,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Casos de Éxito
         name: casos_exit    
         widget: list
@@ -1473,23 +1653,41 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Título, name: titol, widget: string, required: true}
           - {label: Descripción, name: descripcio, widget: markdown}
           - {label: Url Caso de éxito, name: url_success, widget: string}
-      - label: Grupos de Investigación
+      - label: "Grupos de Investigación"
         name: grups_recerca
-        required: false      
-        widget: list
-        fields:
-          - label: Grupos
-            name: grups
-            widget: grups
-            fields: 
-              - {label: Grupo, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
-          - label: Investigadores
-            name: investigadors
-            widget: investigadors
-            fields: 
-              - {label: Investigador, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
+        widget: "grups_custom_list"
+        fields: 
+          - label: Grup
+            name: id
+            widget: grups_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Descripcio
+            name: description
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
+      - label: "Investigadores"
+        name: investigadors
+        widget: "investigadors_custom_list"
+        fields: 
+          - label: Investigador
+            name: id
+            widget: investigadors_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
       - label: Contacto
         name: contacte
         required: false
@@ -1516,7 +1714,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Idioma, name: language, widget : select, options: ["ca","es","en"],default: "en", required: true}
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Spin Off Name", name: nom_spinoff, widget: string, required: true}
           - {label: "Text", name: text_breu, widget: string}
@@ -1547,7 +1745,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: About Spin-Off
         name: sobre_spinoff  
         required: false    
-        widget: list
+        widget: object
         fields:
           - {label: Title, name: titol, widget: string}
           - {label: Description, name: descripcio, widget: markdown}
@@ -1557,11 +1755,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Products/Services
         name: productes_serveis  
         required: false    
@@ -1575,11 +1773,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Clients
         name: clients  
         required: false    
@@ -1593,11 +1791,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: File
                 name: file
+                required: true
                 widget: file
                 media_library:
                   config:
                     multiple: true
-              - {label: size, name: size, widget: string}
       - label: Cases of success
         name: casos_exit    
         widget: list
@@ -1606,23 +1804,41 @@ collections: # A list of collections the CMS should be able to edit
           - {label: title, name: titol, widget: string, required: true}
           - {label: description, name: descripcio, widget: markdown}
           - {label: Url Success Case, name: url_success, widget: string}
-      - label: Research groups
+      - label: "Research Groups"
         name: grups_recerca
-        required: false      
-        widget: list
-        fields:
-          - label: Groups
-            name: grups
-            widget: grups
-            fields: 
-              - {label: Group, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
-          - label: Researchers
-            name: investigadors
-            widget: investigadors
-            fields: 
-              - {label: Researcher, name: name, widget: string}
-              - {label: Id, name: id, widget: hidden}
+        widget: "grups_custom_list"
+        fields: 
+          - label: Grup
+            name: id
+            widget: grups_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Descripcio
+            name: description
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
+      - label: "Researchers"
+        name: investigadors
+        widget: "investigadors_custom_list"
+        fields: 
+          - label: Investigador
+            name: id
+            widget: investigadors_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
       - label: Contact
         name: contacte
         required: false
@@ -2277,7 +2493,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Títol", name: titol, widget: string, required: true}
           - {label: "Imatge", name: "img", widget: image}
@@ -2317,7 +2533,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "es"}       
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Título", name: titol, widget: string, required: true}
           - {label: "Imagen", name: "img", widget: image}
@@ -2357,7 +2573,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Language, name: language, widget: select, options: ["ca","es","en"],default: "en"}       
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Title", name: titol, widget: string, required: true}
           - {label: "Image", name: "img", widget: image}
@@ -2398,13 +2614,13 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Títol", name: titol, widget: string, required: true}
           - {label: Descripció, name: descripcio, widget: markdown, required: true}
           - {label: "Lloc", name: lloc, widget: string, required: true} 
           - {label: "Quan", name: "data", widget: datetime, required: true}
-          - {label: "Imatge", name: "img", widget: image}
+          - {label: "Imatge", name: "img", widget: image, default: ""}
           - label: "Social"
             name: xarxes
             widget: list
@@ -2428,7 +2644,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "es"}       
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Título", name: titol, widget: string, required: true}
           - {label: "Descripción", name: descripcio, widget: markdown, required: true}
@@ -2458,7 +2674,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Language, name: language, widget: select, options: ["ca","es","en"],default: "en"}       
       - label: General
         name: general
-        widget: list
+        widget: object
         fields: 
           - {label: "Title", name: titol, widget: string, required: true}
           - {label: Description, name: descripcio, widget: markdown, required: true}
