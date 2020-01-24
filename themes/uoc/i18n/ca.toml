@@ -175,4 +175,7 @@
 [uoc_ri_esdeveniment_On] other = "On"
 [uoc_ri_esdeveniment_Quan] other = "Quan"
 
+
+[uoc_ri_noticia] other = "#Notícia"
+[uoc_ri_esdeveniment] other = "#Esdeveniment"
 [uoc_ri_casos_link] other = "Enllaç al cas d'èxit"

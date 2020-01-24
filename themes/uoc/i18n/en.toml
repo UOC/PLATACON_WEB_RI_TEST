@@ -172,7 +172,12 @@
 [uoc_ri_difusio_noticia] other = "Report"
 [uoc_ri_difusio_esdeveniment] other = "Event"
 
+
+[uoc_ri_noticia] other = "#Report"
+[uoc_ri_esdeveniment] other = "#Event"
+
 [uoc_ri_esdeveniment_On] other = "Where"
 [uoc_ri_esdeveniment_Quan] other = "When"
 
 [uoc_ri_casos_link] other = "Link to the case of success"
+

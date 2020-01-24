@@ -16,15 +16,15 @@ phases:
       - echo "Finished renaming language files"
   build:
     commands:
-      - hugo
-      - cd public/ && aws s3 cp index.html s3://${BUCKET_S3}/ri_live/index.html --acl public-read
-      - cd ./admin && aws s3 sync . s3://${BUCKET_S3}/ri_live/admin --acl public-read --delete
-      - cd ../ca && aws s3 sync . s3://${BUCKET_S3}/ri_live/ca --acl public-read --delete
-      - cd ../es && aws s3 sync . s3://${BUCKET_S3}/ri_live/es --acl public-read --delete
-      - cd ../en && aws s3 sync . s3://${BUCKET_S3}/ri_live/en --acl public-read --delete
-      - cd ../img && aws s3 sync . s3://${BUCKET_S3}/ri_live/img --acl public-read --delete
-      - cd ../js && aws s3 sync . s3://${BUCKET_S3}/ri_live/js --acl public-read --delete
-      - cd ../css && aws s3 sync . s3://${BUCKET_S3}/ri_live/css --acl public-read --delete
+      - hugo --environment ${ENV}
+      - cd public/ && aws s3 cp index.html s3://${BUCKET_S3}/${DEST_FOLDER}/index.html --acl public-read
+      - cd ./admin && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/admin --acl public-read --delete
+      - cd ../ca && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/ca --acl public-read --delete
+      - cd ../es && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/es --acl public-read --delete
+      - cd ../en && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/en --acl public-read --delete
+      - cd ../img && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/img --acl public-read --delete
+      - cd ../js && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/js --acl public-read --delete
+      - cd ../css && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/css --acl public-read --delete
       - cd .. && aws cloudsearchdomain --endpoint-url ${CLOUDSEARCH_URL} upload-documents --content-type application/json --documents ./ca/index.json
     finally:
       - aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --paths "/admin,/ca,/es,en/,js/,css/,img/"

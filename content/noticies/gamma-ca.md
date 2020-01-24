@@ -1,16 +1,15 @@
 ---
 title: omega
 language: ca
-createDate: '2019-09-26T11:03:28+02:00'
+createDate: '2020-01-26T11:03:28+02:00'
 general:
   - autor: Pau Martinez
-    data: '2019-09-26T11:03:28+02:00'
+    data: '2020-01-26T11:03:28+02:00'
     destacat: true
     img: /img/marvin-meyer-syto3xs06fu-unsplash.jpg
     img_autor: Temàtiques d'ensenyament
     titol: >-
-      El Ministeri de Ciència, Innovació i Universitats finança onze noves
-      recerques de la UOC sobre la digitalització de la societat
+      Gamma
 descripcio:
   - descripcio: >-
       L'Agència Estatal de Recerca, mitjançant el Ministeri de Ciència,

@@ -1,6 +1,7 @@
 ---
 title: omega
 language: ca
+createDate: '2020-02-10T18:30:33+01:00'
 general:
   - data: '2020-02-10T18:30:33+01:00'
     descripcio: >-
@@ -18,11 +19,13 @@ general:
       Auditori del Campus del Poblenou Carrer de Roc Boronat, 138 08018
       Barcelona Espanya
     titol: ' Conversa sobre pedagogia i neurociència entre Antonio Zabala i David Bueno'
+    destacat: true
     img: ''
     xarxes:
       - address: 'https://twitter.com/UOCuniversitat'
         xarxa: twitter
       - address: 'https://www.instagram.com/uocuniversitat/?hl=en'
         xarxa: instagram
+
 ---
 

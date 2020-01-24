@@ -481,5 +481,10 @@
 </div>
 {{ partial "ri_js_imports.html" . }}
 <script src="/js/search.js"></script>
+<script type="text/javascript">
+	var apiPlatacon = '{{ .Site.Params.apiPlatacon }}';
+	var apiRI = '{{ .Site.Params.apiRI }}';
+	console.log(apiPlatacon);
+</script>
 </body>
 </html>

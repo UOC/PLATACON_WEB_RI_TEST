@@ -660,31 +660,24 @@ function querySearchEngine(searchParams){
 			console.log('calling fitxa or grup results...');
 			var fitxaResults = $(".fitxaResults .row");
 			var grupResults = $(".grupResults .row");
-			var endpointUrl = "https://transfer-research.am.pre.uoc.es/api/search";
-			var fitxaURL = buildQuery(endpointUrl,searchParams)+"&tipus=fitxa";
-			var grupURL = buildQuery(endpointUrl,searchParams)+"&tipus=grup";
+			var fitxaURL = buildQuery(apiPlatacon,searchParams)+"&tipus=fitxa";
+			var grupURL = buildQuery(apiPlatacon,searchParams)+"&tipus=grup";
 			buildAjaxQueryCallout2GrupOrFitxaAndProcessResultsFromCloudSearch(fitxaURL,fitxaResults, "fitxa");
 			buildAjaxQueryCallout2GrupOrFitxaAndProcessResultsFromCloudSearch(grupURL,grupResults, "grup");
 			break;
 		case '2' :
 			console.log('calling transfer results...');
-			//var endpointUrl = "http://search-webri-2dz3yckt2f5cjq7hcsbois6nw4.eu-west-1.cloudsearch.amazonaws.com/2013-01-01/search";
-			var endpointUrl = "https://hhbr3knf8j.execute-api.eu-west-1.amazonaws.com/dev/search";
-			var transferURL = buildQuery(endpointUrl,searchParams);
+			var transferURL = buildQuery(apiRI,searchParams);
 			buildAjaxQueryCallout2TransfersAndProcessResultsFromCloudSearch(transferURL);
 			break;
 		case '3' :
 			console.log('parametres',searchParams.visualitzacio);
 			var fitxaResults = $(".fitxaResults .row");
 			var grupResults = $(".grupResults .row");
-			//var endpointUrlAl = "http://search-webri-2dz3yckt2f5cjq7hcsbois6nw4.eu-west-1.cloudsearch.amazonaws.com/2013-01-01/search";
-			var endpointUrlAl = "https://transfer-research.am.pre.uoc.es/api/search";
-			var endpointUrlUoc = "https://transfer-research.am.pre.uoc.es/api/search";
-			var endpointUrlUocInnovSol = "https://hhbr3knf8j.execute-api.eu-west-1.amazonaws.com/dev/search";
-			var fitxaURL = buildQuery(endpointUrlUoc,searchParams)+"&tipus=fitxa";
-			var grupURL = buildQuery(endpointUrlUoc,searchParams)+"&tipus=grup";
-			var transferURL = buildQuery(endpointUrlAl,searchParams)+"&tipus=transfer";
-			var innovSolUrl = buildQuery(endpointUrlUocInnovSol,searchParams);
+			var fitxaURL = buildQuery(apiPlatacon,searchParams)+"&tipus=fitxa";
+			var grupURL = buildQuery(apiPlatacon,searchParams)+"&tipus=grup";
+			var transferURL = buildQuery(apiPlatacon,searchParams)+"&tipus=transfer";
+			var innovSolUrl = buildQuery(apiRI,searchParams);
 			buildAjaxQueryCallout2GrupOrFitxaAndProcessResultsFromCloudSearch(fitxaURL,fitxaResults, "fitxa");
 			buildAjaxQueryCallout2GrupOrFitxaAndProcessResultsFromCloudSearch(grupURL,grupResults, "grup");
 			buildAjaxQueryCallout2TransfersAndProcessResultsFromCloudSearch(transferURL);
