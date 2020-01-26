@@ -1,0 +1,14 @@
+# Local Netlify folder
+.netlify
+public
+
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+.nyc_output
+.vscode
+images/.directory
+package-lock.json
