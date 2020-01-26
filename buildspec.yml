@@ -5,6 +5,8 @@ phases:
     runtime-versions:
       nodejs: 10
     commands:
+      - npm install
+      - npm install -g loose-envify
       - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.deb
       - dpkg -i hugo_${HUGO_VERSION}_Linux-64bit.deb
     finally:
@@ -17,7 +19,9 @@ phases:
   build:
     commands:
       - hugo --environment ${ENV}
-      - cd public/ && aws s3 cp index.html s3://${BUCKET_S3}/${DEST_FOLDER}/index.html --acl public-read
+      - node ./bin/update-netlify-config.js
+      - cd public/ && loose-envify ./admin/main.js > updated-main.js && mv updated-main.js main.js
+      - aws s3 cp index.html s3://${BUCKET_S3}/${DEST_FOLDER}/index.html --acl public-read
       - cd ./admin && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/admin --acl public-read --delete
       - cd ../ca && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/ca --acl public-read --delete
       - cd ../es && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/es --acl public-read --delete
@@ -25,7 +29,11 @@ phases:
       - cd ../img && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/img --acl public-read --delete
       - cd ../js && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/js --acl public-read --delete
       - cd ../css && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/css --acl public-read --delete
-      - cd .. && aws cloudsearchdomain --endpoint-url ${CLOUDSEARCH_URL} upload-documents --content-type application/json --documents ./ca/index.json
+      - |
+          if [ "${UPLOAD_TO_CLOUDSEARCH}" == "true" ]; then
+            echo "Uploading data to cloudsearch"
+            cd .. && aws cloudsearchdomain --endpoint-url ${CLOUDSEARCH_URL} upload-documents --content-type application/json --documents ./ca/index.json
+          fi
     finally:
       - aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --paths "/admin,/ca,/es,en/,js/,css/,img/"
       - echo "Script finished running"

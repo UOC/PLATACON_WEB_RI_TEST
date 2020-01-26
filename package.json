@@ -1,0 +1,26 @@
+{
+  "name": "uoc_webri",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "uoc_webri": "looper.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albirasolutions/UOC_WebRI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albirasolutions/UOC_WebRI/issues"
+  },
+  "homepage": "https://github.com/albirasolutions/UOC_WebRI#readme",
+  "devDependencies": {
+    "js-yaml": "^3.13.1",
+    "loose-envify": "^1.4.0"
+  }
+}
