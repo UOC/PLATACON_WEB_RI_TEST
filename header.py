@@ -15,7 +15,6 @@ CORS_HEADERS = {
     }
 }
 
-
 def with_cors(f):
     """Adds CORS headers."""
     @wraps(f)

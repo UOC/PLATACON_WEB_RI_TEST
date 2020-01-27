@@ -1,4 +1,4 @@
-org: uoc
+org: universitatobertacatalunya
 app: webri
 service: webri-cloudsearch
 
@@ -8,17 +8,6 @@ provider:
   region: ${opt:region, self:custom.defaultRegion}
   stage: ${opt:stage, self:custom.defaultStage}
    
-resources:
-  Resources:
-    GatewayResponseDefault4XX:
-      Type: 'AWS::ApiGateway::GatewayResponse'
-      Properties:
-        ResponseParameters:
-          gatewayresponse.header.Access-Control-Allow-Origin: "'*'"
-          gatewayresponse.header.Access-Control-Allow-Headers: "'*'"
-        ResponseType: DEFAULT_4XX
-        RestApiId:
-          Ref: 'ApiGatewayRestApi'
 functions:
   search:
     handler: event.search
@@ -26,7 +15,18 @@ functions:
       - http:
           path: api-ri/search
           method: get
-          cors: true
+          cors:
+            origin: '*' # <-- Specify allowed origin
+            headers: # <-- Specify allowed headers
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+              - X-Requested-With
+            allowCredentials: false
+
 custom:
   defaultStage: dev
   defaultRegion: eu-west-1
