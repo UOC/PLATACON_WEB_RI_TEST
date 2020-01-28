@@ -2,7 +2,7 @@ var grups = [];
 var grupsSelectOptions = [];
 var investigadors = [];
 var investigadorsSelectOptions = [];
-var plataconApiUrl = process.env.PLATACON_API_URL || "https://transfer-research.am.pre.uoc.es";
+var plataconApiUrl = "https://transfer-research.am.pre.uoc.es";
 
 // Get Grups from API
 fetch( plataconApiUrl + '/api/search?idioma=ca&tipus=grup',

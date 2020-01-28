@@ -16393,7 +16393,6 @@ function loadJsonResourcesListCards(f, a, b, d, e, c) {
 }
 
 function loadJsonResourcesListCards(b, d, f, h, a, j, g) {
-    
     if (g == undefined) {
         var g = "3"
     }
@@ -16712,9 +16711,6 @@ function getTypeVideoHtml(e, b, f, d, a) {
         c += '<div class="modal__body">';
         c += '<div class="embedded-video">';
         c += '<div class="embedded-video__iframe" id="ytplayermodal-modal-' + g + '" data-video-id="' + e + '" data-video-autoplay="1" data-video-time="0" ' + f + "></div>";
-        c += "<noscript>";
-        c += a;
-        c += "</noscript>";
         c += "</div>";
         c += "</div>";
         c += "</div>";
@@ -16725,9 +16721,6 @@ function getTypeVideoHtml(e, b, f, d, a) {
         c += '<div class="card__embedded-video">';
         c += '<div class="embedded-video">';
         c += '<div class="embedded-video__iframe" id="ytplayermodal-modal-' + g + '" data-video-id="' + e + '" data-video-autoplay="1" data-video-time="0" ' + f + "></div>";
-        c += "<noscript>";
-        c += a;
-        c += "</noscript>";
         c += "</div>";
         c += "</div>"
     }

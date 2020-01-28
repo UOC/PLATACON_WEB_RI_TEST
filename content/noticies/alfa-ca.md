@@ -2,10 +2,10 @@
 title: Alfa
 language: ca
 createDate: '2019-12-17T13:33:49+01:00'
+destacat: true
 general:
   - autor: Javi
     data: '2019-12-17T13:33:49+01:00'
-    destacat: true
     img: /img/detall_solucions_principal.png
     link_extern: www.google.com
     titol: Alfa

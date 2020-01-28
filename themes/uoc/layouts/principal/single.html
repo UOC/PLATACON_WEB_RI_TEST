@@ -7,12 +7,11 @@
 
 <body>
 	{{ partial "google_code_body.html" . }}
+	{{ partial "header.html" . }}
 	<section class="hero-section" style="z-index:-1;">
 		<div class="hero-section__img">
-			{{ partial "header.html" . }}
-			<img src="https://via.placeholder.com/1200x500" alt="Hero imagen" class="img-responsive w100 hidden-xs hidden-sm">
-			<img src="https://via.placeholder.com/800x1000" alt="Hero imagen" class="img-responsive w100 visible-xs visible-sm">
-			
+			<img src="/img/hero_1200x500.png" alt="" class="img-responsive w100 hidden-xs hidden-sm">
+			<img src="/img/hero_800x1000.png" alt="" class="img-responsive w100 visible-xs visible-sm">			
 		</div>
 		<div class="hero-section__icons">
 			<div class="container">
@@ -37,7 +36,7 @@
 				<div class="filters-main-block">
 					<div class="filters-main__box border-green">
 						<h3>{{ T "uoc_ri_cercadortab_filtres" }}</h3>
-						<p><a id="tab-1" href="#tab-content-1" role="tab" aria-controls="tab-content-1" aria-selected="true" data-tab-trigger="" class="tab is-active cercaFiltres"><span class="icon icon--arrow-down"></span></a></p>
+						<p><a id="tab-1" href="#tab-content-1" role="tab" aria-controls="tab-content-1" aria-selected="false" data-tab-trigger="" class="tab cercaFiltres"><span class="icon icon--arrow-down"></span></a></p>
 					</div>
 					<div class="filters-main__box border-green">
 						<h3>{{ T "uoc_ri_cercadortab_sectors" }}</h3>
@@ -49,7 +48,7 @@
 					</div>
 				</div>
 				<div class="col-xs-12">
-					<div id="tab-content-1" data-tab-content="" role="tabpanel" aria-labelledby="tab-1" aria-hidden="true" class="filters-main__content tab-content cercaFiltres">
+					<div id="tab-content-1" data-tab-content="" role="tabpanel" aria-labelledby="tab-1" aria-hidden="false" class="filters-main__content tab-content cercaFiltres">
 						<form action="" class="radio-accordeon search-form-container">
 							<h4>{{ T "uoc_ri_cercador_cercaper" }}</h4>
 							<div class="radio-collapse-item active">
@@ -149,22 +148,26 @@
 						<div class="js-collapse-group">
 							<div class="collapse">
 								<div class="head-collapse js-collapse">
-									<p><a href="#collapse2" aria-expanded="false" class="js-collapseClick">{{ T "uoc_ri_home_centres" }}<span class="icon icon--arrow-down"></span></a></p>
+									<h2><a href="#collapse2" aria-expanded="false" class="js-collapseClick" role="button">{{ T "uoc_ri_home_centres" }}<span class="icon icon--arrow-down" aria-hidden='true'></span></a></h2>
 								</div>
 								<div id="collapse2" class="contentCollapse show">
 									<div class="wrap-richText">
 										<section class="card-home">
 											<div class="row">
-												{{ range $i, $c :=  .Params.centre }}
-												<div class="col-xs-12 col-md-3">
-													<div class="card card--brand-corporate">
-														<div class="card__contents">
-															<h3>{{$c.display_name}}</h3>
-															<p>Centre de recerca especialitzat el’estudi d’internet i dels efectes de la interacció de les tecnologies digitals amb l’activitat humana.</p>
-															<a href="/centre/{{ . | urlize }}" class="card-link"><span class="icon icon--external-link"></span></a>
+												{{ range $index, $element := .Params.centres_home }}
+													<div class="col-xs-12 col-md-3 centresHomeList">
+														<a class="card-absolute-link" href="{{$element.url}}" title="{{$element.title}}" aria-hidden='true' target='_blank' aria-labelledby='centresHome_{{$index}}'></a>
+														<div class="card card--brand-corporate">
+															<div class="card__contents">
+																<h3 id="centresHome_{{$index}}">
+																	<a href="{{$element.url}}" title="{{$element.title}}">{{$element.title}}</a>
+																</h3>
+																<p>{{$element.description}}</p>
+																<div class="card-link-icon"><span class="icon icon--external-link" aria-hidden="true"></span></div>
+															</div>
 														</div>
+														
 													</div>
-												</div>
 												{{ end }}
 											</div>
 										</section>
@@ -172,10 +175,11 @@
 								</div>
 							</div>
 						</div>
-						
 					</div>
 				</div>
 			</div>
+		</section>
+		<section class="acordeon acordeon-home">
 			<div class="row">
 				<div class="col-xs-12">
 					<div id="tab-content-10" data-tab-content="" role="tabpanel" aria-labelledby="tab-content-10" aria-hidden="false" class="tab-content is-active">
@@ -185,7 +189,13 @@
 									<p><a href="#collapse3" aria-expanded="false" class="js-collapseClick">{{ T "uoc_ri_home_difusions" }}<span class="icon icon--arrow-down"></span></a></p>
 								</div>
 								<div id="collapse2" class="contentCollapse show">
-									{{ range $i, $sequence :=  (seq 4) }}
+									<div class="col-xs-6 col-md-3" role="article">
+										{{ range (where .Site.Pages.ByDate.Reverse .Params.destacat true) .Pages }}
+											<a href="{{ .Permalink }}"><h1>Featured 1 — {{ .Title }}</h1></a>
+										{{ end }}
+									</div>
+
+  								<!-- {{ range $i, $sequence :=  (seq 4) }}
 									<div class="col-xs-6 col-md-3" role="article">
 										
 										<a href="/ca/noticies/alfa.html" class="card-absolute-link"></a>
@@ -202,7 +212,7 @@
 											</div>
 										</div>
 									</div>
-									{{end}}
+									{{end}} -->
 								</div>
 							</div>
 						</div>
@@ -217,8 +227,10 @@
 	
 	{{ partial "ri_js_imports.html" . }}
 	<script src="/js/search_home.js"></script>
+	<script src="/js/lib/matchHeight.js"></script>
 	<script type="text/javascript">
 		var cercadorURL = '{{ "cercador/cercador.html" | relLangURL }}';
+		$(".centresHomeList .card").matchHeight();
 		//var cercadorSectorURL = '{{ "solucions/solucions.html" | relLangURL }}';
 	</script>
 </body>

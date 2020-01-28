@@ -2,10 +2,10 @@
 title: Alfa
 language: es
 createDate: '2019-12-17T13:59:06+01:00'
+destacat: true
 general:
   - autor: Javi
     data: '2019-12-17T13:59:06+01:00'
-    destacat: true
     img: /img/0a5e3d8399408516a201716607daee9dc776694d.png
     titol: Alfa
 descripcio:
