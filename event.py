@@ -1,24 +1,11 @@
 import boto3
+import os
 import json
 from header import with_cors
 
 @with_cors
-def test(event,context):
-    client = boto3.client('cloudsearchdomain', endpoint_url='https://search-webri-2dz3yckt2f5cjq7hcsbois6nw4.eu-west-1.cloudsearch.amazonaws.com')
-    body=client.search(
-        query="(and field=* 'servei' idioma: 'ca')",
-        queryParser='lucene'
-        )
-    response ={
-        "statusCode": 200,
-        "body": json.dumps(body)
-    }
-
-    return response
-
-@with_cors
 def search(event,context):
-    client = boto3.client('cloudsearchdomain', endpoint_url='https://search-webri-2dz3yckt2f5cjq7hcsbois6nw4.eu-west-1.cloudsearch.amazonaws.com')
+    client = boto3.client('cloudsearchdomain', endpoint_url=os.environ.get('CLOUDSEARCH_URL'))
     args= event['queryStringParameters']
     """GET FIELDS OF QUERY GIVEN IN EVENT"""
     idioma=args.get('idioma')
