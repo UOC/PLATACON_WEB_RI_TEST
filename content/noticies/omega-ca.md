@@ -1,18 +1,22 @@
 ---
 title: omega
 language: ca
-createDate: '2019-09-26T11:03:28+02:00'
+date: '2019-09-26T11:03:28+02:00'
 destacat: true
 general:
-  - autor: Pau Martinez
-    data: '2019-09-26T11:03:28+02:00'
-    img: /img/marvin-meyer-syto3xs06fu-unsplash.jpg
-    img_autor: Temàtiques d'ensenyament
-    titol: >-
-      El Ministeri de Ciència, Innovació i Universitats finança onze noves
-      recerques de la UOC sobre la digitalització de la societat
+  autor: Pau Martinez
+  img: /img/marvin-meyer-syto3xs06fu-unsplash.jpg
+  img_autor: Temàtiques d'ensenyament
+  titol: >-
+    El Ministeri de Ciència, Innovació i Universitats finança onze noves
+    recerques de la UOC sobre la digitalització de la societat - 26/09/19 (ca)
+  xarxes:
+    - address: 'https://twitter.com/UOCuniversitat'
+      xarxa: twitter
+    - address: 'https://www.instagram.com/uocuniversitat/?hl=en'
+      xarxa: instagram
 descripcio:
-  - descripcio: >-
+    text: >-
       L'Agència Estatal de Recerca, mitjançant el Ministeri de Ciència,
       Innovació i Universitats, ha resolt el finançament que atorga amb els seus
       plans nacionals d'R+D+I a nous projectes de recerca. Aquesta vegada, la

@@ -15,21 +15,26 @@ fetch( plataconApiUrl + '/api/search?idioma=ca&tipus=grup',
   return response.text()
 })
 .then(function(text){
-  text.split("\n").map(function(searchResponse){
-    let resObj = JSON.parse(searchResponse);
-    var grupsResponse = resObj.hits["hit"];
-    for (var i=0; i < grupsResponse.length; i++){
-      grups.push({
-        id: grupsResponse[i].id,
-        name: grupsResponse[i].fields.nom_grup,
-        description: grupsResponse[i].fields.descripcio,
-        url: grupsResponse[i].fields.url,
-        url_img: grupsResponse[i].fields.imatge_url
-      })
-      grupsSelectOptions.push({label: grupsResponse[i].fields.nom_grup, value: grupsResponse[i].id})
-    }
-  });
-}); 
+  if(text){
+    text.split("\n").map(function(searchResponse){
+      let resObj = JSON.parse(searchResponse);
+      var grupsResponse = resObj.hits["hit"];
+      for (var i=0; i < grupsResponse.length; i++){
+        grups.push({
+          id: grupsResponse[i].id,
+          name: grupsResponse[i].fields.nom_grup,
+          description: grupsResponse[i].fields.descripcio,
+          url: grupsResponse[i].fields.url,
+          url_img: grupsResponse[i].fields.imatge_url
+        })
+        grupsSelectOptions.push({label: grupsResponse[i].fields.nom_grup, value: grupsResponse[i].id})
+      }
+    });
+  }
+})
+.catch(function(err){
+  console.log(err);
+})
 
 // Get Investigadors from API
 fetch(plataconApiUrl + '/api/search?idioma=ca&tipus=fitxa',
@@ -42,19 +47,21 @@ fetch(plataconApiUrl + '/api/search?idioma=ca&tipus=fitxa',
   return response.text()
 })
 .then(function(text){
-  text.split("\n").map(function(searchResponse){
-    let resObj = JSON.parse(searchResponse);
-    var investigadorsResponse = resObj.hits["hit"];
-    for (var i=0; i < investigadorsResponse.length; i++){
-      investigadors.push({
-        id: investigadorsResponse[i].id,
-        name: investigadorsResponse[i].fields.nom_investigador,
-        url: investigadorsResponse[i].fields.url,
-        url_img: investigadorsResponse[i].fields.imatge_url
-      })
-      investigadorsSelectOptions.push({label: investigadorsResponse[i].fields.nom_investigador, value: investigadorsResponse[i].id})
-    }
-  });
+  if(text){
+    text.split("\n").map(function(searchResponse){
+      let resObj = JSON.parse(searchResponse);
+      var investigadorsResponse = resObj.hits["hit"];
+      for (var i=0; i < investigadorsResponse.length; i++){
+        investigadors.push({
+          id: investigadorsResponse[i].id,
+          name: investigadorsResponse[i].fields.nom_investigador,
+          url: investigadorsResponse[i].fields.url,
+          url_img: investigadorsResponse[i].fields.imatge_url
+        })
+        investigadorsSelectOptions.push({label: investigadorsResponse[i].fields.nom_investigador, value: investigadorsResponse[i].id})
+      }
+    });
+  }
 }); 
 
 
@@ -69,15 +76,17 @@ var GrupsCustomList = createClass({
       for (var i=0; i < entries.length; i++) {
         if(entries[i] && entries[i]._root && entries[i]._root.entries && entries[i]._root.entries.length > 0) {
           var grupId = entries[i]._root.entries[0][1];
-          var grupObjects = grups.filter(obj => {return obj.id === grupId});
-          var entriesArray = [];
-          entriesArray.push(["id", grupId]);
-          entriesArray.push(["name", grupObjects[0].name]);
-          entriesArray.push(["description", grupObjects[0].description]);
-          entriesArray.push(["url", grupObjects[0].url]);
-          entriesArray.push(["url_img", grupObjects[0].url_img]);
-          if(entriesArray.length > 0) {
-            this.props.value._tail.array[i]._root.entries = entriesArray;
+          if(grups.length){
+            var grupObjects = grups.filter(obj => {return obj.id === grupId});
+            var entriesArray = [];
+            entriesArray.push(["id", grupId]);
+            entriesArray.push(["name", grupObjects[0].name]);
+            entriesArray.push(["description", grupObjects[0].description]);
+            entriesArray.push(["url", grupObjects[0].url]);
+            entriesArray.push(["url_img", grupObjects[0].url_img]);
+            if(entriesArray.length > 0) {
+              this.props.value._tail.array[i]._root.entries = entriesArray;
+            }
           }
         }
       }
@@ -123,14 +132,16 @@ var InvestigadorsCustomList = createClass({
       for (var i=0; i < entries.length; i++) {
         if(entries[i] && entries[i]._root && entries[i]._root.entries && entries[i]._root.entries.length > 0) {
           var investigadorId = entries[i]._root.entries[0][1];
-          var investigadorObjects = investigadors.filter(obj => {return obj.id === investigadorId});
-          var entriesArray = [];
-          entriesArray.push(["id", investigadorId]);
-          entriesArray.push(["name", investigadorObjects[0].name]);
-          entriesArray.push(["url", investigadorObjects[0].url]);
-          entriesArray.push(["url_img", investigadorObjects[0].url_img]);
-          if(entriesArray.length > 0) {
-            this.props.value._tail.array[i]._root.entries = entriesArray;
+          if(investigadors.length){
+            var investigadorObjects = investigadors.filter(obj => {return obj.id === investigadorId});
+            var entriesArray = [];
+            entriesArray.push(["id", investigadorId]);
+            entriesArray.push(["name", investigadorObjects[0].name]);
+            entriesArray.push(["url", investigadorObjects[0].url]);
+            entriesArray.push(["url_img", investigadorObjects[0].url_img]);
+            if(entriesArray.length > 0) {
+              this.props.value._tail.array[i]._root.entries = entriesArray;
+            }
           }
         }
       }

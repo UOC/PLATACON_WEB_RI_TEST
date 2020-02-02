@@ -1,8 +1,8 @@
 ---
-title: Alfa
+title: delta
 language: ca
-destacat: true
-date: '2019-12-19T13:34:26+01:00'
+date: '2020-01-29T11:40:58.524Z'
+destacat: false
 general:
   descripcio: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -11,11 +11,11 @@ general:
     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  img: /img/0a5e3d8399408516a201716607daee9dc776694d.png
-  lloc: Barcelona
-  titol: Alfa 1 - 19/12/19 (ca)
+  img: /img/marvin-meyer-syto3xs06fu-unsplash.jpg
+  lloc: parc audiovisual de catalunya
+  titol: delta
   xarxes:
-    - address: 'https://www.facebook.com/'
-      xarxa: facebook
+    - address: twitter.com/UOCuniversitat
+      xarxa: twitter
 ---
 

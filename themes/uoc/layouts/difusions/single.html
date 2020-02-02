@@ -2,104 +2,14 @@
 <html lang="{{.Site.Language.Lang}}">
 
 <head>
-    {{ partial "head.html" . }}
-    {{$language := .Site.Language.Lang }}
-    {{ $.Scratch.Add "lastNoticiaPos" 0 }}
-    {{ $.Scratch.Add "lastEsdevenimentPos" 0 }}
-    {{ $.Scratch.Add "firstDestLink" (slice "")}}
-    {{ $.Scratch.Add "firstDestImg" (slice "")}}
-    {{ $.Scratch.Add "firstDestTitol" (slice "")}}
-    {{ $.Scratch.Add "firstDestEntrada" (slice "")}}
-    {{ $.Scratch.Add "firstDestType" (slice "")}}
-    {{ $.Scratch.Add "type" (slice "")}}
-    {{ $.Scratch.Add "lastDestLink" (slice "")}}
-    {{ $.Scratch.Add "lastDestImg" (slice "")}}
-    {{ $.Scratch.Add "lastDestTitol" (slice "")}}
-    {{ $.Scratch.Add "lastDestEntrada" (slice "")}}
-    {{ $.Scratch.Add "lastDestType" (slice "")}}
-    {{ range $i,$p := (.Site.AllPages.ByParam "createDate") }}
-
-    {{- if and ( or (eq $p.Type "noticies") (eq $p.Type "esdeveniments")) (ne $p.File.UniqueID "")}}
-
-    {{$general := index ($p.Params.general) 0}}
-
-    {{if and (eq $p.Type "noticies") (eq $general.destacat true)}}
-
-    {{$.Scratch.Set "lastNoticiaPos" $i}}
-
-    {{else if and (eq $p.Type "esdeveniments") (eq $general.destacat true)}}
-
-    {{$.Scratch.Set "lastEsdevenimentPos" $i}}
-
-    {{end}}
-    {{end}}
-    {{end}}
-
-    {{$noticiaPos := $.Scratch.Get "lastNoticiaPos"}}
-    {{$esdevenimentPos := $.Scratch.Get "lastEsdevenimentPos"}}
-    {{ range $pi,$ps := (.Site.AllPages.ByParam "createDate") }}
-
-    {{- if and ( or (eq $ps.Type "noticies") (eq $ps.Type "esdeveniments")) (ne $ps.File.UniqueID "")}}
-
-    {{if and (gt $noticiaPos $esdevenimentPos) (eq $noticiaPos $pi) }}
-    
-    {{$general := index ($ps.Params.general) 0}}
-    {{$descripcio := index ($ps.Params.descripcio) 0}}
-    {{$.Scratch.Set "firstDestLink" (slice $ps.Permalink) }}
-    {{$.Scratch.Set "firstDestImg" (slice $general.img) }}
-    {{$.Scratch.Set "firstDestTitol" (slice $general.titol) }}
-    {{$.Scratch.Set "firstDestEntrada" (slice $descripcio.entrada) }}
-    {{$.Scratch.Set "firstDestType" (slice $ps.Type) }}
-
-    {{else if (eq $noticiaPos $pi) }}
-
-    {{$general := index ($ps.Params.general) 0}}
-    {{$descripcio := index ($ps.Params.descripcio) 0}}
-    {{$.Scratch.Set "lastDestLink" (slice $ps.Permalink) }}
-    {{$.Scratch.Set "lastDestImg" (slice $general.img) }}
-    {{$.Scratch.Set "lastDestTitol" (slice $general.titol) }}
-    {{$.Scratch.Set "lasDestEntrada" (slice $descripcio.entrada) }}
-    {{$.Scratch.Set "lastDestType" (slice $ps.Type) }}
-    {{end}}
-
-    {{if and (gt $esdevenimentPos $noticiaPos) (eq $esdevenimentPos $pi) }}
-    {{$general := index ($ps.Params.general) 0}}
-    {{$.Scratch.Set "firstDestLink" (slice $ps.Permalink) }}
-    {{$.Scratch.Set "firstDestImg" (slice $general.img) }}
-    {{$.Scratch.Set "firstDestTitol" (slice $general.titol) }}
-    {{$.Scratch.Set "firstDestEntrada" (slice "") }}
-    {{$.Scratch.Set "firstDestType" (slice $ps.Type) }}
-
-    {{else if (eq $esdevenimentPos $pi) }}
-
-    {{$general := index ($ps.Params.general) 0}}
-    {{$.Scratch.Set "lastDestLink" (slice $ps.Permalink) }}
-    {{$.Scratch.Set "lastDestImg" (slice $general.img) }}
-    {{$.Scratch.Set "lastDestTitol" (slice $general.titol) }}
-    {{$.Scratch.Set "lasDestEntrada" (slice "") }}
-    {{$.Scratch.Set "lastDestType" (slice $ps.Type) }}
-    {{end}}
-    
-    {{end}}
-    
-    {{end}}
-    
-
+        {{ partial "head.html" . }}
 </head>
 
 <body>
+
     {{ partial "google_code_body.html" . }}
     {{ partial "header.html" . }}
-    {{$firstLink := index ($.Scratch.Get "firstDestLink") 0 }}
-    {{$firstImg := index ($.Scratch.Get "firstDestImg") 0 }}
-    {{$firstTitol := index ($.Scratch.Get "firstDestTitol") 0 }}
-    {{if ne ($.Scratch.Get "firstDestEntrada") nil }}{{$firstEntr := index ($.Scratch.Get "firstDestEntrada") 0 }}{{end}}
-    {{if ne ($.Scratch.Get "firstDestType") nil }}{{$firstType := index ($.Scratch.Get "firstDestType") 0 }}{{end}}
-    {{$lastLink := index ($.Scratch.Get "lastDestLink") 0 }}
-    {{$lastImg := index ($.Scratch.Get "lastDestImg") 0 }}
-    {{$lastTitol := index ($.Scratch.Get "lastDestTitol") 0 }}
-    {{if ne ($.Scratch.Get "lastDestEntrada") nil }}{{$lastEntr := index ($.Scratch.Get "lastDestEntrada") 0 }}{{end}}
-    {{if ne ($.Scratch.Get "lastDestType") nil }}{{$lastType := index ($.Scratch.Get "lastDestType") 0 }}{{end}}
+    
     <div class="site-wrapper">
         <section class="titol-pagina">
             <div class="row">
@@ -110,43 +20,47 @@
                 </div>
             </div>
 
+            {{ range first 1 (where (where .Site.Pages.ByDate ".Params.destacat" true) ".Params.language" .Site.Language.Lang)}}
             <div class=" col-md-9 col-xs-9">
-                <a href="{{$firstLink}}" class="card-absolute-link"></a>
+                <a href="{{.Permalink}}" class="card-absolute-link"></a>
                 <div class="bg-simple img-wpr img-wpr--horizontal img--tint">
-                    <img src="{{$firstImg}}" class="img-wpr__cover" >
+                    {{ with .Params.general.img}}<img src="{{.}}" class="img-wpr__cover" >{{end}}
                     <div class="img-wpr__contents">
                         <div class="row">
                             <div class="col-md-7">
-                                <p class="h3 inverse">{{$firstTitol}}</p>
-                                <p class="h4 inverse">{{if ne (index ($.Scratch.Get "firstDestEntrada") 0) nil}}{{index ($.Scratch.Get "firstDestEntrada") 0 }}{{end}}</p>
+                                <p class="h3 inverse">{{ with .Params.general.titol}}{{.}}{{end}}</p>
+                                {{ with .Params.general.entrada}}<p class="h4 inverse">{{.}}</p>{{end}}
                             </div>
                         </div>
                     </div>
                     <div class="img-wpr__contents">
                         <div class="row">
-                            <div class="float-right p-right-x text-small inverse">{{if eq (index ($.Scratch.Get "firstDestType") 0) "noticies" }}{{ T "uoc_ri_noticia" }}{{else}}{{ T "uoc_ri_esdeveniment" }}{{end}}
+                            <div class="float-right p-right-x text-small inverse">{{if eq .Type "noticies" }}{{ T "uoc_ri_noticia" }}{{else}}{{ T "uoc_ri_esdeveniment" }}{{end}}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            {{end}}
 
+            {{ range first 1 (after 1 (where (where .Site.Pages.ByDate ".Params.destacat" true) ".Params.language" .Site.Language.Lang))}}
             <div class="col-xs-6 col-md-3" role="article">
-                <a href="{{$lastLink}}" class="card-absolute-link"></a>
+                <a href="{{.Permalink}}" class="card-absolute-link"></a>
                 <div class="card" role="region" aria-label="Texto descriptivo" >
                     <div class="card__image">
-                        <img src="{{$lastImg}}" alt="{{$lastTitol}}">
+                        <img src="{{with .Params.general.img}}{{.}}{{end}}" alt="{{with .Params.general.titol}}{{.}}{{end}}">
                     </div>
                     <div class="card__contents" >
-                        <p class="text-big text font-alternate">{{$lastTitol}}</p>
-                        <p class="text-small text font-alternate"><blockquote class="pullquote">{{if ne (index ($.Scratch.Get "lastDestEntrada") 0) nil}}{{index ($.Scratch.Get "lastDestEntrada") 0}}{{end}}</blockquote></p>
+                        <p class="text-big text font-alternate">{{.Params.general.titol}}</p>
+                        {{ with .Params.general.entrada}}<p class="text-small text font-alternate"><blockquote class="pullquote">{{.}}</blockquote></p>{{end}}
                     </div>
                     <div class="card__footer">
                         <div class="float-left p-left-x  icon icon--external-link"></div>
-                        <div class="float-right p-right-x">{{if eq (index ($.Scratch.Get "lastDestType") 0) "noticies" }}{{ T "uoc_ri_noticia" }}{{else}}{{ T "uoc_ri_esdeveniment" }}{{end}}</div>
+                        <div class="float-right p-right-x">{{if eq .Type "noticies" }}{{ T "uoc_ri_noticia" }}{{else}}{{ T "uoc_ri_esdeveniment" }}{{end}}</div>
                     </div>
                 </div>
             </div>
+            {{end}}
             
             <div class="row">
                 <div class="col-xs-12">
@@ -155,181 +69,78 @@
                             <p><a id="st1" href="" class="text-align-center text-small">
                                 <div class="icon icon--arrow-down"></div>
                             </a></p>
-                        </div>
-                    </div>
+                     </div>
                 </div>
-                
-                
-                <div class="row">
-                    <div class="col-xs-12 col-md-12 col-lg-12" >
-                        
-                        <!-- Llistat de totes les noticies/esdeveniments (els 8 primers) -->
-                        <!-- Element de paginacio que ens actualitzará aquesta llista-->
-                        {{$noticiaPos := $.Scratch.Get "lastNoticiaPos"}}
-                        {{$esdevenimentPos := $.Scratch.Get "lastEsdevenimentPos"}}
-                        {{ range $i,$p := (.Site.AllPages.ByParam "createDate") }}
-                        {{- if and ( or (eq $p.Type "noticies") (eq $p.Type "esdeveniments")) (ne $p.File.UniqueID "")}}
-                        {{$general := index ($p.Params.general) 0}}
-                            <!-- ++++++++++{{$p.Type}} //
-                            {{$general.destacat}} //
-                            {{$noticiaPos}} //
-                            {{$esdevenimentPos}} //
-                            {{$i}}++++++++++++++ -->
-                        {{if and (eq $p.Type "noticies") (eq $general.destacat true) (ne $i $noticiaPos)}}
-                        {{$descripcio := index ($p.Params.descripcio) 0}}
-                        <div class="col-xs-6 col-md-3" role="article" data-id="{{$i}}">
-                            
-                            <a href="{{$p.Permalink}}" class="card-absolute-link"></a>
-                            <div class="card" role="region" aria-label="Texto descriptivo" >
-                                <div class="card__image">
-                                    <img src="{{$general.img}}" alt="Texto alternativo">
-                                </div>
-                                <div class="card__contents" >
-                                    <p class="text-big text font-alternate">{{$general.titol}}</p>
-                                    <p class="text-small text"><blockquote class="pullquote">{{$descripcio.entrada}}</blockquote></p>
-                                </div>
-                                <div class="card__footer">
-                                    <div class="float-left p-left-x  icon icon--external-link"></div>
-                                    <div class="float-right p-right-x">{{ T "uoc_ri_noticia" }}</div>
-                                </div>
-                            </div>
-                        </div>
-                        {{else if and (eq $p.Type "esdeveniments") (eq $general.destacat true) (ne $i $esdevenimentPos)}}
-                        
-                        <div class="col-xs-6 col-md-3" role="article" data-id="{{$i}}">
-                            
-                            <a href="{{$p.Permalink}}" class="card-absolute-link"></a>
-                            <div class="card" role="region" aria-label="Texto descriptivo" >
-                                <div class="card__image">
-                                    <img src="{{$general.img}}" alt="Texto alternativo">
-                                </div>
-                                <div class="card__contents" >
-                                    <p class="text-big text font-alternate">{{$general.titol}}</p>
-                                </div>
-                                <div class="card__footer">
-                                    <div class="float-left p-left-x  icon icon--external-link"></div>
-                                    <div class="float-right p-right-x">{{ T "uoc_ri_esdeveniment" }}</div>
-                                </div>
-                            </div>
-                        </div>
-                        {{end}} 
-                                                            
-                        {{end}}
-                        {{end}}
-
-
-                        {{ range $i,$p := (.Site.AllPages.ByParam "createDate") }}
-                        {{- if and ( or (eq $p.Type "noticies") (eq $p.Type "esdeveniments")) (ne $p.File.UniqueID "")}}
-                        {{$general := index ($p.Params.general) 0}}
-                            <!-- ++++++++++{{$p.Type}} //
-                            {{$general.destacat}} //
-                            {{$noticiaPos}} //
-                            {{$esdevenimentPos}} //
-                            {{$i}}++++++++++++++ -->
-                        {{if and (eq $p.Type "noticies") (or (eq $general.destacat nil) (eq $general.destacat false)) (ne $i $noticiaPos)}}
-                        {{$descripcio := index ($p.Params.descripcio) 0}}
-                        <div class="col-xs-6 col-md-3" role="article" data-id="{{$i}}">
-                            
-                            <a href="{{$p.Permalink}}" class="card-absolute-link"></a>
-                            <div class="card" role="region" aria-label="Texto descriptivo" >
-                                <div class="card__image">
-                                    <img src="{{$general.img}}" alt="Texto alternativo">
-                                </div>
-                                <div class="card__contents" >
-                                    <p class="text-big text font-alternate">{{$general.titol}}</p>
-                                    <p class="text-small text"><blockquote class="pullquote">{{$descripcio.entrada}}</blockquote></p>
-                                </div>
-                                <div class="card__footer">
-                                    <div class="float-left p-left-x  icon icon--external-link"></div>
-                                    <div class="float-right p-right-x">{{ T "uoc_ri_noticia" }}</div>
-                                </div>
-                            </div>
-                        </div>
-                        {{else if and (eq $p.Type "esdeveniments") (or (eq $general.destacat nil) (eq $general.destacat false)) (ne $i $esdevenimentPos)}}
-                        
-                        <div class="col-xs-6 col-md-3" role="article" data-id="{{$i}}">
-                            
-                            <a href="{{$p.Permalink}}" class="card-absolute-link"></a>
-                            <div class="card" role="region" aria-label="Texto descriptivo" >
-                                <div class="card__image">
-                                    <img src="{{$general.img}}" alt="Texto alternativo">
-                                </div>
-                                <div class="card__contents" >
-                                    <p class="text-big text font-alternate">{{$general.titol}}</p>
-                                </div>
-                                <div class="card__footer">
-                                    <div class="float-left p-left-x  icon icon--external-link"></div>
-                                    <div class="float-right p-right-x">{{ T "uoc_ri_esdeveniment" }}</div>
-                                </div>
-                            </div>
-                        </div>
-                        {{end}} 
-                                                            
-                        {{end}}
-                        {{end}}
-
-                       
-                        
+            </div>               
+            <div class="row resultsDifusions">
+                <div class="col-xs-12 col-md-12 col-lg-12" >
+                    <div class="row list-difusions">
                     </div>
+                    <div class="pagination-difusions">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="pagination-difusions-container"></div>
+                            </div>
+                        </div>
+                    </div>                        
                 </div>
-                
-                <ul role="navigation" class="pagination">
-                    <li class="col-md-1 pagination__item is-active">
-                        <span title="Pagina 1" aria-label="Pagina 1" aria-selected="true" class="pagination__link">01</span>
-                    </li>
-                    <li class="col-md-1 pagination__item">
-                        <a href="#" title="Pagina 2" aria-label="Pagina 2" aria-selected="false" class="pagination__link">02</a>
-                    </li>
-                    <li class="col-md-1 pagination__item">
-                        <a href="#" title="Pagina 3" aria-label="Pagina 3" aria-selected="false"  class="pagination__link">03</a>
-                    </li>
-                    <li class="col-md-1 pagination__item">
-                        <a href="#" title="Pagina 4" aria-label="Pagina 4" aria-selected="false" class="pagination__link">04</a>
-                    </li>
-                    <li class="col-md-5 pagination__item">
-                        <a href="#" title="Pagina 5" aria-label="Pagina 5" aria-selected="false" class="pagination__link">05</a>
-                    </li>
-                    <li class="col-xs-12 col-md-3 pagination__item pagination__item--next">
-                        <a href="#" title="Enlace siguiente" aria-label="Enlace siguiente" rel="next" class="btn btn--primary">Siguiente</a>
-                    </li>
-                </ul>
-                
-                <!-- <div class="">
-                    <div></div>
-                </div>
-                <div role="article" class="" data-video="">
-                    <a href="" aria-hidden="true" class="" target="_self" aria-labelledby="card-title-1575976596265">&nbsp;</a>
-                    <div class="card__image img--tint">
-                        <img data-set-id="3cols" data-src="" data-srcset="" data-sizes="(max-width: 767px) 100vw, (max-width: 1200px) 25vw, 300px" class="" alt="" data-lazy-load="" sizes="(max-width: 767px) 100vw, (max-width: 1200px) 25vw, 300px" srcset="" src="" data-was-processed="true">
-                        <a href="#modal-1575976596275" data-modal-trigger="" data-video-play="" class="" title="Visualització del video modal">&nbsp;</a>
-                        <div data-modal="" id="modal-1575976596275" class="">
-                            <div role="document" data-modal-dialog="" class="">
-                                <button accesskey="e" class="" data-modal-close="">
-                                    <span class="icon icon--close"></span>
-                                </button>
-                                <div class="modal__content">
-                                    <div class="">
-                                        <div class="">
-                                            <div class="" id="ytplayermodal-modal-1575976596275" data-video-id="B45q34vwH5s" data-video-autoplay="1" data-video-time="0">
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=""><h3 id="card-title-1575976596265" class=""><a href="" target="_self">La UOC, protagonista d'un vídeo de la BBC Storyworks i la IAU</a></h3><div class="card__footer">
-                        <div class="float-left" role="complementary" aria-label="tags">#AimingHigher</div><div class="float-right" role="complementary" aria-label="tags">UOC News</div>
-                    </div>
-                </div> 
-            </div>   -->
-            
+            </div>
+
             {{ partial "footer.html" . }}
         </div>    
         {{ partial "ri_js_imports.html" . }}
-    </section>
-</div>
+
+        <script src="/js/difusions.js"></script>
+        <script src="/js/lib/pagination.min.js"></script>
+        <script src="/js/lib/matchHeight.js"></script>
+        <script type="text/javascript">
+            $(".list-difusions .card").matchHeight(); 
+            var noticiaLabel = '{{ T "uoc_ri_noticia" }}';
+            var esdevenimentLabel = '{{ T "uoc_ri_esdeveniment" }}';
+            var difusionsDestacades = [
+                {{ range (after 2 (where (where .Site.Pages.ByDate ".Params.destacat" true) ".Params.language" .Site.Language.Lang))}}
+                  {
+                    "destacat": {{.Params.destacat}},
+                    "data": {{.Params.date}},
+                    "link": {{.Permalink}},{{with .Params.general.img}}
+                    "img" : {{.}},{{end}}{{with .Params.general.titol}}
+                    "titol" : {{.}},{{end}}{{with .Params.general.entrada}}
+                    "entrada": {{.}},{{end}}
+
+                    {{- if eq .Type "noticies" }}
+                    "type" : "noticies"
+                    {{else if eq .Type "esdeveniments"}}
+                    "type" : "esdeveniments"
+                    {{end}} 
+                  },
+                {{end}}                                                        
+            ];
+            var restaDifusions = [
+                {{ range (where (where .Site.Pages.ByDate ".Params.destacat" false) ".Params.language" .Site.Language.Lang)}}
+                {
+                    "destacat": {{.Params.destacat}},
+                    "data": {{.Params.date}},
+                    "link": {{.Permalink}},{{with .Params.general.img}}
+                    "img" : {{.}},{{end}}{{with .Params.general.titol}}
+                    "titol" : {{.}},{{end}}{{with .Params.general.entrada}}
+                    "entrada": {{.}},{{end}}
+
+                    {{- if eq .Type "noticies" }}
+                    "type" : "noticies"
+                    {{else if eq .Type "esdeveniments"}}
+                    "type" : "esdeveniments"
+                    {{end}} 
+                },
+                {{end}}                                                        
+            ]
+            var literals = {
+                pagination: {
+                    next: '{{ T "uoc_pagination_next" }}',
+                    previous: '{{ T "uoc_pagination_prev" }}'
+                },
+                connectionError: '{{ T "uoc_search_connerror" }}',
+                noresults : '{{ T "uoc_search_noresults" }}'
+            }     
+        </script>
 </body>
 </html>
-

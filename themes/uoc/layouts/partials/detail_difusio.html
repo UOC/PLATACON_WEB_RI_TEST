@@ -1,6 +1,4 @@
-{{$type := .Type }}
-{{$generalInfo := index (.Params.general) 0 }}
-{{$xarxes := $generalInfo.xarxes}}
+{{$type := .Type}}
 
 <section>
     <div class="row">
@@ -15,7 +13,7 @@
         </div>
         <div class="col-xs-12 col-md-9">
             <div class="page-title title-border-green">
-                <h1>{{ $generalInfo.titol}}</h1>
+                <h1>{{with .Params.general.titol}}{{.}}{{end}}</h1>
             </div>
         </div>
         <div class="col-xs-12 col-md-3">
@@ -25,17 +23,19 @@
         <div class="col-xs-12 col-md-9">
             {{if eq $type "noticies"}}
             <figure class="img-figure">
-                <img src={{$generalInfo.img}}>
+                <img src={{with .Params.general.img}}{{.}}{{end}}>
                 <figcaption class="img-figcaption">
                     <div class="float-left" id="img-figcaption1">
-                        <em class="text-extra-small">Foto: {{$generalInfo.img_autor}}</em>
+                        <em class="text-extra-small">Foto: {{with .Params.general.img_autor}}{{.}}{{end}}</em>
                         <br><br>
-                        {{dateFormat "02/01/2006" $generalInfo.data}} <br>  {{$generalInfo.autor}}
+                        {{with .Params.date}}{{dateFormat "02/01/2006" .}}{{end}} <br>  {{with .Params.general.autor}}{{.}}{{end}}
                     </div>
+                    {{with .Params.general.xarxes}}
                     <div class="float-right" role="complementary" id="img-figcaption2">
                         
                         <div class="social-links unstyled">
-                            {{range $xarxes}}
+                            
+                            {{range .}}
                                 {{if eq .xarxa "facebook"}}
                             <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Facebook']);" href="{{.address}}" target="_blank"
                                     title='Facebook {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Facebook {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-facebook"> </span></a>
@@ -49,9 +49,10 @@
                                     title='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}' aria-label='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-instagram"> </span></a>
                                 {{end}}
                             {{end}}
+                           
                         </div>
-
                     </div>
+                    {{end}}
                 </figcaption>
             </figure>
             {{ end }}
@@ -65,25 +66,25 @@
     <div class="row">
         <div class="col-xs-12 col-md-3">
             {{if eq $type "noticies"}}
-                {{$descMap := (index (index .Params.descripcio) 0) 0}}
-                <blockquote class="pullquote">{{$descMap.entrada}}</blockquote>
+                {{with .Params.descripcio.entrada}}
+                <blockquote class="pullquote">{{.}}</blockquote>
+                {{end}}
             {{end}}
         </div>
         <div class="col-xs-12 col-md-9">
             {{if eq $type "noticies"}}
-                {{$descMap := (index (index .Params.descripcio) 0) 0}}
-                <p>{{safeHTML (markdownify $descMap.descripcio)}}</p>
+                <p>{{with .Params.descripcio.text}}{{safeHTML (markdownify .)}}{{end}}</p>
             {{else}}
-                <p>{{$generalInfo.descripcio}}</p>
+                <p>{{with .Params.general.descripcio}}{{safeHTML (markdownify .)}}{{end}}</p>
                 
                     <div>
                         <div class="card card--image-horizontal card--info col-xs-12 card--2y col-clear-right">
                         <div class="card__contents col-xs-12 col-md-4">
                             <h3 class="h4 ">{{ T "uoc_ri_esdeveniment_On" }}</h3>
-                            <p>{{ $generalInfo.lloc}}</p>
+                            <p>{{with .Params.general.lloc}}{{.}}{{end}}</p>
                             <h3 class="h4 clear-both">{{ T "uoc_ri_esdeveniment_Quan" }}</h3>
                             <p>
-                                {{dateFormat "02/01/2006 15:04" $generalInfo.data}}
+                            {{with .Params.date}}{{dateFormat "02/01/2006 15:04" .}}{{end}}
                             <p>
                             &nbsp;</p>
                         </div>
@@ -104,10 +105,12 @@
                         <div class="ruler ruler--thin"></div>
                     </div>
                     <br>
+                    {{with .Params.general.xarxes}}
                     <div class="float-right" role="complementary">
                         
                         <div class="social-links unstyled">
-                            {{range $xarxes}}
+                            
+                            {{range .}}
                                 {{if eq .xarxa "facebook"}}
                             <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Facebook']);" href="{{.address}}" target="_blank"
                                     title='Facebook {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Facebook {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-facebook"> </span></a>
@@ -121,10 +124,11 @@
                                     title='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}' aria-label='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-instagram"> </span></a>
                                 {{end}}
                             {{end}}
+                            
                         </div>
 
                     </div>           
-                
+                    {{end}}
             {{end}}
         </div>
     </div>             
@@ -142,7 +146,7 @@
         })
     });
     
-    var address = "{{ $generalInfo.lloc}}";
+    var address = "{{with .Params.general.lloc}}{{ .}}{{end}}";
     var lat = 0;
     var lng = 0;
     L.esri.Geocoding.geocode().text(address).run((err, results, response) => {

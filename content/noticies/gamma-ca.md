@@ -1,17 +1,16 @@
 ---
 title: omega
 language: ca
-createDate: '2020-01-26T11:03:28+02:00'
-destacat: true
+date: '2020-01-26T11:03:28+02:00'
+destacat: false
 general:
-  - autor: Pau Martinez
-    data: '2020-01-26T11:03:28+02:00'
-    img: /img/marvin-meyer-syto3xs06fu-unsplash.jpg
-    img_autor: Temàtiques d'ensenyament
-    titol: >-
-      Gamma
+  autor: Pau Martinez
+  img: /img/marvin-meyer-syto3xs06fu-unsplash.jpg
+  img_autor: Temàtiques d'ensenyament
+  titol: >-
+    Gamma - 26/01/20 (ca)
 descripcio:
-  - descripcio: >-
+    text: >-
       L'Agència Estatal de Recerca, mitjançant el Ministeri de Ciència,
       Innovació i Universitats, ha resolt el finançament que atorga amb els seus
       plans nacionals d'R+D+I a nous projectes de recerca. Aquesta vegada, la

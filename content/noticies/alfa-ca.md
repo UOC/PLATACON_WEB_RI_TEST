@@ -1,17 +1,16 @@
 ---
 title: Alfa
 language: ca
-createDate: '2019-12-17T13:33:49+01:00'
-destacat: true
+date: '2019-12-17T13:33:49+01:00'
+destacat: false
 general:
-  - autor: Javi
-    data: '2019-12-17T13:33:49+01:00'
-    img: /img/detall_solucions_principal.png
-    link_extern: www.google.com
-    titol: Alfa
-    xarxes: []
+  autor: Javi
+  img: /img/detall_solucions_principal.png
+  link_extern: www.google.com
+  titol: Alfa 2 - 17/12/19 (ca) 
+  xarxes: []
 descripcio:
-  - descripcio: >-
+    text: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea

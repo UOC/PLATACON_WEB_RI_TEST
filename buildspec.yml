@@ -21,6 +21,8 @@ phases:
       - hugo --environment ${ENV}
       - node ./bin/update-netlify-config.js
       - cd public/ && loose-envify ./admin/main.js > updated-main.js && mv updated-main.js main.js
+      - aws s3 cp s3://${BUCKET_S3}/${DEST_FOLDER}/ca/index.json ./ca/previous-index.json
+      - node ../bin/create-to-delete-index.js
       - aws s3 cp index.html s3://${BUCKET_S3}/${DEST_FOLDER}/index.html --acl public-read
       - cd ./admin && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/admin --acl public-read --delete
       - cd ../ca && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/ca --acl public-read --delete
@@ -33,7 +35,10 @@ phases:
           if [ "${UPLOAD_TO_CLOUDSEARCH}" == "true" ]; then
             echo "Uploading data to cloudsearch"
             cd .. && aws cloudsearchdomain --endpoint-url ${CLOUDSEARCH_URL} upload-documents --content-type application/json --documents ./ca/index.json
+            if test -f "./ca/index-to-delete.json"; then
+                aws cloudsearchdomain --endpoint-url ${CLOUDSEARCH_URL} upload-documents --content-type application/json --documents ./ca/index-to-delete.json
+            fi
           fi
     finally:
-      - aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --paths "/admin,/ca,/es,en/,js/,css/,img/"
+      - aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --paths "/admin/*,/ca/*,/es/*,/en/*,/js/*,/css/*,/img/*"
       - echo "Script finished running"

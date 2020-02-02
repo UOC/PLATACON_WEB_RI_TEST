@@ -8,18 +8,18 @@ function initCercaHome(){
 	$(".tab-content.cercaFiltres form").on('submit', function(e){
 		e.preventDefault();
 		searchParams=getFormValues();
-		window.location = buildURL(searchParams,'1');
+		window.location = buildURL(searchParams,'cercadorFiltres');
+	});
+	$(".tab-content.cercaSectors form").on('submit', function(e){
+		e.preventDefault();
+		searchParams=getFormValues();
+		window.location = buildURL(searchParams,'cercadorSectors');
 	});
 	$(".tab-content.cercaTextual form").on('submit', function(e){
 		e.preventDefault();
 		searchParams={};
 		searchParams.s = $(".tab-content.cercaTextual form input#search").val();
-		window.location = buildURL(searchParams,'3');
-	});
-	$(".tab-content.cercaSectors form").on('submit', function(e){
-		e.preventDefault();
-		searchParams=getFormValues();
-		window.location = buildURL(searchParams,'2');
+		window.location = buildURL(searchParams,'cercadorTextual');
 	});
 }
 function getFormValues(){
@@ -50,6 +50,7 @@ function getFormValues(){
 			searchParams.centre.push($(this).text());
 		});	
 		if(searchParams.centre.includes($($(".tab-content.cercaFiltres .tag-list.centre li")[0]).text())){
+			console.log('Deleting search params centre');
 			delete searchParams["centre"];
 		}
 	}
@@ -83,13 +84,10 @@ function buildURL(searchParams,target){
 		for (var key in searchParams) {
 			queryString+=key+"="+encodeURIComponent(searchParams[key])+"&";
 		}
-		//queryString+="target="+target.trim()+"&";
-		queryString = queryString.substring(0,queryString.length-1);		
+		queryString+="target="+target.trim();
+		//queryString = queryString.substring(0,queryString.length-1);		
 		cercadorURL += queryString;
-		//return cercadorURL;
 		
 	}
-	sessionStorage.setItem("target",target);
 	return cercadorURL;
-	
 }

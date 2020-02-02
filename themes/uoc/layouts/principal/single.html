@@ -33,20 +33,26 @@
 	<div id="main-content" class="site-wrapper">
 		<section data-tab-system="" class="filters-main">
 			<div class="row">
-				<div class="filters-main-block">
-					<div class="filters-main__box border-green">
-						<h3>{{ T "uoc_ri_cercadortab_filtres" }}</h3>
-						<p><a id="tab-1" href="#tab-content-1" role="tab" aria-controls="tab-content-1" aria-selected="false" data-tab-trigger="" class="tab cercaFiltres"><span class="icon icon--arrow-down"></span></a></p>
-					</div>
-					<div class="filters-main__box border-green">
-						<h3>{{ T "uoc_ri_cercadortab_sectors" }}</h3>
-						<p><a id="tab-3" href="#tab-content-3" role="tab" aria-controls="tab-content-3" aria-selected="false" data-tab-trigger="" class="tab cercaSectors"><span class="icon icon--arrow-down"></span></a></p>
-					</div>
-					<div class="filters-main__box border-green">
-						<h3>{{ T "uoc_ri_cercadortab_text" }}</h3>
-						<p><a id="tab-2" href="#tab-content-2" role="tab" aria-controls="tab-content-2" aria-selected="false" data-tab-trigger="" class="tab cercaTextual"><span class="icon icon--arrow-down"></span></a></p>
-					</div>
-				</div>
+				<ul class="filters-main-block" role="tablist">
+					<li class="filters-main__box border-green" role="presentation">
+						<a id="tab-1" href="#tab-content-1" role="tab" aria-controls="tab-content-1" aria-selected="false" data-tab-trigger="" class="tab cercaFiltres">
+							<h3>{{ T "uoc_ri_cercadortab_filtres" }}</h3>
+							<span class="icon icon--arrow-down" aria-hidden='true'></span>
+						</a>
+					</li>
+					<li class="filters-main__box border-green" role="presentation">
+						<a id="tab-3" href="#tab-content-3" role="tab" aria-controls="tab-content-3" aria-selected="false" data-tab-trigger="" class="tab cercaSectors">
+							<h3>{{ T "uoc_ri_cercadortab_sectors" }}</h3>
+							<span class="icon icon--arrow-down" aria-hidden='true'></span>
+						</a>
+					</li>
+					<li class="filters-main__box border-green" role="presentation">
+						<a id="tab-2" href="#tab-content-2" role="tab" aria-controls="tab-content-2" aria-selected="false" data-tab-trigger="" class="tab cercaTextual">
+							<h3>{{ T "uoc_ri_cercadortab_text" }}</h3>
+							<span class="icon icon--arrow-down" aria-hidden='true'></span>
+						</a>
+					</li>
+				</ul>
 				<div class="col-xs-12">
 					<div id="tab-content-1" data-tab-content="" role="tabpanel" aria-labelledby="tab-1" aria-hidden="false" class="filters-main__content tab-content cercaFiltres">
 						<form action="" class="radio-accordeon search-form-container">
@@ -77,13 +83,19 @@
 								</div>
 							</div>
 							<div class="radio-collapse-item">
-								<input role="radiogroup" type="radio" name="paymentMode" value="BankTransfer" id="transfer" aria-label="radiogroup" class="js-payment-mode-radio">
-								<label for="transfer" class="checkbox-wrapper payment-mode-label">{{ T "uoc_ri_cercador_filtres_unesco" }}</label>
+								<input type="radio" name='{{ T "uoc_ri_cercador_filtres_unesco" }}' id="unesco" aria-label='{{ T "uoc_ri_cercador_filtres_unesco" }}' class="js-payment-mode-radio">
+								<label for="unesco" class="checkbox-wrapper payment-mode-label">{{ T "uoc_ri_cercador_filtres_unesco" }}</label>
 								<div class="collapse-content"> 
 									<div class="full-width search-container-top">
 										<div class="col-xs-12">
 											<p><a href="javascript:;">{{ T "uoc_ri_home_search_consultaunesco" }}</a></p>
-											<input type="search" id="search-input" aria-label="Cerca per codi" placeholder="Cerca per codi" name="searchWords" tabindex="0" value="" title="Cerca per codi" class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1 unesco">
+											<input list="unesco-code-list" id="search-input" name="searchWords" aria-label='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' placeholder='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' title='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1 unesco" style="font-size: 16px;    height: 47px;"/>
+											<!--  <input type="search" id="search-input" aria-label="Cerca per codi" placeholder='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' name="searchWords" tabindex="0" value="" title='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1 unesco">-->
+											<datalist id="unesco-code-list">
+												{{ range $index, $element := .Params.unesco }}
+													<option value="{{$element.value}}">{{$element.display_name}}</option>
+												{{ end }}
+											</datalist>
 										</div>
 									</div>
 								</div>
@@ -189,30 +201,23 @@
 									<p><a href="#collapse3" aria-expanded="false" class="js-collapseClick">{{ T "uoc_ri_home_difusions" }}<span class="icon icon--arrow-down"></span></a></p>
 								</div>
 								<div id="collapse2" class="contentCollapse show">
-									<div class="col-xs-6 col-md-3" role="article">
-										{{ range (where .Site.Pages.ByDate.Reverse .Params.destacat true) .Pages }}
-											<a href="{{ .Permalink }}"><h1>Featured 1 — {{ .Title }}</h1></a>
-										{{ end }}
-									</div>
-
-  								<!-- {{ range $i, $sequence :=  (seq 4) }}
-									<div class="col-xs-6 col-md-3" role="article">
-										
-										<a href="/ca/noticies/alfa.html" class="card-absolute-link"></a>
-										<div class="card" role="region" aria-label="Texto descriptivo" >
-											<div class="card__image">
-												<img src="/img/detall_solucions_principal2.png" alt="Texto alternativo">
-											</div>
-											<div class="card__contents" >
-												<p class="text-big text font-alternate">El treballador fluid, un nou tipus d'empleat difícil de retenir a l'empresa</p>
-											</div>
-											<div class="card__footer">
-												<div class="float-left p-left-x  icon icon--external-link"></div>
-												<div class="float-right p-right-x">Esdeveniment</div>
+										{{ range first 4 (where (where .Site.Pages.ByDate ".Params.destacat" true) ".Params.language" .Site.Language.Lang)}}
+										<div class="col-xs-12 col-md-3 difusionsHomeList" role="article">
+											<a href="{{.Permalink}}" class="card-absolute-link"></a>
+											<div class="card" role="region" aria-label="Texto descriptivo" >
+												<div class="card__image">
+													{{with .Params.general.img}}<img src="{{.}}" alt="Texto alternativo">{{end}}
+												</div>
+												<div class="card__contents" >
+													<p class="text-big text font-alternate">{{with .Params.general.titol}}{{.}}{{end}}</p>
+												</div>
+												<div class="card__footer">
+													<div class="float-left p-left-x  icon icon--external-link"></div>
+													<div class="float-right p-right-x">{{.Type}}</div>
+												</div>
 											</div>
 										</div>
-									</div>
-									{{end}} -->
+										{{ end }}
 								</div>
 							</div>
 						</div>
@@ -230,8 +235,9 @@
 	<script src="/js/lib/matchHeight.js"></script>
 	<script type="text/javascript">
 		var cercadorURL = '{{ "cercador/cercador.html" | relLangURL }}';
-		$(".centresHomeList .card").matchHeight();
-		//var cercadorSectorURL = '{{ "solucions/solucions.html" | relLangURL }}';
+		$(".centresHomeList .card").matchHeight(); 
+		$(".difusionsHomeList .card").matchHeight(); 
+		//var cercadorSectorURL = '{{ "solucions/solucions.html" | relLangURL }}'; 
 	</script>
 </body>
 

@@ -7,7 +7,6 @@ backend:
   auth_endpoint: /api-oauth/auth
 media_folder: "static/img" # Media files will be stored in the repo under static/media/
 public_folder: "/img"
-publish_mode: editorial_workflow
 slug:
   encoding: "ascii"
   clean_accents: true
@@ -141,10 +140,9 @@ collections: # A list of collections the CMS should be able to edit
         widget: object
         fields: 
           - {label: "Nom Solucio", name: nom_solucio, widget: string, required: true}
-          - {label: "Text", name: text_breu, widget: string}
-          - {label: "Eslogan", name: slogan, widget: string}
+          - {label: "Text", name: text_breu, widget: string, required: false}
+          - {label: "Eslogan", name: slogan, widget: string, required: false}
           - {label: "Img Background", name: "img_background", widget: image, required: true}
-          - {label: "Tipologia", name: tipologia, widget: select, options: ["Solució Tecnològica","Patent", "Servei a l'empresa","Spin-Off"], default: "Solució Tecnològica"}
           - label: "Sector"
             name: sector
             widget: relation
@@ -161,7 +159,7 @@ collections: # A list of collections the CMS should be able to edit
             valueField: "title"
             displayFields: ["title","language"]
             required: true
-          - {label: "Logo", name: "logo", widget: image}
+          - {label: "Logo", name: "logo", widget: image, required: false}
           - label: "Keywords"
             name: keywords
             widget: list
@@ -172,12 +170,12 @@ collections: # A list of collections the CMS should be able to edit
             name: xarxes
             widget: list
             fields:
-              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
-              - {label: "Url", name: address, widget: string}
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Url", name: address, widget: string, required: true}
       - label: Sobre la Tecnología
         name: sobre_tecnologia 
         required: false     
-        widget: object
+        widget: list
         fields:
           - {label: titol, name: titol, widget: string}
           - {label: descripcio, name: descripcio, widget: markdown}
@@ -192,7 +190,6 @@ collections: # A list of collections the CMS should be able to edit
                 media_library:
                   config:
                     multiple: true
-
       - label: Aspectes Innovadors
         name: aspectes_innovadors  
         required: false   
@@ -231,6 +228,7 @@ collections: # A list of collections the CMS should be able to edit
                     multiple: true
       - label: "Grups de Recerca"
         name: grups_recerca
+        required: false
         widget: "grups_custom_list"
         fields: 
           - label: Grup
@@ -250,6 +248,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: hidden
       - label: "Investigadors"
         name: investigadors
+        required: false
         widget: "investigadors_custom_list"
         fields: 
           - label: Investigador
@@ -284,54 +283,53 @@ collections: # A list of collections the CMS should be able to edit
     extension: 'md'
     create: true
     fields:
-      - {label: Título, name: title, widget : string, required: true}
+      - {label: Títol, name: title, widget : string, required: true}
       - {label: Idioma, name: language, widget : hidden, default: "es"}
       - label: General
         name: general
         widget: object
         fields: 
-          - {label: "Nombre Solución", name: nom_solucio, widget: string, required: true}
-          - {label: "Texto", name: text_breu, widget: string}
-          - {label: "Eslogan", name: slogan, widget: string}
-          - {label: "Imagen", name: "img_background", widget: image, required: true}
-          - {label: "Tipología", name: tipologia, widget: select, options: ["Solución Tecnologica","Patente", "Servicio a la Empresa","Spin-Off"], default: "Solución Tecnologica"}
+          - {label: "Nom Solucio", name: nom_solucio, widget: string, required: true}
+          - {label: "Text", name: text_breu, widget: string, required: false}
+          - {label: "Eslogan", name: slogan, widget: string, required: false}
+          - {label: "Img Background", name: "img_background", widget: image, required: true}
           - label: "Sector"
             name: sector
             widget: relation
-            collection: "sectors_es"
+            collection: "sectors_ca"
             searchFields: ["name","value","language"]
             valueField: "name"
             displayFields: ["name","language"]
             required: true
-          - label: "Centro"
+          - label: "Centre"
             name: centre
             widget: relation
-            collection: "centers_es"
+            collection: "centers_ca"
             searchFields: ["title","language"]
             valueField: "title"
             displayFields: ["title","language"]
             required: true
-          - {label: "Logo", name: "logo", widget: image}
+          - {label: "Logo", name: "logo", widget: image, required: false}
           - label: "Keywords"
             name: keywords
             widget: list
             required: true
             fields:
               - {label: "Value", name: value, widget: string}
-          - label: "Redes"
+          - label: "Social"
             name: xarxes
             widget: list
             fields:
-              - {label: "Nombre", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
-              - {label: "Url", name: address, widget: string}
-      - label: Sobre la Tecnologia
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Url", name: address, widget: string, required: true}
+      - label: Sobre la Tecnología
         name: sobre_tecnologia 
         required: false     
-        widget: object
+        widget: list
         fields:
-          - {label: Título, name: titol, widget: string}
-          - {label: Descripción, name: descripcio, widget: markdown}
-          - label: Documentos Relacionados
+          - {label: titol, name: titol, widget: string}
+          - {label: descripcio, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
             name: docs_rels
             widget: list
             fields:
@@ -342,14 +340,14 @@ collections: # A list of collections the CMS should be able to edit
                 media_library:
                   config:
                     multiple: true
-      - label: Aspectos Innovadores
+      - label: Aspectes Innovadors
         name: aspectes_innovadors  
         required: false   
         widget: list
         fields:
-          - {label: Título, name: titol, widget: string}
-          - {label: Descripción, name: descripcio, widget: markdown}
-          - label: Documentos Relacionados
+          - {label: titol, name: titol, widget: string}
+          - {label: descripcio, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
             name: docs_rels
             widget: list
             fields:
@@ -360,14 +358,14 @@ collections: # A list of collections the CMS should be able to edit
                 media_library:
                   config:
                     multiple: true
-      - label: Aplicaciones
+      - label: Aplicacions
         name: aplicacions   
         required: false   
         widget: list
         fields:
-          - {label: Título, name: titol, widget: string}
-          - {label: Descripción, name: descripcio, widget: markdown}
-          - label: Documentos Relacionados
+          - {label: titol, name: titol, widget: string}
+          - {label: descripcio, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
             name: docs_rels
             widget: list
             fields:
@@ -378,8 +376,9 @@ collections: # A list of collections the CMS should be able to edit
                 media_library:
                   config:
                     multiple: true
-      - label: "Grupos de Investigación"
+      - label: "Grups de Recerca"
         name: grups_recerca
+        required: false
         widget: "grups_custom_list"
         fields: 
           - label: Grup
@@ -397,8 +396,9 @@ collections: # A list of collections the CMS should be able to edit
           - label: Url_img
             name: url_img
             widget: hidden
-      - label: "Investigadores"
+      - label: "Investigadors"
         name: investigadors
+        required: false
         widget: "investigadors_custom_list"
         fields: 
           - label: Investigador
@@ -413,14 +413,14 @@ collections: # A list of collections the CMS should be able to edit
           - label: Url_img
             name: url_img
             widget: hidden
-      - label: Contacto
+      - label: Contacte
         name: contacte
         required: true
         widget: list
         fields:
-          - {label: Nombre, name: text, widget: string}
-          - {label: Dirección, name: address, widget: string}
-          - {label: Teléfono, name: telefon, widget: string}
+          - {label: Name, name: text, widget: string}
+          - {label: Adreça, name: address, widget: string}
+          - {label: Telèfon, name: telefon, widget: string}
           - {label: E-mail, name: email, widget: string}
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
@@ -433,55 +433,53 @@ collections: # A list of collections the CMS should be able to edit
     extension: 'md'
     create: true
     fields:
-      - {label: Title, name: title, widget : string, required: true}
-      - {label: Language, name: language, widget : hidden, default: "en"}
+      - {label: Títol, name: title, widget : string, required: true}
+      - {label: Idioma, name: language, widget : hidden, default: "en"}
       - label: General
         name: general
         widget: object
         fields: 
-          - {label: "Solution name", name: nom_solucio, widget: string, required: true}
-          - {label: "Text", name: text_breu, widget: string, required: true}
-          - {label: "Slogan", name: slogan, widget: string}
+          - {label: "Nom Solucio", name: nom_solucio, widget: string, required: true}
+          - {label: "Text", name: text_breu, widget: string, required: false}
+          - {label: "Eslogan", name: slogan, widget: string, required: false}
           - {label: "Img Background", name: "img_background", widget: image, required: true}
-          - {label: "Typology", name: tipologia, widget: select, options: ["Technical Solution","Patent", "Business Service","Spin-Off"], default: "Technical Solution"}
           - label: "Sector"
             name: sector
             widget: relation
-            collection: "sectors_en"
+            collection: "sectors_ca"
             searchFields: ["name","value","language"]
             valueField: "name"
             displayFields: ["name","language"]
-            filter: {field: "language", value: "en"}
             required: true
-          - label: "Center"
+          - label: "Centre"
             name: centre
             widget: relation
-            collection: "centers_en"
+            collection: "centers_ca"
             searchFields: ["title","language"]
             valueField: "title"
             displayFields: ["title","language"]
             required: true
-          - {label: "Logo", name: "logo", widget: image}
+          - {label: "Logo", name: "logo", widget: image, required: false}
           - label: "Keywords"
             name: keywords
             widget: list
             required: true
             fields:
               - {label: "Value", name: value, widget: string}
-          - label: "Social Media"
+          - label: "Social"
             name: xarxes
             widget: list
             fields:
-              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
-              - {label: "Url", name: address, widget: string}
-      - label: About Technology
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Url", name: address, widget: string, required: true}
+      - label: Sobre la Tecnología
         name: sobre_tecnologia 
         required: false     
-        widget: object
+        widget: list
         fields:
-          - {label: Title, name: titol, widget: string}
-          - {label: description, name: descripcio, widget: markdown}
-          - label: Related documents
+          - {label: titol, name: titol, widget: string}
+          - {label: descripcio, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
             name: docs_rels
             widget: list
             fields:
@@ -492,14 +490,14 @@ collections: # A list of collections the CMS should be able to edit
                 media_library:
                   config:
                     multiple: true
-      - label: Innovative aspects
+      - label: Aspectes Innovadors
         name: aspectes_innovadors  
         required: false   
         widget: list
         fields:
-          - {label: Title, name: titol, widget: string}
-          - {label: description, name: descripcio, widget: markdown}
-          - label: Related documents
+          - {label: titol, name: titol, widget: string}
+          - {label: descripcio, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
             name: docs_rels
             widget: list
             fields:
@@ -510,14 +508,14 @@ collections: # A list of collections the CMS should be able to edit
                 media_library:
                   config:
                     multiple: true
-      - label: Applications
+      - label: Aplicacions
         name: aplicacions   
         required: false   
         widget: list
         fields:
-          - {label: Title, name: titol, widget: string}
-          - {label: Description, name: descripcio, widget: markdown}
-          - label: Related documents
+          - {label: titol, name: titol, widget: string}
+          - {label: descripcio, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
             name: docs_rels
             widget: list
             fields:
@@ -528,8 +526,9 @@ collections: # A list of collections the CMS should be able to edit
                 media_library:
                   config:
                     multiple: true
-      - label: "Research Groups"
+      - label: "Grups de Recerca"
         name: grups_recerca
+        required: false
         widget: "grups_custom_list"
         fields: 
           - label: Grup
@@ -547,8 +546,9 @@ collections: # A list of collections the CMS should be able to edit
           - label: Url_img
             name: url_img
             widget: hidden
-      - label: "Researchers"
+      - label: "Investigadors"
         name: investigadors
+        required: false
         widget: "investigadors_custom_list"
         fields: 
           - label: Investigador
@@ -563,14 +563,14 @@ collections: # A list of collections the CMS should be able to edit
           - label: Url_img
             name: url_img
             widget: hidden
-      - label: Contact
+      - label: Contacte
         name: contacte
         required: true
         widget: list
         fields:
           - {label: Name, name: text, widget: string}
-          - {label: Address, name: address, widget: string}
-          - {label: Phone, name: telefon, widget: string}
+          - {label: Adreça, name: address, widget: string}
+          - {label: Telèfon, name: telefon, widget: string}
           - {label: E-mail, name: email, widget: string}
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
@@ -593,7 +593,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Text", name: text_breu, widget: string}
           - {label: "Eslògan", name: slogan, widget: string}
           - {label: "Img Fons", name: "img_background", widget: image, required: true}
-          - {label: "Tipologia", name: tipologia, widget: select, options: ["Solució Tecnològica","Patent", "Servei a l'empresa","Spin-Off"], default: "Patent"}
           - label: "Sector"
             name: sector
             widget: relation
@@ -610,23 +609,23 @@ collections: # A list of collections the CMS should be able to edit
             valueField: "title"
             displayFields: ["title","language"]
             required: true
-          - {label: "Logo", name: "logo", widget: image}
+          - {label: "Logo", name: "logo", widget: image, required: false}
           - label: "Keywords"
             name: keywords
             widget: list
             required: true
             fields:
-              - {label: "Keyword", name: value, widget: string}
-          - label: "Xarxes"
+              - {label: "Value", name: value, widget: string}
+          - label: "Social"
             name: xarxes
             widget: list
             fields:
-              - {label: "Xarxa", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
-              - {label: "Url", name: address, widget: string}
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Url", name: address, widget: string, required: true}
       - label: Sobre la Patent
         name: sobre_patent  
         required: false    
-        widget: object
+        widget: list
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
@@ -679,6 +678,7 @@ collections: # A list of collections the CMS should be able to edit
                     multiple: true
       - label: "Grups de Recerca"
         name: grups_recerca
+        required: false
         widget: "grups_custom_list"
         fields: 
           - label: Grup
@@ -698,6 +698,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: hidden
       - label: "Investigadors"
         name: investigadors
+        required: false
         widget: "investigadors_custom_list"
         fields: 
           - label: Investigador
@@ -738,197 +739,47 @@ collections: # A list of collections the CMS should be able to edit
         name: general
         widget: object
         fields: 
-          - {label: "Nombre Patente", name: nom_patent, widget: string, required: true}
-          - {label: "Texto", name: text_breu, widget: string}
-          - {label: "Eslogan", name: slogan, widget: string}
-          - {label: "Img Fondo", name: "img_background", widget: image, required: true}
-          - {label: "Tipología", name: tipologia, widget: select, options: ["Solución Tecnologica","Patente", "Servicio a la Empresa","Spin-Off"], default: "Patente"}
-          - label: "Sector"
-            name: sector
-            widget: relation
-            collection: "sectors_es"
-            searchFields: ["name","value","language"]
-            valueField: "name"
-            displayFields: ["name","language"]
-            required: true
-          - label: "Centro"
-            name: centre
-            widget: relation
-            collection: "centers_es"
-            searchFields: ["title","language"]
-            valueField: "title"
-            displayFields: ["title","language"]
-            required: true
-          - {label: "Logo", name: "logo", widget: image}
-          - label: "Keywords"
-            name: keywords
-            widget: list
-            required: true
-            fields:
-              - {label: "Keyword", name: value, widget: string}
-          - label: "Social"
-            name: xarxes
-            widget: list
-            fields:
-              - {label: "Nombre", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
-              - {label: "Url", name: address, widget: string}
-      - label: Sobre la Patente
-        name: sobre_patent  
-        required: false    
-        widget: object
-        fields:
-          - {label: Título, name: titol, widget: string}
-          - {label: Descripción, name: descripcio, widget: markdown}
-          - label: Documentos Relacionados
-            name: docs_rels
-            widget: list
-            fields:
-              - label: File
-                name: file
-                required: true
-                widget: file
-                media_library:
-                  config:
-                    multiple: true
-      - label: Aspectos Innovadores
-        name: aspectes_innovadors    
-        required: false 
-        widget: list
-        fields:
-          - {label: Título, name: titol, widget: string}
-          - {label: Descripción, name: descripcio, widget: markdown}
-          - label: Documentos Relacionados
-            name: docs_rels
-            widget: list
-            fields:
-              - label: File
-                name: file
-                required: true
-                widget: file
-                media_library:
-                  config:
-                    multiple: true
-      - label: Aplicaciones
-        name: aplicacions    
-        required: false  
-        widget: list
-        fields:
-          - {label: Título, name: titol, widget: string}
-          - {label: Descripción, name: descripcio, widget: markdown}
-          - label: Documentos Relacionados
-            name: docs_rels
-            widget: list
-            fields:
-              - label: File
-                name: file
-                required: true
-                widget: file
-                media_library:
-                  config:
-                    multiple: true
-      - label: "Grupos de Investigación"
-        name: grups_recerca
-        widget: "grups_custom_list"
-        fields: 
-          - label: Grup
-            name: id
-            widget: grups_custom_select
-          - label: Nom
-            name: name
-            widget: hidden
-          - label: Descripcio
-            name: description
-            widget: hidden
-          - label: Url
-            name: url
-            widget: hidden
-          - label: Url_img
-            name: url_img
-            widget: hidden
-      - label: "Investigadores"
-        name: investigadors
-        widget: "investigadors_custom_list"
-        fields: 
-          - label: Investigador
-            name: id
-            widget: investigadors_custom_select
-          - label: Nom
-            name: name
-            widget: hidden
-          - label: Url
-            name: url
-            widget: hidden
-          - label: Url_img
-            name: url_img
-            widget: hidden
-      - label: Contacto
-        name: contacte
-        required: false
-        widget: list
-        fields:
-          - {label: Nombre, name: text, widget: string}
-          - {label: Dirección, name: address, widget: string}
-          - {label: Teléfono, name: telefon, widget: string}
-          - {label: E-mail, name: email, widget: string}
-    meta:
-      - {label: "Fecha", name: "date", widget: "datetime"}
-  - name: "patent_en"
-    label: 'Patents [en]'
-    folder: "content/patent/"
-    slug: '{{slug}}.{{language}}'
-    identifier_field: '{{slug}}'
-    filter: {field: "language", value: "en"}
-    extension: 'md'
-    create: true
-    fields:
-      - {label: Title, name: title, widget : string, required: true}
-      - {label: Language, name: language, widget : hidden, default: "en"}      
-      - label: General
-        name: general
-        widget: object
-        fields: 
-          - {label: "Patent name", name: nom_patent, widget: string, required: true}
+          - {label: "Nom Patent", name: nom_patent, widget: string, required: true}
           - {label: "Text", name: text_breu, widget: string}
-          - {label: "Slogan", name: slogan, widget: string}
-          - {label: "Img Background", name: "img_background", widget: image, required: true}
-          - {label: "Typology", name: tipologia, widget: select, options: ["Technical Solution","Patent", "Business Service","Spin-Off"], default: "Patent"}
+          - {label: "Eslògan", name: slogan, widget: string}
+          - {label: "Img Fons", name: "img_background", widget: image, required: true}
           - label: "Sector"
             name: sector
             widget: relation
-            collection: "sectors_en"
+            collection: "sectors_ca"
             searchFields: ["name","value","language"]
             valueField: "name"
             displayFields: ["name","language"]
             required: true
-          - label: "Center"
+          - label: "Centre"
             name: centre
             widget: relation
-            collection: "centers_en"
+            collection: "centers_ca"
             searchFields: ["title","language"]
             valueField: "title"
             displayFields: ["title","language"]
             required: true
-          - {label: "Logo", name: "logo", widget: image}
+          - {label: "Logo", name: "logo", widget: image, required: false}
           - label: "Keywords"
             name: keywords
             widget: list
             required: true
             fields:
-              - {label: "Keyword", name: value, widget: string}
+              - {label: "Value", name: value, widget: string}
           - label: "Social"
             name: xarxes
             widget: list
             fields:
-              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
-              - {label: "Url", name: address, widget: string}
-      - label: About the Patent
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Url", name: address, widget: string, required: true}
+      - label: Sobre la Patent
         name: sobre_patent  
         required: false    
-        widget: object
+        widget: list
         fields:
-          - {label: Title, name: titol, widget: string}
-          - {label: Description, name: descripcio, widget: markdown}
-          - label: Related documents
+          - {label: Títol, name: titol, widget: string}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
             name: docs_rels
             widget: list
             fields:
@@ -939,14 +790,14 @@ collections: # A list of collections the CMS should be able to edit
                 media_library:
                   config:
                     multiple: true
-      - label: Innovating aspects
+      - label: Aspectes Innovadors
         name: aspectes_innovadors    
         required: false 
         widget: list
         fields:
-          - {label: Title, name: titol, widget: string}
-          - {label: Description, name: descripcio, widget: markdown}
-          - label: Related documents
+          - {label: Títol, name: titol, widget: string}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
             name: docs_rels
             widget: list
             fields:
@@ -962,9 +813,9 @@ collections: # A list of collections the CMS should be able to edit
         required: false  
         widget: list
         fields:
-          - {label: Title, name: titol, widget: string}
-          - {label: Description, name: descripcio, widget: markdown}
-          - label: Related documents
+          - {label: Títol, name: titol, widget: string}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
             name: docs_rels
             widget: list
             fields:
@@ -975,8 +826,9 @@ collections: # A list of collections the CMS should be able to edit
                 media_library:
                   config:
                     multiple: true
-      - label: "Research Groups"
+      - label: "Grups de Recerca"
         name: grups_recerca
+        required: false
         widget: "grups_custom_list"
         fields: 
           - label: Grup
@@ -994,8 +846,9 @@ collections: # A list of collections the CMS should be able to edit
           - label: Url_img
             name: url_img
             widget: hidden
-      - label: "Researchers"
+      - label: "Investigadors"
         name: investigadors
+        required: false
         widget: "investigadors_custom_list"
         fields: 
           - label: Investigador
@@ -1010,17 +863,167 @@ collections: # A list of collections the CMS should be able to edit
           - label: Url_img
             name: url_img
             widget: hidden
-      - label: Contact
+      - label: Contacte
         name: contacte
         required: false
         widget: list
         fields:
-          - {label: Name, name: text, widget: string}
-          - {label: Adress, name: address, widget: string}
-          - {label: Phone, name: telefon, widget: string}
+          - {label: Nom, name: text, widget: string}
+          - {label: Adreça, name: address, widget: string}
+          - {label: Telèfon, name: telefon, widget: string}
           - {label: E-mail, name: email, widget: string}
     meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Data", name: "date", widget: "datetime"}
+  - name: "patent_en"
+    label: 'Patents [en]'
+    folder: "content/patent/"
+    slug: '{{slug}}.{{language}}'
+    identifier_field: '{{slug}}'
+    filter: {field: "language", value: "en"}
+    extension: 'md'
+    create: true
+    fields:
+      - {label: Title, name: title, widget : string, required: true}
+      - {label: Language, name: language, widget : hidden, default: "en"}      
+      - label: General
+        name: general
+        widget: object
+        fields: 
+          - {label: "Nom Patent", name: nom_patent, widget: string, required: true}
+          - {label: "Text", name: text_breu, widget: string}
+          - {label: "Eslògan", name: slogan, widget: string}
+          - {label: "Img Fons", name: "img_background", widget: image, required: true}
+          - label: "Sector"
+            name: sector
+            widget: relation
+            collection: "sectors_ca"
+            searchFields: ["name","value","language"]
+            valueField: "name"
+            displayFields: ["name","language"]
+            required: true
+          - label: "Centre"
+            name: centre
+            widget: relation
+            collection: "centers_ca"
+            searchFields: ["title","language"]
+            valueField: "title"
+            displayFields: ["title","language"]
+            required: true
+          - {label: "Logo", name: "logo", widget: image, required: false}
+          - label: "Keywords"
+            name: keywords
+            widget: list
+            required: true
+            fields:
+              - {label: "Value", name: value, widget: string}
+          - label: "Social"
+            name: xarxes
+            widget: list
+            fields:
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Url", name: address, widget: string, required: true}
+      - label: Sobre la Patent
+        name: sobre_patent  
+        required: false    
+        widget: list
+        fields:
+          - {label: Títol, name: titol, widget: string}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
+            name: docs_rels
+            widget: list
+            fields:
+              - label: File
+                name: file
+                required: true
+                widget: file
+                media_library:
+                  config:
+                    multiple: true
+      - label: Aspectes Innovadors
+        name: aspectes_innovadors    
+        required: false 
+        widget: list
+        fields:
+          - {label: Títol, name: titol, widget: string}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
+            name: docs_rels
+            widget: list
+            fields:
+              - label: File
+                name: file
+                required: true
+                widget: file
+                media_library:
+                  config:
+                    multiple: true
+      - label: Aplicacions
+        name: aplicacions    
+        required: false  
+        widget: list
+        fields:
+          - {label: Títol, name: titol, widget: string}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
+            name: docs_rels
+            widget: list
+            fields:
+              - label: File
+                name: file
+                required: true
+                widget: file
+                media_library:
+                  config:
+                    multiple: true
+      - label: "Grups de Recerca"
+        name: grups_recerca
+        required: false
+        widget: "grups_custom_list"
+        fields: 
+          - label: Grup
+            name: id
+            widget: grups_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Descripcio
+            name: description
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
+      - label: "Investigadors"
+        name: investigadors
+        required: false
+        widget: "investigadors_custom_list"
+        fields: 
+          - label: Investigador
+            name: id
+            widget: investigadors_custom_select
+          - label: Nom
+            name: name
+            widget: hidden
+          - label: Url
+            name: url
+            widget: hidden
+          - label: Url_img
+            name: url_img
+            widget: hidden
+      - label: Contacte
+        name: contacte
+        required: false
+        widget: list
+        fields:
+          - {label: Nom, name: text, widget: string}
+          - {label: Adreça, name: address, widget: string}
+          - {label: Telèfon, name: telefon, widget: string}
+          - {label: E-mail, name: email, widget: string}
+    meta:
+      - {label: "Data", name: "date", widget: "datetime"}
   - name: "servei_ca"
     label: 'Serveis [ca]'
     folder: "content/servei/"
@@ -1039,7 +1042,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Nom Servei", name: nom_servei, widget: string, required: true}
           - {label: "Text", name: text_breu, widget: string}
           - {label: "Img Fons", name: "img_background", widget: image, required: true}
-          - {label: "Tipologia", name: tipologia, widget: select, options: ["Solució Tecnològica","Patent", "Servei a l'empresa","Spin-Off"], default: "Servei a l'empresa"}
           - label: "Sector"
             name: sector
             widget: relation
@@ -1061,17 +1063,17 @@ collections: # A list of collections the CMS should be able to edit
             widget: list
             required: true
             fields:
-              - {label: "Keyword", name: value, widget: string}
+              - {label: "Value", name: value, widget: string}
           - label: "Social"
             name: xarxes
             widget: list
             fields:
-              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
-              - {label: "Url", name: address, widget: string}
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Url", name: address, widget: string, required: true}
       - label: Sobre el Servei
         name: sobre_servei  
         required: false    
-        widget: object
+        widget: list
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
@@ -1087,7 +1089,8 @@ collections: # A list of collections the CMS should be able to edit
                   config:
                     multiple: true
       - label: Casos d'Èxit
-        name: casos_exit    
+        name: casos_exit
+        required: false    
         widget: list
         fields:
           - {label: "Imatge", name: "img", widget: image, required: false}
@@ -1096,6 +1099,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Url Cas d'Èxit, name: url_success, widget: string}
       - label: "Grups de Recerca"
         name: grups_recerca
+        required: false
         widget: "grups_custom_list"
         fields: 
           - label: Grup
@@ -1115,6 +1119,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: hidden
       - label: "Investigadors"
         name: investigadors
+        required: false
         widget: "investigadors_custom_list"
         fields: 
           - label: Investigador
@@ -1155,22 +1160,21 @@ collections: # A list of collections the CMS should be able to edit
         name: general
         widget: object
         fields: 
-          - {label: "Nombre Servicio", name: nom_servei, widget: string, required: true}
-          - {label: "Texto", name: text_breu, widget: string}
-          - {label: "Img Fondo", name: "img_background", widget: image, required: true}
-          - {label: "Tipología", name: tipologia, widget: select, options: ["Solución Tecnologica","Patente", "Servicio a la empresa","Spin-Off"], default: "Servicio a la empresa"}
+          - {label: "Nom Servei", name: nom_servei, widget: string, required: true}
+          - {label: "Text", name: text_breu, widget: string}
+          - {label: "Img Fons", name: "img_background", widget: image, required: true}
           - label: "Sector"
             name: sector
             widget: relation
-            collection: "sectors_es"
+            collection: "sectors_ca"
             searchFields: ["name","value","language"]
             valueField: "name"
             displayFields: ["name","language"]
             required: true
-          - label: "Centro"
+          - label: "Centre"
             name: centre
             widget: relation
-            collection: "centers_es"
+            collection: "centers_ca"
             searchFields: ["title","language"]
             valueField: "title"
             displayFields: ["title","language"]
@@ -1180,21 +1184,21 @@ collections: # A list of collections the CMS should be able to edit
             widget: list
             required: true
             fields:
-              - {label: "Keyword", name: value, widget: string}
+              - {label: "Value", name: value, widget: string}
           - label: "Social"
             name: xarxes
             widget: list
             fields:
-              - {label: "Nombre", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
-              - {label: "Url", name: address, widget: string}
-      - label: Sobre el Servicio
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Url", name: address, widget: string, required: true}
+      - label: Sobre el Servei
         name: sobre_servei  
         required: false    
-        widget: object
+        widget: list
         fields:
-          - {label: Título, name: titol, widget: string}
-          - {label: Descripción, name: descripcio, widget: markdown}
-          - label: Documentos Relacionados
+          - {label: Títol, name: titol, widget: string}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
             name: docs_rels
             widget: list
             fields:
@@ -1205,16 +1209,18 @@ collections: # A list of collections the CMS should be able to edit
                 media_library:
                   config:
                     multiple: true
-      - label: Casos de Éxito
-        name: casos_exit    
+      - label: Casos d'Èxit
+        name: casos_exit
+        required: false    
         widget: list
         fields:
-          - {label: "Imagen", name: "img", widget: image, required: false}
-          - {label: Título, name: titol, widget: string, required: true}
-          - {label: Descripción, name: descripcio, widget: markdown}
-          - {label: Url Caso de éxito, name: url_success, widget: string}
-      - label: "Grupos de Investigación"
+          - {label: "Imatge", name: "img", widget: image, required: false}
+          - {label: Títol, name: titol, widget: string, required: true}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - {label: Url Cas d'Èxit, name: url_success, widget: string}
+      - label: "Grups de Recerca"
         name: grups_recerca
+        required: false
         widget: "grups_custom_list"
         fields: 
           - label: Grup
@@ -1232,8 +1238,9 @@ collections: # A list of collections the CMS should be able to edit
           - label: Url_img
             name: url_img
             widget: hidden
-      - label: "Investigadores"
+      - label: "Investigadors"
         name: investigadors
+        required: false
         widget: "investigadors_custom_list"
         fields: 
           - label: Investigador
@@ -1248,17 +1255,17 @@ collections: # A list of collections the CMS should be able to edit
           - label: Url_img
             name: url_img
             widget: hidden
-      - label: Contacto
+      - label: Contacte
         name: contacte
         required: false
         widget: list
         fields:
-          - {label: Nombre, name: text, widget: string}
-          - {label: Dirección, name: address, widget: string}
-          - {label: Teléfono, name: telefon, widget: string}
+          - {label: Nom, name: text, widget: string}
+          - {label: Adreça, name: address, widget: string}
+          - {label: Telèfon, name: telefon, widget: string}
           - {label: E-mail, name: email, widget: string}
     meta:
-      - {label: "Fecha", name: "date", widget: "datetime"}
+      - {label: "Data", name: "date", widget: "datetime"}
   - name: "servei_en"
     label: 'Serveis [en]'
     folder: "content/servei/"
@@ -1274,22 +1281,21 @@ collections: # A list of collections the CMS should be able to edit
         name: general
         widget: object
         fields: 
-          - {label: "Service Name", name: nom_servei, widget: string, required: true}
+          - {label: "Nom Servei", name: nom_servei, widget: string, required: true}
           - {label: "Text", name: text_breu, widget: string}
-          - {label: "Background Img", name: "img_background", widget: image, required: true}
-          - {label: "Typology", name: tipologia, widget: select, options: ["Technical Solution","Patent", "Business Service","Spin-Off"], default: "Business Service"}
+          - {label: "Img Fons", name: "img_background", widget: image, required: true}
           - label: "Sector"
             name: sector
             widget: relation
-            collection: "sectors_en"
+            collection: "sectors_ca"
             searchFields: ["name","value","language"]
             valueField: "name"
             displayFields: ["name","language"]
             required: true
-          - label: "Center"
+          - label: "Centre"
             name: centre
             widget: relation
-            collection: "centers_en"
+            collection: "centers_ca"
             searchFields: ["title","language"]
             valueField: "title"
             displayFields: ["title","language"]
@@ -1299,21 +1305,21 @@ collections: # A list of collections the CMS should be able to edit
             widget: list
             required: true
             fields:
-              - {label: "Keyword", name: value, widget: string}
+              - {label: "Value", name: value, widget: string}
           - label: "Social"
             name: xarxes
             widget: list
             fields:
-              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
-              - {label: "Url", name: address, widget: string}
-      - label: About the service
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Url", name: address, widget: string, required: true}
+      - label: Sobre el Servei
         name: sobre_servei  
         required: false    
-        widget: object
+        widget: list
         fields:
-          - {label: title, name: titol, widget: string}
-          - {label: description, name: descripcio, widget: markdown}
-          - label: Related documents
+          - {label: Títol, name: titol, widget: string}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
             name: docs_rels
             widget: list
             fields:
@@ -1324,16 +1330,18 @@ collections: # A list of collections the CMS should be able to edit
                 media_library:
                   config:
                     multiple: true
-      - label: Cases of success
-        name: casos_exit    
+      - label: Casos d'Èxit
+        name: casos_exit
+        required: false    
         widget: list
         fields:
-          - {label: "Image", name: "img", widget: image, required: false}
-          - {label: title, name: titol, widget: string, required: true}
-          - {label: description, name: descripcio, widget: markdown}
-          - {label: Url Success Case, name: url_success, widget: string}
-      - label: "Research Groups"
+          - {label: "Imatge", name: "img", widget: image, required: false}
+          - {label: Títol, name: titol, widget: string, required: true}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - {label: Url Cas d'Èxit, name: url_success, widget: string}
+      - label: "Grups de Recerca"
         name: grups_recerca
+        required: false
         widget: "grups_custom_list"
         fields: 
           - label: Grup
@@ -1351,8 +1359,9 @@ collections: # A list of collections the CMS should be able to edit
           - label: Url_img
             name: url_img
             widget: hidden
-      - label: "Researchers"
+      - label: "Investigadors"
         name: investigadors
+        required: false
         widget: "investigadors_custom_list"
         fields: 
           - label: Investigador
@@ -1367,17 +1376,17 @@ collections: # A list of collections the CMS should be able to edit
           - label: Url_img
             name: url_img
             widget: hidden
-      - label: Contact
+      - label: Contacte
         name: contacte
         required: false
         widget: list
         fields:
-          - {label: Name, name: text, widget: string}
-          - {label: Adress, name: address, widget: string}
-          - {label: Phone, name: telefon, widget: string}
+          - {label: Nom, name: text, widget: string}
+          - {label: Adreça, name: address, widget: string}
+          - {label: Telèfon, name: telefon, widget: string}
           - {label: E-mail, name: email, widget: string}
     meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Data", name: "date", widget: "datetime"}
   - name: "spin_off_ca"
     label: 'Spin-Offs [ca]'
     folder: "content/spin_off/"
@@ -1393,11 +1402,10 @@ collections: # A list of collections the CMS should be able to edit
         name: general
         widget: object
         fields: 
-          - {label: "Nom Servei", name: nom_spinoff, widget: string, required: true}
+          - {label: "Nom Spin off", name: nom_spinoff, widget: string, required: true}
           - {label: "Text", name: text_breu, widget: string}
           - {label: "Eslògan", name: slogan, widget: string}
           - {label: "Img Fons", name: "img_background", widget: image, required: true}
-          - {label: "Tipologia", name: tipologia, widget: select, options: ["Solució Tecnològica","Patent", "Servei a l'empresa","Spin-Off"], default: "Spin-Off"}
           - label: "Sector"
             name: sector
             widget: relation
@@ -1406,7 +1414,7 @@ collections: # A list of collections the CMS should be able to edit
             valueField: "name"
             displayFields: ["name","language"]
             required: true
-          - {label: "Logo", name: "logo", widget: image}
+          - {label: "Logo", name: "logo", widget: image, required: false}
           - label: "Keywords"
             name: keywords
             widget: list
@@ -1415,14 +1423,15 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Keyword", name: value, widget: string}
           - label: "Social"
             name: xarxes
+            required: false
             widget: list
             fields:
-              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
-              - {label: "Url", name: address, widget: string}
+              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Url", name: address, widget: string, required: true}
       - label: Sobre la Spin-Off
         name: sobre_spinoff  
         required: false    
-        widget: object
+        widget: list
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
@@ -1474,7 +1483,8 @@ collections: # A list of collections the CMS should be able to edit
                   config:
                     multiple: true
       - label: Casos d'Èxit
-        name: casos_exit    
+        name: casos_exit
+        required: false     
         widget: list
         fields:
           - {label: "Imatge", name: "img", widget: image, required: false}
@@ -1483,6 +1493,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Url Cas d'Èxit, name: url_success, widget: string}
       - label: "Grups de Recerca"
         name: grups_recerca
+        required: false     
         widget: "grups_custom_list"
         fields: 
           - label: Grup
@@ -1502,6 +1513,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: hidden
       - label: "Investigadors"
         name: investigadors
+        required: false     
         widget: "investigadors_custom_list"
         fields: 
           - label: Investigador
@@ -1542,20 +1554,19 @@ collections: # A list of collections the CMS should be able to edit
         name: general
         widget: object
         fields: 
-          - {label: "Nombre Servicio", name: nom_spinoff, widget: string, required: true}
-          - {label: "Texto", name: text_breu, widget: string}
-          - {label: "Eslógan", name: slogan, widget: string}
-          - {label: "Img Fondo", name: "img_background", widget: image, required: true}
-          - {label: "Tipología", name: tipologia, widget: select, options: ["Solución Tecnologica","Patente", "Servicio a la empresa","Spin-Off"], default: "Spin-Off"}
+          - {label: "Nom Spin off", name: nom_spinoff, widget: string, required: true}
+          - {label: "Text", name: text_breu, widget: string}
+          - {label: "Eslògan", name: slogan, widget: string}
+          - {label: "Img Fons", name: "img_background", widget: image, required: true}
           - label: "Sector"
             name: sector
             widget: relation
-            collection: "sectors_es"
+            collection: "sectors_ca"
             searchFields: ["name","value","language"]
             valueField: "name"
             displayFields: ["name","language"]
             required: true
-          - {label: "Logo", name: "logo", widget: image}
+          - {label: "Logo", name: "logo", widget: image, required: false}
           - label: "Keywords"
             name: keywords
             widget: list
@@ -1564,18 +1575,19 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Keyword", name: value, widget: string}
           - label: "Social"
             name: xarxes
+            required: false
             widget: list
             fields:
-              - {label: "Nombre", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
-              - {label: "Url", name: address, widget: string}
+              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Url", name: address, widget: string, required: true}
       - label: Sobre la Spin-Off
         name: sobre_spinoff  
         required: false    
-        widget: object
+        widget: list
         fields:
-          - {label: Título, name: titol, widget: string}
-          - {label: Descripción, name: descripcio, widget: markdown}
-          - label: Documentos Relacionados
+          - {label: Títol, name: titol, widget: string}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
             name: docs_rels
             widget: list
             fields:
@@ -1586,14 +1598,14 @@ collections: # A list of collections the CMS should be able to edit
                 media_library:
                   config:
                     multiple: true
-      - label: Productos/Servicios
+      - label: Productes/Serveis
         name: productes_serveis  
         required: false    
         widget: list
         fields:
-          - {label: Título, name: titol, widget: string}
-          - {label: Descripción, name: descripcio, widget: markdown}
-          - label: Documentos Relacionados
+          - {label: Títol, name: titol, widget: string}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
             name: docs_rels
             widget: list
             fields:
@@ -1604,14 +1616,14 @@ collections: # A list of collections the CMS should be able to edit
                 media_library:
                   config:
                     multiple: true
-      - label: Clientes
+      - label: Clients
         name: clients  
         required: false    
         widget: list
         fields:
-          - {label: título, name: titol, widget: string}
-          - {label: descripción, name: descripcio, widget: markdown}
-          - label: Documentos Relacionados
+          - {label: Títol, name: titol, widget: string}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
             name: docs_rels
             widget: list
             fields:
@@ -1622,16 +1634,18 @@ collections: # A list of collections the CMS should be able to edit
                 media_library:
                   config:
                     multiple: true
-      - label: Casos de Éxito
-        name: casos_exit    
+      - label: Casos d'Èxit
+        name: casos_exit
+        required: false     
         widget: list
         fields:
-          - {label: "Imagen", name: "img", widget: image, required: false}
-          - {label: Título, name: titol, widget: string, required: true}
-          - {label: Descripción, name: descripcio, widget: markdown}
-          - {label: Url Caso de éxito, name: url_success, widget: string}
-      - label: "Grupos de Investigación"
+          - {label: "Imatge", name: "img", widget: image, required: false}
+          - {label: Títol, name: titol, widget: string, required: true}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - {label: Url Cas d'Èxit, name: url_success, widget: string}
+      - label: "Grups de Recerca"
         name: grups_recerca
+        required: false     
         widget: "grups_custom_list"
         fields: 
           - label: Grup
@@ -1649,8 +1663,9 @@ collections: # A list of collections the CMS should be able to edit
           - label: Url_img
             name: url_img
             widget: hidden
-      - label: "Investigadores"
+      - label: "Investigadors"
         name: investigadors
+        required: false     
         widget: "investigadors_custom_list"
         fields: 
           - label: Investigador
@@ -1665,14 +1680,14 @@ collections: # A list of collections the CMS should be able to edit
           - label: Url_img
             name: url_img
             widget: hidden
-      - label: Contacto
+      - label: Contacte
         name: contacte
         required: false
         widget: list
         fields:
-          - {label: Nombre, name: text, widget: string}
-          - {label: Dirección, name: address, widget: string}
-          - {label: Teléfono, name: telefon, widget: string}
+          - {label: Name, name: text, widget: string}
+          - {label: Adreça, name: address, widget: string}
+          - {label: Telèfon, name: telefon, widget: string}
           - {label: E-mail, name: email, widget: string}
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
@@ -1691,20 +1706,19 @@ collections: # A list of collections the CMS should be able to edit
         name: general
         widget: object
         fields: 
-          - {label: "Spin Off Name", name: nom_spinoff, widget: string, required: true}
+          - {label: "Nom Spin off", name: nom_spinoff, widget: string, required: true}
           - {label: "Text", name: text_breu, widget: string}
-          - {label: "Slogan", name: slogan, widget: string}
-          - {label: "Background Img", name: "img_background", widget: image, required: true}
-          - {label: "Typology", name: tipologia, widget: select, options: ["Technical Solution","Patent", "Business Service","Spin-Off"], default: "Spin-Off"}
+          - {label: "Eslògan", name: slogan, widget: string}
+          - {label: "Img Fons", name: "img_background", widget: image, required: true}
           - label: "Sector"
             name: sector
             widget: relation
-            collection: "sectors_en"
+            collection: "sectors_ca"
             searchFields: ["name","value","language"]
             valueField: "name"
             displayFields: ["name","language"]
             required: true
-          - {label: "Logo", name: "logo", widget: image}
+          - {label: "Logo", name: "logo", widget: image, required: false}
           - label: "Keywords"
             name: keywords
             widget: list
@@ -1713,18 +1727,19 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Keyword", name: value, widget: string}
           - label: "Social"
             name: xarxes
+            required: false
             widget: list
             fields:
-              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
-              - {label: "Url", name: address, widget: string}
-      - label: About Spin-Off
+              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Url", name: address, widget: string, required: true}
+      - label: Sobre la Spin-Off
         name: sobre_spinoff  
         required: false    
-        widget: object
+        widget: list
         fields:
-          - {label: Title, name: titol, widget: string}
-          - {label: Description, name: descripcio, widget: markdown}
-          - label: Related documents
+          - {label: Títol, name: titol, widget: string}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
             name: docs_rels
             widget: list
             fields:
@@ -1735,14 +1750,14 @@ collections: # A list of collections the CMS should be able to edit
                 media_library:
                   config:
                     multiple: true
-      - label: Products/Services
+      - label: Productes/Serveis
         name: productes_serveis  
         required: false    
         widget: list
         fields:
-          - {label: Title, name: titol, widget: string}
-          - {label: Description, name: descripcio, widget: markdown}
-          - label: Related documents
+          - {label: Títol, name: titol, widget: string}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
             name: docs_rels
             widget: list
             fields:
@@ -1758,9 +1773,9 @@ collections: # A list of collections the CMS should be able to edit
         required: false    
         widget: list
         fields:
-          - {label: Title, name: titol, widget: string}
-          - {label: Description, name: descripcio, widget: markdown}
-          - label: Related documents
+          - {label: Títol, name: titol, widget: string}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - label: Documents Relacionats
             name: docs_rels
             widget: list
             fields:
@@ -1771,16 +1786,18 @@ collections: # A list of collections the CMS should be able to edit
                 media_library:
                   config:
                     multiple: true
-      - label: Cases of success
-        name: casos_exit    
+      - label: Casos d'Èxit
+        name: casos_exit
+        required: false     
         widget: list
         fields:
-          - {label: "Image", name: "img", widget: image, required: false}
-          - {label: title, name: titol, widget: string, required: true}
-          - {label: description, name: descripcio, widget: markdown}
-          - {label: Url Success Case, name: url_success, widget: string}
-      - label: "Research Groups"
+          - {label: "Imatge", name: "img", widget: image, required: false}
+          - {label: Títol, name: titol, widget: string, required: true}
+          - {label: Descripció, name: descripcio, widget: markdown}
+          - {label: Url Cas d'Èxit, name: url_success, widget: string}
+      - label: "Grups de Recerca"
         name: grups_recerca
+        required: false     
         widget: "grups_custom_list"
         fields: 
           - label: Grup
@@ -1798,8 +1815,9 @@ collections: # A list of collections the CMS should be able to edit
           - label: Url_img
             name: url_img
             widget: hidden
-      - label: "Researchers"
+      - label: "Investigadors"
         name: investigadors
+        required: false     
         widget: "investigadors_custom_list"
         fields: 
           - label: Investigador
@@ -1814,14 +1832,14 @@ collections: # A list of collections the CMS should be able to edit
           - label: Url_img
             name: url_img
             widget: hidden
-      - label: Contact
+      - label: Contacte
         name: contacte
         required: false
         widget: list
         fields:
           - {label: Name, name: text, widget: string}
-          - {label: Adress, name: address, widget: string}
-          - {label: Phone, name: telefon, widget: string}
+          - {label: Adreça, name: address, widget: string}
+          - {label: Telèfon, name: telefon, widget: string}
           - {label: E-mail, name: email, widget: string}
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
@@ -2408,13 +2426,13 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Títol, name: title, widget: string}
       - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
       - {label: "Destacat", name: "destacat", widget: "boolean", default: false, required: true}
+      - {label: "Data", name: "date", widget: datetime, required: true}
       - label: General
         name: general
         widget: object
         fields: 
           - {label: "Títol", name: titol, widget: string, required: true}
           - {label: "Imatge", name: "img", widget: image}
-          - {label: "Data", name: "data", widget: datetime, required: true}
           - {label: "Autor", name: autor, widget: string}
           - {label: "Foto autor", name: "img_autor", widget: string}
           - label: "Social"
@@ -2428,12 +2446,10 @@ collections: # A list of collections the CMS should be able to edit
       - label: Descripció
         name: descripcio 
         required: false    
-        widget: list
+        widget: object
         fields:
           - {label: Entrada Breu, name: entrada, widget: string}
-          - {label: Descripció, name: descripcio, widget: markdown}
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+          - {label: Descripció, name: text, widget: markdown}
   - name: "noticia_es"
     label: "Notícies [es]"
     folder: "content/noticies"
@@ -2443,35 +2459,33 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: '{{slug}}'
     filter: {field: language , value: "es"}
     fields:
-      - {label: Título, name: title, widget: string}
-      - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "es"}       
-      - {label: "Destacado", name: "destacat", widget: "boolean", default: false, required: true}
+      - {label: Títol, name: title, widget: string}
+      - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
+      - {label: "Destacat", name: "destacat", widget: "boolean", default: false, required: true}
+      - {label: "Data", name: "date", widget: datetime, required: true}
       - label: General
         name: general
         widget: object
         fields: 
-          - {label: "Título", name: titol, widget: string, required: true}
-          - {label: "Imagen", name: "img", widget: image}
-          - {label: "Fecha", name: "data", widget: datetime, required: true}
+          - {label: "Títol", name: titol, widget: string, required: true}
+          - {label: "Imatge", name: "img", widget: image}
           - {label: "Autor", name: autor, widget: string}
           - {label: "Foto autor", name: "img_autor", widget: string}
           - label: "Social"
             name: xarxes
             widget: list
             fields:
-              - {label: "Nombre", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
+              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
               - {label: "Url", name: address, widget: string}
-          - {label: "Link externo", name: link_extern, widget: string}
+          - {label: "Link extern", name: link_extern, widget: string}
     
-      - label: Descripción
+      - label: Descripció
         name: descripcio 
         required: false    
-        widget: list
+        widget: object
         fields:
-          - {label: Entrada Breve, name: entrada, widget: string}
-          - {label: Descripción, name: descripcio, widget: markdown}
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+          - {label: Entrada Breu, name: entrada, widget: string}
+          - {label: Descripció, name: text, widget: markdown}
   - name: "noticia_en"
     label: "Notícies [en]"
     folder: "content/noticies"
@@ -2481,37 +2495,33 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: '{{slug}}'
     filter: {field: language , value: "en"}
     fields:
-      - {label: Title, name: title, widget: string}
-      - {label: Language, name: language, widget: select, options: ["ca","es","en"],default: "en"}       
-      - {label: "Featured", name: "destacat", widget: "boolean", default: false, required: true}
+      - {label: Títol, name: title, widget: string}
+      - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
+      - {label: "Destacat", name: "destacat", widget: "boolean", default: false, required: true}
+      - {label: "Data", name: "date", widget: datetime, required: true}
       - label: General
         name: general
         widget: object
         fields: 
-          - {label: "Title", name: titol, widget: string, required: true}
-          - {label: "Image", name: "img", widget: image}
-          - {label: "Date", name: "data", widget: datetime, required: true}
-          - {label: "Author", name: autor, widget: string}
-          - {label: "Author image", name: "img_autor", widget: string}
+          - {label: "Títol", name: titol, widget: string, required: true}
+          - {label: "Imatge", name: "img", widget: image}
+          - {label: "Autor", name: autor, widget: string}
+          - {label: "Foto autor", name: "img_autor", widget: string}
           - label: "Social"
             name: xarxes
             widget: list
             fields:
-              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
+              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
               - {label: "Url", name: address, widget: string}
-          - {label: "External link", name: link_extern, widget: string}
+          - {label: "Link extern", name: link_extern, widget: string}
     
-      - label: Description
+      - label: Descripció
         name: descripcio 
         required: false    
-        widget: list
+        widget: object
         fields:
-          - {label: Brief entry, name: entrada, widget: string}
-          - {label: Description, name: descripcio, widget: markdown}
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
-    editor:
-      - preview: false      
+          - {label: Entrada Breu, name: entrada, widget: string}
+          - {label: Descripció, name: text, widget: markdown}
   - name: "esdeveniment_ca"
     label: "Esdeveniments [ca]"
     folder: "content/esdeveniments"
@@ -2524,6 +2534,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Títol, name: title, widget: string}
       - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
       - {label: "Detacat", name: "destacat", widget: "boolean", default: false, required: true}
+      - {label: "Quan", name: "date", widget: datetime, required: true}
       - label: General
         name: general
         widget: object
@@ -2531,7 +2542,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Títol", name: titol, widget: string, required: true}
           - {label: Descripció, name: descripcio, widget: markdown, required: true}
           - {label: "Lloc", name: lloc, widget: string, required: true} 
-          - {label: "Quan", name: "data", widget: datetime, required: true}
           - {label: "Imatge", name: "img", widget: image, default: ""}
           - label: "Social"
             name: xarxes
@@ -2539,8 +2549,6 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
               - {label: "Url", name: address, widget: string}
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
   - name: "esdeveniment_es"
     label: "Esdeveniments [es]"
     folder: "content/esdeveniments"
@@ -2550,26 +2558,24 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: '{{slug}}'
     filter: {field: language , value: "es"}
     fields:
-      - {label: Título, name: title, widget: string}
-      - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "es"}       
-      - {label: "Destacado", name: "destacat", widget: "boolean", default: false, required: true}
+      - {label: Títol, name: title, widget: string}
+      - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
+      - {label: "Detacat", name: "destacat", widget: "boolean", default: false, required: true}
+      - {label: "Quan", name: "date", widget: datetime, required: true}
       - label: General
         name: general
         widget: object
         fields: 
-          - {label: "Título", name: titol, widget: string, required: true}
-          - {label: "Descripción", name: descripcio, widget: markdown, required: true}
-          - {label: "Lugar", name: lloc, widget: string, required: true}           
-          - {label: "Cuando", name: "data", widget: datetime, required: true}
-          - {label: "Imagen", name: "img", widget: image}
+          - {label: "Títol", name: titol, widget: string, required: true}
+          - {label: Descripció, name: descripcio, widget: markdown, required: true}
+          - {label: "Lloc", name: lloc, widget: string, required: true} 
+          - {label: "Imatge", name: "img", widget: image, default: ""}
           - label: "Social"
             name: xarxes
             widget: list
             fields:
-              - {label: "Nombre", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
+              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
               - {label: "Url", name: address, widget: string}
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
   - name: "esdeveniment_en"
     label: "Esdeveniments [en]"
     folder: "content/esdeveniments"
@@ -2579,23 +2585,21 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: '{{slug}}'
     filter: {field: language , value: "en"}
     fields:
-      - {label: Title, name: title, widget: string}
-      - {label: Language, name: language, widget: select, options: ["ca","es","en"],default: "en"}  
-      - {label: "Featured", name: "destacat", widget: "boolean", default: false, required: true}
+      - {label: Títol, name: title, widget: string}
+      - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
+      - {label: "Detacat", name: "destacat", widget: "boolean", default: false, required: true}
+      - {label: "Quan", name: "date", widget: datetime, required: true}
       - label: General
         name: general
         widget: object
         fields: 
-          - {label: "Title", name: titol, widget: string, required: true}
-          - {label: Description, name: descripcio, widget: markdown, required: true}
-          - {label: "Place", name: lloc, widget: string, required: true}    
-          - {label: "When", name: "data", widget: datetime, required: true}
-          - {label: "Image", name: "img", widget: image}
+          - {label: "Títol", name: titol, widget: string, required: true}
+          - {label: Descripció, name: descripcio, widget: markdown, required: true}
+          - {label: "Lloc", name: lloc, widget: string, required: true} 
+          - {label: "Imatge", name: "img", widget: image, default: ""}
           - label: "Social"
             name: xarxes
             widget: list
             fields:
-              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
+              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
               - {label: "Url", name: address, widget: string}
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
