@@ -22,7 +22,7 @@ phases:
       - node ./bin/update-netlify-config.js
       - cd public/ && loose-envify ./admin/main.js > updated-main.js && mv updated-main.js main.js
       - |
-          aws s3api head-object --bucket ${BUCKET_S3} --key '${DEST_FOLDER}/ca/index.json' || not_exist=true
+          aws s3api head-object --bucket ${BUCKET_S3} --key ${DEST_FOLDER}/ca/index.json || not_exist=true
           if [ $not_exist ]; then
             echo "index.json does not exist"
           else
