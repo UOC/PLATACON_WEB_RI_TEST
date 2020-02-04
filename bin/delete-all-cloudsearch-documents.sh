@@ -6,6 +6,9 @@
 # Note: depends on the AWS CLI SDK being installed, as well as jq
 # For jq, see: https://stedolan.github.io/jq/ and https://jqplay.org/
 
+# bash ./bin/delete-all-cloudsearch-documents.sh --doc-domain https://doc-webri-2dz3yckt2f5cjq7hcsbois6nw4.eu-west-1.cloudsearch.amazonaws.com
+# aws cloudsearchdomain search --endpoint-url=https://doc-webri-2dz3yckt2f5cjq7hcsbois6nw4.eu-west-1.cloudsearch.amazonaws.com --query-parser=structured --search-query="matchall"
+
 if [[ ! $# -eq 2 || $1 != "--doc-domain" || ! $2 =~ ^https://.*$ ]]; then
    echo "Must define --doc-domain argument (e.g. --doc-domain https://somedomain.aws.com)";
    exit 1;

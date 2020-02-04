@@ -10,24 +10,31 @@ var fs = require('fs');
 var previousIndexList = JSON.parse(fs.readFileSync('./ca/previous-index.json', 'utf8')); //has been downloaded previously from S3 bucket
 var currentIndexList = JSON.parse(fs.readFileSync('./ca/index.json', 'utf8'));
 
-var toDeleleteIndexList = previousIndexList.filter(o1 => currentIndexList.filter(o2 => o2.id === o1.id).length === 0);
-console.log('There are ' + toDeleleteIndexList.length + ' items to delete');
 
+if(previousIndexList && currentIndexList) {
 
-var cloudSearchDeleteList = [];
-
-for(var item of toDeleleteIndexList){
-    cloudSearchDeleteList.push({
-        type: "delete",
-        id: item.id
-    })
+    var toDeleleteIndexList = previousIndexList.filter(o1 => currentIndexList.filter(o2 => o2.id === o1.id).length === 0);
+    console.log('There are ' + toDeleleteIndexList.length + ' items to delete');
+    
+    
+    var cloudSearchDeleteList = [];
+    
+    for(var item of toDeleleteIndexList){
+        cloudSearchDeleteList.push({
+            type: "delete",
+            id: item.id
+        })
+    }
+    
+    if(cloudSearchDeleteList.length) {
+        var json = JSON.stringify(cloudSearchDeleteList);
+        fs.writeFileSync('./ca/index-to-delete.json', json, 'utf8');
+    }
+    console.log('Finished!');
+    
+} else {
+    console.log('Either previous-index.json or index.json is missing. Skip.');
 }
-
-if(cloudSearchDeleteList.length) {
-    var json = JSON.stringify(cloudSearchDeleteList);
-    fs.writeFileSync('./ca/index-to-delete.json', json, 'utf8');
-}
-console.log('Finished!');
 
 
 

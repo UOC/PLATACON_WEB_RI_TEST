@@ -7,14 +7,14 @@ general:
   keywords:
     - value: hugo
     - value: serveis
-  nom_servei: delta
+  nom: delta
   sector: sector
   text_breu: delta text
   tipologia: Servei a l'empresa
   xarxes:
     - address: 'https://www.facebook.com/UOC.universitat'
       xarxa: facebook
-sobre_servei:
+about:
   - descripcio: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

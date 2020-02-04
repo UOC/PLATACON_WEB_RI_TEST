@@ -1,59 +1,41 @@
-{{ $.Scratch.Set "len" 0 }}
-{{ range $i, $s := .Site.AllPages }}
-	{{- if and ( or (eq $s.Type "solucio_tec") (eq $s.Type "patent") (eq $s.Type "servei") (eq $s.Type "spin_off") (eq $s.Type "noticies") (eq $s.Type "esdeveniments")) (ne $s.File.UniqueID "")}}
-	{{ $.Scratch.Set "len" (add ($.Scratch.Get "len") 1) }}
-	{{end}}
-{{end}}
-{{ $.Scratch.Set "counter" 0 }}
-[{{ range $i, $s := .Site.AllPages }}{{- if and ( or (eq $s.Type "solucio_tec") (eq $s.Type "patent") (eq $s.Type "servei") (eq $s.Type "spin_off")) (ne $s.File.UniqueID "")}}{
-	  {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+
+
+[
+	{{ $.Scratch.Set "counter" 0 }}
+	{{ range $i, $s := .Site.AllPages }}
+	{{- if and ( or (eq $s.Type "solucio_tec") (eq $s.Type "patent") (eq $s.Type "servei") (eq $s.Type "spin_off")) (ne $s.File.UniqueID "")}}
+		{{ if ne 0 ($.Scratch.Get "counter")}},{{end}}{		  
+		{{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
 		"type" : "add",
 		"id" : {{ $s.File.UniqueID | jsonify }},
 		"fields" : {
-			
-			
+
 			{{with $s.Params.language}}"idioma": {{. | jsonify}},{{end}}
 			{{with $s.Params.title}}"title": {{. | jsonify}},{{end}}
-			
 
-			{{if eq $s.Type "solucio_tec" }}
-				{{with $s.Params.general.nom_solucio}}"name" : {{ . | jsonify}},{{end}}
-			{{else if eq $s.Type "patent"}}
-				{{with $s.Params.general.nom_patent}}"name" : {{ . | jsonify}},{{end}}			
-			{{else if eq $s.Type "servei"}}
-				{{with $s.Params.general.nom_servei}}"name" : {{ . | jsonify}},{{end}}
-			{{else if eq $s.Type "spin_off"}}
-				{{with $s.Params.general.nom_spinoff}}"name" : {{ . | jsonify}},{{end}}
-			{{end}}
-
+			{{with $s.Params.general.nom}}"name" : {{ . | jsonify}},{{end}}
 			{{with $s.Params.general.text_breu}}"text_breu" : {{. | jsonify}},{{end}}
 			{{with $s.Params.general.slogan}}"eslogan" : {{. | jsonify}},{{end}}
 			{{with $s.Params.general.img_background}}"imatge_url" : {{. | jsonify}},{{end}}
 			{{with $s.Params.general.centre}}"centre" : {{. | jsonify}},{{end}}
 			{{with $s.Params.general.sector}}"sector" : {{. | jsonify}},{{end}}
 			{{with $s.Params.general.logo}}"logo_url": {{. | jsonify}},{{end}}
-			{{if false}}
-				{{with $s.Params.general.keywords}}
-					{{$keywords := slice ""}}
-					{{- range .}}
-						{{$keywords := slice .value }}
-					{{end}}
-					"keywords": {{$keywords | jsonify}},
+			{{with $s.Params.general.keywords}}
+				{{- range .}}
+					{{$.Scratch.Add "keywords" (slice .value)}}
 				{{end}}
+				"keywords": {{	$.Scratch.Get "keywords" | jsonify}},
 			{{end}}
-			{{if eq $s.Type "solucio_tec"}}
-				{{with $s.Params.sobre_tecnologia}}"sobre_tec_title": {{(index . 0).titol | jsonify}},{{end}}
-				{{with $s.Params.sobre_tecnologia}}"sobre_tec_descripcio": {{(index . 0).descripcio | jsonify}},{{end}}
-			{{else if eq $s.Type "patent"}}
-				{{with $s.Params.sobre_patent}} "sobre_pat_title": {{(index . 0).titol | jsonify}},{{end}}
-				{{with $s.Params.sobre_patent}} "sobre_pat_descripcio": {{(index . 0).descripcio | jsonify}},{{end}}
-			{{else if eq $s.Type "servei"}}
-				{{with $s.Params.sobre_servei}} "sobre_servei_title": {{(index . 0).titol | jsonify}},{{end}}
-				{{with $s.Params.sobre_servei}} "sobre_servei_descripcio": {{(index . 0).descripcio | jsonify}},{{end}}
-			{{else if eq $s.Type "spin_off"}}
-				{{with $s.Params.sobre_spinoff}} "sobre_spin_title": {{(index . 0).titol | jsonify}},{{end}}
-				{{with $s.Params.sobre_spinoff}} "sobre_spin_descripcio": {{(index . 0).descripcio | jsonify}},{{end}}
+			{{with $s.Params.general.xarxes}}
+				{{- range .}}
+					{{$.Scratch.Add "xarxes" (slice .address)}}
+				{{end}}
+				"xarxes_address": {{	$.Scratch.Get "xarxes" | jsonify}},
 			{{end}}
+
+			{{with $s.Params.about}}"about_title": {{(index . 0).titol | jsonify}},{{end}}
+			{{with $s.Params.about}}"about_descripcio": {{(index . 0).descripcio | jsonify}},{{end}}
+
 			
 			{{if or (eq $s.Type "solucio_tec") (eq $s.Type "pantent")}}
 				{{with $s.Params.aspectes_innovadors}}"asp_innov_title": {{(index . 0).titol | jsonify}},{{end}}
@@ -73,43 +55,35 @@
 				{{with $s.Params.clients}}"clients_title": {{(index . 0).titol | jsonify}},{{end}}
 				{{with $s.Params.clients}}"clients_descripcio": {{(index . 0).titol | jsonify}},{{end}}
 			{{end}}
-			{{if false}}
-				{{with $s.Params.grups_recerca}}
-					{{$grups := slice ""}}
-					{{- range .}}
-						{{$grups := slice .name}}
-					{{end}}
-					"grups": {{$grups | jsonify}},
-				{{end}}
 			
-				{{with $s.Params.investigadors}}
-					{{$investigadors := slice ""}}
-					{{- range . }}
-						{{$investigadors := $investigadors | append (slice .name)}}
-					{{end}}
-					{{if ( eq $investigadors ("") )}}"investigadors": {{$investigadors}} {{$investigadors | jsonify}},{{end}}
+			{{with $s.Params.grups_recerca}}
+				{{- range .}}
+					{{$.Scratch.Add "grups" (slice .name)}}
 				{{end}}
-				{{with $s.Params.contacte}}
-					{{$nom := slice ""}}
-					{{$email := slice ""}}
-					{{$address := slice ""}}
-					{{$phone := slice ""}}
-					{{- range .}}
-						{{$nom := $nom | append .text}}
-						{{$email := $email | append .email}}
-						{{$address := $address | append .address}}
-						{{$phone := $phone | append .telefon}}
-					{{end}}
-					{{- if ne $nom nil}}"contacts_name": {{$nom | jsonify}},{{end}}
-					{{- if ne $email nil}}"contacts_email": {{$email | jsonify}},{{end}}
-					{{- if ne $address nil}}"contacts_address": {{$address | jsonify}},{{end}}
-					{{- if ne $phone nil}}"contacts_phone": {{$phone | jsonify}},{{end}}
+				"grups": {{	$.Scratch.Get "grups" | jsonify}},
+			{{end}}
+			{{with $s.Params.investigadors}}
+				{{- range .}}
+					{{$.Scratch.Add "investigadors" (slice .name)}}
 				{{end}}
+				"investigadors": {{	$.Scratch.Get "investigadors" | jsonify}},
+			{{end}}
+			{{with $s.Params.contacte}}
+				{{- range .}}
+					{{$.Scratch.Add "contact_name" (slice .text)}}
+					{{$.Scratch.Add "contact_email" (slice .email)}}
+					{{$.Scratch.Add "contact_address" (slice .address)}}
+					{{$.Scratch.Add "contact_phone" (slice .telefon)}}
+				{{end}}
+				{{ if ne ($.Scratch.Get "contact_name") nil}}"contacts_name": {{$.Scratch.Get "contact_name" | jsonify}},{{end}}
+				{{ if ne ($.Scratch.Get "contact_email") nil}}"contacts_email": {{$.Scratch.Get "contact_email" | jsonify}},{{end}}
+				{{ if ne ($.Scratch.Get "contact_address") nil}}"contacts_address": {{$.Scratch.Get "contact_address" | jsonify}},{{end}}
+				{{ if ne ($.Scratch.Get "contact_phone") nil}}"contacts_phone": {{$.Scratch.Get "contact_phone" | jsonify}},{{end}}
 			{{end}}
 			"content" : "transfer",
 			"content_encoding" : "utf-8",
 			"content_type" : {{$s.Type | jsonify}},
-			"resourcename" : {{$s.Params.title | jsonify}},
 			"url" : {{ $s.Permalink | jsonify }}
 		}
-	}{{ if ne ($.Scratch.Get "len") ($.Scratch.Get "counter")}}{{end}}{{end}}{{end}}]
+	}{{end}}{{end}} 
+]

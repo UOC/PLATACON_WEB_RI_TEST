@@ -1,5 +1,5 @@
 [params]
-  apiPlatacon = "/api/search"
+  apiPlatacon = ""
   apiRI = "/api-ri/search"
   authProviderBaseUrl = ""
   githubRepo = "UOC/PLATACON_WEB_RI_PRE"

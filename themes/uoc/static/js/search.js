@@ -244,13 +244,12 @@ function buildQuery(searchParams){
 		if(searchParams.hasOwnProperty(key)) {
 			queryString += "&" + key + "=" +searchParams[key];
 		}	
-		
 	}
 	return  endpointURI+queryString;
 }
 
 function buildInnovaSolQuery(endpointUrl,searchParams){
-	var endpointURI =  endpointUrl;
+	var endpointURI =  endpointUrl+'/api-ri/search';
 	var queryString = "?idioma="+getCurrentLanguage();									//Mandatory
 	for (var key in searchParams) {
 		if(searchParams.hasOwnProperty(key) && (key != "target") && (searchParams[key]!="")) {
