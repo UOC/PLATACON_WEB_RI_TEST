@@ -21,8 +21,15 @@ phases:
       - hugo --environment ${ENV}
       - node ./bin/update-netlify-config.js
       - cd public/ && loose-envify ./admin/main.js > updated-main.js && mv updated-main.js main.js
-      - aws s3 cp s3://${BUCKET_S3}/${DEST_FOLDER}/ca/index.json ./ca/previous-index.json
-      - node ../bin/create-to-delete-index.js
+      - |
+          aws s3api head-object --bucket ${BUCKET_S3} --key '${DEST_FOLDER}/ca/index.json' || not_exist=true
+          if [ $not_exist ]; then
+            echo "index.json does not exist"
+          else
+            echo "index.json exists"
+            aws s3 cp s3://${BUCKET_S3}/${DEST_FOLDER}/ca/index.json ./ca/previous-index.json
+            node ../bin/create-to-delete-index.js
+          fi   
       - aws s3 cp index.html s3://${BUCKET_S3}/${DEST_FOLDER}/index.html --acl public-read
       - cd ./admin && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/admin --acl public-read --delete
       - cd ../ca && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/ca --acl public-read --delete
