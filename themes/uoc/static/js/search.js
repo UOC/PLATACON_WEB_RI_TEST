@@ -12,22 +12,22 @@ jQuery(document).ready(function ($) {
 	searchParams.target = 'cercadorFiltres';
 
     searchParams=parseQueryString(location.search);
-	console.log('searchParams', searchParams);
+	//console.log('searchParams', searchParams);
 	
 	switch(searchParams.target){
 		case 'cercadorFiltres':
-			console.log('Tab: cercadorFiltres');
+			//console.log('Tab: cercadorFiltres');
 			tab = 'cercadorFiltres';
 			querySearchEngine(searchParams);
 		break;
 		case 'cercadorSectors':
-			console.log('Tab: cercadorSectors');
+			//console.log('Tab: cercadorSectors');
 			$(".tab.cercadorSectors h3").click();
 			tab = 'cercadorSectors';			
 			queryInnovaSolSearchEngine(searchParams);
 		break;
 		case 'cercadorTextual':
-			console.log('Tab: cercadorTextual');
+			//console.log('Tab: cercadorTextual');
 			$(".tab.cercadorTextual h3").click();
 			tab = 'cercadorTextual';	
 			if(searchParams.s){
@@ -67,7 +67,7 @@ jQuery(document).ready(function ($) {
 	});
 	
 	$(".tab.cercadorTextual h3").click(function(e){	
-		console.log('Tab: cercadorTextual');
+		//console.log('Tab: cercadorTextual');
 		searchParams =	{};
 		$(".cercadorTextual input#search").val(' ');
 		tab = 'cercadorTextual';	
@@ -83,7 +83,7 @@ jQuery(document).ready(function ($) {
 	});	
 
 	$(".tab.cercadorSectors h3").click(function(e){	
-		console.log('Tab: cercadorSectors');
+		//console.log('Tab: cercadorSectors');
 		tab = 'cercadorSectors';	
 		searchParams =	{};
 		queryInnovaSolSearchEngine(searchParams);
@@ -127,7 +127,7 @@ function submitSearch(caller){
 		caller.preventDefault();	
 	}
 	getSearchFormValues();
-	console.log('submitSearch. Form values: ', searchParams);
+	//console.log('submitSearch. Form values: ', searchParams);
 
 	switch(tab){
 		case 'cercadorFiltres':
@@ -237,7 +237,7 @@ function getSearchFormValues(){
 							SEARCH METHODS								
 ***********************************************************************/
 function buildQuery(searchParams){
-	console.log("Building query")
+	//console.log("Building query")
 	var endpointURI = apiPlatacon + "/api/search";
 	var queryString = "?idioma="+getCurrentLanguage();									//Mandatory
 	for (var key in searchParams) {
@@ -280,10 +280,12 @@ function querySearchEngine(searchParams){
 	}).done(
 		function(data, returnCode, request){
 			if(data.hits.found == 0){
+				//console.log('querySearchEngine fitxa - zero hits found')
 				var dataPaginationFitxa = ["<p style='font-style:italic'>"+literals.noresults+"</p>"];
 				initPagination(dataPaginationFitxa, "fitxa");
 			} else {
 				var items=data.hits.hit;
+				//console.log('querySearchEngine fitxa - ' +data.hits.found + ' hits found')
 				items.sort((a,b) => (a.fields.nom_investigador.toLowerCase() > b.fields.nom_investigador.toLowerCase()) ? 1 : ((b.fields.nom_investigador.toLowerCase() > a.fields.nom_investigador.toLowerCase()) ? -1 : 0));
 				var dataPaginationFitxa = [];
 				for (var i = 0; i < items.length; i++) {
@@ -310,10 +312,12 @@ function querySearchEngine(searchParams){
 	}).done(
 		function(data){
 			if(data.hits.found == 0){
+				//console.log('querySearchEngine grup - zero hits found')
 				var dataPaginationGrup = ["<p style='font-style:italic'>"+literals.noresults+"</p>"];
 				initPagination(dataPaginationGrup, "grup");
 			} else {
 				var items=data.hits.hit;
+				//console.log('querySearchEngine grup - ' +data.hits.found + ' hits found')
 				items.sort((a,b) => (a.fields.nom_grup.toLowerCase() > b.fields.nom_grup.toLowerCase()) ? 1 : ((b.fields.nom_grup.toLowerCase() > a.fields.nom_grup.toLowerCase()) ? -1 : 0));
 				var dataPaginationGrup = [];
 				for (var i = 0; i < items.length; i++) {
@@ -331,11 +335,11 @@ function queryInnovaSolSearchEngine(searchParams){
 
     var innovaSolURL = buildInnovaSolQuery(apiRI,searchParams);
 	var solucionsTecResults = $(".solucio_tecResults_"+tab+" .list-solucio_tec");
-	var patentsResults = $(".patentsResults_"+tab+" .list-patent");
+	var patentsResults = $(".patentResults_"+tab+" .list-patent");
 	var serveisResults = $(" .serveiResults_"+tab+" .list-servei");
 	var spinResults = $(" .spin_offResults_"+tab+" .list-spin_off");
 	var r=[solucionsTecResults,patentsResults,serveisResults,spinResults];
-    console.log('querying...SolucionsInnovadores',innovaSolURL);
+    //console.log('querying...SolucionsInnovadores',innovaSolURL);
     
 	$.ajax({
 		url: innovaSolURL,
@@ -359,7 +363,7 @@ function queryInnovaSolSearchEngine(searchParams){
                 initPagination(dataPaginationGrup, "spin_off");
 			} else {                
                 var items=data.hits.hit;
-                console.log(items, 'items')
+                //console.log(items, 'items')
                 var lista=["solucio_tec","patent","servei","spin_off"];
                 var items=data.hits.hit;
 				//items.sort((a,b) => (a.fields.nom_grup.toLowerCase() > b.fields.nom_grup.toLowerCase()) ? 1 : ((b.fields.nom_grup.toLowerCase() > a.fields.nom_grup.toLowerCase()) ? -1 : 0));
@@ -379,22 +383,22 @@ function queryInnovaSolSearchEngine(searchParams){
                     }
                     content_type=content_type.replace(/["']/g, "");
                     if(lista.includes(content_type) && (idioma_contingut==idioma)){
-                        console.log('item compleix condicio',items[i]);
+                        //console.log('item compleix condicio',items[i]);
                         switch(lista.indexOf(content_type)){
                             case 0:
-                                console.log('Afegint solució tecnològica');
+                                //console.log('Afegint solució tecnològica');
                                 dataPaginationGrupSolTec.push(getResultMarkup(items[i], "solucio_tec",i, $('.solucionsTecResults .js-changeVist').hasClass("change-to-list")));
                                 break;
                             case 1:
-                                console.log('Afegint patent');                        
+                                //console.log('Afegint patent');                        
                                 dataPaginationGrupPatent.push(getResultMarkup(items[i], "patent",i, $('.solucionsPatentsResults .js-changeVist').hasClass("change-to-list")));
                                 break;
                             case 2:
-                                console.log('Afegint servei');                        
+                                //console.log('Afegint servei');                        
                                 dataPaginationGrupServei.push(getResultMarkup(items[i], "servei",i, $('.solucionsServeissResults .js-changeVist').hasClass("change-to-list")));
                                 break;
                             case 3:
-                                console.log('Afegint spin off');                        
+                                //console.log('Afegint spin off');                        
                                 dataPaginationGrupSpinOff.push(getResultMarkup(items[i], "spin_off",i, $('.spinResults .js-changeVist').hasClass("change-to-list")));
                             default:
                                 break;
@@ -402,13 +406,13 @@ function queryInnovaSolSearchEngine(searchParams){
                     }
                 }
 				
-				console.log('Calling initPagination')
+				//console.log('Calling initPagination')
                 if(dataPaginationGrupSolTec.length>0) {
 					initPagination(dataPaginationGrupSolTec, "solucio_tec");
-					console.log('dataPaginationGrupSolTec > 0')
+					//console.log('dataPaginationGrupSolTec > 0')
 				}
                 else { 
-					console.log('dataPaginationGrupSolTec is 0')
+					//console.log('dataPaginationGrupSolTec is 0')
 					initPagination(dataPaginationGrup, "solucio_tec");
 				}
                 
@@ -431,7 +435,7 @@ function queryInnovaSolSearchEngine(searchParams){
 }
 
 function getResultMarkup(item, content_type, idx, listView){
-    console.log("Results as list? "+listView)
+    //console.log("Results as list? "+listView)
 	var markup='';
 	if(listView){
 		markup='<div class="col-xs-12" id="'+content_type+'Result_'+idx+'">';
@@ -488,8 +492,10 @@ function initPagination(dataset, content_type) {
             $('.'+content_type+'Results_' + tab +' .list-'+content_type).html(html);
 	    },
 	    afterRender: function(isForced) {
+			//console.log('Entering initPagination afterRender');
 	    	if($('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-page').length > 1){
 				//console.log('There is more than one match: '+ $('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-page').length)
+				//console.log('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-page')
 		    	$('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-page').addClass("col-md-1");
 		    	$('.pagination-'+content_type+'-container_' + tab +' .paginationjs-ellipsis').addClass("col-md-1");
 				$('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-previous').addClass("col-md-2");
@@ -502,8 +508,10 @@ function initPagination(dataset, content_type) {
 				$('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-page').last().removeClass("col-md-1");
 				cols++;
 				$('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-page').last().addClass("col-md-"+cols);
-				$('.pagination-'+content_type+' .pagination-'+content_type+'-container_' + tab).show();
+				$('.pagination-'+content_type+'_' + tab +' .pagination-'+content_type+'-container_' + tab).show();
 	    	} else {
+				//console.log('One or zero matches: '+ $('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-page').length)
+				//console.log('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-page')
 	    		$('.pagination-'+content_type+'_' + tab +' .pagination-'+content_type+'-container_' + tab).hide();
 	    	}
 	    	$(".pagination-"+content_type+">div>div").removeClass("col-md-4");

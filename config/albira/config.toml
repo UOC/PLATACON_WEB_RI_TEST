@@ -1,3 +1,3 @@
 [params]
-  apiRI = "/api-ri/search"
+  apiRI = ""
   authProviderBaseUrl = ""
