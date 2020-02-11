@@ -3,8 +3,8 @@
 <section class="info-general">
     <div class="row">
         <div class="col-xs-12">
-            <div class="page-title title-border-green">
-                <h2>{{with .Params.general.nom}}{{.}}{{end}}</h2>
+            <div class="h1 page-title title-border-green">
+                {{with .Params.general.nom}}{{.}}{{end}}
             </div>
         </div>
 
@@ -14,11 +14,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-lg-6 col-xs-6">
-                            <h2>{{with .Params.general.text_breu}}{{.}}{{end}}</h2>
+                            {{with .Params.general.text_breu}}<h2>{{.}}</h2>{{end}}
                         </div>
                         <div class="col-md-12"></div>
                         <div class="col-md-8 col-lg-8 col-xs-8">
-                            <h5>{{with .Params.general.slogan}}{{.}}{{end}}</h5>
+                            {{with .Params.general.slogan}}<h5>{{.}}</h5>{{end}}
                         </div>
                         <div data-dropdown="" class="dropdown">
                             <button data-dropdown-trigger="" aria-expanded="false" class="btn btn--primary">
@@ -67,7 +67,7 @@
                                 
                                 <div class="img--y col-xs-12 col-md-12">
                                     <div class="img-wpr img-wpr--horizontal">
-                                        <img class="img-wpr__cover" src="{{.}}"/>
+                                        <img class="img-wpr__cover" src="{{.}}" alt="Logo" />
                                     </div>
                                 </div>
                                 
@@ -80,15 +80,15 @@
 
                                 <div class="col-xs-12">
 
-                                    <div data-dropdown="" aria-label="" class="dropdown">
+                                    <div data-dropdown="" aria-label="keywords" class="dropdown">
                                         <h5 data-dropdown-trigger="" class="dropdown-trigger" aria-expanded="false" aria-controls="dropdown__content1">{{ T "uoc_ri_keywords" }}
                                             <span aria-hidden="true" class="icon icon--arrow-down icon--after is-active-hidden float-right"></span>
                                             <span aria-hidden="true" class="icon icon--arrow-up icon--after is-active-visible float-right"></span>
                                         </h5>
-                                        <ul role="menu" id="dropdown__content1" data-dropdown-content="" class="dropdown__content dropdown__list">
+                                        <ul role="list" id="dropdown__content1" data-dropdown-content="" class="dropdown__content dropdown__list">
                                             
                                             {{range .}}
-                                            <li role="menuitem" data-dropdown-content="" class="dropdown__item">
+                                            <li role="listitem" data-dropdown-content="" class="dropdown__item">
                                                 <p class="text-small">
                                                     {{.value}}
                                                 </p>
@@ -193,26 +193,7 @@
                             </p>
                         </div>
                         <div id="collapseAbout" class="contentCollapse show">
-                            <div class="card-in-acordeon">
-                                <div class="wrap-richText">
-                                    {{ safeHTML (markdownify (index . 0).descripcio) }}
-                                </div>
-                            </div>
-                            
-                            <div class="card-in-acordeon">
-                                
-                                <h4>{{ T "uoc_ri_docs" }}</h4>
-                                {{ range $d := (index . 0).docs_rels }}
-                                <div class="row" >
-                                    {{$doc := split $d.file "/"}}
-                                    <a class="icon icon--material-pdf icon--header float-right" href="{{ $d.file }}" aria-hidden="true"></a>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
-                                   
-                                </div>
-                                {{end}}
-                                
-                                
-                            </div>
+                            {{partial "subsection.html" .}}
                         </div>
                     </div> 
                 </div>
@@ -231,24 +212,7 @@
                             </p>
                         </div>
                         <div id="collapseInnova" class="contentCollapse show">
-                            <div class="card-in-acordeon">
-                                <div class="wrap-richText">
-                                   {{ safeHTML (markdownify (index . 0).descripcio) }}
-                                </div>
-                            </div>
-                            <div class="card-in-acordeon">
-                                <h4>{{ T "uoc_ri_docs" }}</h4>
-                                {{ range $d := (index . 0).docs_rels }}
-                                <div class="row" >
-                                   
-                                    {{$doc := split $d.file "/"}}
-                                    <a class="icon icon--material-pdf icon--header float-right" href="{{ $d.file }}" aria-hidden="true"></a>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
-                                   
-                                </div>
-                                {{end}}
-                                
-                            </div>
+                            {{partial "subsection.html" .}}
                         </div>
                     </div>
                 </div>
@@ -267,24 +231,7 @@
                             </p>
                         </div>
                         <div id="collapseApps" class="contentCollapse show">
-                            <div class="card-in-acordeon">
-                                <div class="wrap-richText">
-                                    {{ safeHTML (markdownify (index . 0).descripcio) }}
-                                </div>
-                            </div>
-                            <div class="card-in-acordeon">
-                                <h4>{{ T "uoc_ri_docs" }}</h4>
-                                {{ range $d := (index . 0).docs_rels }}
-                                <div class="row" >
-                                   
-                                    {{$doc := split $d.file "/"}}
-                                    <a class="icon icon--material-pdf icon--header float-right" href="{{ $d.file }}" aria-hidden="true"></a>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
-                                   
-                                </div>
-                                {{end}}
-                                
-                            </div>
+                            {{partial "subsection.html" .}}
                         </div>
                     </div>
                 </div>
@@ -303,25 +250,7 @@
                             </p>
                         </div>
                         <div id="collapsePS" class="contentCollapse show">
-                            <div class="card-in-acordeon">
-                                <div class="wrap-richText">
-                                    {{ safeHTML (markdownify (index . 0).descripcio) }}
-                                </div>
-                            </div>
-                            <div class="card-in-acordeon">
-                                
-                                <h4>{{ T "uoc_ri_docs" }}</h4>
-                                {{ range $d := (index . 0).docs_rels }}
-                                <div class="row" >
-                                    {{$doc := split $d.file "/"}}
-                                    <a class="icon icon--material-pdf icon--header float-right" href="{{ $d.file }}" aria-hidden="true"></a>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
-                                   
-                                </div>
-                                {{end}}
-                                
-                                
-                            </div>
+                            {{partial "subsection.html" .}}
                         </div>
                     </div>
                 </div>
@@ -340,32 +269,14 @@
                             </p>
                         </div>
                         <div id="collapseClients" class="contentCollapse show">
-                            <div class="card-in-acordeon">
-                                <div class="wrap-richText">
-                                    {{ safeHTML (markdownify (index . 0).descripcio) }}
-                                </div>
-                            </div>
-                            <div class="card-in-acordeon">
-                                
-                                <h4>{{ T "uoc_ri_docs" }}</h4>
-                                {{ range $d := (index . 0).docs_rels }}
-                                <div class="row" >
-                                    {{$doc := split $d.file "/"}}
-                                    <a class="icon icon--material-pdf icon--header float-right" href="{{ $d.file }}" aria-hidden="true"></a>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{index $doc 2}}</p>
-                                   
-                                </div>
-                                {{end}}
-                                
-                                
-                            </div>
+                            {{partial "subsection.html" .}}
                         </div>
                     </div>
                 </div>
             </div>
             {{end}}     
             {{with .Params.casos_exit}}  
-            <div id="tab-content-casos" data-tab-content="" role="tabpanel" aria-labelledby="casos"
+            <div id="tab-content-casos" data-tab-content="" role="tabpanel" aria-labelledby="tab-casos"
                 aria-hidden="true" class="tab-content">
                 <div class="js-collapse-group">
                     <div class="collapse">
@@ -384,13 +295,17 @@
                                     <ul class="list--unstyled">
                                         <li><h2>{{ .titol }}</h2></li>
                                         {{if isset . "img" }}
-                                        <li><img src="{{.img}}"></li>
+                                        <li><img src="{{.img}}" alt="{{ .titlol }} img"></li>
                                         {{end}}
                                         {{if isset . "descripcio" }}
                                         <li><div class="wrap-richText">{{ safeHTML (markdownify .descripcio) }}</div></li>
                                         {{end}}
                                         {{if isset . "url_success" }}
-                                        <li><a href="{{.url_success}}"><h3>{{T "uoc_ri_casos_link"}}</h3></a></li>
+                                        <li><a href="{{.url_success}}" target="_blank" title=''>
+                                            <span class="icon icon--access">
+                                                <span class="h3">{{T "uoc_ri_casos_link"}}</span>
+                                            </span>
+                                        </a></li>
                                         {{end}}
                                     </ul>
                                 </div>

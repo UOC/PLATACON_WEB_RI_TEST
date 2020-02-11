@@ -1,0 +1,26 @@
+<div class="card-in-acordeon">
+    <div class="wrap-richText">
+        {{ safeHTML (markdownify (index . 0).descripcio) }}
+    </div>
+</div>
+
+<div class="card-in-acordeon">
+    
+    <h4>{{ T "uoc_ri_docs" }}</h4>
+    {{$scratch := newScratch}}
+    {{$scratch.Set "idx" 1}}
+    {{ range $d := (index . 0).docs_rels }}
+    <div class="row" >
+        {{$doc := split $d.file "/"}}
+        
+        <a href="{{ $d.file }}" target="_blank" title='{{ T "uoc_ri_docs" }} ({{$scratch.Get "idx"}})'>
+            <span class="icon icon--material-pdf">
+                <span class="h5">{{index $doc 2}}</span>
+            </span>
+        </a>
+    </div>
+        {{$scratch.Set "idx" (add ($scratch.Get "idx") 1)}}
+    {{end}}
+    
+    
+</div>

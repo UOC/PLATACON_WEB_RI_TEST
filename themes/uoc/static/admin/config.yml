@@ -2441,7 +2441,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"]}
               - {label: "Url", name: address, widget: string}
-          - {label: "Link extern", name: link_extern, widget: string}
+          - {label: "Link extern", name: link_extern, widget: string, required: false}
     
       - label: Descripció
         name: descripcio 
@@ -2477,7 +2477,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"]}
               - {label: "Url", name: address, widget: string}
-          - {label: "Link extern", name: link_extern, widget: string}
+          - {label: "Link extern", name: link_extern, widget: string, required: false}
     
       - label: Descripció
         name: descripcio 
@@ -2513,7 +2513,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"]}
               - {label: "Url", name: address, widget: string}
-          - {label: "Link extern", name: link_extern, widget: string}
+          - {label: "Link extern", name: link_extern, widget: string, required: false}
     
       - label: Descripció
         name: descripcio 

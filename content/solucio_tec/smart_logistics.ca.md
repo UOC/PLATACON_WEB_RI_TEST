@@ -10,16 +10,7 @@ general:
     Smart Logistics: Integració d’algorismes metaheurístics amb resultats de
     simulació per a generar solucions pseudoòptimes en la presa de decisions en
     problemes complexos en condicions d’incertesa
-  text_breu: >-
-    Smart Logistics aplica la tecnologia simheuristics, una família d’algorismes
-    híbrids que combinen la simulació amb tècniques metaheurístiques, per tal de
-    resoldre eficientment problemes complexos en la presa de decisions en
-    condicions d’incertesa.  Amb la integració de la gran capacitat
-    d’optimització d’algorismes metaheurístics i la flexibilitat de simulació
-    s’aconsegueix una metodologia molt potent, flexible i relativament fàcil
-    d’implementar que, després d’una sintonització correcta, pot generar
-    solucions pseudoòptimes per a aplicacions de la vida real i per a problemes
-    de gran escala en escenaris d’incertesa.
+  text_breu: ''
 aspectes_innovadors:
   - descripcio: >-
       L’aplicació de la tecnologia permet obtenir solucions que proporcionin:
