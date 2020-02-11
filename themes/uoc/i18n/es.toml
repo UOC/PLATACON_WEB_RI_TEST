@@ -53,27 +53,49 @@
 [uoc_grup_footer_ri_collab] other = "Règim de col·laboració" 
 [uoc_grup_footer_ri_researchers] other = "Personal investigador" 
 [uoc_grup_footer_ri_visitants] other = "Professors visitants" 
+[uoc_grup_footer_ri_org_href] other = "https://research.uoc.edu/portal/es/ri/investigadors/organitzacio/index.html" 
+[uoc_grup_footer_ri_transfer_href] other = "https://research.uoc.edu/portal/es/ri/colaboracio/transferencia/index.html" 
+[uoc_grup_footer_ri_collab_href] other = "https://research.uoc.edu/portal/es/ri/colaboracio/regims-colaboracio/index.html" 
+[uoc_grup_footer_ri_researchers_href] other = "" 
+[uoc_grup_footer_ri_visitants_href] other = "https://research.uoc.edu/portal/es/ri/investigadors/professor-visitant/index.html" 
 
 [uoc_grup_footer_explore] other = "Explora" 
-[uoc_grup_footer_explore_days] other = "Jornadas"
+[uoc_grup_footer_explore_days] other = "Difusión y jornadas"
+[uoc_grup_footer_explore_hubbik] other = "Hubbik"
 [uoc_grup_footer_explore_prod] other = "Producció científica"
 [uoc_grup_footer_explore_projects] other = "Projectes d'R+I"
 [uoc_grup_footer_explore_memos] other = "Memòries d'R+I"
 [uoc_grup_footer_explore_catalog] other = "Catàleg d'oferta científico técnica" 
+
+[uoc_grup_footer_explore_days_href] other = "https://research.uoc.edu/opencms_portal2/opencms/ES/ri/agenda/list.html"
+[uoc_grup_footer_explore_hubbik_href] other = "https://hubbik.uoc.edu/es"
+[uoc_grup_footer_explore_prod_href] other = "https://research.uoc.edu/opencms_portal2/opencms/ES/ri/projectes-publicacions/publicacions/list.html"
+[uoc_grup_footer_explore_projects_href] other = "https://research.uoc.edu/opencms_portal2/opencms/ES/ri/projectes-publicacions/projectes/list.html"
+[uoc_grup_footer_explore_memos_href] other = "https://research.uoc.edu/opencms_portal2/opencms/ES/ri/projectes-publicacions/memories/list.html"
+[uoc_grup_footer_explore_catalog_href] other = "http://openaccess.uoc.edu/webapps/o2/?locale=es"
 
 [uoc_grup_footer_support] other = "Suport activitat R&I" 
 [uoc_grup_footer_support_library] other = "Biblioteca de recerca" 
 [uoc_grup_footer_support_vigilance] other = "Vigilància tecnològica" 
 [uoc_grup_footer_support_intranet] other = "La intranet de l'OSRT" 
 
+[uoc_grup_footer_support_library_href] other = "http://biblioteca.uoc.edu/es/recerca" 
+[uoc_grup_footer_support_vigilance_href] other = "https://research.uoc.edu/portal/es/ri/activitat-rdi/vigilancia-tecnologica/index.html" 
+[uoc_grup_footer_support_intranet_href] other = "" 
+
 [uoc_grup_footer_osrt] other = "L'OSRT" 
 [uoc_grup_footer_osrt_contact] other = "Contacta'ns" 
-[uoc_grup_footer_osrt_team] other = "Equip" 
+[uoc_grup_footer_osrt_team] other = "Equipo" 
+[uoc_grup_footer_osrt_team_href] other = "https://research.uoc.edu/portal/es/ri/activitat-rdi/equip/index.html" 
 
 [uoc_grup_footer_about] other = "Sobre el web" 
 [uoc_grup_footer_about_rss] other = "RSS" 
-[uoc_grup_footer_about_legal] other = "Avís legal" 
-[uoc_grup_footer_about_access] other = "Accessibilitat" 
+[uoc_grup_footer_about_legal] other = "Aviso legal" 
+[uoc_grup_footer_about_access] other = "Accessibilidad" 
+[uoc_grup_footer_about_hr] other = "HR Excellence in Research" 
+[uoc_grup_footer_about_legal_href] other = "https://www.uoc.edu/portal/es/_peu/avis_legal/index.html" 
+[uoc_grup_footer_about_access_href] other = "https://www.uoc.edu/portal/es/_peu/sobre_el_web/index.html" 
+[uoc_grup_footer_about_hr_href] other = "https://research.uoc.edu/portal/es/ri/activitat-rdi/hrs4r/index.html" 
 
 [uoc_grup_footer_social] other = "Xarxes socials (ca)" 
 [uoc_grup_footer_social_more] other = "Més" 
@@ -99,11 +121,12 @@
 [uoc_ri_cercador_cercaper] other = "Busca por:"
 [uoc_ri_cercador_cercapersector] other = "Busca por sector productivo:"
 [uoc_ri_cercador_esborrafiltres] other = "Borrar filtros"
-[uoc_ri_cercador_cercar] other = "Buscar"
+[uoc_ri_cercador_cercar] other = "Palabras de búsqueda"
 
 [uoc_ri_cercador_filtres_ambitsespecialitzacio] other = "Ámbitos de especialización"
 [uoc_ri_cercador_filtres_ods] other = "Objetivos ODS"
 [uoc_ri_cercador_filtres_unesco] other = "Código UNESCO"
+[uoc_ri_cercador_filtres_unesco_placeholder] other = "Buscar por código"
 [uoc_ri_cercador_filtres_centre] other = "Selecciona el centro:"
 [uoc_ri_cercador_filtres_visualitzacio] other = "Visualiza los resultados por:"
 [uoc_ri_cercador_filtres_sectors_productius] other = "Sectores productivos"
@@ -148,6 +171,15 @@
 [uoc_contact_send] other = "Enviar la consulta"
 [uoc_contact_selecciona] other = "Selecciona"
 
+[uoc_pagination_next] other = "Siguiente"
+[uoc_pagination_prev] other = "Anterior"
+
+[uoc_search_noresults] other = "No se han encontrado resultados con los filtros utilizados."
+[uoc_search_connerror] other = "No se ha podido comunicar con el servicio de búsqueda."
+[uoc_language_change] other = "Cambio de idioma"
+[uoc_language_close] other = "Cerrar idioma (x)"
+[uoc_mainmenu_label] other = "Menú principal"
+
 [uoc_ri_tipologia] other = 'Tipología'
 [uoc_ri_sector] other = 'Sector'
 [uoc_ri_centre] other = 'Centro'
@@ -177,6 +209,5 @@
 
 [uoc_ri_esdeveniment_On] other = "Dónde"
 [uoc_ri_esdeveniment_Quan] other = "Cuándo"
-
 [uoc_ri_casos_link] other = "Enlace al caso de éxito"
 

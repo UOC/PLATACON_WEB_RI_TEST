@@ -22,10 +22,10 @@
 
             {{ range first 1 (where (where .Site.Pages.ByDate ".Params.destacat" true) ".Params.language" .Site.Language.Lang)}}
             <div class=" col-md-9 col-xs-9">
-                <a href="{{.Permalink}}" class="card-absolute-link"></a>
+                <a href="{{.Permalink}}" class="">
                 <div class="bg-simple img-wpr img-wpr--horizontal img--tint">
                     {{ with .Params.general.img}}<img src="{{.}}" class="img-wpr__cover" >{{end}}
-                    <div class="img-wpr__contents">
+                    <div class="img-wpr__contents_no-bg">
                         <div class="row">
                             <div class="col-md-7">
                                 <p class="h3 inverse">{{ with .Params.general.titol}}{{.}}{{end}}</p>
@@ -33,13 +33,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="img-wpr__contents">
+                    <div class="img-wpr__contents_no-bg"  style="bottom: .5rem;">
                         <div class="row">
                             <div class="float-right p-right-x text-small inverse">{{if eq .Type "noticies" }}{{ T "uoc_ri_noticia" }}{{else}}{{ T "uoc_ri_esdeveniment" }}{{end}}
                             </div>
                         </div>
                     </div>
-                </div>
+                </div></a>
             </div>
             {{end}}
 

@@ -24,13 +24,13 @@
 				{{- range .}}
 					{{$.Scratch.Add "keywords" (slice .value)}}
 				{{end}}
-				"keywords": {{	$.Scratch.Get "keywords" | jsonify}},
+				"keywords": {{$.Scratch.Get "keywords" | jsonify}},
 			{{end}}
 			{{with $s.Params.general.xarxes}}
 				{{- range .}}
 					{{$.Scratch.Add "xarxes" (slice .address)}}
 				{{end}}
-				"xarxes_address": {{	$.Scratch.Get "xarxes" | jsonify}},
+				"xarxes_address": {{$.Scratch.Get "xarxes" | jsonify}},
 			{{end}}
 
 			{{with $s.Params.about}}"about_title": {{(index . 0).titol | jsonify}},{{end}}

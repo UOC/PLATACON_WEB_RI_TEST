@@ -167,3 +167,11 @@
     bottom: -4px;
     right: 0;
 }
+.img-wpr__contents_no-bg {
+    position: absolute;
+    padding: .5rem;
+    z-index: 11;
+    right: .5rem;
+    left: 1.8rem;
+    min-height: initial;
+}

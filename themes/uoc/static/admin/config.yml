@@ -140,7 +140,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: object
         fields: 
           - {label: "Títol", name: nom, widget: string, required: true}
-          - {label: "Text", name: text_breu, widget: string, required: false}
+          - {label: "Subtítol", name: text_breu, widget: string, required: false}
           - {label: "Eslogan", name: slogan, widget: string, required: false}
           - {label: "Img Background", name: "img_background", widget: image, required: true}
           - label: "Sector"
@@ -170,7 +170,7 @@ collections: # A list of collections the CMS should be able to edit
             name: xarxes
             widget: list
             fields:
-              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"], required: true}
               - {label: "Url", name: address, widget: string, required: true}
       - label: Sobre la Tecnología
         name: about
@@ -290,7 +290,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: object
         fields: 
           - {label: "Títol", name: nom, widget: string, required: true}
-          - {label: "Text", name: text_breu, widget: string, required: false}
+          - {label: "Subtítol", name: text_breu, widget: string, required: false}
           - {label: "Eslogan", name: slogan, widget: string, required: false}
           - {label: "Img Background", name: "img_background", widget: image, required: true}
           - label: "Sector"
@@ -320,7 +320,7 @@ collections: # A list of collections the CMS should be able to edit
             name: xarxes
             widget: list
             fields:
-              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"], required: true}
               - {label: "Url", name: address, widget: string, required: true}
       - label: Sobre la Tecnología
         name: about 
@@ -440,7 +440,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: object
         fields: 
           - {label: "Títol", name: nom, widget: string, required: true}
-          - {label: "Text", name: text_breu, widget: string, required: false}
+          - {label: "Subtítol", name: text_breu, widget: string, required: false}
           - {label: "Eslogan", name: slogan, widget: string, required: false}
           - {label: "Img Background", name: "img_background", widget: image, required: true}
           - label: "Sector"
@@ -470,7 +470,7 @@ collections: # A list of collections the CMS should be able to edit
             name: xarxes
             widget: list
             fields:
-              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"], required: true}
               - {label: "Url", name: address, widget: string, required: true}
       - label: Sobre la Tecnología
         name: about 
@@ -590,7 +590,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: object
         fields: 
           - {label: "Títol", name: nom, widget: string, required: true}
-          - {label: "Text", name: text_breu, widget: string}
+          - {label: "Subtítol", name: text_breu, widget: string}
           - {label: "Eslògan", name: slogan, widget: string}
           - {label: "Img Fons", name: "img_background", widget: image, required: true}
           - label: "Sector"
@@ -620,7 +620,7 @@ collections: # A list of collections the CMS should be able to edit
             name: xarxes
             widget: list
             fields:
-              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"], required: true}
               - {label: "Url", name: address, widget: string, required: true}
       - label: Sobre la Patent
         name: about  
@@ -740,7 +740,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: object
         fields: 
           - {label: "Títol", name: nom, widget: string, required: true}
-          - {label: "Text", name: text_breu, widget: string}
+          - {label: "Subtítol", name: text_breu, widget: string}
           - {label: "Eslògan", name: slogan, widget: string}
           - {label: "Img Fons", name: "img_background", widget: image, required: true}
           - label: "Sector"
@@ -770,7 +770,7 @@ collections: # A list of collections the CMS should be able to edit
             name: xarxes
             widget: list
             fields:
-              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"], required: true}
               - {label: "Url", name: address, widget: string, required: true}
       - label: Sobre la Patent
         name: about  
@@ -890,7 +890,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: object
         fields: 
           - {label: "Títol", name: nom, widget: string, required: true}
-          - {label: "Text", name: text_breu, widget: string}
+          - {label: "Subtítol", name: text_breu, widget: string}
           - {label: "Eslògan", name: slogan, widget: string}
           - {label: "Img Fons", name: "img_background", widget: image, required: true}
           - label: "Sector"
@@ -920,7 +920,7 @@ collections: # A list of collections the CMS should be able to edit
             name: xarxes
             widget: list
             fields:
-              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"], required: true}
               - {label: "Url", name: address, widget: string, required: true}
       - label: Sobre la Patent
         name: about  
@@ -1040,7 +1040,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: object
         fields: 
           - {label: "Títol", name: nom, widget: string, required: true}
-          - {label: "Text", name: text_breu, widget: string}
+          - {label: "Subtítol", name: text_breu, widget: string}
           - {label: "Img Fons", name: "img_background", widget: image, required: true}
           - label: "Sector"
             name: sector
@@ -1068,7 +1068,7 @@ collections: # A list of collections the CMS should be able to edit
             name: xarxes
             widget: list
             fields:
-              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"], required: true}
               - {label: "Url", name: address, widget: string, required: true}
       - label: Sobre el Servei
         name: about  
@@ -1161,7 +1161,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: object
         fields: 
           - {label: "Títol", name: nom, widget: string, required: true}
-          - {label: "Text", name: text_breu, widget: string}
+          - {label: "Subtítol", name: text_breu, widget: string}
           - {label: "Img Fons", name: "img_background", widget: image, required: true}
           - label: "Sector"
             name: sector
@@ -1189,7 +1189,7 @@ collections: # A list of collections the CMS should be able to edit
             name: xarxes
             widget: list
             fields:
-              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"], required: true}
               - {label: "Url", name: address, widget: string, required: true}
       - label: Sobre el Servei
         name: about  
@@ -1282,7 +1282,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: object
         fields: 
           - {label: "Títol", name: nom, widget: string, required: true}
-          - {label: "Text", name: text_breu, widget: string}
+          - {label: "Subtítol", name: text_breu, widget: string}
           - {label: "Img Fons", name: "img_background", widget: image, required: true}
           - label: "Sector"
             name: sector
@@ -1310,7 +1310,7 @@ collections: # A list of collections the CMS should be able to edit
             name: xarxes
             widget: list
             fields:
-              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Name", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"], required: true}
               - {label: "Url", name: address, widget: string, required: true}
       - label: Sobre el Servei
         name: about  
@@ -1403,7 +1403,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: object
         fields: 
           - {label: "Títol", name: nom, widget: string, required: true}
-          - {label: "Text", name: text_breu, widget: string}
+          - {label: "Subtítol", name: text_breu, widget: string}
           - {label: "Eslògan", name: slogan, widget: string}
           - {label: "Img Fons", name: "img_background", widget: image, required: true}
           - label: "Sector"
@@ -1426,7 +1426,7 @@ collections: # A list of collections the CMS should be able to edit
             required: false
             widget: list
             fields:
-              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"], required: true}
               - {label: "Url", name: address, widget: string, required: true}
       - label: Sobre la Spin-Off
         name: about  
@@ -1555,7 +1555,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: object
         fields: 
           - {label: "Títol", name: nom, widget: string, required: true}
-          - {label: "Text", name: text_breu, widget: string}
+          - {label: "Subtítol", name: text_breu, widget: string}
           - {label: "Eslògan", name: slogan, widget: string}
           - {label: "Img Fons", name: "img_background", widget: image, required: true}
           - label: "Sector"
@@ -1578,7 +1578,7 @@ collections: # A list of collections the CMS should be able to edit
             required: false
             widget: list
             fields:
-              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"], required: true}
               - {label: "Url", name: address, widget: string, required: true}
       - label: Sobre la Spin-Off
         name: about  
@@ -1707,7 +1707,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: object
         fields: 
           - {label: "Títol", name: nom, widget: string, required: true}
-          - {label: "Text", name: text_breu, widget: string}
+          - {label: "Subtítol", name: text_breu, widget: string}
           - {label: "Eslògan", name: slogan, widget: string}
           - {label: "Img Fons", name: "img_background", widget: image, required: true}
           - label: "Sector"
@@ -1730,7 +1730,7 @@ collections: # A list of collections the CMS should be able to edit
             required: false
             widget: list
             fields:
-              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"], required: true}
+              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"], required: true}
               - {label: "Url", name: address, widget: string, required: true}
       - label: Sobre la Spin-Off
         name: about  
@@ -2439,7 +2439,7 @@ collections: # A list of collections the CMS should be able to edit
             name: xarxes
             widget: list
             fields:
-              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
+              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"]}
               - {label: "Url", name: address, widget: string}
           - {label: "Link extern", name: link_extern, widget: string}
     
@@ -2475,7 +2475,7 @@ collections: # A list of collections the CMS should be able to edit
             name: xarxes
             widget: list
             fields:
-              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
+              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"]}
               - {label: "Url", name: address, widget: string}
           - {label: "Link extern", name: link_extern, widget: string}
     
@@ -2511,7 +2511,7 @@ collections: # A list of collections the CMS should be able to edit
             name: xarxes
             widget: list
             fields:
-              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
+              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"]}
               - {label: "Url", name: address, widget: string}
           - {label: "Link extern", name: link_extern, widget: string}
     
@@ -2547,7 +2547,7 @@ collections: # A list of collections the CMS should be able to edit
             name: xarxes
             widget: list
             fields:
-              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
+              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"]}
               - {label: "Url", name: address, widget: string}
   - name: "esdeveniment_es"
     label: "Esdeveniments [es]"
@@ -2574,7 +2574,7 @@ collections: # A list of collections the CMS should be able to edit
             name: xarxes
             widget: list
             fields:
-              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
+              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"]}
               - {label: "Url", name: address, widget: string}
   - name: "esdeveniment_en"
     label: "Esdeveniments [en]"
@@ -2601,5 +2601,5 @@ collections: # A list of collections the CMS should be able to edit
             name: xarxes
             widget: list
             fields:
-              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram"]}
+              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"]}
               - {label: "Url", name: address, widget: string}

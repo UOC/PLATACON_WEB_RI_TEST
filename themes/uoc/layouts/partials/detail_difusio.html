@@ -48,6 +48,10 @@
                             <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Instagram']);" href="{{.address}}" target="_blank"	
                                     title='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}' aria-label='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-instagram"> </span></a>
                                 {{end}}
+                                {{if eq .xarxa "web"}}        
+                                    <a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Web']);" href="{{.address}}" target="_blank"	
+                                    title='Web {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Web {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--material-web"> </span></a>
+                                {{end}}
                             {{end}}
                            
                         </div>
