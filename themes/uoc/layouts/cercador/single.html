@@ -43,9 +43,9 @@
 								</div>
 								<div class="col-xs-6">
 									<div class="list-vist">
-										<ul>
-											<li class="vist-column js-Column active"><a href=""><span class="icon icon--list-full"></span></a></li>
-											<li class="vist-list js-List"><a href=""><span class="icon icon--list-simple"></span></a></li>
+										<ul role="list">
+											<li class="vist-column js-Column active" role="listitem"><a><span class="icon icon--list-full"></a></span></li>
+											<li class="vist-list js-List" role="listitem"><a><span class="icon icon--list-simple"></span></a></li>
 										</ul>
 									</div>
 								</div>
@@ -53,7 +53,7 @@
 									<div class="collapse-filter">
 										<form action="">
 										  <fieldset>
-											<p>{{ T "uoc_ri_cercador_cercaper" }}<span class="filters-mobile"><a href="">{{ T "uoc_ri_cercador_esborrafiltres" }} </a><span class="icon icon--arrow-down js-displayMobile"></span></span></p>
+											<h3>{{ T "uoc_ri_cercador_cercaper" }}<span class="filters-mobile"><a href="">{{ T "uoc_ri_cercador_esborrafiltres" }} </a><span class="icon icon--arrow-down js-displayMobile"></span></span></h3>
 											<div class="collapse">
 												<div class="head-collapse js-collapse js-collapseAll">
 													<p>
@@ -128,10 +128,11 @@
 										</fieldset>
 										<div class="general-filter centre">
 											<form action="">
-												<p>{{ T "uoc_ri_cercador_filtres_centre"}}</p>
+												<h4>{{ T "uoc_ri_cercador_filtres_centre"}}</h4>
 												{{ range $index, $element := .Params.centre }}
 												<div class="wrap-input">
 													<fieldset>
+														<legend class="hidden">"{{$element.display_name}}"</legend>
 														<input  aria-label="{{$element.display_name}}" type="checkbox" id="center_{{$index}}" value="{{$element.value}}">
 														<label aria-label="{{$element.display_name}}" for="center_{{$index}}">{{$element.display_name}}</label>
 													</fieldset>
@@ -141,7 +142,8 @@
 										</div>
 										<div class="general-filter visualitzacio">
 											<fieldset>
-												<p>{{ T "uoc_ri_cercador_filtres_visualitzacio"}}</p>
+												<legend class="hidden">"{{ T "uoc_ri_cercador_filtres_visualitzacio"}}" </legend>
+												<h4>{{ T "uoc_ri_cercador_filtres_visualitzacio"}}</h4>
 												<div class="wrap-input">
 													<input  aria-label="Grups de recerca" type="checkbox" id="visual_1" value="grup">
 													<label aria-label="Grups de recerca" for="visual_1">{{ T "uoc_ri_cercador_grups"}}</label>
@@ -228,25 +230,25 @@
 								</div>
 								<div class="col-xs-6">
 									<div class="list-vist">
-										<ul>
-											<li class="vist-column js-Column active"><a href=""><span class="icon icon--list-full"></span></a></li>
-											<li class="vist-list js-List"><a href=""><span class="icon icon--list-simple"></span></a></li>
+										<ul role="list">
+											<li class="vist-column js-Column active" role="listitem"><a title="{{ T "uoc_ri_cercador_llista_simple"}}"><span class="icon icon--list-full"></span></a></li>
+											<li class="vist-list js-List" role="listitem"><a title="{{ T "uoc_ri_cercador_llista_bloc"}}"><span class="icon icon--list-simple"></span></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="col-xs-12 col-lg-3">
 									<div class="collapse-filter">
 										<form action="">
-											<p>{{ T "uoc_ri_cercador_cercaper" }}<span class="filters-mobile"><a href="">{{ T "uoc_ri_cercador_esborrafiltres" }} </a><span class="icon icon--arrow-down js-displayMobile"></span></span></p>
+											<h3>{{ T "uoc_ri_cercador_cercaper" }}<span class="filters-mobile"><a href="">{{ T "uoc_ri_cercador_esborrafiltres" }} </a><span class="icon icon--arrow-down js-displayMobile"></span></span></h3>
 											<div class="collapse">
 												<div class="head-collapse js-collapse js-collapseAll">
 													<p>
-														<a href="#collapse-sector_productiu" aria-expanded="false" class="js-collapseClick">
+														<a href="#collapse-sector_productiu" aria-expanded="true" class="js-collapseClick">
 															<span class="icon icon--arrow-down"></span>{{ T "uoc_ri_cercador_filtres_sectors_productius" }}
 														</a>
 													</p>
 												</div>
-												<div id="collapse-sector_productiu" class="contentCollapse">
+												<div id="collapse-sector_productiu" class="contentCollapse show">
 													{{ range $index, $el := .Params.sector_productiu }}
 													<div class="wrap-input">
 														<fieldset>
@@ -260,10 +262,11 @@
 										</form>
 										<div class="general-filter centre">
 											<form action="">
-												<p>{{ T "uoc_ri_cercador_filtres_centre"}}</p>
+												<h4>{{ T "uoc_ri_cercador_filtres_centre"}}</h4>
 												{{ range $index, $element := .Params.centre }}
 												<div class="wrap-input">
 													<fieldset>
+														<legend class="hidden">"{{$element.display_name}}"</legend>
 														<input  aria-label="{{$element.display_name}}" type="checkbox" id="center_sectors_{{$index}}" value="{{$element.value}}">
 														<label aria-label="{{$element.display_name}}" for="center_sectors_{{$index}}">{{$element.display_name}}</label>
 													</fieldset>
@@ -272,32 +275,34 @@
 											</form>										</div>
 										<div class="general-filter visualitzacio">
 											<form action="">
-												<p>{{ T "uoc_ri_cercador_filtres_visualitzacio"}}</p>
+												<h4>{{ T "uoc_ri_cercador_filtres_visualitzacio"}}</h4>
 												<div class="wrap-input">
 													<fieldset>
+														<legend class="hidden">"{{ T "uoc_ri_cercador_solucions" }}"</legend>
 														<input role="sols_innov" aria-label='{{ T "uoc_ri_cercador_solucions" }}' type="checkbox" id="visual_sols_innov_2" value="solucions">
 														<label aria-label='{{ T "uoc_ri_cercador_solucions" }}' for="visual_sols_innov_2">{{ T "uoc_ri_cercador_solucions"}}</label>
 													</fieldset>
 												</div>
 												<div class="wrap-input">
 													<fieldset>
+														<legend class="hidden">"{{ T "uoc_ri_cercador_spin_off"}}"</legend>
 														<input role="spin_offs" aria-label='{{ T "uoc_ri_cercador_spin_off"}}' type="checkbox" id="visual_spin_off_2" value="spin">
 														<label aria-label='{{ T "uoc_ri_cercador_spin_off"}}' for="visual_spin_off_2">{{ T "uoc_ri_cercador_spin_off"}}</label>
 													</fieldset>
 												</div>
 											</form>
-											<p class="wrap-btn"><a href="#" title="Enlace siguiente" aria-label="Cercar" rel="next" class="btn btn--primary uoc_submitSearch_cercadorSectors">{{ T "uoc_ri_cercador_cercar"}}</a></p>
+											<h3 class="wrap-btn"><a href="#" title="Enlace siguiente" aria-label="Cercar" rel="next" class="btn btn--primary uoc_submitSearch_cercadorSectors">{{ T "uoc_ri_cercador_cercar"}}</a></h3>
 										</div>
 									</div>
 								</div>
 								<div class="col-xs-12 col-lg-9">
 									<div class="collapse solucions results">
 										<div class="head-collapse js-collapse">
-											<p><a href="#collapse_solucions" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions"}}<span class="icon icon--arrow-down"></span></a></p>
+											<h2><a href="#collapse_solucions" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions"}}<span class="icon icon--arrow-down"></span></a></h2>
 										</div>
 										<div id="collapse_solucions" class="contentCollapse show">
 											<div class="head-collapse subCollapse js-collapse">
-												<p><a href="#collapse_solucions_tec" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_tec"}}<span class="icon icon--arrow-down"></span></a></p>
+												<h3><a href="#collapse_solucions_tec" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_tec"}}<span class="icon icon--arrow-down"></span></a></h3>
 											</div>
 											<div id="collapse_solucions_tec" class="contentCollapse show ajaxLoading solucio_tecResults_cercadorSectors">
 												<div class="card-in-acordeon js-changeVist">
@@ -323,7 +328,7 @@
 												</div>
 											</div>								
 											<div class="head-collapse subCollapse js-collapse">
-												<p><a href="#collapse_solucions_patents" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_patents"}}<span class="icon icon--arrow-down"></span></a></p>
+												<h3><a href="#collapse_solucions_patents" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_patents"}}<span class="icon icon--arrow-down"></span></a></h3>
 											</div>
 											<div id="collapse_solucions_patents" class="contentCollapse show ajaxLoading patentResults_cercadorSectors">
 												<div class="card-in-acordeon js-changeVist">
@@ -350,7 +355,7 @@
 											</div>										
 											
 											<div class="head-collapse subCollapse js-collapse">
-												<p><a href="#collapse_solucions_serveis" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_serveis"}}<span class="icon icon--arrow-down"></span></a></p>
+												<h3><a href="#collapse_solucions_serveis" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_serveis"}}<span class="icon icon--arrow-down"></span></a></h3>
 											</div>
 											<div id="collapse_solucions_serveis" class="contentCollapse show ajaxLoading serveiResults_cercadorSectors">
 												<div class="card-in-acordeon js-changeVist">
@@ -379,8 +384,8 @@
 									</div>
 									<div class="collapse spin results">
 										<div class="head-collapse js-collapse">
-											<p><a href="#collapse_spin" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_spin_off"}}<span class="icon icon--arrow-down"></span></a></p>
-											<p class="result"></p>
+											<h3><a href="#collapse_spin" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_spin_off"}}<span class="icon icon--arrow-down"></span></a></h3>
+
 										</div>
 										<div id="collapse_spin" class="contentCollapse show ajaxLoading spin_offResults_cercadorSectors">
 											<div class="card-in-acordeon js-changeVist">
@@ -426,15 +431,17 @@
 							<div class="collapse-filter">						  
 								<div class="general-filter visualitzacio">
 									<form action="">
-										<p>{{ T "uoc_ri_cercador_filtres_visualitzacio"}}</p>
+										<h4>{{ T "uoc_ri_cercador_filtres_visualitzacio"}}</h4>
 										<div class="wrap-input">
 											<fieldset>
+												<legend class="hidden"> {{ T "uoc_ri_cercador_grups"}} </legend>
 												<input role="group" aria-label="Grups de recerca" type="checkbox" id="visual_grup_3" value="grup">
 												<label aria-label="Grups de recerca" for="visual_grup_3">{{ T "uoc_ri_cercador_grups"}}</label>
 											</fieldset>
 										</div>
 										<div class="wrap-input">
 											<fieldset>
+												<legend class="hidden">"{{ T "uoc_ri_cercador_investigadors"}}"</legend>
 												<input role="group" aria-label="Investigadors" type="checkbox" id="visual_investigador_3" value="fitxa">
 												<label aria-label="Investigadors" for="visual_investigador_3">{{ T "uoc_ri_cercador_investigadors"}}</label>
 											</fieldset>
@@ -521,7 +528,7 @@
 								</div>
 								<div id="collapse_solucions" class="contentCollapse show">
 									<div class="head-collapse subCollapse js-collapse">
-										<p><a href="#collapse_solucions_tec" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_tec"}}<span class="icon icon--arrow-down"></span></a></p>
+										<h3><a href="#collapse_solucions_tec" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_tec"}}<span class="icon icon--arrow-down"></span></a></h3>
 									</div>
 									<div id="collapse_solucions_tec" class="contentCollapse show ajaxLoading solucio_tecResults_cercadorTextual">
 										<div class="card-in-acordeon js-changeVist">
@@ -547,7 +554,7 @@
 										</div>
 									</div>								
 									<div class="head-collapse subCollapse js-collapse">
-										<p><a href="#collapse_solucions_patents" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_patents"}}<span class="icon icon--arrow-down"></span></a></p>
+										<h3><a href="#collapse_solucions_patents" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_patents"}}<span class="icon icon--arrow-down"></span></a></h3>
 									</div>
 									<div id="collapse_solucions_patents" class="contentCollapse show ajaxLoading patentResults_cercadorTextual">
 										<div class="card-in-acordeon js-changeVist">
@@ -574,7 +581,7 @@
 									</div>										
 									
 									<div class="head-collapse subCollapse js-collapse">
-										<p><a href="#collapse_solucions_serveis" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_serveis"}}<span class="icon icon--arrow-down"></span></a></p>
+										<h3><a href="#collapse_solucions_serveis" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_solucions_serveis"}}<span class="icon icon--arrow-down"></span></a></h3>
 									</div>
 									<div id="collapse_solucions_serveis" class="contentCollapse show ajaxLoading serveiResults_cercadorTextual">
 										<div class="card-in-acordeon js-changeVist">
@@ -603,8 +610,8 @@
 							</div>
 							<div class="collapse spin results">
 								<div class="head-collapse js-collapse">
-									<p><a href="#collapse_spin" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_spin_off"}}<span class="icon icon--arrow-down"></span></a></p>
-									<p class="result"></p>
+									<h3><a href="#collapse_spin" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_cercador_spin_off"}}<span class="icon icon--arrow-down"></span></a></h3>
+
 								</div>
 								<div id="collapse_spin" class="contentCollapse show ajaxLoading spin_offResults_cercadorTextual">
 									<div class="card-in-acordeon js-changeVist">

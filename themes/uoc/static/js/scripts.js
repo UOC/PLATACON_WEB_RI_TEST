@@ -206,4 +206,14 @@ jQuery(document).ready(function ($) {
             $(this).parent().parent().parent().find('input').prop("checked", false);
         })
     }
+    if(window.localStorage && window.localStorage["netlify-cms-user"]){
+        var _href = $('#time-stamp').attr("href");
+        var date = new Date();
+        var timestamp = date.getTime(); 
+        console.log("LOGAT")
+        $('.js-CMS').addClass('show');   
+        $('#time-stamp').attr("href", _href+"?preview="+timestamp);
+    }else{
+        console.log("NO LOGAT")
+    }
 });

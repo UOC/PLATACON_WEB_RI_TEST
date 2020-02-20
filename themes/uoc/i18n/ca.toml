@@ -62,7 +62,7 @@
 
 
 [uoc_grup_footer_explore] other = "Explora" 
-[uoc_grup_footer_explore_days] other = "Jornadas"
+[uoc_grup_footer_explore_days] other = "Difusió i Jornades"
 [uoc_grup_footer_explore_prod] other = "Producció científica"
 [uoc_grup_footer_explore_projects] other = "Projectes d'R+I"
 [uoc_grup_footer_explore_memos] other = "Memòries d'R+I"
@@ -121,7 +121,7 @@
 [uoc_ri_cercador_cercaper] other = "Cerca per:"
 [uoc_ri_cercador_cercapersector] other = "Cerca per sector productiu:"
 [uoc_ri_cercador_esborrafiltres] other = "Esborrar filtres"
-[uoc_ri_cercador_cercar] other = "Paraules a cercar"
+[uoc_ri_cercador_cercar] other = "Cercar"
 
 [uoc_ri_cercador_filtres_ambitsespecialitzacio] other = "Àmbits d'especialització"
 [uoc_ri_cercador_filtres_ods] other = "Objectius ODS"
@@ -210,3 +210,6 @@
 [uoc_ri_noticia] other = "#Notícia"
 [uoc_ri_esdeveniment] other = "#Esdeveniment"
 [uoc_ri_casos_link] other = "Enllaç al cas d'èxit"
+
+[uoc_ri_cercador_llista_simple] other = "Vista de llista"
+[uoc_ri_cercador_llista_bloc] other = "Vista de bloc"

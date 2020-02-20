@@ -16,17 +16,17 @@ jQuery(document).ready(function ($) {
 function getResultMarkup(difusio){
 
     var label;
-    if(difusio.type == 'noticies') label = noticiaLabel;
-    else if(difusio.type == 'esdeveniments') label = esdevenimentLabel;
+    if(difusio.type == 'noticia') label = noticiaLabel;
+    else if(difusio.type == 'esdeveniment') label = esdevenimentLabel;
 
     var markup='<div class="col-xs-6 col-md-3" role="article" data-id="">';
-    markup+='<a href="' + difusio.link + '" class="card-absolute-link"></a>';
-    markup+='<div class="card" role="region" aria-label="Texto descriptivo" >';
-    markup+='<div class="card__image">';
-    if(difusio.img) markup+='<img src="'+ difusio.img + '" alt="Texto alternativo">';
-    markup+='</div>';
-    markup+='<div class="card__contents" >';
-    if(difusio.titol) markup+='<p class="text-big text font-alternate">' + difusio.titol+ '</p>'
+    	markup+='<a href="' + difusio.link + '" class="card-absolute-link" aria-label="link"></a>';
+    		markup+='<div class="card" role="region" aria-label="Texto descriptivo" >';
+    		markup+='<div class="card__image">';
+    			if(difusio.img) markup+='<img src="'+ difusio.img + '" alt="">';
+    			markup+='</div>';
+    	markup+='<div class="card__contents" >';
+    if(difusio.titol) markup+='<h3 class="h5 text font-alternate">' + difusio.titol+ '</h3>'
     markup+='</div><div class="card__footer"><div class="float-left p-left-x  icon icon--external-link"></div>';
     markup+='<div class="float-right p-right-x">'+ label +'</div>';
     markup+='</div></div>';

@@ -36,7 +36,7 @@
 		{"display_name" : "IN3", "value" : "IN3"},
 		{"display_name" : "e-Health Center", "value" : "e-Health Center"},
 		{"display_name" : "e-Learn Center", "value" : "e-Learn Center"},
-		{"display_name" : "Estudis", "value" : "Estudis"}
+		{"display_name" : "Estuids", "value" : "Estuids"}
 	],
 	"sector_productiu" : [
         {"display_name" : "All", "value" : ""},

@@ -454,15 +454,14 @@ function getResultMarkup(item, content_type, idx, listView){
     } else if(content_type == "grup"){
 			markup+="<a href='"+item.fields.url+"'>"
 			markup+='<div id="'+item.id+'" aria-label="region" class="card card-noimg"><div class="card__contents">';
-			markup+='<p class="title">'+item.fields.nom_grup+'</p><p>'+item.fields.descripcio+'</p>';
+			markup+='<h4 class="title">'+item.fields.nom_grup+'</h4><p>'+item.fields.descripcio+'</p>';
             markup+='</div></div></a>';
             
     } else if(content_type == "patent" || content_type == "servei" || content_type == "solucio_tec" || content_type == "spin_off") { // sols_tec, patent, servei, spin-off print view
 
 			markup+="<a href='"+item.fields.url+"'>"
 			markup+='<div id="'+item.id+'" aria-label="region" class="card card-noimg"><div class="card__contents">';
-			markup+='<p class="title">'+item.fields.name;
-			if(item.fields.descripcio) markup+='</p><p>'+item.fields.descripcio+'</p>';
+			markup+='<h4 class="title">'+item.fields.name+'</h4><p>'+item.fields.text_breu+'</p>';
 			markup+='</div></div></a>';
 	}
 	

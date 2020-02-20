@@ -1,26 +1,33 @@
+{{with (index . 0).video}}
+<br>
+<div class="embed-container">
+    <iframe src="https://www.youtube.com/embed/{{.}}" title='Youtube' allowfullscreen></iframe>
+</div>
+{{end}}
 <div class="card-in-acordeon">
     <div class="wrap-richText">
         {{ safeHTML (markdownify (index . 0).descripcio) }}
     </div>
 </div>
-
-<div class="card-in-acordeon">
+{{with (index . 0).docs_rels}}
+<div class="card-in-acordeon" aria-hidden="true">
     
-    <h4>{{ T "uoc_ri_docs" }}</h4>
+    <h4 class = "h4">{{ T "uoc_ri_docs" }}</h4>
     {{$scratch := newScratch}}
     {{$scratch.Set "idx" 1}}
-    {{ range $d := (index . 0).docs_rels }}
+    {{ range $d := . }}
     <div class="row" >
         {{$doc := split $d.file "/"}}
+        {{$stat := os.Stat "static/img/informe_disseny_web_r_i.pdf"}}
         
-        <a href="{{ $d.file }}" target="_blank" title='{{ T "uoc_ri_docs" }} ({{$scratch.Get "idx"}})'>
-            <span class="icon icon--material-pdf">
-                <span class="h5">{{index $doc 2}}</span>
-            </span>
+        <a id="docs" href="{{ $d.file }}" target="_blank" title='{{ T "uoc_ri_docs" }} ({{$scratch.Get "idx"}})'>
+            <span class="icon icon--material-pdf" ></span>
+            <!--File size in MB with 3 dec-->
+            <span class="h5">{{index $doc 2}} ({{div (math.Round (div $stat.Size 1048.576)) 1000}} MB)</span>
         </a>
     </div>
         {{$scratch.Set "idx" (add ($scratch.Get "idx") 1)}}
     {{end}}
     
     
-</div>
+</div>{{end}}

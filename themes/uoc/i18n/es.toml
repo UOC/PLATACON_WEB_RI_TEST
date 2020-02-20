@@ -121,7 +121,7 @@
 [uoc_ri_cercador_cercaper] other = "Busca por:"
 [uoc_ri_cercador_cercapersector] other = "Busca por sector productivo:"
 [uoc_ri_cercador_esborrafiltres] other = "Borrar filtros"
-[uoc_ri_cercador_cercar] other = "Palabras de búsqueda"
+[uoc_ri_cercador_cercar] other = "Buscar"
 
 [uoc_ri_cercador_filtres_ambitsespecialitzacio] other = "Ámbitos de especialización"
 [uoc_ri_cercador_filtres_ods] other = "Objetivos ODS"
@@ -211,3 +211,5 @@
 [uoc_ri_esdeveniment_Quan] other = "Cuándo"
 [uoc_ri_casos_link] other = "Enlace al caso de éxito"
 
+[uoc_ri_cercador_llista_simple] other = "Vista de lista"
+[uoc_ri_cercador_llista_bloc] other = "Vista de bloque"

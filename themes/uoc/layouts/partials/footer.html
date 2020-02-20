@@ -1,4 +1,32 @@
 <footer class="green-footer">
+	
+
+	{{ $url := (split .Permalink "/") }}
+	{{ $baseurl := printf "%s" .Site.BaseURL }}
+	{{$n := 0}}
+	{{$local := false}}
+	<!-- A localhost el permalink canvia -->
+	{{if (eq (index (split $baseurl ":") 0) "//localhost")}}
+		{{$local = true}}
+		{{$n = 2}}	
+	{{end}}
+	{{$lang := index $url (add 1 $n)}}
+	{{$collection := index $url (add 2 $n)}}
+	{{$file := index (split (index $url (add 3 $n) ) ".") 0}}
+	<div class="js-CMS float-right">
+		<div class="ruler ruler--ri"></div>
+		<div class="row">
+			<a id="time-stamp" href="{{.Permalink}}" > 
+				<span class="icon icon--lab"></span>
+				<span class="h5">Preview</span>
+			</a>
+			&nbsp;&nbsp;&nbsp;
+			<a href="{{$baseurl}}admin/{{if not $local}}index.html{{end}}#/collections/{{$collection}}_{{$lang}}/entries/{{$file}}.{{$lang}}" target="_blank"> 
+				<span class="icon icon--edit-pencil"></span>
+				<span class="h5">Editar {{$file}} amb Netlify CMS</span>
+			</a>
+		</div>
+	</div>
 	<div class="page-footer-container footer-brand">
 		<div class="col-xs-12 col-clear">
 			<div class="footer-bg footer-bg-left"></div>
@@ -45,7 +73,7 @@
 						<div id="footer-5" class="hidden-xs hidden-sm">
 							<ul class="footer-list">
 								<li><a onclick="" target="_self" title="" href='{{ T "uoc_grup_footer_explore_days_href"}}'>{{ T "uoc_grup_footer_explore_days"}}</a></li>
-								<li><a onclick="" target="_self" title="" href='{{ T "uoc_grup_footer_explore_hubbik_href"}}'>{{ T "uoc_grup_footer_explore_hubbik"}}</a></li>
+								<li><a onclick="" target="_self" title="" href='{{ T "uoc_grup_footer_explore_hubbik_href"}}'>Hubbik</a></li>
 								<li><a onclick="" target="_self" title="" href='{{ T "uoc_grup_footer_explore_prod_href"}}'>{{ T "uoc_grup_footer_explore_prod"}}</a></li>
 								<li><a onclick="" target="_self" title="" href='{{ T "uoc_grup_footer_explore_projects_href"}}'>{{ T "uoc_grup_footer_explore_projects"}}</a></li>
 								<li><a onclick="" target="_self" title="" href='{{ T "uoc_grup_footer_explore_memos_href"}}'>{{ T "uoc_grup_footer_explore_memos"}}</a></li>
@@ -118,7 +146,7 @@
 
 								<li><a onclick="" target="_self" title="Graus" href='{{ T "uoc_grup_footer_about_legal_href"}}'>{{ T "uoc_grup_footer_about_legal"}}</a></li>
 								<li><a onclick="" target="_self" title="Graus" href='{{ T "uoc_grup_footer_about_access_href"}}'>{{ T "uoc_grup_footer_about_access"}}</a></li>
-								<li><a onclick="" target="_self" title="Graus" href='{{ T "uoc_grup_footer_about_hr_href"}}'><img src='/img/hr_exellence.png' alt='{{ T "uoc_grup_footer_about_hr"}}'/>{{ T "uoc_grup_footer_about_hr"}}</a></li>
+								<li><a onclick="" target="_self" title="Graus" href='{{ T "uoc_grup_footer_about_hr_href"}}'><img src='/img/hr_exellence.png' alt='' aria-hidden="true"/>{{ T "uoc_grup_footer_about_hr"}}</a></li>
 							</ul>
 						</div>
 					</div>
@@ -155,7 +183,7 @@
 									<ul class="social-links ruler ruler--thin ruler--secondary">
 										<li><a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Facebook']);" href="http://www.facebook.com/UOC.universitat" target="_blank"
 												title='Facebook {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Facebook {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-facebook" aria-hidden="true"> </span></a></li>
-										<li><a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Twitter']);"	href="http://twitter.com/UOCuniversitat" target="_blank"
+										<li><a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'Twitter']);"	href="https//twitter.com/UOC_research" target="_blank"
 												title='Twitter {{ T "uoc_grup_footer_links_new_window"}}' aria-label='Twitter {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-twitter" aria-hidden="true"> </span></a></li>
 										<li><a onclick="_gaq.push(['_trackEvent','Footer','{{ T "uoc_grup_footer_social"}}', 'LinkedIn']);" href="https://www.linkedin.com/school/uoc/" target="_blank"	
 												title='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}' aria-label='LinkedIn {{ T "uoc_grup_footer_links_new_window"}}'><span class="icon icon--social-linkedin" aria-hidden="true"> </span></a></li>
@@ -178,21 +206,22 @@
 					</div>
 				</div>
 			</div>
+
 			<nav aria-label="Marques UOC"
 				class="col-xs-offset-3 col-xs-6 col-clear nav-brands-container nav-brands-reverse col-clear nav-brands-desktop">
 				<ul class="nav-brands">
 					<li class="col-xs-12 col-md-2 selected"><a tabindex="0"	onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc"}}']);" href="https://www.uoc.edu/portal/ca/index.html" 
-						target="_self" title='{{ T "uoc"}}' class="w100-inline-block ruler ruler--secondary"><span class="brand-text">{{ T "uoc"}}</span></a></li>
+						target="_self" class="w100-inline-block ruler ruler--secondary"><span class="brand-text">{{ T "uoc"}}</span></a></li>
 					<li class="col-xs-12 col-md-2"><a tabindex="0" onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc_title_ri"}}']);"	href="https://www.uoc.edu/portal/ca/ri/index.html" 
-						target="_self" title='{{ T "uoc_title_ri"}}' class="w100-inline-block ruler ruler--ri"><span class="brand-text">{{ T "uoc_title_ri"}}</span></a></li>
+						target="_self" class="w100-inline-block ruler ruler--ri"><span class="brand-text">{{ T "uoc_title_ri"}}</span></a></li>
 					<li class="col-xs-12 col-md-2"><a tabindex="0" onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc_x"}}']);" href="//x.uoc.edu/?ac=2535&amp;src=2535&amp;utm_source=LinkWebUOC&amp;utm_medium=Referrals&amp;utm_campaign=WebUOC&amp;utm_term&amp;utm_content=LinkEstudis"
-						target="_self" title='{{ T "uoc_x"}}' class="w100-inline-block ruler ruler--x"><span class="brand-text">{{ T "uoc_x"}}</span></a></li>
+						target="_self" class="w100-inline-block ruler ruler--x"><span class="brand-text">{{ T "uoc_x"}}</span></a></li>
 					<li class="col-xs-12 col-md-2"><a tabindex="0" onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc_corp"}}']);" href="https://www.uoc.edu/portal/ca/corporate/index.html" 
-						target="_self" title='{{ T "uoc_corp"}}' class="w100-inline-block ruler ruler--corporate"><span class="brand-text">{{ T "uoc_corp"}}</span></a></li>
+						target="_self" class="w100-inline-block ruler ruler--corporate"><span class="brand-text">{{ T "uoc_corp"}}</span></a></li>
 					<li class="col-xs-12 col-md-2"><a tabindex="0" onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc_alumni"}}']);" href="https://alumni.uoc.edu/opencms_alumni/opencms/ca/index.html" 
-						target="_self" title='{{ T "uoc_alumni"}}' class="w100-inline-block ruler ruler--alumni"><span class="brand-text">{{ T "uoc_alumni"}}</span></a></li>
+						target="_self" class="w100-inline-block ruler ruler--alumni"><span class="brand-text">{{ T "uoc_alumni"}}</span></a></li>
 					<li class="col-xs-12 col-md-2"><a tabindex="0" onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc_media"}}']);" href="https://www.uoc.edu/portal/ca/media/index.html" 
-						target="_self" title='{{ T "uoc_media"}}' class="w100-inline-block ruler ruler--media"><span class="brand-text">{{ T "uoc_media"}}</span></a></li>
+						target="_self" class="w100-inline-block ruler ruler--media"><span class="brand-text">{{ T "uoc_media"}}</span></a></li>
 				</ul>
 			</nav>
 		</footer>

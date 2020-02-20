@@ -175,3 +175,11 @@
     left: 1.8rem;
     min-height: initial;
 }
+
+.js-CMS{
+    display: none; 
+}
+
+.js-CMS.show{
+    display: block; 
+}

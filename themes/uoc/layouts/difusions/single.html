@@ -24,18 +24,17 @@
             <div class=" col-md-9 col-xs-9">
                 <a href="{{.Permalink}}" class="">
                 <div class="bg-simple img-wpr img-wpr--horizontal img--tint">
-                    {{ with .Params.general.img}}<img src="{{.}}" class="img-wpr__cover" >{{end}}
+                    {{ with .Params.general.img}}<img src="{{.}}" class="img-wpr__cover" alt="">{{end}}
                     <div class="img-wpr__contents_no-bg">
                         <div class="row">
                             <div class="col-md-7">
-                                <p class="h3 inverse">{{ with .Params.general.titol}}{{.}}{{end}}</p>
-                                {{ with .Params.general.entrada}}<p class="h4 inverse">{{.}}</p>{{end}}
+                                <h3 class=" inverse">{{ with .Params.general.titol}}{{.}}{{end}}</h3>
                             </div>
                         </div>
                     </div>
                     <div class="img-wpr__contents_no-bg"  style="bottom: .5rem;">
                         <div class="row">
-                            <div class="float-right p-right-x text-small inverse">{{if eq .Type "noticies" }}{{ T "uoc_ri_noticia" }}{{else}}{{ T "uoc_ri_esdeveniment" }}{{end}}
+                            <div class="float-right p-right-x text-small inverse">{{if eq .Type "noticia" }}{{ T "uoc_ri_noticia" }}{{else}}{{ T "uoc_ri_esdeveniment" }}{{end}}
                             </div>
                         </div>
                     </div>
@@ -51,12 +50,12 @@
                         <img src="{{with .Params.general.img}}{{.}}{{end}}" alt="{{with .Params.general.titol}}{{.}}{{end}}">
                     </div>
                     <div class="card__contents" >
-                        <p class="text-big text font-alternate">{{.Params.general.titol}}</p>
+                        <h3 class="h5 text font-alternate">{{.Params.general.titol}}</h3>
                         {{ with .Params.general.entrada}}<p class="text-small text font-alternate"><blockquote class="pullquote">{{.}}</blockquote></p>{{end}}
                     </div>
                     <div class="card__footer">
                         <div class="float-left p-left-x  icon icon--external-link"></div>
-                        <div class="float-right p-right-x">{{if eq .Type "noticies" }}{{ T "uoc_ri_noticia" }}{{else}}{{ T "uoc_ri_esdeveniment" }}{{end}}</div>
+                        <div class="float-right p-right-x">{{if eq .Type "noticia" }}{{ T "uoc_ri_noticia" }}{{else}}{{ T "uoc_ri_esdeveniment" }}{{end}}</div>
                     </div>
                 </div>
             </div>
@@ -65,10 +64,9 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="text-align-center text-small" style="margin-top:50px;margin-bottom:50px;">
-                        <h4><strong>{{ T "uoc_ri_difusio_novetats" }}</strong></h3>
-                            <p><a id="st1" href="" class="text-align-center text-small">
+                        <h2 class="h4"><strong>{{ T "uoc_ri_difusio_novetats" }}</strong></h2>
                                 <div class="icon icon--arrow-down"></div>
-                            </a></p>
+
                      </div>
                 </div>
             </div>               
@@ -107,10 +105,10 @@
                     "titol" : {{.}},{{end}}{{with .Params.general.entrada}}
                     "entrada": {{.}},{{end}}
 
-                    {{- if eq .Type "noticies" }}
-                    "type" : "noticies"
-                    {{else if eq .Type "esdeveniments"}}
-                    "type" : "esdeveniments"
+                    {{- if eq .Type "noticia" }}
+                    "type" : "noticia"
+                    {{else if eq .Type "esdeveniment"}}
+                    "type" : "esdeveniment"
                     {{end}} 
                   },
                 {{end}}                                                        
@@ -125,10 +123,10 @@
                     "titol" : {{.}},{{end}}{{with .Params.general.entrada}}
                     "entrada": {{.}},{{end}}
 
-                    {{- if eq .Type "noticies" }}
-                    "type" : "noticies"
-                    {{else if eq .Type "esdeveniments"}}
-                    "type" : "esdeveniments"
+                    {{- if eq .Type "noticia" }}
+                    "type" : "noticia"
+                    {{else if eq .Type "esdeveniment"}}
+                    "type" : "esdeveniment"
                     {{end}} 
                 },
                 {{end}}                                                        

@@ -141,11 +141,11 @@
 							<div class="full-width search-container-top">
 								<div class="col-xs-2 col-md-1">
 									<span class="icon-container hover--dynamic-hover bg-grey">
-										<input type="submit" value="Cerca" name="search_sbm" title="Buscar" onclick="" class="w100-inline-block"><span class="icon icon--search"></span>
+										<input type="submit" value="Cerca" name="search_sbm" title="Buscar" aria-label="buscar" onclick="" class="w100-inline-block"><span class="icon icon--search"></span>
 									</span>
 								</div>
 								<div class="col-xs-10 col-md-11">
-									<input type="search" id="search" aria-label="Paraules a cercar" placeholder="Paraules a cercar" name="searchWords" tabindex="0" value="" title="Paraules a cercar" class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1">
+									<input type="search" id="search" aria-label="Paraules a cercar" placeholder="Paraules a cercar" name="searchWords" tabindex="0" value="" class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1">
 								</div>
 							</div>
 						</form>
@@ -160,7 +160,7 @@
 						<div class="js-collapse-group">
 							<div class="collapse">
 								<div class="head-collapse js-collapse">
-									<h2><a href="#collapse2" aria-expanded="false" class="js-collapseClick" role="button">{{ T "uoc_ri_home_centres" }}<span class="icon icon--arrow-down" aria-hidden='true'></span></a></h2>
+									<h2><a href="#collapse2" aria-expanded="true" class="js-collapseClick" role="button">{{ T "uoc_ri_home_centres" }}<span class="icon icon--arrow-down" aria-hidden='false'></span></a></h2>
 								</div>
 								<div id="collapse2" class="contentCollapse show">
 									<div class="wrap-richText">
@@ -168,11 +168,11 @@
 											<div class="row">
 												{{ range $index, $element := .Params.centres_home }}
 													<div class="col-xs-12 col-md-3 centresHomeList">
-														<a class="card-absolute-link" href="{{$element.url}}" title="{{$element.title}}" aria-hidden='true' target='_blank' aria-labelledby='centresHome_{{$index}}'></a>
+														<a class="card-absolute-link" href="{{$element.url}}" title="{{$element.title}}" aria-hidden='false' target='_blank' aria-labelledby='centresHome_{{$index}}'></a>
 														<div class="card card--brand-corporate">
 															<div class="card__contents">
 																<h3 id="centresHome_{{$index}}">
-																	<a href="{{$element.url}}" title="{{$element.title}}">{{$element.title}}</a>
+																	{{$element.title}}
 																</h3>
 																<p>{{$element.description}}</p>
 																<div class="card-link-icon"><span class="icon icon--external-link" aria-hidden="true"></span></div>
@@ -198,18 +198,18 @@
 						<div class="js-collapse-group">
 							<div class="collapse">
 								<div class="head-collapse js-collapse">
-									<p><a href="#collapse3" aria-expanded="false" class="js-collapseClick">{{ T "uoc_ri_home_difusions" }}<span class="icon icon--arrow-down"></span></a></p>
+									<h2><a href="#collapse3" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_home_difusions" }}<span class="icon icon--arrow-down"></span></a></h2>
 								</div>
-								<div id="collapse2" class="contentCollapse show">
+								<div id="collapse3" class="contentCollapse show">
 										{{ range first 4 (where (where .Site.Pages.ByDate ".Params.destacat" true) ".Params.language" .Site.Language.Lang)}}
 										<div class="col-xs-12 col-md-3 difusionsHomeList" role="article">
-											<a href="{{.Permalink}}" class="card-absolute-link"></a>
+											<a href="{{.Permalink}}" class="card-absolute-link" aria-label="link"></a>
 											<div class="card" role="region" aria-label="Texto descriptivo" >
 												<div class="card__image">
-													{{with .Params.general.img}}<img src="{{.}}" alt="Texto alternativo">{{end}}
+													{{with .Params.general.img}}<img src="{{.}}" alt="">{{end}}
 												</div>
 												<div class="card__contents" >
-													<p class="text-big text font-alternate">{{with .Params.general.titol}}{{.}}{{end}}</p>
+													<h3 class="h5 text font-alternate">{{with .Params.general.titol}}{{.}}{{end}}</h3>
 												</div>
 												<div class="card__footer">
 													<div class="float-left p-left-x  icon icon--external-link"></div>
