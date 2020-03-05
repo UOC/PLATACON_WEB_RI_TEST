@@ -187,11 +187,12 @@ jQuery(document).ready(function ($) {
 
     var url = document.location.toString();
     if (url.match('#')) {
-        $('.ficha-detail a[href="#' + url.split('#')[1] + '"]').addClass('is-active');
-        $('.ficha-detail a[href="#' + url.split('#')[1] + '"]').parent().siblings().children().removeClass('is-active');
+        $('.ficha-detail a[href="#' + url.split('#')[1] + '"]').parent().siblings().children().removeClass('is-active').attr("aria-selected","false");
+        $('.ficha-detail a[href="#' + url.split('#')[1] + '"]').addClass('is-active').attr("aria-selected","true");
 
-        $('#' + url.split('#')[1]).addClass('is-active');
-        $('#' + url.split('#')[1]).siblings().removeClass('is-active');
+        $('#' + url.split('#')[1]).siblings().removeClass('is-active').attr("aria-selected","false");;
+        $('#' + url.split('#')[1]).addClass('is-active').attr("aria-selected","true");;
+
     } 
 
     // Change hash for page-reload
@@ -216,4 +217,9 @@ jQuery(document).ready(function ($) {
     }else{
         console.log("NO LOGAT")
     }
+    $('.tab').on('click', function () {
+       $(this).parent().siblings().children().attr("aria-selected","false");
+       $(this).attr("aria-selected","true");
+    });
+
 });

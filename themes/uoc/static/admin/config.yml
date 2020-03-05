@@ -179,7 +179,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: titol, name: titol, widget: string}
           - {label: descripcio, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -196,9 +201,14 @@ collections: # A list of collections the CMS should be able to edit
         required: false   
         widget: list
         fields:
-          - {label: titol, name: titol, widget: string}
-          - {label: descripcio, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: titol, name: titol, widget: string, required: true}
+          - {label: descripcio, name: descripcio, widget: markdown, required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -217,7 +227,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: titol, name: titol, widget: string}
           - {label: descripcio, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -271,10 +286,12 @@ collections: # A list of collections the CMS should be able to edit
         required: true
         widget: list
         fields:
-          - {label: Name, name: text, widget: string}
-          - {label: Adreça, name: address, widget: string}
-          - {label: Telèfon, name: telefon, widget: string}
-          - {label: E-mail, name: email, widget: string}
+          - {label: Name, name: text, widget: string, required: false}
+          - {label: Adreça, name: address, widget: string,  required: false}
+          - {label: Telèfon, name: telefon, widget: string,  required: false}
+          - {label: E-mail, name: email, widget: string, required: true}
+          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: Imatge, name: image, widget: image,  required: false}
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
   - name: "solucio_tec_es"
@@ -332,7 +349,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: titol, name: titol, widget: string}
           - {label: descripcio, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -349,9 +371,14 @@ collections: # A list of collections the CMS should be able to edit
         required: false   
         widget: list
         fields:
-          - {label: titol, name: titol, widget: string}
-          - {label: descripcio, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: titol, name: titol, widget: string, required: true}
+          - {label: descripcio, name: descripcio, widget: markdown, required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -370,7 +397,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: titol, name: titol, widget: string}
           - {label: descripcio, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -424,10 +456,12 @@ collections: # A list of collections the CMS should be able to edit
         required: true
         widget: list
         fields:
-          - {label: Name, name: text, widget: string}
-          - {label: Adreça, name: address, widget: string}
-          - {label: Telèfon, name: telefon, widget: string}
-          - {label: E-mail, name: email, widget: string}
+          - {label: Name, name: text, widget: string, required: false}
+          - {label: Adreça, name: address, widget: string,  required: false}
+          - {label: Telèfon, name: telefon, widget: string,  required: false}
+          - {label: E-mail, name: email, widget: string, required: true}
+          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: Imatge, name: image, widget: image,  required: false}
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
   - name: "solucio_tec_en"
@@ -485,7 +519,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: titol, name: titol, widget: string}
           - {label: descripcio, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -502,9 +541,14 @@ collections: # A list of collections the CMS should be able to edit
         required: false   
         widget: list
         fields:
-          - {label: titol, name: titol, widget: string}
-          - {label: descripcio, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: titol, name: titol, widget: string, required: true}
+          - {label: descripcio, name: descripcio, widget: markdown, required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -523,7 +567,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: titol, name: titol, widget: string}
           - {label: descripcio, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -577,10 +626,12 @@ collections: # A list of collections the CMS should be able to edit
         required: true
         widget: list
         fields:
-          - {label: Name, name: text, widget: string}
-          - {label: Adreça, name: address, widget: string}
-          - {label: Telèfon, name: telefon, widget: string}
-          - {label: E-mail, name: email, widget: string}
+          - {label: Name, name: text, widget: string, required: false}
+          - {label: Adreça, name: address, widget: string,  required: false}
+          - {label: Telèfon, name: telefon, widget: string,  required: false}
+          - {label: E-mail, name: email, widget: string, required: true}
+          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: Imatge, name: image, widget: image,  required: false}
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
   - name: "patent_ca"
@@ -638,7 +689,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -655,9 +711,14 @@ collections: # A list of collections the CMS should be able to edit
         required: false 
         widget: list
         fields:
-          - {label: Títol, name: titol, widget: string}
-          - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: Títol, name: titol, widget: string, required: true}
+          - {label: Descripció, name: descripcio, widget: markdown, required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -676,7 +737,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -730,10 +796,12 @@ collections: # A list of collections the CMS should be able to edit
         required: false
         widget: list
         fields:
-          - {label: Nom, name: text, widget: string}
-          - {label: Adreça, name: address, widget: string}
-          - {label: Telèfon, name: telefon, widget: string}
-          - {label: E-mail, name: email, widget: string}
+          - {label: Nom, name: text, widget: string, required: true}
+          - {label: Adreça, name: address, widget: string,  required: false}
+          - {label: Telèfon, name: telefon, widget: string,  required: false}
+          - {label: E-mail, name: email, widget: string, required: true}
+          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: Imatge, name: image, widget: image,  required: false}
     meta:
       - {label: "Data", name: "date", widget: "datetime"}
   - name: "patent_es"
@@ -791,7 +859,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -808,9 +881,14 @@ collections: # A list of collections the CMS should be able to edit
         required: false 
         widget: list
         fields:
-          - {label: Títol, name: titol, widget: string}
-          - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: Títol, name: titol, widget: string, required: true}
+          - {label: Descripció, name: descripcio, widget: markdown, required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -829,7 +907,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -883,10 +966,12 @@ collections: # A list of collections the CMS should be able to edit
         required: false
         widget: list
         fields:
-          - {label: Nom, name: text, widget: string}
-          - {label: Adreça, name: address, widget: string}
-          - {label: Telèfon, name: telefon, widget: string}
-          - {label: E-mail, name: email, widget: string}
+          - {label: Nom, name: text, widget: string, required: true}
+          - {label: Adreça, name: address, widget: string,  required: false}
+          - {label: Telèfon, name: telefon, widget: string,  required: false}
+          - {label: E-mail, name: email, widget: string, required: true}
+          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: Imatge, name: image, widget: image,  required: false}
     meta:
       - {label: "Data", name: "date", widget: "datetime"}
   - name: "patent_en"
@@ -944,7 +1029,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -961,9 +1051,14 @@ collections: # A list of collections the CMS should be able to edit
         required: false 
         widget: list
         fields:
-          - {label: Títol, name: titol, widget: string}
-          - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: Títol, name: titol, widget: string, required: true}
+          - {label: Descripció, name: descripcio, widget: markdown, required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -982,7 +1077,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -1036,10 +1136,12 @@ collections: # A list of collections the CMS should be able to edit
         required: false
         widget: list
         fields:
-          - {label: Nom, name: text, widget: string}
-          - {label: Adreça, name: address, widget: string}
-          - {label: Telèfon, name: telefon, widget: string}
-          - {label: E-mail, name: email, widget: string}
+          - {label: Nom, name: text, widget: string, required: true}
+          - {label: Adreça, name: address, widget: string,  required: false}
+          - {label: Telèfon, name: telefon, widget: string,  required: false}
+          - {label: E-mail, name: email, widget: string, required: true}
+          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: Imatge, name: image, widget: image,  required: false}
     meta:
       - {label: "Data", name: "date", widget: "datetime"}
   - name: "servei_ca"
@@ -1095,7 +1197,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}          
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -1158,10 +1265,12 @@ collections: # A list of collections the CMS should be able to edit
         required: false
         widget: list
         fields:
-          - {label: Nom, name: text, widget: string}
-          - {label: Adreça, name: address, widget: string}
-          - {label: Telèfon, name: telefon, widget: string}
-          - {label: E-mail, name: email, widget: string}
+          - {label: Nom, name: text, widget: string, required: true}
+          - {label: Adreça, name: address, widget: string,  required: false}
+          - {label: Telèfon, name: telefon, widget: string,  required: false}
+          - {label: E-mail, name: email, widget: string, required: true}
+          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: Imatge, name: image, widget: image,  required: false}
     meta:
       - {label: "Data", name: "date", widget: "datetime"}
   - name: "servei_es"
@@ -1217,7 +1326,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -1280,10 +1394,12 @@ collections: # A list of collections the CMS should be able to edit
         required: false
         widget: list
         fields:
-          - {label: Nom, name: text, widget: string}
-          - {label: Adreça, name: address, widget: string}
-          - {label: Telèfon, name: telefon, widget: string}
-          - {label: E-mail, name: email, widget: string}
+          - {label: Nom, name: text, widget: string, required: true}
+          - {label: Adreça, name: address, widget: string,  required: false}
+          - {label: Telèfon, name: telefon, widget: string,  required: false}
+          - {label: E-mail, name: email, widget: string, required: true}
+          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: Imatge, name: image, widget: image,  required: false}
     meta:
       - {label: "Data", name: "date", widget: "datetime"}
   - name: "servei_en"
@@ -1339,7 +1455,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -1402,10 +1523,12 @@ collections: # A list of collections the CMS should be able to edit
         required: false
         widget: list
         fields:
-          - {label: Nom, name: text, widget: string}
-          - {label: Adreça, name: address, widget: string}
-          - {label: Telèfon, name: telefon, widget: string}
-          - {label: E-mail, name: email, widget: string}
+          - {label: Nom, name: text, widget: string, required: true}
+          - {label: Adreça, name: address, widget: string,  required: false}
+          - {label: Telèfon, name: telefon, widget: string,  required: false}
+          - {label: E-mail, name: email, widget: string, required: true}
+          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: Imatge, name: image, widget: image,  required: false}
     meta:
       - {label: "Data", name: "date", widget: "datetime"}
   - name: "spin_off_ca"
@@ -1456,7 +1579,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -1475,7 +1603,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -1494,7 +1627,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -1557,10 +1695,12 @@ collections: # A list of collections the CMS should be able to edit
         required: false
         widget: list
         fields:
-          - {label: Name, name: text, widget: string}
-          - {label: Adreça, name: address, widget: string}
-          - {label: Telèfon, name: telefon, widget: string}
-          - {label: E-mail, name: email, widget: string}
+          - {label: Name, name: text, widget: string, required: false}
+          - {label: Adreça, name: address, widget: string,  required: false}
+          - {label: Telèfon, name: telefon, widget: string,  required: false}
+          - {label: E-mail, name: email, widget: string, required: true}
+          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: Imatge, name: image, widget: image,  required: false}
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
   - name: "spin_off_es"
@@ -1611,7 +1751,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -1630,7 +1775,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -1649,7 +1799,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -1712,10 +1867,12 @@ collections: # A list of collections the CMS should be able to edit
         required: false
         widget: list
         fields:
-          - {label: Name, name: text, widget: string}
-          - {label: Adreça, name: address, widget: string}
-          - {label: Telèfon, name: telefon, widget: string}
-          - {label: E-mail, name: email, widget: string}
+          - {label: Name, name: text, widget: string, required: false}
+          - {label: Adreça, name: address, widget: string,  required: false}
+          - {label: Telèfon, name: telefon, widget: string,  required: false}
+          - {label: E-mail, name: email, widget: string, required: true}
+          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: Imatge, name: image, widget: image,  required: false}
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
   - name: "spin_off_en"
@@ -1766,7 +1923,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -1785,7 +1947,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -1804,7 +1971,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Títol, name: titol, widget: string}
           - {label: Descripció, name: descripcio, widget: markdown}
-          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - label: Videos
+            name: video_list
+            required: false
+            widget: list
+            fields:
+              - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
             widget: list
@@ -1867,10 +2039,12 @@ collections: # A list of collections the CMS should be able to edit
         required: false
         widget: list
         fields:
-          - {label: Name, name: text, widget: string}
-          - {label: Adreça, name: address, widget: string}
-          - {label: Telèfon, name: telefon, widget: string}
-          - {label: E-mail, name: email, widget: string}
+          - {label: Name, name: text, widget: string, required: false}
+          - {label: Adreça, name: address, widget: string,  required: false}
+          - {label: Telèfon, name: telefon, widget: string,  required: false}
+          - {label: E-mail, name: email, widget: string, required: true}
+          - {label: ID video Youtube, name: video, widget: string,  required: false}
+          - {label: Imatge, name: image, widget: image,  required: false}
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
   - name: "cercador_ca"
@@ -2255,7 +2429,7 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: '{{slug}}'
     filter: {field: language , value: "ca"}
     fields:
-      - {label: Títol, name: title, widget: string}
+      - {label: Nom, name: title, widget: string}
       - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
@@ -2268,7 +2442,7 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: '{{slug}}'
     filter: {field: language , value: "es"}
     fields:
-      - {label: Título, name: title, widget: string}
+      - {label: Nom, name: title, widget: string}
       - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "es"}       
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
@@ -2281,7 +2455,7 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: '{{slug}}'
     filter: {field: language , value: "en"}
     fields:
-      - {label: Title, name: title, widget: string}
+      - {label: Nom, name: title, widget: string}
       - {label: Language, name: language, widget: select, options: ["ca","es","en"],default: "en"}       
     meta:
       - {label: "Date", name: "date", widget: "datetime"}
@@ -2453,8 +2627,8 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: '{{slug}}'
     filter: {field: language , value: "ca"}
     fields:
-      - {label: Títol, name: title, widget: string}
-      - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
+      - {label: Nom, name: title, widget: string}
+      - {label: Language, name: language, widget : hidden, default: "ca"}            
       - {label: "Destacat", name: "destacat", widget: "boolean", default: false, required: true}
       - {label: "Data", name: "date", widget: datetime, required: true}
       - label: General
@@ -2465,12 +2639,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Imatge", name: "img", widget: image}
           - {label: "Autor", name: autor, widget: string, required: false}
           - {label: "Foto autor", name: "img_autor", widget: string, required: false}
-          - label: "Social"
-            name: xarxes
-            widget: list
-            fields:
-              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"]}
-              - {label: "Url", name: address, widget: string}
           - {label: "Link extern", name: link_extern, widget: string, required: false}
     
       - label: Descripció
@@ -2489,8 +2657,8 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: '{{slug}}'
     filter: {field: language , value: "es"}
     fields:
-      - {label: Títol, name: title, widget: string}
-      - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
+      - {label: Nom, name: title, widget: string}
+      - {label: Language, name: language, widget : hidden, default: "es"}           
       - {label: "Destacat", name: "destacat", widget: "boolean", default: false, required: true}
       - {label: "Data", name: "date", widget: datetime, required: true}
       - label: General
@@ -2501,12 +2669,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Imatge", name: "img", widget: image}
           - {label: "Autor", name: autor, widget: string, required: false}
           - {label: "Foto autor", name: "img_autor", widget: string, required: false}
-          - label: "Social"
-            name: xarxes
-            widget: list
-            fields:
-              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"]}
-              - {label: "Url", name: address, widget: string}
           - {label: "Link extern", name: link_extern, widget: string, required: false}
     
       - label: Descripció
@@ -2525,8 +2687,8 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: '{{slug}}'
     filter: {field: language , value: "en"}
     fields:
-      - {label: Títol, name: title, widget: string}
-      - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
+      - {label: Nom, name: title, widget: string}
+      - {label: Language, name: language, widget : hidden, default: "en"}       
       - {label: "Destacat", name: "destacat", widget: "boolean", default: false, required: true}
       - {label: "Data", name: "date", widget: datetime, required: true}
       - label: General
@@ -2537,12 +2699,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Imatge", name: "img", widget: image}
           - {label: "Autor", name: autor, widget: string, required: false}
           - {label: "Foto autor", name: "img_autor", widget: string, required: false}
-          - label: "Social"
-            name: xarxes
-            widget: list
-            fields:
-              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"]}
-              - {label: "Url", name: address, widget: string}
           - {label: "Link extern", name: link_extern, widget: string, required: false}
     
       - label: Descripció
@@ -2561,8 +2717,8 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: '{{slug}}'
     filter: {field: language , value: "ca"}
     fields:
-      - {label: Títol, name: title, widget: string}
-      - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
+      - {label: Nom, name: title, widget: string}
+      - {label: Language, name: language, widget : hidden, default: "ca"}       
       - {label: "Detacat", name: "destacat", widget: "boolean", default: false, required: true}
       - {label: "Quan", name: "date", widget: datetime, required: true}
       - label: General
@@ -2573,12 +2729,9 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Descripció, name: descripcio, widget: markdown, required: true}
           - {label: "Lloc", name: lloc, widget: string, required: true} 
           - {label: "Imatge", name: "img", widget: image, default: ""}
-          - label: "Social"
-            name: xarxes
-            widget: list
-            fields:
-              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"]}
-              - {label: "Url", name: address, widget: string}
+          - {label: "Inscripció", name: inscripcio, widget: string, required: false}
+          - {label: "Link contacte", name: contact_link, widget: string, required: false}
+          - {label: "Email contacte", name: contact_mail, widget: string, required: false}
   - name: "esdeveniment_es"
     label: "Esdeveniments [es]"
     folder: "content/esdeveniment"
@@ -2588,8 +2741,8 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: '{{slug}}'
     filter: {field: language , value: "es"}
     fields:
-      - {label: Títol, name: title, widget: string}
-      - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
+      - {label: Nom, name: title, widget: string}
+      - {label: Language, name: language, widget : hidden, default: "es"}       
       - {label: "Detacat", name: "destacat", widget: "boolean", default: false, required: true}
       - {label: "Quan", name: "date", widget: datetime, required: true}
       - label: General
@@ -2600,12 +2753,9 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Descripció, name: descripcio, widget: markdown, required: true}
           - {label: "Lloc", name: lloc, widget: string, required: true} 
           - {label: "Imatge", name: "img", widget: image, default: ""}
-          - label: "Social"
-            name: xarxes
-            widget: list
-            fields:
-              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"]}
-              - {label: "Url", name: address, widget: string}
+          - {label: "Inscripció", name: inscripcio, widget: string, required: false}
+          - {label: "Link contacte", name: contact_link, widget: string, required: false}
+          - {label: "Email contacte", name: contact_mail, widget: string, required: false}
   - name: "esdeveniment_en"
     label: "Esdeveniments [en]"
     folder: "content/esdeveniment"
@@ -2615,8 +2765,8 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: '{{slug}}'
     filter: {field: language , value: "en"}
     fields:
-      - {label: Títol, name: title, widget: string}
-      - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
+      - {label: Nom, name: title, widget: string}
+      - {label: Language, name: language, widget : hidden, default: "en"}       
       - {label: "Detacat", name: "destacat", widget: "boolean", default: false, required: true}
       - {label: "Quan", name: "date", widget: datetime, required: true}
       - label: General
@@ -2627,9 +2777,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Descripció, name: descripcio, widget: markdown, required: true}
           - {label: "Lloc", name: lloc, widget: string, required: true} 
           - {label: "Imatge", name: "img", widget: image, default: ""}
-          - label: "Social"
-            name: xarxes
-            widget: list
-            fields:
-              - {label: "Nom", name: xarxa, widget: select, options: ["facebook","twitter","instagram","web"]}
-              - {label: "Url", name: address, widget: string}
+          - {label: "Inscripció", name: inscripcio, widget: string, required: false}
+          - {label: "Link contacte", name: contact_link, widget: string, required: false}
+          - {label: "Email contacte", name: contact_mail, widget: string, required: false}

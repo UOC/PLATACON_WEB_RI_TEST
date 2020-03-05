@@ -37,19 +37,19 @@
 					<li class="filters-main__box border-green" role="presentation">
 						<a id="tab-1" href="#tab-content-1" role="tab" aria-controls="tab-content-1" aria-selected="false" data-tab-trigger="" class="tab cercaFiltres">
 							<h3>{{ T "uoc_ri_cercadortab_filtres" }}</h3>
-							<span class="icon icon--arrow-down" aria-hidden='true'></span>
+							<span class="icon icon--arrow-down" aria-hidden='false'></span>
 						</a>
 					</li>
 					<li class="filters-main__box border-green" role="presentation">
 						<a id="tab-3" href="#tab-content-3" role="tab" aria-controls="tab-content-3" aria-selected="false" data-tab-trigger="" class="tab cercaSectors">
 							<h3>{{ T "uoc_ri_cercadortab_sectors" }}</h3>
-							<span class="icon icon--arrow-down" aria-hidden='true'></span>
+							<span class="icon icon--arrow-down" aria-hidden='false'></span>
 						</a>
 					</li>
 					<li class="filters-main__box border-green" role="presentation">
 						<a id="tab-2" href="#tab-content-2" role="tab" aria-controls="tab-content-2" aria-selected="false" data-tab-trigger="" class="tab cercaTextual">
 							<h3>{{ T "uoc_ri_cercadortab_text" }}</h3>
-							<span class="icon icon--arrow-down" aria-hidden='true'></span>
+							<span class="icon icon--arrow-down" aria-hidden='false'></span>
 						</a>
 					</li>
 				</ul>
@@ -83,7 +83,7 @@
 								</div>
 							</div>
 							<div class="radio-collapse-item">
-								<input type="radio" name='{{ T "uoc_ri_cercador_filtres_unesco" }}' id="unesco" aria-label='{{ T "uoc_ri_cercador_filtres_unesco" }}' class="js-payment-mode-radio">
+								<input role="radiogroup" type="radio" name='{{ T "uoc_ri_cercador_filtres_unesco" }}' id="unesco" aria-label='{{ T "uoc_ri_cercador_filtres_unesco" }}' class="js-payment-mode-radio">
 								<label for="unesco" class="checkbox-wrapper payment-mode-label">{{ T "uoc_ri_cercador_filtres_unesco" }}</label>
 								<div class="collapse-content"> 
 									<div class="full-width search-container-top">
@@ -113,7 +113,7 @@
 							</div>
 						</form>
 					</div>
-					<div id="tab-content-3" data-tab-content="" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true" class="filters-main__content tab-content cercaSectors">
+					<div id="tab-content-3" data-tab-content="" role="tabpanel" aria-labelledby="tab-3" aria-hidden="false" class="filters-main__content tab-content cercaSectors">
 						<form action="" class="radio-accordeon search-form-container">
 							<div class="more-filter-options">
 								<h4>{{ T "uoc_ri_cercador_cercapersector" }}</h4>
@@ -145,7 +145,7 @@
 									</span>
 								</div>
 								<div class="col-xs-10 col-md-11">
-									<input type="search" id="search" aria-label="Paraules a cercar" placeholder="Paraules a cercar" name="searchWords" tabindex="0" value="" class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1">
+									<input type="search" id="search" aria-label='{{ T "uoc_ri_cercador_paraulesACercar" }}' placeholder='{{ T "uoc_ri_cercador_paraulesACercar" }}' name="searchWords" tabindex="0" value="" class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1">
 								</div>
 							</div>
 						</form>

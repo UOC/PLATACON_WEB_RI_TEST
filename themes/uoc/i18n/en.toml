@@ -213,3 +213,6 @@
 
 [uoc_ri_cercador_llista_simple] other = "List view"
 [uoc_ri_cercador_llista_bloc] other = "Block view"
+[uoc_ri_cercador_paraulesACercar] other = "Search words"
+
+[uoc_ri_esdeveniment_inscripcio] other = "Sign IN"

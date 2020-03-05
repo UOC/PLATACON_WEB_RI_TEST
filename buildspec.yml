@@ -31,13 +31,13 @@ phases:
             node ../bin/create-to-delete-index.js
           fi   
       - aws s3 cp index.html s3://${BUCKET_S3}/${DEST_FOLDER}/index.html
-      - cd ./admin && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/admin --delete
-      - cd ../ca && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/ca --delete
-      - cd ../es && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/es --delete
-      - cd ../en && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/en --delete
-      - cd ../img && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/img --delete
-      - cd ../js && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/js --delete
-      - cd ../css && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/css --delete
+      - cd ./admin && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/admin 
+      - cd ../ca && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/ca 
+      - cd ../es && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/es 
+      - cd ../en && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/en 
+      - cd ../img && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/img 
+      - cd ../js && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/js 
+      - cd ../css && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/css
       - |
           if [ "${UPLOAD_TO_CLOUDSEARCH}" == "true" ]; then
             echo "Uploading data to cloudsearch"

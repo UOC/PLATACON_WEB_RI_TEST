@@ -100,7 +100,7 @@
 [uoc_grup_footer_social] other = "Xarxes socials (ca)" 
 [uoc_grup_footer_social_more] other = "Més" 
 [uoc_grup_footer_social_twitter_account1] other = "@UOCorst" 
-[uoc_grup_footer_social_twitter_account2] other = "@UOCuniversitat" 
+[uoc_grup_footer_social_twitter_account2] other = "@UOC_research" 
 
 [uoc_grup_footer_links_new_window] other = "(El link s'obre en finestra nova)" 
 
@@ -213,3 +213,6 @@
 
 [uoc_ri_cercador_llista_simple] other = "Vista de llista"
 [uoc_ri_cercador_llista_bloc] other = "Vista de bloc"
+[uoc_ri_cercador_paraulesACercar] other = "Paraules a cercar"
+
+[uoc_ri_esdeveniment_inscripcio] other = "Inscripció"

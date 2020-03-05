@@ -2,10 +2,7 @@
 		<div class="header-container clearfix">
 			<div class="col-xs-12 col-clear nav-menu-top">
 				<div class="col-xs-2 col-sm-1 top-logo top-logo-desktop">
-					<h1 tabindex="-1" data-element-id="hmap-0" class="top-h1 visually-hidden">{{ T "uoc_head_description"}}</h1><a href="#"
-						class="hidden-xs hidden-sm hidden-md"><img src="/img/logo-uoc-ri-white.png"
-							alt="Logo UOC"></a><a href="#" class="hidden-lg hidden-xl"><img
-							src="/img/logo-uoc-white.png" alt="Logo UOC"></a>
+					<img src="/img/logo-uoc-ri-white.png" alt='{{ T "uoc_title"}} logo'>
 				</div>
 				<div class="col-xs-10 col-md-8 col-lg-8"><span
 						class="ruler ruler--dynamic ruler--white w100-inline-block"></span>
@@ -20,23 +17,23 @@
 				<div class="col-md-1 hidden-xs hidden-md"><span
 						class="ruler ruler--dynamic ruler--white w100-inline-block">
 						<div data-dropdown="" class="dropdown language-drop-down">
-							<button data-dropdown-trigger="" aria-label="Cambio de idioma" aria-expanded="false"
+							<button data-dropdown-trigger="" aria-label='{{T "uoc_language_change" }} ({{ .Lang }})' aria-expanded="false"
 								aria-controls="dropdown__content4"
 								class="btn btn--primary dropdown__trigger">{{ T "uoc_lang_button" }}<span
 									class="icon icon--arrow-down icon--small bold m-left-x2"></span></button>
-							<div id="dropdown__content3" role="menu" class="dropdown__content dropdown__list">
-								<button aria-label="Cerrar idioma" aria-controls="dropdown__content3"
+							<div id="dropdown__content3" class="dropdown__content dropdown__list">
+								<button aria-label='{{T "uoc_language_close"}}' aria-controls="dropdown__content3"
 									data-dropdown-trigger="" class="btn btn--primary close"><span aria-hidden="true"
 									class="icon icon--close"></span></button>
 								{{ if .IsTranslated }}
 									<ul data-animated="false">
 										{{ range .AllTranslations }}
 											{{ if eq $.Site.Language.LanguageName .Language.LanguageName }}
-												<li role="menuitem" class="dropdown__item is-active">
+												<li class="dropdown__item is-active" aria-current="true">
 													<a href="#" lang="{{ .Language }}" class="dropdown__link">{{ .Language.LanguageName }}</a>
 												</li>
 											{{ else }}
-												<li role="menuitem" class="dropdown__item">
+												<li class="dropdown__item" aria-current="false">
 													<a href="{{ .RelPermalink }}" lang="{{ .Language }}"
 														class="dropdown__link">{{ .Language.LanguageName }}</a>
 												</li>
@@ -110,12 +107,10 @@
 			</div>
 			<!-- Navigation -->
 			<div class="col-xs-12 col-clear nav-menu-container uoc-ri"> 
-	          <h2>
-	            <a href='{{ "index.html" | relLangURL }}'>{{ with .Site.GetPage "/principal" }}{{ .Title }}{{ end }}</a>
-	          </h2>
+	            {{ with .Site.GetPage "/principal" }}<h2>{{ .Title }}</h2>{{ end }}
 	          <div id="nav-menu-scrollable-container-expand" style="margin-bottom: 1em;">
 	            <div id="nav-menu-scrollable-container" class="nav-menu-scrollable-container">
-	              <nav id="main-nav-menu" aria-label="Menú de navegació" class="nav-menu nav-menu-soft-dropdown hidden-xs hidden-sm hidden-md"><a href="#" class="logogreen hidden-lg hidden-xl"><img src="../../static/media/logo-green.jpg" alt="Logo UOC"></a>
+	              <nav id="main-nav-menu" aria-label="Menú de navegació" class="nav-menu nav-menu-soft-dropdown hidden-xs hidden-sm hidden-md">
 	                <ul>
 	                  <li tabindex="-1" class="col-xs-12 col-lg-2">
 	                    <button onclick="location.href='{{ "index.html" | relLangURL }}';" value="{{ T "uoc_ri_menuitem_explore" }}" class="clickable"><span>{{ T "uoc_ri_menuitem_explore" }}</span></button>

@@ -22,7 +22,7 @@
             
             <div class="col-xs-12 col-md-9">
                 {{if eq $type "noticia"}}
-                <figure class="img-figure">
+                <div class="img-figure">
                     <img src="{{with .Params.general.img}}{{.}}{{end}}" alt="">
                     <div class="img-figcaption">
                         <div class="float-left" id="img-figcaption1">
@@ -30,13 +30,11 @@
                             <br>
                             <div>{{with .Params.date}}{{dateFormat "02/01/2006" .}}<br>{{end}}  {{with .Params.general.autor}}{{.}}{{end}}</div>
                         </div>
-                        {{with .Params.general.xarxes}}
                         <div class="float-right" id="img-figcaption2" role="complementary">
                                 {{partial "share.html" .}}
                         </div>
-                        {{end}}
                     </div>
-                </figure>
+                </div>
                 {{ end }}
             </div>
         </div>
@@ -61,15 +59,35 @@
                 
                 <div class="row">
                     <div class="card card--image-horizontal card--info col-xs-12 card--2y col-clear-right">
-                        <div class="card__contents col-xs-12 col-md-4">
+                        <div class="card__contents col-xs-12 col-md-5">
                             <h4 style="padding: 0px;"><strong>{{ T "uoc_ri_esdeveniment_On" }}</strong></h4>
                             <p>{{with .Params.general.lloc}}{{.}}{{end}}</p>
                             <h4 style="padding: 0px;"><strong>{{ T "uoc_ri_esdeveniment_Quan" }}</strong></h4>
                             <p>
                                 {{with .Params.date}}{{dateFormat "02/01/2006 15:04" .}}{{end}}
                             </p>
+                            <div class="row">
+                                {{with .Params.general.inscripcio}}
+                                <div class="float-left"> <a href="{{ . }}">
+                                    <span class="icon icon--document-fold"></span>
+                                    <span >{{T "uoc_ri_esdeveniment_inscripcio"}}</span>
+                                </a></div>
+                                {{end}}
+                                {{with .Params.general.contact_link}}
+                                <div class="float-right"><a href="{{ . }}">
+                                    <span class="icon icon--info-full"></span>
+                                    <span>{{T "uoc_grup_menu_contact"}}</span>
+                                </a></div>
+                                {{end}}
+                                {{with .Params.general.contact_mail}}
+                                <div class="float-right"><a href="mailto: {{ .}}">
+                                    <span class="icon icon--mail-full"></span>
+                                    <span>{{T "uoc_grup_menu_contact"}}</span>
+                                </a></div>
+                                {{end}}
+                            </div>
                         </div>
-                        <div class="card__contents col-xs-12 col-md-2"></div>
+                        <div class="card__contents col-xs-12 col-md-1"></div>
                         <div class="card__image col-xs-12 col-md-6">
                             <div aria-hidden="true"tabindex="700" id="map" style="height: 100%;"></div>
                             
@@ -86,11 +104,9 @@
                     <div class="ruler ruler--thin"></div>
                 </div>
                 <br>
-                {{with .Params.general.xarxes}}
                 <div class="float-right" role="complementary">
                     {{partial "share.html" .}}
                 </div>
-                {{end}}
                 {{end}}
             </div>
         </div>             

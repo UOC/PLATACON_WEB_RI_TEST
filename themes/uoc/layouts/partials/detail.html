@@ -1,5 +1,5 @@
 {{$type := .Type}}
-
+{{$params := .Params}}
 <section class="info-general">
     <div class="row">
         <div class="col-xs-12">
@@ -18,7 +18,7 @@
                         </div>
                         <div class="col-md-12"></div>
                         <div class="col-md-8 col-lg-8 col-xs-8">
-                            {{with .Params.general.slogan}}<h4  class="h5 inverse" >{{.}}</h4>{{end}}
+                            {{with .Params.general.slogan}}<p  class="h5 inverse" >{{.}}</p>{{end}}
                         </div>
                         <div data-dropdown="" class="dropdown">
                             <button data-dropdown-trigger="" aria-expanded="false" class="btn btn--primary">
@@ -40,26 +40,29 @@
             <div class="ficha-detail" aria-label="detail">
                 <div class="box">
                     <div class="boxGrey">
-                        {{with .Params.general.sector}}<p><strong>{{ T "uoc_ri_sector" }} :</strong>{{.}}</p>{{end}}
-                        {{with .Params.general.centre}}<p><strong>{{ T "uoc_ri_centre" }} :</strong>{{.}}</p>{{end}}
+                        <dl>
+                        {{with .Params.general.sector}}<dt><strong>{{ T "uoc_ri_sector" }} :</strong></dt><dd>{{.}}</dd>{{end}}
+                        {{with .Params.general.centre}}<dt><strong>{{ T "uoc_ri_centre" }} :</strong></dt><dd>{{.}}</dd>{{end}}
                         
                         {{if eq $type "solucio_tec"}}
-                        <p><strong>{{ T "uoc_ri_tipologia" }} :</strong>{{ T "uoc_ri_cercador_solucions_tec" }}</p>
+                        <dt><strong>{{ T "uoc_ri_tipologia" }} :</strong></dt><dd>{{ T "uoc_ri_cercador_solucions_tec" }}</dd>
                         {{else if eq $type "patent"}}
-                        <p><strong>{{ T "uoc_ri_tipologia" }} :</strong>{{ T "uoc_ri_cercador_solucions_patents" }}</p>
+                        <dt><strong>{{ T "uoc_ri_tipologia" }} :</strong></dt><dd>{{ T "uoc_ri_cercador_solucions_patents" }}</dd>
                         {{else if eq $type "servei"}}
-                        <p><strong>{{ T "uoc_ri_tipologia" }} :</strong>{{ T "uoc_ri_cercador_solucions_serveis" }}</p>
+                        <dt><strong>{{ T "uoc_ri_tipologia" }} :</strong></dt><dd>{{ T "uoc_ri_cercador_solucions_serveis" }}</dd>
                         {{else}}
-                        <p><strong>{{ T "uoc_ri_tipologia" }} :</strong>{{ T "uoc_ri_cercador_spin_off" }}</p>
+                        <dt><strong>{{ T "uoc_ri_tipologia" }} :</strong></dt><dd>{{ T "uoc_ri_cercador_spin_off" }}</dd>
                         {{end}}
 
+                        </dl>
+                        
                         {{with .Params.general.logo}}
                         <p>
                             <div class="row">
                                 
                                 <div class="img--y col-xs-12 col-md-12">
                                     <div class="img-wpr img-wpr--horizontal">
-                                        <img class="img-wpr__cover" src="{{.}}" alt="Logo" />
+                                        <img class="img-wpr__cover" src="{{.}}" alt="{{$params.general.nom}} logo" />
                                     </div>
                                 </div>
                                 
@@ -67,7 +70,7 @@
                             
                         </p>{{end}}
                         {{ with .Params.general.keywords }}
-                        <p>
+                    
                             <div class="row">
 
                                 <div class="col-xs-12">
@@ -94,7 +97,7 @@
 
                             </div>
                                                       
-                        </p>{{end}}
+                        {{end}}
                     </div>	
                 </div>
                 
@@ -111,8 +114,8 @@
                 {{with .Params.about}}    
                 <li role="presentation">
                     <a id="tab-about" href="#tab-content-about" role="tab"
-                    aria-controls="tab-content-about" aria-selected="true" data-tab-trigger=""
-                    class="tab is-active js-width-final"><span>
+                    aria-controls="tab-content-about" aria-selected="false" data-tab-trigger=""
+                    class="tab is-active"><span>
                         {{if eq $type "solucio_tec"}}{{ T "uoc_ri_about_tec" }}
                         {{else if eq $type "patent"}}{{ T "uoc_ri_about_pat" }}
                         {{else if eq $type "servei"}}{{ T "uoc_ri_about_serv" }}
@@ -279,32 +282,22 @@
                             </h3>
                         </div>
                         <div id="collapseCasos" class="contentCollapse show">
-                            <div class="card-in-acordeon ">
-                                {{ range . }}
-                                <div class="row" >
-                                
-                                    <ul class="list--unstyled">
-                                        <li><h3 class = "h2">{{ .titol }}</h3></li>
-                                        {{if isset . "img" }}
-                                        <li><img src="{{.img}}" alt="{{ .titlol }} img"></li>
-                                        {{end}}
-                                        {{if isset . "descripcio" }}
-                                        <li><div class="wrap-richText">{{ safeHTML (markdownify .descripcio) }}</div></li>
-                                        {{end}}
-                                        {{if isset . "url_success" }}
-                                        <li><a href="{{.url_success}}" target="_blank" title=''>
-                                            <span class="icon icon--access">
-                                                <span class="h3">{{T "uoc_ri_casos_link"}}</span>
-                                            </span>
-                                        </a></li>
-                                        {{end}}
-                                    </ul>
-                                </div>
-                                
-                                
-
+                            {{ range $c := . }}
+                            <div class="card-in-acordeon " role="list"> 
+                                <h4 class = "h2" role="listitem">{{ $c.titol }}</h3>
+                                {{with $c.img }}
+                                <img src="{{.}}" alt="{{ $c.titol }} img" role="listitem">
                                 {{end}}
-                            </div>
+                                {{with $c.descripcio }}
+                                <div class="wrap-richText" role="listitem">{{ safeHTML (markdownify .) }}</div>
+                                {{end}}
+                                {{with $c.url_success }}
+                                <a href="{{.}}" target="_blank" title='' role="listitem">
+                                    <span class="icon icon--access"></span>
+                                    <span class="h3">{{T "uoc_ri_casos_link"}}</span>
+                                </a>
+                                {{end}} 
+                            </div>{{end}}
                         </div>
                     </div>
                 </div>
@@ -325,7 +318,7 @@
                             {{ range .}}
                                 <div class="col-md-4 col-xs-12">
                                     <a href="{{.url}}">
-                                        <div class="card card-noimg" style="background-color: #C3FFDE;" role="region">
+                                        <div class="card card-noimg" style="background-color: rgb(205, 245, 223);" role="region">
                                             
                                             <div class="card__contents">
                                                 <div class = "h4"><strong>{{ .name }}</strong></div>
@@ -383,12 +376,18 @@
                             
                             <div class="row">
                                 {{range .}}
-                                <div class="col-xs-12 col-md-3">
-                                    <div class="wrap-content">
-                                        <p ><h3>{{ .text}}</h3></p>
-                                        <p >{{ .address}}</p>
-                                        <p >{{ .telefon}}</p>
-                                        <p >{{ .email}}</p>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="wrap-content" role= list>
+                                        {{with .text}}<h4 role= listitem><strong>{{.}}</strong></h4>{{end}}
+                                        {{with .address}}<p role= listitem>{{.}}</p>{{end}}
+                                        {{with .telefon}}<p role= listitem>{{.}}</p>{{end}}
+                                        {{with .email}}<p role= listitem><a href="mailto: {{.}}">{{.}}</a></p>{{end}}
+                                        {{with .image}}<img src="{{.}}" alt="" aria-hidden="true">{{end}}
+                                        {{with .video}}
+                                        <div class="embed-container" aria-hidden="true">
+                                            <iframe src="https://www.youtube.com/embed/{{.}}" title='Youtube' allowfullscreen></iframe>
+                                        </div>
+                                        {{end}}
                                     </div>
                                 </div>
                                 {{end}}

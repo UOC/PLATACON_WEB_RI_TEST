@@ -20,7 +20,7 @@
                 </div>
             </div>
 
-            {{ range first 1 (where (where .Site.Pages.ByDate ".Params.destacat" true) ".Params.language" .Site.Language.Lang)}}
+            {{ range first 1 (where (where .Site.Pages.ByDate.Reverse ".Params.destacat" true) ".Params.language" .Site.Language.Lang)}}
             <div class=" col-md-9 col-xs-9">
                 <a href="{{.Permalink}}" class="">
                 <div class="bg-simple img-wpr img-wpr--horizontal img--tint">
@@ -42,7 +42,7 @@
             </div>
             {{end}}
 
-            {{ range first 1 (after 1 (where (where .Site.Pages.ByDate ".Params.destacat" true) ".Params.language" .Site.Language.Lang))}}
+            {{ range first 1 (after 1 (where (where .Site.Pages.ByDate.Reverse ".Params.destacat" true) ".Params.language" .Site.Language.Lang))}}
             <div class="col-xs-6 col-md-3" role="article">
                 <a href="{{.Permalink}}" class="card-absolute-link"></a>
                 <div class="card" role="region" aria-label="Texto descriptivo" >
@@ -96,7 +96,7 @@
             var noticiaLabel = '{{ T "uoc_ri_noticia" }}';
             var esdevenimentLabel = '{{ T "uoc_ri_esdeveniment" }}';
             var difusionsDestacades = [
-                {{ range (after 2 (where (where .Site.Pages.ByDate ".Params.destacat" true) ".Params.language" .Site.Language.Lang))}}
+                {{ range (after 2 (where (where .Site.Pages.ByDate.Reverse ".Params.destacat" true) ".Params.language" .Site.Language.Lang))}}
                   {
                     "destacat": {{.Params.destacat}},
                     "data": {{.Params.date}},
@@ -114,7 +114,7 @@
                 {{end}}                                                        
             ];
             var restaDifusions = [
-                {{ range (where (where .Site.Pages.ByDate ".Params.destacat" false) ".Params.language" .Site.Language.Lang)}}
+                {{ range (where (where .Site.Pages.ByDate.Reverse ".Params.destacat" false) ".Params.language" .Site.Language.Lang)}}
                 {
                     "destacat": {{.Params.destacat}},
                     "data": {{.Params.date}},

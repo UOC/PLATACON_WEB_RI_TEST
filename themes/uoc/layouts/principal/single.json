@@ -70,10 +70,10 @@
 			{{end}}
 			{{with $s.Params.contacte}}
 				{{- range .}}
-					{{$.Scratch.Add "contact_name" (slice .text)}}
-					{{$.Scratch.Add "contact_email" (slice .email)}}
-					{{$.Scratch.Add "contact_address" (slice .address)}}
-					{{$.Scratch.Add "contact_phone" (slice .telefon)}}
+					{{with .text}}{{$.Scratch.Add "contact_name" (slice .)}}{{end}}
+					{{with .email}}{{$.Scratch.Add "contact_email" (slice .)}}{{end}}
+					{{with .address}}{{$.Scratch.Add "contact_address" (slice .)}}{{end}}
+					{{with .telefon}}{{$.Scratch.Add "contact_phone" (slice .)}}{{end}}
 				{{end}}
 				{{ if ne ($.Scratch.Get "contact_name") nil}}"contacts_name": {{$.Scratch.Get "contact_name" | jsonify}},{{end}}
 				{{ if ne ($.Scratch.Get "contact_email") nil}}"contacts_email": {{$.Scratch.Get "contact_email" | jsonify}},{{end}}
