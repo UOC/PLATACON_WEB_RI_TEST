@@ -2,7 +2,7 @@
 title: Smart Logistics
 language: ca
 general:
-  centre: Estuids
+  centre: Estudis
   img_background: /img/35163823714_5988ddfcaa_w.jpg
   nom: Smart Logistics
   sector: 'Economia, empresa i TIC'

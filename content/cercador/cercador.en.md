@@ -32,14 +32,12 @@
 		{"display_name" : "(en)Aliança pel objectius", "value" : "Aliança pel objectius", "img":"/img/icons/icon_ods_color_17.svg"}
 	],
 	"centre" : [
-		{"display_name" : "All", "value" : ""},
 		{"display_name" : "IN3", "value" : "IN3"},
 		{"display_name" : "e-Health Center", "value" : "e-Health Center"},
 		{"display_name" : "e-Learn Center", "value" : "e-Learn Center"},
-		{"display_name" : "Estuids", "value" : "Estuids"}
+		{"display_name" : "Estudis", "value" : "Estudis"}
 	],
 	"sector_productiu" : [
-        {"display_name" : "All", "value" : ""},
         {"display_name" : "Art, Turisms and Languages", "value" : "Art, Turisms and Languages"},
         {"display_name" : "Law and governance", "value" : "Law and governance"},
         {"display_name" : "Network society", "value" : "Network society"},

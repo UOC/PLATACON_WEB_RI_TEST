@@ -83,7 +83,7 @@ var GrupsCustomList = createClass({
             entriesArray.push(["name", grupObjects[0].name]);
             entriesArray.push(["description", grupObjects[0].description]);
             entriesArray.push(["url", grupObjects[0].url]);
-            entriesArray.push(["url_img", grupObjects[0].url_img]);
+            entriesArray.push(["url_img", (grupObjects[0].url_img == null || grupObjects[0].url_img == undefined) ? '' : grupObjects[0].url_img ]);
             if(entriesArray.length > 0) {
               this.props.value._tail.array[i]._root.entries = entriesArray;
             }
@@ -138,7 +138,7 @@ var InvestigadorsCustomList = createClass({
             entriesArray.push(["id", investigadorId]);
             entriesArray.push(["name", investigadorObjects[0].name]);
             entriesArray.push(["url", investigadorObjects[0].url]);
-            entriesArray.push(["url_img", investigadorObjects[0].url_img]);
+            entriesArray.push(["url_img", (investigadorObjects[0].url_img == null || investigadorObjects[0].url_img == undefined) ? '' : investigadorObjects[0].url_img ]);
             if(entriesArray.length > 0) {
               this.props.value._tail.array[i]._root.entries = entriesArray;
             }

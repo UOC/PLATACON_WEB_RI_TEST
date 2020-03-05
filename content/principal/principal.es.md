@@ -104,10 +104,7 @@ ods:
     display_name: "Aliança pel objectius"
     value: "Aliança pel objectius"
     color: "orange"
-centre: 
-  - 
-    display_name: "Tota la UOC"
-    value: ""
+centre:
   - 
     display_name: "IN3"
     value: "IN3"
@@ -7651,8 +7648,6 @@ centres_home:
     description: "Consulta los diferentes programas que se ofrecen"
     url: "https://www.uoc.edu/portal/es/universitat/estudis-centres-recerca/index.html"
 sector_productiu:
-  - display_name: Todos
-    value: ''
   - display_name: 'Arte, Turismo y Lenguas'
     value: 'Arte, Turismo y Lenguas'
   - display_name: Derecho y gobernanza

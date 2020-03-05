@@ -29,6 +29,9 @@ about:
       morbi tristique senectus et netus et. Nibh nisl condimentum id venenatis a
       condimentum vitae sapien. Tellus in metus vulputate eu. Sed odio morbi
       quis commodo odio. Et pharetra pharetra massa massa ultricies.
+
+
+      ![](/img/131-mesures-igualtat-genere-bandera.png)
     docs_rels:
       - file: /img/informe_disseny_web_r_i.pdf
     titol: Sobre spin off gamma
@@ -59,7 +62,6 @@ clients:
       viverra nibh cras pulvinar. Habitant morbi tristique senectus et. Vitae et
       leo duis ut. Ligula ullamcorper malesuada proin libero nunc consequat
       interdum.
-    docs_rels: []
     titol: Client
 casos_exit:
   - descripcio: >-
@@ -73,28 +75,37 @@ casos_exit:
       viverra nibh cras pulvinar. Habitant morbi tristique senectus et. Vitae et
       leo duis ut. Ligula ullamcorper malesuada proin libero nunc consequat
       interdum.
+
+
+      ![](/img/131-mesures-igualtat-genere-bandera.png)
     img: /img/241-projectes-estatals-recerca-logo.jpg
     titol: CAs 1
     url_success: 'http://webri.albira.io/ca/index.html'
 grups_recerca:
-  - description: Management & eLearning
-    id: '6002'
+  - id: '6002'
     name: MeL
+    description: Management & eLearning
     url: 'https://transfer-research.am.pre.uoc.es/ca/mel.html'
     url_img: >-
       https://transfer-research.am.pre.uoc.es/img/api/grupsrecerca/60/image/1573920260582
 investigadors:
-  - id: '42444002'
-    name: 'Prado Fonts, Carles'
-    url: 'https://talent.am.pre.uoc.es/ca/prado-fonts-carles.html'
-  - id: '52637302'
-    name: 'Rotger Cerdà, Neus'
-    url: 'https://talent.am.pre.uoc.es/ca/rotger-cerda-neus.html'
-    url_img: 'https://talent.am.pre.uoc.es/img/api/pdi/526373/image/1573926566251'
+  - id: '19929902'
+    name: 'Marco Simó, Josep Maria'
+    url: 'https://talent.am.pre.uoc.es/ca/josep-maria-marco-simo.html'
+    url_img: 'https://talent.am.pre.uoc.es/img/api/pdi/199299/image/1574954315497'
+  - id: '19934002'
+    name: 'Cobarsí Morales, Josep'
+    url: 'https://talent.am.pre.uoc.es/ca/josep-cobarsi-morales.html'
+    url_img: 'https://talent.am.pre.uoc.es/img/api/pdi/199340/image/1573925681278'
 contacte:
+  - address: 'adreça '
+    email: e@mail.com
+    image: 'https://talent.am.pre.uoc.es/img/api/pdi/665775/image/1573925440895'
+    telefon: '123456789'
+    text: Pere
   - address: 'adreça '
     email: e@mail.com
     telefon: '123456789'
     text: Pere
+    video: qtIqKaDlqXo
 ---
-

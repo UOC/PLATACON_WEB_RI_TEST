@@ -14,8 +14,7 @@ general:
   img: /img/marvin-meyer-syto3xs06fu-unsplash.jpg
   lloc: parc audiovisual de catalunya
   titol: delta
-  xarxes:
-    - address: twitter.com/UOCuniversitat
-      xarxa: twitter
+  inscripcio: www.google.com
+  contact_mail: e@mail.com
 ---
 

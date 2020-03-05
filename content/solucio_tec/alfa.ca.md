@@ -2,19 +2,19 @@
 title: alfa
 language: ca
 general:
-  centre: Estuids
+  sector: Educació - eLearning
   img_background: /img/0a5e3d8399408516a201716607daee9dc776694d.png
   keywords:
     - value: lorem
     - value: ipsum
   logo: /img/speakapplogo.png
   nom: SpeakApps
-  sector: Educació - eLearning
-  slogan: Faig una prova
   text_breu: Eines i activitats per a l’aprenentatge oral de les llengües
+  centre: Estudis
   xarxes:
     - address: 'http://speakapps.rdi.uoc.edu/'
       xarxa: web
+  slogan: Faig una prova
 about:
   - descripcio: >-
       SpeakApps representa una solució innovadora per a l’ensenyament d’idiomes
@@ -50,7 +50,8 @@ about:
     docs_rels:
       - file: /img/informe_disseny_web_r_i.pdf
     titol: Sobre alfa
-    video: Amif-_UhI4I
+    video_list:
+      - video: Amif-_UhI4I
 aspectes_innovadors:
   - descripcio: >-
       SpeakApps permet dur a terme activitats per a la pràctica oral d’una
@@ -110,6 +111,11 @@ investigadors:
   - id: '42444002'
     name: 'Prado Fonts, Carles'
     url: 'https://talent.am.pre.uoc.es/ca/prado-fonts-carles.html'
-contacte: []
+    url_img: ''
+contacte:
+  - address: Adreça
+    email: transfer_ari@uoc.edu
+    telefon: '1234'
+    text: SpeakApps
+    video: YlzE09OlwNU
 ---
-

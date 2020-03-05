@@ -32,14 +32,12 @@
 		{"display_name" : "Aliança pel objectius", "value" : "Aliança pel objectius", "img":"/img/icons/icon_ods_color_17.svg"}
 	],
   "centre" : [ 
-    {"display_name" : "Tota la UOC", "value" : ""}, 
     {"display_name" : "IN3", "value" : "IN3"}, 
     {"display_name" : "e-Health Center", "value" : "e-Health Center"}, 
     {"display_name" : "e-Learn Center", "value" : "e-Learn Center"}, 
-    {"display_name" : "Estuids", "value" : "Estuids"} 
+    {"display_name" : "Estudis", "value" : "Estudis"} 
   ],
   "sector_productiu" : [
-      {"display_name" : "Tots", "value" : ""},
       {"display_name" : "Art, Turisme i Llengües", "value" : "Art, Turisme i Llengües"},
       {"display_name" : "Dret i governança", "value" : "Dret i governança"},
       {"display_name" : "Societat en xarxa", "value" : "Societat en xarxa"},

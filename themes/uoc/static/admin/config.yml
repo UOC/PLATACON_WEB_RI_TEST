@@ -187,6 +187,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -211,6 +212,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -235,6 +237,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -357,6 +360,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -381,6 +385,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -405,6 +410,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -527,6 +533,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -551,6 +558,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -575,6 +583,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -697,6 +706,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -721,6 +731,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -745,6 +756,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -867,6 +879,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -891,6 +904,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -915,6 +929,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -1037,6 +1052,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -1061,6 +1077,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -1085,6 +1102,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -1205,6 +1223,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}          
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -1334,6 +1353,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -1463,6 +1483,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -1587,6 +1608,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -1611,6 +1633,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -1635,6 +1658,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -1759,6 +1783,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -1783,6 +1808,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -1807,6 +1833,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -1931,6 +1958,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -1955,6 +1983,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File
@@ -1979,6 +2008,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: ID video Youtube, name: video, widget: string,  required: true}
           - label: Documents Relacionats
             name: docs_rels
+            required: false
             widget: list
             fields:
               - label: File

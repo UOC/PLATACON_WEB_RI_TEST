@@ -18,9 +18,4 @@ general:
   img: /img/marvin-meyer-syto3xs06fu-unsplash.jpg
   lloc: Parc audiovisual de catalunya
   titol: Conversa sobre pedagogia i neurociència entre Antonio Zabala i David Bueno
-  xarxes:
-    - address: 'https://twitter.com/UOCuniversitat'
-      xarxa: twitter
-    - address: 'https://www.instagram.com/uocuniversitat/?hl=en'
-      xarxa: instagram
 ---

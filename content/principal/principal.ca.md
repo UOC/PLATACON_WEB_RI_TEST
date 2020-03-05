@@ -106,9 +106,6 @@ ods:
     color: "orange"
 centre: 
   - 
-    display_name: "Tota la UOC"
-    value: ""
-  - 
     display_name: "IN3"
     value: "IN3"
   - 
@@ -7651,8 +7648,6 @@ centres_home:
     description: "Consulta els diferents programes que s’hi ofereixen"
     url: "https://www.uoc.edu/portal/ca/universitat/estudis-centres-recerca/index.html"
 sector_productiu:
-  - display_name: Tots
-    value: ''
   - display_name: 'Art, Turisme i Llengües'
     value: 'Art, Turisme i Llengües'
   - display_name: Dret i governança

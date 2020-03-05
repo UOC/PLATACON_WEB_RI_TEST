@@ -2,7 +2,7 @@
 title: ARLab
 language: ca
 general:
-  centre: Estuids
+  centre: Estudis
   img_background: /img/35870472491_cb3a156788_w.jpg
   logo: /img/arlab.jpg
   nom: ARLab

@@ -2,11 +2,11 @@
 title: min
 language: ca
 general:
-  centre: Estuids
+  centre: Estudis
   img_background: /img/marvin-meyer-syto3xs06fu-unsplash.jpg
   nom: min
   sector: Educació - eLearning
-  text_breu: ''
+  text_breu: 'test'
   xarxes:
     - address: 'https://www.facebook.com/UOC.universitat'
       xarxa: facebook

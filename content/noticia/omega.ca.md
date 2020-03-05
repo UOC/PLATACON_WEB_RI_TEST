@@ -10,11 +10,6 @@ general:
   titol: >-
     El Ministeri de Ciència, Innovació i Universitats finança onze noves
     recerques de la UOC sobre la digitalització de la societat - 26/09/19 (ca)
-  xarxes:
-    - address: 'https://twitter.com/UOCuniversitat'
-      xarxa: twitter
-    - address: 'https://www.instagram.com/uocuniversitat/?hl=en'
-      xarxa: instagram
 descripcio:
   entrada: >-
     Les temàtiques abasten des de l'ensenyament en línia, el 5G en la indústria

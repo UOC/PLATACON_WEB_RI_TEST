@@ -12,7 +12,6 @@ general:
   titol: >-
     Calen més recursos i competències en gènere perquè les mesures d'igualtat a
     la ciència siguin efectives
-  xarxes: []
 descripcio:
   entrada: >-
     Una recerca europea detecta la necessitat d'invertir més recursos en mesures

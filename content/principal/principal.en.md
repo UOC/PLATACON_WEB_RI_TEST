@@ -103,9 +103,6 @@ ods:
     color: "orange"
 centre: 
   - 
-    display_name: "All"
-    value: ""
-  - 
     display_name: "IN3"
     value: "IN3"
   - 
@@ -7649,8 +7646,6 @@ centres_home:
     url: "https://www.uoc.edu/portal/en/universitat/estudis-centres-recerca/index.html"
 
 sector_productiu:
-  - display_name: All
-    value: ''
   - display_name: 'Art, Turisms and Languages'
     value: 'Art, Turisms and Languages'
   - display_name: Law and governance

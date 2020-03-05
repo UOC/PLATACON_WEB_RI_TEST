@@ -10,7 +10,7 @@ The script rename-languages.js updates the suffix of files in content, e.g., cer
 The reason why this is necessary is because NetlifyCMS is not able to save files with suffixes. However, hugo needs the language suffix to generate 
 the multi-language static files.
 
-## Stop hugo server
+## Stop hugo server 
 ````
 node ./bin/rename-languages.js -
 ````

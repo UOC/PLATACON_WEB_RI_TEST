@@ -8,7 +8,6 @@ general:
   img: /img/detall_solucions_principal.png
   link_extern: www.google.com
   titol: Alfa 2 - 17/12/19 (ca) 
-  xarxes: []
 descripcio:
     text: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
