@@ -183,3 +183,7 @@
 .js-CMS.show{
     display: block; 
 }
+
+.link-trigger{
+    cursor: pointer
+}

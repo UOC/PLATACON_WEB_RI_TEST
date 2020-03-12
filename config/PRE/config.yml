@@ -1,0 +1,7 @@
+params:
+  apiPlatacon: ""
+  apiRI: ""
+  authProviderBaseUrl: ""
+  githubRepo: "UOC/PLATACON_WEB_RI_PRE"
+  CB_URL_BADGE: ${CB_URL_BADGE}
+  

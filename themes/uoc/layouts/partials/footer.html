@@ -13,20 +13,42 @@
 	{{$lang := index $url (add 1 $n)}}
 	{{$collection := index $url (add 2 $n)}}
 	{{$file := index (split (index $url (add 3 $n) ) ".") 0}}
-	<div class="js-CMS float-right">
-		<div class="ruler ruler--ri"></div>
+	<div class=js-CMS>
 		<div class="row">
-			<a id="time-stamp" href="{{.Permalink}}" > 
-				<span class="icon icon--lab"></span>
-				<span class="h5">Preview</span>
-			</a>
-			&nbsp;&nbsp;&nbsp;
-			<a href="{{$baseurl}}admin/{{if not $local}}index.html{{end}}#/collections/{{$collection}}_{{$lang}}/entries/{{$file}}.{{$lang}}" target="_blank"> 
-				<span class="icon icon--edit-pencil"></span>
-				<span class="h5">Editar {{$file}} amb Netlify CMS</span>
-			</a>
+			<br>
+		</div>
+		<div class="float-left">
+			<div class="row">
+				<div data-dropdown="" class="dropdown">
+					<button data-dropdown-trigger="" aria-expanded="false" class="btn btn--primary">
+						<span class="icon icon--speed"></span>
+						<span class="h5">Build Status</span>
+					</button>
+					<div data-dropdown-content class="dropdown__content">
+						<img src='{{ .Site.Params.CB_URL_BADGE }}' style="margin-top: 5px;"></img>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="float-right">
+			<div class="ruler ruler--ri"></div>
+			<div class="row">
+				<a id="time-stamp" href="{{.Permalink}}" > 
+					<span class="icon icon--lab"></span>
+					<span class="h5">Preview</span>
+				</a>
+				&nbsp;&nbsp;&nbsp;
+				<a href="{{$baseurl}}admin/{{if not $local}}index.html{{end}}#/collections/{{$collection}}_{{$lang}}/entries/{{$file}}.{{$lang}}" target="_blank"> 
+					<span class="icon icon--edit-pencil"></span>
+					<span class="h5">Editar {{$file}} amb Netlify CMS</span>
+				</a>
+			</div>
+			
 		</div>
 	</div>
+	
 	<div class="page-footer-container footer-brand">
 		<div class="col-xs-12 col-clear">
 			<div class="footer-bg footer-bg-left"></div>

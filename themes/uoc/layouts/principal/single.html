@@ -202,18 +202,22 @@
 								</div>
 								<div id="collapse3" class="contentCollapse show">
 										{{ range first 4 (where (where .Site.Pages.ByDate ".Params.destacat" true) ".Params.language" .Site.Language.Lang)}}
-										<div class="col-xs-12 col-md-3 difusionsHomeList" role="article">
-											<a href="{{.Permalink}}" class="card-absolute-link" aria-label="link"></a>
-											<div class="card" role="region" aria-label="Texto descriptivo" >
+										
+
+										<div class="col-xs-12 col-md-3 difusionsHomeList" role="region">
+                
+											<div class="card" aria-label="link" >
+												<a href="{{.Permalink}}" class="card-absolute-link"></a>
 												<div class="card__image">
-													{{with .Params.general.img}}<img src="{{.}}" alt="">{{end}}
+													<img src="{{with .Params.general.img}}{{.}}{{end}}" alt="">
 												</div>
 												<div class="card__contents" >
-													<h3 class="h5 text font-alternate">{{with .Params.general.titol}}{{.}}{{end}}</h3>
+													<h3 class="h5 text font-alternate">{{.Params.general.titol}}</h3>
+													{{ with .Params.general.entrada}}<p class="text-small text font-alternate"><blockquote class="pullquote">{{.}}</blockquote></p>{{end}}
 												</div>
 												<div class="card__footer">
-													<div class="float-left p-left-x  icon icon--external-link"></div>
-													<div class="float-right p-right-x">{{.Type}}</div>
+													<span class="float-left p-left-x  icon icon--external-link" aria-hidden="true"></span>
+													<span class="float-right p-right-x" aria-label="tag">{{if eq .Type "noticia" }}{{ T "uoc_ri_noticia" }}{{else}}{{ T "uoc_ri_esdeveniment" }}{{end}}</span>
 												</div>
 											</div>
 										</div>

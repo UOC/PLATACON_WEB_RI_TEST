@@ -303,9 +303,8 @@ descripcio:
     de la publicitat i els mitjans socials fins a l'ensenyament. Per fer-ho,
     l'equip del projecte explorarà formes, tècniques alternatives i estratègies
     que puguin contribuir a impulsar-ne la capacitat innovadora i transformadora
-    en la vida social i en la cultura digital.
+    en la vida social i en la cultura digital.,,,
 
 
     ![](/img/241-projectes-estatals-recerca-logo.jpg)
 ---
-
