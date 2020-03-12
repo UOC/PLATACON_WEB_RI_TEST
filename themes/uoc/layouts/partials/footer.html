@@ -25,7 +25,7 @@
 						<span class="h5">Build Status</span>
 					</button>
 					<div data-dropdown-content class="dropdown__content">
-						<img src='{{ .Site.Params.CB_URL_BADGE }}' style="margin-top: 5px;"></img>
+						<img src='{{ getenv "CB_URL_BADGE" }}' style="margin-top: 5px;"></img>
 					</div>
 				</div>
 				

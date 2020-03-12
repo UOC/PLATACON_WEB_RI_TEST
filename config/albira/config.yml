@@ -1,4 +1,0 @@
-params:
-  apiRI:  ""
-  authProviderBaseUrl: ""
-  CB_URL_BADGE: ${CB_URL_BADGE}

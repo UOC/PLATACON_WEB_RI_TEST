@@ -54,5 +54,3 @@ URL = "s3://uocwebrisupport?region=eu-west-1"
   apiRI = "https://webri.albira.io"
   authProviderBaseUrl = "https://webri.albira.io"
   githubRepo = "albirasolutions/UOC_WebRI"
-  CB_URL_BADGE = "https://codebuild.eu-west-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoicHpHRWx2Uyt5REt5ZXpVdjZlR2VyOUhHb3loNndIZmF2L1Bvb2JwMnZhbXBVN0lPb1BFT0owOGdnODN0SHY0UW5LQWRXdy93VDdWT3VLK1FvWERFNWpnPSIsIml2UGFyYW1ldGVyU3BlYyI6InNFWDI4WW9KWE81M3E5V3EiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master"
-

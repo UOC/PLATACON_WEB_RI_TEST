@@ -1,0 +1,6 @@
+[params]
+  apiPlatacon = ""
+  apiRI = ""
+  authProviderBaseUrl = ""
+  githubRepo = "UOC/PLATACON_WEB_RI_PRE"
+  
