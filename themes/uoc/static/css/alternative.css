@@ -187,3 +187,7 @@
 .link-trigger{
     cursor: pointer
 }
+
+dd {
+    margin-bottom: 10px;
+}

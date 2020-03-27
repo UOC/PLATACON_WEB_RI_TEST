@@ -449,11 +449,15 @@ function getResultMarkup(item, content_type, idx, listView){
 	
 	if(content_type == "fitxa"){
 			var posicio = item.fields.posicio;
+			var entradeta = item.fields.entradeta;
+			
 			if(typeof item.fields.posicio === 'undefined'){posicio=""}
+			if(typeof item.fields.entradeta === 'undefined'){entradeta=""}
+
 			markup+="<a href='"+item.fields.url+"'>"
 			markup+='<div id="'+item.id+'" class="card card-people"><div class="card__contents img-wpr"><img src="'+item.fields.imatge_url+'" alt="" class="img-wpr__cover">';
 			markup+='<div class="img-wpr__contents"><p class="title">'+item.fields.nom_investigador+'</p>';
-			markup+='</div><span class="author">'+posicio+'<span class="description">'+item.fields.entradeta+'</span></span>';
+			markup+='</div><span class="author">'+posicio+'<span class="description">'+ entradeta+'</span></span>';
 			markup+='</div></div></div></a>';
     } else if(content_type == "grup"){
 			markup+="<a href='"+item.fields.url+"'>"
@@ -462,10 +466,12 @@ function getResultMarkup(item, content_type, idx, listView){
             markup+='</div></div></a>';
             
     } else if(content_type == "patent" || content_type == "servei" || content_type == "solucio_tec" || content_type == "spin_off") { // sols_tec, patent, servei, spin-off print view
+			var text_breu = item.fields.text_breu;
+			if(typeof item.fields.text_breu === 'undefined'){text_breu=""}
 
 			markup+="<a href='"+item.fields.url+"'>"
 			markup+='<div id="'+item.id+'" aria-label="region" class="card card-noimg"><div class="card__contents">';
-			markup+='<h4 class="title">'+item.fields.name+'</h4><p>'+item.fields.text_breu+'</p>';
+			markup+='<h4 class="title">'+item.fields.name+'</h4><p>'+text_breu+'</p>';
 			markup+='</div></div></a>';
 	}
 	

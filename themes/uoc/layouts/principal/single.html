@@ -57,33 +57,37 @@
 					<div id="tab-content-1" data-tab-content="" role="tabpanel" aria-labelledby="tab-1" aria-hidden="false" class="filters-main__content tab-content cercaFiltres">
 						<form action="" class="radio-accordeon search-form-container">
 							<h4>{{ T "uoc_ri_cercador_cercaper" }}</h4>
-							<div class="radio-collapse-item active">
-								<input role="radiogroup" aria-label="paymentMode" type="radio" name="paymentMode" value="CreditCard" id="creditcard" class="js-payment-mode-radio">
-								<label for="creditcard" class="checkbox-wrapper payment-mode-label">{{ T "uoc_ri_cercador_filtres_ambitsespecialitzacio" }}</label>
+							<div class="radio-collapse-item">
+								<input tabindex="0" role="radiogroup" type="radio" name='{{ T "uoc_ri_cercador_filtres_ambitsespecialitzacio" }}' id="ambits" class="js-payment-mode-radio">
+								<label for="ambits" class="checkbox-wrapper payment-mode-label">{{ T "uoc_ri_cercador_filtres_ambitsespecialitzacio" }}</label>
 								<div class="collapse-content">
 									<ul class="tag-list ambits_especialitzacio">
 										{{ range $index, $element := .Params.ambits_especialitzacio }}
-										<li data-ambit="{{ $element.value}}">{{ $element.display_name }}</li>
+										<li data-ambit="{{ $element.value}}" tabindex="0">{{ $element.display_name }}</li>
 										{{ end }}
 									</ul>
 								</div>
 							</div>
 							<div class="radio-collapse-item">
-								<input role="radiogroup" aria-label="paymentMode" type="radio" name="paymentMode" value="Boleto" id="boleto" class="js-payment-mode-radio">
-								<label for="boleto" class="checkbox-wrapper payment-mode-label">{{ T "uoc_ri_cercador_filtres_ods"}}</label>
+								<input tabindex="0" role="radiogroup" type="radio" name='{{ T "uoc_ri_cercador_filtres_ods"}}' id="ods" class="js-payment-mode-radio">
+								<label for="ods" class="checkbox-wrapper payment-mode-label">{{ T "uoc_ri_cercador_filtres_ods"}}</label>
 								<div class="collapse-content">
 									<style>.tag-icons li {vertical-align: bottom;}</style>
 									<ul class="tag-icons ods">
 										{{ range $index, $element := .Params.ods }}
-										<li class="tag-icons-{{$element.color}}">
-											<p> <span class="number">{{add $index 1}}</span><span class="title">{{$element.display_name}}</span></p><span class="icon icon--group"></span>
+										<li class="tag-icons-{{$element.color}}" tabindex="0">
+											<p> 
+												<span class="number">{{add $index 1}}</span>
+												<span class="text-extra-small" style="font-size: 9px;">{{$element.display_name}}</span>
+											</p>
+											<span class="icon icon--group"></span>
 										</li>
 										{{ end }}
 									</ul>
 								</div>
 							</div>
 							<div class="radio-collapse-item">
-								<input role="radiogroup" type="radio" name='{{ T "uoc_ri_cercador_filtres_unesco" }}' id="unesco" aria-label='{{ T "uoc_ri_cercador_filtres_unesco" }}' class="js-payment-mode-radio">
+								<input tabindex="0" role="radiogroup" type="radio" name='{{ T "uoc_ri_cercador_filtres_unesco" }}' id="unesco" aria-label='{{ T "uoc_ri_cercador_filtres_unesco" }}' class="js-payment-mode-radio">
 								<label for="unesco" class="checkbox-wrapper payment-mode-label">{{ T "uoc_ri_cercador_filtres_unesco" }}</label>
 								<div class="collapse-content"> 
 									<div class="full-width search-container-top">
@@ -104,7 +108,7 @@
 								<h4>{{ T "uoc_ri_cercador_filtres_centre" }}</h4>
 								<ul class="tag-list centre">
 									{{ range $index, $element := .Params.centre }}
-									<li>{{$element.display_name}}</li>
+									<li tabindex="0">{{$element.display_name}}</li>
 									{{ end }}
 								</ul>
 								<div class="filter-btn">
@@ -119,7 +123,7 @@
 								<h4>{{ T "uoc_ri_cercador_cercapersector" }}</h4>
 								<ul class="tag-list sector_productiu">
 									{{ range $i, $el := .Params.sector_productiu }}
-									<li>{{$el.display_name}}</li>
+									<li tabindex="0">{{$el.display_name}}</li>
 									{{ end }}
 								</ul>
 							</div>
@@ -127,7 +131,7 @@
 								<h4>{{ T "uoc_ri_cercador_filtres_centre" }}</h4>
 								<ul class="tag-list centre">
 									{{ range $index, $element := .Params.centre }}
-									<li>{{$element.display_name}}</li>
+									<li tabindex="0">{{$element.display_name}}</li>
 									{{ end }}
 								</ul>
 								<div class="filter-btn">
@@ -139,13 +143,13 @@
 					<div id="tab-content-2" data-tab-content="" role="tabpanel" aria-labelledby="tab-2" aria-hidden="false" class="filters-main__content tab-content cercaTextual">
 						<form action="" class="search-form-container filters-main-search">
 							<div class="full-width search-container-top">
-								<div class="col-xs-2 col-md-1">
-									<span class="icon-container hover--dynamic-hover bg-grey">
-										<input type="submit" value="Cerca" name="search_sbm" title="Buscar" aria-label="buscar" onclick="" class="w100-inline-block"><span class="icon icon--search"></span>
-									</span>
-								</div>
 								<div class="col-xs-10 col-md-11">
 									<input type="search" id="search" aria-label='{{ T "uoc_ri_cercador_paraulesACercar" }}' placeholder='{{ T "uoc_ri_cercador_paraulesACercar" }}' name="searchWords" tabindex="0" value="" class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1">
+								</div>
+								<div class="col-xs-2 col-md-1">
+									<span class="icon-container hover--dynamic-hover bg-grey">
+										<input type="submit" value="Cerca" name="search_sbm" title="Buscar" aria-label="buscar" onclick="" class="w100-inline-block"><span class="icon icon--search" aria-hidden="true"></span>
+									</span>
 								</div>
 							</div>
 						</form>
@@ -165,15 +169,16 @@
 								<div id="collapse2" class="contentCollapse show">
 									<div class="wrap-richText">
 										<section class="card-home">
-											<div class="row">
+											<div class="row" role="list">
 												{{ range $index, $element := .Params.centres_home }}
-													<div class="col-xs-12 col-md-3 centresHomeList">
-														<a class="card-absolute-link" href="{{$element.url}}" title="{{$element.title}}" aria-hidden='false' target='_blank' aria-labelledby='centresHome_{{$index}}'></a>
+													<div class="col-xs-12 col-md-3 centresHomeList" role="listitem">
+														<a class="card-absolute-link" href="{{$element.url}}" title="{{$element.title}}" aria-hidden='true'  tabindex="-1" target='_blank' aria-labelledby='centresHome_{{$index}}'></a>
 														<div class="card card--brand-corporate">
 															<div class="card__contents">
-																<h3 id="centresHome_{{$index}}">
+																<h3 ><a id="centresHome_{{$index}}" href="{{$element.url}}">
 																	{{$element.title}}
-																</h3>
+																	<span class="visually-hidden">{{T "uoc_ri_difusions_link"}}</span>
+																</a></h3>
 																<p>{{$element.description}}</p>
 																<div class="card-link-icon"><span class="icon icon--external-link" aria-hidden="true"></span></div>
 															</div>
@@ -201,26 +206,28 @@
 									<h2><a href="#collapse3" aria-expanded="true" class="js-collapseClick">{{ T "uoc_ri_home_difusions" }}<span class="icon icon--arrow-down"></span></a></h2>
 								</div>
 								<div id="collapse3" class="contentCollapse show">
+										{{ $.Scratch.Set "idx" 1 }}
 										{{ range first 4 (where (where .Site.Pages.ByDate ".Params.destacat" true) ".Params.language" .Site.Language.Lang)}}
 										
 
 										<div class="col-xs-12 col-md-3 difusionsHomeList" role="region">
                 
-											<div class="card" aria-label="link" >
-												<a href="{{.Permalink}}" class="card-absolute-link"></a>
+											<div class="card">
+												<a href="{{.Permalink}}" aria-labelledby='x{{$.Scratch.Get "idx"}}' tabindex="-1" class="card-absolute-link" aria-hidden="true"></a>
 												<div class="card__image">
 													<img src="{{with .Params.general.img}}{{.}}{{end}}" alt="">
 												</div>
 												<div class="card__contents" >
-													<h3 class="h5 text font-alternate">{{.Params.general.titol}}</h3>
+													<h3 class="h5 text font-alternate"><a id='x{{$.Scratch.Get "idx"}}' href="{{.Permalink}}">{{.Params.general.titol}}<span class="visually-hidden">{{T "uoc_ri_difusions_link"}}</span></a></h3>
 													{{ with .Params.general.entrada}}<p class="text-small text font-alternate"><blockquote class="pullquote">{{.}}</blockquote></p>{{end}}
 												</div>
 												<div class="card__footer">
 													<span class="float-left p-left-x  icon icon--external-link" aria-hidden="true"></span>
-													<span class="float-right p-right-x" aria-label="tag">{{if eq .Type "noticia" }}{{ T "uoc_ri_noticia" }}{{else}}{{ T "uoc_ri_esdeveniment" }}{{end}}</span>
+													<span class="float-right p-right-x"><span class="visually-hidden">Tag: </span>{{if eq .Type "noticia" }}{{ T "uoc_ri_noticia" }}{{else}}{{ T "uoc_ri_esdeveniment" }}{{end}}</span>
 												</div>
 											</div>
 										</div>
+										{{ $.Scratch.Set "idx" (add ($.Scratch.Get "idx") 1) }}
 										{{ end }}
 								</div>
 							</div>

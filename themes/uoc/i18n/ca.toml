@@ -180,14 +180,14 @@
 [uoc_language_close] other = "Tancar idioma (x)"
 [uoc_mainmenu_label] other = "Menú principal"
 
-[uoc_ri_tipologia] other = 'Tipología'
+[uoc_ri_tipologia] other = 'Tipologia'
 [uoc_ri_sector] other = 'Sector'
 [uoc_ri_centre] other = 'Centre'
 [uoc_ri_keywords] other = 'Keywords'
 [uoc_ri_about_tec] other = 'Sobre la tecnologia'
 [uoc_ri_about_pat] other = 'Sobre la patent'
 [uoc_ri_about_serv] other = 'Sobre el servei'
-[uoc_ri_about_spin] other = 'Sobre el spin-off'
+[uoc_ri_about_spin] other = "Sobre l'spin-off"
 [uoc_ri_aspect_innov] other = 'Aspectes Innovadors'
 [uoc_ri_apps] other = 'Aplicacions'
 [uoc_ri_research_groups] other = 'Grups de Recerca'
@@ -216,3 +216,5 @@
 [uoc_ri_cercador_paraulesACercar] other = "Paraules a cercar"
 
 [uoc_ri_esdeveniment_inscripcio] other = "Inscripció"
+
+[uoc_ri_difusions_link] other = "Enllaç extern"

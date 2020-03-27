@@ -49,6 +49,3 @@ phases:
     finally:
       - aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --paths "/admin/*,/ca/*,/es/*,/en/*,/js/*,/css/*,/img/*,/api-ri/*"
       - echo "Script finished running"
-
-params:
-  CB_URL_BADGE: "${CB_URL_BADGE}"

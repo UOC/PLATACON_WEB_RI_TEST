@@ -188,9 +188,9 @@
 [uoc_ri_about_pat] other = 'Sobre la patente'
 [uoc_ri_about_serv] other = 'Sobre el servicio'
 [uoc_ri_about_spin] other = 'Sobre el spin-off'
-[uoc_ri_aspect_innov] other = 'Aspectes Innovadores'
+[uoc_ri_aspect_innov] other = 'Aspectos Innovadores'
 [uoc_ri_apps] other = 'Aplicaciones'
-[uoc_ri_research_groups] other = 'Grupos de Recerca'
+[uoc_ri_research_groups] other = 'Grupos de investigación'
 [uoc_ri_researchers] other = 'Investigadores'
 [uoc_ri_contacte] other = 'Contacto'
 [uoc_ri_casos_exit] other = "Casos de Éxito"
@@ -216,3 +216,5 @@
 [uoc_ri_cercador_paraulesACercar] other = "Palabras de búsqueda"
 
 [uoc_ri_esdeveniment_inscripcio] other = "Inscripción"
+
+[uoc_ri_difusions_link] other = "Enlace externo"

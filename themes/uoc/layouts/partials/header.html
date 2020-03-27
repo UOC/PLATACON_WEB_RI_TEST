@@ -111,18 +111,18 @@
 	          <div id="nav-menu-scrollable-container-expand" style="margin-bottom: 1em;">
 	            <div id="nav-menu-scrollable-container" class="nav-menu-scrollable-container">
 	              <nav id="main-nav-menu" aria-label="Menú de navegació" class="nav-menu nav-menu-soft-dropdown hidden-xs hidden-sm hidden-md">
-	                <ul>
-	                  <li tabindex="-1" class="col-xs-12 col-lg-2">
-	                    <button onclick="location.href='{{ "index.html" | relLangURL }}';" value="{{ T "uoc_ri_menuitem_explore" }}" class="clickable"><span>{{ T "uoc_ri_menuitem_explore" }}</span></button>
+	                <ul role="tablist">
+	                  <li tabindex="-1" class="col-xs-12 col-lg-2" >
+	                    <button onclick="location.href='{{ "index.html" | relLangURL }}';" value="{{ T "uoc_ri_menuitem_explore" }}" class="clickable" role="tab"><span>{{ T "uoc_ri_menuitem_explore" }}</span></button>
 	                  </li>
 	                  <li tabindex="-1" class="col-xs-12 col-lg-2">
-	                    <button onclick="location.href='{{ "mapa-ambits-recerca/mapa-ambits-recerca.html" | relLangURL }}';" value="{{ T "uoc_ri_menuitem_researchmap" }}" class="clickable"><span>{{ T "uoc_ri_menuitem_researchmap" }}</span></button>
+	                    <button onclick="location.href='{{ "mapa-ambits-recerca/mapa-ambits-recerca.html" | relLangURL }}';" value="{{ T "uoc_ri_menuitem_researchmap" }}" class="clickable" role="tab"><span>{{ T "uoc_ri_menuitem_researchmap" }}</span></button>
 					  </li>
 					  <li tabindex="-1" class="col-xs-12 col-lg-2">
-							<button onclick="location.href='{{ "difusions/difusions.html" | relLangURL }}';" value="{{ T "uoc_ri_menuitem_broadcast" }}" class="clickable"><span>{{ T "uoc_ri_menuitem_broadcast" }}</span></button>
-						  </li>
+						<button onclick="location.href='{{ "difusions/difusions.html" | relLangURL }}';" value="{{ T "uoc_ri_menuitem_broadcast" }}" class="clickable" role="tab"><span>{{ T "uoc_ri_menuitem_broadcast" }}</span></button>
+						</li>
 	                  <li tabindex="-1" class="col-xs-12 col-lg-2">
-	                    <button onclick="location.href='{{ "contacte/contacte.html" | relLangURL }}';" value="{{ T "uoc_ri_menuitem_contact" }}" class="clickable"><span>{{ T "uoc_ri_menuitem_contact" }}</span></button>
+	                    <button onclick="location.href='{{ "contacte/contacte.html" | relLangURL }}';" value="{{ T "uoc_ri_menuitem_contact" }}" class="clickable" role="tab"><span>{{ T "uoc_ri_menuitem_contact" }}</span></button>
 	                  </li>
 	                  <li tabindex="-1" class="col-xs-12 col-lg-2 hidden-xs hidden-sm hidden-md"><span class="borders"></span></li>
 	                  <li tabindex="-1" class="col-xs-12 col-lg-2 hidden-xs hidden-sm hidden-md"><span class="borders"></span></li>

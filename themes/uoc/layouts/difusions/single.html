@@ -23,20 +23,20 @@
             {{ range first 1 (where (where .Site.Pages.ByDate.Reverse ".Params.destacat" true) ".Params.language" .Site.Language.Lang)}}
             <div class=" col-md-9 col-xs-9" role="region">
                 
-                <div class="bg-simple img-wpr img-wpr--horizontal img--tint link-trigger" aria-label="link">
+                <div class="bg-simple img-wpr img-wpr--horizontal img--tint link-trigger">
                     
                     {{ with .Params.general.img}}<img src="{{.}}" class="img-wpr__cover" alt="">{{end}}
-                    <a href="{{.Permalink}}"></a>
+                    <a href="{{.Permalink}}" aria-labelledby="x0" tabindex="-1" aria-hidden="true"></a>
                     <div class="img-wpr__contents_no-bg">
                         <div class="row">
                             <div class="col-md-7">
-                                <h3 class=" inverse">{{ with .Params.general.titol}}{{.}}{{end}}</h3>
+                                <h3 class=" inverse"><a id="x0" href="{{.Permalink}}">{{ with .Params.general.titol}}{{.}}{{end}}<span class="visually-hidden">{{T "uoc_ri_difusions_link"}}</span></a></h3>
                             </div>
                         </div>
                     </div>
                     <div class="img-wpr__contents_no-bg"  style="bottom: .5rem;">
                         <div class="row">
-                            <span class="float-right p-right-x text-small inverse" aria-label="tag">{{if eq .Type "noticia" }}{{ T "uoc_ri_noticia" }}{{else}}{{ T "uoc_ri_esdeveniment" }}{{end}}</span>
+                            <span class="float-right p-right-x text-small inverse"><span class="visually-hidden">Tag: </span>{{if eq .Type "noticia" }}{{ T "uoc_ri_noticia" }}{{else}}{{ T "uoc_ri_esdeveniment" }}{{end}}</span>
                         </div>
                     </div>
                 </div>
@@ -46,18 +46,18 @@
             {{ range first 1 (after 1 (where (where .Site.Pages.ByDate.Reverse ".Params.destacat" true) ".Params.language" .Site.Language.Lang))}}
             <div class="col-xs-6 col-md-3" role="region">
                 
-                <div class="card" aria-label="link" >
-                    <a href="{{.Permalink}}" class="card-absolute-link"></a>
+                <div class="card">
+                    <a href="{{.Permalink}}" aria-labelledby="x1" tabindex="-1" class="card-absolute-link" aria-hidden="true"></a>
                     <div class="card__image">
                         <img src="{{with .Params.general.img}}{{.}}{{end}}" alt="">
                     </div>
                     <div class="card__contents" >
-                        <h3 class="h5 text font-alternate">{{.Params.general.titol}}</h3>
+                        <h3 class="h5 text font-alternate"><a id="x1" href="{{.Permalink}}">{{ with .Params.general.titol}}{{.}}{{end}}<span class="visually-hidden">{{T "uoc_ri_difusions_link"}}</span></a></h3>
                         {{ with .Params.general.entrada}}<p class="text-small text font-alternate"><blockquote class="pullquote">{{.}}</blockquote></p>{{end}}
                     </div>
                     <div class="card__footer">
                         <span class="float-left p-left-x  icon icon--external-link" aria-hidden="true"></span>
-                        <span class="float-right p-right-x" aria-label="tag">{{if eq .Type "noticia" }}{{ T "uoc_ri_noticia" }}{{else}}{{ T "uoc_ri_esdeveniment" }}{{end}}</span>
+                        <span class="float-right p-right-x"><span class="visually-hidden">Tag: </span>{{if eq .Type "noticia" }}{{ T "uoc_ri_noticia" }}{{else}}{{ T "uoc_ri_esdeveniment" }}{{end}}</span>
                     </div>
                 </div>
             </div>
@@ -96,6 +96,7 @@
         <script type="text/javascript">
             $(".list-difusions .card").matchHeight(); 
             var noticiaLabel = '{{ T "uoc_ri_noticia" }}';
+            var LinkLang = '{{T "uoc_ri_difusions_link"}}';
             var esdevenimentLabel = '{{ T "uoc_ri_esdeveniment" }}';
             var difusionsDestacades = [
                 {{ range (after 2 (where (where .Site.Pages.ByDate.Reverse ".Params.destacat" true) ".Params.language" .Site.Language.Lang))}}

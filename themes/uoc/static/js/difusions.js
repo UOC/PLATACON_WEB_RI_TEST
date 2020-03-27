@@ -6,14 +6,15 @@ jQuery(document).ready(function ($) {
     allDifusions = allDifusions.concat(restaDifusions);
 
     console.log(allDifusions);
-    
+    var idx=2;
     for(var difusio of allDifusions){
-        difusionsList.push(getResultMarkup(difusio));
+		difusionsList.push(getResultMarkup(difusio, idx));
+		idx+=1;
     }
     initPagination(difusionsList);
 })
 
-function getResultMarkup(difusio){
+function getResultMarkup(difusio, idx){
 
     var label;
     if(difusio.type == 'noticia') label = noticiaLabel;
@@ -21,15 +22,15 @@ function getResultMarkup(difusio){
 
     var markup='<div class="col-xs-6 col-md-3" role="listitem" data-id="">';
     	
-		markup+='<div class="card" aria-label="link" >';
-			markup+='<a href="' + difusio.link + '" class="card-absolute-link" ></a>';
+		markup+='<div class="card">';
+			markup+='<a href="' + difusio.link + '" class="card-absolute-link" aria-hidden="true" aria-labelledby="x'+ idx +'" tabindex="-1"></a>';
     		markup+='<div class="card__image">';
     			if(difusio.img) markup+='<img src="'+ difusio.img + '" alt="">';
     			markup+='</div>';
     	markup+='<div class="card__contents" >';
-    if(difusio.titol) markup+='<h3 class="h5 text font-alternate">' + difusio.titol+ '</h3>'
+    if(difusio.titol) markup+='<h3 class="h5 text font-alternate"><a id="x' + idx + '" href="'+ difusio.link +'">' + difusio.titol + '<span class="visually-hidden">' + LinkLang + '</span></a></h3>'
     markup+='</div><div class="card__footer"><span class="float-left p-left-x  icon icon--external-link" aria-hidden="true"></span>';
-    markup+='<span class="float-right p-right-x" aria-label="tag">'+ label +'</span>';
+	markup+='<span class="float-right p-right-x"><span class="visually-hidden">Tag: </span>'+ label +'</span>';
     markup+='</div></div>';
     markup+='</div>';
 
