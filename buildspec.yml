@@ -13,6 +13,7 @@ phases:
       - hugo version
   pre_build:
     commands:
+      - node ./bin/replace-platacon-url.js
       - node ./bin/rename-languages.js
     finally:
       - echo "Finished renaming language files"
