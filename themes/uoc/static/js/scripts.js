@@ -89,11 +89,24 @@ jQuery(document).ready(function ($) {
 
         })
     }
-
+    $('.js-filter').keydown(function(event) {
+        // Number 13 is the "Enter" key on the keyboard
+        if (event.keyCode === 13) {
+          // Cancel the default action, if needed
+          event.preventDefault();
+          // Trigger the button element with a click
+          $(this).parent().click();
+        }
+    });
 
     if($('.tag-list').length > 0) {
         $('.tag-list').on('click', 'li', function() {
             $(this).toggleClass('active');
+            if($(this).children().attr("aria-pressed")=="false"){
+                $(this).children().attr("aria-pressed","true");
+            }else{
+                $(this).children().attr("aria-pressed","false");
+            }
         })
     }
 
