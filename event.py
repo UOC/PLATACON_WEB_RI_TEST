@@ -42,7 +42,7 @@ def search(event,context):
     existe = consulta.find('or')
     if (existe != -1):
         consulta += ")"
-
+    consulta += "( not content_type:'fitxa') (not content_type:'grup')"
     consulta+=")"
 
     """SEARCHING IN CLOUDSEARCH"""
@@ -50,7 +50,7 @@ def search(event,context):
     response = client.search(
         query=consulta,
         queryParser='structured',
-        size=100)
+        size=1000)
     ret={
         "statusCode":200,
         "body": json.dumps(response)

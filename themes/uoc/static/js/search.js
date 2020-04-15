@@ -49,7 +49,9 @@ jQuery(document).ready(function ($) {
 		tab = 'cercadorFiltres';
 		submitSearch(e);
 	});	
-
+	$('.filters-main__box').click(function(e) {
+		submitSearch(e);
+	});
 	$(".cercadorTextual form").submit(function(e){ //Free text search
 		e.preventDefault();
 		$(".cercadorTextual .collapse-filter").show();

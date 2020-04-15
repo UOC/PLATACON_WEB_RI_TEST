@@ -99,6 +99,7 @@ jQuery(document).ready(function ($) {
         }
     });
 
+
     if($('.tag-list').length > 0) {
         $('.tag-list').on('click', 'li', function() {
             $(this).toggleClass('active');
@@ -113,6 +114,11 @@ jQuery(document).ready(function ($) {
     if($('.tag-icons').length > 0) {
         $('.tag-icons').on('click', 'li', function() {
             $(this).toggleClass('select-icon');
+            if($(this).children().attr("aria-pressed")=="false"){
+                $(this).children().attr("aria-pressed","true");
+            }else{
+                $(this).children().attr("aria-pressed","false");
+            }
         })
     }
 

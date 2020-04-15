@@ -37,7 +37,8 @@ function getFormValues(){
 	if($(".tab-content.cercaFiltres .tag-icons.ods .select-icon").length>0){								//ODS checked
 		searchParams.ods = [];
 		$(".tab-content.cercaFiltres .tag-icons.ods .select-icon").each(function( index ) {
-			searchParams.ods.push($(this).find(".title").text());
+			console.log('ods:::::',$(this).text());
+			searchParams.ods.push($(this).find('#name-ods').text());
 		});	
 	}
 	if($(".tab-content.cercaFiltres input.unesco").val().length>0){											//Unesco code

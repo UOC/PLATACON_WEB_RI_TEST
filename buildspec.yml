@@ -13,14 +13,14 @@ phases:
       - hugo version
   pre_build:
     commands:
-      - node ./bin/replace-platacon-url.js
-      - node ./bin/rename-languages.js
+      - node ./scripts/replace-platacon-url.js
+      - node ./scripts/rename-languages.js
     finally:
       - echo "Finished renaming language files"
   build:
     commands:
       - hugo --environment ${ENV}
-      - node ./bin/update-netlify-config.js
+      - node ./scripts/update-netlify-config.js
       - cd public/ && loose-envify ./admin/main.js > updated-main.js && mv updated-main.js main.js
       - |
           aws s3api head-object --bucket ${BUCKET_S3} --key ${DEST_FOLDER}/ca/index.json || not_exist=true
@@ -29,7 +29,7 @@ phases:
           else
             echo "index.json exists"
             aws s3 cp s3://${BUCKET_S3}/${DEST_FOLDER}/ca/index.json ./ca/previous-index.json
-            node ../bin/create-to-delete-index.js
+            node ../scripts/create-to-delete-index.js
           fi   
       - aws s3 cp index.html s3://${BUCKET_S3}/${DEST_FOLDER}/index.html
       - cd ./admin && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/admin 

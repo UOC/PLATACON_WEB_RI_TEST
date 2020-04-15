@@ -16775,14 +16775,14 @@ a[aria-expanded=true] span {
 .tag-icons-blue {
   background-color: #183668;
 }
-
+/*modified by albira*/
 .tag-icons li {
   display: inline-block;
   position: relative;
   padding-left: 0;
   padding: 10px;
-  width: 82px;
-  height: 82px;
+  width: 200px;
+  height: 200px;
   -webkit-transition: -webkit-transform .3s ease-in-out;
   transition: -webkit-transform .3s ease-in-out;
   -o-transition: transform .3s ease-in-out;
@@ -16808,8 +16808,9 @@ a[aria-expanded=true] span {
   content: '';
 }
 
+/*modified by albira*/
 .tag-icons li span.number {
-  font-size: 20px;
+  font-size: 50px;
 }
 
 .tag-icons li span.title {
@@ -16842,14 +16843,14 @@ a[aria-expanded=true] span {
           transform: scale(1);
   position: relative;
 }
-
+/*modified by albira due to accessibility isssues*/
 .tag-icons li.select-icon::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 82px;
-  height: 82px;
+  width: 200px;
+  height: 200px;
   border: 2px solid #38ff90;
   background-color: rgba(56, 255, 144, 0.4);
   margin-left: 0;
