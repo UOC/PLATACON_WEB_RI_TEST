@@ -21,12 +21,14 @@
 			{{with $s.Params.general.sector}}"sector" : {{. | jsonify}},{{end}}
 			{{with $s.Params.general.logo}}"logo_url": {{. | jsonify}},{{end}}
 			{{with $s.Params.general.keywords}}
+				{{$.Scratch.Set "keywords" slice }}
 				{{- range .}}
 					{{$.Scratch.Add "keywords" (slice .value)}}
 				{{end}}
 				"keywords": {{$.Scratch.Get "keywords" | jsonify}},
 			{{end}}
 			{{with $s.Params.general.xarxes}}
+				{{$.Scratch.Set "xarxes" slice }}
 				{{- range .}}
 					{{$.Scratch.Add "xarxes" (slice .address)}}
 				{{end}}
@@ -57,18 +59,25 @@
 			{{end}}
 			
 			{{with $s.Params.grups_recerca}}
+				{{$.Scratch.Set "grups" slice }}
 				{{- range .}}
 					{{$.Scratch.Add "grups" (slice .name)}}
 				{{end}}
 				"grups": {{	$.Scratch.Get "grups" | jsonify}},
 			{{end}}
 			{{with $s.Params.investigadors}}
+				{{$.Scratch.Set "investigadors" slice }}
 				{{- range .}}
+					
 					{{$.Scratch.Add "investigadors" (slice .name)}}
 				{{end}}
 				"investigadors": {{	$.Scratch.Get "investigadors" | jsonify}},
 			{{end}}
 			{{with $s.Params.contacte}}
+				{{$.Scratch.Set "contact_name" slice }}
+				{{$.Scratch.Set "contact_email" slice }}
+				{{$.Scratch.Set "contact_address" slice }}
+				{{$.Scratch.Set "contact_phone" slice }}
 				{{- range .}}
 					{{with .text}}{{$.Scratch.Add "contact_name" (slice .)}}{{end}}
 					{{with .email}}{{$.Scratch.Add "contact_email" (slice .)}}{{end}}

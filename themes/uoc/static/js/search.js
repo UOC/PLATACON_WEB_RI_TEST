@@ -69,7 +69,8 @@ jQuery(document).ready(function ($) {
 	});
 	
 	$(".tab.cercadorTextual h3").click(function(e){	
-		//console.log('Tab: cercadorTextual');
+		e.preventDefault();
+		console.log('Tab: cercadorTextual');
 		searchParams =	{};
 		$(".cercadorTextual input#search").val(' ');
 		tab = 'cercadorTextual';	
@@ -85,7 +86,8 @@ jQuery(document).ready(function ($) {
 	});	
 
 	$(".tab.cercadorSectors h3").click(function(e){	
-		//console.log('Tab: cercadorSectors');
+		e.preventDefault();
+		console.log('Tab: cercadorSectors');
 		tab = 'cercadorSectors';	
 		searchParams =	{};
 		queryInnovaSolSearchEngine(searchParams);

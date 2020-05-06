@@ -19,7 +19,7 @@ jQuery(document).ready(function ($) {
     function collapse(){
 
         $('[class*=js-collapseClick]').click(function(e) {
-            console.log('jump prevented');
+            //console.log('jump prevented');
             e.preventDefault();   //prevent the click from jumping esp on hashes
             e.stopPropagation();  //prevent from any parent click handlers that didn't prevent the jump
         
@@ -28,13 +28,13 @@ jQuery(document).ready(function ($) {
         });
         
         $('.js-collapseClick').on('click', function () {
-            console.log('clicking collapseClick ... ',$('.js-collapseClick'));
-            console.log('has class .subCollapse ? ... ',$(this).closest('.js-collapse').hasClass('subCollapse'));
+            //console.log('clicking collapseClick ... ',$('.js-collapseClick'));
+            //console.log('has class .subCollapse ? ... ',$(this).closest('.js-collapse').hasClass('subCollapse'));
             if ($(this).closest('.js-collapse').hasClass('subCollapse')){
                 
                 if ($(this).closest('.js-collapse').next().hasClass('show')) {
-                    console.log('already showing sub tab ... ',$(this).closest('.js-collapse').siblings().hasClass('show'));
-                    console.log('siblings ... ',$(this).closest('.js-collapse').siblings());
+                    //console.log('already showing sub tab ... ',$(this).closest('.js-collapse').siblings().hasClass('show'));
+                    //console.log('siblings ... ',$(this).closest('.js-collapse').siblings());
                     $(this).closest('.js-collapse').next().removeClass('show');
                     $(this).attr('aria-expanded', 'false');
 
@@ -51,14 +51,14 @@ jQuery(document).ready(function ($) {
             }else{
                 
                 if ($(this).closest('.js-collapse').siblings().hasClass('show')) {
-                    console.log('already showing tab ... ',$(this).closest('.js-collapse').siblings().hasClass('show'));
+                    //console.log('already showing tab ... ',$(this).closest('.js-collapse').siblings().hasClass('show'));
                     $(this).closest('.js-collapse').siblings().removeClass('show');
                     $(this).attr('aria-expanded', 'false');
 
 
                 } else {
-                    console.log('hidden tab ... ',$(this).closest('.js-collapse').siblings().hasClass('show'));
-                    console.log('siblings ... ',$(this).closest('.js-collapse').siblings());
+                    //console.log('hidden tab ... ',$(this).closest('.js-collapse').siblings().hasClass('show'));
+                    //console.log('siblings ... ',$(this).closest('.js-collapse').siblings());
                     $(this).closest('.js-collapse-group').find('.js-collapseClick').attr('aria-expanded', 'false');
                     $(this).closest('.js-collapse-group').find('.js-collapse').siblings().removeClass('show');
                     $(this).closest('.js-collapse').siblings().addClass('show');
@@ -75,7 +75,7 @@ jQuery(document).ready(function ($) {
     }
 
     if($('.js-collapseAll').length > 0) {
-        console.log('clicking collapseAll ... ',$('.js-collapseAll'));
+        //console.log('clicking collapseAll ... ',$('.js-collapseAll'));
         $('.js-collapseAll').on('click', function(e) {
             e.preventDefault();
             // console.log($(this).parent().find('a').html())
@@ -157,9 +157,9 @@ jQuery(document).ready(function ($) {
             $('.filters-main__content').addClass('hidde-content');
         }
         var ref = $(this)[0];
-        console.log('ref-->',ref);
+        //console.log('ref-->',ref);
         var x = ref.getAttribute("href").split("-");
-        console.log('x--->',x);
+        //console.log('x--->',x);
         sessionStorage.setItem("target",x[2]);
 
     });
