@@ -25,37 +25,39 @@
 				{{- range .}}
 					{{$.Scratch.Add "keywords" (slice .value)}}
 				{{end}}
-				"keywords": {{$.Scratch.Get "keywords" | jsonify}},
+				{{if ne (index ($.Scratch.Get "keywords") 0 ) nil}}
+				"keywords": {{$.Scratch.Get "keywords" | jsonify}},{{end}}
 			{{end}}
 			{{with $s.Params.general.xarxes}}
 				{{$.Scratch.Set "xarxes" slice }}
 				{{- range .}}
 					{{$.Scratch.Add "xarxes" (slice .address)}}
 				{{end}}
-				"xarxes_address": {{$.Scratch.Get "xarxes" | jsonify}},
+				{{if ne (index ($.Scratch.Get "xarxes") 0 ) nil}}
+				"xarxes_address": {{$.Scratch.Get "xarxes" | jsonify}},{{end}}
 			{{end}}
 
-			{{with $s.Params.about}}"about_title": {{(index . 0).titol | jsonify}},{{end}}
-			{{with $s.Params.about}}"about_descripcio": {{(index . 0).descripcio | jsonify}},{{end}}
+			{{with $s.Params.about}}{{with (index . 0).titol }}"about_title": {{. | jsonify}},{{end}}{{end}}
+			{{with $s.Params.about}}{{with (index . 0).descripcio }}"about_descripcio": {{. | jsonify}},{{end}}{{end}}
 
 			
 			{{if or (eq $s.Type "solucio_tec") (eq $s.Type "pantent")}}
-				{{with $s.Params.aspectes_innovadors}}"asp_innov_title": {{(index . 0).titol | jsonify}},{{end}}
-				{{with $s.Params.aspectes_innovadors}}"asp_innov_descripcio": {{(index . 0).descripcio | jsonify}},{{end}}
-				{{with $s.Params.aplicacions}}"app_title": {{(index . 0).titol | jsonify}},{{end}}
-				{{with $s.Params.aplicacions}}"app_descripcio": {{(index . 0).descripcio | jsonify}},{{end}}
+				{{with $s.Params.aspectes_innovadors}}{{with (index . 0).titol }}"asp_innov_title": {{. | jsonify}},{{end}}{{end}}
+				{{with $s.Params.aspectes_innovadors}}{{with (index . 0).descripcio }}"asp_innov_descripcio": {{. | jsonify}},{{end}}{{end}}
+				{{with $s.Params.aplicacions}}{{with (index . 0).titol }}"app_title": {{. | jsonify}},{{end}}{{end}}
+				{{with $s.Params.aplicacions}}{{with (index . 0).descripcio }}"app_descripcio": {{. | jsonify}},{{end}}{{end}}
 			{{end}}
 			{{if or (eq $s.Type "servei") (eq $s.Type "spin_off")}}
-				{{with $s.Params.casos_exit}}"casos_exit_title": {{(index . 0).titol | jsonify}},{{end}}
-				{{with $s.Params.casos_exit}}"casos_exit_descripcio": {{(index . 0).descripcio | jsonify}},{{end}}
-				{{with $s.Params.casos_exit}}"casos_exit_img": {{(index . 0).img | jsonify}},{{end}}
-				{{with $s.Params.casos_exit}}"casos_exit_url_success": {{(index . 0).url_success | jsonify}},{{end}}
+				{{with $s.Params.casos_exit}}{{with (index . 0).titol }}"casos_exit_title": {{. | jsonify}},{{end}}{{end}}
+				{{with $s.Params.casos_exit}}{{with (index . 0).descripcio }}"casos_exit_descripcio": {{. | jsonify}},{{end}}{{end}}
+				{{with $s.Params.casos_exit}}{{with (index . 0).img }}"casos_exit_img": {{. | jsonify}},{{end}}{{end}}
+				{{with $s.Params.casos_exit}}{{with (index . 0).url_success }}"casos_exit_url_success": {{. | jsonify}},{{end}}{{end}}
 			{{end}}
 			{{if eq $s.Type "spin_off"}}
-				{{with $s.Params.productes_serveis}}"productes_serveis_titol": {{(index . 0).titol | jsonify}},{{end}}
-				{{with $s.Params.productes_serveis}}"productes_serveis_descripcio": {{(index . 0).descripcio | jsonify}},{{end}}
-				{{with $s.Params.clients}}"clients_title": {{(index . 0).titol | jsonify}},{{end}}
-				{{with $s.Params.clients}}"clients_descripcio": {{(index . 0).titol | jsonify}},{{end}}
+				{{with $s.Params.productes_serveis}}{{with (index . 0).titol }}"productes_serveis_titol": {{. | jsonify}},{{end}}{{end}}
+				{{with $s.Params.productes_serveis}}{{with (index . 0).descripcio }}"productes_serveis_descripcio": {{. | jsonify}},{{end}}{{end}}
+				{{with $s.Params.clients}}{{with (index . 0).titol }}"clients_title": {{. | jsonify}},{{end}}{{end}}
+				{{with $s.Params.clients}}{{with (index . 0).descripcio }}"clients_descripcio": {{. | jsonify}},{{end}}{{end}}
 			{{end}}
 			
 			{{with $s.Params.grups_recerca}}
@@ -63,15 +65,17 @@
 				{{- range .}}
 					{{$.Scratch.Add "grups" (slice .name)}}
 				{{end}}
-				"grups": {{	$.Scratch.Get "grups" | jsonify}},
+				{{if ne (index ($.Scratch.Get "grups") 0 ) nil}}
+				"grups": {{	$.Scratch.Get "grups" | jsonify}},{{end}}
 			{{end}}
 			{{with $s.Params.investigadors}}
 				{{$.Scratch.Set "investigadors" slice }}
 				{{- range .}}
-					
 					{{$.Scratch.Add "investigadors" (slice .name)}}
 				{{end}}
-				"investigadors": {{	$.Scratch.Get "investigadors" | jsonify}},
+
+				{{if ne (index ($.Scratch.Get "investigadors") 0 ) nil}}
+				"investigadors": {{	$.Scratch.Get "investigadors" | jsonify}},{{end}}
 			{{end}}
 			{{with $s.Params.contacte}}
 				{{$.Scratch.Set "contact_name" slice }}
@@ -84,10 +88,10 @@
 					{{with .address}}{{$.Scratch.Add "contact_address" (slice .)}}{{end}}
 					{{with .telefon}}{{$.Scratch.Add "contact_phone" (slice .)}}{{end}}
 				{{end}}
-				{{ if ne ($.Scratch.Get "contact_name") nil}}"contacts_name": {{$.Scratch.Get "contact_name" | jsonify}},{{end}}
-				{{ if ne ($.Scratch.Get "contact_email") nil}}"contacts_email": {{$.Scratch.Get "contact_email" | jsonify}},{{end}}
-				{{ if ne ($.Scratch.Get "contact_address") nil}}"contacts_address": {{$.Scratch.Get "contact_address" | jsonify}},{{end}}
-				{{ if ne ($.Scratch.Get "contact_phone") nil}}"contacts_phone": {{$.Scratch.Get "contact_phone" | jsonify}},{{end}}
+				{{ if ne (index ($.Scratch.Get "contact_name") 0 ) nil}}"contacts_name": {{$.Scratch.Get "contact_name" | jsonify}},{{end}}
+				{{ if ne (index ($.Scratch.Get "contact_email") 0 ) nil}}"contacts_email": {{$.Scratch.Get "contact_email" | jsonify}},{{end}}
+				{{ if ne (index ($.Scratch.Get "contact_address") 0 ) nil}}"contacts_address": {{$.Scratch.Get "contact_address" | jsonify}},{{end}}
+				{{ if ne (index ($.Scratch.Get "contact_phone") 0 ) nil}}"contacts_phone": {{$.Scratch.Get "contact_phone" | jsonify}},{{end}}
 			{{end}}
 			"content" : "transfer",
 			"content_encoding" : "utf-8",

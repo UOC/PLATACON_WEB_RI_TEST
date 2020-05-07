@@ -30,11 +30,11 @@ jQuery(document).ready(function ($) {
 			//console.log('Tab: cercadorTextual');
 			$(".tab.cercadorTextual h3").click();
 			tab = 'cercadorTextual';	
-			if(searchParams.s){
+			/*if(searchParams.s){
 				$(".cercadorTextual input#search").val(searchParams.s);
 				querySearchEngine(searchParams);
 				queryInnovaSolSearchEngine(searchParams);			
-			}
+			}*/
 		break;
 	}
 
@@ -45,6 +45,7 @@ jQuery(document).ready(function ($) {
 		submitSearch(e);
 	});
 	$(".tab.cercadorFiltres h3").click(function(e){	
+		e.preventDefault();
 		searchParams =	{};
 		tab = 'cercadorFiltres';
 		submitSearch(e);
@@ -288,12 +289,12 @@ function querySearchEngine(searchParams){
 	}).done(
 		function(data, returnCode, request){
 			if(data.hits.found == 0){
-				//console.log('querySearchEngine fitxa - zero hits found')
+				console.log('querySearchEngine fitxa - zero hits found')
 				var dataPaginationFitxa = ["<p style='font-style:italic'>"+literals.noresults+"</p>"];
 				initPagination(dataPaginationFitxa, "fitxa");
 			} else {
 				var items=data.hits.hit;
-				//console.log('querySearchEngine fitxa - ' +data.hits.found + ' hits found')
+				console.log('querySearchEngine fitxa found -> ' +data.hits.found)
 				items.sort((a,b) => (a.fields.nom_investigador.toLowerCase() > b.fields.nom_investigador.toLowerCase()) ? 1 : ((b.fields.nom_investigador.toLowerCase() > a.fields.nom_investigador.toLowerCase()) ? -1 : 0));
 				var dataPaginationFitxa = [];
 				for (var i = 0; i < items.length; i++) {
@@ -320,12 +321,12 @@ function querySearchEngine(searchParams){
 	}).done(
 		function(data){
 			if(data.hits.found == 0){
-				//console.log('querySearchEngine grup - zero hits found')
+				console.log('querySearchEngine grup - zero hits found')
 				var dataPaginationGrup = ["<p style='font-style:italic'>"+literals.noresults+"</p>"];
 				initPagination(dataPaginationGrup, "grup");
 			} else {
 				var items=data.hits.hit;
-				//console.log('querySearchEngine grup - ' +data.hits.found + ' hits found')
+				console.log('querySearchEngine grup --> ' +data.hits.found)
 				items.sort((a,b) => (a.fields.nom_grup.toLowerCase() > b.fields.nom_grup.toLowerCase()) ? 1 : ((b.fields.nom_grup.toLowerCase() > a.fields.nom_grup.toLowerCase()) ? -1 : 0));
 				var dataPaginationGrup = [];
 				for (var i = 0; i < items.length; i++) {
@@ -347,7 +348,6 @@ function queryInnovaSolSearchEngine(searchParams){
 	var serveisResults = $(" .serveiResults_"+tab+" .list-servei");
 	var spinResults = $(" .spin_offResults_"+tab+" .list-spin_off");
 	var r=[solucionsTecResults,patentsResults,serveisResults,spinResults];
-    //console.log('querying...SolucionsInnovadores',innovaSolURL);
     
 	$.ajax({
 		url: innovaSolURL,
@@ -365,16 +365,16 @@ function queryInnovaSolSearchEngine(searchParams){
 		function(data){
             var dataPaginationGrup = ["<p style='font-style:italic'>"+literals.noresults+"</p>"];
 			if(data.hits.found == 0){
+				console.log("ZERO DATA SOLUCIONS FOUND");
                 initPagination(dataPaginationGrup, "solucio_tec");
                 initPagination(dataPaginationGrup, "patent");
                 initPagination(dataPaginationGrup, "servei");
                 initPagination(dataPaginationGrup, "spin_off");
-			} else {                
+			} else {      
+				console.log("DATA SOLUCION FOUND->"+data.hits.found)          
                 var items=data.hits.hit;
-                //console.log(items, 'items')
                 var lista=["solucio_tec","patent","servei","spin_off"];
                 var items=data.hits.hit;
-				//items.sort((a,b) => (a.fields.nom_grup.toLowerCase() > b.fields.nom_grup.toLowerCase()) ? 1 : ((b.fields.nom_grup.toLowerCase() > a.fields.nom_grup.toLowerCase()) ? -1 : 0));
                 var dataPaginationGrupSolTec = [];
                 var dataPaginationGrupPatent = [];
                 var dataPaginationGrupServei = [];
@@ -488,32 +488,24 @@ function getResultMarkup(item, content_type, idx, listView){
 ***********************************************************************/
 
 function initPagination(dataset, content_type) {
-
-	//console.log('Entering initPagination for content type: ' + content_type + '. Tab: ' + tab);
-	//console.log('Looking for element: .pagination-'+content_type+'_'+tab+' .pagination-'+content_type+'-container_'+ tab);
-
+	var excepcio =false;
+	console.log("S'inicialitza paginacio per a-->"+ content_type);
+	try{
     $('.pagination-'+content_type+'_'+tab+' .pagination-'+content_type+'-container_'+ tab).pagination({
 	    dataSource: dataset,
 	    pageSize: 6,
 	    autoHidePrevious: true,
 	    autoHideNext: true,
 	    callback: function(data, pagination) {
-			// template method of yourself
-			//console.log('Entering initPagination callback for content type: ' + content_type);
 			var html = data;
-			//console.log('There is more than one match: '+ $('.'+content_type+'Results_' + tab +' .list-'+content_type).length)
             $('.'+content_type+'Results_' + tab +' .list-'+content_type).html(html);
 	    },
 	    afterRender: function(isForced) {
-			//console.log('Entering initPagination afterRender');
 	    	if($('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-page').length > 1){
-				//console.log('There is more than one match: '+ $('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-page').length)
-				//console.log('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-page')
 		    	$('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-page').addClass("col-md-1");
 		    	$('.pagination-'+content_type+'-container_' + tab +' .paginationjs-ellipsis').addClass("col-md-1");
 				$('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-previous').addClass("col-md-2");
 				$('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-next').addClass("col-md-2");
-				//last item width
 				var cols = 12 - $('.pagination-'+content_type+'-container_' + tab +' .paginationjs-ellipsis').length;
 				cols -= ($('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-previous').length * 2);
 				cols -= ($('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-next').length * 2);
@@ -523,8 +515,6 @@ function initPagination(dataset, content_type) {
 				$('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-page').last().addClass("col-md-"+cols);
 				$('.pagination-'+content_type+'_' + tab +' .pagination-'+content_type+'-container_' + tab).show();
 	    	} else {
-				//console.log('One or zero matches: '+ $('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-page').length)
-				//console.log('.pagination-'+content_type+'-container_' + tab +' .J-paginationjs-page')
 	    		$('.pagination-'+content_type+'_' + tab +' .pagination-'+content_type+'-container_' + tab).hide();
 	    	}
 	    	$(".pagination-"+content_type+">div>div").removeClass("col-md-4");
@@ -538,5 +528,14 @@ function initPagination(dataset, content_type) {
 	    prevText: literals.pagination.previous,
 	    nextText: literals.pagination.next,
 	    pageRange: 1
-	});	
+	});	}
+	catch(err){
+		console.log("EL ERROR->"+ err);
+		excepcio = true;
+	}
+	finally{
+		if(!excepcio){
+			console.log("PAGINACIÓ CORRECTE PER A -->"+ content_type);
+		}
+	}
 }
