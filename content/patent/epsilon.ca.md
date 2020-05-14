@@ -9,5 +9,7 @@ general:
   slogan: Slogan
   img_background: /img/ods_1.png
   sector: Indústria 4.0
+about:
+  - titol: test
+    descripcio: test
 ---
-
