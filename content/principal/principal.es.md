@@ -40,70 +40,87 @@ ods:
     display_name: "Fi de la pobresa"
     value: "Fi de la pobresa"
     color: "red"
+    img: "/img/icons/icon_ods_color_01.svg"
   - 
     display_name: "Fam zero"
     value: "Fam zero"
     color: "green"
+    img: "/img/icons/icon_ods_color_02.svg"
   - 
     display_name: "Salut i benestar"
     value: "Salut i benestar"
     color: "red-dark"
+    img: "/img/icons/icon_ods_color_03.svg"
   - 
     display_name: "Educació de qualitat"
     value: "Educació de qualitat"
     color: "red-ligth"
+    img: "/img/icons/icon_ods_color_04.svg"
   - 
     display_name: "Igualtat de gènere"
     value: "Igualtat de gènere"
     color: "light-blue"
+    img: "/img/icons/icon_ods_color_05.svg"
   - 
     display_name: "Aigua neta i sanejament"
     value: "Aigua neta i sanejament"
     color: "yellow"
+    img: "/img/icons/icon_ods_color_06.svg"
   - 
     display_name: "Energia neta i assequible"
     value: "Energia neta i assequible"
     color: "brown"
+    img: "/img/icons/icon_ods_color_07.svg"
   - 
     display_name: "Treball digne i creixement econòmic"
     value: "Treball digne i creixement econòmic"
     color: "orange"
+    img: "/img/icons/icon_ods_color_08.svg"
   - 
     display_name: "Indústria, innovació i infraestructures"
     value: "Indústria, innovació i infraestructures"
     color: "violet"
+    img: "/img/icons/icon_ods_color_09.svg"
   - 
     display_name: "Reducció de les desigualtats"
     value: "Reducció de les desigualtats"
     color: "yellow-dark"
+    img: "/img/icons/icon_ods_color_10.svg"
   - 
     display_name: "Ciutats i comunicats sostenibles"
     value: "Ciutats i comunicats sostenibles"
     color: "brown-light"
+    img: "/img/icons/icon_ods_color_11.svg"
   - 
     display_name: "Consum i producció responsables"
     value: "Consum i producció responsables"
     color: "green-dark"
+    img: "/img/icons/icon_ods_color_12.svg"
   - 
     display_name: "Acció climàtica"
     value: "Acció climàtica"
     color: "blue-dark"
+    img: "/img/icons/icon_ods_color_13.svg"
   - 
     display_name: "Vida submarina"
     value: "Vida submarina"
     color: "green-light"
+    img: "/img/icons/icon_ods_color_14.svg"
   - 
     display_name: "Vida terrestre"
     value: "Vida terrestre"
     color: "light-blue"
+    img: "/img/icons/icon_ods_color_15.svg"
   - 
     display_name: "Pau, justícia i institucions sòlides"
     value: "Pau, justícia i institucions sòlides"
     color: "blue"
+    img: "/img/icons/icon_ods_color_16.svg"
   - 
     display_name: "Aliança pel objectius"
     value: "Aliança pel objectius"
     color: "orange"
+    img: "/img/icons/icon_ods_color_17.svg"
 centre:
   - 
     display_name: "IN3"
