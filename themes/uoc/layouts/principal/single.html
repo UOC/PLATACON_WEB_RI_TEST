@@ -80,13 +80,20 @@
 										<style>.tag-icons li {vertical-align: bottom;}</style>
 										<ul class="tag-icons ods">
 											{{ range $index, $element := .Params.ods }}
-											<li class="tag-icons-{{$element.color}}">
+											<!--GENERIC ICON VERSION-->
+											<!--<li class="tag-icons-{{$element.color}}">
 												<span class="js-filter" role="button" aria-pressed="false" tabindex="0">
 													
 														<span class="number">{{add $index 1}}</span>
 														<span id="name-ods">{{$element.display_name}}</span>
 												
 													<span class="icon icon--group" aria-hidden="true"></span>
+												</span>
+											</li>-->
+
+											<!--SPECIFIC ICON VERSION-->
+											<li style='background-image: url("{{ $element.img }}"); background-repeat: no-repeat; background-size: cover;'>
+												<span class="js-filter" role="button" aria-pressed="false" tabindex="0" aria-label="{{$element.display_name}}">
 												</span>
 											</li>
 											{{ end }}
@@ -253,7 +260,7 @@
 	</div>
 	
 	{{ partial "ri_js_imports.html" . }}
-	<script src="/js/search_home_ri.js"></script>
+	<script src="/js/search_home.js"></script>
 	<script src="/js/lib/matchHeight.js"></script>
 	<script type="text/javascript">
 		var cercadorURL = '{{ "cercador/cercador.html" | relLangURL }}';

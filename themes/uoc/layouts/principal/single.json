@@ -63,7 +63,9 @@
 			{{with $s.Params.grups_recerca}}
 				{{$.Scratch.Set "grups" slice }}
 				{{- range .}}
-					{{$.Scratch.Add "grups" (slice .name)}}
+					{{if ne .name nil}}
+						{{$.Scratch.Add "grups" (slice .name)}}
+					{{end}}
 				{{end}}
 				{{if ne (index ($.Scratch.Get "grups") 0 ) nil}}
 				"grups": {{	$.Scratch.Get "grups" | jsonify}},{{end}}
