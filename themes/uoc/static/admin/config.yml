@@ -295,8 +295,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: E-mail, name: email, widget: string, required: true}
           - {label: ID video Youtube, name: video, widget: string,  required: false}
           - {label: Imatge, name: image, widget: image,  required: false}
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "solucio_tec_es"
     label: 'Solucions Tecnològiques [es]'
     folder: "content/solucio_tec/"
@@ -468,8 +467,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: E-mail, name: email, widget: string, required: true}
           - {label: ID video Youtube, name: video, widget: string,  required: false}
           - {label: Imatge, name: image, widget: image,  required: false}
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "solucio_tec_en"
     label: 'Solucions Tecnològiques [en]'
     folder: "content/solucio_tec/"
@@ -641,8 +639,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: E-mail, name: email, widget: string, required: true}
           - {label: ID video Youtube, name: video, widget: string,  required: false}
           - {label: Imatge, name: image, widget: image,  required: false}
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "patent_ca"
     label: 'Patents [ca]'
     folder: "content/patent/"
@@ -814,8 +811,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: E-mail, name: email, widget: string, required: true}
           - {label: ID video Youtube, name: video, widget: string,  required: false}
           - {label: Imatge, name: image, widget: image,  required: false}
-    meta:
-      - {label: "Data", name: "date", widget: "datetime"}
   - name: "patent_es"
     label: 'Patents [es]'
     folder: "content/patent/"
@@ -987,8 +982,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: E-mail, name: email, widget: string, required: true}
           - {label: ID video Youtube, name: video, widget: string,  required: false}
           - {label: Imatge, name: image, widget: image,  required: false}
-    meta:
-      - {label: "Data", name: "date", widget: "datetime"}
+
   - name: "patent_en"
     label: 'Patents [en]'
     folder: "content/patent/"
@@ -1160,8 +1154,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: E-mail, name: email, widget: string, required: true}
           - {label: ID video Youtube, name: video, widget: string,  required: false}
           - {label: Imatge, name: image, widget: image,  required: false}
-    meta:
-      - {label: "Data", name: "date", widget: "datetime"}
+
   - name: "servei_ca"
     label: 'Serveis [ca]'
     folder: "content/servei/"
@@ -1290,8 +1283,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: E-mail, name: email, widget: string, required: true}
           - {label: ID video Youtube, name: video, widget: string,  required: false}
           - {label: Imatge, name: image, widget: image,  required: false}
-    meta:
-      - {label: "Data", name: "date", widget: "datetime"}
+
   - name: "servei_es"
     label: 'Serveis [es]'
     folder: "content/servei/"
@@ -1420,8 +1412,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: E-mail, name: email, widget: string, required: true}
           - {label: ID video Youtube, name: video, widget: string,  required: false}
           - {label: Imatge, name: image, widget: image,  required: false}
-    meta:
-      - {label: "Data", name: "date", widget: "datetime"}
+
   - name: "servei_en"
     label: 'Serveis [en]'
     folder: "content/servei/"
@@ -1550,8 +1541,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: E-mail, name: email, widget: string, required: true}
           - {label: ID video Youtube, name: video, widget: string,  required: false}
           - {label: Imatge, name: image, widget: image,  required: false}
-    meta:
-      - {label: "Data", name: "date", widget: "datetime"}
+
   - name: "spin_off_ca"
     label: 'Spin-Offs [ca]'
     folder: "content/spin_off/"
@@ -1725,8 +1715,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: E-mail, name: email, widget: string, required: true}
           - {label: ID video Youtube, name: video, widget: string,  required: false}
           - {label: Imatge, name: image, widget: image,  required: false}
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "spin_off_es"
     label: 'Spin-Offs [es]'
     folder: "content/spin_off/"
@@ -1900,8 +1889,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: E-mail, name: email, widget: string, required: true}
           - {label: ID video Youtube, name: video, widget: string,  required: false}
           - {label: Imatge, name: image, widget: image,  required: false}
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "spin_off_en"
     label: 'Spin-Offs [en]'
     folder: "content/spin_off/"
@@ -2075,8 +2063,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: E-mail, name: email, widget: string, required: true}
           - {label: ID video Youtube, name: video, widget: string,  required: false}
           - {label: Imatge, name: image, widget: image,  required: false}
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "cercador_ca"
     label: "Cercador [ca]"
     folder: "content/cercador/"
@@ -2227,8 +2214,7 @@ collections: # A list of collections the CMS should be able to edit
         valueField: "title"
         displayFields: ["title","language"]
         required: true
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "mapa-ambits-recerca_es"
     label: "Mapa d'àmbits de recerca [es]"
     folder: "content/mapa-ambits-recerca"
@@ -2255,8 +2241,7 @@ collections: # A list of collections the CMS should be able to edit
         valueField: "title"
         displayFields: ["title","language"]
         required: true
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "mapa-ambits-recerca_en"
     label: "Mapa d'àmbits de recerca [en]"
     folder: "content/mapa-ambits-recerca"
@@ -2283,8 +2268,7 @@ collections: # A list of collections the CMS should be able to edit
         valueField: "title"
         displayFields: ["title","language"]
         required: true
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "contacte_ca"
     label: "Contacte [ca]"
     folder: "content/contacte"
@@ -2323,8 +2307,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "Nom", name : display_name, widget: string}
           - {label: "Valor", name: value, widget: string}            
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "contacte_es"
     label: "Contacte [es]"
     folder: "content/contacte"
@@ -2363,8 +2346,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "Nombre", name : display_name, widget: string}
           - {label: "Valor", name: value, widget: string}            
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "contacte_en"
     label: "Contacte [en]"
     folder: "content/contacte"
@@ -2403,8 +2385,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "Name", name : display_name, widget: string}
           - {label: "Value", name: value, widget: string}            
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "sectors_ca"
     label: "Sectors [ca]"
     folder: "content/sectors"
@@ -2418,8 +2399,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Nom, name: name, widget: string}
       - {label: Valor, name: value, widget: string}
       - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "sectors_es"
     label: "Sectors [es]"
     folder: "content/sectors"
@@ -2433,8 +2413,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Nombre, name: name, widget: string}
       - {label: Valor, name: value, widget: string}
       - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "es"}       
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "sectors_en"
     label: "Sectors [en]"
     folder: "content/sectors"
@@ -2448,8 +2427,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Name, name: name, widget: string}
       - {label: Value, name: value, widget: string}
       - {label: Language, name: language, widget: select, options: ["ca","es","en"],default: "en"}       
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "centers_ca"
     label: "Centres [ca]"
     folder: "content/centres"
@@ -2461,8 +2439,7 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: Nom, name: title, widget: string}
       - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "centers_es"
     label: "Centres [es]"
     folder: "content/centres"
@@ -2474,8 +2451,7 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: Nom, name: title, widget: string}
       - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "es"}       
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "centers_en"
     label: "Centres [en]"
     folder: "content/centres"
@@ -2487,8 +2463,7 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: Nom, name: title, widget: string}
       - {label: Language, name: language, widget: select, options: ["ca","es","en"],default: "en"}       
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "ambits_ca"
     label: "Àmbits d'especialització [ca]"
     folder: "content/ambits"
@@ -2500,8 +2475,7 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: Títol, name: title, widget: string}
       - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "ambits_es"
     label: "Àmbits d'especialització [es]"
     folder: "content/ambits"
@@ -2513,8 +2487,7 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: Título, name: title, widget: string}
       - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "es"}       
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "ambits_en"
     label: "Àmbits d'especialització [en]"
     folder: "content/ambits"
@@ -2526,8 +2499,7 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: Title, name: title, widget: string}
       - {label: Language, name: language, widget: select, options: ["ca","es","en"],default: "en"}       
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "ambits_generals_ca"
     label: "Àmbits generals [ca]"
     folder: "content/ambits_generals"
@@ -2539,8 +2511,7 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: Títol, name: title, widget: string}
       - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "ca"}       
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "ambits_generals_es"
     label: "Àmbits generals [es]"
     folder: "content/ambits_generals"
@@ -2552,8 +2523,7 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: Título, name: title, widget: string}
       - {label: Idioma, name: language, widget: select, options: ["ca","es","en"],default: "es"}       
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
   - name: "ambits_generals_en"
     label: "Àmbits generals [en]"
     folder: "content/ambits_generals"
@@ -2565,8 +2535,7 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: Title, name: title, widget: string}
       - {label: Language, name: language, widget: select, options: ["ca","es","en"],default: "en"}       
-    meta:
-      - {label: "Date", name: "date", widget: "datetime"}
+
 
 
   - name: "noticia_ca"
