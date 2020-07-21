@@ -123,11 +123,11 @@
 [uoc_ri_cercador_esborrafiltres] other = "Remove filters"
 [uoc_ri_cercador_cercar] other = "Search"
 
-[uoc_ri_cercador_filtres_ambitsespecialitzacio] other = "Specialization areas"
-[uoc_ri_cercador_filtres_ods] other = "ODS Objectives"
-[uoc_ri_cercador_filtres_unesco] other = "UNESCO code"
-[uoc_ri_cercador_filtres_unesco_placeholder] other = "Search by UNESCO code"
-[uoc_ri_cercador_filtres_centre] other = "Select a centre:"
+[uoc_ri_cercador_filtres_ambitsespecialitzacio] other = "Search by specialization areas"
+[uoc_ri_cercador_filtres_ods] other = "Search by ODS Objectives"
+[uoc_ri_cercador_filtres_unesco] other = "Search by UNESCO code"
+[uoc_ri_cercador_filtres_unesco_placeholder] other = "Codes"
+[uoc_ri_cercador_filtres_centre] other = "Select a center:"
 [uoc_ri_cercador_filtres_visualitzacio] other = "View results by:"
 [uoc_ri_cercador_filtres_sectors_productius] other = "Productive Sectors"
 

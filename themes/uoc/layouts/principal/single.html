@@ -56,72 +56,56 @@
 				<div class="col-xs-12">
 					<div id="tab-content-1" data-tab-content="" role="tabpanel" aria-labelledby="tab-1" aria-hidden="false" class="filters-main__content tab-content cercaFiltres">
 						<form action="" class="radio-accordeon search-form-container">
-							<h4 class="h2">{{ T "uoc_ri_cercador_cercaper" }}</h4>
-							<div class="js-collapse-group">
-								<div class="collapse">
-									<div class="head-collapse js-collapse">
-										<h5><a href="#collapseAmbits" aria-expanded="false" class="js-collapseClick ">{{ T "uoc_ri_cercador_filtres_ambitsespecialitzacio" }}<span class="icon icon--arrow-down float-right" aria-hidden="true"></span></a></h5>
-									</div>
-									<div id="collapseAmbits" class="contentCollapse">							
-										<ul class="tag-list ambits_especialitzacio">
-											{{ range $index, $element := .Params.ambits_especialitzacio }}
-											<li data-ambit="{{ $element.value}}" ><span class="js-filter" role="button" aria-pressed="false" tabindex="0">{{ $element.display_name }}</span></li>
-											{{ end }}
-										</ul>
-									</div>
-								</div>
+							<div>
+								<h4>{{ T "uoc_ri_cercador_filtres_ambitsespecialitzacio" }}</h4>
+								<ul class="tag-list ambits_especialitzacio">
+									{{ range $index, $element := .Params.ambits_especialitzacio }}
+									<li data-ambit="{{ $element.value}}" ><span class="js-filter" role="button" aria-pressed="false" tabindex="0">{{ $element.display_name }}</span></li>
+									{{ end }}
+								</ul>
 							</div>
-							<div class="js-collapse-group">
-								<div class="collapse">
-									<div class="head-collapse js-collapse">
-										<h5><a href="#collapseOds" aria-expanded="false" class="js-collapseClick ">{{ T "uoc_ri_cercador_filtres_ods"}}<span class="icon icon--arrow-down float-right" aria-hidden="true"></span></a></h5>
-									</div>
-									<div id="collapseOds" class="contentCollapse">
-										<style>.tag-icons li {vertical-align: bottom;}</style>
-										<ul class="tag-icons ods">
-											{{ range $index, $element := .Params.ods }}
-											<!--GENERIC ICON VERSION-->
-											<!--<li class="tag-icons-{{$element.color}}">
-												<span class="js-filter" role="button" aria-pressed="false" tabindex="0">
-													
-														<span class="number">{{add $index 1}}</span>
-														<span id="name-ods">{{$element.display_name}}</span>
-												
-													<span class="icon icon--group" aria-hidden="true"></span>
-												</span>
-											</li>-->
+							<div>
+								<h4>{{ T "uoc_ri_cercador_filtres_ods" }}</h4>
+								<style>.tag-icons li {vertical-align: bottom;}</style>
+								<ul class="tag-icons ods">
+									{{ range $index, $element := .Params.ods }}
+									<!--GENERIC ICON VERSION-->
+									<!--<li class="tag-icons-{{$element.color}}">
+										<span class="js-filter" role="button" aria-pressed="false" tabindex="0">
+											
+												<span class="number">{{add $index 1}}</span>
+												<span id="name-ods">{{$element.display_name}}</span>
+										
+											<span class="icon icon--group" aria-hidden="true"></span>
+										</span>
+									</li>-->
 
-											<!--SPECIFIC ICON VERSION-->
-											<li class="tag-icons"style='background-image: url("{{ $element.img }}"); background-repeat: no-repeat; background-size: cover;'>
-												<span class="js-filter" role="button" aria-pressed="false" tabindex="0" aria-label="{{$element.display_name}}">
-												</span>
-											</li>
+									<!--SPECIFIC ICON VERSION-->
+									<li class="tag-icons"style='background-image: url("{{ $element.img }}"); background-repeat: no-repeat; background-size: cover;'>
+										<span class="js-filter" role="button" aria-pressed="false" tabindex="0" aria-label="{{$element.display_name}}">
+											<span id="name-ods" style="display: none;">{{$element.display_name}}</span>
+										</span>
+									</li>
+									{{ end }}
+								</ul>
+							</div>
+							<div>
+								<h4>{{ T "uoc_ri_cercador_filtres_unesco" }}</h4>
+								<div class="full-width search-container-top">
+									<div class="col-xs-12">
+										<p><a href="javascript:;">{{ T "uoc_ri_home_search_consultaunesco" }}</a></p>
+										<input list="unesco-code-list" id="search-input" name="searchWords" aria-label='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' placeholder='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' title='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1 unesco" style="font-size: 16px;    height: 47px;"/>
+										<!--  <input type="search" id="search-input" aria-label="Cerca per codi" placeholder='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' name="searchWords" tabindex="0" value="" title='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1 unesco">-->
+										<datalist id="unesco-code-list">
+											{{ range $index, $element := .Params.unesco }}
+												<option value="{{$element.value}}">{{$element.display_name}}</option>
 											{{ end }}
-										</ul>
+										</datalist>
 									</div>
 								</div>
+										
 							</div>
-							<div class="js-collapse-group">
-								<div class="collapse">
-									<div class="head-collapse js-collapse">
-										<h5><a href="#collapseUnesco" aria-expanded="false" class="js-collapseClick ">{{ T "uoc_ri_cercador_filtres_unesco" }}<span class="icon icon--arrow-down float-right" aria-hidden="true"></span></a></h5>
-									</div>
-									<div id="collapseUnesco" class="contentCollapse"> 
-										<div class="full-width search-container-top">
-											<div class="col-xs-12">
-												<p><a href="javascript:;">{{ T "uoc_ri_home_search_consultaunesco" }}</a></p>
-												<input list="unesco-code-list" id="search-input" name="searchWords" aria-label='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' placeholder='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' title='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1 unesco" style="font-size: 16px;    height: 47px;"/>
-												<!--  <input type="search" id="search-input" aria-label="Cerca per codi" placeholder='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' name="searchWords" tabindex="0" value="" title='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1 unesco">-->
-												<datalist id="unesco-code-list">
-													{{ range $index, $element := .Params.unesco }}
-														<option value="{{$element.value}}">{{$element.display_name}}</option>
-													{{ end }}
-												</datalist>
-											</div>
-										</div>
-									</div>	
-								</div>
-							</div>
+							
 							<div class="more-filter-options">
 								<h4>{{ T "uoc_ri_cercador_filtres_centre" }}</h4>
 								<ul class="tag-list centre">
