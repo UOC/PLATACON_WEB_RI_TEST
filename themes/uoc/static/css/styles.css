@@ -16781,8 +16781,8 @@ a[aria-expanded=true] span {
   position: relative;
   padding-left: 0;
   padding: 10px;
-  width: 200px;
-  height: 200px;
+  width: 128px;
+  height: 128px;
   -webkit-transition: -webkit-transform .3s ease-in-out;
   transition: -webkit-transform .3s ease-in-out;
   -o-transition: transform .3s ease-in-out;
@@ -16849,8 +16849,8 @@ a[aria-expanded=true] span {
   position: absolute;
   top: 0;
   left: 0;
-  width: 200px;
-  height: 200px;
+  width: 128px;
+  height: 128px;
   border: 2px solid #38ff90;
   background-color: rgba(56, 255, 144, 0.4);
   margin-left: 0;
