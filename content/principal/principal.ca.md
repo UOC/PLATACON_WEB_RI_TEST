@@ -145,52 +145,52 @@ unesco:
     value: "1102"
     display_name: "Lògica deductiva"
   - 
-    value: "1102.01"
+    value: "110201"
     display_name: "Analogia"
   - 
-    value: "1102.02"
+    value: "110202"
     display_name: "Àlgebra de Boole"
   - 
-    value: "1102.03"
+    value: "110203"
     display_name: "Lògica formal"
   - 
-    value: "1102.04"
+    value: "110204"
     display_name: "Llenguatges formalitzats"
   - 
-    value: "1102.05"
+    value: "110205"
     display_name: "Sistemes formals"
   - 
-    value: "1102.06"
+    value: "110206"
     display_name: "Fonaments de matemàtiques"
   - 
-    value: "1102.07"
+    value: "110207"
     display_name: "Generalització"
   - 
-    value: "1102.08"
+    value: "110208"
     display_name: "Lògica matemàtica"
   - 
-    value: "1102.09"
+    value: "110209"
     display_name: "Lògica modal"
   - 
-    value: "1102.10"
+    value: "110210"
     display_name: "Teoria de models"
   - 
-    value: "1102.11"
+    value: "110211"
     display_name: "Teoria de proves"
   - 
-    value: "1102.12"
+    value: "110212"
     display_name: "Càlcul proposicional"
   - 
-    value: "1102.13"
+    value: "110213"
     display_name: "Funcions recursivas"
   - 
-    value: "1102.14"
+    value: "110214"
     display_name: "Lògica simbòlica"
   - 
-    value: "1102.15"
+    value: "110215"
     display_name: "Teoria de llenguatges formals"
   - 
-    value: "1102.99"
+    value: "110299"
     display_name: "Altres (especificar)"
   - 
     value: "1103"
@@ -199,25 +199,25 @@ unesco:
     value: "1104"
     display_name: "Lògica inductiva"
   - 
-    value: "1104.01"
+    value: "110401"
     display_name: "Inducció"
   - 
-    value: "1104.02"
+    value: "110402"
     display_name: "Intuïcionisme"
   - 
-    value: "1104.03"
+    value: "110403"
     display_name: "Probabilitat"
   - 
-    value: "1104.99"
+    value: "110499"
     display_name: "Altres (especificar)"
   - 
     value: "1105"
     display_name: "Metodologia"
   - 
-    value: "1105.01"
+    value: "110501"
     display_name: "Mètode científic"
   - 
-    value: "1105.99"
+    value: "110599"
     display_name: "Altres (especificar)"
   - 
     value: "1199"
@@ -229,517 +229,517 @@ unesco:
     value: "1201"
     display_name: "Àlgebra"
   - 
-    value: "1201.01"
+    value: "120101"
     display_name: "Geometria algebraica"
   - 
-    value: "1201.02"
+    value: "120102"
     display_name: "Teoria axiomàtica de conjunts"
   - 
-    value: "1201.03"
+    value: "120103"
     display_name: "Teoria de categories"
   - 
-    value: "1201.04"
+    value: "120104"
     display_name: "Àlgebra diferencial"
   - 
-    value: "1201.05"
+    value: "120105"
     display_name: "Camps, anells, àlgebres"
   - 
-    value: "1201.06"
+    value: "120106"
     display_name: "Grups, generalitats"
   - 
-    value: "1201.07"
+    value: "120107"
     display_name: "Àlgebra homológica"
   - 
-    value: "1201.08"
+    value: "120108"
     display_name: "Reticles"
   - 
-    value: "1201.09"
+    value: "120109"
     display_name: "Àlgebra de Lie"
   - 
-    value: "1201.10"
+    value: "120110"
     display_name: "Àlgebra lineal"
   - 
-    value: "1201.11"
+    value: "120111"
     display_name: "Teoria de matrius"
   - 
-    value: "1201.12"
+    value: "120112"
     display_name: "Àlgebres no associatives"
   - 
-    value: "1201.13"
+    value: "120113"
     display_name: "Polinomis"
   - 
-    value: "1201.14"
+    value: "120114"
     display_name: "Teoria de la representació"
   - 
-    value: "1201.99"
+    value: "120199"
     display_name: "Altres (especificar)"
   - 
     value: "1202"
     display_name: "Anàlisis i anàlisi funcional"
   - 
-    value: "1202.01"
+    value: "120201"
     display_name: "Àlgebra d'operadors"
   - 
-    value: "1202.02"
+    value: "120202"
     display_name: "Teoria de l'aproximació"
   - 
-    value: "1202.03"
+    value: "120203"
     display_name: "Algebras i espais de Banach"
   - 
-    value: "1202.04"
+    value: "120204"
     display_name: "Càlcul de variacions"
   - 
-    value: "1202.05"
+    value: "120205"
     display_name: "Anàlisi combinatòria"
   - 
-    value: "1202.06"
+    value: "120206"
     display_name: "Convexidad, desigualtats"
   - 
-    value: "1202.07"
+    value: "120207"
     display_name: "Equacions en diferències"
   - 
-    value: "1202.08"
+    value: "120208"
     display_name: "Equacions funcionals"
   - 
-    value: "1202.09"
+    value: "120209"
     display_name: "Funcions d'una variable complexa"
   - 
-    value: "1202.10"
+    value: "120210"
     display_name: "Funcions de variables reals"
   - 
-    value: "1202.11"
+    value: "120211"
     display_name: "Funcions de diverses variables complexes"
   - 
-    value: "1202.12"
+    value: "120212"
     display_name: "Anàlisi global"
   - 
-    value: "1202.13"
+    value: "120213"
     display_name: "Anàlisi harmònica"
   - 
-    value: "1202.14"
+    value: "120214"
     display_name: "Espais d'Hilbert"
   - 
-    value: "1202.15"
+    value: "120215"
     display_name: "Equacions integrals"
   - 
-    value: "1202.16"
+    value: "120216"
     display_name: "Transformades integrals"
   - 
-    value: "1202.17"
+    value: "120217"
     display_name: "Mesura, integració, àrea"
   - 
-    value: "1202.18"
+    value: "120218"
     display_name: "Càlcul operacional"
   - 
-    value: "1202.19"
+    value: "120219"
     display_name: "Equacions diferencials ordinàries"
   - 
-    value: "1202.20"
+    value: "120220"
     display_name: "Equacions diferencials en derivades parcials"
   - 
-    value: "1202.21"
+    value: "120221"
     display_name: "Teoria de potencial"
   - 
-    value: "1202.22"
+    value: "120222"
     display_name: "Sèries, sumabilidad"
   - 
-    value: "1202.23"
+    value: "120223"
     display_name: "Funcions especials"
   - 
-    value: "1202.24"
+    value: "120224"
     display_name: "Funcions subarmónicas"
   - 
-    value: "1202.25"
+    value: "120225"
     display_name: "Espais lineals topològics"
   - 
-    value: "1202.26"
+    value: "120226"
     display_name: "Sèries i integrals trigonomètriques"
   - 
-    value: "1202.99"
+    value: "120299"
     display_name: "Altres (especificar)"
   - 
     value: "1203"
     display_name: "Ciència dels ordinadors"
   - 
-    value: "1203.01"
+    value: "120301"
     display_name: "Comptabilitat"
   - 
-    value: "1203.02"
+    value: "120302"
     display_name: "Llenguatges algorítmics"
   - 
-    value: "1203.03"
+    value: "120303"
     display_name: "Càlcul analògic"
   - 
-    value: "1203.04"
+    value: "120304"
     display_name: "Intel·ligència artificial"
   - 
-    value: "1203.05"
+    value: "120305"
     display_name: "Sistemes automatitzats de producció"
   - 
-    value: "1203.06"
+    value: "120306"
     display_name: "Sistemes automatitzats de control de qualitat"
   - 
-    value: "1203.07"
+    value: "120307"
     display_name: "Models causals"
   - 
-    value: "1203.08"
+    value: "120308"
     display_name: "Codi i sistemes de codificació"
   - 
-    value: "1203.09"
+    value: "120309"
     display_name: "Disseny amb ajuda d'ordinador"
   - 
-    value: "1203.10"
+    value: "120310"
     display_name: "Ensenyament amb ajuda d'ordinador"
   - 
-    value: "1203.11"
+    value: "120311"
     display_name: "Logicales d'ordinadors"
   - 
-    value: "1203.12"
+    value: "120312"
     display_name: "Bancs de dades"
   - 
-    value: "1203.13"
+    value: "120313"
     display_name: "Càlcul digital"
   - 
-    value: "1203.14"
+    value: "120314"
     display_name: "Sistemes de control de l'entorn"
   - 
-    value: "1203.15"
+    value: "120315"
     display_name: "Heurística"
   - 
-    value: "1203.16"
+    value: "120316"
     display_name: "Càlcul híbrid"
   - 
-    value: "1203.17"
+    value: "120317"
     display_name: "Informàtica"
   - 
-    value: "1203.18"
+    value: "120318"
     display_name: "Sistemes d'informació, disseny i components"
   - 
-    value: "1203.19"
+    value: "120319"
     display_name: "Control d'inventaris"
   - 
-    value: "1203.20"
+    value: "120320"
     display_name: "Sistemes de control mèdic"
   - 
-    value: "1203.21"
+    value: "120321"
     display_name: "Sistemes de navegació i telemetría de l'espai"
   - 
-    value: "1203.22"
+    value: "120322"
     display_name: "Sistemes de control de producció"
   - 
-    value: "1203.23"
+    value: "120323"
     display_name: "Llenguatges de programació"
   - 
-    value: "1203.24"
+    value: "120324"
     display_name: "Teoria de la programació"
   - 
-    value: "1203.25"
+    value: "120325"
     display_name: "Disseny de sistemes sensors"
   - 
-    value: "1203.26"
+    value: "120326"
     display_name: "Simulació"
   - 
-    value: "1203.99"
+    value: "120399"
     display_name: "Altres (especificar)"
   - 
     value: "1204"
     display_name: "Geometria"
   - 
-    value: "1204.01"
+    value: "120401"
     display_name: "Geometria afí"
   - 
-    value: "1204.02"
+    value: "120402"
     display_name: "Varietats complexes"
   - 
-    value: "1204.03"
+    value: "120403"
     display_name: "Dominis convexs"
   - 
-    value: "1204.04"
+    value: "120404"
     display_name: "Geometria diferencial"
   - 
-    value: "1204.05"
+    value: "120405"
     display_name: "Problemes de contorn"
   - 
-    value: "1204.06"
+    value: "120406"
     display_name: "Geometria euclidiana"
   - 
-    value: "1204.07"
+    value: "120407"
     display_name: "Geometries finites"
   - 
-    value: "1204.08"
+    value: "120408"
     display_name: "Fonaments"
   - 
-    value: "1204.09"
+    value: "120409"
     display_name: "Geometries no euclidianes"
   - 
-    value: "1204.10"
+    value: "120410"
     display_name: "Geometria projectiva"
   - 
-    value: "1204.11"
+    value: "120411"
     display_name: "Geometria de Riemann"
   - 
-    value: "1204.12"
+    value: "120412"
     display_name: "Anàlisi tensorial"
   - 
-    value: "1204.99"
+    value: "120499"
     display_name: "Altres (especificar)"
   - 
     value: "1205"
     display_name: "Teoria de nombres"
   - 
-    value: "1205.01"
+    value: "120501"
     display_name: "Teoria algebraica dels nombres"
   - 
-    value: "1205.02"
+    value: "120502"
     display_name: "Teoria analítica dels nombres"
   - 
-    value: "1205.03"
+    value: "120503"
     display_name: "Problemes diofàntics"
   - 
-    value: "1205.04"
+    value: "120504"
     display_name: "Teoria elemental dels nombres"
   - 
-    value: "1205.05"
+    value: "120505"
     display_name: "Geometria dels nombres"
   - 
-    value: "1205.99"
+    value: "120599"
     display_name: "Altres (especificar)"
   - 
     value: "1206"
     display_name: "Anàlisi numèrica"
   - 
-    value: "1206.01"
+    value: "120601"
     display_name: "Construcció d'algorismes"
   - 
-    value: "1206.02"
+    value: "120602"
     display_name: "Equacions diferencials"
   - 
-    value: "1206.03"
+    value: "120603"
     display_name: "Anàlisis d'errors"
   - 
-    value: "1206.04"
+    value: "120604"
     display_name: "Equacions funcionals"
   - 
-    value: "1206.05"
+    value: "120605"
     display_name: "Equacions integrals"
   - 
-    value: "1206.06"
+    value: "120606"
     display_name: "Equacions integro-diferencials"
   - 
-    value: "1206.07"
+    value: "120607"
     display_name: "Interpolació, aproximació i ajust de corbes"
   - 
-    value: "1206.08"
+    value: "120608"
     display_name: "Mètodes iteratius"
   - 
-    value: "1206.09"
+    value: "120609"
     display_name: "Equacions lineals"
   - 
-    value: "1206.10"
+    value: "120610"
     display_name: "Matrius"
   - 
-    value: "1206.11"
+    value: "120611"
     display_name: "Diferenciació numèrica"
   - 
-    value: "1206.12"
+    value: "120612"
     display_name: "Equacions diferencials ordinàries"
   - 
-    value: "1206.13"
+    value: "120613"
     display_name: "Equacions diferencials en derivades parcials"
   - 
-    value: "1206.14"
+    value: "120614"
     display_name: "Quadratura"
   - 
-    value: "1206.99"
+    value: "120699"
     display_name: "Altres (especificar)"
   - 
     value: "1207"
     display_name: "Investigació operativa"
   - 
-    value: "1207.01"
+    value: "120701"
     display_name: "Anàlisi d'activitats"
   - 
-    value: "1207.02"
+    value: "120702"
     display_name: "Sistemes de control"
   - 
-    value: "1207.03"
+    value: "120703"
     display_name: "Cibernètica"
   - 
-    value: "1207.04"
+    value: "120704"
     display_name: "Distribució i transport"
   - 
-    value: "1207.05"
+    value: "120705"
     display_name: "Programació dinàmica"
   - 
-    value: "1207.06"
+    value: "120706"
     display_name: "Teoria de jocs"
   - 
-    value: "1207.07"
+    value: "120707"
     display_name: "Programació sencera"
   - 
-    value: "1207.08"
+    value: "120708"
     display_name: "Inventaris"
   - 
-    value: "1207.09"
+    value: "120709"
     display_name: "Programació lineal"
   - 
-    value: "1207.10"
+    value: "120710"
     display_name: "Xarxes de flux"
   - 
-    value: "1207.11"
+    value: "120711"
     display_name: "Programació no lineal"
   - 
-    value: "1207.12"
+    value: "120712"
     display_name: "Cues"
   - 
-    value: "1207.13"
+    value: "120713"
     display_name: "Planificació"
   - 
-    value: "1207.14"
+    value: "120714"
     display_name: "Formulació de sistemes"
   - 
-    value: "1207.15"
+    value: "120715"
     display_name: "Fiabilitat de sistemes"
   - 
-    value: "1207.99"
+    value: "120799"
     display_name: "Altres (especificar)"
   - 
     value: "1208"
     display_name: "Probabilitat"
   - 
-    value: "1208.01"
+    value: "120801"
     display_name: "Matemàtiques actuarials (mercantils)"
   - 
-    value: "1208.02"
+    value: "120802"
     display_name: "Teoria analítica de la probabilitat"
   - 
-    value: "1208.03"
+    value: "120803"
     display_name: "Aplicació de la probabilitat"
   - 
-    value: "1208.04"
+    value: "120804"
     display_name: "Fonaments de la probabilitat"
   - 
-    value: "1208.05"
+    value: "120805"
     display_name: "Teoremes del límit"
   - 
-    value: "1208.06"
+    value: "120806"
     display_name: "Processos de Markov"
   - 
-    value: "1208.07"
+    value: "120807"
     display_name: "Plausibilidad"
   - 
-    value: "1208.08"
+    value: "120808"
     display_name: "Processos estocàstics"
   - 
-    value: "1208.09"
+    value: "120809"
     display_name: "Probabilitat subjectiva"
   - 
-    value: "1208.99"
+    value: "120899"
     display_name: "Altres (especificar)"
   - 
     value: "1209"
     display_name: "Estadística"
   - 
-    value: "1209.01"
+    value: "120901"
     display_name: "Estadística analítica"
   - 
-    value: "1209.02"
+    value: "120902"
     display_name: "Càlcul en estadística"
   - 
-    value: "1209.03"
+    value: "120903"
     display_name: "Anàlisi de dades"
   - 
-    value: "1209.04"
+    value: "120904"
     display_name: "Teoria i processos de decisió"
   - 
-    value: "1209.05"
+    value: "120905"
     display_name: "Anàlisi i disseny d'experiments"
   - 
-    value: "1209.06"
+    value: "120906"
     display_name: "Mètodes de distribució lliure i no paramètrica"
   - 
-    value: "1209.07"
+    value: "120907"
     display_name: "Teoria de la distribució i probabilitat"
   - 
-    value: "1209.08"
+    value: "120908"
     display_name: "Fonaments de la inferència estadística"
   - 
-    value: "1209.09"
+    value: "120909"
     display_name: "Anàlisi multivariante"
   - 
-    value: "1209.10"
+    value: "120910"
     display_name: "Teoria i tècniques de mostreig"
   - 
-    value: "1209.11"
+    value: "120911"
     display_name: "Teoria estocàstica i anàlisi de sèries temporals"
   - 
-    value: "1209.12"
+    value: "120912"
     display_name: "Tècniques d'associació estadística"
   - 
-    value: "1209.13"
+    value: "120913"
     display_name: "Tècniques d'inferència estadística"
   - 
-    value: "1209.14"
+    value: "120914"
     display_name: "Tècniques de predicció estadística"
   - 
-    value: "1209.15"
+    value: "120915"
     display_name: "Sèries temporals"
   - 
-    value: "1209.99"
+    value: "120999"
     display_name: "Altres (especificar)"
   - 
     value: "1210"
     display_name: "Topologia"
   - 
-    value: "1210.01"
+    value: "121001"
     display_name: "Espais abstractes"
   - 
-    value: "1210.02"
+    value: "121002"
     display_name: "Cohomología"
   - 
-    value: "1210.03"
+    value: "121003"
     display_name: "Varietats diferencials"
   - 
-    value: "1210.04"
+    value: "121004"
     display_name: "Espais fibrados"
   - 
-    value: "1210.05"
+    value: "121005"
     display_name: "Topologia general"
   - 
-    value: "1210.06"
+    value: "121006"
     display_name: "Homologia"
   - 
-    value: "1210.07"
+    value: "121007"
     display_name: "Homotopia"
   - 
-    value: "1210.08"
+    value: "121008"
     display_name: "Grups de Lie"
   - 
-    value: "1210.09"
+    value: "121009"
     display_name: "Topologia lineal d'entorns"
   - 
-    value: "1210.10"
+    value: "121010"
     display_name: "Topologia cuasilineal"
   - 
-    value: "1210.11"
+    value: "121011"
     display_name: "Topologia tridimensional"
   - 
-    value: "1210.12"
+    value: "121012"
     display_name: "Grups topològics"
   - 
-    value: "1210.13"
+    value: "121013"
     display_name: "Dinàmica topològica"
   - 
-    value: "1210.14"
+    value: "121014"
     display_name: "Recobriments topològics"
   - 
-    value: "1210.15"
+    value: "121015"
     display_name: "Varietats topològiques"
   - 
-    value: "1210.16"
+    value: "121016"
     display_name: "Grups de transformació"
   - 
-    value: "1210.99"
+    value: "121099"
     display_name: "Altres (especificar)"
   - 
     value: "1299"
@@ -751,148 +751,148 @@ unesco:
     value: "2101"
     display_name: "Cosmologia i cosmogonia"
   - 
-    value: "2101.01"
+    value: "210101"
     display_name: "Estels dobles"
   - 
-    value: "2101.02"
+    value: "210102"
     display_name: "Eixams o Cúmuls"
   - 
-    value: "2101.03"
+    value: "210103"
     display_name: "Rajos Còsmics"
   - 
-    value: "2101.04"
+    value: "210104"
     display_name: "Galàxies"
   - 
-    value: "2101.05"
+    value: "210105"
     display_name: "Gravitació"
   - 
-    value: "2101.06"
+    value: "210106"
     display_name: "Nebuloses"
   - 
-    value: "2101.07"
+    value: "210107"
     display_name: "Novas"
   - 
-    value: "2101.08"
+    value: "210108"
     display_name: "Premessis"
   - 
-    value: "2101.09"
+    value: "210109"
     display_name: "Quasares"
   - 
-    value: "2101.10"
+    value: "210110"
     display_name: "Estels"
   - 
-    value: "2101.11"
+    value: "210111"
     display_name: "Evolució estel·lar i diagrama HR"
   - 
-    value: "2101.12"
+    value: "210112"
     display_name: "Composició estel·lar"
   - 
-    value: "2101.13"
+    value: "210113"
     display_name: "Super-novas"
   - 
-    value: "2101.14"
+    value: "210114"
     display_name: "Estels variables"
   - 
-    value: "2101.15"
+    value: "210115"
     display_name: "Fonts de RAJOS X"
   - 
-    value: "2101.99"
+    value: "210199"
     display_name: "Altres (especificar)"
   - 
     value: "2102"
     display_name: "Mitjà interplanetari"
   - 
-    value: "2102.01"
+    value: "210201"
     display_name: "Camps interplanetaris"
   - 
-    value: "2102.02"
+    value: "210202"
     display_name: "Matèria interplanetària"
   - 
-    value: "2102.03"
+    value: "210203"
     display_name: "Partícules interplanetàries"
   - 
-    value: "2102.99"
+    value: "210299"
     display_name: "Altres (especificar)"
   - 
     value: "2103"
     display_name: "Astronomia òptica"
   - 
-    value: "2103.01"
+    value: "210301"
     display_name: "Astronomia de posició"
   - 
-    value: "2103.02"
+    value: "210302"
     display_name: "Telescopis"
   - 
-    value: "2103.03"
+    value: "210303"
     display_name: "Espectroscopía"
   - 
-    value: "2103.99"
+    value: "210399"
     display_name: "Altres (especificar)"
   - 
     value: "2104"
     display_name: "Planetologia (2512 3324)"
   - 
-    value: "2104.01"
+    value: "210401"
     display_name: "Estels"
   - 
-    value: "2104.02"
+    value: "210402"
     display_name: "Meteorits"
   - 
-    value: "2104.03"
+    value: "210403"
     display_name: "Atmosfera planetària"
   - 
-    value: "2104.04"
+    value: "210404"
     display_name: "Geologia planetària"
   - 
-    value: "2104.05"
+    value: "210405"
     display_name: "Física planetària"
   - 
-    value: "2104.06"
+    value: "210406"
     display_name: "Camps magnètics planetaris"
   - 
-    value: "2104.07"
+    value: "210407"
     display_name: "Planetes"
   - 
-    value: "2104.08"
+    value: "210408"
     display_name: "Satèl·lits"
   - 
-    value: "2104.09"
+    value: "210409"
     display_name: "Tectitas"
   - 
-    value: "2104.10"
+    value: "210410"
     display_name: "La Lluna"
   - 
-    value: "2104.99"
+    value: "210499"
     display_name: "Altres (especificar)"
   - 
     value: "2105"
     display_name: "Radioastronomía"
   - 
-    value: "2105.01"
+    value: "210501"
     display_name: "Antenes"
   - 
-    value: "2105.02"
+    value: "210502"
     display_name: "Radiotelescopios"
   - 
-    value: "2105.99"
+    value: "210599"
     display_name: "Altres (especificar)"
   - 
     value: "2106"
     display_name: "Sistema solar"
   - 
-    value: "2106.01"
+    value: "210601"
     display_name: "Energia solar"
   - 
-    value: "2106.02"
+    value: "210602"
     display_name: "Física solar"
   - 
-    value: "2106.03"
+    value: "210603"
     display_name: "Vent solar"
   - 
-    value: "2106.04"
+    value: "210604"
     display_name: "El Sol"
   - 
-    value: "2106.99"
+    value: "210699"
     display_name: "Altres (especificar)"
   - 
     value: "2199"
@@ -904,745 +904,745 @@ unesco:
     value: "2201"
     display_name: "Acústica"
   - 
-    value: "2201.01"
+    value: "220101"
     display_name: "Propietats acústiques dels sòlids"
   - 
-    value: "2201.02"
+    value: "220102"
     display_name: "Acústica arquitectònica"
   - 
-    value: "2201.03"
+    value: "220103"
     display_name: "Física de l'audició"
   - 
-    value: "2201.04"
+    value: "220104"
     display_name: "Física de la música"
   - 
-    value: "2201.05"
+    value: "220105"
     display_name: "Soroll"
   - 
-    value: "2201.06"
+    value: "220106"
     display_name: "Ondas de xoc"
   - 
-    value: "2201.07"
+    value: "220107"
     display_name: "Sonar"
   - 
-    value: "2201.08"
+    value: "220108"
     display_name: "Física de la dicció"
   - 
-    value: "2201.09"
+    value: "220109"
     display_name: "Ultrasons"
   - 
-    value: "2201.10"
+    value: "220110"
     display_name: "Sons subaqüàtics"
   - 
-    value: "2201.11"
+    value: "220111"
     display_name: "Vibracions"
   - 
-    value: "2201.99"
+    value: "220199"
     display_name: "Altres (especificar)"
   - 
     value: "2202"
     display_name: "Electromagnetisme"
   - 
-    value: "2202.01"
+    value: "220201"
     display_name: "Conductivitat"
   - 
-    value: "2202.02"
+    value: "220202"
     display_name: "Magnituds elèctriques i la seva mesura"
   - 
-    value: "2202.03"
+    value: "220203"
     display_name: "Electricitat"
   - 
-    value: "2202.04"
+    value: "220204"
     display_name: "Ondas electromagnètiques"
   - 
-    value: "2202.05"
+    value: "220205"
     display_name: "Rajos gamma"
   - 
-    value: "2202.06"
+    value: "220206"
     display_name: "Radiació infraroja, visible i ultraviolada"
   - 
-    value: "2202.07"
+    value: "220207"
     display_name: "Interacció d'ones electromagnètiques amb la matèria"
   - 
-    value: "2202.08"
+    value: "220208"
     display_name: "Magnetisme"
   - 
-    value: "2202.09"
+    value: "220209"
     display_name: "Propagació d'ones electromagnètiques"
   - 
-    value: "2202.10"
+    value: "220210"
     display_name: "Radioondas i microones"
   - 
-    value: "2202.11"
+    value: "220211"
     display_name: "Superconductivitat"
   - 
-    value: "2202.12"
+    value: "220212"
     display_name: "RAJOS X"
   - 
-    value: "2202.99"
+    value: "220299"
     display_name: "Altres (especificar)"
   - 
     value: "2203"
     display_name: "Electrònica"
   - 
-    value: "2203.01"
+    value: "220301"
     display_name: "Circuits"
   - 
-    value: "2203.02"
+    value: "220302"
     display_name: "Elements de circuits"
   - 
-    value: "2203.03"
+    value: "220303"
     display_name: "Vàlvules electròniques"
   - 
-    value: "2203.04"
+    value: "220304"
     display_name: "Microscopía electrònica"
   - 
-    value: "2203.05"
+    value: "220305"
     display_name: "Estats electrònics"
   - 
-    value: "2203.06"
+    value: "220306"
     display_name: "Transport d'electrons"
   - 
-    value: "2203.07"
+    value: "220307"
     display_name: "Circuits integrats"
   - 
-    value: "2203.08"
+    value: "220308"
     display_name: "Fotoelectricidad"
   - 
-    value: "2203.09"
+    value: "220309"
     display_name: "Piezoelectricidad"
   - 
-    value: "2203.99"
+    value: "220399"
     display_name: "Altres (especificar)"
   - 
     value: "2204"
     display_name: "Física de fluídos"
   - 
-    value: "2204.01"
+    value: "220401"
     display_name: "Col·loides"
   - 
-    value: "2204.02"
+    value: "220402"
     display_name: "Dispersions"
   - 
-    value: "2204.03"
+    value: "220403"
     display_name: "Flux de fluídos"
   - 
-    value: "2204.04"
+    value: "220404"
     display_name: "Mecànica de fluídos"
   - 
-    value: "2204.05"
+    value: "220405"
     display_name: "Gasos"
   - 
-    value: "2204.06"
+    value: "220406"
     display_name: "Fenòmens d'alta pressió"
   - 
-    value: "2204.07"
+    value: "220407"
     display_name: "Ionització"
   - 
-    value: "2204.08"
+    value: "220408"
     display_name: "Líquids"
   - 
-    value: "2204.09"
+    value: "220409"
     display_name: "Dinàmica de fluídos magnètics (Magnetofluidodinámica)"
   - 
-    value: "2204.10"
+    value: "220410"
     display_name: "Física de plasmes"
   - 
-    value: "2204.11"
+    value: "220411"
     display_name: "Fluídos quàntics"
   - 
-    value: "2204.99"
+    value: "220499"
     display_name: "Altres (especificar)"
   - 
     value: "2205"
     display_name: "Mecànica"
   - 
-    value: "2205.01"
+    value: "220501"
     display_name: "Mecànica analítica"
   - 
-    value: "2205.02"
+    value: "220502"
     display_name: "Mecànica de mitjans continus"
   - 
-    value: "2205.03"
+    value: "220503"
     display_name: "Elasticitat"
   - 
-    value: "2205.04"
+    value: "220504"
     display_name: "Mecànica de fluídos"
   - 
-    value: "2205.05"
+    value: "220505"
     display_name: "Fricció"
   - 
-    value: "2205.06"
+    value: "220506"
     display_name: "Teoria de molts cossos"
   - 
-    value: "2205.07"
+    value: "220507"
     display_name: "Mesura de propietats mecàniques"
   - 
-    value: "2205.08"
+    value: "220508"
     display_name: "Plasticitat"
   - 
-    value: "2205.09"
+    value: "220509"
     display_name: "Mecànica de sòlids"
   - 
-    value: "2205.10"
+    value: "220510"
     display_name: "Mecànica estadística"
   - 
-    value: "2205.99"
+    value: "220599"
     display_name: "Altres (especificar)"
   - 
     value: "2206"
     display_name: "Física molecular"
   - 
-    value: "2206.01"
+    value: "220601"
     display_name: "Radicals lliures"
   - 
-    value: "2206.02"
+    value: "220602"
     display_name: "Molècules inorgàniques"
   - 
-    value: "2206.03"
+    value: "220603"
     display_name: "Macromolècules"
   - 
-    value: "2206.04"
+    value: "220604"
     display_name: "Molècules mesónicas i muónicas"
   - 
-    value: "2206.05"
+    value: "220605"
     display_name: "Feixos moleculars"
   - 
-    value: "2206.06"
+    value: "220606"
     display_name: "Ions moleculars"
   - 
-    value: "2206.07"
+    value: "220607"
     display_name: "Espectroscopía molecular"
   - 
-    value: "2206.08"
+    value: "220608"
     display_name: "Estructura molecular"
   - 
-    value: "2206.09"
+    value: "220609"
     display_name: "Molècules orgàniques"
   - 
-    value: "2206.10"
+    value: "220610"
     display_name: "Polímers"
   - 
-    value: "2206.99"
+    value: "220699"
     display_name: "Altres (especificar)"
   - 
     value: "2207"
     display_name: "Física atòmica i nuclear"
   - 
-    value: "2207.01"
+    value: "220701"
     display_name: "Feixos atòmics"
   - 
-    value: "2207.02"
+    value: "220702"
     display_name: "Ions atòmics"
   - 
-    value: "2207.03"
+    value: "220703"
     display_name: "Física atòmica"
   - 
-    value: "2207.04"
+    value: "220704"
     display_name: "Atomos amb Z major que 2"
   - 
-    value: "2207.05"
+    value: "220705"
     display_name: "Processos de col·lisió"
   - 
-    value: "2207.06"
+    value: "220706"
     display_name: "Feixos d'electrons"
   - 
-    value: "2207.07"
+    value: "220707"
     display_name: "Ressonància paramagnética electrònica"
   - 
-    value: "2207.08"
+    value: "220708"
     display_name: "Ressonància de spin electrònic"
   - 
-    value: "2207.09"
+    value: "220709"
     display_name: "Conversió d'energia"
   - 
-    value: "2207.10"
+    value: "220710"
     display_name: "Fissió (nuclear)"
   - 
-    value: "2207.11"
+    value: "220711"
     display_name: "Àtom d'heli"
   - 
-    value: "2207.12"
+    value: "220712"
     display_name: "Àtom d'hidrogen"
   - 
-    value: "2207.13"
+    value: "220713"
     display_name: "Isòtops"
   - 
-    value: "2207.14"
+    value: "220714"
     display_name: "Desintegració nuclear"
   - 
-    value: "2207.15"
+    value: "220715"
     display_name: "Energia nuclear"
   - 
-    value: "2207.16"
+    value: "220716"
     display_name: "Ressonància magnètica nuclear"
   - 
-    value: "2207.17"
+    value: "220717"
     display_name: "Reacció nuclear i dispersió"
   - 
-    value: "2207.18"
+    value: "220718"
     display_name: "Reactors nuclears"
   - 
-    value: "2207.19"
+    value: "220719"
     display_name: "Estructura nuclear"
   - 
-    value: "2207.20"
+    value: "220720"
     display_name: "Radioisòtops"
   - 
-    value: "2207.21"
+    value: "220721"
     display_name: "Fusió termonuclear"
   - 
-    value: "2207.90"
+    value: "220790"
     display_name: "Física nuclear experimental baixes energies"
   - 
-    value: "2207.99"
+    value: "220799"
     display_name: "Altres (especificar)"
   - 
     value: "2208"
     display_name: "Nucleónica"
   - 
-    value: "2208.01"
+    value: "220801"
     display_name: "Manipulació de feixos"
   - 
-    value: "2208.02"
+    value: "220802"
     display_name: "Fonts de feixos"
   - 
-    value: "2208.03"
+    value: "220803"
     display_name: "Reactors de fusió"
   - 
-    value: "2208.04"
+    value: "220804"
     display_name: "Nuclis"
   - 
-    value: "2208.05"
+    value: "220805"
     display_name: "Acceleradors de partícules"
   - 
-    value: "2208.06"
+    value: "220806"
     display_name: "Detectors de partícules"
   - 
-    value: "2208.07"
+    value: "220807"
     display_name: "Física de partícules"
   - 
-    value: "2208.08"
+    value: "220808"
     display_name: "Fonts de partícules"
   - 
-    value: "2208.09"
+    value: "220809"
     display_name: "Confinament de plasma"
   - 
-    value: "2208.99"
+    value: "220899"
     display_name: "Altres (especificar)"
   - 
     value: "2209"
     display_name: "Òptica"
   - 
-    value: "2209.01"
+    value: "220901"
     display_name: "Espectroscopía d'absorció"
   - 
-    value: "2209.02"
+    value: "220902"
     display_name: "Cinematografia"
   - 
-    value: "2209.03"
+    value: "220903"
     display_name: "Colorimetria"
   - 
-    value: "2209.04"
+    value: "220904"
     display_name: "Espectroscopía d'emissió"
   - 
-    value: "2209.05"
+    value: "220905"
     display_name: "Fibres òptiques"
   - 
-    value: "2209.06"
+    value: "220906"
     display_name: "Optica geomètrica"
   - 
-    value: "2209.07"
+    value: "220907"
     display_name: "Holografia"
   - 
-    value: "2209.08"
+    value: "220908"
     display_name: "Il·luminació"
   - 
-    value: "2209.09"
+    value: "220909"
     display_name: "Radiació infraroja"
   - 
-    value: "2209.10"
+    value: "220910"
     display_name: "Làsers"
   - 
-    value: "2209.11"
+    value: "220911"
     display_name: "Llum"
   - 
-    value: "2209.12"
+    value: "220912"
     display_name: "Microscopis"
   - 
-    value: "2209.13"
+    value: "220913"
     display_name: "Optica no lineal"
   - 
-    value: "2209.14"
+    value: "220914"
     display_name: "Propietats òptiques dels sòlids"
   - 
-    value: "2209.15"
+    value: "220915"
     display_name: "Optometria"
   - 
-    value: "2209.16"
+    value: "220916"
     display_name: "Instruments fotogràfics"
   - 
-    value: "2209.17"
+    value: "220917"
     display_name: "Fotografia"
   - 
-    value: "2209.18"
+    value: "220918"
     display_name: "Fotometria"
   - 
-    value: "2209.19"
+    value: "220919"
     display_name: "Optica física"
   - 
-    value: "2209.20"
+    value: "220920"
     display_name: "Radiometria"
   - 
-    value: "2209.21"
+    value: "220921"
     display_name: "Espectroscopía"
   - 
-    value: "2209.22"
+    value: "220922"
     display_name: "Radiació ultraviolada"
   - 
-    value: "2209.23"
+    value: "220923"
     display_name: "Radiació visible"
   - 
-    value: "2209.24"
+    value: "220924"
     display_name: "Física de la visió"
   - 
-    value: "2209.90"
+    value: "220990"
     display_name: "Tractament digital. Imatges"
   - 
-    value: "2209.99"
+    value: "220999"
     display_name: "Altres (especificar)"
   - 
     value: "2210"
     display_name: "Química física"
   - 
-    value: "2210.01"
+    value: "221001"
     display_name: "Catàlisi"
   - 
-    value: "2210.02"
+    value: "221002"
     display_name: "Equilibri químic i de fase"
   - 
-    value: "2210.03"
+    value: "221003"
     display_name: "Cinètica química"
   - 
-    value: "2210.04"
+    value: "221004"
     display_name: "Química de col·loides"
   - 
-    value: "2210.05"
+    value: "221005"
     display_name: "Electroquímica"
   - 
-    value: "2210.06"
+    value: "221006"
     display_name: "Electròlits"
   - 
-    value: "2210.07"
+    value: "221007"
     display_name: "Espectroscopía electrònica"
   - 
-    value: "2210.08"
+    value: "221008"
     display_name: "Emulsions"
   - 
-    value: "2210.09"
+    value: "221009"
     display_name: "Transferència d'energia"
   - 
-    value: "2210.10"
+    value: "221010"
     display_name: "Reaccions ràpides i explosius"
   - 
-    value: "2210.11"
+    value: "221011"
     display_name: "Flames"
   - 
-    value: "2210.12"
+    value: "221012"
     display_name: "Teoria de les cèl·lules de combustible"
   - 
-    value: "2210.13"
+    value: "221013"
     display_name: "Sals foses"
   - 
-    value: "2210.14"
+    value: "221014"
     display_name: "Física de la fase gasosa"
   - 
-    value: "2210.15"
+    value: "221015"
     display_name: "Química de les altes temperatures"
   - 
-    value: "2210.16"
+    value: "221016"
     display_name: "Química d'interfases"
   - 
-    value: "2210.17"
+    value: "221017"
     display_name: "Intercanvi iònic"
   - 
-    value: "2210.18"
+    value: "221018"
     display_name: "Física de l'estat líquid"
   - 
-    value: "2210.19"
+    value: "221019"
     display_name: "Fenòmens de membrana"
   - 
-    value: "2210.20"
+    value: "221020"
     display_name: "Espectroscopía molecular"
   - 
-    value: "2210.21"
+    value: "221021"
     display_name: "Equilibri de fases"
   - 
-    value: "2210.22"
+    value: "221022"
     display_name: "Fotoquímica"
   - 
-    value: "2210.23"
+    value: "221023"
     display_name: "Teoria quàntica"
   - 
-    value: "2210.24"
+    value: "221024"
     display_name: "Radioquímica"
   - 
-    value: "2210.25"
+    value: "221025"
     display_name: "Processos de relaxació"
   - 
-    value: "2210.26"
+    value: "221026"
     display_name: "Fenòmens de dispersió"
   - 
-    value: "2210.27"
+    value: "221027"
     display_name: "Estats de la matèria"
   - 
-    value: "2210.28"
+    value: "221028"
     display_name: "Química de l'estat sòlid"
   - 
-    value: "2210.29"
+    value: "221029"
     display_name: "Física de l'estat sòlid"
   - 
-    value: "2210.30"
+    value: "221030"
     display_name: "Solucions"
   - 
-    value: "2210.31"
+    value: "221031"
     display_name: "Termoquímica"
   - 
-    value: "2210.32"
+    value: "221032"
     display_name: "Termodinàmica"
   - 
-    value: "2210.33"
+    value: "221033"
     display_name: "Fenòmens de transport"
   - 
-    value: "2210.34"
+    value: "221034"
     display_name: "Teoria de la valència"
   - 
-    value: "2210.90"
+    value: "221090"
     display_name: "Química-Física de Polímers"
   - 
-    value: "2210.91"
+    value: "221091"
     display_name: "Química-Física: Química de la fase gasosa"
   - 
-    value: "2210.93"
+    value: "221093"
     display_name: "Cristalls líquids"
   - 
-    value: "2210.99"
+    value: "221099"
     display_name: "Altres (especificar)"
   - 
     value: "2211"
     display_name: "Física de l'estat sòlid"
   - 
-    value: "2211.01"
+    value: "221101"
     display_name: "Aliatges"
   - 
-    value: "2211.02"
+    value: "221102"
     display_name: "Materials composts"
   - 
-    value: "2211.03"
+    value: "221103"
     display_name: "Creixement de cristalls"
   - 
-    value: "2211.04"
+    value: "221104"
     display_name: "Cristal·lografia"
   - 
-    value: "2211.05"
+    value: "221105"
     display_name: "Estructura cristal·lina"
   - 
-    value: "2211.06"
+    value: "221106"
     display_name: "Dendritas"
   - 
-    value: "2211.07"
+    value: "221107"
     display_name: "Dielèctrics"
   - 
-    value: "2211.08"
+    value: "221108"
     display_name: "Difusió en sòlids"
   - 
-    value: "2211.09"
+    value: "221109"
     display_name: "Propietats de portadors electrònics"
   - 
-    value: "2211.10"
+    value: "221110"
     display_name: "Estats electrònics"
   - 
-    value: "2211.11"
+    value: "221111"
     display_name: "Propietats de transport d'electrons"
   - 
-    value: "2211.12"
+    value: "221112"
     display_name: "Imperfeccions"
   - 
-    value: "2211.13"
+    value: "221113"
     display_name: "Interacció de la radiació amb els sòlids"
   - 
-    value: "2211.14"
+    value: "221114"
     display_name: "Interfases"
   - 
-    value: "2211.15"
+    value: "221115"
     display_name: "Mecànica de xarxes"
   - 
-    value: "2211.16"
+    value: "221116"
     display_name: "Luminescència"
   - 
-    value: "2211.17"
+    value: "221117"
     display_name: "Propietats magnètiques"
   - 
-    value: "2211.18"
+    value: "221118"
     display_name: "Ressonància magnètica"
   - 
-    value: "2211.19"
+    value: "221119"
     display_name: "Propietats mecàniques"
   - 
-    value: "2211.20"
+    value: "221120"
     display_name: "Conductors metàl·lics"
   - 
-    value: "2211.21"
+    value: "221121"
     display_name: "Metal·lúrgia"
   - 
-    value: "2211.22"
+    value: "221122"
     display_name: "Metalografía"
   - 
-    value: "2211.23"
+    value: "221123"
     display_name: "Estats no cristal·lins"
   - 
-    value: "2211.24"
+    value: "221124"
     display_name: "Propietats òptiques"
   - 
-    value: "2211.25"
+    value: "221125"
     display_name: "Semiconductors"
   - 
-    value: "2211.26"
+    value: "221126"
     display_name: "Dispositius d'estat sòlid"
   - 
-    value: "2211.27"
+    value: "221127"
     display_name: "Superconductores"
   - 
-    value: "2211.28"
+    value: "221128"
     display_name: "Superfícies"
   - 
-    value: "2211.29"
+    value: "221129"
     display_name: "Propietats tèrmiques dels sòlids"
   - 
-    value: "2211.30"
+    value: "221130"
     display_name: "Tribología"
   - 
-    value: "2211.90"
+    value: "221190"
     display_name: "Física de l'estat sòlid. Làmina prima"
   - 
-    value: "2211.91"
+    value: "221191"
     display_name: "Física de l'estat sòlid. Espectroscopía de sòlids"
   - 
-    value: "2211.99"
+    value: "221199"
     display_name: "Altres (especificar)"
   - 
     value: "2212"
     display_name: "Física Teòrica"
   - 
-    value: "2212.01"
+    value: "221201"
     display_name: "Camps electromagnètics"
   - 
-    value: "2212.02"
+    value: "221202"
     display_name: "Partícules elementals"
   - 
-    value: "2212.03"
+    value: "221203"
     display_name: "Energia (física)"
   - 
-    value: "2212.04"
+    value: "221204"
     display_name: "Camps"
   - 
-    value: "2212.05"
+    value: "221205"
     display_name: "Gravitació"
   - 
-    value: "2212.06"
+    value: "221206"
     display_name: "Camps gravitacionals"
   - 
-    value: "2212.07"
+    value: "221207"
     display_name: "Gravitones"
   - 
-    value: "2212.08"
+    value: "221208"
     display_name: "Hadrons"
   - 
-    value: "2212.09"
+    value: "221209"
     display_name: "Leptons"
   - 
-    value: "2212.10"
+    value: "221210"
     display_name: "Massa"
   - 
-    value: "2212.11"
+    value: "221211"
     display_name: "Fotons"
   - 
-    value: "2212.12"
+    value: "221212"
     display_name: "Teoria quàntica de camps"
   - 
-    value: "2212.13"
+    value: "221213"
     display_name: "Radiació (electromagnètica)"
   - 
-    value: "2212.14"
+    value: "221214"
     display_name: "Teoria de la relativitat"
   - 
-    value: "2212.99"
+    value: "221299"
     display_name: "Altres (especificar)"
   - 
     value: "2213"
     display_name: "Termodinàmica"
   - 
-    value: "2213.01"
+    value: "221301"
     display_name: "Canvis d'estat"
   - 
-    value: "2213.02"
+    value: "221302"
     display_name: "Física de la transmissió de la calor"
   - 
-    value: "2213.03"
+    value: "221303"
     display_name: "Altes pressions"
   - 
-    value: "2213.04"
+    value: "221304"
     display_name: "Altes temperatures"
   - 
-    value: "2213.05"
+    value: "221305"
     display_name: "Teoria cinètica"
   - 
-    value: "2213.06"
+    value: "221306"
     display_name: "Baixes temperatures"
   - 
-    value: "2213.07"
+    value: "221307"
     display_name: "Canvi de fase"
   - 
-    value: "2213.08"
+    value: "221308"
     display_name: "Tècniques de mesura de la calor"
   - 
-    value: "2213.09"
+    value: "221309"
     display_name: "Equilibris termodinàmics"
   - 
-    value: "2213.10"
+    value: "221310"
     display_name: "Relacions termodinàmiques"
   - 
-    value: "2213.11"
+    value: "221311"
     display_name: "Fenòmens de transport"
   - 
-    value: "2213.99"
+    value: "221399"
     display_name: "Altres (especificar)"
   - 
     value: "2214"
     display_name: "Unitats i constants"
   - 
-    value: "2214.01"
+    value: "221401"
     display_name: "Constants físiques"
   - 
-    value: "2214.02"
+    value: "221402"
     display_name: "Metrologia"
   - 
-    value: "2214.03"
+    value: "221403"
     display_name: "Patrons"
   - 
-    value: "2214.04"
+    value: "221404"
     display_name: "Calibratge d'unitats"
   - 
-    value: "2214.05"
+    value: "221405"
     display_name: "Conversió d'unitats"
   - 
-    value: "2214.99"
+    value: "221499"
     display_name: "Altres (especificar)"
   - 
     value: "2290"
     display_name: "Física d'Altes Energies"
   - 
-    value: "2290.01"
+    value: "229001"
     display_name: "Física teòrica d'altes energies"
   - 
     value: "2299"
@@ -1654,448 +1654,448 @@ unesco:
     value: "2301"
     display_name: "Química analítica"
   - 
-    value: "2301.01"
+    value: "230101"
     display_name: "Espectroscopía d'absorció"
   - 
-    value: "2301.02"
+    value: "230102"
     display_name: "Anàlisi bioquímica"
   - 
-    value: "2301.03"
+    value: "230103"
     display_name: "Anàlisi cromatogràfica"
   - 
-    value: "2301.04"
+    value: "230104"
     display_name: "Anàlisi electroquímica"
   - 
-    value: "2301.05"
+    value: "230105"
     display_name: "Espectroscopía d'emissió"
   - 
-    value: "2301.06"
+    value: "230106"
     display_name: "Fluorimetría"
   - 
-    value: "2301.07"
+    value: "230107"
     display_name: "Gravimetria"
   - 
-    value: "2301.08"
+    value: "230108"
     display_name: "Espectroscopía d'infrarojos"
   - 
-    value: "2301.09"
+    value: "230109"
     display_name: "Espectroscopía de ressonància magnètica"
   - 
-    value: "2301.10"
+    value: "230110"
     display_name: "Espectroscopía de masses"
   - 
-    value: "2301.11"
+    value: "230111"
     display_name: "Anàlisis microquímico"
   - 
-    value: "2301.12"
+    value: "230112"
     display_name: "Microscòpia"
   - 
-    value: "2301.13"
+    value: "230113"
     display_name: "Espectroscopía de microones"
   - 
-    value: "2301.14"
+    value: "230114"
     display_name: "Fosforimetría"
   - 
-    value: "2301.15"
+    value: "230115"
     display_name: "Anàlisis de polímers"
   - 
-    value: "2301.16"
+    value: "230116"
     display_name: "Anàlisis radioquímico"
   - 
-    value: "2301.17"
+    value: "230117"
     display_name: "Espectroscopía Raman"
   - 
-    value: "2301.18"
+    value: "230118"
     display_name: "Mètodes termoanalíticos"
   - 
-    value: "2301.19"
+    value: "230119"
     display_name: "Volumetria"
   - 
-    value: "2301.20"
+    value: "230120"
     display_name: "Espectroscopía de RAJOS X"
   - 
-    value: "2301.99"
+    value: "230199"
     display_name: "Altres (especificar)"
   - 
     value: "2302"
     display_name: "Bioquímica"
   - 
-    value: "2302.01"
+    value: "230201"
     display_name: "Alcaloides"
   - 
-    value: "2302.02"
+    value: "230202"
     display_name: "Aminoàcids"
   - 
-    value: "2302.03"
+    value: "230203"
     display_name: "Antimetabolitos"
   - 
-    value: "2302.04"
+    value: "230204"
     display_name: "Genètica bioquímica"
   - 
-    value: "2302.05"
+    value: "230205"
     display_name: "Biosíntesis"
   - 
-    value: "2302.06"
+    value: "230206"
     display_name: "Quimioteràpia"
   - 
-    value: "2302.07"
+    value: "230207"
     display_name: "Química clínica"
   - 
-    value: "2302.08"
+    value: "230208"
     display_name: "Coenzims"
   - 
-    value: "2302.09"
+    value: "230209"
     display_name: "Enzimologia"
   - 
-    value: "2302.10"
+    value: "230210"
     display_name: "Olis essencials"
   - 
-    value: "2302.11"
+    value: "230211"
     display_name: "Acidos grassos"
   - 
-    value: "2302.12"
+    value: "230212"
     display_name: "Fermentació"
   - 
-    value: "2302.13"
+    value: "230213"
     display_name: "Regulació per retroalimentació"
   - 
-    value: "2302.14"
+    value: "230214"
     display_name: "Glúcids"
   - 
-    value: "2302.15"
+    value: "230215"
     display_name: "Hormones"
   - 
-    value: "2302.16"
+    value: "230216"
     display_name: "Inmunoquímica"
   - 
-    value: "2302.17"
+    value: "230217"
     display_name: "Metabolisme intermediari"
   - 
-    value: "2302.18"
+    value: "230218"
     display_name: "Lípids"
   - 
-    value: "2302.19"
+    value: "230219"
     display_name: "Processos metabòlics"
   - 
-    value: "2302.20"
+    value: "230220"
     display_name: "Química microbiològica"
   - 
-    value: "2302.21"
+    value: "230221"
     display_name: "Biologia molecular"
   - 
-    value: "2302.22"
+    value: "230222"
     display_name: "Farmacologia molecular"
   - 
-    value: "2302.23"
+    value: "230223"
     display_name: "Acidos nucleics"
   - 
-    value: "2302.24"
+    value: "230224"
     display_name: "Pèptids"
   - 
-    value: "2302.25"
+    value: "230225"
     display_name: "Fotosíntesis"
   - 
-    value: "2302.26"
+    value: "230226"
     display_name: "Bioquímica física"
   - 
-    value: "2302.27"
+    value: "230227"
     display_name: "Proteïnes"
   - 
-    value: "2302.28"
+    value: "230228"
     display_name: "Midó"
   - 
-    value: "2302.29"
+    value: "230229"
     display_name: "Esteroides"
   - 
-    value: "2302.30"
+    value: "230230"
     display_name: "Terpens"
   - 
-    value: "2302.31"
+    value: "230231"
     display_name: "Oligoelementos"
   - 
-    value: "2302.32"
+    value: "230232"
     display_name: "Vitamines"
   - 
-    value: "2302.33"
+    value: "230233"
     display_name: "Ceres"
   - 
-    value: "2302.90"
+    value: "230290"
     display_name: "Bioquímica d'aliments"
   - 
-    value: "2302.91"
+    value: "230291"
     display_name: "Química de macromolècules biològiques"
   - 
-    value: "2302.99"
+    value: "230299"
     display_name: "Altres (especificar)"
   - 
     value: "2303"
     display_name: "Química inorgànica"
   - 
-    value: "2303.01"
+    value: "230301"
     display_name: "Química dels actínids"
   - 
-    value: "2303.02"
+    value: "230302"
     display_name: "Elements alcalinotérreos"
   - 
-    value: "2303.03"
+    value: "230303"
     display_name: "Elements alcalins"
   - 
-    value: "2303.04"
+    value: "230304"
     display_name: "Compostos de bor"
   - 
-    value: "2303.05"
+    value: "230305"
     display_name: "Carboni"
   - 
-    value: "2303.06"
+    value: "230306"
     display_name: "Compostos de clor"
   - 
-    value: "2303.07"
+    value: "230307"
     display_name: "Compostos de coordinació"
   - 
-    value: "2303.08"
+    value: "230308"
     display_name: "Compostos deficients d'electrons"
   - 
-    value: "2303.09"
+    value: "230309"
     display_name: "Elements electropositivos"
   - 
-    value: "2303.10"
+    value: "230310"
     display_name: "Compostos de fluor"
   - 
-    value: "2303.11"
+    value: "230311"
     display_name: "Germani"
   - 
-    value: "2303.12"
+    value: "230312"
     display_name: "Grafit"
   - 
-    value: "2303.13"
+    value: "230313"
     display_name: "Halògens"
   - 
-    value: "2303.14"
+    value: "230314"
     display_name: "Hidrogen"
   - 
-    value: "2303.15"
+    value: "230315"
     display_name: "Hidrurs"
   - 
-    value: "2303.16"
+    value: "230316"
     display_name: "Mecanismes de les reaccions inorgàniques"
   - 
-    value: "2303.17"
+    value: "230317"
     display_name: "Compostos de plom"
   - 
-    value: "2303.18"
+    value: "230318"
     display_name: "Metalls"
   - 
-    value: "2303.19"
+    value: "230319"
     display_name: "Alquilos metàl·lics"
   - 
-    value: "2303.20"
+    value: "230320"
     display_name: "Compostos del nitrogen"
   - 
-    value: "2303.21"
+    value: "230321"
     display_name: "Compostos organometálicos"
   - 
-    value: "2303.22"
+    value: "230322"
     display_name: "Compostos de fòsfor"
   - 
-    value: "2303.23"
+    value: "230323"
     display_name: "Química dels pigments"
   - 
-    value: "2303.24"
+    value: "230324"
     display_name: "Terres rares"
   - 
-    value: "2303.25"
+    value: "230325"
     display_name: "Compostos de sodi"
   - 
-    value: "2303.26"
+    value: "230326"
     display_name: "Estructura dels compostos inorgànics"
   - 
-    value: "2303.27"
+    value: "230327"
     display_name: "Compostos de sofre"
   - 
-    value: "2303.28"
+    value: "230328"
     display_name: "Elements sintètics"
   - 
-    value: "2303.29"
+    value: "230329"
     display_name: "Elements de transició"
   - 
-    value: "2303.30"
+    value: "230330"
     display_name: "Elements transuránidos"
   - 
-    value: "2303.31"
+    value: "230331"
     display_name: "Química de l'aigua"
   - 
-    value: "2303.99"
+    value: "230399"
     display_name: "Altres (especificar)"
   - 
     value: "2304"
     display_name: "Química macromolecular"
   - 
-    value: "2304.01"
+    value: "230401"
     display_name: "Plàstics cel·lulars"
   - 
-    value: "2304.02"
+    value: "230402"
     display_name: "Cel·lulosa"
   - 
-    value: "2304.03"
+    value: "230403"
     display_name: "Polímers compostos"
   - 
-    value: "2304.04"
+    value: "230404"
     display_name: "Elastòmers"
   - 
-    value: "2304.05"
+    value: "230405"
     display_name: "Gomes"
   - 
-    value: "2304.06"
+    value: "230406"
     display_name: "Polímers d'alt pes molecular"
   - 
-    value: "2304.07"
+    value: "230407"
     display_name: "Polímers inorgànics"
   - 
-    value: "2304.08"
+    value: "230408"
     display_name: "Macromolècules"
   - 
-    value: "2304.09"
+    value: "230409"
     display_name: "Modificació de macromolècules"
   - 
-    value: "2304.10"
+    value: "230410"
     display_name: "Química de monòmers"
   - 
-    value: "2304.11"
+    value: "230411"
     display_name: "Fibres naturals"
   - 
-    value: "2304.12"
+    value: "230412"
     display_name: "Polímers reticulats"
   - 
-    value: "2304.13"
+    value: "230413"
     display_name: "Polielectrolitos"
   - 
-    value: "2304.14"
+    value: "230414"
     display_name: "Polièsters"
   - 
-    value: "2304.15"
+    value: "230415"
     display_name: "Polietilens"
   - 
-    value: "2304.16"
+    value: "230416"
     display_name: "Anàlisis de polímers"
   - 
-    value: "2304.17"
+    value: "230417"
     display_name: "Polímers en forma dispersa"
   - 
-    value: "2304.18"
+    value: "230418"
     display_name: "Polipèptids i proteïnes"
   - 
-    value: "2304.19"
+    value: "230419"
     display_name: "Polisacàrids"
   - 
-    value: "2304.20"
+    value: "230420"
     display_name: "Poliestirè"
   - 
-    value: "2304.21"
+    value: "230421"
     display_name: "Poliuretans"
   - 
-    value: "2304.22"
+    value: "230422"
     display_name: "Estabilitat de les macromolècules"
   - 
-    value: "2304.23"
+    value: "230423"
     display_name: "Síntesis de macromolècules"
   - 
-    value: "2304.24"
+    value: "230424"
     display_name: "Fibres sintètiques"
   - 
-    value: "2304.99"
+    value: "230499"
     display_name: "Altres (especificar)"
   - 
     value: "2305"
     display_name: "Química nuclear"
   - 
-    value: "2305.01"
+    value: "230501"
     display_name: "Química d'àtoms calents"
   - 
-    value: "2305.02"
+    value: "230502"
     display_name: "Trazadores isotòpics"
   - 
-    value: "2305.03"
+    value: "230503"
     display_name: "Molècules marcades"
   - 
-    value: "2305.04"
+    value: "230504"
     display_name: "Química de la radiació"
   - 
-    value: "2305.05"
+    value: "230505"
     display_name: "Radioquímica"
   - 
-    value: "2305.06"
+    value: "230506"
     display_name: "Radioisòtops"
   - 
-    value: "2305.07"
+    value: "230507"
     display_name: "Separació d'isòtops"
   - 
-    value: "2305.99"
+    value: "230599"
     display_name: "Altres (especificar)"
   - 
     value: "2306"
     display_name: "Química orgànica"
   - 
-    value: "2306.01"
+    value: "230601"
     display_name: "Hidrocarburs alifáticos"
   - 
-    value: "2306.02"
+    value: "230602"
     display_name: "Hidrocarburs aromàtics"
   - 
-    value: "2306.03"
+    value: "230603"
     display_name: "Derivats del benzè"
   - 
-    value: "2306.04"
+    value: "230604"
     display_name: "Química dels compostos bicíclicos"
   - 
-    value: "2306.05"
+    value: "230605"
     display_name: "Química de carbaniones"
   - 
-    value: "2306.06"
+    value: "230606"
     display_name: "Química dels hidrats de carboni"
   - 
-    value: "2306.07"
+    value: "230607"
     display_name: "Química del carbonio"
   - 
-    value: "2306.08"
+    value: "230608"
     display_name: "Química dels colorants"
   - 
-    value: "2306.09"
+    value: "230609"
     display_name: "Radicals lliures"
   - 
-    value: "2306.10"
+    value: "230610"
     display_name: "Compostos heterocíclics"
   - 
-    value: "2306.11"
+    value: "230611"
     display_name: "Compostos organometálicos"
   - 
-    value: "2306.12"
+    value: "230612"
     display_name: "Química dels organofosforados"
   - 
-    value: "2306.13"
+    value: "230613"
     display_name: "Química dels organosilícicos"
   - 
-    value: "2306.14"
+    value: "230614"
     display_name: "Química dels organosulfurados"
   - 
-    value: "2306.15"
+    value: "230615"
     display_name: "Mecanismes de reacció"
   - 
-    value: "2306.16"
+    value: "230616"
     display_name: "Estereoquímica i anàlisi conformacional"
   - 
-    value: "2306.17"
+    value: "230617"
     display_name: "Química dels esteroides"
   - 
-    value: "2306.18"
+    value: "230618"
     display_name: "Estructura de les molècules orgàniques"
   - 
-    value: "2306.90"
+    value: "230690"
     display_name: "Química de productes naturals orgànics"
   - 
-    value: "2306.91"
+    value: "230691"
     display_name: "Química orgànica. Anàlisi instrumental"
   - 
-    value: "2306.99"
+    value: "230699"
     display_name: "Altres (especificar)"
   - 
     value: "2307"
@@ -2104,7 +2104,7 @@ unesco:
     value: "2390"
     display_name: "Química Farmacèutica"
   - 
-    value: "2390.01"
+    value: "239001"
     display_name: "Disseny, síntesi i estudi nous fàrmacs"
   - 
     value: "2399"
@@ -2116,133 +2116,133 @@ unesco:
     value: "2401"
     display_name: "Biologia animal (Zoologia)"
   - 
-    value: "2401.01"
+    value: "240101"
     display_name: "Anatomia animal"
   - 
-    value: "2401.02"
+    value: "240102"
     display_name: "Comportament animal"
   - 
-    value: "2401.03"
+    value: "240103"
     display_name: "Comunicació animal"
   - 
-    value: "2401.04"
+    value: "240104"
     display_name: "Citologia animal"
   - 
-    value: "2401.05"
+    value: "240105"
     display_name: "Desenvolupo animal"
   - 
-    value: "2401.06"
+    value: "240106"
     display_name: "Ecologia animal"
   - 
-    value: "2401.07"
+    value: "240107"
     display_name: "Embriologia animal"
   - 
-    value: "2401.08"
+    value: "240108"
     display_name: "Genètica animal"
   - 
-    value: "2401.09"
+    value: "240109"
     display_name: "Creixement animal"
   - 
-    value: "2401.10"
+    value: "240110"
     display_name: "Histologia animal"
   - 
-    value: "2401.11"
+    value: "240111"
     display_name: "Patologia animal"
   - 
-    value: "2401.12"
+    value: "240112"
     display_name: "Parasitologia animal"
   - 
-    value: "2401.13"
+    value: "240113"
     display_name: "Fisiologia animal"
   - 
-    value: "2401.14"
+    value: "240114"
     display_name: "Taxonomia animal"
   - 
-    value: "2401.15"
+    value: "240115"
     display_name: "Zoologia general"
   - 
-    value: "2401.16"
+    value: "240116"
     display_name: "Herpetología"
   - 
-    value: "2401.17"
+    value: "240117"
     display_name: "Invertebrats"
   - 
-    value: "2401.18"
+    value: "240118"
     display_name: "Mamífers"
   - 
-    value: "2401.19"
+    value: "240119"
     display_name: "Zoologia marina"
   - 
-    value: "2401.20"
+    value: "240120"
     display_name: "Ornitologia"
   - 
-    value: "2401.21"
+    value: "240121"
     display_name: "Primats"
   - 
-    value: "2401.22"
+    value: "240122"
     display_name: "Protozoología"
   - 
-    value: "2401.23"
+    value: "240123"
     display_name: "Vertebrats"
   - 
-    value: "2401.90"
+    value: "240190"
     display_name: "Zoologia: etiologia"
   - 
-    value: "2401.91"
+    value: "240191"
     display_name: "Invertebrats no insectes"
   - 
-    value: "2401.99"
+    value: "240199"
     display_name: "Altres (especificar)"
   - 
     value: "2402"
     display_name: "Antropologia (Física)"
   - 
-    value: "2402.01"
+    value: "240201"
     display_name: "Arxius antropològics"
   - 
-    value: "2402.02"
+    value: "240202"
     display_name: "Antropogenética"
   - 
-    value: "2402.03"
+    value: "240203"
     display_name: "Antropometría i antropologia forense"
   - 
-    value: "2402.04"
+    value: "240204"
     display_name: "Composició del cos"
   - 
-    value: "2402.05"
+    value: "240205"
     display_name: "Constitució del cos"
   - 
-    value: "2402.06"
+    value: "240206"
     display_name: "Etnologia"
   - 
-    value: "2402.07"
+    value: "240207"
     display_name: "Antropologia mèdica"
   - 
-    value: "2402.08"
+    value: "240208"
     display_name: "Hàbits alimentaris"
   - 
-    value: "2402.09"
+    value: "240209"
     display_name: "Osteología"
   - 
-    value: "2402.10"
+    value: "240210"
     display_name: "Biologia de poblacions"
   - 
-    value: "2402.11"
+    value: "240211"
     display_name: "Comportament dels primats"
   - 
-    value: "2402.12"
+    value: "240212"
     display_name: "Somatología dels primats"
   - 
-    value: "2402.13"
+    value: "240213"
     display_name: "Biologia racial"
   - 
-    value: "2402.14"
+    value: "240214"
     display_name: "Desenvolupament somàtic"
   - 
-    value: "2402.15"
+    value: "240215"
     display_name: "Envelliment somàtic"
   - 
-    value: "2402.99"
+    value: "240299"
     display_name: "Altres (especificar)"
   - 
     value: "2403"
@@ -2251,10 +2251,10 @@ unesco:
     value: "2404"
     display_name: "Biomatemàtiques"
   - 
-    value: "2404.01"
+    value: "240401"
     display_name: "Bioestadística"
   - 
-    value: "2404.99"
+    value: "240499"
     display_name: "Altres (especificar)"
   - 
     value: "2405"
@@ -2263,400 +2263,400 @@ unesco:
     value: "2406"
     display_name: "Biofísica"
   - 
-    value: "2406.01"
+    value: "240601"
     display_name: "Bioacústica"
   - 
-    value: "2406.02"
+    value: "240602"
     display_name: "Bioelectricidad"
   - 
-    value: "2406.03"
+    value: "240603"
     display_name: "Bioenergética"
   - 
-    value: "2406.04"
+    value: "240604"
     display_name: "Biomecànica"
   - 
-    value: "2406.05"
+    value: "240605"
     display_name: "Bioóptica"
   - 
-    value: "2406.06"
+    value: "240606"
     display_name: "Física mèdica"
   - 
-    value: "2406.99"
+    value: "240699"
     display_name: "Altres (especificar)"
   - 
     value: "2407"
     display_name: "Biologia cel·lular"
   - 
-    value: "2407.01"
+    value: "240701"
     display_name: "Cultiu cel·lular"
   - 
-    value: "2407.02"
+    value: "240702"
     display_name: "Citogenética"
   - 
-    value: "2407.03"
+    value: "240703"
     display_name: "Morfologia cel·lular"
   - 
-    value: "2407.04"
+    value: "240704"
     display_name: "Citologia"
   - 
-    value: "2407.05"
+    value: "240705"
     display_name: "Cultiu de teixits"
   - 
-    value: "2407.90"
+    value: "240790"
     display_name: "Estructura de la Paret Cel·lular"
   - 
-    value: "2407.99"
+    value: "240799"
     display_name: "Altres (especificar)"
   - 
     value: "2408"
     display_name: "Etologia"
   - 
-    value: "2408.01"
+    value: "240801"
     display_name: "Animal"
   - 
-    value: "2408.02"
+    value: "240802"
     display_name: "Humana"
   - 
-    value: "2408.03"
+    value: "240803"
     display_name: "Insectes"
   - 
-    value: "2408.99"
+    value: "240899"
     display_name: "Altres (especificar)"
   - 
     value: "2409"
     display_name: "Genètica"
   - 
-    value: "2409.01"
+    value: "240901"
     display_name: "Embriologia"
   - 
-    value: "2409.02"
+    value: "240902"
     display_name: "Enginyeria genètica"
   - 
-    value: "2409.03"
+    value: "240903"
     display_name: "Genètica de poblacions"
   - 
-    value: "2409.90"
+    value: "240990"
     display_name: "Citogenética animal"
   - 
-    value: "2409.91"
+    value: "240991"
     display_name: "Genètica del desenvolupament"
   - 
-    value: "2409.92"
+    value: "240992"
     display_name: "Genètica molecular de plantes"
   - 
-    value: "2409.99"
+    value: "240999"
     display_name: "Altres (especificar)"
   - 
     value: "2410"
     display_name: "Biologia humana"
   - 
-    value: "2410.01"
+    value: "241001"
     display_name: "Grup sanguini"
   - 
-    value: "2410.02"
+    value: "241002"
     display_name: "Anatomia humana"
   - 
-    value: "2410.03"
+    value: "241003"
     display_name: "Citologia humana"
   - 
-    value: "2410.04"
+    value: "241004"
     display_name: "Desenvolupament humà"
   - 
-    value: "2410.05"
+    value: "241005"
     display_name: "Ecologia humana"
   - 
-    value: "2410.06"
+    value: "241006"
     display_name: "Embriologia humana"
   - 
-    value: "2410.07"
+    value: "241007"
     display_name: "Genètica humana"
   - 
-    value: "2410.08"
+    value: "241008"
     display_name: "Histologia humana"
   - 
-    value: "2410.09"
+    value: "241009"
     display_name: "Neuroanatomía humana"
   - 
-    value: "2410.10"
+    value: "241010"
     display_name: "Fisiologia humana"
   - 
-    value: "2410.11"
+    value: "241011"
     display_name: "Organos sensorials"
   - 
-    value: "2410.12"
+    value: "241012"
     display_name: "Anatomia sistemàtica"
   - 
-    value: "2410.13"
+    value: "241013"
     display_name: "Anatomia topogràfica"
   - 
-    value: "2410.99"
+    value: "241099"
     display_name: "Altres (especificar)"
   - 
     value: "2411"
     display_name: "Fisiologia humana"
   - 
-    value: "2411.01"
+    value: "241101"
     display_name: "Fisiologia de l'equilibri"
   - 
-    value: "2411.02"
+    value: "241102"
     display_name: "Anestesiologia"
   - 
-    value: "2411.03"
+    value: "241103"
     display_name: "Fisiologia cardiovascular"
   - 
-    value: "2411.04"
+    value: "241104"
     display_name: "Fisiologia endocrina"
   - 
-    value: "2411.05"
+    value: "241105"
     display_name: "Fisiologia del mitjà intern"
   - 
-    value: "2411.06"
+    value: "241106"
     display_name: "Fisiologia de l'exercici"
   - 
-    value: "2411.07"
+    value: "241107"
     display_name: "Fisiologia de la digestió"
   - 
-    value: "2411.08"
+    value: "241108"
     display_name: "Metabolisme humà"
   - 
-    value: "2411.09"
+    value: "241109"
     display_name: "Regulació de la temperatura humana"
   - 
-    value: "2411.10"
+    value: "241110"
     display_name: "Fisiologia del múscul"
   - 
-    value: "2411.11"
+    value: "241111"
     display_name: "Neurofisiologia"
   - 
-    value: "2411.12"
+    value: "241112"
     display_name: "Fisiologia del sistema nerviós central"
   - 
-    value: "2411.13"
+    value: "241113"
     display_name: "Fisiologia de l'audició"
   - 
-    value: "2411.14"
+    value: "241114"
     display_name: "Fisiologia del llenguatge"
   - 
-    value: "2411.15"
+    value: "241115"
     display_name: "Fisiologia de la visió"
   - 
-    value: "2411.16"
+    value: "241116"
     display_name: "Fisiologia de la reproducció"
   - 
-    value: "2411.17"
+    value: "241117"
     display_name: "Fisiologia de la respiració"
   - 
-    value: "2411.18"
+    value: "241118"
     display_name: "Fisiologia del moviment"
   - 
-    value: "2411.99"
+    value: "241199"
     display_name: "Altres (especificar)"
   - 
     value: "2412"
     display_name: "Immunologia"
   - 
-    value: "2412.01"
+    value: "241201"
     display_name: "Antígens"
   - 
-    value: "2412.02"
+    value: "241202"
     display_name: "Anticossos"
   - 
-    value: "2412.03"
+    value: "241203"
     display_name: "Reacció antigen-anticòs"
   - 
-    value: "2412.04"
+    value: "241204"
     display_name: "Formació d'anticossos"
   - 
-    value: "2412.05"
+    value: "241205"
     display_name: "Hipersensibilitat"
   - 
-    value: "2412.06"
+    value: "241206"
     display_name: "Immunització"
   - 
-    value: "2412.07"
+    value: "241207"
     display_name: "Inmunoquímica"
   - 
-    value: "2412.08"
+    value: "241208"
     display_name: "Trasplantament d'òrgans"
   - 
-    value: "2412.09"
+    value: "241209"
     display_name: "Anticossos de teixits"
   - 
-    value: "2412.10"
+    value: "241210"
     display_name: "Vacunes"
   - 
-    value: "2412.99"
+    value: "241299"
     display_name: "Altres (especificar)"
   - 
     value: "2413"
     display_name: "Biologia d'insectes (Entomologia)"
   - 
-    value: "2413.01"
+    value: "241301"
     display_name: "Entomologia general"
   - 
-    value: "2413.02"
+    value: "241302"
     display_name: "Desenvolupament dels insectes"
   - 
-    value: "2413.03"
+    value: "241303"
     display_name: "Ecologia dels insectes"
   - 
-    value: "2413.04"
+    value: "241304"
     display_name: "Morfologia dels insectes"
   - 
-    value: "2413.05"
+    value: "241305"
     display_name: "Fisiologia dels insectes"
   - 
-    value: "2413.06"
+    value: "241306"
     display_name: "Taxonomia dels insectes"
   - 
-    value: "2413.99"
+    value: "241399"
     display_name: "Altres (especificar)"
   - 
     value: "2414"
     display_name: "Microbiologia"
   - 
-    value: "2414.01"
+    value: "241401"
     display_name: "Antibiòtics"
   - 
-    value: "2414.02"
+    value: "241402"
     display_name: "Fisiologia bacteriana"
   - 
-    value: "2414.03"
+    value: "241403"
     display_name: "Metabolisme bacterià"
   - 
-    value: "2414.04"
+    value: "241404"
     display_name: "Bacteriologia"
   - 
-    value: "2414.05"
+    value: "241405"
     display_name: "Bacteriòfags"
   - 
-    value: "2414.06"
+    value: "241406"
     display_name: "Fongs"
   - 
-    value: "2414.07"
+    value: "241407"
     display_name: "Metabolisme microbià"
   - 
-    value: "2414.08"
+    value: "241408"
     display_name: "Processos microbians"
   - 
-    value: "2414.09"
+    value: "241409"
     display_name: "Floridures"
   - 
-    value: "2414.10"
+    value: "241410"
     display_name: "Micología (Llevats)"
   - 
-    value: "2414.90"
+    value: "241490"
     display_name: "Microbiologia: Degradació de residus vegetals"
   - 
-    value: "2414.99"
+    value: "241499"
     display_name: "Altres (especificar)"
   - 
     value: "2415"
     display_name: "Biologia molecular"
   - 
-    value: "2415.01"
+    value: "241501"
     display_name: "Biologia molecular de microorganismes"
   - 
-    value: "2415.02"
+    value: "241502"
     display_name: "Biologia molecular de plantes"
   - 
     value: "2416"
     display_name: "Paleontologia"
   - 
-    value: "2416.01"
+    value: "241601"
     display_name: "Paleontologia animal"
   - 
-    value: "2416.02"
+    value: "241602"
     display_name: "Paleontologia dels invertebrats"
   - 
-    value: "2416.03"
+    value: "241603"
     display_name: "Palinología"
   - 
-    value: "2416.04"
+    value: "241604"
     display_name: "Paleontologia de les plantes"
   - 
-    value: "2416.05"
+    value: "241605"
     display_name: "Paleontologia dels vertebrats"
   - 
-    value: "2416.99"
+    value: "241699"
     display_name: "Altres (especificar)"
   - 
     value: "2417"
     display_name: "Biologia vegetal (Botànica)"
   - 
-    value: "2417.01"
+    value: "241701"
     display_name: "Briología"
   - 
-    value: "2417.02"
+    value: "241702"
     display_name: "Dendrologia"
   - 
-    value: "2417.03"
+    value: "241703"
     display_name: "Botànica general"
   - 
-    value: "2417.04"
+    value: "241704"
     display_name: "Limnologia"
   - 
-    value: "2417.05"
+    value: "241705"
     display_name: "Biologia marina"
   - 
-    value: "2417.06"
+    value: "241706"
     display_name: "Micología (bolets)"
   - 
-    value: "2417.07"
+    value: "241707"
     display_name: "Algología (ficología)"
   - 
-    value: "2417.08"
+    value: "241708"
     display_name: "Fitobiología"
   - 
-    value: "2417.09"
+    value: "241709"
     display_name: "Fitopatologia"
   - 
-    value: "2417.10"
+    value: "241710"
     display_name: "Paleobotánica"
   - 
-    value: "2417.11"
+    value: "241711"
     display_name: "Anatomia vegetal"
   - 
-    value: "2417.12"
+    value: "241712"
     display_name: "Citologia vegetal"
   - 
-    value: "2417.13"
+    value: "241713"
     display_name: "Ecologia vegetal"
   - 
-    value: "2417.14"
+    value: "241714"
     display_name: "Genètica vegetal"
   - 
-    value: "2417.15"
+    value: "241715"
     display_name: "Desenvolupament vegetal"
   - 
-    value: "2417.16"
+    value: "241716"
     display_name: "Histologia vegetal"
   - 
-    value: "2417.17"
+    value: "241717"
     display_name: "Nutrició vegetal"
   - 
-    value: "2417.18"
+    value: "241718"
     display_name: "Parasitologia vegetal"
   - 
-    value: "2417.19"
+    value: "241719"
     display_name: "Fisiologia vegetal"
   - 
-    value: "2417.20"
+    value: "241720"
     display_name: "Taxonomia vegetal"
   - 
-    value: "2417.21"
+    value: "241721"
     display_name: "Pteridología"
   - 
-    value: "2417.90"
+    value: "241790"
     display_name: "Fixació i mobilització biològica de nutrients"
   - 
-    value: "2417.91"
+    value: "241791"
     display_name: "Fixació biològica del nitrogen"
   - 
-    value: "2417.92"
+    value: "241792"
     display_name: "Fisiologia de la maduració"
   - 
-    value: "2417.99"
+    value: "241799"
     display_name: "Altres (especificar)"
   - 
     value: "2418"
@@ -2668,46 +2668,46 @@ unesco:
     value: "2420"
     display_name: "Virologia"
   - 
-    value: "2420.01"
+    value: "242001"
     display_name: "Arbovirus"
   - 
-    value: "2420.02"
+    value: "242002"
     display_name: "Bacteriofagos"
   - 
-    value: "2420.03"
+    value: "242003"
     display_name: "Virus dermatrópicos"
   - 
-    value: "2420.04"
+    value: "242004"
     display_name: "Enterovirus"
   - 
-    value: "2420.05"
+    value: "242005"
     display_name: "Virus neurotrópicos"
   - 
-    value: "2420.06"
+    value: "242006"
     display_name: "Virus pantrópicos"
   - 
-    value: "2420.07"
+    value: "242007"
     display_name: "Poxvirus"
   - 
-    value: "2420.08"
+    value: "242008"
     display_name: "Virus respiratoris"
   - 
-    value: "2420.09"
+    value: "242009"
     display_name: "Virus viscerotrópicos"
   - 
-    value: "2420.91"
+    value: "242091"
     display_name: "Virologia animal"
   - 
-    value: "2420.99"
+    value: "242099"
     display_name: "Altres (especificar)"
   - 
     value: "2490"
     display_name: "Neurociencias"
   - 
-    value: "2490.01"
+    value: "249001"
     display_name: "Neurofisiologia"
   - 
-    value: "2490.02"
+    value: "249002"
     display_name: "Neuroquímica"
   - 
     value: "2499"
@@ -2719,520 +2719,520 @@ unesco:
     value: "2501"
     display_name: "Ciències de l'atmosfera"
   - 
-    value: "2501.01"
+    value: "250101"
     display_name: "Aeronomía"
   - 
-    value: "2501.02"
+    value: "250102"
     display_name: "Resplendor celeste"
   - 
-    value: "2501.03"
+    value: "250103"
     display_name: "Interacció mar-aire"
   - 
-    value: "2501.04"
+    value: "250104"
     display_name: "Acústica atmosfèrica"
   - 
-    value: "2501.05"
+    value: "250105"
     display_name: "Química atmosfèrica"
   - 
-    value: "2501.06"
+    value: "250106"
     display_name: "Dinàmica atmosfèrica"
   - 
-    value: "2501.07"
+    value: "250107"
     display_name: "Electricitat atmosfèrica"
   - 
-    value: "2501.08"
+    value: "250108"
     display_name: "Òptica atmosfèrica"
   - 
-    value: "2501.09"
+    value: "250109"
     display_name: "Radioactivitat atmosfèrica"
   - 
-    value: "2501.10"
+    value: "250110"
     display_name: "Estructura atmosfèrica"
   - 
-    value: "2501.11"
+    value: "250111"
     display_name: "Termodinàmica atmosfèrica"
   - 
-    value: "2501.12"
+    value: "250112"
     display_name: "Turbulència atmosfèrica"
   - 
-    value: "2501.13"
+    value: "250113"
     display_name: "Aurores"
   - 
-    value: "2501.14"
+    value: "250114"
     display_name: "Física dels núvols"
   - 
-    value: "2501.15"
+    value: "250115"
     display_name: "Rajos còsmics"
   - 
-    value: "2501.16"
+    value: "250116"
     display_name: "Difusió (atmosfèrica)"
   - 
-    value: "2501.17"
+    value: "250117"
     display_name: "Pulsacions geomagnètiques"
   - 
-    value: "2501.18"
+    value: "250118"
     display_name: "Ionosfera"
   - 
-    value: "2501.19"
+    value: "250119"
     display_name: "Partícules magnetosféricas"
   - 
-    value: "2501.20"
+    value: "250120"
     display_name: "Ondas magnetosféricas"
   - 
-    value: "2501.21"
+    value: "250121"
     display_name: "Simulació numèrica"
   - 
-    value: "2501.22"
+    value: "250122"
     display_name: "Física de les precipitacions"
   - 
-    value: "2501.23"
+    value: "250123"
     display_name: "Transferència radioactiva"
   - 
-    value: "2501.24"
+    value: "250124"
     display_name: "Vent solar"
   - 
-    value: "2501.99"
+    value: "250199"
     display_name: "Altres (especificar)"
   - 
     value: "2502"
     display_name: "Climatologia"
   - 
-    value: "2502.01"
+    value: "250201"
     display_name: "Climatologia analítica"
   - 
-    value: "2502.02"
+    value: "250202"
     display_name: "Climatologia aplicada"
   - 
-    value: "2502.03"
+    value: "250203"
     display_name: "Bioclimatología"
   - 
-    value: "2502.04"
+    value: "250204"
     display_name: "Microclimatología"
   - 
-    value: "2502.05"
+    value: "250205"
     display_name: "Paleoclimatologia"
   - 
-    value: "2502.06"
+    value: "250206"
     display_name: "Climatologia física"
   - 
-    value: "2502.07"
+    value: "250207"
     display_name: "Climatologia regional"
   - 
-    value: "2502.99"
+    value: "250299"
     display_name: "Altres (especificar)"
   - 
     value: "2503"
     display_name: "Geoquímica"
   - 
-    value: "2503.01"
+    value: "250301"
     display_name: "Cosmoquímica"
   - 
-    value: "2503.02"
+    value: "250302"
     display_name: "Petrologia experimental"
   - 
-    value: "2503.03"
+    value: "250303"
     display_name: "Geoquímica exploratòria"
   - 
-    value: "2503.04"
+    value: "250304"
     display_name: "Geocronologia i radioisòtops"
   - 
-    value: "2503.05"
+    value: "250305"
     display_name: "Geoquímica de les altes temperatures"
   - 
-    value: "2503.06"
+    value: "250306"
     display_name: "Geoquímica de les baixes temperatures"
   - 
-    value: "2503.07"
+    value: "250307"
     display_name: "Geoquímica orgànica"
   - 
-    value: "2503.08"
+    value: "250308"
     display_name: "Isòtops estables"
   - 
-    value: "2503.09"
+    value: "250309"
     display_name: "Distribució d'elements traça"
   - 
-    value: "2503.99"
+    value: "250399"
     display_name: "Altres (especificar)"
   - 
     value: "2504"
     display_name: "Geodèsia"
   - 
-    value: "2504.01"
+    value: "250401"
     display_name: "Astronomia geodèsica"
   - 
-    value: "2504.02"
+    value: "250402"
     display_name: "Cartografia geodèsica"
   - 
-    value: "2504.03"
+    value: "250403"
     display_name: "Navegació geodèsica"
   - 
-    value: "2504.04"
+    value: "250404"
     display_name: "Fotogrametria geodèsica"
   - 
-    value: "2504.05"
+    value: "250405"
     display_name: "Aixecament geodèsic"
   - 
-    value: "2504.06"
+    value: "250406"
     display_name: "Geodèsia física"
   - 
-    value: "2504.07"
+    value: "250407"
     display_name: "Geodèsia per satèl·lits"
   - 
-    value: "2504.08"
+    value: "250408"
     display_name: "Geodèsia teòrica"
   - 
-    value: "2504.99"
+    value: "250499"
     display_name: "Altres (especificar)"
   - 
     value: "2505"
     display_name: "Geografia"
   - 
-    value: "2505.01"
+    value: "250501"
     display_name: "Biogeografia"
   - 
-    value: "2505.02"
+    value: "250502"
     display_name: "Cartografia geogràfica"
   - 
-    value: "2505.03"
+    value: "250503"
     display_name: "Geografia dels recursos naturals"
   - 
-    value: "2505.04"
+    value: "250504"
     display_name: "Utilització del terreny"
   - 
-    value: "2505.05"
+    value: "250505"
     display_name: "Teoria de la localització"
   - 
-    value: "2505.06"
+    value: "250506"
     display_name: "Geografia mèdica"
   - 
-    value: "2505.07"
+    value: "250507"
     display_name: "Geografia física"
   - 
-    value: "2505.08"
+    value: "250508"
     display_name: "Geografia topogràfica"
   - 
-    value: "2505.99"
+    value: "250599"
     display_name: "Altres (especificar)"
   - 
     value: "2506"
     display_name: "Geologia"
   - 
-    value: "2506.01"
+    value: "250601"
     display_name: "Geologia regional"
   - 
-    value: "2506.02"
+    value: "250602"
     display_name: "Geologia del carbó"
   - 
-    value: "2506.03"
+    value: "250603"
     display_name: "Geologia aplicada a l'enginyeria"
   - 
-    value: "2506.04"
+    value: "250604"
     display_name: "Geologia ambiental"
   - 
-    value: "2506.05"
+    value: "250605"
     display_name: "Hidrogeología"
   - 
-    value: "2506.06"
+    value: "250606"
     display_name: "Campanyes geològiques"
   - 
-    value: "2506.07"
+    value: "250607"
     display_name: "Geomorfología"
   - 
-    value: "2506.08"
+    value: "250608"
     display_name: "Energia i processos geotèrmics"
   - 
-    value: "2506.09"
+    value: "250609"
     display_name: "Geologia glacial"
   - 
-    value: "2506.10"
+    value: "250610"
     display_name: "Jaciments minerals"
   - 
-    value: "2506.11"
+    value: "250611"
     display_name: "Mineralogia"
   - 
-    value: "2506.12"
+    value: "250612"
     display_name: "Geologia del petroli"
   - 
-    value: "2506.13"
+    value: "250613"
     display_name: "Petrologia ígnia i metamòrfica"
   - 
-    value: "2506.14"
+    value: "250614"
     display_name: "Petrologia sedimentària"
   - 
-    value: "2506.15"
+    value: "250615"
     display_name: "Fotogeología"
   - 
-    value: "2506.16"
+    value: "250616"
     display_name: "Teledetecció (geologia)"
   - 
-    value: "2506.17"
+    value: "250617"
     display_name: "Mecànica de roques"
   - 
-    value: "2506.18"
+    value: "250618"
     display_name: "Sedimentologia"
   - 
-    value: "2506.19"
+    value: "250619"
     display_name: "Estratigrafia"
   - 
-    value: "2506.20"
+    value: "250620"
     display_name: "Geologia estructural"
   - 
-    value: "2506.21"
+    value: "250621"
     display_name: "Vulcanologia"
   - 
-    value: "2506.22"
+    value: "250622"
     display_name: "Anàlisi de diagrafías"
   - 
-    value: "2506.99"
+    value: "250699"
     display_name: "Altres (especificar)"
   - 
     value: "2507"
     display_name: "Geofísica"
   - 
-    value: "2507.01"
+    value: "250701"
     display_name: "Geomagnetismo i prospecció magnètica"
   - 
-    value: "2507.02"
+    value: "250702"
     display_name: "Gravetat (terrestre) i prospecció gravimétrica"
   - 
-    value: "2507.03"
+    value: "250703"
     display_name: "Flux de calor (terrestre)"
   - 
-    value: "2507.04"
+    value: "250704"
     display_name: "Paleomagnetisme"
   - 
-    value: "2507.05"
+    value: "250705"
     display_name: "Sismologia i prospecció sísmica"
   - 
-    value: "2507.06"
+    value: "250706"
     display_name: "Geofísica de la massa sòlida terrestre"
   - 
-    value: "2507.07"
+    value: "250707"
     display_name: "Tectònica"
   - 
-    value: "2507.99"
+    value: "250799"
     display_name: "Altres (especificar)"
   - 
     value: "2508"
     display_name: "Hidrologia"
   - 
-    value: "2508.01"
+    value: "250801"
     display_name: "Erosió (aigua)"
   - 
-    value: "2508.02"
+    value: "250802"
     display_name: "Evaporació"
   - 
-    value: "2508.03"
+    value: "250803"
     display_name: "Glaciologia"
   - 
-    value: "2508.04"
+    value: "250804"
     display_name: "Aigües subterrànies"
   - 
-    value: "2508.05"
+    value: "250805"
     display_name: "Hidrobiología"
   - 
-    value: "2508.06"
+    value: "250806"
     display_name: "Hidrografia"
   - 
-    value: "2508.07"
+    value: "250807"
     display_name: "Gel"
   - 
-    value: "2508.08"
+    value: "250808"
     display_name: "Limnologia"
   - 
-    value: "2508.09"
+    value: "250809"
     display_name: "Sòl gelat ('permafrost')"
   - 
-    value: "2508.10"
+    value: "250810"
     display_name: "Precipitació"
   - 
-    value: "2508.11"
+    value: "250811"
     display_name: "Qualitat de les aigües"
   - 
-    value: "2508.12"
+    value: "250812"
     display_name: "Neu"
   - 
-    value: "2508.13"
+    value: "250813"
     display_name: "Humitat del sòl"
   - 
-    value: "2508.14"
+    value: "250814"
     display_name: "Aigües superficials"
   - 
-    value: "2508.15"
+    value: "250815"
     display_name: "Transpiració"
   - 
-    value: "2508.99"
+    value: "250899"
     display_name: "Altres (especificar)"
   - 
     value: "2509"
     display_name: "Meteorologia"
   - 
-    value: "2509.01"
+    value: "250901"
     display_name: "Meteorologia agrícola"
   - 
-    value: "2509.02"
+    value: "250902"
     display_name: "Contaminació atmosfèrica"
   - 
-    value: "2509.03"
+    value: "250903"
     display_name: "Previsió meteorològica a llarg termini"
   - 
-    value: "2509.04"
+    value: "250904"
     display_name: "Hidrometeorología"
   - 
-    value: "2509.05"
+    value: "250905"
     display_name: "Meteorologia industrial"
   - 
-    value: "2509.06"
+    value: "250906"
     display_name: "Meteorologia marina"
   - 
-    value: "2509.07"
+    value: "250907"
     display_name: "Mesometeorología"
   - 
-    value: "2509.08"
+    value: "250908"
     display_name: "Micrometeorología"
   - 
-    value: "2509.09"
+    value: "250909"
     display_name: "Predicció numèrica meteorològica"
   - 
-    value: "2509.10"
+    value: "250910"
     display_name: "Observació meteorològica a curt termini"
   - 
-    value: "2509.11"
+    value: "250911"
     display_name: "Predicció operacional meteorològica"
   - 
-    value: "2509.12"
+    value: "250912"
     display_name: "Meteorologia polar"
   - 
-    value: "2509.13"
+    value: "250913"
     display_name: "Meteorologia per Radar"
   - 
-    value: "2509.14"
+    value: "250914"
     display_name: "Radiometeorología"
   - 
-    value: "2509.15"
+    value: "250915"
     display_name: "Meteorologia amb coets"
   - 
-    value: "2509.16"
+    value: "250916"
     display_name: "Meteorologia per satèl·lits"
   - 
-    value: "2509.17"
+    value: "250917"
     display_name: "Meteorologia sinòptica"
   - 
-    value: "2509.18"
+    value: "250918"
     display_name: "Meteorologia tropical"
   - 
-    value: "2509.19"
+    value: "250919"
     display_name: "Anàlisi del temps"
   - 
-    value: "2509.20"
+    value: "250920"
     display_name: "Modificació del temps"
   - 
-    value: "2509.99"
+    value: "250999"
     display_name: "Altres (especificar)"
   - 
     value: "2510"
     display_name: "Oceanografia"
   - 
-    value: "2510.01"
+    value: "251001"
     display_name: "Oceanografia biològica"
   - 
-    value: "2510.02"
+    value: "251002"
     display_name: "Oceanografia química"
   - 
-    value: "2510.03"
+    value: "251003"
     display_name: "Oceanografia descriptiva"
   - 
-    value: "2510.04"
+    value: "251004"
     display_name: "Botànica marina"
   - 
-    value: "2510.05"
+    value: "251005"
     display_name: "Zoologia marina"
   - 
-    value: "2510.06"
+    value: "251006"
     display_name: "Processos del fons marí"
   - 
-    value: "2510.07"
+    value: "251007"
     display_name: "Oceanografia física"
   - 
-    value: "2510.08"
+    value: "251008"
     display_name: "Interaccionis mar-aire"
   - 
-    value: "2510.09"
+    value: "251009"
     display_name: "Gel marí"
   - 
-    value: "2510.10"
+    value: "251010"
     display_name: "Processos litorals o sublitorales"
   - 
-    value: "2510.11"
+    value: "251011"
     display_name: "Acústica submarina"
   - 
-    value: "2510.90"
+    value: "251090"
     display_name: "Oceanografia: Geologia marina"
   - 
-    value: "2510.91"
+    value: "251091"
     display_name: "Oceanografia: Recursos renovables"
   - 
-    value: "2510.92"
+    value: "251092"
     display_name: "Oceanografia:Aqüicultura marina"
   - 
-    value: "2510.99"
+    value: "251099"
     display_name: "Altres (especificar)"
   - 
     value: "2511"
     display_name: "Ciències del sòl (Edafologia)"
   - 
-    value: "2511.01"
+    value: "251101"
     display_name: "Bioquímica de sòls"
   - 
-    value: "2511.02"
+    value: "251102"
     display_name: "Biologia de sòls"
   - 
-    value: "2511.03"
+    value: "251103"
     display_name: "Cartografia de sòls"
   - 
-    value: "2511.04"
+    value: "251104"
     display_name: "Química de sòls"
   - 
-    value: "2511.05"
+    value: "251105"
     display_name: "Classificació de sòls"
   - 
-    value: "2511.06"
+    value: "251106"
     display_name: "Conservació de sòls"
   - 
-    value: "2511.07"
+    value: "251107"
     display_name: "Enginyeria de sòls"
   - 
-    value: "2511.08"
+    value: "251108"
     display_name: "Mecànica de sòls (agricultura)"
   - 
-    value: "2511.09"
+    value: "251109"
     display_name: "Microbiologia de sòls"
   - 
-    value: "2511.10"
+    value: "251110"
     display_name: "Mineralogia de sòls"
   - 
-    value: "2511.11"
+    value: "251111"
     display_name: "Gènesis i morfologia de sòls"
   - 
-    value: "2511.12"
+    value: "251112"
     display_name: "Física de sòls"
   - 
-    value: "2511.99"
+    value: "251199"
     display_name: "Altres (especificar)"
   - 
     value: "2512"
     display_name: "Ciències de l'espai"
   - 
-    value: "2512.01"
+    value: "251201"
     display_name: "Exobiología"
   - 
-    value: "2512.02"
+    value: "251202"
     display_name: "Medicina espacial"
   - 
-    value: "2512.03"
+    value: "251203"
     display_name: "Fisiologia espacial"
   - 
-    value: "2512.99"
+    value: "251299"
     display_name: "Altres (especificar)"
   - 
     value: "2599"
@@ -3244,334 +3244,334 @@ unesco:
     value: "3101"
     display_name: "Agroquímica"
   - 
-    value: "3101.01"
+    value: "310101"
     display_name: "Productes làctics"
   - 
-    value: "3101.02"
+    value: "310102"
     display_name: "Fabricació d'abonaments"
   - 
-    value: "3101.03"
+    value: "310103"
     display_name: "Utilització d'abonaments"
   - 
-    value: "3101.04"
+    value: "310104"
     display_name: "Productes de la pesca"
   - 
-    value: "3101.05"
+    value: "310105"
     display_name: "Fungicides"
   - 
-    value: "3101.06"
+    value: "310106"
     display_name: "Herbicides"
   - 
-    value: "3101.07"
+    value: "310107"
     display_name: "Insecticides"
   - 
-    value: "3101.08"
+    value: "310108"
     display_name: "Productes agrícoles no alimentosos"
   - 
-    value: "3101.09"
+    value: "310109"
     display_name: "Plaguicidas"
   - 
-    value: "3101.10"
+    value: "310110"
     display_name: "Reguladors del creixement de les plantes"
   - 
-    value: "3101.99"
+    value: "310199"
     display_name: "Altres (especificar)"
   - 
     value: "3102"
     display_name: "Enginyeria agrícola"
   - 
-    value: "3102.01"
+    value: "310201"
     display_name: "Mecànica agrícola"
   - 
-    value: "3102.02"
+    value: "310202"
     display_name: "Drenatge"
   - 
-    value: "3102.03"
+    value: "310203"
     display_name: "Construcció de granges"
   - 
-    value: "3102.04"
+    value: "310204"
     display_name: "Equip de granja"
   - 
-    value: "3102.05"
+    value: "310205"
     display_name: "Reg"
   - 
-    value: "3102.99"
+    value: "310299"
     display_name: "Uns altres (especificar)"
   - 
     value: "3103"
     display_name: "Agronomia"
   - 
-    value: "3103.01"
+    value: "310301"
     display_name: "Producció de cultius"
   - 
-    value: "3103.02"
+    value: "310302"
     display_name: "Hibridació de cultius"
   - 
-    value: "3103.03"
+    value: "310303"
     display_name: "Explotació dels cultius"
   - 
-    value: "3103.04"
+    value: "310304"
     display_name: "Protecció dels cultius"
   - 
-    value: "3103.05"
+    value: "310305"
     display_name: "Tècniques de cultiu"
   - 
-    value: "3103.06"
+    value: "310306"
     display_name: "Cultius de camp"
   - 
-    value: "3103.07"
+    value: "310307"
     display_name: "Cultius forrajeros"
   - 
-    value: "3103.08"
+    value: "310308"
     display_name: "Gestió de la producció vegetal"
   - 
-    value: "3103.09"
+    value: "310309"
     display_name: "Cultius de plantes ornamentals"
   - 
-    value: "3103.10"
+    value: "310310"
     display_name: "Pastures"
   - 
-    value: "3103.11"
+    value: "310311"
     display_name: "Llavors"
   - 
-    value: "3103.12"
+    value: "310312"
     display_name: "Comportament del sòl en cultius rotatoris"
   - 
-    value: "3103.13"
+    value: "310313"
     display_name: "Fertilitat del sòl"
   - 
-    value: "3103.14"
+    value: "310314"
     display_name: "Gespa"
   - 
-    value: "3103.15"
+    value: "310315"
     display_name: "Control de males herbes"
   - 
-    value: "3103.90"
+    value: "310390"
     display_name: "Propagació de vegetals"
   - 
-    value: "3103.91"
+    value: "310391"
     display_name: "Ús (maneig) combinat de l'aigua i fertilitzants"
   - 
-    value: "3103.99"
+    value: "310399"
     display_name: "Altres (especificar)"
   - 
     value: "3104"
     display_name: "Producció animal"
   - 
-    value: "3104.01"
+    value: "310401"
     display_name: "Apicultura"
   - 
-    value: "3104.02"
+    value: "310402"
     display_name: "Bovins"
   - 
-    value: "3104.03"
+    value: "310403"
     display_name: "Cria"
   - 
-    value: "3104.04"
+    value: "310404"
     display_name: "Cura i explotació"
   - 
-    value: "3104.05"
+    value: "310405"
     display_name: "Équidos"
   - 
-    value: "3104.06"
+    value: "310406"
     display_name: "Nutrició"
   - 
-    value: "3104.07"
+    value: "310407"
     display_name: "Ovins"
   - 
-    value: "3104.08"
+    value: "310408"
     display_name: "Porcins"
   - 
-    value: "3104.09"
+    value: "310409"
     display_name: "Avicultura"
   - 
-    value: "3104.10"
+    value: "310410"
     display_name: "Productes"
   - 
-    value: "3104.11"
+    value: "310411"
     display_name: "Reproducció"
   - 
-    value: "3104.12"
+    value: "310412"
     display_name: "Selecció"
   - 
-    value: "3104.13"
+    value: "310413"
     display_name: "Sericultura"
   - 
-    value: "3104.90"
+    value: "310490"
     display_name: "Sistema de producció ramadera"
   - 
-    value: "3104.99"
+    value: "310499"
     display_name: "Altres (especificar)"
   - 
     value: "3105"
     display_name: "Peixos i fauna silvestre"
   - 
-    value: "3105.01"
+    value: "310501"
     display_name: "Reglamentació i control"
   - 
-    value: "3105.02"
+    value: "310502"
     display_name: "Piscicultura"
   - 
-    value: "3105.03"
+    value: "310503"
     display_name: "Localització de peixos"
   - 
-    value: "3105.04"
+    value: "310504"
     display_name: "Protecció dels peixos"
   - 
-    value: "3105.05"
+    value: "310505"
     display_name: "Elaboració del peix"
   - 
-    value: "3105.06"
+    value: "310506"
     display_name: "Tècniques pesqueres"
   - 
-    value: "3105.07"
+    value: "310507"
     display_name: "Hàbits d'alimentació"
   - 
-    value: "3105.08"
+    value: "310508"
     display_name: "Caça"
   - 
-    value: "3105.09"
+    value: "310509"
     display_name: "Influència de l'hàbitat"
   - 
-    value: "3105.10"
+    value: "310510"
     display_name: "Dinàmica de les poblacions"
   - 
-    value: "3105.11"
+    value: "310511"
     display_name: "Propagació i ordenació"
   - 
-    value: "3105.12"
+    value: "310512"
     display_name: "Ordenació i conservació de la fauna silvestre"
   - 
-    value: "3105.99"
+    value: "310599"
     display_name: "Altres (especificar)"
   - 
     value: "3106"
     display_name: "Ciència forestal"
   - 
-    value: "3106.01"
+    value: "310601"
     display_name: "Conservació"
   - 
-    value: "3106.02"
+    value: "310602"
     display_name: "Tècniques de cultiu"
   - 
-    value: "3106.03"
+    value: "310603"
     display_name: "Control de l'erosió"
   - 
-    value: "3106.04"
+    value: "310604"
     display_name: "Ordenació de muntanyes"
   - 
-    value: "3106.05"
+    value: "310605"
     display_name: "Productes"
   - 
-    value: "3106.06"
+    value: "310606"
     display_name: "Protecció"
   - 
-    value: "3106.07"
+    value: "310607"
     display_name: "Ordenació de pastures"
   - 
-    value: "3106.08"
+    value: "310608"
     display_name: "Silvicultura"
   - 
-    value: "3106.09"
+    value: "310609"
     display_name: "Ordenació de conques fluvials"
   - 
-    value: "3106.99"
+    value: "310699"
     display_name: "Altres (especificar)"
   - 
     value: "3107"
     display_name: "Horticultura"
   - 
-    value: "3107.01"
+    value: "310701"
     display_name: "Producció de cultius"
   - 
-    value: "3107.02"
+    value: "310702"
     display_name: "Tècniques de cultiu"
   - 
-    value: "3107.03"
+    value: "310703"
     display_name: "Floricultura"
   - 
-    value: "3107.04"
+    value: "310704"
     display_name: "Fruticultura"
   - 
-    value: "3107.05"
+    value: "310705"
     display_name: "Hibridació"
   - 
-    value: "3107.06"
+    value: "310706"
     display_name: "Hortalisses"
   - 
-    value: "3107.99"
+    value: "310799"
     display_name: "Altres (especificar)"
   - 
     value: "3108"
     display_name: "Fitopatologia"
   - 
-    value: "3108.01"
+    value: "310801"
     display_name: "Bacteris"
   - 
-    value: "3108.02"
+    value: "310802"
     display_name: "Control biològic de malalties"
   - 
-    value: "3108.03"
+    value: "310803"
     display_name: "Control químic de malalties"
   - 
-    value: "3108.04"
+    value: "310804"
     display_name: "Control ambiental de malalties"
   - 
-    value: "3108.05"
+    value: "310805"
     display_name: "Fongs"
   - 
-    value: "3108.06"
+    value: "310806"
     display_name: "Nemátodos"
   - 
-    value: "3108.07"
+    value: "310807"
     display_name: "Fisiogénesis"
   - 
-    value: "3108.08"
+    value: "310808"
     display_name: "Susceptibilitat i resistència vegetal"
   - 
-    value: "3108.09"
+    value: "310809"
     display_name: "Virus"
   - 
-    value: "3108.99"
+    value: "310899"
     display_name: "Altres (especificar)"
   - 
     value: "3109"
     display_name: "Ciències veterinàries"
   - 
-    value: "3109.01"
+    value: "310901"
     display_name: "Anatomia"
   - 
-    value: "3109.02"
+    value: "310902"
     display_name: "Genètica"
   - 
-    value: "3109.03"
+    value: "310903"
     display_name: "Immunologia"
   - 
-    value: "3109.04"
+    value: "310904"
     display_name: "Medicina interna"
   - 
-    value: "3109.05"
+    value: "310905"
     display_name: "Microbiologia"
   - 
-    value: "3109.06"
+    value: "310906"
     display_name: "Nutrició"
   - 
-    value: "3109.07"
+    value: "310907"
     display_name: "Patologia"
   - 
-    value: "3109.08"
+    value: "310908"
     display_name: "Farmacologia"
   - 
-    value: "3109.09"
+    value: "310909"
     display_name: "Fisiologia"
   - 
-    value: "3109.10"
+    value: "310910"
     display_name: "Cirurgia"
   - 
-    value: "3109.11"
+    value: "310911"
     display_name: "Virologia"
   - 
-    value: "3109.99"
+    value: "310999"
     display_name: "Altres (especificar)"
   - 
     value: "3199"
@@ -3583,46 +3583,46 @@ unesco:
     value: "3201"
     display_name: "Ciències clíniques"
   - 
-    value: "3201.01"
+    value: "320101"
     display_name: "Oncologia"
   - 
-    value: "3201.02"
+    value: "320102"
     display_name: "Genètica clínica"
   - 
-    value: "3201.03"
+    value: "320103"
     display_name: "Microbiologia clínica"
   - 
-    value: "3201.04"
+    value: "320104"
     display_name: "Patologia clínica"
   - 
-    value: "3201.05"
+    value: "320105"
     display_name: "Psicologia clínica"
   - 
-    value: "3201.06"
+    value: "320106"
     display_name: "Dermatologia"
   - 
-    value: "3201.07"
+    value: "320107"
     display_name: "Geriatria"
   - 
-    value: "3201.08"
+    value: "320108"
     display_name: "Ginecologia"
   - 
-    value: "3201.09"
+    value: "320109"
     display_name: "Oftalmologia"
   - 
-    value: "3201.10"
+    value: "320110"
     display_name: "Pediatria"
   - 
-    value: "3201.11"
+    value: "320111"
     display_name: "Radiologia"
   - 
-    value: "3201.12"
+    value: "320112"
     display_name: "Radioteràpia"
   - 
-    value: "3201.13"
+    value: "320113"
     display_name: "Sifilografía"
   - 
-    value: "3201.99"
+    value: "320199"
     display_name: "Altres (especificar)"
   - 
     value: "3202"
@@ -3634,232 +3634,232 @@ unesco:
     value: "3204"
     display_name: "Medicina del treball"
   - 
-    value: "3204.01"
+    value: "320401"
     display_name: "Medicina nuclear"
   - 
-    value: "3204.02"
+    value: "320402"
     display_name: "Malalties professionals"
   - 
-    value: "3204.03"
+    value: "320403"
     display_name: "Salut professional"
   - 
-    value: "3204.04"
+    value: "320404"
     display_name: "Rehabilitació (mèdica)"
   - 
-    value: "3204.99"
+    value: "320499"
     display_name: "Altres (especificar)"
   - 
     value: "3205"
     display_name: "Medicina interna"
   - 
-    value: "3205.01"
+    value: "320501"
     display_name: "Cardiologia"
   - 
-    value: "3205.02"
+    value: "320502"
     display_name: "Endocrinologia"
   - 
-    value: "3205.03"
+    value: "320503"
     display_name: "Gastroenterología"
   - 
-    value: "3205.04"
+    value: "320504"
     display_name: "Hematologia"
   - 
-    value: "3205.05"
+    value: "320505"
     display_name: "Malalties infeccioses"
   - 
-    value: "3205.06"
+    value: "320506"
     display_name: "Nefrología"
   - 
-    value: "3205.07"
+    value: "320507"
     display_name: "Neurologia"
   - 
-    value: "3205.08"
+    value: "320508"
     display_name: "Malalties pulmonars"
   - 
-    value: "3205.09"
+    value: "320509"
     display_name: "Reumatología"
   - 
-    value: "3205.99"
+    value: "320599"
     display_name: "Altres (especificar)"
   - 
     value: "3206"
     display_name: "Ciències de la Nutrició"
   - 
-    value: "3206.01"
+    value: "320601"
     display_name: "Digestió"
   - 
-    value: "3206.02"
+    value: "320602"
     display_name: "Metabolisme energètic"
   - 
-    value: "3206.03"
+    value: "320603"
     display_name: "Substàncies tòxiques naturals"
   - 
-    value: "3206.04"
+    value: "320604"
     display_name: "Deficiències alimentàries"
   - 
-    value: "3206.05"
+    value: "320605"
     display_name: "Agents patògens dels aliments"
   - 
-    value: "3206.06"
+    value: "320606"
     display_name: "Necessitats alimentàries"
   - 
-    value: "3206.07"
+    value: "320607"
     display_name: "Elements minerals en l'alimentació"
   - 
-    value: "3206.08"
+    value: "320608"
     display_name: "Nutrients"
   - 
-    value: "3206.09"
+    value: "320609"
     display_name: "Valor nutritiu"
   - 
-    value: "3206.10"
+    value: "320610"
     display_name: "Malalties de la nutrició"
   - 
-    value: "3206.11"
+    value: "320611"
     display_name: "Toxicitat dels aliments"
   - 
-    value: "3206.12"
+    value: "320612"
     display_name: "Oligoelementos en l'alimentació"
   - 
-    value: "3206.13"
+    value: "320613"
     display_name: "Vitamines"
   - 
-    value: "3206.99"
+    value: "320699"
     display_name: "Altres (especificar)"
   - 
     value: "3207"
     display_name: "Patologia"
   - 
-    value: "3207.01"
+    value: "320701"
     display_name: "Al·lèrgies"
   - 
-    value: "3207.02"
+    value: "320702"
     display_name: "Arteriosclerosis"
   - 
-    value: "3207.03"
+    value: "320703"
     display_name: "Carcinogénesis"
   - 
-    value: "3207.04"
+    value: "320704"
     display_name: "Patologia cardiovascular"
   - 
-    value: "3207.05"
+    value: "320705"
     display_name: "Patologia comparativa"
   - 
-    value: "3207.06"
+    value: "320706"
     display_name: "Endotoxines"
   - 
-    value: "3207.07"
+    value: "320707"
     display_name: "Patologia experimental"
   - 
-    value: "3207.08"
+    value: "320708"
     display_name: "Hematologia"
   - 
-    value: "3207.09"
+    value: "320709"
     display_name: "Histopatología"
   - 
-    value: "3207.10"
+    value: "320710"
     display_name: "Inmunopatología"
   - 
-    value: "3207.11"
+    value: "320711"
     display_name: "Neuropatología"
   - 
-    value: "3207.12"
+    value: "320712"
     display_name: "Parasitologia"
   - 
-    value: "3207.13"
+    value: "320713"
     display_name: "Oncologia"
   - 
-    value: "3207.14"
+    value: "320714"
     display_name: "Osteopatología"
   - 
-    value: "3207.15"
+    value: "320715"
     display_name: "Patologia de la radiació"
   - 
-    value: "3207.16"
+    value: "320716"
     display_name: "Estrès"
   - 
-    value: "3207.17"
+    value: "320717"
     display_name: "Teratología (estudis dels monstres)"
   - 
-    value: "3207.18"
+    value: "320718"
     display_name: "Trombosis"
   - 
-    value: "3207.99"
+    value: "320799"
     display_name: "Altres (especificar)"
   - 
     value: "3208"
     display_name: "Farmacodinámica"
   - 
-    value: "3208.01"
+    value: "320801"
     display_name: "Absorció de medicaments"
   - 
-    value: "3208.02"
+    value: "320802"
     display_name: "Acció dels medicaments"
   - 
-    value: "3208.03"
+    value: "320803"
     display_name: "Activació, processos múltiples"
   - 
-    value: "3208.04"
+    value: "320804"
     display_name: "Lloc d'acció activa, receptors"
   - 
-    value: "3208.05"
+    value: "320805"
     display_name: "Catàlisis, autocatálisis, inmunocátalisis"
   - 
-    value: "3208.06"
+    value: "320806"
     display_name: "Quimioteràpia"
   - 
-    value: "3208.07"
+    value: "320807"
     display_name: "Interacció d'antígens"
   - 
-    value: "3208.08"
+    value: "320808"
     display_name: "Mecanismes d'acció dels medicaments"
   - 
-    value: "3208.09"
+    value: "320809"
     display_name: "Processos metabòlics dels medicaments"
   - 
-    value: "3208.99"
+    value: "320899"
     display_name: "Altres (especificar)"
   - 
     value: "3209"
     display_name: "Farmacologia"
   - 
-    value: "3209.01"
+    value: "320901"
     display_name: "Anàlisi de medicaments"
   - 
-    value: "3209.02"
+    value: "320902"
     display_name: "Composició de medicaments"
   - 
-    value: "3209.03"
+    value: "320903"
     display_name: "Avaluació de medicaments"
   - 
-    value: "3209.04"
+    value: "320904"
     display_name: "Medicaments naturals"
   - 
-    value: "3209.05"
+    value: "320905"
     display_name: "Farmacognosia"
   - 
-    value: "3209.06"
+    value: "320906"
     display_name: "Farmacopees"
   - 
-    value: "3209.07"
+    value: "320907"
     display_name: "Fitofármacos"
   - 
-    value: "3209.08"
+    value: "320908"
     display_name: "Preparació de medicaments"
   - 
-    value: "3209.09"
+    value: "320909"
     display_name: "Psicofarmacología"
   - 
-    value: "3209.10"
+    value: "320910"
     display_name: "Radiofármacos"
   - 
-    value: "3209.11"
+    value: "320911"
     display_name: "Normalització dels medicaments"
   - 
-    value: "3209.12"
+    value: "320912"
     display_name: "Medicaments sintètics"
   - 
-    value: "3209.99"
+    value: "320999"
     display_name: "Altres (especificar)"
   - 
     value: "3210"
@@ -3874,58 +3874,58 @@ unesco:
     value: "3213"
     display_name: "Cirurgia"
   - 
-    value: "3213.01"
+    value: "321301"
     display_name: "Cirurgia abdominal"
   - 
-    value: "3213.02"
+    value: "321302"
     display_name: "Cirurgia estètica"
   - 
-    value: "3213.03"
+    value: "321303"
     display_name: "Anestesiologia"
   - 
-    value: "3213.04"
+    value: "321304"
     display_name: "Cirurgia d'ossos"
   - 
-    value: "3213.05"
+    value: "321305"
     display_name: "Cirurgia de gola, nas i oïdes"
   - 
-    value: "3213.06"
+    value: "321306"
     display_name: "Cirurgia experimental"
   - 
-    value: "3213.07"
+    value: "321307"
     display_name: "Cirurgia del cor"
   - 
-    value: "3213.08"
+    value: "321308"
     display_name: "Neurocirugía"
   - 
-    value: "3213.09"
+    value: "321309"
     display_name: "Cirurgia ocular"
   - 
-    value: "3213.10"
+    value: "321310"
     display_name: "Cirurgia ortopédica"
   - 
-    value: "3213.11"
+    value: "321311"
     display_name: "Fisioteràpia"
   - 
-    value: "3213.12"
+    value: "321312"
     display_name: "Proctología"
   - 
-    value: "3213.13"
+    value: "321313"
     display_name: "Ortodòncia-Estomatología"
   - 
-    value: "3213.14"
+    value: "321314"
     display_name: "Cirurgia dels trasplantaments"
   - 
-    value: "3213.15"
+    value: "321315"
     display_name: "Traumatologia"
   - 
-    value: "3213.16"
+    value: "321316"
     display_name: "Urologia"
   - 
-    value: "3213.17"
+    value: "321317"
     display_name: "Cirurgia vascular"
   - 
-    value: "3213.99"
+    value: "321399"
     display_name: "Altres (especificar)"
   - 
     value: "3214"
@@ -3940,1402 +3940,1402 @@ unesco:
     value: "3301"
     display_name: "Enginyeria i tecnologia aeronàutiques"
   - 
-    value: "3301.01"
+    value: "330101"
     display_name: "Aerodinàmica"
   - 
-    value: "3301.02"
+    value: "330102"
     display_name: "Càrregues aerodinàmiques"
   - 
-    value: "3301.03"
+    value: "330103"
     display_name: "Teoria aerodinàmica"
   - 
-    value: "3301.04"
+    value: "330104"
     display_name: "Aeronaus"
   - 
-    value: "3301.05"
+    value: "330105"
     display_name: "Combustibles d'aviació, combustió"
   - 
-    value: "3301.06"
+    value: "330106"
     display_name: "Estructures d'aeronaus"
   - 
-    value: "3301.07"
+    value: "330107"
     display_name: "Amortidors d'aire"
   - 
-    value: "3301.08"
+    value: "330108"
     display_name: "Aeroports i transports aeris"
   - 
-    value: "3301.09"
+    value: "330109"
     display_name: "Compressors i turbines"
   - 
-    value: "3301.10"
+    value: "330110"
     display_name: "Investigació i proves de vol"
   - 
-    value: "3301.11"
+    value: "330111"
     display_name: "Aleteo i vibracions"
   - 
-    value: "3301.12"
+    value: "330112"
     display_name: "Hidrodinàmica"
   - 
-    value: "3301.13"
+    value: "330113"
     display_name: "Instrumentació (aviació)"
   - 
-    value: "3301.14"
+    value: "330114"
     display_name: "Càrregues d'aterratge"
   - 
-    value: "3301.15"
+    value: "330115"
     display_name: "Sistemes de propulsió"
   - 
-    value: "3301.16"
+    value: "330116"
     display_name: "Materials dels sistemes de propulsió"
   - 
-    value: "3301.17"
+    value: "330117"
     display_name: "Hèlixs rotatòries"
   - 
-    value: "3301.18"
+    value: "330118"
     display_name: "Estabilitat i control"
   - 
-    value: "3301.99"
+    value: "330199"
     display_name: "Altres (especificar)"
   - 
     value: "3302"
     display_name: "Tecnologia bioquímica"
   - 
-    value: "3302.01"
+    value: "330201"
     display_name: "Tecnologia dels antibiòtics"
   - 
-    value: "3302.02"
+    value: "330202"
     display_name: "Tecnologia de la fermentació"
   - 
-    value: "3302.03"
+    value: "330203"
     display_name: "Microbiologia industrial"
   - 
-    value: "3302.90"
+    value: "330290"
     display_name: "ngeniería bioquímica"
   - 
-    value: "3302.99"
+    value: "330299"
     display_name: "Altres (especificar)"
   - 
     value: "3303"
     display_name: "Enginyeria i tecnologia químiques"
   - 
-    value: "3303.01"
+    value: "330301"
     display_name: "Tecnologia de la catàlisi"
   - 
-    value: "3303.02"
+    value: "330302"
     display_name: "Economia química"
   - 
-    value: "3303.03"
+    value: "330303"
     display_name: "Processos químics"
   - 
-    value: "3303.04"
+    value: "330304"
     display_name: "Separació química"
   - 
-    value: "3303.05"
+    value: "330305"
     display_name: "Síntesi química"
   - 
-    value: "3303.06"
+    value: "330306"
     display_name: "Tecnologia de la combustió"
   - 
-    value: "3303.07"
+    value: "330307"
     display_name: "Tecnologia de la corrosió"
   - 
-    value: "3303.08"
+    value: "330308"
     display_name: "Desionització"
   - 
-    value: "3303.09"
+    value: "330309"
     display_name: "Operacions electroquímiques"
   - 
-    value: "3303.10"
+    value: "330310"
     display_name: "Recobriment per electròlisi"
   - 
-    value: "3303.11"
+    value: "330311"
     display_name: "Química industrial"
   - 
-    value: "3303.12"
+    value: "330312"
     display_name: "Processos de química nuclear"
   - 
-    value: "3303.13"
+    value: "330313"
     display_name: "Tecnologia de la conservació"
   - 
-    value: "3303.14"
+    value: "330314"
     display_name: "Revestiments protectors"
   - 
-    value: "3303.15"
+    value: "330315"
     display_name: "Revestiments refractaris"
   - 
-    value: "3303.16"
+    value: "330316"
     display_name: "Revestiments hidròfobs"
   - 
-    value: "3303.90"
+    value: "330390"
     display_name: "Tecnologia química: Tensioactivos"
   - 
-    value: "3303.99"
+    value: "330399"
     display_name: "Altres (especificar)"
   - 
     value: "3304"
     display_name: "Tecnologia dels ordinadors"
   - 
-    value: "3304.01"
+    value: "330401"
     display_name: "Ordinadors analògics"
   - 
-    value: "3304.02"
+    value: "330402"
     display_name: "Convertidors analògic-digitals"
   - 
-    value: "3304.03"
+    value: "330403"
     display_name: "Instruccions aritmètiques i de màquina"
   - 
-    value: "3304.04"
+    value: "330404"
     display_name: "Unitats centrals de procés"
   - 
-    value: "3304.05"
+    value: "330405"
     display_name: "Sistemes de reconeixement de caràcters"
   - 
-    value: "3304.06"
+    value: "330406"
     display_name: "Arquitectura d'ordinadors"
   - 
-    value: "3304.07"
+    value: "330407"
     display_name: "Perifèrics d'ordinadors"
   - 
-    value: "3304.08"
+    value: "330408"
     display_name: "Fiabilitat dels ordinadors"
   - 
-    value: "3304.09"
+    value: "330409"
     display_name: "Manteniment dels ordinadors"
   - 
-    value: "3304.10"
+    value: "330410"
     display_name: "Terminals, dispositius gràfics i trazadores"
   - 
-    value: "3304.11"
+    value: "330411"
     display_name: "Disseny de sistemes de càlcul"
   - 
-    value: "3304.12"
+    value: "330412"
     display_name: "Dispositius de control"
   - 
-    value: "3304.13"
+    value: "330413"
     display_name: "Dispositius de transmissió de dades"
   - 
-    value: "3304.14"
+    value: "330414"
     display_name: "Ordinadors digitals"
   - 
-    value: "3304.15"
+    value: "330415"
     display_name: "Ordinadors híbrids"
   - 
-    value: "3304.16"
+    value: "330416"
     display_name: "Disseny lògic"
   - 
-    value: "3304.17"
+    value: "330417"
     display_name: "Sistemes en temps real"
   - 
-    value: "3304.18"
+    value: "330418"
     display_name: "Dispositius d'emmagatzematge"
   - 
-    value: "3304.99"
+    value: "330499"
     display_name: "Altres (especificar)"
   - 
     value: "3305"
     display_name: "Tecnologia de la construcció"
   - 
-    value: "3305.01"
+    value: "330501"
     display_name: "Disseny arquitectònic"
   - 
-    value: "3305.02"
+    value: "330502"
     display_name: "Construcció d'aeroports"
   - 
-    value: "3305.03"
+    value: "330503"
     display_name: "Grans edificis i gratacels"
   - 
-    value: "3305.04"
+    value: "330504"
     display_name: "Ponts"
   - 
-    value: "3305.05"
+    value: "330505"
     display_name: "Tecnologia del formigó"
   - 
-    value: "3305.06"
+    value: "330506"
     display_name: "Enginyeria Civil"
   - 
-    value: "3305.07"
+    value: "330507"
     display_name: "Preses"
   - 
-    value: "3305.08"
+    value: "330508"
     display_name: "Drenatges"
   - 
-    value: "3305.09"
+    value: "330509"
     display_name: "Excavacions"
   - 
-    value: "3305.10"
+    value: "330510"
     display_name: "Fonaments"
   - 
-    value: "3305.11"
+    value: "330511"
     display_name: "Ports"
   - 
-    value: "3305.12"
+    value: "330512"
     display_name: "Construccions pesades"
   - 
-    value: "3305.13"
+    value: "330513"
     display_name: "Autopistes"
   - 
-    value: "3305.14"
+    value: "330514"
     display_name: "Habitatges"
   - 
-    value: "3305.15"
+    value: "330515"
     display_name: "Enginyeria hidràulica"
   - 
-    value: "3305.16"
+    value: "330516"
     display_name: "Sistemes hiperestáticos"
   - 
-    value: "3305.17"
+    value: "330517"
     display_name: "Edificis industrials i comercials"
   - 
-    value: "3305.18"
+    value: "330518"
     display_name: "Canals interiors"
   - 
-    value: "3305.19"
+    value: "330519"
     display_name: "Irrigació"
   - 
-    value: "3305.20"
+    value: "330520"
     display_name: "Construccions lleugeres"
   - 
-    value: "3305.21"
+    value: "330521"
     display_name: "Construccions metàl·liques"
   - 
-    value: "3305.22"
+    value: "330522"
     display_name: "Metrologia de l'edificació"
   - 
-    value: "3305.23"
+    value: "330523"
     display_name: "Organització d'obres"
   - 
-    value: "3305.24"
+    value: "330524"
     display_name: "Construccions prefabricades"
   - 
-    value: "3305.25"
+    value: "330525"
     display_name: "Formigó pretesat"
   - 
-    value: "3305.26"
+    value: "330526"
     display_name: "Edificis públics"
   - 
-    value: "3305.27"
+    value: "330527"
     display_name: "Estesa de vies fèrries"
   - 
-    value: "3305.28"
+    value: "330528"
     display_name: "Regulacions, codis i especificacions"
   - 
-    value: "3305.29"
+    value: "330529"
     display_name: "Construcció de carreteres"
   - 
-    value: "3305.30"
+    value: "330530"
     display_name: "Clavegueram i depuració d'aigües"
   - 
-    value: "3305.31"
+    value: "330531"
     display_name: "Mecànica del sòl (construcció)"
   - 
-    value: "3305.32"
+    value: "330532"
     display_name: "Enginyeria d'estructures"
   - 
-    value: "3305.33"
+    value: "330533"
     display_name: "Resistència d'estructures"
   - 
-    value: "3305.34"
+    value: "330534"
     display_name: "Topografia de l'edificació"
   - 
-    value: "3305.35"
+    value: "330535"
     display_name: "Túnels"
   - 
-    value: "3305.36"
+    value: "330536"
     display_name: "Obres subterrànies"
   - 
-    value: "3305.37"
+    value: "330537"
     display_name: "Planificació urbana"
   - 
-    value: "3305.38"
+    value: "330538"
     display_name: "Proveïment d'aigua"
   - 
-    value: "3305.39"
+    value: "330539"
     display_name: "Construccions de fusta"
   - 
-    value: "3305.90"
+    value: "330590"
     display_name: "Transmissió de calor en l'edificació"
   - 
-    value: "3305.99"
+    value: "330599"
     display_name: "Altres (especificar)"
   - 
     value: "3306"
     display_name: "Enginyeria i tecnologia elèctriques"
   - 
-    value: "3306.01"
+    value: "330601"
     display_name: "Utilització del corrent continu"
   - 
-    value: "3306.02"
+    value: "330602"
     display_name: "Aplicacions elèctriques"
   - 
-    value: "3306.03"
+    value: "330603"
     display_name: "Motors elèctrics"
   - 
-    value: "3306.04"
+    value: "330604"
     display_name: "Il·luminació elèctrica"
   - 
-    value: "3306.05"
+    value: "330605"
     display_name: "Conductors aïllats"
   - 
-    value: "3306.06"
+    value: "330606"
     display_name: "Fabricació d'equip elèctric"
   - 
-    value: "3306.07"
+    value: "330607"
     display_name: "Maquinària rotatòria"
   - 
-    value: "3306.08"
+    value: "330608"
     display_name: "Interruptors"
   - 
-    value: "3306.09"
+    value: "330609"
     display_name: "Transmissió i distribució"
   - 
-    value: "3306.99"
+    value: "330699"
     display_name: "Altres (especificar)"
   - 
     value: "3307"
     display_name: "Tecnologia electrònica"
   - 
-    value: "3307.01"
+    value: "330701"
     display_name: "Antenes"
   - 
-    value: "3307.02"
+    value: "330702"
     display_name: "Electroacústica"
   - 
-    value: "3307.03"
+    value: "330703"
     display_name: "Disseny de circuits"
   - 
-    value: "3307.04"
+    value: "330704"
     display_name: "Transductors electroacústicos"
   - 
-    value: "3307.05"
+    value: "330705"
     display_name: "Vàlvules electròniques"
   - 
-    value: "3307.06"
+    value: "330706"
     display_name: "Disseny de filtres"
   - 
-    value: "3307.07"
+    value: "330707"
     display_name: "Dispositius làser"
   - 
-    value: "3307.08"
+    value: "330708"
     display_name: "Dispositius de microones"
   - 
-    value: "3307.09"
+    value: "330709"
     display_name: "Dispositius fotoelèctrics"
   - 
-    value: "3307.10"
+    value: "330710"
     display_name: "Radar"
   - 
-    value: "3307.11"
+    value: "330711"
     display_name: "Receptors de radi"
   - 
-    value: "3307.12"
+    value: "330712"
     display_name: "Transmissors de radi"
   - 
-    value: "3307.13"
+    value: "330713"
     display_name: "Dispositius d'enregistrament"
   - 
-    value: "3307.14"
+    value: "330714"
     display_name: "Dispositius semiconductors"
   - 
-    value: "3307.15"
+    value: "330715"
     display_name: "Dispositius de Sonar"
   - 
-    value: "3307.16"
+    value: "330716"
     display_name: "Dispositius sónicos"
   - 
-    value: "3307.17"
+    value: "330717"
     display_name: "Dispositius termoelèctrics"
   - 
-    value: "3307.18"
+    value: "330718"
     display_name: "Dispositius termoiònics"
   - 
-    value: "3307.19"
+    value: "330719"
     display_name: "Transistors"
   - 
-    value: "3307.20"
+    value: "330720"
     display_name: "Emissors de TV (transmissors)"
   - 
-    value: "3307.21"
+    value: "330721"
     display_name: "Receptors de TV"
   - 
-    value: "3307.22"
+    value: "330722"
     display_name: "Dispositius ultrasònics"
   - 
-    value: "3307.23"
+    value: "330723"
     display_name: "Dispositius de RAJOS X"
   - 
-    value: "3307.90"
+    value: "330790"
     display_name: "Microelectrònica"
   - 
-    value: "3307.91"
+    value: "330791"
     display_name: "Microelectrònica. Tecnologia del silici"
   - 
-    value: "3307.92"
+    value: "330792"
     display_name: "Microelectrònica. Teconologías III-V i alternatives"
   - 
-    value: "3307.93"
+    value: "330793"
     display_name: "Microelectrònica. Disseny"
   - 
-    value: "3307.99"
+    value: "330799"
     display_name: "Altres (especificar)"
   - 
     value: "3308"
     display_name: "Enginyeria i tecnologia del medi ambient"
   - 
-    value: "3308.01"
+    value: "330801"
     display_name: "Control de la contaminació atmosfèrica"
   - 
-    value: "3308.02"
+    value: "330802"
     display_name: "Residus industrials"
   - 
-    value: "3308.03"
+    value: "330803"
     display_name: "Tecnologia del control d'insectes"
   - 
-    value: "3308.04"
+    value: "330804"
     display_name: "Enginyeria de la contaminació"
   - 
-    value: "3308.05"
+    value: "330805"
     display_name: "Eliminació de residus radioactius"
   - 
-    value: "3308.06"
+    value: "330806"
     display_name: "Regeneració de l'aigua"
   - 
-    value: "3308.07"
+    value: "330807"
     display_name: "Eliminació de residus"
   - 
-    value: "3308.08"
+    value: "330808"
     display_name: "Tecnologia del control de rosegadors"
   - 
-    value: "3308.09"
+    value: "330809"
     display_name: "Enginyeria sanitària"
   - 
-    value: "3308.10"
+    value: "330810"
     display_name: "Tecnologia d'aigües residuals"
   - 
-    value: "3308.11"
+    value: "330811"
     display_name: "Control de la contaminació de l'aigua"
   - 
-    value: "3308.99"
+    value: "330899"
     display_name: "Altres (especificar)"
   - 
     value: "3309"
     display_name: "Tecnologia dels aliments"
   - 
-    value: "3309.01"
+    value: "330901"
     display_name: "Begudes alcohòliques"
   - 
-    value: "3309.02"
+    value: "330902"
     display_name: "Pinsos"
   - 
-    value: "3309.03"
+    value: "330903"
     display_name: "Antioxidants en els aliments"
   - 
-    value: "3309.04"
+    value: "330904"
     display_name: "Fleca"
   - 
-    value: "3309.05"
+    value: "330905"
     display_name: "Elaboració de cervesa"
   - 
-    value: "3309.06"
+    value: "330906"
     display_name: "Conserves"
   - 
-    value: "3309.07"
+    value: "330907"
     display_name: "Productes de cereals"
   - 
-    value: "3309.08"
+    value: "330908"
     display_name: "Colorants"
   - 
-    value: "3309.09"
+    value: "330909"
     display_name: "Productes làctics"
   - 
-    value: "3309.10"
+    value: "330910"
     display_name: "Aromatizantes"
   - 
-    value: "3309.11"
+    value: "330911"
     display_name: "Fabricació de farina"
   - 
-    value: "3309.12"
+    value: "330912"
     display_name: "Additius alimentaris"
   - 
-    value: "3309.13"
+    value: "330913"
     display_name: "Conservació d'aliments"
   - 
-    value: "3309.14"
+    value: "330914"
     display_name: "Elaboració d'aliments"
   - 
-    value: "3309.15"
+    value: "330915"
     display_name: "Higiene dels aliments"
   - 
-    value: "3309.16"
+    value: "330916"
     display_name: "Assecat per congelació"
   - 
-    value: "3309.17"
+    value: "330917"
     display_name: "Liofilització"
   - 
-    value: "3309.18"
+    value: "330918"
     display_name: "Begudes no alcohòliques"
   - 
-    value: "3309.19"
+    value: "330919"
     display_name: "Pasterización"
   - 
-    value: "3309.20"
+    value: "330920"
     display_name: "Propietats dels aliments"
   - 
-    value: "3309.21"
+    value: "330921"
     display_name: "Aliments proteínicos"
   - 
-    value: "3309.22"
+    value: "330922"
     display_name: "Refrigeració"
   - 
-    value: "3309.23"
+    value: "330923"
     display_name: "Estabilitzadors"
   - 
-    value: "3309.24"
+    value: "330924"
     display_name: "Midó"
   - 
-    value: "3309.25"
+    value: "330925"
     display_name: "Esterilització d'aliments"
   - 
-    value: "3309.26"
+    value: "330926"
     display_name: "Sucre"
   - 
-    value: "3309.27"
+    value: "330927"
     display_name: "Aliments sintètics"
   - 
-    value: "3309.28"
+    value: "330928"
     display_name: "Olis i greixos vegetals"
   - 
-    value: "3309.29"
+    value: "330929"
     display_name: "Vi"
   - 
-    value: "3309.90"
+    value: "330990"
     display_name: "Microbiologia d'aliments"
   - 
-    value: "3309.91"
+    value: "330991"
     display_name: "Conservació postrecolección"
   - 
-    value: "3309.92"
+    value: "330992"
     display_name: "Bioquímica i microbiologia dels processos fermentativos"
   - 
-    value: "3309.93"
+    value: "330993"
     display_name: "Conserves vegetals"
   - 
-    value: "3309.95"
+    value: "330995"
     display_name: "Tecnologia d'aliments. Transmissió de calor"
   - 
-    value: "3309.99"
+    value: "330999"
     display_name: "Altres (especificar)"
   - 
     value: "3310"
     display_name: "Tecnologia industrial"
   - 
-    value: "3310.01"
+    value: "331001"
     display_name: "Equip industrial"
   - 
-    value: "3310.02"
+    value: "331002"
     display_name: "Maquinària industrial"
   - 
-    value: "3310.03"
+    value: "331003"
     display_name: "Processos industrials"
   - 
-    value: "3310.04"
+    value: "331004"
     display_name: "Enginyeria de manteniment"
   - 
-    value: "3310.05"
+    value: "331005"
     display_name: "Enginyeria de processos"
   - 
-    value: "3310.06"
+    value: "331006"
     display_name: "Especificacions de processos"
   - 
-    value: "3310.07"
+    value: "331007"
     display_name: "Estudi de temps i moviments"
   - 
-    value: "3310.99"
+    value: "331099"
     display_name: "Altres (especificar)"
   - 
     value: "3311"
     display_name: "Tecnologia de la instrumentació"
   - 
-    value: "3311.01"
+    value: "331101"
     display_name: "Tecnologia de l'automatització"
   - 
-    value: "3311.02"
+    value: "331102"
     display_name: "Enginyeria de control"
   - 
-    value: "3311.03"
+    value: "331103"
     display_name: "Instruments per a odontologia"
   - 
-    value: "3311.04"
+    value: "331104"
     display_name: "Dispositius electroópticos"
   - 
-    value: "3311.05"
+    value: "331105"
     display_name: "Equips elèctrics de control"
   - 
-    value: "3311.06"
+    value: "331106"
     display_name: "Instruments elèctrics"
   - 
-    value: "3311.07"
+    value: "331107"
     display_name: "Instruments electrònics"
   - 
-    value: "3311.08"
+    value: "331108"
     display_name: "Equip de laboratori"
   - 
-    value: "3311.09"
+    value: "331109"
     display_name: "Lents"
   - 
-    value: "3311.10"
+    value: "331110"
     display_name: "Instruments mèdics"
   - 
-    value: "3311.11"
+    value: "331111"
     display_name: "Instruments òptics"
   - 
-    value: "3311.12"
+    value: "331112"
     display_name: "Equip de fotografia i cinematografia"
   - 
-    value: "3311.13"
+    value: "331113"
     display_name: "Aparells científics"
   - 
-    value: "3311.14"
+    value: "331114"
     display_name: "Servomecanismes"
   - 
-    value: "3311.15"
+    value: "331115"
     display_name: "Tècniques de manipulació a distància"
   - 
-    value: "3311.16"
+    value: "331116"
     display_name: "Instruments de mesura de la temperatura"
   - 
-    value: "3311.17"
+    value: "331117"
     display_name: "Equips de verificació"
   - 
-    value: "3311.18"
+    value: "331118"
     display_name: "Instruments termoestáticos"
   - 
-    value: "3311.19"
+    value: "331119"
     display_name: "Dispositius de cronometratge"
   - 
-    value: "3311.99"
+    value: "331199"
     display_name: "Altres (especificar)"
   - 
     value: "3312"
     display_name: "Tecnologia de materials"
   - 
-    value: "3312.01"
+    value: "331201"
     display_name: "Abrasius"
   - 
-    value: "3312.02"
+    value: "331202"
     display_name: "Aglomerants"
   - 
-    value: "3312.03"
+    value: "331203"
     display_name: "Materials ceràmics"
   - 
-    value: "3312.04"
+    value: "331204"
     display_name: "Materials metalocerámicos (cermets)"
   - 
-    value: "3312.05"
+    value: "331205"
     display_name: "Productes d'argila"
   - 
-    value: "3312.06"
+    value: "331206"
     display_name: "Vidre"
   - 
-    value: "3312.07"
+    value: "331207"
     display_name: "Calcària"
   - 
-    value: "3312.08"
+    value: "331208"
     display_name: "Propietats dels materials"
   - 
-    value: "3312.09"
+    value: "331209"
     display_name: "Resistència de materials"
   - 
-    value: "3312.10"
+    value: "331210"
     display_name: "Plàstics"
   - 
-    value: "3312.11"
+    value: "331211"
     display_name: "Refractaris"
   - 
-    value: "3312.12"
+    value: "331212"
     display_name: "Assajos de materials"
   - 
-    value: "3312.13"
+    value: "331213"
     display_name: "Tecnologia de la fusta"
   - 
-    value: "3312.99"
+    value: "331299"
     display_name: "Altres (especificar)"
   - 
     value: "3313"
     display_name: "Tecnologia i enginyeria mecàniques"
   - 
-    value: "3313.01"
+    value: "331301"
     display_name: "Ventiladors"
   - 
-    value: "3313.02"
+    value: "331302"
     display_name: "Compressors d'aire"
   - 
-    value: "3313.03"
+    value: "331303"
     display_name: "Coixinets"
   - 
-    value: "3313.04"
+    value: "331304"
     display_name: "Material de construcció"
   - 
-    value: "3313.05"
+    value: "331305"
     display_name: "Matrius, plantilles i calibres"
   - 
-    value: "3313.06"
+    value: "331306"
     display_name: "Maquinària agropecuària"
   - 
-    value: "3313.07"
+    value: "331307"
     display_name: "Maquinària per a la indústria de l'alimentació"
   - 
-    value: "3313.08"
+    value: "331308"
     display_name: "Motors de gas"
   - 
-    value: "3313.09"
+    value: "331309"
     display_name: "Engranatges"
   - 
-    value: "3313.10"
+    value: "331310"
     display_name: "Material de calefacció"
   - 
-    value: "3313.11"
+    value: "331311"
     display_name: "Maquinària hidràulica"
   - 
-    value: "3313.12"
+    value: "331312"
     display_name: "Equip i maquinària industrial"
   - 
-    value: "3313.13"
+    value: "331313"
     display_name: "Motors de combustió interna (general)"
   - 
-    value: "3313.14"
+    value: "331314"
     display_name: "Màquines-eina i accessoris"
   - 
-    value: "3313.15"
+    value: "331315"
     display_name: "Disseny de màquines"
   - 
-    value: "3313.16"
+    value: "331316"
     display_name: "Maquinària per a maneig de materials"
   - 
-    value: "3313.17"
+    value: "331317"
     display_name: "Operacions mecanitzades"
   - 
-    value: "3313.18"
+    value: "331318"
     display_name: "Maquinària de mineria"
   - 
-    value: "3313.19"
+    value: "331319"
     display_name: "Maquinària nuclear"
   - 
-    value: "3313.20"
+    value: "331320"
     display_name: "Maquinària per fabricar paper"
   - 
-    value: "3313.21"
+    value: "331321"
     display_name: "Maquinària d'extracció de petroli"
   - 
-    value: "3313.22"
+    value: "331322"
     display_name: "Equip pneumàtic"
   - 
-    value: "3313.23"
+    value: "331323"
     display_name: "Equip mecànic de transmissió de potència"
   - 
-    value: "3313.24"
+    value: "331324"
     display_name: "Maquinària d'impressió i reproducció"
   - 
-    value: "3313.25"
+    value: "331325"
     display_name: "Bombes i equips per a manipulació de líquids"
   - 
-    value: "3313.26"
+    value: "331326"
     display_name: "Equip de refrigeració"
   - 
-    value: "3313.27"
+    value: "331327"
     display_name: "Maquinària industrial especialitzada"
   - 
-    value: "3313.28"
+    value: "331328"
     display_name: "Maquines de vapor"
   - 
-    value: "3313.29"
+    value: "331329"
     display_name: "Maquinària tèxtil"
   - 
-    value: "3313.30"
+    value: "331330"
     display_name: "Turbines"
   - 
-    value: "3313.31"
+    value: "331331"
     display_name: "Maquines expenedores i distribuïdores"
   - 
-    value: "3313.99"
+    value: "331399"
     display_name: "Altres (especificar)"
   - 
     value: "3314"
     display_name: "Tecnologia mèdica"
   - 
-    value: "3314.01"
+    value: "331401"
     display_name: "Organos artificials"
   - 
-    value: "3314.02"
+    value: "331402"
     display_name: "Pròtesis"
   - 
-    value: "3314.99"
+    value: "331499"
     display_name: "Altres (especificar)"
   - 
     value: "3315"
     display_name: "Tecnologia metal·lúrgica"
   - 
-    value: "3315.01"
+    value: "331501"
     display_name: "Alumini"
   - 
-    value: "3315.02"
+    value: "331502"
     display_name: "Coure"
   - 
-    value: "3315.03"
+    value: "331503"
     display_name: "Productes electrometalúrgicos"
   - 
-    value: "3315.04"
+    value: "331504"
     display_name: "Foses (general)"
   - 
-    value: "3315.05"
+    value: "331505"
     display_name: "Tallers de forja, laminació i fosa de ferro i acer"
   - 
-    value: "3315.06"
+    value: "331506"
     display_name: "Plom i zinc"
   - 
-    value: "3315.07"
+    value: "331507"
     display_name: "Productes metal·lúrgics (especials)"
   - 
-    value: "3315.08"
+    value: "331508"
     display_name: "Serveis metal·lúrgics"
   - 
-    value: "3315.09"
+    value: "331509"
     display_name: "Fosa, afinament i transformació de materials no ferris"
   - 
-    value: "3315.10"
+    value: "331510"
     display_name: "Foses no fèrries"
   - 
-    value: "3315.11"
+    value: "331511"
     display_name: "Pulvimetalurgia"
   - 
-    value: "3315.12"
+    value: "331512"
     display_name: "Metalls preciosos"
   - 
-    value: "3315.13"
+    value: "331513"
     display_name: "Fosa de precisió"
   - 
-    value: "3315.14"
+    value: "331514"
     display_name: "Metalls radioactius"
   - 
-    value: "3315.15"
+    value: "331515"
     display_name: "Metalls rars"
   - 
-    value: "3315.16"
+    value: "331516"
     display_name: "Afinament incloent l'afinament per zones"
   - 
-    value: "3315.17"
+    value: "331517"
     display_name: "Metalls refractaris"
   - 
-    value: "3315.90"
+    value: "331590"
     display_name: "Metal·lúrgia extractiva no fèrria"
   - 
-    value: "3315.99"
+    value: "331599"
     display_name: "Altres (especificar)"
   - 
     value: "3316"
     display_name: "Tecnologia dels productes metàl·lics"
   - 
-    value: "3316.01"
+    value: "331601"
     display_name: "Autoclaus i calderes"
   - 
-    value: "3316.02"
+    value: "331602"
     display_name: "Envasos i recipients"
   - 
-    value: "3316.03"
+    value: "331603"
     display_name: "Equip de destil·lació"
   - 
-    value: "3316.04"
+    value: "331604"
     display_name: "Productes electrochapados i recoberts"
   - 
-    value: "3316.05"
+    value: "331605"
     display_name: "Alts forns, forns, forns ceràmics"
   - 
-    value: "3316.06"
+    value: "331606"
     display_name: "Ferreteria"
   - 
-    value: "3316.07"
+    value: "331607"
     display_name: "Productes elaborats a màquina i tornejats"
   - 
-    value: "3316.08"
+    value: "331608"
     display_name: "Serveis de fabricació de metalls"
   - 
-    value: "3316.09"
+    value: "331609"
     display_name: "Canonades, guarnicions i vàlvules"
   - 
-    value: "3316.10"
+    value: "331610"
     display_name: "Recipients de pressió"
   - 
-    value: "3316.11"
+    value: "331611"
     display_name: "Productes de xapa metàl·lica"
   - 
-    value: "3316.12"
+    value: "331612"
     display_name: "Estampats"
   - 
-    value: "3316.13"
+    value: "331613"
     display_name: "Productes d'acer per a construccions"
   - 
-    value: "3316.14"
+    value: "331614"
     display_name: "Estructures fabricades per soldeo"
   - 
-    value: "3316.15"
+    value: "331615"
     display_name: "Articles de filferro"
   - 
-    value: "3316.99"
+    value: "331699"
     display_name: "Uns altres (especificar)"
   - 
     value: "3317"
     display_name: "Tecnologia de vehicles de motor"
   - 
-    value: "3317.01"
+    value: "331701"
     display_name: "Vehicles tot terrè"
   - 
-    value: "3317.02"
+    value: "331702"
     display_name: "Automòbils"
   - 
-    value: "3317.03"
+    value: "331703"
     display_name: "Autobusos, camions i remolcs"
   - 
-    value: "3317.04"
+    value: "331704"
     display_name: "Motors Dièsel"
   - 
-    value: "3317.05"
+    value: "331705"
     display_name: "Motocicletes"
   - 
-    value: "3317.06"
+    value: "331706"
     display_name: "Servei de manteniment de transports a motor"
   - 
-    value: "3317.07"
+    value: "331707"
     display_name: "Accessoris i recanvis"
   - 
-    value: "3317.08"
+    value: "331708"
     display_name: "Motors de pistó"
   - 
-    value: "3317.09"
+    value: "331709"
     display_name: "Motors rotatius"
   - 
-    value: "3317.10"
+    value: "331710"
     display_name: "Enginyeria del tràfic"
   - 
-    value: "3317.99"
+    value: "331799"
     display_name: "Altres (especificar)"
   - 
     value: "3318"
     display_name: "Tecnologia minera"
   - 
-    value: "3318.01"
+    value: "331801"
     display_name: "Mineria del carbó"
   - 
-    value: "3318.02"
+    value: "331802"
     display_name: "Concentració de menes"
   - 
-    value: "3318.03"
+    value: "331803"
     display_name: "Menes de ferro"
   - 
-    value: "3318.04"
+    value: "331804"
     display_name: "Serveis miners"
   - 
-    value: "3318.05"
+    value: "331805"
     display_name: "Menes metàl·liques no fèrries"
   - 
-    value: "3318.06"
+    value: "331806"
     display_name: "Minerals no metàl·lics"
   - 
-    value: "3318.07"
+    value: "331807"
     display_name: "Productes de les pedreres"
   - 
-    value: "3318.08"
+    value: "331808"
     display_name: "Sofre"
   - 
-    value: "3318.09"
+    value: "331809"
     display_name: "Urani i menes radioactives"
   - 
-    value: "3318.99"
+    value: "331899"
     display_name: "Altres (especificar)"
   - 
     value: "3319"
     display_name: "Tecnologia naval"
   - 
-    value: "3319.01"
+    value: "331901"
     display_name: "Dispositius de sustentació pneumàtica"
   - 
-    value: "3319.02"
+    value: "331902"
     display_name: "Vaixells"
   - 
-    value: "3319.03"
+    value: "331903"
     display_name: "Vaixells de navegació interior"
   - 
-    value: "3319.04"
+    value: "331904"
     display_name: "Maquines auxiliars"
   - 
-    value: "3319.05"
+    value: "331905"
     display_name: "Motors marins"
   - 
-    value: "3319.06"
+    value: "331906"
     display_name: "Transports marítims"
   - 
-    value: "3319.07"
+    value: "331907"
     display_name: "Bucs mercants"
   - 
-    value: "3319.08"
+    value: "331908"
     display_name: "Arquitectura naval"
   - 
-    value: "3319.09"
+    value: "331909"
     display_name: "Transport oceànic"
   - 
-    value: "3319.10"
+    value: "331910"
     display_name: "Hèlixs"
   - 
-    value: "3319.11"
+    value: "331911"
     display_name: "Línia d'eixos"
   - 
-    value: "3319.12"
+    value: "331912"
     display_name: "Construcció naval"
   - 
-    value: "3319.13"
+    value: "331913"
     display_name: "Vehicles submarins"
   - 
-    value: "3319.99"
+    value: "331999"
     display_name: "Altres (especificar)"
   - 
     value: "3320"
     display_name: "Tecnologia nuclear"
   - 
-    value: "3320.01"
+    value: "332001"
     display_name: "Aplicacions d'isòtops"
   - 
-    value: "3320.02"
+    value: "332002"
     display_name: "Separació d'isòtops"
   - 
-    value: "3320.03"
+    value: "332003"
     display_name: "Explosions nuclears"
   - 
-    value: "3320.04"
+    value: "332004"
     display_name: "Reactors de fissió nuclear"
   - 
-    value: "3320.05"
+    value: "332005"
     display_name: "Reactors de fusió nuclear"
   - 
-    value: "3320.06"
+    value: "332006"
     display_name: "Proves nuclears"
   - 
-    value: "3320.99"
+    value: "332099"
     display_name: "Altres (especificar)"
   - 
     value: "3321"
     display_name: "Tecnologia del carbó i del petroli"
   - 
-    value: "3321.01"
+    value: "332101"
     display_name: "Materials asfàltics"
   - 
-    value: "3321.02"
+    value: "332102"
     display_name: "Productes químics derivats del carbó"
   - 
-    value: "3321.03"
+    value: "332103"
     display_name: "Petroli cru"
   - 
-    value: "3321.04"
+    value: "332104"
     display_name: "Gaseoductos"
   - 
-    value: "3321.05"
+    value: "332105"
     display_name: "Gas liquat"
   - 
-    value: "3321.06"
+    value: "332106"
     display_name: "Oli i greix lubrificants"
   - 
-    value: "3321.07"
+    value: "332107"
     display_name: "Gas natural"
   - 
-    value: "3321.08"
+    value: "332108"
     display_name: "Equip de camps petrolífers"
   - 
-    value: "3321.09"
+    value: "332109"
     display_name: "Infraestructura de camps petrolífers"
   - 
-    value: "3321.10"
+    value: "332110"
     display_name: "Oleoductes"
   - 
-    value: "3321.11"
+    value: "332111"
     display_name: "Productes derivats del petroli"
   - 
-    value: "3321.12"
+    value: "332112"
     display_name: "Productes del petroli: gasolina, olis i ceres"
   - 
-    value: "3321.13"
+    value: "332113"
     display_name: "Disseny de refineries"
   - 
-    value: "3321.14"
+    value: "332114"
     display_name: "Emmagatzematge (petroli i gas)"
   - 
-    value: "3321.90"
+    value: "332190"
     display_name: "Caracterització de carbons"
   - 
-    value: "3321.99"
+    value: "332199"
     display_name: "Altres (especificar)"
   - 
     value: "3322"
     display_name: "Tecnologia energètica"
   - 
-    value: "3322.01"
+    value: "332201"
     display_name: "Distribució d'energia"
   - 
-    value: "3322.02"
+    value: "332202"
     display_name: "Generació d'energia"
   - 
-    value: "3322.03"
+    value: "332203"
     display_name: "Generadors d'energia"
   - 
-    value: "3322.04"
+    value: "332204"
     display_name: "Transmissió d'energia"
   - 
-    value: "3322.05"
+    value: "332205"
     display_name: "Fonts no convencionals d'energia"
   - 
-    value: "3322.99"
+    value: "332299"
     display_name: "Altres (especificar)"
   - 
     value: "3323"
     display_name: "Tecnologia dels ferrocarrils"
   - 
-    value: "3323.01"
+    value: "332301"
     display_name: "Locomotores"
   - 
-    value: "3323.02"
+    value: "332302"
     display_name: "Equip ferroviari"
   - 
-    value: "3323.03"
+    value: "332303"
     display_name: "Serveis de ferrocarril"
   - 
-    value: "3323.04"
+    value: "332304"
     display_name: "Transito ràpid"
   - 
-    value: "3323.05"
+    value: "332305"
     display_name: "Material rodant"
   - 
-    value: "3323.99"
+    value: "332399"
     display_name: "Altres (especificar)"
   - 
     value: "3324"
     display_name: "Tecnologia de l'espai"
   - 
-    value: "3324.01"
+    value: "332401"
     display_name: "Satèl·lits artificials"
   - 
-    value: "3324.02"
+    value: "332402"
     display_name: "Llançament i recuperació de míssils"
   - 
-    value: "3324.03"
+    value: "332403"
     display_name: "Instal·lacions de míssils"
   - 
-    value: "3324.04"
+    value: "332404"
     display_name: "Motors de coet"
   - 
-    value: "3324.05"
+    value: "332405"
     display_name: "Naus espacials"
   - 
-    value: "3324.06"
+    value: "332406"
     display_name: "Seguiment espacial"
   - 
-    value: "3324.07"
+    value: "332407"
     display_name: "Control de vehicles"
   - 
-    value: "3324.99"
+    value: "332499"
     display_name: "Altres (especificar)"
   - 
     value: "3325"
     display_name: "Tecnologia de les telecomunicacions"
   - 
-    value: "3325.01"
+    value: "332501"
     display_name: "Radiodifusió, so i televisió"
   - 
-    value: "3325.02"
+    value: "332502"
     display_name: "Televisió per cable"
   - 
-    value: "3325.03"
+    value: "332503"
     display_name: "Cinematografia"
   - 
-    value: "3325.04"
+    value: "332504"
     display_name: "Enllaços de microones"
   - 
-    value: "3325.05"
+    value: "332505"
     display_name: "Radiocomunicacions"
   - 
-    value: "3325.06"
+    value: "332506"
     display_name: "Comunicacions per satèl·lit"
   - 
-    value: "3325.07"
+    value: "332507"
     display_name: "Telègraf"
   - 
-    value: "3325.08"
+    value: "332508"
     display_name: "Telèfon"
   - 
-    value: "3325.09"
+    value: "332509"
     display_name: "Televisió"
   - 
-    value: "3325.99"
+    value: "332599"
     display_name: "Altres (especificar)"
   - 
     value: "3326"
     display_name: "Tecnologia tèxtil"
   - 
-    value: "3326.01"
+    value: "332601"
     display_name: "Cotó"
   - 
-    value: "3326.02"
+    value: "332602"
     display_name: "Lli"
   - 
-    value: "3326.03"
+    value: "332603"
     display_name: "Jute"
   - 
-    value: "3326.04"
+    value: "332604"
     display_name: "Filat"
   - 
-    value: "3326.05"
+    value: "332605"
     display_name: "Fibres sintètiques"
   - 
-    value: "3326.06"
+    value: "332606"
     display_name: "Filatures"
   - 
-    value: "3326.07"
+    value: "332607"
     display_name: "Llana"
   - 
-    value: "3326.99"
+    value: "332699"
     display_name: "Altres (especificar)"
   - 
     value: "3327"
     display_name: "Tecnologia dels sistemes de transport"
   - 
-    value: "3327.01"
+    value: "332701"
     display_name: "Línies aèries i control del trafico aeri"
   - 
-    value: "3327.02"
+    value: "332702"
     display_name: "Anàlisi del tràfic"
   - 
-    value: "3327.03"
+    value: "332703"
     display_name: "Sistemes de trànsit urbà"
   - 
-    value: "3327.04"
+    value: "332704"
     display_name: "Combinació de sistemes"
   - 
-    value: "3327.99"
+    value: "332799"
     display_name: "Altres (especificar)"
   - 
     value: "3328"
     display_name: "Processos tecnològics"
   - 
-    value: "3328.01"
+    value: "332801"
     display_name: "Absorció"
   - 
-    value: "3328.02"
+    value: "332802"
     display_name: "Agitació"
   - 
-    value: "3328.03"
+    value: "332803"
     display_name: "Centrifugació"
   - 
-    value: "3328.04"
+    value: "332804"
     display_name: "Compressió"
   - 
-    value: "3328.05"
+    value: "332805"
     display_name: "Cristal·lització"
   - 
-    value: "3328.06"
+    value: "332806"
     display_name: "Desionització"
   - 
-    value: "3328.07"
+    value: "332807"
     display_name: "Destil·lació i condensació"
   - 
-    value: "3328.08"
+    value: "332808"
     display_name: "Dessecació"
   - 
-    value: "3328.09"
+    value: "332809"
     display_name: "Evaporació"
   - 
-    value: "3328.10"
+    value: "332810"
     display_name: "Filtració"
   - 
-    value: "3328.11"
+    value: "332811"
     display_name: "Flotació"
   - 
-    value: "3328.12"
+    value: "332812"
     display_name: "Circulació a través de mitjans porosos"
   - 
-    value: "3328.13"
+    value: "332813"
     display_name: "Fluidización de sòlids"
   - 
-    value: "3328.14"
+    value: "332814"
     display_name: "Liofilització"
   - 
-    value: "3328.15"
+    value: "332815"
     display_name: "Maneig de sòlids"
   - 
-    value: "3328.16"
+    value: "332816"
     display_name: "Transferència de calor"
   - 
-    value: "3328.17"
+    value: "332817"
     display_name: "Extracció de líquid-líquid"
   - 
-    value: "3328.18"
+    value: "332818"
     display_name: "Transferència de massa"
   - 
-    value: "3328.19"
+    value: "332819"
     display_name: "Barrejat"
   - 
-    value: "3328.20"
+    value: "332820"
     display_name: "Tubs, vàlvules i accessoris de muntatge"
   - 
-    value: "3328.21"
+    value: "332821"
     display_name: "Bombament"
   - 
-    value: "3328.22"
+    value: "332822"
     display_name: "Tamizado"
   - 
-    value: "3328.23"
+    value: "332823"
     display_name: "Sedimentació"
   - 
-    value: "3328.24"
+    value: "332824"
     display_name: "Trituración"
   - 
-    value: "3328.25"
+    value: "332825"
     display_name: "Extracció sòlid-líquid"
   - 
-    value: "3328.26"
+    value: "332826"
     display_name: "Refrigeració"
   - 
-    value: "3328.27"
+    value: "332827"
     display_name: "Transferència vapor-líquid"
   - 
-    value: "3328.99"
+    value: "332899"
     display_name: "Altres (especificar)"
   - 
     value: "3329"
     display_name: "Planificació urbana"
   - 
-    value: "3329.01"
+    value: "332901"
     display_name: "Codis d'edificació"
   - 
-    value: "3329.02"
+    value: "332902"
     display_name: "Comunicacions"
   - 
-    value: "3329.03"
+    value: "332903"
     display_name: "Organització comunitària"
   - 
-    value: "3329.04"
+    value: "332904"
     display_name: "Ús del sòl"
   - 
-    value: "3329.05"
+    value: "332905"
     display_name: "Desenvolupament regional"
   - 
-    value: "3329.06"
+    value: "332906"
     display_name: "Serveis sanitaris"
   - 
-    value: "3329.07"
+    value: "332907"
     display_name: "Transport"
   - 
-    value: "3329.08"
+    value: "332908"
     display_name: "Mitjà urbà"
   - 
-    value: "3329.09"
+    value: "332909"
     display_name: "Relacions urbà-rurals"
   - 
-    value: "3329.99"
+    value: "332999"
     display_name: "Altres (especificar)"
   - 
     value: "3399"
@@ -5347,109 +5347,109 @@ unesco:
     value: "5101"
     display_name: "Antropologia cultural"
   - 
-    value: "5101.01"
+    value: "510101"
     display_name: "Adorn"
   - 
-    value: "5101.02"
+    value: "510102"
     display_name: "Vestit"
   - 
-    value: "5101.03"
+    value: "510103"
     display_name: "Danses, festes"
   - 
-    value: "5101.04"
+    value: "510104"
     display_name: "Etnomusicología"
   - 
-    value: "5101.05"
+    value: "510105"
     display_name: "Etnolingüística"
   - 
-    value: "5101.06"
+    value: "510106"
     display_name: "Museología"
   - 
-    value: "5101.07"
+    value: "510107"
     display_name: "Mites"
   - 
-    value: "5101.08"
+    value: "510108"
     display_name: "Màgia"
   - 
-    value: "5101.09"
+    value: "510109"
     display_name: "Poemes, relats"
   - 
-    value: "5101.10"
+    value: "510110"
     display_name: "Religió"
   - 
-    value: "5101.11"
+    value: "510111"
     display_name: "Fetilleria"
   - 
-    value: "5101.12"
+    value: "510112"
     display_name: "Simbolisme"
   - 
-    value: "5101.13"
+    value: "510113"
     display_name: "Medicina tradicional"
   - 
-    value: "5101.14"
+    value: "510114"
     display_name: "Tradició"
   - 
-    value: "5101.99"
+    value: "510199"
     display_name: "Altres (especificar)"
   - 
     value: "5102"
     display_name: "Etnografia i etnologia"
   - 
-    value: "5102.01"
+    value: "510201"
     display_name: "Agricultura"
   - 
-    value: "5102.02"
+    value: "510202"
     display_name: "Armes"
   - 
-    value: "5102.03"
+    value: "510203"
     display_name: "Barata"
   - 
-    value: "5102.04"
+    value: "510204"
     display_name: "Intercanvi"
   - 
-    value: "5102.05"
+    value: "510205"
     display_name: "Hàbitat"
   - 
-    value: "5102.06"
+    value: "510206"
     display_name: "Habilitats artesanals"
   - 
-    value: "5102.07"
+    value: "510207"
     display_name: "Caça"
   - 
-    value: "5102.08"
+    value: "510208"
     display_name: "Pesca"
   - 
-    value: "5102.09"
+    value: "510209"
     display_name: "Farratge"
   - 
-    value: "5102.10"
+    value: "510210"
     display_name: "Metal·lúrgia"
   - 
-    value: "5102.11"
+    value: "510211"
     display_name: "Ramaderia"
   - 
-    value: "5102.99"
+    value: "510299"
     display_name: "Altres (especificar)"
   - 
     value: "5103"
     display_name: "Antropologia social"
   - 
-    value: "5103.01"
+    value: "510301"
     display_name: "Prefectura i reialesa"
   - 
-    value: "5103.02"
+    value: "510302"
     display_name: "Filiació, família i parentiu"
   - 
-    value: "5103.03"
+    value: "510303"
     display_name: "Nomadisme"
   - 
-    value: "5103.04"
+    value: "510304"
     display_name: "Esclavitud i servitud"
   - 
-    value: "5103.05"
+    value: "510305"
     display_name: "Guerra"
   - 
-    value: "5103.99"
+    value: "510399"
     display_name: "Altres (especificar)"
   - 
     value: "5199"
@@ -5461,178 +5461,178 @@ unesco:
     value: "5201"
     display_name: "Fertilitat"
   - 
-    value: "5201.01"
+    value: "520101"
     display_name: "Indice de natalitat"
   - 
-    value: "5201.02"
+    value: "520102"
     display_name: "Fertilitat general"
   - 
-    value: "5201.03"
+    value: "520103"
     display_name: "Il·legitimitat"
   - 
-    value: "5201.04"
+    value: "520104"
     display_name: "Indice de matrimonis"
   - 
-    value: "5201.05"
+    value: "520105"
     display_name: "Esterilitat i fecunditat"
   - 
-    value: "5201.99"
+    value: "520199"
     display_name: "Altres (especificar)"
   - 
     value: "5202"
     display_name: "Demografia general"
   - 
-    value: "5202.01"
+    value: "520201"
     display_name: "Metodologia d'investigació"
   - 
-    value: "5202.02"
+    value: "520202"
     display_name: "Metodologia d'anàlisi"
   - 
-    value: "5202.03"
+    value: "520203"
     display_name: "Teoria"
   - 
-    value: "5202.99"
+    value: "520299"
     display_name: "Altres (especificar)"
   - 
     value: "5203"
     display_name: "Demografia geogràfica"
   - 
-    value: "5203.01"
+    value: "520301"
     display_name: "Mobilitat i migracions interiors"
   - 
-    value: "5203.02"
+    value: "520302"
     display_name: "Mobilitat i migracions internacionals"
   - 
-    value: "5203.03"
+    value: "520303"
     display_name: "Demografia local"
   - 
-    value: "5203.04"
+    value: "520304"
     display_name: "Demografia regional"
   - 
-    value: "5203.05"
+    value: "520305"
     display_name: "Demografia rural"
   - 
-    value: "5203.06"
+    value: "520306"
     display_name: "Demografia urbana"
   - 
-    value: "5203.99"
+    value: "520399"
     display_name: "Altres (especificar)"
   - 
     value: "5204"
     display_name: "Demografia històrica"
   - 
-    value: "5204.01"
+    value: "520401"
     display_name: "Fertilitat i índex de matrimonis"
   - 
-    value: "5204.02"
+    value: "520402"
     display_name: "Qüestions metodològiques"
   - 
-    value: "5204.03"
+    value: "520403"
     display_name: "Migracions"
   - 
-    value: "5204.04"
+    value: "520404"
     display_name: "Mortalitat"
   - 
-    value: "5204.05"
+    value: "520405"
     display_name: "Fonts d'observació"
   - 
-    value: "5204.06"
+    value: "520406"
     display_name: "Qüestions teòriques"
   - 
-    value: "5204.99"
+    value: "520499"
     display_name: "Altres (especificar)"
   - 
     value: "5205"
     display_name: "Mortalitat"
   - 
-    value: "5205.01"
+    value: "520501"
     display_name: "Causes de mortalitat"
   - 
-    value: "5205.02"
+    value: "520502"
     display_name: "Mortalitat general"
   - 
-    value: "5205.03"
+    value: "520503"
     display_name: "Mortalitat infantil"
   - 
-    value: "5205.04"
+    value: "520504"
     display_name: "Mortalitat prenatal i perinatal"
   - 
-    value: "5205.05"
+    value: "520505"
     display_name: "Relació de variables"
   - 
-    value: "5205.99"
+    value: "520599"
     display_name: "Altres (especificar)"
   - 
     value: "5206"
     display_name: "Característiques de la població"
   - 
-    value: "5206.01"
+    value: "520601"
     display_name: "Població activa"
   - 
-    value: "5206.02"
+    value: "520602"
     display_name: "Distribució d'edat"
   - 
-    value: "5206.03"
+    value: "520603"
     display_name: "Envelliment de la població"
   - 
-    value: "5206.04"
+    value: "520604"
     display_name: "Característiques biològiques"
   - 
-    value: "5206.05"
+    value: "520605"
     display_name: "Característiques epidemiològiques"
   - 
-    value: "5206.06"
+    value: "520606"
     display_name: "Estructures demogràfiques generals"
   - 
-    value: "5206.07"
+    value: "520607"
     display_name: "Morbiditat"
   - 
-    value: "5206.08"
+    value: "520608"
     display_name: "Genètica de la població"
   - 
-    value: "5206.09"
+    value: "520609"
     display_name: "Sexe"
   - 
-    value: "5206.10"
+    value: "520610"
     display_name: "Característiques soci-econòmiques"
   - 
-    value: "5206.99"
+    value: "520699"
     display_name: "Altres (especificar)"
   - 
     value: "5207"
     display_name: "Grandària de la població i evolució demogràfica"
   - 
-    value: "5207.01"
+    value: "520701"
     display_name: "Càlcul demogràfic"
   - 
-    value: "5207.02"
+    value: "520702"
     display_name: "Transició demogràfica"
   - 
-    value: "5207.03"
+    value: "520703"
     display_name: "Anàlisi demogràfica"
   - 
-    value: "5207.04"
+    value: "520704"
     display_name: "Censos de població i recollida d'altres dades"
   - 
-    value: "5207.05"
+    value: "520705"
     display_name: "Estimacions de població"
   - 
-    value: "5207.06"
+    value: "520706"
     display_name: "Previsions de població"
   - 
-    value: "5207.07"
+    value: "520707"
     display_name: "Creixement de la població"
   - 
-    value: "5207.08"
+    value: "520708"
     display_name: "Models de població"
   - 
-    value: "5207.09"
+    value: "520709"
     display_name: "Projeccions de població"
   - 
-    value: "5207.10"
+    value: "520710"
     display_name: "Estadística de poblacions"
   - 
-    value: "5207.99"
+    value: "520799"
     display_name: "Altres (especificar)"
   - 
     value: "5299"
@@ -5644,343 +5644,343 @@ unesco:
     value: "5301"
     display_name: "Política fiscal i hisenda publica nacionals"
   - 
-    value: "5301.01"
+    value: "530101"
     display_name: "Política fiscal i deute publica"
   - 
-    value: "5301.02"
+    value: "530102"
     display_name: "Hisenda publica (pressupost)"
   - 
-    value: "5301.99"
+    value: "530199"
     display_name: "Altres (especificar)"
   - 
     value: "5302"
     display_name: "Econometria"
   - 
-    value: "5302.01"
+    value: "530201"
     display_name: "Indicadors econòmics"
   - 
-    value: "5302.02"
+    value: "530202"
     display_name: "Models economètrics"
   - 
-    value: "5302.03"
+    value: "530203"
     display_name: "Projecció econòmica"
   - 
-    value: "5302.04"
+    value: "530204"
     display_name: "Estadística econòmica"
   - 
-    value: "5302.05"
+    value: "530205"
     display_name: "Sèries cronològiques econòmiques"
   - 
-    value: "5302.99"
+    value: "530299"
     display_name: "Altres (especificar)"
   - 
     value: "5303"
     display_name: "Comptabilitat pública"
   - 
-    value: "5303.01"
+    value: "530301"
     display_name: "Comptes financers"
   - 
-    value: "5303.02"
+    value: "530302"
     display_name: "Riquesa nacional i balança de pagaments"
   - 
-    value: "5303.03"
+    value: "530303"
     display_name: "Comptabilitat de la renda nacional"
   - 
-    value: "5303.04"
+    value: "530304"
     display_name: "Entrada-sortida"
   - 
-    value: "5303.05"
+    value: "530305"
     display_name: "Comptes socials"
   - 
-    value: "5303.99"
+    value: "530399"
     display_name: "Uns altres (especificar)"
   - 
     value: "5304"
     display_name: "Activitat econòmica"
   - 
-    value: "5304.01"
+    value: "530401"
     display_name: "Consum, estalvi, inversió"
   - 
-    value: "5304.02"
+    value: "530402"
     display_name: "Distribució"
   - 
-    value: "5304.03"
+    value: "530403"
     display_name: "Comerç interior"
   - 
-    value: "5304.04"
+    value: "530404"
     display_name: "Comerç exterior"
   - 
-    value: "5304.05"
+    value: "530405"
     display_name: "Assegurances"
   - 
-    value: "5304.06"
+    value: "530406"
     display_name: "Diners i operacions bancàries"
   - 
-    value: "5304.07"
+    value: "530407"
     display_name: "Producció"
   - 
-    value: "5304.08"
+    value: "530408"
     display_name: "Redistribució"
   - 
-    value: "5304.99"
+    value: "530499"
     display_name: "Altres (especificar)"
   - 
     value: "5305"
     display_name: "Sistemes econòmics"
   - 
-    value: "5305.01"
+    value: "530501"
     display_name: "Sistemes econòmics capitalistes"
   - 
-    value: "5305.02"
+    value: "530502"
     display_name: "Sistemes econòmics col·lectivistes"
   - 
-    value: "5305.03"
+    value: "530503"
     display_name: "Sistemes econòmics comparats"
   - 
-    value: "5305.04"
+    value: "530504"
     display_name: "Sistemes econòmics socialistes"
   - 
-    value: "5305.99"
+    value: "530599"
     display_name: "Altres (especificar)"
   - 
     value: "5306"
     display_name: "Economia del canvi tecnològic"
   - 
-    value: "5306.01"
+    value: "530601"
     display_name: "Economia de la investigació i del desenvolupament experimental"
   - 
-    value: "5306.02"
+    value: "530602"
     display_name: "Innovació tecnològica"
   - 
-    value: "5306.03"
+    value: "530603"
     display_name: "Transferència de tecnologia"
   - 
-    value: "5306.99"
+    value: "530699"
     display_name: "Altres (especificar)"
   - 
     value: "5307"
     display_name: "Teoria econòmica"
   - 
-    value: "5307.01"
+    value: "530701"
     display_name: "Formació de capital"
   - 
-    value: "5307.02"
+    value: "530702"
     display_name: "Teoria del crèdit"
   - 
-    value: "5307.03"
+    value: "530703"
     display_name: "Models i teories del desenvolupament econòmic"
   - 
-    value: "5307.04"
+    value: "530704"
     display_name: "Estudis de desenvolupament econòmic"
   - 
-    value: "5307.05"
+    value: "530705"
     display_name: "Equilibri econòmic"
   - 
-    value: "5307.06"
+    value: "530706"
     display_name: "Fluctuacions econòmiques"
   - 
-    value: "5307.07"
+    value: "530707"
     display_name: "Previsió econòmica"
   - 
-    value: "5307.08"
+    value: "530708"
     display_name: "Teoria del creixement econòmic"
   - 
-    value: "5307.09"
+    value: "530709"
     display_name: "Teoria de la planificació econòmica"
   - 
-    value: "5307.10"
+    value: "530710"
     display_name: "Teoria i models d'ocupació"
   - 
-    value: "5307.11"
+    value: "530711"
     display_name: "Teoria fiscal"
   - 
-    value: "5307.12"
+    value: "530712"
     display_name: "Teoria del comerç internacional"
   - 
-    value: "5307.13"
+    value: "530713"
     display_name: "Teoria de la inversió"
   - 
-    value: "5307.14"
+    value: "530714"
     display_name: "Teoria macroeconòmica"
   - 
-    value: "5307.15"
+    value: "530715"
     display_name: "Teoria microeconòmica"
   - 
-    value: "5307.16"
+    value: "530716"
     display_name: "Teoria monetària"
   - 
-    value: "5307.17"
+    value: "530717"
     display_name: "Teoria de l'estalvi"
   - 
-    value: "5307.18"
+    value: "530718"
     display_name: "Teories de l'estabilització"
   - 
-    value: "5307.19"
+    value: "530719"
     display_name: "Teoria del benestar"
   - 
-    value: "5307.99"
+    value: "530799"
     display_name: "Altres (especificar)"
   - 
     value: "5308"
     display_name: "Economia general"
   - 
-    value: "5308.01"
+    value: "530801"
     display_name: "Metodologia econòmica"
   - 
-    value: "5308.02"
+    value: "530802"
     display_name: "Comportament del consumidor"
   - 
-    value: "5308.03"
+    value: "530803"
     display_name: "Història del pensament econòmic"
   - 
-    value: "5308.99"
+    value: "530899"
     display_name: "Altres (especificar)"
   - 
     value: "5309"
     display_name: "Organització de la industrial i política econòmica pública"
   - 
-    value: "5309.01"
+    value: "530901"
     display_name: "Concentració econòmica"
   - 
-    value: "5309.02"
+    value: "530902"
     display_name: "Integració econòmica"
   - 
-    value: "5309.03"
+    value: "530903"
     display_name: "Regulació governamental del sector privat"
   - 
-    value: "5309.04"
+    value: "530904"
     display_name: "Estructura del mercat"
   - 
-    value: "5309.05"
+    value: "530905"
     display_name: "Monopoli i competència"
   - 
-    value: "5309.06"
+    value: "530906"
     display_name: "Empreses publiques"
   - 
-    value: "5309.07"
+    value: "530907"
     display_name: "Empreses de serveis públics"
   - 
-    value: "5309.99"
+    value: "530999"
     display_name: "Altres (especificar)"
   - 
     value: "5310"
     display_name: "Economia internacional"
   - 
-    value: "5310.01"
+    value: "531001"
     display_name: "Balança de pagaments"
   - 
-    value: "5310.02"
+    value: "531002"
     display_name: "Ajuda exterior"
   - 
-    value: "5310.03"
+    value: "531003"
     display_name: "Ajuda internacional"
   - 
-    value: "5310.04"
+    value: "531004"
     display_name: "Operacions comercials internacionals"
   - 
-    value: "5310.05"
+    value: "531005"
     display_name: "Política econòmica internacional"
   - 
-    value: "5310.06"
+    value: "531006"
     display_name: "Finançament internacional"
   - 
-    value: "5310.07"
+    value: "531007"
     display_name: "Inversió exterior"
   - 
-    value: "5310.08"
+    value: "531008"
     display_name: "Acords monetaris internacionals"
   - 
-    value: "5310.09"
+    value: "531009"
     display_name: "Relacions comercials internacionals"
   - 
-    value: "5310.90"
+    value: "531090"
     display_name: "Economia internacional: Area Americana"
   - 
-    value: "5310.91"
+    value: "531091"
     display_name: "Economia internacional: Area Europea"
   - 
-    value: "5310.99"
+    value: "531099"
     display_name: "Altres (especificar)"
   - 
     value: "5311"
     display_name: "Organització i adreça d'empreses"
   - 
-    value: "5311.01"
+    value: "531101"
     display_name: "Publicitat"
   - 
-    value: "5311.02"
+    value: "531102"
     display_name: "Gestió financera"
   - 
-    value: "5311.03"
+    value: "531103"
     display_name: "Estudis industrials"
   - 
-    value: "5311.04"
+    value: "531104"
     display_name: "Organització de recursos humans"
   - 
-    value: "5311.05"
+    value: "531105"
     display_name: "Màrqueting (comercialització)"
   - 
-    value: "5311.06"
+    value: "531106"
     display_name: "Estudi de mercats"
   - 
-    value: "5311.07"
+    value: "531107"
     display_name: "Investigació operativa"
   - 
-    value: "5311.08"
+    value: "531108"
     display_name: "Nivells òptims de producció"
   - 
-    value: "5311.09"
+    value: "531109"
     display_name: "Organització de la producció"
   - 
-    value: "5311.10"
+    value: "531110"
     display_name: "Adreça de vendes"
   - 
-    value: "5311.99"
+    value: "531199"
     display_name: "Altres (especificar)"
   - 
     value: "5312"
     display_name: "Economia sectorial"
   - 
-    value: "5312.01"
+    value: "531201"
     display_name: "Agricultura, silvicultura, pesca"
   - 
-    value: "5312.02"
+    value: "531202"
     display_name: "Serveis comunitaris, socials i individuals"
   - 
-    value: "5312.03"
+    value: "531203"
     display_name: "Construcció"
   - 
-    value: "5312.04"
+    value: "531204"
     display_name: "Educació"
   - 
-    value: "5312.05"
+    value: "531205"
     display_name: "Energia"
   - 
-    value: "5312.06"
+    value: "531206"
     display_name: "Finances i assegurances"
   - 
-    value: "5312.07"
+    value: "531207"
     display_name: "Sanitat"
   - 
-    value: "5312.08"
+    value: "531208"
     display_name: "Fabricació"
   - 
-    value: "5312.09"
+    value: "531209"
     display_name: "Mineria"
   - 
-    value: "5312.10"
+    value: "531210"
     display_name: "Investigació i desenvolupament"
   - 
-    value: "5312.11"
+    value: "531211"
     display_name: "Comerç"
   - 
-    value: "5312.12"
+    value: "531212"
     display_name: "Transports i comunicacions"
   - 
-    value: "5312.90"
+    value: "531290"
     display_name: "Economia sectorial. Turisme"
   - 
-    value: "5312.99"
+    value: "531299"
     display_name: "Altres (especificar)"
   - 
     value: "5399"
@@ -5992,19 +5992,19 @@ unesco:
     value: "5401"
     display_name: "Geografia econòmica"
   - 
-    value: "5401.01"
+    value: "540101"
     display_name: "Distribució de recursos naturals"
   - 
-    value: "5401.02"
+    value: "540102"
     display_name: "Geografia de les activitats"
   - 
-    value: "5401.03"
+    value: "540103"
     display_name: "Utilització de la terra"
   - 
-    value: "5401.04"
+    value: "540104"
     display_name: "Desenvolupament regional"
   - 
-    value: "5401.99"
+    value: "540199"
     display_name: "Altres (especificar)"
   - 
     value: "5402"
@@ -6013,37 +6013,37 @@ unesco:
     value: "5403"
     display_name: "Geografia humana"
   - 
-    value: "5403.01"
+    value: "540301"
     display_name: "Geografia cultural"
   - 
-    value: "5403.02"
+    value: "540302"
     display_name: "Demogeografía"
   - 
-    value: "5403.03"
+    value: "540303"
     display_name: "Geografia lingüística"
   - 
-    value: "5403.04"
+    value: "540304"
     display_name: "Geografia de la religió"
   - 
-    value: "5403.05"
+    value: "540305"
     display_name: "Geografia política"
   - 
-    value: "5403.06"
+    value: "540306"
     display_name: "Geografia social"
   - 
-    value: "5403.99"
+    value: "540399"
     display_name: "Altres (especificar)"
   - 
     value: "5404"
     display_name: "Geografia regional"
   - 
-    value: "5404.01"
+    value: "540401"
     display_name: "Geografia urbana"
   - 
-    value: "5404.02"
+    value: "540402"
     display_name: "Geografia rural"
   - 
-    value: "5404.99"
+    value: "540499"
     display_name: "Altres (especificar)"
   - 
     value: "5499"
@@ -6058,178 +6058,178 @@ unesco:
     value: "5502"
     display_name: "Història general"
   - 
-    value: "5502.01"
+    value: "550201"
     display_name: "Història comparada"
   - 
-    value: "5502.02"
+    value: "550202"
     display_name: "Historiografia"
   - 
-    value: "5502.03"
+    value: "550203"
     display_name: "Monografies històriques"
   - 
-    value: "5502.04"
+    value: "550204"
     display_name: "Teories i mètodes"
   - 
-    value: "5502.99"
+    value: "550299"
     display_name: "Altres (especificar)"
   - 
     value: "5503"
     display_name: "Història de països"
   - 
-    value: "5503.01"
+    value: "550301"
     display_name: "Història local"
   - 
-    value: "5503.02"
+    value: "550302"
     display_name: "Història regional"
   - 
-    value: "5503.99"
+    value: "550399"
     display_name: "Altres (especificar)"
   - 
     value: "5504"
     display_name: "Història per èpoques"
   - 
-    value: "5504.01"
+    value: "550401"
     display_name: "Història antiga"
   - 
-    value: "5504.02"
+    value: "550402"
     display_name: "Història contemporània"
   - 
-    value: "5504.03"
+    value: "550403"
     display_name: "Història medieval"
   - 
-    value: "5504.04"
+    value: "550404"
     display_name: "Història moderna"
   - 
-    value: "5504.05"
+    value: "550405"
     display_name: "Prehistòria"
   - 
-    value: "5504.99"
+    value: "550499"
     display_name: "Altres (especificar)"
   - 
     value: "5505"
     display_name: "Ciències auxiliars de la història"
   - 
-    value: "5505.01"
+    value: "550501"
     display_name: "Arqueologia"
   - 
-    value: "5505.02"
+    value: "550502"
     display_name: "Ciència de la ceràmica"
   - 
-    value: "5505.03"
+    value: "550503"
     display_name: "Epigrafia"
   - 
-    value: "5505.04"
+    value: "550504"
     display_name: "Heràldica"
   - 
-    value: "5505.05"
+    value: "550505"
     display_name: "Iconografia"
   - 
-    value: "5505.06"
+    value: "550506"
     display_name: "Numismàtica"
   - 
-    value: "5505.07"
+    value: "550507"
     display_name: "Onomàstica"
   - 
-    value: "5505.08"
+    value: "550508"
     display_name: "Paleografia"
   - 
-    value: "5505.09"
+    value: "550509"
     display_name: "Papirología"
   - 
-    value: "5505.10"
+    value: "550510"
     display_name: "Filologia"
   - 
-    value: "5505.11"
+    value: "550511"
     display_name: "Sigil·lografia"
   - 
-    value: "5505.12"
+    value: "550512"
     display_name: "Estratigrafia"
   - 
-    value: "5505.99"
+    value: "550599"
     display_name: "Altres (especificar)"
   - 
     value: "5506"
     display_name: "Història per especialitats"
   - 
-    value: "5506.01"
+    value: "550601"
     display_name: "Història de l'arquitectura"
   - 
-    value: "5506.02"
+    value: "550602"
     display_name: "Història de l'art"
   - 
-    value: "5506.03"
+    value: "550603"
     display_name: "Història de l'astronomia"
   - 
-    value: "5506.04"
+    value: "550604"
     display_name: "Història de la biologia"
   - 
-    value: "5506.05"
+    value: "550605"
     display_name: "Història de la química"
   - 
-    value: "5506.06"
+    value: "550606"
     display_name: "Història de l'economia"
   - 
-    value: "5506.07"
+    value: "550607"
     display_name: "Història de l'educació"
   - 
-    value: "5506.08"
+    value: "550608"
     display_name: "Història de la geografia"
   - 
-    value: "5506.09"
+    value: "550609"
     display_name: "Història de la geologia"
   - 
-    value: "5506.10"
+    value: "550610"
     display_name: "Història de les relacions internacionals"
   - 
-    value: "5506.11"
+    value: "550611"
     display_name: "Història del periodisme"
   - 
-    value: "5506.12"
+    value: "550612"
     display_name: "Història del dret i de les institucions jurídiques"
   - 
-    value: "5506.13"
+    value: "550613"
     display_name: "Història de la literatura"
   - 
-    value: "5506.14"
+    value: "550614"
     display_name: "Història de la lingüística"
   - 
-    value: "5506.15"
+    value: "550615"
     display_name: "Història de la lògica"
   - 
-    value: "5506.16"
+    value: "550616"
     display_name: "Història de la magistratura"
   - 
-    value: "5506.17"
+    value: "550617"
     display_name: "Història de la medicina"
   - 
-    value: "5506.18"
+    value: "550618"
     display_name: "Història de la filosofia"
   - 
-    value: "5506.19"
+    value: "550619"
     display_name: "Història de la física"
   - 
-    value: "5506.20"
+    value: "550620"
     display_name: "Història de les idees polítiques"
   - 
-    value: "5506.21"
+    value: "550621"
     display_name: "Història de les religions"
   - 
-    value: "5506.22"
+    value: "550622"
     display_name: "Història de la ciència"
   - 
-    value: "5506.23"
+    value: "550623"
     display_name: "Història de la sociologia"
   - 
-    value: "5506.24"
+    value: "550624"
     display_name: "Història de la tecnologia"
   - 
-    value: "5506.25"
+    value: "550625"
     display_name: "Història de la guerra"
   - 
-    value: "5506.90"
+    value: "550690"
     display_name: "Història de la botànica"
   - 
-    value: "5506.99"
+    value: "550699"
     display_name: "Altres (especificar)"
   - 
     value: "5599"
@@ -6244,88 +6244,88 @@ unesco:
     value: "5602"
     display_name: "Teoria i mètodes generals"
   - 
-    value: "5602.01"
+    value: "560201"
     display_name: "Dret comú anglosaxó"
   - 
-    value: "5602.02"
+    value: "560202"
     display_name: "Dret comparat"
   - 
-    value: "5602.03"
+    value: "560203"
     display_name: "Filosofia del dret"
   - 
-    value: "5602.04"
+    value: "560204"
     display_name: "Dret de l'antiguitat"
   - 
-    value: "5602.05"
+    value: "560205"
     display_name: "Dret natural"
   - 
-    value: "5602.06"
+    value: "560206"
     display_name: "Legislació"
   - 
-    value: "5602.99"
+    value: "560299"
     display_name: "Altres (especificar)"
   - 
     value: "5603"
     display_name: "Dret internacional"
   - 
-    value: "5603.01"
+    value: "560301"
     display_name: "Dret aeronàutic"
   - 
-    value: "5603.02"
+    value: "560302"
     display_name: "Dret del mar"
   - 
-    value: "5603.03"
+    value: "560303"
     display_name: "Dret sobre l'espai ultraterrestre"
   - 
-    value: "5603.04"
+    value: "560304"
     display_name: "Dret sobre els fons marins"
   - 
-    value: "5603.99"
+    value: "560399"
     display_name: "Altres (especificar)"
   - 
     value: "5604"
     display_name: "Organització jurídica"
   - 
-    value: "5604.01"
+    value: "560401"
     display_name: "Funcionaris de justícia i processos judicials"
   - 
-    value: "5604.02"
+    value: "560402"
     display_name: "Magistratura"
   - 
-    value: "5604.03"
+    value: "560403"
     display_name: "Tribunals"
   - 
-    value: "5604.99"
+    value: "560499"
     display_name: "Altres (especificar)"
   - 
     value: "5605"
     display_name: "Dret i legislació nacionals"
   - 
-    value: "5605.01"
+    value: "560501"
     display_name: "Dret administratiu"
   - 
-    value: "5605.02"
+    value: "560502"
     display_name: "Dret civil"
   - 
-    value: "5605.03"
+    value: "560503"
     display_name: "Dret mercantil"
   - 
-    value: "5605.04"
+    value: "560504"
     display_name: "Dret constitucional"
   - 
-    value: "5605.05"
+    value: "560505"
     display_name: "Dret penal"
   - 
-    value: "5605.06"
+    value: "560506"
     display_name: "Dret fiscal"
   - 
-    value: "5605.07"
+    value: "560507"
     display_name: "Dret públic"
   - 
-    value: "5605.08"
+    value: "560508"
     display_name: "Dret privat"
   - 
-    value: "5605.99"
+    value: "560599"
     display_name: "Altres (especificar)"
   - 
     value: "5699"
@@ -6337,55 +6337,55 @@ unesco:
     value: "5701"
     display_name: "Lingüística aplicada"
   - 
-    value: "5701.01"
+    value: "570101"
     display_name: "Resums"
   - 
-    value: "5701.02"
+    value: "570102"
     display_name: "Documentació automatitzada"
   - 
-    value: "5701.03"
+    value: "570103"
     display_name: "Bilingüisme"
   - 
-    value: "5701.04"
+    value: "570104"
     display_name: "Lingüística informatitzada"
   - 
-    value: "5701.05"
+    value: "570105"
     display_name: "Llenguatges documentals"
   - 
-    value: "5701.06"
+    value: "570106"
     display_name: "Documentació"
   - 
-    value: "5701.07"
+    value: "570107"
     display_name: "Llengua i literatura"
   - 
-    value: "5701.08"
+    value: "570108"
     display_name: "Llenguatge infantil"
   - 
-    value: "5701.09"
+    value: "570109"
     display_name: "Traducció automàtica"
   - 
-    value: "5701.10"
+    value: "570110"
     display_name: "Patologia i correcció del llenguatge"
   - 
-    value: "5701.11"
+    value: "570111"
     display_name: "Ensenyament de llengües"
   - 
-    value: "5701.12"
+    value: "570112"
     display_name: "Traducció"
   - 
-    value: "5701.99"
+    value: "570199"
     display_name: "Altres (especificar)"
   - 
     value: "5702"
     display_name: "Lingüística diacrònica"
   - 
-    value: "5702.01"
+    value: "570201"
     display_name: "Lingüística històrica"
   - 
-    value: "5702.02"
+    value: "570202"
     display_name: "Etimologia"
   - 
-    value: "5702.99"
+    value: "570299"
     display_name: "Altres (especificar)"
   - 
     value: "5703"
@@ -6397,46 +6397,46 @@ unesco:
     value: "5705"
     display_name: "Lingüística sincrònica"
   - 
-    value: "5705.01"
+    value: "570501"
     display_name: "Lingüística comparada"
   - 
-    value: "5705.02"
+    value: "570502"
     display_name: "Etnolingüística"
   - 
-    value: "5705.03"
+    value: "570503"
     display_name: "Lexicografia"
   - 
-    value: "5705.04"
+    value: "570504"
     display_name: "Lexicologia"
   - 
-    value: "5705.05"
+    value: "570505"
     display_name: "Fonètica"
   - 
-    value: "5705.06"
+    value: "570506"
     display_name: "Fonologia"
   - 
-    value: "5705.07"
+    value: "570507"
     display_name: "Psicolingüística"
   - 
-    value: "5705.08"
+    value: "570508"
     display_name: "Semàntica"
   - 
-    value: "5705.09"
+    value: "570509"
     display_name: "Semiologia"
   - 
-    value: "5705.10"
+    value: "570510"
     display_name: "Sociolingüística"
   - 
-    value: "5705.11"
+    value: "570511"
     display_name: "Ortografia"
   - 
-    value: "5705.12"
+    value: "570512"
     display_name: "Estilística (estil i retòrica)"
   - 
-    value: "5705.13"
+    value: "570513"
     display_name: "Sintaxi, anàlisi sintàctica"
   - 
-    value: "5705.99"
+    value: "570599"
     display_name: "Altres (especificar)"
   - 
     value: "5799"
@@ -6448,70 +6448,70 @@ unesco:
     value: "5801"
     display_name: "Teoria i mètodes educatius"
   - 
-    value: "5801.01"
+    value: "580101"
     display_name: "Mitjans audiovisuals"
   - 
-    value: "5801.02"
+    value: "580102"
     display_name: "Pedagogia comparada"
   - 
-    value: "5801.03"
+    value: "580103"
     display_name: "Desenvolupament del programa d'estudis"
   - 
-    value: "5801.04"
+    value: "580104"
     display_name: "Teories educatives"
   - 
-    value: "5801.05"
+    value: "580105"
     display_name: "Pedagogia experimental"
   - 
-    value: "5801.06"
+    value: "580106"
     display_name: "Avaluació d'alumnes"
   - 
-    value: "5801.07"
+    value: "580107"
     display_name: "Mètodes pedagògics"
   - 
-    value: "5801.08"
+    value: "580108"
     display_name: "Ensenyament programat"
   - 
-    value: "5801.99"
+    value: "580199"
     display_name: "Altres (especificar)"
   - 
     value: "5802"
     display_name: "Organització i planificació de l'educació"
   - 
-    value: "5802.01"
+    value: "580201"
     display_name: "Educació d'adults"
   - 
-    value: "5802.02"
+    value: "580202"
     display_name: "Organització i adreça de les institucions educatives"
   - 
-    value: "5802.03"
+    value: "580203"
     display_name: "Desenvolupament d'assignatures"
   - 
-    value: "5802.04"
+    value: "580204"
     display_name: "Nivells i temes d'educació"
   - 
-    value: "5802.05"
+    value: "580205"
     display_name: "Educació especial: minusvàlids i deficients mentals"
   - 
-    value: "5802.06"
+    value: "580206"
     display_name: "Anàlisis, realització de models i planificació estadística"
   - 
-    value: "5802.07"
+    value: "580207"
     display_name: "Formació professional"
   - 
-    value: "5802.99"
+    value: "580299"
     display_name: "Altres (especificar)"
   - 
     value: "5803"
     display_name: "Preparació i ocupació de professors"
   - 
-    value: "5803.01"
+    value: "580301"
     display_name: "Carreres i categoria del professorat"
   - 
-    value: "5803.02"
+    value: "580302"
     display_name: "Preparació de professors"
   - 
-    value: "5803.99"
+    value: "580399"
     display_name: "Altres (especificar)"
   - 
     value: "5899"
@@ -6523,76 +6523,76 @@ unesco:
     value: "5901"
     display_name: "Relacions internacionals"
   - 
-    value: "5901.01"
+    value: "590101"
     display_name: "Cooperació internacional"
   - 
-    value: "5901.02"
+    value: "590102"
     display_name: "Organitzacions internacionals"
   - 
-    value: "5901.03"
+    value: "590103"
     display_name: "Política internacional"
   - 
-    value: "5901.04"
+    value: "590104"
     display_name: "Tractats i acords internacionals"
   - 
-    value: "5901.05"
+    value: "590105"
     display_name: "Problemes de les relacions internacionals"
   - 
-    value: "5901.99"
+    value: "590199"
     display_name: "Altres (especificar)"
   - 
     value: "5902"
     display_name: "Ciències polítiques"
   - 
-    value: "5902.01"
+    value: "590201"
     display_name: "Política agrícola"
   - 
-    value: "5902.02"
+    value: "590202"
     display_name: "Política cultural"
   - 
-    value: "5902.03"
+    value: "590203"
     display_name: "Política comercial"
   - 
-    value: "5902.04"
+    value: "590204"
     display_name: "Política de comunicacions"
   - 
-    value: "5902.05"
+    value: "590205"
     display_name: "Política demogràfica"
   - 
-    value: "5902.06"
+    value: "590206"
     display_name: "Política econòmica"
   - 
-    value: "5902.07"
+    value: "590207"
     display_name: "Política educativa"
   - 
-    value: "5902.08"
+    value: "590208"
     display_name: "Política del medi ambient"
   - 
-    value: "5902.09"
+    value: "590209"
     display_name: "Política exterior"
   - 
-    value: "5902.10"
+    value: "590210"
     display_name: "Política sanitària"
   - 
-    value: "5902.11"
+    value: "590211"
     display_name: "Política industrial"
   - 
-    value: "5902.12"
+    value: "590212"
     display_name: "Política de la informació"
   - 
-    value: "5902.13"
+    value: "590213"
     display_name: "Planificació política"
   - 
-    value: "5902.14"
+    value: "590214"
     display_name: "Política científica i tecnològica"
   - 
-    value: "5902.15"
+    value: "590215"
     display_name: "Política social"
   - 
-    value: "5902.16"
+    value: "590216"
     display_name: "Política de transports"
   - 
-    value: "5902.99"
+    value: "590299"
     display_name: "Altres (especificar)"
   - 
     value: "5903"
@@ -6601,73 +6601,73 @@ unesco:
     value: "5904"
     display_name: "Institucions polítiques"
   - 
-    value: "5904.01"
+    value: "590401"
     display_name: "Poder executiu"
   - 
-    value: "5904.02"
+    value: "590402"
     display_name: "Poder judicial"
   - 
-    value: "5904.03"
+    value: "590403"
     display_name: "Poder legislatiu"
   - 
-    value: "5904.04"
+    value: "590404"
     display_name: "Relacions entre els poders"
   - 
-    value: "5904.99"
+    value: "590499"
     display_name: "Altres (especificar)"
   - 
     value: "5905"
     display_name: "Vida política"
   - 
-    value: "5905.01"
+    value: "590501"
     display_name: "Eleccions"
   - 
-    value: "5905.02"
+    value: "590502"
     display_name: "Comportament polític"
   - 
-    value: "5905.03"
+    value: "590503"
     display_name: "Grups polítics"
   - 
-    value: "5905.04"
+    value: "590504"
     display_name: "Lideratge polític"
   - 
-    value: "5905.05"
+    value: "590505"
     display_name: "Moviments polítics"
   - 
-    value: "5905.06"
+    value: "590506"
     display_name: "Partits polítics"
   - 
-    value: "5905.99"
+    value: "590599"
     display_name: "Altres (especificar)"
   - 
     value: "5906"
     display_name: "Sociologia política"
   - 
-    value: "5906.01"
+    value: "590601"
     display_name: "Drets humans"
   - 
-    value: "5906.02"
+    value: "590602"
     display_name: "Llengües"
   - 
-    value: "5906.03"
+    value: "590603"
     display_name: "Minories"
   - 
-    value: "5906.04"
+    value: "590604"
     display_name: "Raça"
   - 
-    value: "5906.05"
+    value: "590605"
     display_name: "Religió"
   - 
-    value: "5906.06"
+    value: "590606"
     display_name: "Conflictes socials"
   - 
-    value: "5906.99"
+    value: "590699"
     display_name: "Altres (especificar)"
   - 
     value: "5907"
     display_name: "Sistemes polítics"
   - 
-    value: "5907.90"
+    value: "590790"
     display_name: "Sistemes polítics: Area Americana"
   - 
     value: "5908"
@@ -6676,40 +6676,40 @@ unesco:
     value: "5909"
     display_name: "Administració pública"
   - 
-    value: "5909.01"
+    value: "590901"
     display_name: "Gestió administrativa"
   - 
-    value: "5909.02"
+    value: "590902"
     display_name: "Institucions centrals"
   - 
-    value: "5909.03"
+    value: "590903"
     display_name: "Administració civil"
   - 
-    value: "5909.04"
+    value: "590904"
     display_name: "Serveis públics"
   - 
-    value: "5909.05"
+    value: "590905"
     display_name: "Institucions regionals"
   - 
-    value: "5909.99"
+    value: "590999"
     display_name: "Altres (especificar)"
   - 
     value: "5910"
     display_name: "Opinió pública"
   - 
-    value: "5910.01"
+    value: "591001"
     display_name: "Informació"
   - 
-    value: "5910.02"
+    value: "591002"
     display_name: "Mitjans de comunicació de masses"
   - 
-    value: "5910.03"
+    value: "591003"
     display_name: "Premsa"
   - 
-    value: "5910.04"
+    value: "591004"
     display_name: "Propaganda"
   - 
-    value: "5910.99"
+    value: "591099"
     display_name: "Altres (especificar)"
   - 
     value: "5999"
@@ -6721,352 +6721,352 @@ unesco:
     value: "6101"
     display_name: "Patologia"
   - 
-    value: "6101.01"
+    value: "610101"
     display_name: "Desordres del comportament"
   - 
-    value: "6101.02"
+    value: "610102"
     display_name: "Comportament desviat"
   - 
-    value: "6101.03"
+    value: "610103"
     display_name: "Deficiència mental"
   - 
-    value: "6101.04"
+    value: "610104"
     display_name: "Psicopatología"
   - 
-    value: "6101.99"
+    value: "610199"
     display_name: "Altres (especificar)"
   - 
     value: "6102"
     display_name: "Psicologia del nen i de l'adolescent"
   - 
-    value: "6102.01"
+    value: "610201"
     display_name: "Psicologia evolutiva"
   - 
-    value: "6102.02"
+    value: "610202"
     display_name: "Problemes d'aprenentatge"
   - 
-    value: "6102.03"
+    value: "610203"
     display_name: "Deficiència mental"
   - 
-    value: "6102.04"
+    value: "610204"
     display_name: "Psicologia escolar"
   - 
-    value: "6102.05"
+    value: "610205"
     display_name: "Patologia del llenguatge"
   - 
-    value: "6102.99"
+    value: "610299"
     display_name: "Altres (especificar)"
   - 
     value: "6103"
     display_name: "Assessorament i orientació"
   - 
-    value: "6103.01"
+    value: "610301"
     display_name: "Teràpia del comportament"
   - 
-    value: "6103.02"
+    value: "610302"
     display_name: "Psicologia de l'orientació"
   - 
-    value: "6103.03"
+    value: "610303"
     display_name: "Assessorament i orientació educacional"
   - 
-    value: "6103.04"
+    value: "610304"
     display_name: "Teràpia de grup"
   - 
-    value: "6103.05"
+    value: "610305"
     display_name: "Deficiència mental"
   - 
-    value: "6103.06"
+    value: "610306"
     display_name: "Psicoanàlisi"
   - 
-    value: "6103.07"
+    value: "610307"
     display_name: "Psicoterapia"
   - 
-    value: "6103.08"
+    value: "610308"
     display_name: "Rehabilitació"
   - 
-    value: "6103.09"
+    value: "610309"
     display_name: "Orientació professional"
   - 
-    value: "6103.99"
+    value: "610399"
     display_name: "Altres (especificar)"
   - 
     value: "6104"
     display_name: "Psicopedagogia"
   - 
-    value: "6104.01"
+    value: "610401"
     display_name: "Processos cognitius"
   - 
-    value: "6104.02"
+    value: "610402"
     display_name: "Mètodes educatius"
   - 
-    value: "6104.03"
+    value: "610403"
     display_name: "Lleis de l'aprenentatge"
   - 
-    value: "6104.04"
+    value: "610404"
     display_name: "Psicolingüística"
   - 
-    value: "6104.99"
+    value: "610499"
     display_name: "Altres (especificar)"
   - 
     value: "6105"
     display_name: "Avaluació i diagnòstic en psicologia"
   - 
-    value: "6105.01"
+    value: "610501"
     display_name: "Psicologia diferencial"
   - 
-    value: "6105.02"
+    value: "610502"
     display_name: "Disseny experimental"
   - 
-    value: "6105.03"
+    value: "610503"
     display_name: "Teoria del mesurament"
   - 
-    value: "6105.04"
+    value: "610504"
     display_name: "Estadística"
   - 
-    value: "6105.05"
+    value: "610505"
     display_name: "Psicometria"
   - 
-    value: "6105.06"
+    value: "610506"
     display_name: "Anàlisi a escala"
   - 
-    value: "6105.07"
+    value: "610507"
     display_name: "Elaboració de tests"
   - 
-    value: "6105.08"
+    value: "610508"
     display_name: "Teoria de tests"
   - 
-    value: "6105.09"
+    value: "610509"
     display_name: "Validesa de tests"
   - 
-    value: "6105.99"
+    value: "610599"
     display_name: "Altres (especificar)"
   - 
     value: "6106"
     display_name: "Psicologia experimental"
   - 
-    value: "6106.01"
+    value: "610601"
     display_name: "Activitat cerebral"
   - 
-    value: "6106.02"
+    value: "610602"
     display_name: "Psicologia comparada"
   - 
-    value: "6106.03"
+    value: "610603"
     display_name: "Emoció"
   - 
-    value: "6106.04"
+    value: "610604"
     display_name: "Anàlisi experimental de la conducta"
   - 
-    value: "6106.05"
+    value: "610605"
     display_name: "Nivells d'activitat"
   - 
-    value: "6106.06"
+    value: "610606"
     display_name: "Processos de la memòria"
   - 
-    value: "6106.07"
+    value: "610607"
     display_name: "Processos mentals"
   - 
-    value: "6106.08"
+    value: "610608"
     display_name: "Motivació"
   - 
-    value: "6106.09"
+    value: "610609"
     display_name: "Processos de percepció"
   - 
-    value: "6106.10"
+    value: "610610"
     display_name: "Psicologia fisiològica"
   - 
-    value: "6106.11"
+    value: "610611"
     display_name: "Reacció, reflexos"
   - 
-    value: "6106.12"
+    value: "610612"
     display_name: "Processos sensorials"
   - 
-    value: "6106.99"
+    value: "610699"
     display_name: "Altres (especificar)"
   - 
     value: "6107"
     display_name: "Psicologia general"
   - 
-    value: "6107.01"
+    value: "610701"
     display_name: "Metodologia"
   - 
-    value: "6107.02"
+    value: "610702"
     display_name: "Teoria i sistemes"
   - 
-    value: "6107.99"
+    value: "610799"
     display_name: "Altres (especificar)"
   - 
     value: "6108"
     display_name: "Psicologia de la vellesa"
   - 
-    value: "6108.01"
+    value: "610801"
     display_name: "Mort"
   - 
-    value: "6108.02"
+    value: "610802"
     display_name: "Maduresa"
   - 
-    value: "6108.03"
+    value: "610803"
     display_name: "Senectud"
   - 
-    value: "6108.99"
+    value: "610899"
     display_name: "Altres (especificar)"
   - 
     value: "6109"
     display_name: "Psicologia industrial"
   - 
-    value: "6109.01"
+    value: "610901"
     display_name: "Prevenció d'accidents"
   - 
-    value: "6109.02"
+    value: "610902"
     display_name: "Motivació i actituds"
   - 
-    value: "6109.03"
+    value: "610903"
     display_name: "Planificació i avaluació de llocs de treball"
   - 
-    value: "6109.04"
+    value: "610904"
     display_name: "Relacions treballadors-directius"
   - 
-    value: "6109.05"
+    value: "610905"
     display_name: "Comportament en l'organització"
   - 
-    value: "6109.06"
+    value: "610906"
     display_name: "Selecció de personal"
   - 
-    value: "6109.07"
+    value: "610907"
     display_name: "Avaluació del rendiment"
   - 
-    value: "6109.99"
+    value: "610999"
     display_name: "Altres (especificar)"
   - 
     value: "6110"
     display_name: "Parapsicologia"
   - 
-    value: "6110.01"
+    value: "611001"
     display_name: "Percepció extrasensorial"
   - 
-    value: "6110.02"
+    value: "611002"
     display_name: "Hipnosis"
   - 
-    value: "6110.99"
+    value: "611099"
     display_name: "Altres (especificar)"
   - 
     value: "6111"
     display_name: "Personalitat"
   - 
-    value: "6111.01"
+    value: "611101"
     display_name: "Creativitat"
   - 
-    value: "6111.02"
+    value: "611102"
     display_name: "Cultura i personalitat"
   - 
-    value: "6111.03"
+    value: "611103"
     display_name: "Desenvolupament de la personalitat"
   - 
-    value: "6111.04"
+    value: "611104"
     display_name: "Mesura de la personalitat"
   - 
-    value: "6111.05"
+    value: "611105"
     display_name: "Estructura i dinàmica de la personalitat"
   - 
-    value: "6111.06"
+    value: "611106"
     display_name: "Teoria de la personalitat"
   - 
-    value: "6111.99"
+    value: "611199"
     display_name: "Altres (especificar)"
   - 
     value: "6112"
     display_name: "Estudi psicològic de temes socials"
   - 
-    value: "6112.01"
+    value: "611201"
     display_name: "Discriminació"
   - 
-    value: "6112.02"
+    value: "611202"
     display_name: "Fenòmens de grups minoritaris"
   - 
-    value: "6112.03"
+    value: "611203"
     display_name: "Política governamental"
   - 
-    value: "6112.99"
+    value: "611299"
     display_name: "Altres (especificar)"
   - 
     value: "6113"
     display_name: "Psicofarmacología"
   - 
-    value: "6113.01"
+    value: "611301"
     display_name: "Alcoholisme"
   - 
-    value: "6113.02"
+    value: "611302"
     display_name: "Reaccions del comportament"
   - 
-    value: "6113.03"
+    value: "611303"
     display_name: "Abús de drogues"
   - 
-    value: "6113.04"
+    value: "611304"
     display_name: "Efecte de les drogues"
   - 
-    value: "6113.05"
+    value: "611305"
     display_name: "Tractament de la drogoaddicció"
   - 
-    value: "6113.99"
+    value: "611399"
     display_name: "Altres (especificar)"
   - 
     value: "6114"
     display_name: "Psicologia social"
   - 
-    value: "6114.01"
+    value: "611401"
     display_name: "Publicitat"
   - 
-    value: "6114.02"
+    value: "611402"
     display_name: "Actituds"
   - 
-    value: "6114.03"
+    value: "611403"
     display_name: "Comportament col·lectiu"
   - 
-    value: "6114.04"
+    value: "611404"
     display_name: "Psicologia comunitària"
   - 
-    value: "6114.05"
+    value: "611405"
     display_name: "Resolució de conflictes"
   - 
-    value: "6114.06"
+    value: "611406"
     display_name: "Comportament del consumidor"
   - 
-    value: "6114.07"
+    value: "611407"
     display_name: "Cultura i personalitat"
   - 
-    value: "6114.08"
+    value: "611408"
     display_name: "Processos i teoria de la decisió"
   - 
-    value: "6114.09"
+    value: "611409"
     display_name: "Psicologia forense"
   - 
-    value: "6114.10"
+    value: "611410"
     display_name: "Interacció de grups"
   - 
-    value: "6114.11"
+    value: "611411"
     display_name: "Processos de grups"
   - 
-    value: "6114.12"
+    value: "611412"
     display_name: "Lideratge"
   - 
-    value: "6114.13"
+    value: "611413"
     display_name: "Màrqueting"
   - 
-    value: "6114.14"
+    value: "611414"
     display_name: "Comportament polític"
   - 
-    value: "6114.15"
+    value: "611415"
     display_name: "Opinió pública"
   - 
-    value: "6114.16"
+    value: "611416"
     display_name: "Teoria dels rols"
   - 
-    value: "6114.17"
+    value: "611417"
     display_name: "Percepcions i moviments socials"
   - 
-    value: "6114.18"
+    value: "611418"
     display_name: "Comunicació simbòlica"
   - 
-    value: "6114.99"
+    value: "611499"
     display_name: "Altres (especificar)"
   - 
     value: "6199"
@@ -7078,73 +7078,73 @@ unesco:
     value: "6201"
     display_name: "Arquitectura"
   - 
-    value: "6201.01"
+    value: "620101"
     display_name: "Disseny arquitectònic"
   - 
-    value: "6201.02"
+    value: "620102"
     display_name: "Jardins i parcs"
   - 
-    value: "6201.03"
+    value: "620103"
     display_name: "Urbanisme"
   - 
-    value: "6201.99"
+    value: "620199"
     display_name: "Altres (especificar)"
   - 
     value: "6202"
     display_name: "Teoria, anàlisi i crítica literàries"
   - 
-    value: "6202.01"
+    value: "620201"
     display_name: "Crítica de textos"
   - 
-    value: "6202.02"
+    value: "620202"
     display_name: "Anàlisi literària"
   - 
-    value: "6202.03"
+    value: "620203"
     display_name: "Estil i estètica literaris"
   - 
-    value: "6202.04"
+    value: "620204"
     display_name: "Vocabulari literari"
   - 
-    value: "6202.05"
+    value: "620205"
     display_name: "Retòrica"
   - 
-    value: "6202.99"
+    value: "620299"
     display_name: "Altres (especificar)"
   - 
     value: "6203"
     display_name: "Teoria, anàlisi i crítica de les Belles arts"
   - 
-    value: "6203.01"
+    value: "620301"
     display_name: "Cinematografia"
   - 
-    value: "6203.02"
+    value: "620302"
     display_name: "Ball, coreografia"
   - 
-    value: "6203.03"
+    value: "620303"
     display_name: "Arts decoratives"
   - 
-    value: "6203.04"
+    value: "620304"
     display_name: "Dibuix, gravat"
   - 
-    value: "6203.05"
+    value: "620305"
     display_name: "Estètica de les Belles arts"
   - 
-    value: "6203.06"
+    value: "620306"
     display_name: "Música, musicologia"
   - 
-    value: "6203.07"
+    value: "620307"
     display_name: "Pintura"
   - 
-    value: "6203.08"
+    value: "620308"
     display_name: "Fotografia"
   - 
-    value: "6203.09"
+    value: "620309"
     display_name: "Escultura"
   - 
-    value: "6203.10"
+    value: "620310"
     display_name: "Teatre"
   - 
-    value: "6203.99"
+    value: "620399"
     display_name: "Altres (especificar)"
   - 
     value: "6299"
@@ -7156,283 +7156,283 @@ unesco:
     value: "6301"
     display_name: "Sociologia cultural"
   - 
-    value: "6301.01"
+    value: "630101"
     display_name: "Evolució cultural"
   - 
-    value: "6301.02"
+    value: "630102"
     display_name: "Relacions culturals"
   - 
-    value: "6301.03"
+    value: "630103"
     display_name: "Folklore"
   - 
-    value: "6301.04"
+    value: "630104"
     display_name: "Relacions interétnicas"
   - 
-    value: "6301.05"
+    value: "630105"
     display_name: "Llengua i cultura"
   - 
-    value: "6301.06"
+    value: "630106"
     display_name: "Civilització i caràcters nacionals"
   - 
-    value: "6301.07"
+    value: "630107"
     display_name: "Sociologia de l'art"
   - 
-    value: "6301.08"
+    value: "630108"
     display_name: "Sociologia del Dret"
   - 
-    value: "6301.09"
+    value: "630109"
     display_name: "Sociologia de la literatura"
   - 
-    value: "6301.10"
+    value: "630110"
     display_name: "Sociologia de la religió"
   - 
-    value: "6301.99"
+    value: "630199"
     display_name: "Altres (especificar)"
   - 
     value: "6302"
     display_name: "Sociologia Experimental"
   - 
-    value: "6302.01"
+    value: "630201"
     display_name: "Recollida de dades de camp"
   - 
-    value: "6302.02"
+    value: "630202"
     display_name: "Psicologia social"
   - 
-    value: "6302.03"
+    value: "630203"
     display_name: "Disseny d'investigació social"
   - 
-    value: "6302.04"
+    value: "630204"
     display_name: "Mètodes d'investigació social"
   - 
-    value: "6302.99"
+    value: "630299"
     display_name: "Altres (especificar)"
   - 
     value: "6303"
     display_name: "Sociologia general"
   - 
-    value: "6303.01"
+    value: "630301"
     display_name: "Sociologia comparada"
   - 
-    value: "6303.02"
+    value: "630302"
     display_name: "Sociologia històrica"
   - 
-    value: "6303.03"
+    value: "630303"
     display_name: "Metodologia"
   - 
-    value: "6303.04"
+    value: "630304"
     display_name: "Sociografía"
   - 
-    value: "6303.05"
+    value: "630305"
     display_name: "Teoria"
   - 
-    value: "6303.99"
+    value: "630399"
     display_name: "Altres (especificar)"
   - 
     value: "6304"
     display_name: "Problemes internacionals"
   - 
-    value: "6304.01"
+    value: "630401"
     display_name: "Conflictes"
   - 
-    value: "6304.02"
+    value: "630402"
     display_name: "Solució de conflictes"
   - 
-    value: "6304.03"
+    value: "630403"
     display_name: "Guerra i pau"
   - 
-    value: "6304.99"
+    value: "630499"
     display_name: "Altres (especificar)"
   - 
     value: "6305"
     display_name: "Sociologia matemàtica"
   - 
-    value: "6305.01"
+    value: "630501"
     display_name: "Mesura i construcció d'índexs"
   - 
-    value: "6305.02"
+    value: "630502"
     display_name: "Elaboració de models"
   - 
-    value: "6305.03"
+    value: "630503"
     display_name: "Anàlisi estadística"
   - 
-    value: "6305.99"
+    value: "630599"
     display_name: "Altres (especificar)"
   - 
     value: "6306"
     display_name: "Sociologia del treball"
   - 
-    value: "6306.01"
+    value: "630601"
     display_name: "Burocràcia"
   - 
-    value: "6306.02"
+    value: "630602"
     display_name: "Sociologia educativa"
   - 
-    value: "6306.03"
+    value: "630603"
     display_name: "Sociologia industrial"
   - 
-    value: "6306.04"
+    value: "630604"
     display_name: "Sociologia mèdica"
   - 
-    value: "6306.05"
+    value: "630605"
     display_name: "Sociologia de l'educació"
   - 
-    value: "6306.06"
+    value: "630606"
     display_name: "Sociologia del dret"
   - 
-    value: "6306.07"
+    value: "630607"
     display_name: "Sociologia dels mitjans de comunicació de masses"
   - 
-    value: "6306.08"
+    value: "630608"
     display_name: "Sociologia de la ciència"
   - 
-    value: "6306.99"
+    value: "630699"
     display_name: "Altres (especificar)"
   - 
     value: "6307"
     display_name: "Canvi i desenvolupament social"
   - 
-    value: "6307.01"
+    value: "630701"
     display_name: "Evolució de les societats"
   - 
-    value: "6307.02"
+    value: "630702"
     display_name: "Països en vies de desenvolupament"
   - 
-    value: "6307.03"
+    value: "630703"
     display_name: "Política social"
   - 
-    value: "6307.04"
+    value: "630704"
     display_name: "Seguretat social"
   - 
-    value: "6307.05"
+    value: "630705"
     display_name: "Serveis socials"
   - 
-    value: "6307.06"
+    value: "630706"
     display_name: "Desenvolupo soci-econòmic"
   - 
-    value: "6307.07"
+    value: "630707"
     display_name: "Tecnologia i canvi social"
   - 
-    value: "6307.99"
+    value: "630799"
     display_name: "Altres (especificar)"
   - 
     value: "6308"
     display_name: "Comunicacions socials"
   - 
-    value: "6308.01"
+    value: "630801"
     display_name: "Signes"
   - 
-    value: "6308.02"
+    value: "630802"
     display_name: "Sociolingüística"
   - 
-    value: "6308.03"
+    value: "630803"
     display_name: "Símbols"
   - 
-    value: "6308.99"
+    value: "630899"
     display_name: "Altres (especificar)"
   - 
     value: "6309"
     display_name: "Grups Socials"
   - 
-    value: "6309.01"
+    value: "630901"
     display_name: "Castes"
   - 
-    value: "6309.02"
+    value: "630902"
     display_name: "Elites"
   - 
-    value: "6309.03"
+    value: "630903"
     display_name: "Família, parentiu"
   - 
-    value: "6309.04"
+    value: "630904"
     display_name: "Matrimoni"
   - 
-    value: "6309.05"
+    value: "630905"
     display_name: "Classes socials"
   - 
-    value: "6309.06"
+    value: "630906"
     display_name: "Mobilitat social"
   - 
-    value: "6309.07"
+    value: "630907"
     display_name: "Estratificació social"
   - 
-    value: "6309.08"
+    value: "630908"
     display_name: "Tribus"
   - 
-    value: "6309.09"
+    value: "630909"
     display_name: "Posició social de la dona"
   - 
-    value: "6309.99"
+    value: "630999"
     display_name: "Altres (especificar)"
   - 
     value: "6310"
     display_name: "Problemes socials"
   - 
-    value: "6310.01"
+    value: "631001"
     display_name: "Crim"
   - 
-    value: "6310.02"
+    value: "631002"
     display_name: "Delinqüència"
   - 
-    value: "6310.03"
+    value: "631003"
     display_name: "Malaltia"
   - 
-    value: "6310.04"
+    value: "631004"
     display_name: "Gana"
   - 
-    value: "6310.05"
+    value: "631005"
     display_name: "Minusvàlids"
   - 
-    value: "6310.06"
+    value: "631006"
     display_name: "Relacions interraciales"
   - 
-    value: "6310.07"
+    value: "631007"
     display_name: "Inadaptados"
   - 
-    value: "6310.08"
+    value: "631008"
     display_name: "Pobresa"
   - 
-    value: "6310.09"
+    value: "631009"
     display_name: "Qualitat de vida"
   - 
-    value: "6310.10"
+    value: "631010"
     display_name: "Conflicte social i adaptació"
   - 
-    value: "6310.11"
+    value: "631011"
     display_name: "Benestar social"
   - 
-    value: "6310.12"
+    value: "631012"
     display_name: "Nivell de vida"
   - 
-    value: "6310.13"
+    value: "631013"
     display_name: "Terrorisme"
   - 
-    value: "6310.14"
+    value: "631014"
     display_name: "Desocupació"
   - 
-    value: "6310.99"
+    value: "631099"
     display_name: "Altres (especificar)"
   - 
     value: "6311"
     display_name: "Sociologia dels assentaments humans"
   - 
-    value: "6311.01"
+    value: "631101"
     display_name: "Estudis de comunitat"
   - 
-    value: "6311.02"
+    value: "631102"
     display_name: "Sociologia ecològica"
   - 
-    value: "6311.03"
+    value: "631103"
     display_name: "Sociologia local"
   - 
-    value: "6311.04"
+    value: "631104"
     display_name: "Sociologia rural"
   - 
-    value: "6311.05"
+    value: "631105"
     display_name: "Barris baixos"
   - 
-    value: "6311.06"
+    value: "631106"
     display_name: "Sociologia urbana"
   - 
-    value: "6311.99"
+    value: "631199"
     display_name: "Altres (especificar)"
   - 
     value: "6399"
@@ -7447,43 +7447,43 @@ unesco:
     value: "7102"
     display_name: "Ètica d'individus"
   - 
-    value: "7102.01"
+    value: "710201"
     display_name: "Codis de valors"
   - 
-    value: "7102.02"
+    value: "710202"
     display_name: "Codis de conducta ètica"
   - 
-    value: "7102.03"
+    value: "710203"
     display_name: "Motivació"
   - 
-    value: "7102.04"
+    value: "710204"
     display_name: "Ètica filosòfica"
   - 
-    value: "7102.05"
+    value: "710205"
     display_name: "Ètica religiosa"
   - 
-    value: "7102.99"
+    value: "710299"
     display_name: "Altres (especificar)"
   - 
     value: "7103"
     display_name: "Ètica de grup"
   - 
-    value: "7103.01"
+    value: "710301"
     display_name: "Declaracions internacionals"
   - 
-    value: "7103.02"
+    value: "710302"
     display_name: "Ètica nacional"
   - 
-    value: "7103.03"
+    value: "710303"
     display_name: "Ètica econòmica"
   - 
-    value: "7103.04"
+    value: "710304"
     display_name: "Ètica de la ciència"
   - 
-    value: "7103.05"
+    value: "710305"
     display_name: "Ètica transnacional"
   - 
-    value: "7103.99"
+    value: "710399"
     display_name: "Altres (especificar)"
   - 
     value: "7104"
@@ -7498,148 +7498,148 @@ unesco:
     value: "7201"
     display_name: "Filosofia del coneixement"
   - 
-    value: "7201.01"
+    value: "720101"
     display_name: "Aporética"
   - 
-    value: "7201.02"
+    value: "720102"
     display_name: "Epistemologia"
   - 
-    value: "7201.03"
+    value: "720103"
     display_name: "Teoria del concepte"
   - 
-    value: "7201.04"
+    value: "720104"
     display_name: "Teoria del judici"
   - 
-    value: "7201.05"
+    value: "720105"
     display_name: "Teoria de la percepció"
   - 
-    value: "7201.06"
+    value: "720106"
     display_name: "Teoria de la raó"
   - 
-    value: "7201.99"
+    value: "720199"
     display_name: "Altres (especificar)"
   - 
     value: "7202"
     display_name: "Antropologia filosòfica"
   - 
-    value: "7202.01"
+    value: "720201"
     display_name: "Estètica"
   - 
-    value: "7202.02"
+    value: "720202"
     display_name: "Hermeneútica"
   - 
-    value: "7202.03"
+    value: "720203"
     display_name: "Problema ànima-cos"
   - 
-    value: "7202.04"
+    value: "720204"
     display_name: "Filosofia de l'acció"
   - 
-    value: "7202.05"
+    value: "720205"
     display_name: "Filosofia de la imaginació"
   - 
-    value: "7202.06"
+    value: "720206"
     display_name: "Filosofia de la intersubjectivitat"
   - 
-    value: "7202.07"
+    value: "720207"
     display_name: "Filosofia del llenguatge"
   - 
-    value: "7202.08"
+    value: "720208"
     display_name: "Filosofia de la voluntat"
   - 
-    value: "7202.99"
+    value: "720299"
     display_name: "Altres (especificar)"
   - 
     value: "7203"
     display_name: "Filosofia general"
   - 
-    value: "7203.01"
+    value: "720301"
     display_name: "Lògica dialèctica"
   - 
-    value: "7203.02"
+    value: "720302"
     display_name: "Materialisme dialèctic"
   - 
-    value: "7203.03"
+    value: "720303"
     display_name: "Metafísica, ontologia"
   - 
-    value: "7203.04"
+    value: "720304"
     display_name: "Teologia natural"
   - 
-    value: "7203.99"
+    value: "720399"
     display_name: "Altres (especificar)"
   - 
     value: "7204"
     display_name: "Sistemes filosòfics"
   - 
-    value: "7204.01"
+    value: "720401"
     display_name: "Filosofia antiga"
   - 
-    value: "7204.02"
+    value: "720402"
     display_name: "Filosofia moderna"
   - 
-    value: "7204.03"
+    value: "720403"
     display_name: "Filosofia actual"
   - 
-    value: "7204.04"
+    value: "720404"
     display_name: "Sistemes teològic-filosòfics"
   - 
-    value: "7204.99"
+    value: "720499"
     display_name: "Altres (especificar)"
   - 
     value: "7205"
     display_name: "Filosofia de la Ciència"
   - 
-    value: "7205.01"
+    value: "720501"
     display_name: "Filosofia de la biologia"
   - 
-    value: "7205.02"
+    value: "720502"
     display_name: "Filosofia de la lògica"
   - 
-    value: "7205.03"
+    value: "720503"
     display_name: "Filosofia de les matemàtiques"
   - 
-    value: "7205.04"
+    value: "720504"
     display_name: "Filosofia de la física"
   - 
-    value: "7205.05"
+    value: "720505"
     display_name: "Filosofia de les ciències socials"
   - 
-    value: "7205.99"
+    value: "720599"
     display_name: "Altres (especificar)"
   - 
     value: "7206"
     display_name: "Filosofia de la naturalesa"
   - 
-    value: "7206.01"
+    value: "720601"
     display_name: "Filosofia de la vida"
   - 
-    value: "7206.02"
+    value: "720602"
     display_name: "Filosofia de la matèria"
   - 
-    value: "7206.03"
+    value: "720603"
     display_name: "Filosofia de l'espai i del temps"
   - 
-    value: "7206.99"
+    value: "720699"
     display_name: "Altres (especificar)"
   - 
     value: "7207"
     display_name: "Filosofia social"
   - 
-    value: "7207.01"
+    value: "720701"
     display_name: "Filosofia de la cultura"
   - 
-    value: "7207.02"
+    value: "720702"
     display_name: "Filosofia de la història"
   - 
-    value: "7207.03"
+    value: "720703"
     display_name: "Filosofia de la tècnica"
   - 
-    value: "7207.04"
+    value: "720704"
     display_name: "Filosofia política"
   - 
-    value: "7207.05"
+    value: "720705"
     display_name: "Teoria de les ideologies"
   - 
-    value: "7207.99"
+    value: "720799"
     display_name: "Altres (especificar)"
   - 
     value: "7208"

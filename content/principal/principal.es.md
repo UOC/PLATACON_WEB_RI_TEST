@@ -145,52 +145,52 @@ unesco:
     value: "1102"
     display_name: "Lógica deductiva"
   - 
-    value: "1102.01"
+    value: "110201"
     display_name: "Analogía"
   - 
-    value: "1102.02"
+    value: "110202"
     display_name: "Álgebra de Boole"
   - 
-    value: "1102.03"
+    value: "110203"
     display_name: "Lógica formal"
   - 
-    value: "1102.04"
+    value: "110204"
     display_name: "Lenguajes formalizados"
   - 
-    value: "1102.05"
+    value: "110205"
     display_name: "Sistemas formales"
   - 
-    value: "1102.06"
+    value: "110206"
     display_name: "Fundamentos de matemáticas"
   - 
-    value: "1102.07"
+    value: "110207"
     display_name: "Generalización"
   - 
-    value: "1102.08"
+    value: "110208"
     display_name: "Lógica matemática"
   - 
-    value: "1102.09"
+    value: "110209"
     display_name: "Lógica modal"
   - 
-    value: "1102.10"
+    value: "110210"
     display_name: "Teoría de modelos"
   - 
-    value: "1102.11"
+    value: "110211"
     display_name: "Teoría de pruebas"
   - 
-    value: "1102.12"
+    value: "110212"
     display_name: "Cálculo proposicional"
   - 
-    value: "1102.13"
+    value: "110213"
     display_name: "Funciones recursivas"
   - 
-    value: "1102.14"
+    value: "110214"
     display_name: "Lógica simbólica"
   - 
-    value: "1102.15"
+    value: "110215"
     display_name: "Teoría de lenguajes formales"
   - 
-    value: "1102.99"
+    value: "110299"
     display_name: "Otras (especificar)"
   - 
     value: "1103"
@@ -199,25 +199,25 @@ unesco:
     value: "1104"
     display_name: "Lógica inductiva"
   - 
-    value: "1104.01"
+    value: "110401"
     display_name: "Inducción"
   - 
-    value: "1104.02"
+    value: "110402"
     display_name: "Intuicionismo"
   - 
-    value: "1104.03"
+    value: "110403"
     display_name: "Probabilidad"
   - 
-    value: "1104.99"
+    value: "110499"
     display_name: "Otras (especificar)"
   - 
     value: "1105"
     display_name: "Metodología"
   - 
-    value: "1105.01"
+    value: "110501"
     display_name: "Método científico"
   - 
-    value: "1105.99"
+    value: "110599"
     display_name: "Otras (especificar)"
   - 
     value: "1199"
@@ -229,517 +229,517 @@ unesco:
     value: "1201"
     display_name: "Álgebra"
   - 
-    value: "1201.01"
+    value: "120101"
     display_name: "Geometría algebraica"
   - 
-    value: "1201.02"
+    value: "120102"
     display_name: "Teoría axiomática de conjuntos"
   - 
-    value: "1201.03"
+    value: "120103"
     display_name: "Teoría de categorías"
   - 
-    value: "1201.04"
+    value: "120104"
     display_name: "Álgebra diferencial"
   - 
-    value: "1201.05"
+    value: "120105"
     display_name: "Campos, anillos, álgebras"
   - 
-    value: "1201.06"
+    value: "120106"
     display_name: "Grupos, generalidades"
   - 
-    value: "1201.07"
+    value: "120107"
     display_name: "Álgebra homológica"
   - 
-    value: "1201.08"
+    value: "120108"
     display_name: "Retículos"
   - 
-    value: "1201.09"
+    value: "120109"
     display_name: "Álgebra de Lie"
   - 
-    value: "1201.10"
+    value: "120110"
     display_name: "Álgebra lineal"
   - 
-    value: "1201.11"
+    value: "120111"
     display_name: "Teoría de matrices"
   - 
-    value: "1201.12"
+    value: "120112"
     display_name: "Álgebras no asociativas"
   - 
-    value: "1201.13"
+    value: "120113"
     display_name: "Polinomios"
   - 
-    value: "1201.14"
+    value: "120114"
     display_name: "Teoría de la representación"
   - 
-    value: "1201.99"
+    value: "120199"
     display_name: "Otras (especificar)"
   - 
     value: "1202"
     display_name: "Análisis y análisis funcional"
   - 
-    value: "1202.01"
+    value: "120201"
     display_name: "Álgebra de operadores"
   - 
-    value: "1202.02"
+    value: "120202"
     display_name: "Teoría de la aproximación"
   - 
-    value: "1202.03"
+    value: "120203"
     display_name: "Algebras y espacios de Banach"
   - 
-    value: "1202.04"
+    value: "120204"
     display_name: "Cálculo de variaciones"
   - 
-    value: "1202.05"
+    value: "120205"
     display_name: "Análisis combinatorio"
   - 
-    value: "1202.06"
+    value: "120206"
     display_name: "Convexidad, desigualdades"
   - 
-    value: "1202.07"
+    value: "120207"
     display_name: "Ecuaciones en diferencias"
   - 
-    value: "1202.08"
+    value: "120208"
     display_name: "Ecuaciones funcionales"
   - 
-    value: "1202.09"
+    value: "120209"
     display_name: "Funciones de una variable compleja"
   - 
-    value: "1202.10"
+    value: "120210"
     display_name: "Funciones de variables reales"
   - 
-    value: "1202.11"
+    value: "120211"
     display_name: "Funciones de varias variables complejas"
   - 
-    value: "1202.12"
+    value: "120212"
     display_name: "Análisis global"
   - 
-    value: "1202.13"
+    value: "120213"
     display_name: "Análisis armónico"
   - 
-    value: "1202.14"
+    value: "120214"
     display_name: "Espacios de Hilbert"
   - 
-    value: "1202.15"
+    value: "120215"
     display_name: "Ecuaciones integrales"
   - 
-    value: "1202.16"
+    value: "120216"
     display_name: "Transformadas integrales"
   - 
-    value: "1202.17"
+    value: "120217"
     display_name: "Medida, integración, área"
   - 
-    value: "1202.18"
+    value: "120218"
     display_name: "Cálculo operacional"
   - 
-    value: "1202.19"
+    value: "120219"
     display_name: "Ecuaciones diferenciales ordinarias"
   - 
-    value: "1202.20"
+    value: "120220"
     display_name: "Ecuaciones diferenciales en derivadas parciales"
   - 
-    value: "1202.21"
+    value: "120221"
     display_name: "Teoría de potencial"
   - 
-    value: "1202.22"
+    value: "120222"
     display_name: "Series, sumabilidad"
   - 
-    value: "1202.23"
+    value: "120223"
     display_name: "Funciones especiales"
   - 
-    value: "1202.24"
+    value: "120224"
     display_name: "Funciones subarmónicas"
   - 
-    value: "1202.25"
+    value: "120225"
     display_name: "Espacios lineales topológicos"
   - 
-    value: "1202.26"
+    value: "120226"
     display_name: "Series e integrales trigonométricas"
   - 
-    value: "1202.99"
+    value: "120299"
     display_name: "Otras (especificar)"
   - 
     value: "1203"
     display_name: "Ciencia de los ordenadores"
   - 
-    value: "1203.01"
+    value: "120301"
     display_name: "Contabilidad"
   - 
-    value: "1203.02"
+    value: "120302"
     display_name: "Lenguajes algorítmicos"
   - 
-    value: "1203.03"
+    value: "120303"
     display_name: "Cálculo analógico"
   - 
-    value: "1203.04"
+    value: "120304"
     display_name: "Inteligencia artificial"
   - 
-    value: "1203.05"
+    value: "120305"
     display_name: "Sistemas automatizados de producción"
   - 
-    value: "1203.06"
+    value: "120306"
     display_name: "Sistemas automatizados de control de calidad"
   - 
-    value: "1203.07"
+    value: "120307"
     display_name: "Modelos causales"
   - 
-    value: "1203.08"
+    value: "120308"
     display_name: "Código y sistemas de codificación"
   - 
-    value: "1203.09"
+    value: "120309"
     display_name: "Diseño con ayuda de ordenador"
   - 
-    value: "1203.10"
+    value: "120310"
     display_name: "Enseñanza con ayuda de ordenador"
   - 
-    value: "1203.11"
+    value: "120311"
     display_name: "Logicales de ordenadores"
   - 
-    value: "1203.12"
+    value: "120312"
     display_name: "Bancos de datos"
   - 
-    value: "1203.13"
+    value: "120313"
     display_name: "Cálculo digital"
   - 
-    value: "1203.14"
+    value: "120314"
     display_name: "Sistemas de control del entorno"
   - 
-    value: "1203.15"
+    value: "120315"
     display_name: "Heurística"
   - 
-    value: "1203.16"
+    value: "120316"
     display_name: "Cálculo híbrido"
   - 
-    value: "1203.17"
+    value: "120317"
     display_name: "Informática"
   - 
-    value: "1203.18"
+    value: "120318"
     display_name: "Sistemas de información, diseño y componentes"
   - 
-    value: "1203.19"
+    value: "120319"
     display_name: "Control de inventarios"
   - 
-    value: "1203.20"
+    value: "120320"
     display_name: "Sistemas de control médico"
   - 
-    value: "1203.21"
+    value: "120321"
     display_name: "Sistemas de navegación y telemetría del espacio"
   - 
-    value: "1203.22"
+    value: "120322"
     display_name: "Sistemas de control de producción"
   - 
-    value: "1203.23"
+    value: "120323"
     display_name: "Lenguajes de programación"
   - 
-    value: "1203.24"
+    value: "120324"
     display_name: "Teoría de la programación"
   - 
-    value: "1203.25"
+    value: "120325"
     display_name: "Diseño de sistemas sensores"
   - 
-    value: "1203.26"
+    value: "120326"
     display_name: "Simulación"
   - 
-    value: "1203.99"
+    value: "120399"
     display_name: "Otras (especificar)"
   - 
     value: "1204"
     display_name: "Geometría"
   - 
-    value: "1204.01"
+    value: "120401"
     display_name: "Geometría afín"
   - 
-    value: "1204.02"
+    value: "120402"
     display_name: "Variedades complejas"
   - 
-    value: "1204.03"
+    value: "120403"
     display_name: "Dominios convexos"
   - 
-    value: "1204.04"
+    value: "120404"
     display_name: "Geometría diferencial"
   - 
-    value: "1204.05"
+    value: "120405"
     display_name: "Problemas de contorno"
   - 
-    value: "1204.06"
+    value: "120406"
     display_name: "Geometría euclídea"
   - 
-    value: "1204.07"
+    value: "120407"
     display_name: "Geometrías finitas"
   - 
-    value: "1204.08"
+    value: "120408"
     display_name: "Fundamentos"
   - 
-    value: "1204.09"
+    value: "120409"
     display_name: "Geometrías no euclídeas"
   - 
-    value: "1204.10"
+    value: "120410"
     display_name: "Geometría proyectiva"
   - 
-    value: "1204.11"
+    value: "120411"
     display_name: "Geometría de Riemann"
   - 
-    value: "1204.12"
+    value: "120412"
     display_name: "Análisis tensorial"
   - 
-    value: "1204.99"
+    value: "120499"
     display_name: "Otras (especificar)"
   - 
     value: "1205"
     display_name: "Teoría de números"
   - 
-    value: "1205.01"
+    value: "120501"
     display_name: "Teoría algebraica de los números"
   - 
-    value: "1205.02"
+    value: "120502"
     display_name: "Teoría analítica de los números"
   - 
-    value: "1205.03"
+    value: "120503"
     display_name: "Problemas diofánticos"
   - 
-    value: "1205.04"
+    value: "120504"
     display_name: "Teoría elemental de los números"
   - 
-    value: "1205.05"
+    value: "120505"
     display_name: "Geometría de los números"
   - 
-    value: "1205.99"
+    value: "120599"
     display_name: "Otras (especificar)"
   - 
     value: "1206"
     display_name: "Análisis numérico"
   - 
-    value: "1206.01"
+    value: "120601"
     display_name: "Construcción de algoritmos"
   - 
-    value: "1206.02"
+    value: "120602"
     display_name: "Ecuaciones diferenciales"
   - 
-    value: "1206.03"
+    value: "120603"
     display_name: "Análisis de errores"
   - 
-    value: "1206.04"
+    value: "120604"
     display_name: "Ecuaciones funcionales"
   - 
-    value: "1206.05"
+    value: "120605"
     display_name: "Ecuaciones integrales"
   - 
-    value: "1206.06"
+    value: "120606"
     display_name: "Ecuaciones integro-diferenciales"
   - 
-    value: "1206.07"
+    value: "120607"
     display_name: "Interpolación, aproximación y ajuste de curvas"
   - 
-    value: "1206.08"
+    value: "120608"
     display_name: "Métodos iterativos"
   - 
-    value: "1206.09"
+    value: "120609"
     display_name: "Ecuaciones lineales"
   - 
-    value: "1206.10"
+    value: "120610"
     display_name: "Matrices"
   - 
-    value: "1206.11"
+    value: "120611"
     display_name: "Diferenciación numérica"
   - 
-    value: "1206.12"
+    value: "120612"
     display_name: "Ecuaciones diferenciales ordinarias"
   - 
-    value: "1206.13"
+    value: "120613"
     display_name: "Ecuaciones diferenciales en derivadas parciales"
   - 
-    value: "1206.14"
+    value: "120614"
     display_name: "Cuadratura"
   - 
-    value: "1206.99"
+    value: "120699"
     display_name: "Otras (especificar)"
   - 
     value: "1207"
     display_name: "Investigación operativa"
   - 
-    value: "1207.01"
+    value: "120701"
     display_name: "Análisis de actividades"
   - 
-    value: "1207.02"
+    value: "120702"
     display_name: "Sistemas de control"
   - 
-    value: "1207.03"
+    value: "120703"
     display_name: "Cibernética"
   - 
-    value: "1207.04"
+    value: "120704"
     display_name: "Distribución y transporte"
   - 
-    value: "1207.05"
+    value: "120705"
     display_name: "Programación dinámica"
   - 
-    value: "1207.06"
+    value: "120706"
     display_name: "Teoría de juegos"
   - 
-    value: "1207.07"
+    value: "120707"
     display_name: "Programación entera"
   - 
-    value: "1207.08"
+    value: "120708"
     display_name: "Inventarios"
   - 
-    value: "1207.09"
+    value: "120709"
     display_name: "Programación lineal"
   - 
-    value: "1207.10"
+    value: "120710"
     display_name: "Redes de flujo"
   - 
-    value: "1207.11"
+    value: "120711"
     display_name: "Programación no lineal"
   - 
-    value: "1207.12"
+    value: "120712"
     display_name: "Colas"
   - 
-    value: "1207.13"
+    value: "120713"
     display_name: "Planificación"
   - 
-    value: "1207.14"
+    value: "120714"
     display_name: "Formulación de sistemas"
   - 
-    value: "1207.15"
+    value: "120715"
     display_name: "Fiabilidad de sistemas"
   - 
-    value: "1207.99"
+    value: "120799"
     display_name: "Otras (especificar)"
   - 
     value: "1208"
     display_name: "Probabilidad"
   - 
-    value: "1208.01"
+    value: "120801"
     display_name: "Matemáticas actuariales (mercantiles)"
   - 
-    value: "1208.02"
+    value: "120802"
     display_name: "Teoría analítica de la probabilidad"
   - 
-    value: "1208.03"
+    value: "120803"
     display_name: "Aplicación de la probabilidad"
   - 
-    value: "1208.04"
+    value: "120804"
     display_name: "Fundamentos de la probabilidad"
   - 
-    value: "1208.05"
+    value: "120805"
     display_name: "Teoremas del límite"
   - 
-    value: "1208.06"
+    value: "120806"
     display_name: "Procesos de Markov"
   - 
-    value: "1208.07"
+    value: "120807"
     display_name: "Plausibilidad"
   - 
-    value: "1208.08"
+    value: "120808"
     display_name: "Procesos estocásticos"
   - 
-    value: "1208.09"
+    value: "120809"
     display_name: "Probabilidad subjetiva"
   - 
-    value: "1208.99"
+    value: "120899"
     display_name: "Otras (especificar)"
   - 
     value: "1209"
     display_name: "Estadística"
   - 
-    value: "1209.01"
+    value: "120901"
     display_name: "Estadística analítica"
   - 
-    value: "1209.02"
+    value: "120902"
     display_name: "Cálculo en estadística"
   - 
-    value: "1209.03"
+    value: "120903"
     display_name: "Análisis de datos"
   - 
-    value: "1209.04"
+    value: "120904"
     display_name: "Teoría y procesos de decisión"
   - 
-    value: "1209.05"
+    value: "120905"
     display_name: "Análisis y diseño de experimentos"
   - 
-    value: "1209.06"
+    value: "120906"
     display_name: "Métodos de distribución libre y no paramétrica"
   - 
-    value: "1209.07"
+    value: "120907"
     display_name: "Teoría de la distribución y probabilidad"
   - 
-    value: "1209.08"
+    value: "120908"
     display_name: "Fundamentos de la inferencia estadística"
   - 
-    value: "1209.09"
+    value: "120909"
     display_name: "Análisis multivariante"
   - 
-    value: "1209.10"
+    value: "120910"
     display_name: "Teoría y técnicas de muestreo"
   - 
-    value: "1209.11"
+    value: "120911"
     display_name: "Teoría estocástica y análisis de series temporales"
   - 
-    value: "1209.12"
+    value: "120912"
     display_name: "Técnicas de asociación estadística"
   - 
-    value: "1209.13"
+    value: "120913"
     display_name: "Técnicas de inferencia estadística"
   - 
-    value: "1209.14"
+    value: "120914"
     display_name: "Técnicas de predicción estadística"
   - 
-    value: "1209.15"
+    value: "120915"
     display_name: "Series temporales"
   - 
-    value: "1209.99"
+    value: "120999"
     display_name: "Otras (especificar)"
   - 
     value: "1210"
     display_name: "Topología"
   - 
-    value: "1210.01"
+    value: "121001"
     display_name: "Espacios abstractos"
   - 
-    value: "1210.02"
+    value: "121002"
     display_name: "Cohomología"
   - 
-    value: "1210.03"
+    value: "121003"
     display_name: "Variedades diferenciales"
   - 
-    value: "1210.04"
+    value: "121004"
     display_name: "Espacios fibrados"
   - 
-    value: "1210.05"
+    value: "121005"
     display_name: "Topología general"
   - 
-    value: "1210.06"
+    value: "121006"
     display_name: "Homología"
   - 
-    value: "1210.07"
+    value: "121007"
     display_name: "Homotopía"
   - 
-    value: "1210.08"
+    value: "121008"
     display_name: "Grupos de Lie"
   - 
-    value: "1210.09"
+    value: "121009"
     display_name: "Topología lineal de entornos"
   - 
-    value: "1210.10"
+    value: "121010"
     display_name: "Topología cuasilineal"
   - 
-    value: "1210.11"
+    value: "121011"
     display_name: "Topología tridimensional"
   - 
-    value: "1210.12"
+    value: "121012"
     display_name: "Grupos topológicos"
   - 
-    value: "1210.13"
+    value: "121013"
     display_name: "Dinámica topológica"
   - 
-    value: "1210.14"
+    value: "121014"
     display_name: "Recubrimientos topológicos"
   - 
-    value: "1210.15"
+    value: "121015"
     display_name: "Variedades topológicas"
   - 
-    value: "1210.16"
+    value: "121016"
     display_name: "Grupos de transformación"
   - 
-    value: "1210.99"
+    value: "121099"
     display_name: "Otras (especificar)"
   - 
     value: "1299"
@@ -751,148 +751,148 @@ unesco:
     value: "2101"
     display_name: "Cosmología y cosmogonia"
   - 
-    value: "2101.01"
+    value: "210101"
     display_name: "Estrellas dobles"
   - 
-    value: "2101.02"
+    value: "210102"
     display_name: "Enjambres o Cúmulos"
   - 
-    value: "2101.03"
+    value: "210103"
     display_name: "Rayos Cósmicos"
   - 
-    value: "2101.04"
+    value: "210104"
     display_name: "Galaxias"
   - 
-    value: "2101.05"
+    value: "210105"
     display_name: "Gravitación"
   - 
-    value: "2101.06"
+    value: "210106"
     display_name: "Nebulosas"
   - 
-    value: "2101.07"
+    value: "210107"
     display_name: "Novas"
   - 
-    value: "2101.08"
+    value: "210108"
     display_name: "Pulsares"
   - 
-    value: "2101.09"
+    value: "210109"
     display_name: "Quasares"
   - 
-    value: "2101.10"
+    value: "210110"
     display_name: "Estrellas"
   - 
-    value: "2101.11"
+    value: "210111"
     display_name: "Evolución estelar y diagrama HR"
   - 
-    value: "2101.12"
+    value: "210112"
     display_name: "Composición estelar"
   - 
-    value: "2101.13"
+    value: "210113"
     display_name: "Super-novas"
   - 
-    value: "2101.14"
+    value: "210114"
     display_name: "Estrellas variables"
   - 
-    value: "2101.15"
+    value: "210115"
     display_name: "Fuentes de Rayos X"
   - 
-    value: "2101.99"
+    value: "210199"
     display_name: "Otras (especificar)"
   - 
     value: "2102"
     display_name: "Medio interplanetario"
   - 
-    value: "2102.01"
+    value: "210201"
     display_name: "Campos interplanetarios"
   - 
-    value: "2102.02"
+    value: "210202"
     display_name: "Materia interplanetaria"
   - 
-    value: "2102.03"
+    value: "210203"
     display_name: "Partículas interplanetarias"
   - 
-    value: "2102.99"
+    value: "210299"
     display_name: "Otras (especificar)"
   - 
     value: "2103"
     display_name: "Astronomía óptica"
   - 
-    value: "2103.01"
+    value: "210301"
     display_name: "Astronomía de posición"
   - 
-    value: "2103.02"
+    value: "210302"
     display_name: "Telescopios"
   - 
-    value: "2103.03"
+    value: "210303"
     display_name: "Espectroscopía"
   - 
-    value: "2103.99"
+    value: "210399"
     display_name: "Otras (especificar)"
   - 
     value: "2104"
     display_name: "Planetología (2512 3324)"
   - 
-    value: "2104.01"
+    value: "210401"
     display_name: "Cometas"
   - 
-    value: "2104.02"
+    value: "210402"
     display_name: "Meteoritos"
   - 
-    value: "2104.03"
+    value: "210403"
     display_name: "Atmósfera planetaria"
   - 
-    value: "2104.04"
+    value: "210404"
     display_name: "Geología planetaria"
   - 
-    value: "2104.05"
+    value: "210405"
     display_name: "Física planetaria"
   - 
-    value: "2104.06"
+    value: "210406"
     display_name: "Campos magnéticos planetarios"
   - 
-    value: "2104.07"
+    value: "210407"
     display_name: "Planetas"
   - 
-    value: "2104.08"
+    value: "210408"
     display_name: "Satélites"
   - 
-    value: "2104.09"
+    value: "210409"
     display_name: "Tectitas"
   - 
-    value: "2104.10"
+    value: "210410"
     display_name: "La Luna"
   - 
-    value: "2104.99"
+    value: "210499"
     display_name: "Otras (especificar)"
   - 
     value: "2105"
     display_name: "Radioastronomía"
   - 
-    value: "2105.01"
+    value: "210501"
     display_name: "Antenas"
   - 
-    value: "2105.02"
+    value: "210502"
     display_name: "Radiotelescopios"
   - 
-    value: "2105.99"
+    value: "210599"
     display_name: "Otras (especificar)"
   - 
     value: "2106"
     display_name: "Sistema solar"
   - 
-    value: "2106.01"
+    value: "210601"
     display_name: "Energía solar"
   - 
-    value: "2106.02"
+    value: "210602"
     display_name: "Física solar"
   - 
-    value: "2106.03"
+    value: "210603"
     display_name: "Viento solar"
   - 
-    value: "2106.04"
+    value: "210604"
     display_name: "El Sol"
   - 
-    value: "2106.99"
+    value: "210699"
     display_name: "Otras (especificar)"
   - 
     value: "2199"
@@ -904,745 +904,745 @@ unesco:
     value: "2201"
     display_name: "Acústica"
   - 
-    value: "2201.01"
+    value: "220101"
     display_name: "Propiedades acústicas de los sólidos"
   - 
-    value: "2201.02"
+    value: "220102"
     display_name: "Acústica arquitectónica"
   - 
-    value: "2201.03"
+    value: "220103"
     display_name: "Física de la audición"
   - 
-    value: "2201.04"
+    value: "220104"
     display_name: "Física de la música"
   - 
-    value: "2201.05"
+    value: "220105"
     display_name: "Ruido"
   - 
-    value: "2201.06"
+    value: "220106"
     display_name: "Ondas de choque"
   - 
-    value: "2201.07"
+    value: "220107"
     display_name: "Sonar"
   - 
-    value: "2201.08"
+    value: "220108"
     display_name: "Física de la dicción"
   - 
-    value: "2201.09"
+    value: "220109"
     display_name: "Ultrasonidos"
   - 
-    value: "2201.10"
+    value: "220110"
     display_name: "Sonidos subacuáticos"
   - 
-    value: "2201.11"
+    value: "220111"
     display_name: "Vibraciones"
   - 
-    value: "2201.99"
+    value: "220199"
     display_name: "Otras (especificar)"
   - 
     value: "2202"
     display_name: "Electromagnetismo"
   - 
-    value: "2202.01"
+    value: "220201"
     display_name: "Conductividad"
   - 
-    value: "2202.02"
+    value: "220202"
     display_name: "Magnitudes eléctricas y su medida"
   - 
-    value: "2202.03"
+    value: "220203"
     display_name: "Electricidad"
   - 
-    value: "2202.04"
+    value: "220204"
     display_name: "Ondas electromagnéticas"
   - 
-    value: "2202.05"
+    value: "220205"
     display_name: "Rayos gamma"
   - 
-    value: "2202.06"
+    value: "220206"
     display_name: "Radiación infrarroja, visible y ultravioleta"
   - 
-    value: "2202.07"
+    value: "220207"
     display_name: "Interacción de ondas electromagnéticas con la materia"
   - 
-    value: "2202.08"
+    value: "220208"
     display_name: "Magnetismo"
   - 
-    value: "2202.09"
+    value: "220209"
     display_name: "Propagación de ondas electromagnéticas"
   - 
-    value: "2202.10"
+    value: "220210"
     display_name: "Radioondas y microondas"
   - 
-    value: "2202.11"
+    value: "220211"
     display_name: "Superconductividad"
   - 
-    value: "2202.12"
+    value: "220212"
     display_name: "Rayos X"
   - 
-    value: "2202.99"
+    value: "220299"
     display_name: "Otras (especificar)"
   - 
     value: "2203"
     display_name: "Electrónica"
   - 
-    value: "2203.01"
+    value: "220301"
     display_name: "Circuitos"
   - 
-    value: "2203.02"
+    value: "220302"
     display_name: "Elementos de circuitos"
   - 
-    value: "2203.03"
+    value: "220303"
     display_name: "Válvulas electrónicas"
   - 
-    value: "2203.04"
+    value: "220304"
     display_name: "Microscopía electrónica"
   - 
-    value: "2203.05"
+    value: "220305"
     display_name: "Estados electrónicos"
   - 
-    value: "2203.06"
+    value: "220306"
     display_name: "Transporte de electrones"
   - 
-    value: "2203.07"
+    value: "220307"
     display_name: "Circuitos integrados"
   - 
-    value: "2203.08"
+    value: "220308"
     display_name: "Fotoelectricidad"
   - 
-    value: "2203.09"
+    value: "220309"
     display_name: "Piezoelectricidad"
   - 
-    value: "2203.99"
+    value: "220399"
     display_name: "Otras (especificar)"
   - 
     value: "2204"
     display_name: "Física de fluídos"
   - 
-    value: "2204.01"
+    value: "220401"
     display_name: "Coloides"
   - 
-    value: "2204.02"
+    value: "220402"
     display_name: "Dispersiones"
   - 
-    value: "2204.03"
+    value: "220403"
     display_name: "Flujo de fluídos"
   - 
-    value: "2204.04"
+    value: "220404"
     display_name: "Mecánica de fluídos"
   - 
-    value: "2204.05"
+    value: "220405"
     display_name: "Gases"
   - 
-    value: "2204.06"
+    value: "220406"
     display_name: "Fenómenos de alta presión"
   - 
-    value: "2204.07"
+    value: "220407"
     display_name: "Ionización"
   - 
-    value: "2204.08"
+    value: "220408"
     display_name: "Líquidos"
   - 
-    value: "2204.09"
+    value: "220409"
     display_name: "Dinámica de fluídos magnéticos (Magnetofluidodinámica)"
   - 
-    value: "2204.10"
+    value: "220410"
     display_name: "Física de plasmas"
   - 
-    value: "2204.11"
+    value: "220411"
     display_name: "Fluídos cuánticos"
   - 
-    value: "2204.99"
+    value: "220499"
     display_name: "Otras (especificar)"
   - 
     value: "2205"
     display_name: "Mecánica"
   - 
-    value: "2205.01"
+    value: "220501"
     display_name: "Mecánica analítica"
   - 
-    value: "2205.02"
+    value: "220502"
     display_name: "Mecánica de medios continuos"
   - 
-    value: "2205.03"
+    value: "220503"
     display_name: "Elasticidad"
   - 
-    value: "2205.04"
+    value: "220504"
     display_name: "Mecánica de fluídos"
   - 
-    value: "2205.05"
+    value: "220505"
     display_name: "Fricción"
   - 
-    value: "2205.06"
+    value: "220506"
     display_name: "Teoría de muchos cuerpos"
   - 
-    value: "2205.07"
+    value: "220507"
     display_name: "Medida de propiedades mecánicas"
   - 
-    value: "2205.08"
+    value: "220508"
     display_name: "Plasticidad"
   - 
-    value: "2205.09"
+    value: "220509"
     display_name: "Mecánica de sólidos"
   - 
-    value: "2205.10"
+    value: "220510"
     display_name: "Mecánica estadística"
   - 
-    value: "2205.99"
+    value: "220599"
     display_name: "Otras (especificar)"
   - 
     value: "2206"
     display_name: "Física molecular"
   - 
-    value: "2206.01"
+    value: "220601"
     display_name: "Radicales libres"
   - 
-    value: "2206.02"
+    value: "220602"
     display_name: "Moléculas inorgánicas"
   - 
-    value: "2206.03"
+    value: "220603"
     display_name: "Macromoléculas"
   - 
-    value: "2206.04"
+    value: "220604"
     display_name: "Moléculas mesónicas y muónicas"
   - 
-    value: "2206.05"
+    value: "220605"
     display_name: "Haces moleculares"
   - 
-    value: "2206.06"
+    value: "220606"
     display_name: "Iones moleculares"
   - 
-    value: "2206.07"
+    value: "220607"
     display_name: "Espectroscopía molecular"
   - 
-    value: "2206.08"
+    value: "220608"
     display_name: "Estructura molecular"
   - 
-    value: "2206.09"
+    value: "220609"
     display_name: "Moléculas orgánicas"
   - 
-    value: "2206.10"
+    value: "220610"
     display_name: "Polímeros"
   - 
-    value: "2206.99"
+    value: "220699"
     display_name: "Otras (especificar)"
   - 
     value: "2207"
     display_name: "Física atómica y nuclear"
   - 
-    value: "2207.01"
+    value: "220701"
     display_name: "Haces atómicos"
   - 
-    value: "2207.02"
+    value: "220702"
     display_name: "Iones atómicos"
   - 
-    value: "2207.03"
+    value: "220703"
     display_name: "Física atómica"
   - 
-    value: "2207.04"
+    value: "220704"
     display_name: "Atomos con Z mayor que 2"
   - 
-    value: "2207.05"
+    value: "220705"
     display_name: "Procesos de colisión"
   - 
-    value: "2207.06"
+    value: "220706"
     display_name: "Haces de electrones"
   - 
-    value: "2207.07"
+    value: "220707"
     display_name: "Resonancia paramagnética electrónica"
   - 
-    value: "2207.08"
+    value: "220708"
     display_name: "Resonancia de spin electrónico"
   - 
-    value: "2207.09"
+    value: "220709"
     display_name: "Conversión de energía"
   - 
-    value: "2207.10"
+    value: "220710"
     display_name: "Fisión (nuclear)"
   - 
-    value: "2207.11"
+    value: "220711"
     display_name: "Átomo de helio"
   - 
-    value: "2207.12"
+    value: "220712"
     display_name: "Átomo de hidrógeno"
   - 
-    value: "2207.13"
+    value: "220713"
     display_name: "Isótopos"
   - 
-    value: "2207.14"
+    value: "220714"
     display_name: "Desintegración nuclear"
   - 
-    value: "2207.15"
+    value: "220715"
     display_name: "Energía nuclear"
   - 
-    value: "2207.16"
+    value: "220716"
     display_name: "Resonancia magnética nuclear"
   - 
-    value: "2207.17"
+    value: "220717"
     display_name: "Reacción nuclear y dispersión"
   - 
-    value: "2207.18"
+    value: "220718"
     display_name: "Reactores nucleares"
   - 
-    value: "2207.19"
+    value: "220719"
     display_name: "Estructura nuclear"
   - 
-    value: "2207.20"
+    value: "220720"
     display_name: "Radioisótopos"
   - 
-    value: "2207.21"
+    value: "220721"
     display_name: "Fusión termonuclear"
   - 
-    value: "2207.90"
+    value: "220790"
     display_name: "Física nuclear experimental bajas energías"
   - 
-    value: "2207.99"
+    value: "220799"
     display_name: "Otras (especificar)"
   - 
     value: "2208"
     display_name: "Nucleónica"
   - 
-    value: "2208.01"
+    value: "220801"
     display_name: "Manipulación de haces"
   - 
-    value: "2208.02"
+    value: "220802"
     display_name: "Fuentes de haces"
   - 
-    value: "2208.03"
+    value: "220803"
     display_name: "Reactores de fusión"
   - 
-    value: "2208.04"
+    value: "220804"
     display_name: "Núcleos"
   - 
-    value: "2208.05"
+    value: "220805"
     display_name: "Aceleradores de partículas"
   - 
-    value: "2208.06"
+    value: "220806"
     display_name: "Detectores de partículas"
   - 
-    value: "2208.07"
+    value: "220807"
     display_name: "Física de partículas"
   - 
-    value: "2208.08"
+    value: "220808"
     display_name: "Fuentes de partículas"
   - 
-    value: "2208.09"
+    value: "220809"
     display_name: "Confinamiento de plasma"
   - 
-    value: "2208.99"
+    value: "220899"
     display_name: "Otras (especificar)"
   - 
     value: "2209"
     display_name: "Óptica"
   - 
-    value: "2209.01"
+    value: "220901"
     display_name: "Espectroscopía de absorción"
   - 
-    value: "2209.02"
+    value: "220902"
     display_name: "Cinematografía"
   - 
-    value: "2209.03"
+    value: "220903"
     display_name: "Colorimetría"
   - 
-    value: "2209.04"
+    value: "220904"
     display_name: "Espectroscopía de emisión"
   - 
-    value: "2209.05"
+    value: "220905"
     display_name: "Fibras ópticas"
   - 
-    value: "2209.06"
+    value: "220906"
     display_name: "Optica geométrica"
   - 
-    value: "2209.07"
+    value: "220907"
     display_name: "Holografía"
   - 
-    value: "2209.08"
+    value: "220908"
     display_name: "Iluminación"
   - 
-    value: "2209.09"
+    value: "220909"
     display_name: "Radiación infrarroja"
   - 
-    value: "2209.10"
+    value: "220910"
     display_name: "Láseres"
   - 
-    value: "2209.11"
+    value: "220911"
     display_name: "Luz"
   - 
-    value: "2209.12"
+    value: "220912"
     display_name: "Microscopios"
   - 
-    value: "2209.13"
+    value: "220913"
     display_name: "Optica no lineal"
   - 
-    value: "2209.14"
+    value: "220914"
     display_name: "Propiedades ópticas de los sólidos"
   - 
-    value: "2209.15"
+    value: "220915"
     display_name: "Optometría"
   - 
-    value: "2209.16"
+    value: "220916"
     display_name: "Instrumentos fotográficos"
   - 
-    value: "2209.17"
+    value: "220917"
     display_name: "Fotografía"
   - 
-    value: "2209.18"
+    value: "220918"
     display_name: "Fotometría"
   - 
-    value: "2209.19"
+    value: "220919"
     display_name: "Optica física"
   - 
-    value: "2209.20"
+    value: "220920"
     display_name: "Radiometría"
   - 
-    value: "2209.21"
+    value: "220921"
     display_name: "Espectroscopía"
   - 
-    value: "2209.22"
+    value: "220922"
     display_name: "Radiación ultravioleta"
   - 
-    value: "2209.23"
+    value: "220923"
     display_name: "Radiación visible"
   - 
-    value: "2209.24"
+    value: "220924"
     display_name: "Física de la visión"
   - 
-    value: "2209.90"
+    value: "220990"
     display_name: "Tratamiento digital. Imágenes"
   - 
-    value: "2209.99"
+    value: "220999"
     display_name: "Otras (especificar)"
   - 
     value: "2210"
     display_name: "Química física"
   - 
-    value: "2210.01"
+    value: "221001"
     display_name: "Catálisis"
   - 
-    value: "2210.02"
+    value: "221002"
     display_name: "Equilibrio químico y de fase"
   - 
-    value: "2210.03"
+    value: "221003"
     display_name: "Cinética química"
   - 
-    value: "2210.04"
+    value: "221004"
     display_name: "Química de coloides"
   - 
-    value: "2210.05"
+    value: "221005"
     display_name: "Electroquímica"
   - 
-    value: "2210.06"
+    value: "221006"
     display_name: "Electrolitos"
   - 
-    value: "2210.07"
+    value: "221007"
     display_name: "Espectroscopía electrónica"
   - 
-    value: "2210.08"
+    value: "221008"
     display_name: "Emulsiones"
   - 
-    value: "2210.09"
+    value: "221009"
     display_name: "Transferencia de energía"
   - 
-    value: "2210.10"
+    value: "221010"
     display_name: "Reacciones rápidas y explosivos"
   - 
-    value: "2210.11"
+    value: "221011"
     display_name: "Llamas"
   - 
-    value: "2210.12"
+    value: "221012"
     display_name: "Teoría de las células de combustible"
   - 
-    value: "2210.13"
+    value: "221013"
     display_name: "Sales fundidas"
   - 
-    value: "2210.14"
+    value: "221014"
     display_name: "Física de la fase gaseosa"
   - 
-    value: "2210.15"
+    value: "221015"
     display_name: "Química de las altas temperaturas"
   - 
-    value: "2210.16"
+    value: "221016"
     display_name: "Química de interfases"
   - 
-    value: "2210.17"
+    value: "221017"
     display_name: "Intercambio iónico"
   - 
-    value: "2210.18"
+    value: "221018"
     display_name: "Física del estado líquido"
   - 
-    value: "2210.19"
+    value: "221019"
     display_name: "Fenómenos de membrana"
   - 
-    value: "2210.20"
+    value: "221020"
     display_name: "Espectroscopía molecular"
   - 
-    value: "2210.21"
+    value: "221021"
     display_name: "Equilibrio de fases"
   - 
-    value: "2210.22"
+    value: "221022"
     display_name: "Fotoquímica"
   - 
-    value: "2210.23"
+    value: "221023"
     display_name: "Teoría cuántica"
   - 
-    value: "2210.24"
+    value: "221024"
     display_name: "Radioquímica"
   - 
-    value: "2210.25"
+    value: "221025"
     display_name: "Procesos de relajación"
   - 
-    value: "2210.26"
+    value: "221026"
     display_name: "Fenómenos de dispersión"
   - 
-    value: "2210.27"
+    value: "221027"
     display_name: "Estados de la materia"
   - 
-    value: "2210.28"
+    value: "221028"
     display_name: "Química del estado sólido"
   - 
-    value: "2210.29"
+    value: "221029"
     display_name: "Física del estado sólido"
   - 
-    value: "2210.30"
+    value: "221030"
     display_name: "Soluciones"
   - 
-    value: "2210.31"
+    value: "221031"
     display_name: "Termoquímica"
   - 
-    value: "2210.32"
+    value: "221032"
     display_name: "Termodinámica"
   - 
-    value: "2210.33"
+    value: "221033"
     display_name: "Fenómenos de transporte"
   - 
-    value: "2210.34"
+    value: "221034"
     display_name: "Teoría de la valencia"
   - 
-    value: "2210.90"
+    value: "221090"
     display_name: "Química-Física de Polímeros"
   - 
-    value: "2210.91"
+    value: "221091"
     display_name: "Química-Física: Química de la fase gaseosa"
   - 
-    value: "2210.93"
+    value: "221093"
     display_name: "Cristales líquidos"
   - 
-    value: "2210.99"
+    value: "221099"
     display_name: "Otras (especificar)"
   - 
     value: "2211"
     display_name: "Física del estado sólido"
   - 
-    value: "2211.01"
+    value: "221101"
     display_name: "Aleaciones"
   - 
-    value: "2211.02"
+    value: "221102"
     display_name: "Materiales compuestos"
   - 
-    value: "2211.03"
+    value: "221103"
     display_name: "Crecimiento de cristales"
   - 
-    value: "2211.04"
+    value: "221104"
     display_name: "Cristalografía"
   - 
-    value: "2211.05"
+    value: "221105"
     display_name: "Estructura cristalina"
   - 
-    value: "2211.06"
+    value: "221106"
     display_name: "Dendritas"
   - 
-    value: "2211.07"
+    value: "221107"
     display_name: "Dieléctricos"
   - 
-    value: "2211.08"
+    value: "221108"
     display_name: "Difusión en sólidos"
   - 
-    value: "2211.09"
+    value: "221109"
     display_name: "Propiedades de portadores electrónicos"
   - 
-    value: "2211.10"
+    value: "221110"
     display_name: "Estados electrónicos"
   - 
-    value: "2211.11"
+    value: "221111"
     display_name: "Propiedades de transporte de electrones"
   - 
-    value: "2211.12"
+    value: "221112"
     display_name: "Imperfecciones"
   - 
-    value: "2211.13"
+    value: "221113"
     display_name: "Interacción de la radiación con los sólidos"
   - 
-    value: "2211.14"
+    value: "221114"
     display_name: "Interfases"
   - 
-    value: "2211.15"
+    value: "221115"
     display_name: "Mecánica de redes"
   - 
-    value: "2211.16"
+    value: "221116"
     display_name: "Luminiscencia"
   - 
-    value: "2211.17"
+    value: "221117"
     display_name: "Propiedades magnéticas"
   - 
-    value: "2211.18"
+    value: "221118"
     display_name: "Resonancia magnética"
   - 
-    value: "2211.19"
+    value: "221119"
     display_name: "Propiedades mecánicas"
   - 
-    value: "2211.20"
+    value: "221120"
     display_name: "Conductores metálicos"
   - 
-    value: "2211.21"
+    value: "221121"
     display_name: "Metalurgia"
   - 
-    value: "2211.22"
+    value: "221122"
     display_name: "Metalografía"
   - 
-    value: "2211.23"
+    value: "221123"
     display_name: "Estados no cristalinos"
   - 
-    value: "2211.24"
+    value: "221124"
     display_name: "Propiedades ópticas"
   - 
-    value: "2211.25"
+    value: "221125"
     display_name: "Semiconductores"
   - 
-    value: "2211.26"
+    value: "221126"
     display_name: "Dispositivos de estado sólido"
   - 
-    value: "2211.27"
+    value: "221127"
     display_name: "Superconductores"
   - 
-    value: "2211.28"
+    value: "221128"
     display_name: "Superficies"
   - 
-    value: "2211.29"
+    value: "221129"
     display_name: "Propiedades térmicas de los sólidos"
   - 
-    value: "2211.30"
+    value: "221130"
     display_name: "Tribología"
   - 
-    value: "2211.90"
+    value: "221190"
     display_name: "Física del estado sólido. Lámina delgada"
   - 
-    value: "2211.91"
+    value: "221191"
     display_name: "Física del estado sólido. Espectroscopía de sólidos"
   - 
-    value: "2211.99"
+    value: "221199"
     display_name: "Otras (especificar)"
   - 
     value: "2212"
     display_name: "Física Teórica"
   - 
-    value: "2212.01"
+    value: "221201"
     display_name: "Campos electromagnéticos"
   - 
-    value: "2212.02"
+    value: "221202"
     display_name: "Partículas elementales"
   - 
-    value: "2212.03"
+    value: "221203"
     display_name: "Energía (física)"
   - 
-    value: "2212.04"
+    value: "221204"
     display_name: "Campos"
   - 
-    value: "2212.05"
+    value: "221205"
     display_name: "Gravitación"
   - 
-    value: "2212.06"
+    value: "221206"
     display_name: "Campos gravitacionales"
   - 
-    value: "2212.07"
+    value: "221207"
     display_name: "Gravitones"
   - 
-    value: "2212.08"
+    value: "221208"
     display_name: "Hadrones"
   - 
-    value: "2212.09"
+    value: "221209"
     display_name: "Leptones"
   - 
-    value: "2212.10"
+    value: "221210"
     display_name: "Masa"
   - 
-    value: "2212.11"
+    value: "221211"
     display_name: "Fotones"
   - 
-    value: "2212.12"
+    value: "221212"
     display_name: "Teoría cuántica de campos"
   - 
-    value: "2212.13"
+    value: "221213"
     display_name: "Radiación (electromagnética)"
   - 
-    value: "2212.14"
+    value: "221214"
     display_name: "Teoría de la relatividad"
   - 
-    value: "2212.99"
+    value: "221299"
     display_name: "Otras (especificar)"
   - 
     value: "2213"
     display_name: "Termodinámica"
   - 
-    value: "2213.01"
+    value: "221301"
     display_name: "Cambios de estado"
   - 
-    value: "2213.02"
+    value: "221302"
     display_name: "Física de la transmisión del calor"
   - 
-    value: "2213.03"
+    value: "221303"
     display_name: "Altas presiones"
   - 
-    value: "2213.04"
+    value: "221304"
     display_name: "Altas temperaturas"
   - 
-    value: "2213.05"
+    value: "221305"
     display_name: "Teoría cinética"
   - 
-    value: "2213.06"
+    value: "221306"
     display_name: "Bajas temperaturas"
   - 
-    value: "2213.07"
+    value: "221307"
     display_name: "Cambio de fase"
   - 
-    value: "2213.08"
+    value: "221308"
     display_name: "Técnicas de medida del calor"
   - 
-    value: "2213.09"
+    value: "221309"
     display_name: "Equilibrios termodinámicos"
   - 
-    value: "2213.10"
+    value: "221310"
     display_name: "Relaciones termodinámicas"
   - 
-    value: "2213.11"
+    value: "221311"
     display_name: "Fenómenos de transporte"
   - 
-    value: "2213.99"
+    value: "221399"
     display_name: "Otras (especificar)"
   - 
     value: "2214"
     display_name: "Unidades y constantes"
   - 
-    value: "2214.01"
+    value: "221401"
     display_name: "Constantes físicas"
   - 
-    value: "2214.02"
+    value: "221402"
     display_name: "Metrología"
   - 
-    value: "2214.03"
+    value: "221403"
     display_name: "Patrones"
   - 
-    value: "2214.04"
+    value: "221404"
     display_name: "Calibración de unidades"
   - 
-    value: "2214.05"
+    value: "221405"
     display_name: "Conversión de unidades"
   - 
-    value: "2214.99"
+    value: "221499"
     display_name: "Otras (especificar)"
   - 
     value: "2290"
     display_name: "Física de Altas Energías"
   - 
-    value: "2290.01"
+    value: "229001"
     display_name: "Física teórica de altas energías"
   - 
     value: "2299"
@@ -1654,448 +1654,448 @@ unesco:
     value: "2301"
     display_name: "Química analítica"
   - 
-    value: "2301.01"
+    value: "230101"
     display_name: "Espectroscopía de absorción"
   - 
-    value: "2301.02"
+    value: "230102"
     display_name: "Análisis bioquímico"
   - 
-    value: "2301.03"
+    value: "230103"
     display_name: "Análisis cromatográfico"
   - 
-    value: "2301.04"
+    value: "230104"
     display_name: "Análisis electroquímico"
   - 
-    value: "2301.05"
+    value: "230105"
     display_name: "Espectroscopía de emisión"
   - 
-    value: "2301.06"
+    value: "230106"
     display_name: "Fluorimetría"
   - 
-    value: "2301.07"
+    value: "230107"
     display_name: "Gravimetría"
   - 
-    value: "2301.08"
+    value: "230108"
     display_name: "Espectroscopía de infrarrojos"
   - 
-    value: "2301.09"
+    value: "230109"
     display_name: "Espectroscopía de resonancia magnética"
   - 
-    value: "2301.10"
+    value: "230110"
     display_name: "Espectroscopía de masas"
   - 
-    value: "2301.11"
+    value: "230111"
     display_name: "Análisis microquímico"
   - 
-    value: "2301.12"
+    value: "230112"
     display_name: "Microscopia"
   - 
-    value: "2301.13"
+    value: "230113"
     display_name: "Espectroscopía de microondas"
   - 
-    value: "2301.14"
+    value: "230114"
     display_name: "Fosforimetría"
   - 
-    value: "2301.15"
+    value: "230115"
     display_name: "Análisis de polímeros"
   - 
-    value: "2301.16"
+    value: "230116"
     display_name: "Análisis radioquímico"
   - 
-    value: "2301.17"
+    value: "230117"
     display_name: "Espectroscopía Raman"
   - 
-    value: "2301.18"
+    value: "230118"
     display_name: "Métodos termoanalíticos"
   - 
-    value: "2301.19"
+    value: "230119"
     display_name: "Volumetría"
   - 
-    value: "2301.20"
+    value: "230120"
     display_name: "Espectroscopía de Rayos X"
   - 
-    value: "2301.99"
+    value: "230199"
     display_name: "Otras (especificar)"
   - 
     value: "2302"
     display_name: "Bioquímica"
   - 
-    value: "2302.01"
+    value: "230201"
     display_name: "Alcaloides"
   - 
-    value: "2302.02"
+    value: "230202"
     display_name: "Aminoácidos"
   - 
-    value: "2302.03"
+    value: "230203"
     display_name: "Antimetabolitos"
   - 
-    value: "2302.04"
+    value: "230204"
     display_name: "Genética bioquímica"
   - 
-    value: "2302.05"
+    value: "230205"
     display_name: "Biosíntesis"
   - 
-    value: "2302.06"
+    value: "230206"
     display_name: "Quimioterapia"
   - 
-    value: "2302.07"
+    value: "230207"
     display_name: "Química clínica"
   - 
-    value: "2302.08"
+    value: "230208"
     display_name: "Coenzimas"
   - 
-    value: "2302.09"
+    value: "230209"
     display_name: "Enzimologia"
   - 
-    value: "2302.10"
+    value: "230210"
     display_name: "Aceites esenciales"
   - 
-    value: "2302.11"
+    value: "230211"
     display_name: "Acidos grasos"
   - 
-    value: "2302.12"
+    value: "230212"
     display_name: "Fermentación"
   - 
-    value: "2302.13"
+    value: "230213"
     display_name: "Regulación por retroalimentación"
   - 
-    value: "2302.14"
+    value: "230214"
     display_name: "Glúcidos"
   - 
-    value: "2302.15"
+    value: "230215"
     display_name: "Hormonas"
   - 
-    value: "2302.16"
+    value: "230216"
     display_name: "Inmunoquímica"
   - 
-    value: "2302.17"
+    value: "230217"
     display_name: "Metabolismo intermediario"
   - 
-    value: "2302.18"
+    value: "230218"
     display_name: "Lípidos"
   - 
-    value: "2302.19"
+    value: "230219"
     display_name: "Procesos metabólicos"
   - 
-    value: "2302.20"
+    value: "230220"
     display_name: "Química microbiológica"
   - 
-    value: "2302.21"
+    value: "230221"
     display_name: "Biología molecular"
   - 
-    value: "2302.22"
+    value: "230222"
     display_name: "Farmacología molecular"
   - 
-    value: "2302.23"
+    value: "230223"
     display_name: "Acidos nucleicos"
   - 
-    value: "2302.24"
+    value: "230224"
     display_name: "Péptidos"
   - 
-    value: "2302.25"
+    value: "230225"
     display_name: "Fotosíntesis"
   - 
-    value: "2302.26"
+    value: "230226"
     display_name: "Bioquímica física"
   - 
-    value: "2302.27"
+    value: "230227"
     display_name: "Proteínas"
   - 
-    value: "2302.28"
+    value: "230228"
     display_name: "Almidón"
   - 
-    value: "2302.29"
+    value: "230229"
     display_name: "Esteroides"
   - 
-    value: "2302.30"
+    value: "230230"
     display_name: "Terpenos"
   - 
-    value: "2302.31"
+    value: "230231"
     display_name: "Oligoelementos"
   - 
-    value: "2302.32"
+    value: "230232"
     display_name: "Vitaminas"
   - 
-    value: "2302.33"
+    value: "230233"
     display_name: "Ceras"
   - 
-    value: "2302.90"
+    value: "230290"
     display_name: "Bioquímica de alimentos"
   - 
-    value: "2302.91"
+    value: "230291"
     display_name: "Química de macromoléculas biológicas"
   - 
-    value: "2302.99"
+    value: "230299"
     display_name: "Otras (especificar)"
   - 
     value: "2303"
     display_name: "Química inorgánica"
   - 
-    value: "2303.01"
+    value: "230301"
     display_name: "Química de los actínidos"
   - 
-    value: "2303.02"
+    value: "230302"
     display_name: "Elementos alcalinotérreos"
   - 
-    value: "2303.03"
+    value: "230303"
     display_name: "Elementos alcalinos"
   - 
-    value: "2303.04"
+    value: "230304"
     display_name: "Compuestos de boro"
   - 
-    value: "2303.05"
+    value: "230305"
     display_name: "Carbono"
   - 
-    value: "2303.06"
+    value: "230306"
     display_name: "Compuestos de cloro"
   - 
-    value: "2303.07"
+    value: "230307"
     display_name: "Compuestos de coordinación"
   - 
-    value: "2303.08"
+    value: "230308"
     display_name: "Compuestos deficientes de electrones"
   - 
-    value: "2303.09"
+    value: "230309"
     display_name: "Elementos electropositivos"
   - 
-    value: "2303.10"
+    value: "230310"
     display_name: "Compuestos de flúor"
   - 
-    value: "2303.11"
+    value: "230311"
     display_name: "Germanio"
   - 
-    value: "2303.12"
+    value: "230312"
     display_name: "Grafito"
   - 
-    value: "2303.13"
+    value: "230313"
     display_name: "Halógenos"
   - 
-    value: "2303.14"
+    value: "230314"
     display_name: "Hidrógeno"
   - 
-    value: "2303.15"
+    value: "230315"
     display_name: "Hidruros"
   - 
-    value: "2303.16"
+    value: "230316"
     display_name: "Mecanismos de las reacciones inorgánicas"
   - 
-    value: "2303.17"
+    value: "230317"
     display_name: "Compuestos de plomo"
   - 
-    value: "2303.18"
+    value: "230318"
     display_name: "Metales"
   - 
-    value: "2303.19"
+    value: "230319"
     display_name: "Alquilos metálicos"
   - 
-    value: "2303.20"
+    value: "230320"
     display_name: "Compuestos del nitrógeno"
   - 
-    value: "2303.21"
+    value: "230321"
     display_name: "Compuestos organometálicos"
   - 
-    value: "2303.22"
+    value: "230322"
     display_name: "Compuestos de fósforo"
   - 
-    value: "2303.23"
+    value: "230323"
     display_name: "Química de los pigmentos"
   - 
-    value: "2303.24"
+    value: "230324"
     display_name: "Tierras raras"
   - 
-    value: "2303.25"
+    value: "230325"
     display_name: "Compuestos de sodio"
   - 
-    value: "2303.26"
+    value: "230326"
     display_name: "Estructura de los compuestos inorgánicos"
   - 
-    value: "2303.27"
+    value: "230327"
     display_name: "Compuestos de azufre"
   - 
-    value: "2303.28"
+    value: "230328"
     display_name: "Elementos sintéticos"
   - 
-    value: "2303.29"
+    value: "230329"
     display_name: "Elementos de transición"
   - 
-    value: "2303.30"
+    value: "230330"
     display_name: "Elementos transuránidos"
   - 
-    value: "2303.31"
+    value: "230331"
     display_name: "Química del agua"
   - 
-    value: "2303.99"
+    value: "230399"
     display_name: "Otras (especificar)"
   - 
     value: "2304"
     display_name: "Química macromolecular"
   - 
-    value: "2304.01"
+    value: "230401"
     display_name: "Plásticos celulares"
   - 
-    value: "2304.02"
+    value: "230402"
     display_name: "Celulosa"
   - 
-    value: "2304.03"
+    value: "230403"
     display_name: "Polímeros compuestos"
   - 
-    value: "2304.04"
+    value: "230404"
     display_name: "Elastómeros"
   - 
-    value: "2304.05"
+    value: "230405"
     display_name: "Gomas"
   - 
-    value: "2304.06"
+    value: "230406"
     display_name: "Polímeros de alto peso molecular"
   - 
-    value: "2304.07"
+    value: "230407"
     display_name: "Polímeros inorgánicos"
   - 
-    value: "2304.08"
+    value: "230408"
     display_name: "Macromoléculas"
   - 
-    value: "2304.09"
+    value: "230409"
     display_name: "Modificación de macromoléculas"
   - 
-    value: "2304.10"
+    value: "230410"
     display_name: "Química de monómeros"
   - 
-    value: "2304.11"
+    value: "230411"
     display_name: "Fibras naturales"
   - 
-    value: "2304.12"
+    value: "230412"
     display_name: "Polímeros reticulados"
   - 
-    value: "2304.13"
+    value: "230413"
     display_name: "Polielectrolitos"
   - 
-    value: "2304.14"
+    value: "230414"
     display_name: "Poliésteres"
   - 
-    value: "2304.15"
+    value: "230415"
     display_name: "Polietilenos"
   - 
-    value: "2304.16"
+    value: "230416"
     display_name: "Análisis de polímeros"
   - 
-    value: "2304.17"
+    value: "230417"
     display_name: "Polímeros en forma dispersa"
   - 
-    value: "2304.18"
+    value: "230418"
     display_name: "Polipéptidos y proteínas"
   - 
-    value: "2304.19"
+    value: "230419"
     display_name: "Polisacáridos"
   - 
-    value: "2304.20"
+    value: "230420"
     display_name: "Poliestireno"
   - 
-    value: "2304.21"
+    value: "230421"
     display_name: "Poliuretanos"
   - 
-    value: "2304.22"
+    value: "230422"
     display_name: "Estabilidad de las macromoléculas"
   - 
-    value: "2304.23"
+    value: "230423"
     display_name: "Síntesis de macromoléculas"
   - 
-    value: "2304.24"
+    value: "230424"
     display_name: "Fibras sintéticas"
   - 
-    value: "2304.99"
+    value: "230499"
     display_name: "Otras (especificar)"
   - 
     value: "2305"
     display_name: "Química nuclear"
   - 
-    value: "2305.01"
+    value: "230501"
     display_name: "Química de átomos calientes"
   - 
-    value: "2305.02"
+    value: "230502"
     display_name: "Trazadores isotópicos"
   - 
-    value: "2305.03"
+    value: "230503"
     display_name: "Moléculas marcadas"
   - 
-    value: "2305.04"
+    value: "230504"
     display_name: "Química de la radiación"
   - 
-    value: "2305.05"
+    value: "230505"
     display_name: "Radioquímica"
   - 
-    value: "2305.06"
+    value: "230506"
     display_name: "Radioisótopos"
   - 
-    value: "2305.07"
+    value: "230507"
     display_name: "Separación de isótopos"
   - 
-    value: "2305.99"
+    value: "230599"
     display_name: "Otras (especificar)"
   - 
     value: "2306"
     display_name: "Química orgánica"
   - 
-    value: "2306.01"
+    value: "230601"
     display_name: "Hidrocarburos alifáticos"
   - 
-    value: "2306.02"
+    value: "230602"
     display_name: "Hidrocarburos aromáticos"
   - 
-    value: "2306.03"
+    value: "230603"
     display_name: "Derivados del benceno"
   - 
-    value: "2306.04"
+    value: "230604"
     display_name: "Química de los compuestos bicíclicos"
   - 
-    value: "2306.05"
+    value: "230605"
     display_name: "Química de carbaniones"
   - 
-    value: "2306.06"
+    value: "230606"
     display_name: "Química de los hidratos de carbono"
   - 
-    value: "2306.07"
+    value: "230607"
     display_name: "Química del carbonio"
   - 
-    value: "2306.08"
+    value: "230608"
     display_name: "Química de los colorantes"
   - 
-    value: "2306.09"
+    value: "230609"
     display_name: "Radicales libres"
   - 
-    value: "2306.10"
+    value: "230610"
     display_name: "Compuestos heterocíclicos"
   - 
-    value: "2306.11"
+    value: "230611"
     display_name: "Compuestos organometálicos"
   - 
-    value: "2306.12"
+    value: "230612"
     display_name: "Química de los organofosforados"
   - 
-    value: "2306.13"
+    value: "230613"
     display_name: "Química de los organosilícicos"
   - 
-    value: "2306.14"
+    value: "230614"
     display_name: "Química de los organosulfurados"
   - 
-    value: "2306.15"
+    value: "230615"
     display_name: "Mecanismos de reacción"
   - 
-    value: "2306.16"
+    value: "230616"
     display_name: "Estereoquímica y análisis conformacional"
   - 
-    value: "2306.17"
+    value: "230617"
     display_name: "Química de los esteroides"
   - 
-    value: "2306.18"
+    value: "230618"
     display_name: "Estructura de las moléculas orgánicas"
   - 
-    value: "2306.90"
+    value: "230690"
     display_name: "Química de productos naturales orgánicos"
   - 
-    value: "2306.91"
+    value: "230691"
     display_name: "Química orgánica. Análisis instrumental"
   - 
-    value: "2306.99"
+    value: "230699"
     display_name: "Otras (especificar)"
   - 
     value: "2307"
@@ -2104,7 +2104,7 @@ unesco:
     value: "2390"
     display_name: "Química Farmacéutica"
   - 
-    value: "2390.01"
+    value: "239001"
     display_name: "Diseño, síntesis y estudio nuevos fármacos"
   - 
     value: "2399"
@@ -2116,133 +2116,133 @@ unesco:
     value: "2401"
     display_name: "Biología animal (Zoología)"
   - 
-    value: "2401.01"
+    value: "240101"
     display_name: "Anatomía animal"
   - 
-    value: "2401.02"
+    value: "240102"
     display_name: "Comportamiento animal"
   - 
-    value: "2401.03"
+    value: "240103"
     display_name: "Comunicación animal"
   - 
-    value: "2401.04"
+    value: "240104"
     display_name: "Citología animal"
   - 
-    value: "2401.05"
+    value: "240105"
     display_name: "Desarrollo animal"
   - 
-    value: "2401.06"
+    value: "240106"
     display_name: "Ecología animal"
   - 
-    value: "2401.07"
+    value: "240107"
     display_name: "Embriología animal"
   - 
-    value: "2401.08"
+    value: "240108"
     display_name: "Genética animal"
   - 
-    value: "2401.09"
+    value: "240109"
     display_name: "Crecimiento animal"
   - 
-    value: "2401.10"
+    value: "240110"
     display_name: "Histología animal"
   - 
-    value: "2401.11"
+    value: "240111"
     display_name: "Patología animal"
   - 
-    value: "2401.12"
+    value: "240112"
     display_name: "Parasitología animal"
   - 
-    value: "2401.13"
+    value: "240113"
     display_name: "Fisiología animal"
   - 
-    value: "2401.14"
+    value: "240114"
     display_name: "Taxonomía animal"
   - 
-    value: "2401.15"
+    value: "240115"
     display_name: "Zoología general"
   - 
-    value: "2401.16"
+    value: "240116"
     display_name: "Herpetología"
   - 
-    value: "2401.17"
+    value: "240117"
     display_name: "Invertebrados"
   - 
-    value: "2401.18"
+    value: "240118"
     display_name: "Mamíferos"
   - 
-    value: "2401.19"
+    value: "240119"
     display_name: "Zoología marina"
   - 
-    value: "2401.20"
+    value: "240120"
     display_name: "Ornitología"
   - 
-    value: "2401.21"
+    value: "240121"
     display_name: "Primates"
   - 
-    value: "2401.22"
+    value: "240122"
     display_name: "Protozoología"
   - 
-    value: "2401.23"
+    value: "240123"
     display_name: "Vertebrados"
   - 
-    value: "2401.90"
+    value: "240190"
     display_name: "Zoología: etiología"
   - 
-    value: "2401.91"
+    value: "240191"
     display_name: "Invertebrados no insectos"
   - 
-    value: "2401.99"
+    value: "240199"
     display_name: "Otras (especificar)"
   - 
     value: "2402"
     display_name: "Antropología (Física)"
   - 
-    value: "2402.01"
+    value: "240201"
     display_name: "Archivos antropológicos"
   - 
-    value: "2402.02"
+    value: "240202"
     display_name: "Antropogenética"
   - 
-    value: "2402.03"
+    value: "240203"
     display_name: "Antropometría y antropología forense"
   - 
-    value: "2402.04"
+    value: "240204"
     display_name: "Composición del cuerpo"
   - 
-    value: "2402.05"
+    value: "240205"
     display_name: "Constitución del cuerpo"
   - 
-    value: "2402.06"
+    value: "240206"
     display_name: "Etnología"
   - 
-    value: "2402.07"
+    value: "240207"
     display_name: "Antropología médica"
   - 
-    value: "2402.08"
+    value: "240208"
     display_name: "Hábitos alimentarios"
   - 
-    value: "2402.09"
+    value: "240209"
     display_name: "Osteología"
   - 
-    value: "2402.10"
+    value: "240210"
     display_name: "Biología de poblaciones"
   - 
-    value: "2402.11"
+    value: "240211"
     display_name: "Comportamiento de los primates"
   - 
-    value: "2402.12"
+    value: "240212"
     display_name: "Somatología de los primates"
   - 
-    value: "2402.13"
+    value: "240213"
     display_name: "Biología racial"
   - 
-    value: "2402.14"
+    value: "240214"
     display_name: "Desarrollo somático"
   - 
-    value: "2402.15"
+    value: "240215"
     display_name: "Envejecimiento somático"
   - 
-    value: "2402.99"
+    value: "240299"
     display_name: "Otras (especificar)"
   - 
     value: "2403"
@@ -2251,10 +2251,10 @@ unesco:
     value: "2404"
     display_name: "Biomatemáticas"
   - 
-    value: "2404.01"
+    value: "240401"
     display_name: "Bioestadística"
   - 
-    value: "2404.99"
+    value: "240499"
     display_name: "Otras (especificar)"
   - 
     value: "2405"
@@ -2263,400 +2263,400 @@ unesco:
     value: "2406"
     display_name: "Biofísica"
   - 
-    value: "2406.01"
+    value: "240601"
     display_name: "Bioacústica"
   - 
-    value: "2406.02"
+    value: "240602"
     display_name: "Bioelectricidad"
   - 
-    value: "2406.03"
+    value: "240603"
     display_name: "Bioenergética"
   - 
-    value: "2406.04"
+    value: "240604"
     display_name: "Biomecánica"
   - 
-    value: "2406.05"
+    value: "240605"
     display_name: "Bioóptica"
   - 
-    value: "2406.06"
+    value: "240606"
     display_name: "Física médica"
   - 
-    value: "2406.99"
+    value: "240699"
     display_name: "Otras (especificar)"
   - 
     value: "2407"
     display_name: "Biología celular"
   - 
-    value: "2407.01"
+    value: "240701"
     display_name: "Cultivo celular"
   - 
-    value: "2407.02"
+    value: "240702"
     display_name: "Citogenética"
   - 
-    value: "2407.03"
+    value: "240703"
     display_name: "Morfología celular"
   - 
-    value: "2407.04"
+    value: "240704"
     display_name: "Citología"
   - 
-    value: "2407.05"
+    value: "240705"
     display_name: "Cultivo de tejidos"
   - 
-    value: "2407.90"
+    value: "240790"
     display_name: "Estructura de la Pared Celular"
   - 
-    value: "2407.99"
+    value: "240799"
     display_name: "Otras (especificar)"
   - 
     value: "2408"
     display_name: "Etología"
   - 
-    value: "2408.01"
+    value: "240801"
     display_name: "Animal"
   - 
-    value: "2408.02"
+    value: "240802"
     display_name: "Humana"
   - 
-    value: "2408.03"
+    value: "240803"
     display_name: "Insectos"
   - 
-    value: "2408.99"
+    value: "240899"
     display_name: "Otras (especificar)"
   - 
     value: "2409"
     display_name: "Genética"
   - 
-    value: "2409.01"
+    value: "240901"
     display_name: "Embriología"
   - 
-    value: "2409.02"
+    value: "240902"
     display_name: "Ingeniería genética"
   - 
-    value: "2409.03"
+    value: "240903"
     display_name: "Genética de poblaciones"
   - 
-    value: "2409.90"
+    value: "240990"
     display_name: "Citogenética animal"
   - 
-    value: "2409.91"
+    value: "240991"
     display_name: "Genética del desarrollo"
   - 
-    value: "2409.92"
+    value: "240992"
     display_name: "Genética molecular de plantas"
   - 
-    value: "2409.99"
+    value: "240999"
     display_name: "Otras (especificar)"
   - 
     value: "2410"
     display_name: "Biología humana"
   - 
-    value: "2410.01"
+    value: "241001"
     display_name: "Grupo sanguíneo"
   - 
-    value: "2410.02"
+    value: "241002"
     display_name: "Anatomía humana"
   - 
-    value: "2410.03"
+    value: "241003"
     display_name: "Citología humana"
   - 
-    value: "2410.04"
+    value: "241004"
     display_name: "Desarrollo humano"
   - 
-    value: "2410.05"
+    value: "241005"
     display_name: "Ecología humana"
   - 
-    value: "2410.06"
+    value: "241006"
     display_name: "Embriología humana"
   - 
-    value: "2410.07"
+    value: "241007"
     display_name: "Genética humana"
   - 
-    value: "2410.08"
+    value: "241008"
     display_name: "Histología humana"
   - 
-    value: "2410.09"
+    value: "241009"
     display_name: "Neuroanatomía humana"
   - 
-    value: "2410.10"
+    value: "241010"
     display_name: "Fisiología humana"
   - 
-    value: "2410.11"
+    value: "241011"
     display_name: "Organos sensoriales"
   - 
-    value: "2410.12"
+    value: "241012"
     display_name: "Anatomía sistemática"
   - 
-    value: "2410.13"
+    value: "241013"
     display_name: "Anatomía topográfica"
   - 
-    value: "2410.99"
+    value: "241099"
     display_name: "Otras (especificar)"
   - 
     value: "2411"
     display_name: "Fisiología humana"
   - 
-    value: "2411.01"
+    value: "241101"
     display_name: "Fisiología del equilibrio"
   - 
-    value: "2411.02"
+    value: "241102"
     display_name: "Anestesiología"
   - 
-    value: "2411.03"
+    value: "241103"
     display_name: "Fisiología cardiovascular"
   - 
-    value: "2411.04"
+    value: "241104"
     display_name: "Fisiología endocrina"
   - 
-    value: "2411.05"
+    value: "241105"
     display_name: "Fisiología del medio interno"
   - 
-    value: "2411.06"
+    value: "241106"
     display_name: "Fisiología del ejercicio"
   - 
-    value: "2411.07"
+    value: "241107"
     display_name: "Fisiología de la digestión"
   - 
-    value: "2411.08"
+    value: "241108"
     display_name: "Metabolismo humano"
   - 
-    value: "2411.09"
+    value: "241109"
     display_name: "Regulación de la temperatura humana"
   - 
-    value: "2411.10"
+    value: "241110"
     display_name: "Fisiología del músculo"
   - 
-    value: "2411.11"
+    value: "241111"
     display_name: "Neurofisiología"
   - 
-    value: "2411.12"
+    value: "241112"
     display_name: "Fisiología del sistema nervioso central"
   - 
-    value: "2411.13"
+    value: "241113"
     display_name: "Fisiología de la audición"
   - 
-    value: "2411.14"
+    value: "241114"
     display_name: "Fisiología del lenguaje"
   - 
-    value: "2411.15"
+    value: "241115"
     display_name: "Fisiología de la visión"
   - 
-    value: "2411.16"
+    value: "241116"
     display_name: "Fisiología de la reproducción"
   - 
-    value: "2411.17"
+    value: "241117"
     display_name: "Fisiología de la respiración"
   - 
-    value: "2411.18"
+    value: "241118"
     display_name: "Fisiología del movimiento"
   - 
-    value: "2411.99"
+    value: "241199"
     display_name: "Otras (especificar)"
   - 
     value: "2412"
     display_name: "Inmunología"
   - 
-    value: "2412.01"
+    value: "241201"
     display_name: "Antígenos"
   - 
-    value: "2412.02"
+    value: "241202"
     display_name: "Anticuerpos"
   - 
-    value: "2412.03"
+    value: "241203"
     display_name: "Reacción antígeno-anticuerpo"
   - 
-    value: "2412.04"
+    value: "241204"
     display_name: "Formación de anticuerpos"
   - 
-    value: "2412.05"
+    value: "241205"
     display_name: "Hipersensibilidad"
   - 
-    value: "2412.06"
+    value: "241206"
     display_name: "Inmunización"
   - 
-    value: "2412.07"
+    value: "241207"
     display_name: "Inmunoquímica"
   - 
-    value: "2412.08"
+    value: "241208"
     display_name: "Trasplante de órganos"
   - 
-    value: "2412.09"
+    value: "241209"
     display_name: "Anticuerpos de tejidos"
   - 
-    value: "2412.10"
+    value: "241210"
     display_name: "Vacunas"
   - 
-    value: "2412.99"
+    value: "241299"
     display_name: "Otras (especificar)"
   - 
     value: "2413"
     display_name: "Biología de insectos (Entomología)"
   - 
-    value: "2413.01"
+    value: "241301"
     display_name: "Entomología general"
   - 
-    value: "2413.02"
+    value: "241302"
     display_name: "Desarrollo de los insectos"
   - 
-    value: "2413.03"
+    value: "241303"
     display_name: "Ecología de los insectos"
   - 
-    value: "2413.04"
+    value: "241304"
     display_name: "Morfología de los insectos"
   - 
-    value: "2413.05"
+    value: "241305"
     display_name: "Fisiología de los insectos"
   - 
-    value: "2413.06"
+    value: "241306"
     display_name: "Taxonomía de los insectos"
   - 
-    value: "2413.99"
+    value: "241399"
     display_name: "Otras (especificar)"
   - 
     value: "2414"
     display_name: "Microbiología"
   - 
-    value: "2414.01"
+    value: "241401"
     display_name: "Antibióticos"
   - 
-    value: "2414.02"
+    value: "241402"
     display_name: "Fisiología bacteriana"
   - 
-    value: "2414.03"
+    value: "241403"
     display_name: "Metabolismo bacteriano"
   - 
-    value: "2414.04"
+    value: "241404"
     display_name: "Bacteriología"
   - 
-    value: "2414.05"
+    value: "241405"
     display_name: "Bacteriófagos"
   - 
-    value: "2414.06"
+    value: "241406"
     display_name: "Hongos"
   - 
-    value: "2414.07"
+    value: "241407"
     display_name: "Metabolismo microbiano"
   - 
-    value: "2414.08"
+    value: "241408"
     display_name: "Procesos microbianos"
   - 
-    value: "2414.09"
+    value: "241409"
     display_name: "Mohos"
   - 
-    value: "2414.10"
+    value: "241410"
     display_name: "Micología (Levaduras)"
   - 
-    value: "2414.90"
+    value: "241490"
     display_name: "Microbiología: Degradación de residuos vegetales"
   - 
-    value: "2414.99"
+    value: "241499"
     display_name: "Otras (especificar)"
   - 
     value: "2415"
     display_name: "Biología molecular"
   - 
-    value: "2415.01"
+    value: "241501"
     display_name: "Biología molecular de microorganismos"
   - 
-    value: "2415.02"
+    value: "241502"
     display_name: "Biología molecular de plantas"
   - 
     value: "2416"
     display_name: "Paleontología"
   - 
-    value: "2416.01"
+    value: "241601"
     display_name: "Paleontología animal"
   - 
-    value: "2416.02"
+    value: "241602"
     display_name: "Paleontología de los invertebrados"
   - 
-    value: "2416.03"
+    value: "241603"
     display_name: "Palinología"
   - 
-    value: "2416.04"
+    value: "241604"
     display_name: "Paleontología de las plantas"
   - 
-    value: "2416.05"
+    value: "241605"
     display_name: "Paleontología de los vertebrados"
   - 
-    value: "2416.99"
+    value: "241699"
     display_name: "Otras (especificar)"
   - 
     value: "2417"
     display_name: "Biología vegetal (Botánica)"
   - 
-    value: "2417.01"
+    value: "241701"
     display_name: "Briología"
   - 
-    value: "2417.02"
+    value: "241702"
     display_name: "Dendrología"
   - 
-    value: "2417.03"
+    value: "241703"
     display_name: "Botánica general"
   - 
-    value: "2417.04"
+    value: "241704"
     display_name: "Limnología"
   - 
-    value: "2417.05"
+    value: "241705"
     display_name: "Biología marina"
   - 
-    value: "2417.06"
+    value: "241706"
     display_name: "Micología (setas)"
   - 
-    value: "2417.07"
+    value: "241707"
     display_name: "Algología (ficología)"
   - 
-    value: "2417.08"
+    value: "241708"
     display_name: "Fitobiología"
   - 
-    value: "2417.09"
+    value: "241709"
     display_name: "Fitopatología"
   - 
-    value: "2417.10"
+    value: "241710"
     display_name: "Paleobotánica"
   - 
-    value: "2417.11"
+    value: "241711"
     display_name: "Anatomía vegetal"
   - 
-    value: "2417.12"
+    value: "241712"
     display_name: "Citología vegetal"
   - 
-    value: "2417.13"
+    value: "241713"
     display_name: "Ecología vegetal"
   - 
-    value: "2417.14"
+    value: "241714"
     display_name: "Genética vegetal"
   - 
-    value: "2417.15"
+    value: "241715"
     display_name: "Desarrollo vegetal"
   - 
-    value: "2417.16"
+    value: "241716"
     display_name: "Histología vegetal"
   - 
-    value: "2417.17"
+    value: "241717"
     display_name: "Nutrición vegetal"
   - 
-    value: "2417.18"
+    value: "241718"
     display_name: "Parasitología vegetal"
   - 
-    value: "2417.19"
+    value: "241719"
     display_name: "Fisiología vegetal"
   - 
-    value: "2417.20"
+    value: "241720"
     display_name: "Taxonomía vegetal"
   - 
-    value: "2417.21"
+    value: "241721"
     display_name: "Pteridología"
   - 
-    value: "2417.90"
+    value: "241790"
     display_name: "Fijación y movilización biológica de nutrientes"
   - 
-    value: "2417.91"
+    value: "241791"
     display_name: "Fijación biológica del nitrógeno"
   - 
-    value: "2417.92"
+    value: "241792"
     display_name: "Fisiología de la maduración"
   - 
-    value: "2417.99"
+    value: "241799"
     display_name: "Otras (especificar)"
   - 
     value: "2418"
@@ -2668,46 +2668,46 @@ unesco:
     value: "2420"
     display_name: "Virología"
   - 
-    value: "2420.01"
+    value: "242001"
     display_name: "Arbovirus"
   - 
-    value: "2420.02"
+    value: "242002"
     display_name: "Bacteriofagos"
   - 
-    value: "2420.03"
+    value: "242003"
     display_name: "Virus dermatrópicos"
   - 
-    value: "2420.04"
+    value: "242004"
     display_name: "Enterovirus"
   - 
-    value: "2420.05"
+    value: "242005"
     display_name: "Virus neurotrópicos"
   - 
-    value: "2420.06"
+    value: "242006"
     display_name: "Virus pantrópicos"
   - 
-    value: "2420.07"
+    value: "242007"
     display_name: "Poxvirus"
   - 
-    value: "2420.08"
+    value: "242008"
     display_name: "Virus respiratorios"
   - 
-    value: "2420.09"
+    value: "242009"
     display_name: "Virus viscerotrópicos"
   - 
-    value: "2420.91"
+    value: "242091"
     display_name: "Virología animal"
   - 
-    value: "2420.99"
+    value: "242099"
     display_name: "Otras (especificar)"
   - 
     value: "2490"
     display_name: "Neurociencias"
   - 
-    value: "2490.01"
+    value: "249001"
     display_name: "Neurofisiología"
   - 
-    value: "2490.02"
+    value: "249002"
     display_name: "Neuroquímica"
   - 
     value: "2499"
@@ -2719,520 +2719,520 @@ unesco:
     value: "2501"
     display_name: "Ciencias de la atmósfera"
   - 
-    value: "2501.01"
+    value: "250101"
     display_name: "Aeronomía"
   - 
-    value: "2501.02"
+    value: "250102"
     display_name: "Resplandor celeste"
   - 
-    value: "2501.03"
+    value: "250103"
     display_name: "Interacción mar-aire"
   - 
-    value: "2501.04"
+    value: "250104"
     display_name: "Acústica atmosférica"
   - 
-    value: "2501.05"
+    value: "250105"
     display_name: "Química atmosférica"
   - 
-    value: "2501.06"
+    value: "250106"
     display_name: "Dinámica atmosférica"
   - 
-    value: "2501.07"
+    value: "250107"
     display_name: "Electricidad atmosférica"
   - 
-    value: "2501.08"
+    value: "250108"
     display_name: "Óptica atmosférica"
   - 
-    value: "2501.09"
+    value: "250109"
     display_name: "Radiactividad atmosférica"
   - 
-    value: "2501.10"
+    value: "250110"
     display_name: "Estructura atmosférica"
   - 
-    value: "2501.11"
+    value: "250111"
     display_name: "Termodinámica atmosférica"
   - 
-    value: "2501.12"
+    value: "250112"
     display_name: "Turbulencia atmosférica"
   - 
-    value: "2501.13"
+    value: "250113"
     display_name: "Auroras"
   - 
-    value: "2501.14"
+    value: "250114"
     display_name: "Física de las nubes"
   - 
-    value: "2501.15"
+    value: "250115"
     display_name: "Rayos cósmicos"
   - 
-    value: "2501.16"
+    value: "250116"
     display_name: "Difusión (atmosférica)"
   - 
-    value: "2501.17"
+    value: "250117"
     display_name: "Pulsaciones geomagnéticas"
   - 
-    value: "2501.18"
+    value: "250118"
     display_name: "Ionosfera"
   - 
-    value: "2501.19"
+    value: "250119"
     display_name: "Partículas magnetosféricas"
   - 
-    value: "2501.20"
+    value: "250120"
     display_name: "Ondas magnetosféricas"
   - 
-    value: "2501.21"
+    value: "250121"
     display_name: "Simulación numérica"
   - 
-    value: "2501.22"
+    value: "250122"
     display_name: "Física de las precipitaciones"
   - 
-    value: "2501.23"
+    value: "250123"
     display_name: "Transferencia radiactiva"
   - 
-    value: "2501.24"
+    value: "250124"
     display_name: "Viento solar"
   - 
-    value: "2501.99"
+    value: "250199"
     display_name: "Otras (especificar)"
   - 
     value: "2502"
     display_name: "Climatología"
   - 
-    value: "2502.01"
+    value: "250201"
     display_name: "Climatología analítica"
   - 
-    value: "2502.02"
+    value: "250202"
     display_name: "Climatología aplicada"
   - 
-    value: "2502.03"
+    value: "250203"
     display_name: "Bioclimatología"
   - 
-    value: "2502.04"
+    value: "250204"
     display_name: "Microclimatología"
   - 
-    value: "2502.05"
+    value: "250205"
     display_name: "Paleoclimatología"
   - 
-    value: "2502.06"
+    value: "250206"
     display_name: "Climatología física"
   - 
-    value: "2502.07"
+    value: "250207"
     display_name: "Climatología regional"
   - 
-    value: "2502.99"
+    value: "250299"
     display_name: "Otras (especificar)"
   - 
     value: "2503"
     display_name: "Geoquímica"
   - 
-    value: "2503.01"
+    value: "250301"
     display_name: "Cosmoquímica"
   - 
-    value: "2503.02"
+    value: "250302"
     display_name: "Petrología experimental"
   - 
-    value: "2503.03"
+    value: "250303"
     display_name: "Geoquímica exploratoria"
   - 
-    value: "2503.04"
+    value: "250304"
     display_name: "Geocronología y radioisótopos"
   - 
-    value: "2503.05"
+    value: "250305"
     display_name: "Geoquímica de las altas temperaturas"
   - 
-    value: "2503.06"
+    value: "250306"
     display_name: "Geoquímica de las bajas temperaturas"
   - 
-    value: "2503.07"
+    value: "250307"
     display_name: "Geoquímica orgánica"
   - 
-    value: "2503.08"
+    value: "250308"
     display_name: "Isótopos estables"
   - 
-    value: "2503.09"
+    value: "250309"
     display_name: "Distribución de elementos traza"
   - 
-    value: "2503.99"
+    value: "250399"
     display_name: "Otras (especificar)"
   - 
     value: "2504"
     display_name: "Geodesia"
   - 
-    value: "2504.01"
+    value: "250401"
     display_name: "Astronomía geodésica"
   - 
-    value: "2504.02"
+    value: "250402"
     display_name: "Cartografía geodésica"
   - 
-    value: "2504.03"
+    value: "250403"
     display_name: "Navegación geodésica"
   - 
-    value: "2504.04"
+    value: "250404"
     display_name: "Fotogrametría geodésica"
   - 
-    value: "2504.05"
+    value: "250405"
     display_name: "Levantamiento geodésico"
   - 
-    value: "2504.06"
+    value: "250406"
     display_name: "Geodesia física"
   - 
-    value: "2504.07"
+    value: "250407"
     display_name: "Geodesia por satélites"
   - 
-    value: "2504.08"
+    value: "250408"
     display_name: "Geodesia teórica"
   - 
-    value: "2504.99"
+    value: "250499"
     display_name: "Otras (especificar)"
   - 
     value: "2505"
     display_name: "Geografía"
   - 
-    value: "2505.01"
+    value: "250501"
     display_name: "Biogeografía"
   - 
-    value: "2505.02"
+    value: "250502"
     display_name: "Cartografía geográfica"
   - 
-    value: "2505.03"
+    value: "250503"
     display_name: "Geografía de los recursos naturales"
   - 
-    value: "2505.04"
+    value: "250504"
     display_name: "Utilización del terreno"
   - 
-    value: "2505.05"
+    value: "250505"
     display_name: "Teoría de la localización"
   - 
-    value: "2505.06"
+    value: "250506"
     display_name: "Geografía médica"
   - 
-    value: "2505.07"
+    value: "250507"
     display_name: "Geografía física"
   - 
-    value: "2505.08"
+    value: "250508"
     display_name: "Geografía topográfica"
   - 
-    value: "2505.99"
+    value: "250599"
     display_name: "Otras (especificar)"
   - 
     value: "2506"
     display_name: "Geología"
   - 
-    value: "2506.01"
+    value: "250601"
     display_name: "Geología regional"
   - 
-    value: "2506.02"
+    value: "250602"
     display_name: "Geología del carbón"
   - 
-    value: "2506.03"
+    value: "250603"
     display_name: "Geología aplicada a la ingeniería"
   - 
-    value: "2506.04"
+    value: "250604"
     display_name: "Geología ambiental"
   - 
-    value: "2506.05"
+    value: "250605"
     display_name: "Hidrogeología"
   - 
-    value: "2506.06"
+    value: "250606"
     display_name: "Campañas geológicas"
   - 
-    value: "2506.07"
+    value: "250607"
     display_name: "Geomorfología"
   - 
-    value: "2506.08"
+    value: "250608"
     display_name: "Energía y procesos geotérmicos"
   - 
-    value: "2506.09"
+    value: "250609"
     display_name: "Geología glacial"
   - 
-    value: "2506.10"
+    value: "250610"
     display_name: "Yacimientos minerales"
   - 
-    value: "2506.11"
+    value: "250611"
     display_name: "Mineralogía"
   - 
-    value: "2506.12"
+    value: "250612"
     display_name: "Geología del petróleo"
   - 
-    value: "2506.13"
+    value: "250613"
     display_name: "Petrología ígnea y metamórfica"
   - 
-    value: "2506.14"
+    value: "250614"
     display_name: "Petrología sedimentaria"
   - 
-    value: "2506.15"
+    value: "250615"
     display_name: "Fotogeología"
   - 
-    value: "2506.16"
+    value: "250616"
     display_name: "Teledetección (geología)"
   - 
-    value: "2506.17"
+    value: "250617"
     display_name: "Mecánica de rocas"
   - 
-    value: "2506.18"
+    value: "250618"
     display_name: "Sedimentología"
   - 
-    value: "2506.19"
+    value: "250619"
     display_name: "Estratigrafía"
   - 
-    value: "2506.20"
+    value: "250620"
     display_name: "Geología estructural"
   - 
-    value: "2506.21"
+    value: "250621"
     display_name: "Vulcanología"
   - 
-    value: "2506.22"
+    value: "250622"
     display_name: "Análisis de diagrafías"
   - 
-    value: "2506.99"
+    value: "250699"
     display_name: "Otras (especificar)"
   - 
     value: "2507"
     display_name: "Geofísica"
   - 
-    value: "2507.01"
+    value: "250701"
     display_name: "Geomagnetismo y prospección magnética"
   - 
-    value: "2507.02"
+    value: "250702"
     display_name: "Gravedad (terrestre) y prospección gravimétrica"
   - 
-    value: "2507.03"
+    value: "250703"
     display_name: "Flujo de calor (terrestre)"
   - 
-    value: "2507.04"
+    value: "250704"
     display_name: "Paleomagnetismo"
   - 
-    value: "2507.05"
+    value: "250705"
     display_name: "Sismología y prospección sísmica"
   - 
-    value: "2507.06"
+    value: "250706"
     display_name: "Geofísica de la masa sólida terrestre"
   - 
-    value: "2507.07"
+    value: "250707"
     display_name: "Tectónica"
   - 
-    value: "2507.99"
+    value: "250799"
     display_name: "Otras (especificar)"
   - 
     value: "2508"
     display_name: "Hidrología"
   - 
-    value: "2508.01"
+    value: "250801"
     display_name: "Erosión (agua)"
   - 
-    value: "2508.02"
+    value: "250802"
     display_name: "Evaporación"
   - 
-    value: "2508.03"
+    value: "250803"
     display_name: "Glaciología"
   - 
-    value: "2508.04"
+    value: "250804"
     display_name: "Aguas subterráneas"
   - 
-    value: "2508.05"
+    value: "250805"
     display_name: "Hidrobiología"
   - 
-    value: "2508.06"
+    value: "250806"
     display_name: "Hidrografía"
   - 
-    value: "2508.07"
+    value: "250807"
     display_name: "Hielo"
   - 
-    value: "2508.08"
+    value: "250808"
     display_name: "Limnología"
   - 
-    value: "2508.09"
+    value: "250809"
     display_name: "Suelo helado ('permafrost')"
   - 
-    value: "2508.10"
+    value: "250810"
     display_name: "Precipitación"
   - 
-    value: "2508.11"
+    value: "250811"
     display_name: "Calidad de las aguas"
   - 
-    value: "2508.12"
+    value: "250812"
     display_name: "Nieve"
   - 
-    value: "2508.13"
+    value: "250813"
     display_name: "Humedad del suelo"
   - 
-    value: "2508.14"
+    value: "250814"
     display_name: "Aguas superficiales"
   - 
-    value: "2508.15"
+    value: "250815"
     display_name: "Transpiración"
   - 
-    value: "2508.99"
+    value: "250899"
     display_name: "Otras (especificar)"
   - 
     value: "2509"
     display_name: "Meteorología"
   - 
-    value: "2509.01"
+    value: "250901"
     display_name: "Meteorología agrícola"
   - 
-    value: "2509.02"
+    value: "250902"
     display_name: "Contaminación atmosférica"
   - 
-    value: "2509.03"
+    value: "250903"
     display_name: "Previsión meteorológica a largo plazo"
   - 
-    value: "2509.04"
+    value: "250904"
     display_name: "Hidrometeorología"
   - 
-    value: "2509.05"
+    value: "250905"
     display_name: "Meteorología industrial"
   - 
-    value: "2509.06"
+    value: "250906"
     display_name: "Meteorología marina"
   - 
-    value: "2509.07"
+    value: "250907"
     display_name: "Mesometeorología"
   - 
-    value: "2509.08"
+    value: "250908"
     display_name: "Micrometeorología"
   - 
-    value: "2509.09"
+    value: "250909"
     display_name: "Predicción numérica meteorológica"
   - 
-    value: "2509.10"
+    value: "250910"
     display_name: "Observación meteorológica a corto plazo"
   - 
-    value: "2509.11"
+    value: "250911"
     display_name: "Predicción operacional meteorológica"
   - 
-    value: "2509.12"
+    value: "250912"
     display_name: "Meteorología polar"
   - 
-    value: "2509.13"
+    value: "250913"
     display_name: "Meteorología por Radar"
   - 
-    value: "2509.14"
+    value: "250914"
     display_name: "Radiometeorología"
   - 
-    value: "2509.15"
+    value: "250915"
     display_name: "Meteorología con cohetes"
   - 
-    value: "2509.16"
+    value: "250916"
     display_name: "Meteorología por satélites"
   - 
-    value: "2509.17"
+    value: "250917"
     display_name: "Meteorología sinóptica"
   - 
-    value: "2509.18"
+    value: "250918"
     display_name: "Meteorología tropical"
   - 
-    value: "2509.19"
+    value: "250919"
     display_name: "Análisis del tiempo"
   - 
-    value: "2509.20"
+    value: "250920"
     display_name: "Modificación del tiempo"
   - 
-    value: "2509.99"
+    value: "250999"
     display_name: "Otras (especificar)"
   - 
     value: "2510"
     display_name: "Oceanografía"
   - 
-    value: "2510.01"
+    value: "251001"
     display_name: "Oceanografía biológica"
   - 
-    value: "2510.02"
+    value: "251002"
     display_name: "Oceanografía química"
   - 
-    value: "2510.03"
+    value: "251003"
     display_name: "Oceanografía descriptiva"
   - 
-    value: "2510.04"
+    value: "251004"
     display_name: "Botánica marina"
   - 
-    value: "2510.05"
+    value: "251005"
     display_name: "Zoología marina"
   - 
-    value: "2510.06"
+    value: "251006"
     display_name: "Procesos del fondo marino"
   - 
-    value: "2510.07"
+    value: "251007"
     display_name: "Oceanografía física"
   - 
-    value: "2510.08"
+    value: "251008"
     display_name: "Interacciones mar-aire"
   - 
-    value: "2510.09"
+    value: "251009"
     display_name: "Hielo marino"
   - 
-    value: "2510.10"
+    value: "251010"
     display_name: "Procesos litorales o sublitorales"
   - 
-    value: "2510.11"
+    value: "251011"
     display_name: "Acústica submarina"
   - 
-    value: "2510.90"
+    value: "251090"
     display_name: "Oceanografía: Geología marina"
   - 
-    value: "2510.91"
+    value: "251091"
     display_name: "Oceanografía: Recursos renovables"
   - 
-    value: "2510.92"
+    value: "251092"
     display_name: "Oceanografía:Acuicultura marina"
   - 
-    value: "2510.99"
+    value: "251099"
     display_name: "Otras (especificar)"
   - 
     value: "2511"
     display_name: "Ciencias del suelo (Edafología)"
   - 
-    value: "2511.01"
+    value: "251101"
     display_name: "Bioquímica de suelos"
   - 
-    value: "2511.02"
+    value: "251102"
     display_name: "Biología de suelos"
   - 
-    value: "2511.03"
+    value: "251103"
     display_name: "Cartografía de suelos"
   - 
-    value: "2511.04"
+    value: "251104"
     display_name: "Química de suelos"
   - 
-    value: "2511.05"
+    value: "251105"
     display_name: "Clasificación de suelos"
   - 
-    value: "2511.06"
+    value: "251106"
     display_name: "Conservación de suelos"
   - 
-    value: "2511.07"
+    value: "251107"
     display_name: "Ingeniería de suelos"
   - 
-    value: "2511.08"
+    value: "251108"
     display_name: "Mecánica de suelos (agricultura)"
   - 
-    value: "2511.09"
+    value: "251109"
     display_name: "Microbiología de suelos"
   - 
-    value: "2511.10"
+    value: "251110"
     display_name: "Mineralogía de suelos"
   - 
-    value: "2511.11"
+    value: "251111"
     display_name: "Génesis y morfología de suelos"
   - 
-    value: "2511.12"
+    value: "251112"
     display_name: "Física de suelos"
   - 
-    value: "2511.99"
+    value: "251199"
     display_name: "Otras (especificar)"
   - 
     value: "2512"
     display_name: "Ciencias del espacio"
   - 
-    value: "2512.01"
+    value: "251201"
     display_name: "Exobiología"
   - 
-    value: "2512.02"
+    value: "251202"
     display_name: "Medicina espacial"
   - 
-    value: "2512.03"
+    value: "251203"
     display_name: "Fisiología espacial"
   - 
-    value: "2512.99"
+    value: "251299"
     display_name: "Otras (especificar)"
   - 
     value: "2599"
@@ -3244,334 +3244,334 @@ unesco:
     value: "3101"
     display_name: "Agroquímica"
   - 
-    value: "3101.01"
+    value: "310101"
     display_name: "Productos lácteos"
   - 
-    value: "3101.02"
+    value: "310102"
     display_name: "Fabricación de abonos"
   - 
-    value: "3101.03"
+    value: "310103"
     display_name: "Utilización de abonos"
   - 
-    value: "3101.04"
+    value: "310104"
     display_name: "Productos de la pesca"
   - 
-    value: "3101.05"
+    value: "310105"
     display_name: "Fungicidas"
   - 
-    value: "3101.06"
+    value: "310106"
     display_name: "Herbicidas"
   - 
-    value: "3101.07"
+    value: "310107"
     display_name: "Insecticidas"
   - 
-    value: "3101.08"
+    value: "310108"
     display_name: "Productos agrícolas no alimenticios"
   - 
-    value: "3101.09"
+    value: "310109"
     display_name: "Plaguicidas"
   - 
-    value: "3101.10"
+    value: "310110"
     display_name: "Reguladores del crecimiento de las plantas"
   - 
-    value: "3101.99"
+    value: "310199"
     display_name: "Otras (especificar)"
   - 
     value: "3102"
     display_name: "Ingeniería agrícola"
   - 
-    value: "3102.01"
+    value: "310201"
     display_name: "Mecánica agrícola"
   - 
-    value: "3102.02"
+    value: "310202"
     display_name: "Drenaje"
   - 
-    value: "3102.03"
+    value: "310203"
     display_name: "Construcción de granjas"
   - 
-    value: "3102.04"
+    value: "310204"
     display_name: "Equipo de granja"
   - 
-    value: "3102.05"
+    value: "310205"
     display_name: "Riego"
   - 
-    value: "3102.99"
+    value: "310299"
     display_name: "Otros (especificar)"
   - 
     value: "3103"
     display_name: "Agronomía"
   - 
-    value: "3103.01"
+    value: "310301"
     display_name: "Producción de cultivos"
   - 
-    value: "3103.02"
+    value: "310302"
     display_name: "Hibridación de cultivos"
   - 
-    value: "3103.03"
+    value: "310303"
     display_name: "Explotación de los cultivos"
   - 
-    value: "3103.04"
+    value: "310304"
     display_name: "Protección de los cultivos"
   - 
-    value: "3103.05"
+    value: "310305"
     display_name: "Técnicas de cultivo"
   - 
-    value: "3103.06"
+    value: "310306"
     display_name: "Cultivos de campo"
   - 
-    value: "3103.07"
+    value: "310307"
     display_name: "Cultivos forrajeros"
   - 
-    value: "3103.08"
+    value: "310308"
     display_name: "Gestión de la producción vegetal"
   - 
-    value: "3103.09"
+    value: "310309"
     display_name: "Cultivos de plantas ornamentales"
   - 
-    value: "3103.10"
+    value: "310310"
     display_name: "Pastos"
   - 
-    value: "3103.11"
+    value: "310311"
     display_name: "Semillas"
   - 
-    value: "3103.12"
+    value: "310312"
     display_name: "Comportamiento del suelo en cultivos rotatorios"
   - 
-    value: "3103.13"
+    value: "310313"
     display_name: "Fertilidad del suelo"
   - 
-    value: "3103.14"
+    value: "310314"
     display_name: "Césped"
   - 
-    value: "3103.15"
+    value: "310315"
     display_name: "Control de malezas"
   - 
-    value: "3103.90"
+    value: "310390"
     display_name: "Propagación de vegetales"
   - 
-    value: "3103.91"
+    value: "310391"
     display_name: "Uso (manejo) combinado del agua y fertilizantes"
   - 
-    value: "3103.99"
+    value: "310399"
     display_name: "Otras (especificar)"
   - 
     value: "3104"
     display_name: "Producción animal"
   - 
-    value: "3104.01"
+    value: "310401"
     display_name: "Apicultura"
   - 
-    value: "3104.02"
+    value: "310402"
     display_name: "Bovinos"
   - 
-    value: "3104.03"
+    value: "310403"
     display_name: "Cría"
   - 
-    value: "3104.04"
+    value: "310404"
     display_name: "Cuidado y explotación"
   - 
-    value: "3104.05"
+    value: "310405"
     display_name: "Équidos"
   - 
-    value: "3104.06"
+    value: "310406"
     display_name: "Nutrición"
   - 
-    value: "3104.07"
+    value: "310407"
     display_name: "Ovinos"
   - 
-    value: "3104.08"
+    value: "310408"
     display_name: "Porcinos"
   - 
-    value: "3104.09"
+    value: "310409"
     display_name: "Avicultura"
   - 
-    value: "3104.10"
+    value: "310410"
     display_name: "Productos"
   - 
-    value: "3104.11"
+    value: "310411"
     display_name: "Reproducción"
   - 
-    value: "3104.12"
+    value: "310412"
     display_name: "Selección"
   - 
-    value: "3104.13"
+    value: "310413"
     display_name: "Sericultura"
   - 
-    value: "3104.90"
+    value: "310490"
     display_name: "Sistema de producción ganadera"
   - 
-    value: "3104.99"
+    value: "310499"
     display_name: "Otras (especificar)"
   - 
     value: "3105"
     display_name: "Peces y fauna silvestre"
   - 
-    value: "3105.01"
+    value: "310501"
     display_name: "Reglamentación y control"
   - 
-    value: "3105.02"
+    value: "310502"
     display_name: "Piscicultura"
   - 
-    value: "3105.03"
+    value: "310503"
     display_name: "Localización de peces"
   - 
-    value: "3105.04"
+    value: "310504"
     display_name: "Protección de los peces"
   - 
-    value: "3105.05"
+    value: "310505"
     display_name: "Elaboración del pescado"
   - 
-    value: "3105.06"
+    value: "310506"
     display_name: "Técnicas pesqueras"
   - 
-    value: "3105.07"
+    value: "310507"
     display_name: "Hábitos de alimentación"
   - 
-    value: "3105.08"
+    value: "310508"
     display_name: "Caza"
   - 
-    value: "3105.09"
+    value: "310509"
     display_name: "Influencia del hábitat"
   - 
-    value: "3105.10"
+    value: "310510"
     display_name: "Dinámica de las poblaciones"
   - 
-    value: "3105.11"
+    value: "310511"
     display_name: "Propagación y ordenación"
   - 
-    value: "3105.12"
+    value: "310512"
     display_name: "Ordenación y conservación de la fauna silvestre"
   - 
-    value: "3105.99"
+    value: "310599"
     display_name: "Otras (especificar)"
   - 
     value: "3106"
     display_name: "Ciencia forestal"
   - 
-    value: "3106.01"
+    value: "310601"
     display_name: "Conservación"
   - 
-    value: "3106.02"
+    value: "310602"
     display_name: "Técnicas de cultivo"
   - 
-    value: "3106.03"
+    value: "310603"
     display_name: "Control de la erosión"
   - 
-    value: "3106.04"
+    value: "310604"
     display_name: "Ordenación de montes"
   - 
-    value: "3106.05"
+    value: "310605"
     display_name: "Productos"
   - 
-    value: "3106.06"
+    value: "310606"
     display_name: "Protección"
   - 
-    value: "3106.07"
+    value: "310607"
     display_name: "Ordenación de pastos"
   - 
-    value: "3106.08"
+    value: "310608"
     display_name: "Silvicultura"
   - 
-    value: "3106.09"
+    value: "310609"
     display_name: "Ordenación de cuencas fluviales"
   - 
-    value: "3106.99"
+    value: "310699"
     display_name: "Otras (especificar)"
   - 
     value: "3107"
     display_name: "Horticultura"
   - 
-    value: "3107.01"
+    value: "310701"
     display_name: "Producción de cultivos"
   - 
-    value: "3107.02"
+    value: "310702"
     display_name: "Técnicas de cultivo"
   - 
-    value: "3107.03"
+    value: "310703"
     display_name: "Floricultura"
   - 
-    value: "3107.04"
+    value: "310704"
     display_name: "Fruticultura"
   - 
-    value: "3107.05"
+    value: "310705"
     display_name: "Hibridación"
   - 
-    value: "3107.06"
+    value: "310706"
     display_name: "Hortalizas"
   - 
-    value: "3107.99"
+    value: "310799"
     display_name: "Otras (especificar)"
   - 
     value: "3108"
     display_name: "Fitopatología"
   - 
-    value: "3108.01"
+    value: "310801"
     display_name: "Bacterias"
   - 
-    value: "3108.02"
+    value: "310802"
     display_name: "Control biológico de enfermedades"
   - 
-    value: "3108.03"
+    value: "310803"
     display_name: "Control químico de enfermedades"
   - 
-    value: "3108.04"
+    value: "310804"
     display_name: "Control ambiental de enfermedades"
   - 
-    value: "3108.05"
+    value: "310805"
     display_name: "Hongos"
   - 
-    value: "3108.06"
+    value: "310806"
     display_name: "Nemátodos"
   - 
-    value: "3108.07"
+    value: "310807"
     display_name: "Fisiogénesis"
   - 
-    value: "3108.08"
+    value: "310808"
     display_name: "Susceptibilidad y resistencia vegetal"
   - 
-    value: "3108.09"
+    value: "310809"
     display_name: "Virus"
   - 
-    value: "3108.99"
+    value: "310899"
     display_name: "Otras (especificar)"
   - 
     value: "3109"
     display_name: "Ciencias veterinarias"
   - 
-    value: "3109.01"
+    value: "310901"
     display_name: "Anatomía"
   - 
-    value: "3109.02"
+    value: "310902"
     display_name: "Genética"
   - 
-    value: "3109.03"
+    value: "310903"
     display_name: "Inmunología"
   - 
-    value: "3109.04"
+    value: "310904"
     display_name: "Medicina interna"
   - 
-    value: "3109.05"
+    value: "310905"
     display_name: "Microbiología"
   - 
-    value: "3109.06"
+    value: "310906"
     display_name: "Nutrición"
   - 
-    value: "3109.07"
+    value: "310907"
     display_name: "Patología"
   - 
-    value: "3109.08"
+    value: "310908"
     display_name: "Farmacología"
   - 
-    value: "3109.09"
+    value: "310909"
     display_name: "Fisiología"
   - 
-    value: "3109.10"
+    value: "310910"
     display_name: "Cirugía"
   - 
-    value: "3109.11"
+    value: "310911"
     display_name: "Virología"
   - 
-    value: "3109.99"
+    value: "310999"
     display_name: "Otras (especificar)"
   - 
     value: "3199"
@@ -3583,46 +3583,46 @@ unesco:
     value: "3201"
     display_name: "Ciencias clínicas"
   - 
-    value: "3201.01"
+    value: "320101"
     display_name: "Oncología"
   - 
-    value: "3201.02"
+    value: "320102"
     display_name: "Genética clínica"
   - 
-    value: "3201.03"
+    value: "320103"
     display_name: "Microbiología clínica"
   - 
-    value: "3201.04"
+    value: "320104"
     display_name: "Patología clínica"
   - 
-    value: "3201.05"
+    value: "320105"
     display_name: "Psicología clínica"
   - 
-    value: "3201.06"
+    value: "320106"
     display_name: "Dermatología"
   - 
-    value: "3201.07"
+    value: "320107"
     display_name: "Geriatría"
   - 
-    value: "3201.08"
+    value: "320108"
     display_name: "Ginecología"
   - 
-    value: "3201.09"
+    value: "320109"
     display_name: "Oftalmología"
   - 
-    value: "3201.10"
+    value: "320110"
     display_name: "Pediatría"
   - 
-    value: "3201.11"
+    value: "320111"
     display_name: "Radiología"
   - 
-    value: "3201.12"
+    value: "320112"
     display_name: "Radioterapia"
   - 
-    value: "3201.13"
+    value: "320113"
     display_name: "Sifilografía"
   - 
-    value: "3201.99"
+    value: "320199"
     display_name: "Otras (especificar)"
   - 
     value: "3202"
@@ -3634,232 +3634,232 @@ unesco:
     value: "3204"
     display_name: "Medicina del trabajo"
   - 
-    value: "3204.01"
+    value: "320401"
     display_name: "Medicina nuclear"
   - 
-    value: "3204.02"
+    value: "320402"
     display_name: "Enfermedades profesionales"
   - 
-    value: "3204.03"
+    value: "320403"
     display_name: "Salud profesional"
   - 
-    value: "3204.04"
+    value: "320404"
     display_name: "Rehabilitación (médica)"
   - 
-    value: "3204.99"
+    value: "320499"
     display_name: "Otras (especificar)"
   - 
     value: "3205"
     display_name: "Medicina interna"
   - 
-    value: "3205.01"
+    value: "320501"
     display_name: "Cardiología"
   - 
-    value: "3205.02"
+    value: "320502"
     display_name: "Endocrinología"
   - 
-    value: "3205.03"
+    value: "320503"
     display_name: "Gastroenterología"
   - 
-    value: "3205.04"
+    value: "320504"
     display_name: "Hematología"
   - 
-    value: "3205.05"
+    value: "320505"
     display_name: "Enfermedades infecciosas"
   - 
-    value: "3205.06"
+    value: "320506"
     display_name: "Nefrología"
   - 
-    value: "3205.07"
+    value: "320507"
     display_name: "Neurología"
   - 
-    value: "3205.08"
+    value: "320508"
     display_name: "Enfermedades pulmonares"
   - 
-    value: "3205.09"
+    value: "320509"
     display_name: "Reumatología"
   - 
-    value: "3205.99"
+    value: "320599"
     display_name: "Otras (especificar)"
   - 
     value: "3206"
     display_name: "Ciencias de la Nutrición"
   - 
-    value: "3206.01"
+    value: "320601"
     display_name: "Digestión"
   - 
-    value: "3206.02"
+    value: "320602"
     display_name: "Metabolismo energético"
   - 
-    value: "3206.03"
+    value: "320603"
     display_name: "Sustancias tóxicas naturales"
   - 
-    value: "3206.04"
+    value: "320604"
     display_name: "Deficiencias alimentarias"
   - 
-    value: "3206.05"
+    value: "320605"
     display_name: "Agentes patógenos de los alimentos"
   - 
-    value: "3206.06"
+    value: "320606"
     display_name: "Necesidades alimentarias"
   - 
-    value: "3206.07"
+    value: "320607"
     display_name: "Elementos minerales en la alimentación"
   - 
-    value: "3206.08"
+    value: "320608"
     display_name: "Nutrientes"
   - 
-    value: "3206.09"
+    value: "320609"
     display_name: "Valor nutritivo"
   - 
-    value: "3206.10"
+    value: "320610"
     display_name: "Enfermedades de la nutrición"
   - 
-    value: "3206.11"
+    value: "320611"
     display_name: "Toxicidad de los alimentos"
   - 
-    value: "3206.12"
+    value: "320612"
     display_name: "Oligoelementos en la alimentación"
   - 
-    value: "3206.13"
+    value: "320613"
     display_name: "Vitaminas"
   - 
-    value: "3206.99"
+    value: "320699"
     display_name: "Otras (especificar)"
   - 
     value: "3207"
     display_name: "Patología"
   - 
-    value: "3207.01"
+    value: "320701"
     display_name: "Alergias"
   - 
-    value: "3207.02"
+    value: "320702"
     display_name: "Arteriosclerosis"
   - 
-    value: "3207.03"
+    value: "320703"
     display_name: "Carcinogénesis"
   - 
-    value: "3207.04"
+    value: "320704"
     display_name: "Patología cardiovascular"
   - 
-    value: "3207.05"
+    value: "320705"
     display_name: "Patología comparativa"
   - 
-    value: "3207.06"
+    value: "320706"
     display_name: "Endotoxinas"
   - 
-    value: "3207.07"
+    value: "320707"
     display_name: "Patología experimental"
   - 
-    value: "3207.08"
+    value: "320708"
     display_name: "Hematología"
   - 
-    value: "3207.09"
+    value: "320709"
     display_name: "Histopatología"
   - 
-    value: "3207.10"
+    value: "320710"
     display_name: "Inmunopatología"
   - 
-    value: "3207.11"
+    value: "320711"
     display_name: "Neuropatología"
   - 
-    value: "3207.12"
+    value: "320712"
     display_name: "Parasitología"
   - 
-    value: "3207.13"
+    value: "320713"
     display_name: "Oncología"
   - 
-    value: "3207.14"
+    value: "320714"
     display_name: "Osteopatología"
   - 
-    value: "3207.15"
+    value: "320715"
     display_name: "Patología de la radiación"
   - 
-    value: "3207.16"
+    value: "320716"
     display_name: "Estrés"
   - 
-    value: "3207.17"
+    value: "320717"
     display_name: "Teratología (estudios de los monstruos)"
   - 
-    value: "3207.18"
+    value: "320718"
     display_name: "Trombosis"
   - 
-    value: "3207.99"
+    value: "320799"
     display_name: "Otras (especificar)"
   - 
     value: "3208"
     display_name: "Farmacodinámica"
   - 
-    value: "3208.01"
+    value: "320801"
     display_name: "Absorción de medicamentos"
   - 
-    value: "3208.02"
+    value: "320802"
     display_name: "Acción de los medicamentos"
   - 
-    value: "3208.03"
+    value: "320803"
     display_name: "Activación, procesos múltiples"
   - 
-    value: "3208.04"
+    value: "320804"
     display_name: "Lugar de acción activa, receptores"
   - 
-    value: "3208.05"
+    value: "320805"
     display_name: "Catálisis, autocatálisis, inmunocátalisis"
   - 
-    value: "3208.06"
+    value: "320806"
     display_name: "Quimioterapia"
   - 
-    value: "3208.07"
+    value: "320807"
     display_name: "Interacción de antígenos"
   - 
-    value: "3208.08"
+    value: "320808"
     display_name: "Mecanismos de acción de los medicamentos"
   - 
-    value: "3208.09"
+    value: "320809"
     display_name: "Procesos metabólicos de los medicamentos"
   - 
-    value: "3208.99"
+    value: "320899"
     display_name: "Otras (especificar)"
   - 
     value: "3209"
     display_name: "Farmacología"
   - 
-    value: "3209.01"
+    value: "320901"
     display_name: "Análisis de medicamentos"
   - 
-    value: "3209.02"
+    value: "320902"
     display_name: "Composición de medicamentos"
   - 
-    value: "3209.03"
+    value: "320903"
     display_name: "Evaluación de medicamentos"
   - 
-    value: "3209.04"
+    value: "320904"
     display_name: "Medicamentos naturales"
   - 
-    value: "3209.05"
+    value: "320905"
     display_name: "Farmacognosia"
   - 
-    value: "3209.06"
+    value: "320906"
     display_name: "Farmacopeas"
   - 
-    value: "3209.07"
+    value: "320907"
     display_name: "Fitofármacos"
   - 
-    value: "3209.08"
+    value: "320908"
     display_name: "Preparación de medicamentos"
   - 
-    value: "3209.09"
+    value: "320909"
     display_name: "Psicofarmacología"
   - 
-    value: "3209.10"
+    value: "320910"
     display_name: "Radiofármacos"
   - 
-    value: "3209.11"
+    value: "320911"
     display_name: "Normalización de los medicamentos"
   - 
-    value: "3209.12"
+    value: "320912"
     display_name: "Medicamentos sintéticos"
   - 
-    value: "3209.99"
+    value: "320999"
     display_name: "Otras (especificar)"
   - 
     value: "3210"
@@ -3874,58 +3874,58 @@ unesco:
     value: "3213"
     display_name: "Cirugía"
   - 
-    value: "3213.01"
+    value: "321301"
     display_name: "Cirugía abdominal"
   - 
-    value: "3213.02"
+    value: "321302"
     display_name: "Cirugía estética"
   - 
-    value: "3213.03"
+    value: "321303"
     display_name: "Anestesiología"
   - 
-    value: "3213.04"
+    value: "321304"
     display_name: "Cirugía de huesos"
   - 
-    value: "3213.05"
+    value: "321305"
     display_name: "Cirugía de garganta, nariz y oídos"
   - 
-    value: "3213.06"
+    value: "321306"
     display_name: "Cirugía experimental"
   - 
-    value: "3213.07"
+    value: "321307"
     display_name: "Cirugía del corazón"
   - 
-    value: "3213.08"
+    value: "321308"
     display_name: "Neurocirugía"
   - 
-    value: "3213.09"
+    value: "321309"
     display_name: "Cirugía ocular"
   - 
-    value: "3213.10"
+    value: "321310"
     display_name: "Cirugía ortopédica"
   - 
-    value: "3213.11"
+    value: "321311"
     display_name: "Fisioterapia"
   - 
-    value: "3213.12"
+    value: "321312"
     display_name: "Proctología"
   - 
-    value: "3213.13"
+    value: "321313"
     display_name: "Ortodoncia-Estomatología"
   - 
-    value: "3213.14"
+    value: "321314"
     display_name: "Cirugía de los trasplantes"
   - 
-    value: "3213.15"
+    value: "321315"
     display_name: "Traumatología"
   - 
-    value: "3213.16"
+    value: "321316"
     display_name: "Urología"
   - 
-    value: "3213.17"
+    value: "321317"
     display_name: "Cirugía vascular"
   - 
-    value: "3213.99"
+    value: "321399"
     display_name: "Otras (especificar)"
   - 
     value: "3214"
@@ -3940,1402 +3940,1402 @@ unesco:
     value: "3301"
     display_name: "Ingeniería y tecnología aeronáuticas"
   - 
-    value: "3301.01"
+    value: "330101"
     display_name: "Aerodinámica"
   - 
-    value: "3301.02"
+    value: "330102"
     display_name: "Cargas aerodinámicas"
   - 
-    value: "3301.03"
+    value: "330103"
     display_name: "Teoría aerodinámica"
   - 
-    value: "3301.04"
+    value: "330104"
     display_name: "Aeronaves"
   - 
-    value: "3301.05"
+    value: "330105"
     display_name: "Combustibles de aviación, combustión"
   - 
-    value: "3301.06"
+    value: "330106"
     display_name: "Estructuras de aeronaves"
   - 
-    value: "3301.07"
+    value: "330107"
     display_name: "Amortiguadores de aire"
   - 
-    value: "3301.08"
+    value: "330108"
     display_name: "Aeropuertos y transportes aéreos"
   - 
-    value: "3301.09"
+    value: "330109"
     display_name: "Compresores y turbinas"
   - 
-    value: "3301.10"
+    value: "330110"
     display_name: "Investigación y pruebas de vuelo"
   - 
-    value: "3301.11"
+    value: "330111"
     display_name: "Aleteo y vibraciones"
   - 
-    value: "3301.12"
+    value: "330112"
     display_name: "Hidrodinámica"
   - 
-    value: "3301.13"
+    value: "330113"
     display_name: "Instrumentación (aviación)"
   - 
-    value: "3301.14"
+    value: "330114"
     display_name: "Cargas de aterrizaje"
   - 
-    value: "3301.15"
+    value: "330115"
     display_name: "Sistemas de propulsión"
   - 
-    value: "3301.16"
+    value: "330116"
     display_name: "Materiales de los sistemas de propulsión"
   - 
-    value: "3301.17"
+    value: "330117"
     display_name: "Hélices rotatorias"
   - 
-    value: "3301.18"
+    value: "330118"
     display_name: "Estabilidad y control"
   - 
-    value: "3301.99"
+    value: "330199"
     display_name: "Otras (especificar)"
   - 
     value: "3302"
     display_name: "Tecnología bioquímica"
   - 
-    value: "3302.01"
+    value: "330201"
     display_name: "Tecnología de los antibióticos"
   - 
-    value: "3302.02"
+    value: "330202"
     display_name: "Tecnología de la fermentación"
   - 
-    value: "3302.03"
+    value: "330203"
     display_name: "Microbiología industrial"
   - 
-    value: "3302.90"
+    value: "330290"
     display_name: "ngeniería bioquímica"
   - 
-    value: "3302.99"
+    value: "330299"
     display_name: "Otras (especificar)"
   - 
     value: "3303"
     display_name: "Ingeniería y tecnología químicas"
   - 
-    value: "3303.01"
+    value: "330301"
     display_name: "Tecnología de la catálisis"
   - 
-    value: "3303.02"
+    value: "330302"
     display_name: "Economía química"
   - 
-    value: "3303.03"
+    value: "330303"
     display_name: "Procesos químicos"
   - 
-    value: "3303.04"
+    value: "330304"
     display_name: "Separación química"
   - 
-    value: "3303.05"
+    value: "330305"
     display_name: "Síntesis química"
   - 
-    value: "3303.06"
+    value: "330306"
     display_name: "Tecnología de la combustión"
   - 
-    value: "3303.07"
+    value: "330307"
     display_name: "Tecnología de la corrosión"
   - 
-    value: "3303.08"
+    value: "330308"
     display_name: "Desionización"
   - 
-    value: "3303.09"
+    value: "330309"
     display_name: "Operaciones electroquímicas"
   - 
-    value: "3303.10"
+    value: "330310"
     display_name: "Recubrimiento por electrólisis"
   - 
-    value: "3303.11"
+    value: "330311"
     display_name: "Química industrial"
   - 
-    value: "3303.12"
+    value: "330312"
     display_name: "Procesos de química nuclear"
   - 
-    value: "3303.13"
+    value: "330313"
     display_name: "Tecnología de la conservación"
   - 
-    value: "3303.14"
+    value: "330314"
     display_name: "Revestimientos protectores"
   - 
-    value: "3303.15"
+    value: "330315"
     display_name: "Revestimientos refractarios"
   - 
-    value: "3303.16"
+    value: "330316"
     display_name: "Revestimientos hidrófobos"
   - 
-    value: "3303.90"
+    value: "330390"
     display_name: "Tecnología química: Tensioactivos"
   - 
-    value: "3303.99"
+    value: "330399"
     display_name: "Otras (especificar)"
   - 
     value: "3304"
     display_name: "Tecnología de los ordenadores"
   - 
-    value: "3304.01"
+    value: "330401"
     display_name: "Ordenadores analógicos"
   - 
-    value: "3304.02"
+    value: "330402"
     display_name: "Convertidores analógico-digitales"
   - 
-    value: "3304.03"
+    value: "330403"
     display_name: "Instrucciones aritméticas y de máquina"
   - 
-    value: "3304.04"
+    value: "330404"
     display_name: "Unidades centrales de proceso"
   - 
-    value: "3304.05"
+    value: "330405"
     display_name: "Sistemas de reconocimiento de caracteres"
   - 
-    value: "3304.06"
+    value: "330406"
     display_name: "Arquitectura de ordenadores"
   - 
-    value: "3304.07"
+    value: "330407"
     display_name: "Periféricos de ordenadores"
   - 
-    value: "3304.08"
+    value: "330408"
     display_name: "Fiabilidad de los ordenadores"
   - 
-    value: "3304.09"
+    value: "330409"
     display_name: "Mantenimiento de los ordenadores"
   - 
-    value: "3304.10"
+    value: "330410"
     display_name: "Terminales, dispositivos gráficos y trazadores"
   - 
-    value: "3304.11"
+    value: "330411"
     display_name: "Diseño de sistemas de cálculo"
   - 
-    value: "3304.12"
+    value: "330412"
     display_name: "Dispositivos de control"
   - 
-    value: "3304.13"
+    value: "330413"
     display_name: "Dispositivos de transmisión de datos"
   - 
-    value: "3304.14"
+    value: "330414"
     display_name: "Ordenadores digitales"
   - 
-    value: "3304.15"
+    value: "330415"
     display_name: "Ordenadores híbridos"
   - 
-    value: "3304.16"
+    value: "330416"
     display_name: "Diseño lógico"
   - 
-    value: "3304.17"
+    value: "330417"
     display_name: "Sistemas en tiempo real"
   - 
-    value: "3304.18"
+    value: "330418"
     display_name: "Dispositivos de almacenamiento"
   - 
-    value: "3304.99"
+    value: "330499"
     display_name: "Otras (especificar)"
   - 
     value: "3305"
     display_name: "Tecnología de la construcción"
   - 
-    value: "3305.01"
+    value: "330501"
     display_name: "Diseño arquitectónico"
   - 
-    value: "3305.02"
+    value: "330502"
     display_name: "Construcción de aeropuertos"
   - 
-    value: "3305.03"
+    value: "330503"
     display_name: "Grandes edificios y rascacielos"
   - 
-    value: "3305.04"
+    value: "330504"
     display_name: "Puentes"
   - 
-    value: "3305.05"
+    value: "330505"
     display_name: "Tecnología del hormigón"
   - 
-    value: "3305.06"
+    value: "330506"
     display_name: "Ingeniería Civil"
   - 
-    value: "3305.07"
+    value: "330507"
     display_name: "Presas"
   - 
-    value: "3305.08"
+    value: "330508"
     display_name: "Drenajes"
   - 
-    value: "3305.09"
+    value: "330509"
     display_name: "Excavaciones"
   - 
-    value: "3305.10"
+    value: "330510"
     display_name: "Cimientos"
   - 
-    value: "3305.11"
+    value: "330511"
     display_name: "Puertos"
   - 
-    value: "3305.12"
+    value: "330512"
     display_name: "Construcciones pesadas"
   - 
-    value: "3305.13"
+    value: "330513"
     display_name: "Autopistas"
   - 
-    value: "3305.14"
+    value: "330514"
     display_name: "Viviendas"
   - 
-    value: "3305.15"
+    value: "330515"
     display_name: "Ingeniería hidráulica"
   - 
-    value: "3305.16"
+    value: "330516"
     display_name: "Sistemas hiperestáticos"
   - 
-    value: "3305.17"
+    value: "330517"
     display_name: "Edificios industriales y comerciales"
   - 
-    value: "3305.18"
+    value: "330518"
     display_name: "Canales interiores"
   - 
-    value: "3305.19"
+    value: "330519"
     display_name: "Irrigación"
   - 
-    value: "3305.20"
+    value: "330520"
     display_name: "Construcciones ligeras"
   - 
-    value: "3305.21"
+    value: "330521"
     display_name: "Construcciones metálicas"
   - 
-    value: "3305.22"
+    value: "330522"
     display_name: "Metrología de la edificación"
   - 
-    value: "3305.23"
+    value: "330523"
     display_name: "Organización de obras"
   - 
-    value: "3305.24"
+    value: "330524"
     display_name: "Construcciones prefabricadas"
   - 
-    value: "3305.25"
+    value: "330525"
     display_name: "Hormigón pretensado"
   - 
-    value: "3305.26"
+    value: "330526"
     display_name: "Edificios públicos"
   - 
-    value: "3305.27"
+    value: "330527"
     display_name: "Tendido de vías férreas"
   - 
-    value: "3305.28"
+    value: "330528"
     display_name: "Regulaciones, códigos y especificaciones"
   - 
-    value: "3305.29"
+    value: "330529"
     display_name: "Construcción de carreteras"
   - 
-    value: "3305.30"
+    value: "330530"
     display_name: "Alcantarillado y depuración de aguas"
   - 
-    value: "3305.31"
+    value: "330531"
     display_name: "Mecánica del suelo (construcción)"
   - 
-    value: "3305.32"
+    value: "330532"
     display_name: "Ingeniería de estructuras"
   - 
-    value: "3305.33"
+    value: "330533"
     display_name: "Resistencia de estructuras"
   - 
-    value: "3305.34"
+    value: "330534"
     display_name: "Topografía de la edificación"
   - 
-    value: "3305.35"
+    value: "330535"
     display_name: "Túneles"
   - 
-    value: "3305.36"
+    value: "330536"
     display_name: "Obras subterráneas"
   - 
-    value: "3305.37"
+    value: "330537"
     display_name: "Planificación urbana"
   - 
-    value: "3305.38"
+    value: "330538"
     display_name: "Abastecimiento de agua"
   - 
-    value: "3305.39"
+    value: "330539"
     display_name: "Construcciones de madera"
   - 
-    value: "3305.90"
+    value: "330590"
     display_name: "Transmisión de calor en la edificación"
   - 
-    value: "3305.99"
+    value: "330599"
     display_name: "Otras (especificar)"
   - 
     value: "3306"
     display_name: "Ingeniería y tecnología eléctricas"
   - 
-    value: "3306.01"
+    value: "330601"
     display_name: "Utilización de la corriente continua"
   - 
-    value: "3306.02"
+    value: "330602"
     display_name: "Aplicaciones eléctricas"
   - 
-    value: "3306.03"
+    value: "330603"
     display_name: "Motores eléctricos"
   - 
-    value: "3306.04"
+    value: "330604"
     display_name: "Iluminación eléctrica"
   - 
-    value: "3306.05"
+    value: "330605"
     display_name: "Conductores aislados"
   - 
-    value: "3306.06"
+    value: "330606"
     display_name: "Fabricación de equipo eléctrico"
   - 
-    value: "3306.07"
+    value: "330607"
     display_name: "Maquinaria rotatoria"
   - 
-    value: "3306.08"
+    value: "330608"
     display_name: "Interruptores"
   - 
-    value: "3306.09"
+    value: "330609"
     display_name: "Transmisión y distribución"
   - 
-    value: "3306.99"
+    value: "330699"
     display_name: "Otras (especificar)"
   - 
     value: "3307"
     display_name: "Tecnología electrónica"
   - 
-    value: "3307.01"
+    value: "330701"
     display_name: "Antenas"
   - 
-    value: "3307.02"
+    value: "330702"
     display_name: "Electroacústica"
   - 
-    value: "3307.03"
+    value: "330703"
     display_name: "Diseño de circuitos"
   - 
-    value: "3307.04"
+    value: "330704"
     display_name: "Transductores electroacústicos"
   - 
-    value: "3307.05"
+    value: "330705"
     display_name: "Válvulas electrónicas"
   - 
-    value: "3307.06"
+    value: "330706"
     display_name: "Diseño de filtros"
   - 
-    value: "3307.07"
+    value: "330707"
     display_name: "Dispositivos láser"
   - 
-    value: "3307.08"
+    value: "330708"
     display_name: "Dispositivos de microondas"
   - 
-    value: "3307.09"
+    value: "330709"
     display_name: "Dispositivos fotoeléctricos"
   - 
-    value: "3307.10"
+    value: "330710"
     display_name: "Radar"
   - 
-    value: "3307.11"
+    value: "330711"
     display_name: "Receptores de radio"
   - 
-    value: "3307.12"
+    value: "330712"
     display_name: "Transmisores de radio"
   - 
-    value: "3307.13"
+    value: "330713"
     display_name: "Dispositivos de grabación"
   - 
-    value: "3307.14"
+    value: "330714"
     display_name: "Dispositivos semiconductores"
   - 
-    value: "3307.15"
+    value: "330715"
     display_name: "Dispositivos de Sonar"
   - 
-    value: "3307.16"
+    value: "330716"
     display_name: "Dispositivos sónicos"
   - 
-    value: "3307.17"
+    value: "330717"
     display_name: "Dispositivos termoeléctricos"
   - 
-    value: "3307.18"
+    value: "330718"
     display_name: "Dispositivos termoiónicos"
   - 
-    value: "3307.19"
+    value: "330719"
     display_name: "Transistores"
   - 
-    value: "3307.20"
+    value: "330720"
     display_name: "Emisores de TV (transmisores)"
   - 
-    value: "3307.21"
+    value: "330721"
     display_name: "Receptores de TV"
   - 
-    value: "3307.22"
+    value: "330722"
     display_name: "Dispositivos ultrasónicos"
   - 
-    value: "3307.23"
+    value: "330723"
     display_name: "Dispositivos de Rayos X"
   - 
-    value: "3307.90"
+    value: "330790"
     display_name: "Microelectrónica"
   - 
-    value: "3307.91"
+    value: "330791"
     display_name: "Microelectrónica. Tecnología del silicio"
   - 
-    value: "3307.92"
+    value: "330792"
     display_name: "Microelectrónica. Teconologías III-V y alternativas"
   - 
-    value: "3307.93"
+    value: "330793"
     display_name: "Microelectrónica. Diseño"
   - 
-    value: "3307.99"
+    value: "330799"
     display_name: "Otras (especificar)"
   - 
     value: "3308"
     display_name: "Ingeniería y tecnología del medio ambiente"
   - 
-    value: "3308.01"
+    value: "330801"
     display_name: "Control de la contaminación atmosférica"
   - 
-    value: "3308.02"
+    value: "330802"
     display_name: "Residuos industriales"
   - 
-    value: "3308.03"
+    value: "330803"
     display_name: "Tecnología del control de insectos"
   - 
-    value: "3308.04"
+    value: "330804"
     display_name: "Ingeniería de la contaminación"
   - 
-    value: "3308.05"
+    value: "330805"
     display_name: "Eliminación de residuos radiactivos"
   - 
-    value: "3308.06"
+    value: "330806"
     display_name: "Regeneración del agua"
   - 
-    value: "3308.07"
+    value: "330807"
     display_name: "Eliminación de residuos"
   - 
-    value: "3308.08"
+    value: "330808"
     display_name: "Tecnología del control de roedores"
   - 
-    value: "3308.09"
+    value: "330809"
     display_name: "Ingeniería sanitaria"
   - 
-    value: "3308.10"
+    value: "330810"
     display_name: "Tecnología de aguas residuales"
   - 
-    value: "3308.11"
+    value: "330811"
     display_name: "Control de la contaminación del agua"
   - 
-    value: "3308.99"
+    value: "330899"
     display_name: "Otras (especificar)"
   - 
     value: "3309"
     display_name: "Tecnología de los alimentos"
   - 
-    value: "3309.01"
+    value: "330901"
     display_name: "Bebidas alcohólicas"
   - 
-    value: "3309.02"
+    value: "330902"
     display_name: "Piensos"
   - 
-    value: "3309.03"
+    value: "330903"
     display_name: "Antioxidantes en los alimentos"
   - 
-    value: "3309.04"
+    value: "330904"
     display_name: "Panadería"
   - 
-    value: "3309.05"
+    value: "330905"
     display_name: "Elaboración de cerveza"
   - 
-    value: "3309.06"
+    value: "330906"
     display_name: "Conservas"
   - 
-    value: "3309.07"
+    value: "330907"
     display_name: "Productos de cereales"
   - 
-    value: "3309.08"
+    value: "330908"
     display_name: "Colorantes"
   - 
-    value: "3309.09"
+    value: "330909"
     display_name: "Productos lácteos"
   - 
-    value: "3309.10"
+    value: "330910"
     display_name: "Aromatizantes"
   - 
-    value: "3309.11"
+    value: "330911"
     display_name: "Fabricación de harina"
   - 
-    value: "3309.12"
+    value: "330912"
     display_name: "Aditivos alimentarios"
   - 
-    value: "3309.13"
+    value: "330913"
     display_name: "Conservación de alimentos"
   - 
-    value: "3309.14"
+    value: "330914"
     display_name: "Elaboración de alimentos"
   - 
-    value: "3309.15"
+    value: "330915"
     display_name: "Higiene de los alimentos"
   - 
-    value: "3309.16"
+    value: "330916"
     display_name: "Secado por congelación"
   - 
-    value: "3309.17"
+    value: "330917"
     display_name: "Liofilización"
   - 
-    value: "3309.18"
+    value: "330918"
     display_name: "Bebidas no alcohólicas"
   - 
-    value: "3309.19"
+    value: "330919"
     display_name: "Pasterización"
   - 
-    value: "3309.20"
+    value: "330920"
     display_name: "Propiedades de los alimentos"
   - 
-    value: "3309.21"
+    value: "330921"
     display_name: "Alimentos proteínicos"
   - 
-    value: "3309.22"
+    value: "330922"
     display_name: "Refrigeración"
   - 
-    value: "3309.23"
+    value: "330923"
     display_name: "Estabilizadores"
   - 
-    value: "3309.24"
+    value: "330924"
     display_name: "Almidón"
   - 
-    value: "3309.25"
+    value: "330925"
     display_name: "Esterilización de alimentos"
   - 
-    value: "3309.26"
+    value: "330926"
     display_name: "Azúcar"
   - 
-    value: "3309.27"
+    value: "330927"
     display_name: "Alimentos sintéticos"
   - 
-    value: "3309.28"
+    value: "330928"
     display_name: "Aceites y grasas vegetales"
   - 
-    value: "3309.29"
+    value: "330929"
     display_name: "Vino"
   - 
-    value: "3309.90"
+    value: "330990"
     display_name: "Microbiología de alimentos"
   - 
-    value: "3309.91"
+    value: "330991"
     display_name: "Conservación postrecolección"
   - 
-    value: "3309.92"
+    value: "330992"
     display_name: "Bioquímica y microbiología de los procesos fermentativos"
   - 
-    value: "3309.93"
+    value: "330993"
     display_name: "Conservas vegetales"
   - 
-    value: "3309.95"
+    value: "330995"
     display_name: "Tecnología de alimentos. Transmisión de calor"
   - 
-    value: "3309.99"
+    value: "330999"
     display_name: "Otras (especificar)"
   - 
     value: "3310"
     display_name: "Tecnología industrial"
   - 
-    value: "3310.01"
+    value: "331001"
     display_name: "Equipo industrial"
   - 
-    value: "3310.02"
+    value: "331002"
     display_name: "Maquinaria industrial"
   - 
-    value: "3310.03"
+    value: "331003"
     display_name: "Procesos industriales"
   - 
-    value: "3310.04"
+    value: "331004"
     display_name: "Ingeniería de mantenimiento"
   - 
-    value: "3310.05"
+    value: "331005"
     display_name: "Ingeniería de procesos"
   - 
-    value: "3310.06"
+    value: "331006"
     display_name: "Especificaciones de procesos"
   - 
-    value: "3310.07"
+    value: "331007"
     display_name: "Estudio de tiempos y movimientos"
   - 
-    value: "3310.99"
+    value: "331099"
     display_name: "Otras (especificar)"
   - 
     value: "3311"
     display_name: "Tecnología de la instrumentación"
   - 
-    value: "3311.01"
+    value: "331101"
     display_name: "Tecnología de la automatización"
   - 
-    value: "3311.02"
+    value: "331102"
     display_name: "Ingeniería de control"
   - 
-    value: "3311.03"
+    value: "331103"
     display_name: "Instrumentos para odontología"
   - 
-    value: "3311.04"
+    value: "331104"
     display_name: "Dispositivos electroópticos"
   - 
-    value: "3311.05"
+    value: "331105"
     display_name: "Equipos eléctricos de control"
   - 
-    value: "3311.06"
+    value: "331106"
     display_name: "Instrumentos eléctricos"
   - 
-    value: "3311.07"
+    value: "331107"
     display_name: "Instrumentos electrónicos"
   - 
-    value: "3311.08"
+    value: "331108"
     display_name: "Equipo de laboratorio"
   - 
-    value: "3311.09"
+    value: "331109"
     display_name: "Lentes"
   - 
-    value: "3311.10"
+    value: "331110"
     display_name: "Instrumentos médicos"
   - 
-    value: "3311.11"
+    value: "331111"
     display_name: "Instrumentos ópticos"
   - 
-    value: "3311.12"
+    value: "331112"
     display_name: "Equipo de fotografía y cinematografía"
   - 
-    value: "3311.13"
+    value: "331113"
     display_name: "Aparatos científicos"
   - 
-    value: "3311.14"
+    value: "331114"
     display_name: "Servomecanismos"
   - 
-    value: "3311.15"
+    value: "331115"
     display_name: "Técnicas de manipulación a distancia"
   - 
-    value: "3311.16"
+    value: "331116"
     display_name: "Instrumentos de medida de la temperatura"
   - 
-    value: "3311.17"
+    value: "331117"
     display_name: "Equipos de verificación"
   - 
-    value: "3311.18"
+    value: "331118"
     display_name: "Instrumentos termoestáticos"
   - 
-    value: "3311.19"
+    value: "331119"
     display_name: "Dispositivos de cronometraje"
   - 
-    value: "3311.99"
+    value: "331199"
     display_name: "Otras (especificar)"
   - 
     value: "3312"
     display_name: "Tecnología de materiales"
   - 
-    value: "3312.01"
+    value: "331201"
     display_name: "Abrasivos"
   - 
-    value: "3312.02"
+    value: "331202"
     display_name: "Aglomerantes"
   - 
-    value: "3312.03"
+    value: "331203"
     display_name: "Materiales cerámicos"
   - 
-    value: "3312.04"
+    value: "331204"
     display_name: "Materiales metalocerámicos (cermets)"
   - 
-    value: "3312.05"
+    value: "331205"
     display_name: "Productos de arcilla"
   - 
-    value: "3312.06"
+    value: "331206"
     display_name: "Vidrio"
   - 
-    value: "3312.07"
+    value: "331207"
     display_name: "Caliza"
   - 
-    value: "3312.08"
+    value: "331208"
     display_name: "Propiedades de los materiales"
   - 
-    value: "3312.09"
+    value: "331209"
     display_name: "Resistencia de materiales"
   - 
-    value: "3312.10"
+    value: "331210"
     display_name: "Plásticos"
   - 
-    value: "3312.11"
+    value: "331211"
     display_name: "Refractarios"
   - 
-    value: "3312.12"
+    value: "331212"
     display_name: "Ensayos de materiales"
   - 
-    value: "3312.13"
+    value: "331213"
     display_name: "Tecnología de la madera"
   - 
-    value: "3312.99"
+    value: "331299"
     display_name: "Otras (especificar)"
   - 
     value: "3313"
     display_name: "Tecnología e ingeniería mecánicas"
   - 
-    value: "3313.01"
+    value: "331301"
     display_name: "Ventiladores"
   - 
-    value: "3313.02"
+    value: "331302"
     display_name: "Compresores de aire"
   - 
-    value: "3313.03"
+    value: "331303"
     display_name: "Cojinetes"
   - 
-    value: "3313.04"
+    value: "331304"
     display_name: "Material de construcción"
   - 
-    value: "3313.05"
+    value: "331305"
     display_name: "Matrices, plantillas y calibres"
   - 
-    value: "3313.06"
+    value: "331306"
     display_name: "Maquinaria agropecuaria"
   - 
-    value: "3313.07"
+    value: "331307"
     display_name: "Maquinaria para la industria de la alimentación"
   - 
-    value: "3313.08"
+    value: "331308"
     display_name: "Motores de gas"
   - 
-    value: "3313.09"
+    value: "331309"
     display_name: "Engranajes"
   - 
-    value: "3313.10"
+    value: "331310"
     display_name: "Material de calefacción"
   - 
-    value: "3313.11"
+    value: "331311"
     display_name: "Maquinaria hidráulica"
   - 
-    value: "3313.12"
+    value: "331312"
     display_name: "Equipo y maquinaria industrial"
   - 
-    value: "3313.13"
+    value: "331313"
     display_name: "Motores de combustión interna (general)"
   - 
-    value: "3313.14"
+    value: "331314"
     display_name: "Máquinas-herramienta y accesorios"
   - 
-    value: "3313.15"
+    value: "331315"
     display_name: "Diseño de máquinas"
   - 
-    value: "3313.16"
+    value: "331316"
     display_name: "Maquinaria para manejo de materiales"
   - 
-    value: "3313.17"
+    value: "331317"
     display_name: "Operaciones mecanizadas"
   - 
-    value: "3313.18"
+    value: "331318"
     display_name: "Maquinaria de minería"
   - 
-    value: "3313.19"
+    value: "331319"
     display_name: "Maquinaria nuclear"
   - 
-    value: "3313.20"
+    value: "331320"
     display_name: "Maquinaria para fabricar papel"
   - 
-    value: "3313.21"
+    value: "331321"
     display_name: "Maquinaria de extracción de petróleo"
   - 
-    value: "3313.22"
+    value: "331322"
     display_name: "Equipo neumático"
   - 
-    value: "3313.23"
+    value: "331323"
     display_name: "Equipo mecánico de transmisión de potencia"
   - 
-    value: "3313.24"
+    value: "331324"
     display_name: "Maquinaria de impresión y reproducción"
   - 
-    value: "3313.25"
+    value: "331325"
     display_name: "Bombas y equipos para manipulación de líquidos"
   - 
-    value: "3313.26"
+    value: "331326"
     display_name: "Equipo de refrigeración"
   - 
-    value: "3313.27"
+    value: "331327"
     display_name: "Maquinaria industrial especializada"
   - 
-    value: "3313.28"
+    value: "331328"
     display_name: "Maquinas de vapor"
   - 
-    value: "3313.29"
+    value: "331329"
     display_name: "Maquinaria textil"
   - 
-    value: "3313.30"
+    value: "331330"
     display_name: "Turbinas"
   - 
-    value: "3313.31"
+    value: "331331"
     display_name: "Maquinas expendedoras y distribuidoras"
   - 
-    value: "3313.99"
+    value: "331399"
     display_name: "Otras (especificar)"
   - 
     value: "3314"
     display_name: "Tecnología médica"
   - 
-    value: "3314.01"
+    value: "331401"
     display_name: "Organos artificiales"
   - 
-    value: "3314.02"
+    value: "331402"
     display_name: "Prótesis"
   - 
-    value: "3314.99"
+    value: "331499"
     display_name: "Otras (especificar)"
   - 
     value: "3315"
     display_name: "Tecnología metalúrgica"
   - 
-    value: "3315.01"
+    value: "331501"
     display_name: "Aluminio"
   - 
-    value: "3315.02"
+    value: "331502"
     display_name: "Cobre"
   - 
-    value: "3315.03"
+    value: "331503"
     display_name: "Productos electrometalúrgicos"
   - 
-    value: "3315.04"
+    value: "331504"
     display_name: "Fundiciones (general)"
   - 
-    value: "3315.05"
+    value: "331505"
     display_name: "Talleres de forja, laminación y fundición de hierro y acero"
   - 
-    value: "3315.06"
+    value: "331506"
     display_name: "Plomo y zinc"
   - 
-    value: "3315.07"
+    value: "331507"
     display_name: "Productos metalúrgicos (especiales)"
   - 
-    value: "3315.08"
+    value: "331508"
     display_name: "Servicios metalúrgicos"
   - 
-    value: "3315.09"
+    value: "331509"
     display_name: "Fundición, afino y transformación de materiales no férreos"
   - 
-    value: "3315.10"
+    value: "331510"
     display_name: "Fundiciones no férreas"
   - 
-    value: "3315.11"
+    value: "331511"
     display_name: "Pulvimetalurgia"
   - 
-    value: "3315.12"
+    value: "331512"
     display_name: "Metales preciosos"
   - 
-    value: "3315.13"
+    value: "331513"
     display_name: "Fundición de precisión"
   - 
-    value: "3315.14"
+    value: "331514"
     display_name: "Metales radiactivos"
   - 
-    value: "3315.15"
+    value: "331515"
     display_name: "Metales raros"
   - 
-    value: "3315.16"
+    value: "331516"
     display_name: "Afino incluyendo el afino por zonas"
   - 
-    value: "3315.17"
+    value: "331517"
     display_name: "Metales refractarios"
   - 
-    value: "3315.90"
+    value: "331590"
     display_name: "Metalurgia extractiva no férrea"
   - 
-    value: "3315.99"
+    value: "331599"
     display_name: "Otras (especificar)"
   - 
     value: "3316"
     display_name: "Tecnología de los productos metálicos"
   - 
-    value: "3316.01"
+    value: "331601"
     display_name: "Autoclaves y calderas"
   - 
-    value: "3316.02"
+    value: "331602"
     display_name: "Envases y recipientes"
   - 
-    value: "3316.03"
+    value: "331603"
     display_name: "Equipo de destilación"
   - 
-    value: "3316.04"
+    value: "331604"
     display_name: "Productos electrochapados y recubiertos"
   - 
-    value: "3316.05"
+    value: "331605"
     display_name: "Altos hornos, hornos, hornos cerámicos"
   - 
-    value: "3316.06"
+    value: "331606"
     display_name: "Ferretería"
   - 
-    value: "3316.07"
+    value: "331607"
     display_name: "Productos elaborados a máquina y torneados"
   - 
-    value: "3316.08"
+    value: "331608"
     display_name: "Servicios de fabricación de metales"
   - 
-    value: "3316.09"
+    value: "331609"
     display_name: "Tuberías, guarniciones y válvulas"
   - 
-    value: "3316.10"
+    value: "331610"
     display_name: "Recipientes de presión"
   - 
-    value: "3316.11"
+    value: "331611"
     display_name: "Productos de chapa metálica"
   - 
-    value: "3316.12"
+    value: "331612"
     display_name: "Estampados"
   - 
-    value: "3316.13"
+    value: "331613"
     display_name: "Productos de acero para construcciones"
   - 
-    value: "3316.14"
+    value: "331614"
     display_name: "Estructuras fabricadas por soldeo"
   - 
-    value: "3316.15"
+    value: "331615"
     display_name: "Artículos de alambre"
   - 
-    value: "3316.99"
+    value: "331699"
     display_name: "Otros (especificar)"
   - 
     value: "3317"
     display_name: "Tecnología de vehículos de motor"
   - 
-    value: "3317.01"
+    value: "331701"
     display_name: "Vehículos todo terreno"
   - 
-    value: "3317.02"
+    value: "331702"
     display_name: "Automóviles"
   - 
-    value: "3317.03"
+    value: "331703"
     display_name: "Autobuses, camiones y remolques"
   - 
-    value: "3317.04"
+    value: "331704"
     display_name: "Motores Diesel"
   - 
-    value: "3317.05"
+    value: "331705"
     display_name: "Motocicletas"
   - 
-    value: "3317.06"
+    value: "331706"
     display_name: "Servicio de mantenimiento de transportes a motor"
   - 
-    value: "3317.07"
+    value: "331707"
     display_name: "Accesorios y recambios"
   - 
-    value: "3317.08"
+    value: "331708"
     display_name: "Motores de pistón"
   - 
-    value: "3317.09"
+    value: "331709"
     display_name: "Motores rotativos"
   - 
-    value: "3317.10"
+    value: "331710"
     display_name: "Ingeniería del tráfico"
   - 
-    value: "3317.99"
+    value: "331799"
     display_name: "Otras (especificar)"
   - 
     value: "3318"
     display_name: "Tecnología minera"
   - 
-    value: "3318.01"
+    value: "331801"
     display_name: "Minería del carbón"
   - 
-    value: "3318.02"
+    value: "331802"
     display_name: "Concentración de menas"
   - 
-    value: "3318.03"
+    value: "331803"
     display_name: "Menas de hierro"
   - 
-    value: "3318.04"
+    value: "331804"
     display_name: "Servicios mineros"
   - 
-    value: "3318.05"
+    value: "331805"
     display_name: "Menas metálicas no férreas"
   - 
-    value: "3318.06"
+    value: "331806"
     display_name: "Minerales no metálicos"
   - 
-    value: "3318.07"
+    value: "331807"
     display_name: "Productos de las canteras"
   - 
-    value: "3318.08"
+    value: "331808"
     display_name: "Azufre"
   - 
-    value: "3318.09"
+    value: "331809"
     display_name: "Uranio y menas radiactivas"
   - 
-    value: "3318.99"
+    value: "331899"
     display_name: "Otras (especificar)"
   - 
     value: "3319"
     display_name: "Tecnología naval"
   - 
-    value: "3319.01"
+    value: "331901"
     display_name: "Dispositivos de sustentación neumática"
   - 
-    value: "3319.02"
+    value: "331902"
     display_name: "Barcos"
   - 
-    value: "3319.03"
+    value: "331903"
     display_name: "Barcos de navegación interior"
   - 
-    value: "3319.04"
+    value: "331904"
     display_name: "Maquinas auxiliares"
   - 
-    value: "3319.05"
+    value: "331905"
     display_name: "Motores marinos"
   - 
-    value: "3319.06"
+    value: "331906"
     display_name: "Transportes marítimos"
   - 
-    value: "3319.07"
+    value: "331907"
     display_name: "Buques mercantes"
   - 
-    value: "3319.08"
+    value: "331908"
     display_name: "Arquitectura naval"
   - 
-    value: "3319.09"
+    value: "331909"
     display_name: "Transporte oceánico"
   - 
-    value: "3319.10"
+    value: "331910"
     display_name: "Hélices"
   - 
-    value: "3319.11"
+    value: "331911"
     display_name: "Línea de ejes"
   - 
-    value: "3319.12"
+    value: "331912"
     display_name: "Construcción naval"
   - 
-    value: "3319.13"
+    value: "331913"
     display_name: "Vehículos submarinos"
   - 
-    value: "3319.99"
+    value: "331999"
     display_name: "Otras (especificar)"
   - 
     value: "3320"
     display_name: "Tecnología nuclear"
   - 
-    value: "3320.01"
+    value: "332001"
     display_name: "Aplicaciones de isótopos"
   - 
-    value: "3320.02"
+    value: "332002"
     display_name: "Separación de isótopos"
   - 
-    value: "3320.03"
+    value: "332003"
     display_name: "Explosiones nucleares"
   - 
-    value: "3320.04"
+    value: "332004"
     display_name: "Reactores de fisión nuclear"
   - 
-    value: "3320.05"
+    value: "332005"
     display_name: "Reactores de fusión nuclear"
   - 
-    value: "3320.06"
+    value: "332006"
     display_name: "Pruebas nucleares"
   - 
-    value: "3320.99"
+    value: "332099"
     display_name: "Otras (especificar)"
   - 
     value: "3321"
     display_name: "Tecnología del carbón y del petróleo"
   - 
-    value: "3321.01"
+    value: "332101"
     display_name: "Materiales asfálticos"
   - 
-    value: "3321.02"
+    value: "332102"
     display_name: "Productos químicos derivados del carbón"
   - 
-    value: "3321.03"
+    value: "332103"
     display_name: "Petróleo crudo"
   - 
-    value: "3321.04"
+    value: "332104"
     display_name: "Gaseoductos"
   - 
-    value: "3321.05"
+    value: "332105"
     display_name: "Gas licuado"
   - 
-    value: "3321.06"
+    value: "332106"
     display_name: "Aceite y grasa lubricantes"
   - 
-    value: "3321.07"
+    value: "332107"
     display_name: "Gas natural"
   - 
-    value: "3321.08"
+    value: "332108"
     display_name: "Equipo de campos petrolíferos"
   - 
-    value: "3321.09"
+    value: "332109"
     display_name: "Infraestructura de campos petrolíferos"
   - 
-    value: "3321.10"
+    value: "332110"
     display_name: "Oleoductos"
   - 
-    value: "3321.11"
+    value: "332111"
     display_name: "Productos derivados del petróleo"
   - 
-    value: "3321.12"
+    value: "332112"
     display_name: "Productos del petróleo: gasolina, aceites y ceras"
   - 
-    value: "3321.13"
+    value: "332113"
     display_name: "Diseño de refinerías"
   - 
-    value: "3321.14"
+    value: "332114"
     display_name: "Almacenamiento (petróleo y gas)"
   - 
-    value: "3321.90"
+    value: "332190"
     display_name: "Caracterización de carbones"
   - 
-    value: "3321.99"
+    value: "332199"
     display_name: "Otras (especificar)"
   - 
     value: "3322"
     display_name: "Tecnología energética"
   - 
-    value: "3322.01"
+    value: "332201"
     display_name: "Distribución de energía"
   - 
-    value: "3322.02"
+    value: "332202"
     display_name: "Generación de energía"
   - 
-    value: "3322.03"
+    value: "332203"
     display_name: "Generadores de energía"
   - 
-    value: "3322.04"
+    value: "332204"
     display_name: "Transmisión de energía"
   - 
-    value: "3322.05"
+    value: "332205"
     display_name: "Fuentes no convencionales de energía"
   - 
-    value: "3322.99"
+    value: "332299"
     display_name: "Otras (especificar)"
   - 
     value: "3323"
     display_name: "Tecnología de los ferrocarriles"
   - 
-    value: "3323.01"
+    value: "332301"
     display_name: "Locomotoras"
   - 
-    value: "3323.02"
+    value: "332302"
     display_name: "Equipo ferroviario"
   - 
-    value: "3323.03"
+    value: "332303"
     display_name: "Servicios de ferrocarril"
   - 
-    value: "3323.04"
+    value: "332304"
     display_name: "Transito rápido"
   - 
-    value: "3323.05"
+    value: "332305"
     display_name: "Material rodante"
   - 
-    value: "3323.99"
+    value: "332399"
     display_name: "Otras (especificar)"
   - 
     value: "3324"
     display_name: "Tecnología del espacio"
   - 
-    value: "3324.01"
+    value: "332401"
     display_name: "Satélites artificiales"
   - 
-    value: "3324.02"
+    value: "332402"
     display_name: "Lanzamiento y recuperación de misiles"
   - 
-    value: "3324.03"
+    value: "332403"
     display_name: "Instalaciones de misiles"
   - 
-    value: "3324.04"
+    value: "332404"
     display_name: "Motores de cohete"
   - 
-    value: "3324.05"
+    value: "332405"
     display_name: "Naves espaciales"
   - 
-    value: "3324.06"
+    value: "332406"
     display_name: "Seguimiento espacial"
   - 
-    value: "3324.07"
+    value: "332407"
     display_name: "Control de vehículos"
   - 
-    value: "3324.99"
+    value: "332499"
     display_name: "Otras (especificar)"
   - 
     value: "3325"
     display_name: "Tecnología de las telecomunicaciones"
   - 
-    value: "3325.01"
+    value: "332501"
     display_name: "Radiodifusión, sonido y televisión"
   - 
-    value: "3325.02"
+    value: "332502"
     display_name: "Televisión por cable"
   - 
-    value: "3325.03"
+    value: "332503"
     display_name: "Cinematografía"
   - 
-    value: "3325.04"
+    value: "332504"
     display_name: "Enlaces de microondas"
   - 
-    value: "3325.05"
+    value: "332505"
     display_name: "Radiocomunicaciones"
   - 
-    value: "3325.06"
+    value: "332506"
     display_name: "Comunicaciones por satélite"
   - 
-    value: "3325.07"
+    value: "332507"
     display_name: "Telégrafo"
   - 
-    value: "3325.08"
+    value: "332508"
     display_name: "Teléfono"
   - 
-    value: "3325.09"
+    value: "332509"
     display_name: "Televisión"
   - 
-    value: "3325.99"
+    value: "332599"
     display_name: "Otras (especificar)"
   - 
     value: "3326"
     display_name: "Tecnología textil"
   - 
-    value: "3326.01"
+    value: "332601"
     display_name: "Algodón"
   - 
-    value: "3326.02"
+    value: "332602"
     display_name: "Lino"
   - 
-    value: "3326.03"
+    value: "332603"
     display_name: "Yute"
   - 
-    value: "3326.04"
+    value: "332604"
     display_name: "Hilado"
   - 
-    value: "3326.05"
+    value: "332605"
     display_name: "Fibras sintéticas"
   - 
-    value: "3326.06"
+    value: "332606"
     display_name: "Hilaturas"
   - 
-    value: "3326.07"
+    value: "332607"
     display_name: "Lana"
   - 
-    value: "3326.99"
+    value: "332699"
     display_name: "Otras (especificar)"
   - 
     value: "3327"
     display_name: "Tecnología de los sistemas de transporte"
   - 
-    value: "3327.01"
+    value: "332701"
     display_name: "Líneas aéreas y control del trafico aéreo"
   - 
-    value: "3327.02"
+    value: "332702"
     display_name: "Análisis del tráfico"
   - 
-    value: "3327.03"
+    value: "332703"
     display_name: "Sistemas de tránsito urbano"
   - 
-    value: "3327.04"
+    value: "332704"
     display_name: "Combinación de sistemas"
   - 
-    value: "3327.99"
+    value: "332799"
     display_name: "Otras (especificar)"
   - 
     value: "3328"
     display_name: "Procesos tecnológicos"
   - 
-    value: "3328.01"
+    value: "332801"
     display_name: "Absorción"
   - 
-    value: "3328.02"
+    value: "332802"
     display_name: "Agitación"
   - 
-    value: "3328.03"
+    value: "332803"
     display_name: "Centrifugación"
   - 
-    value: "3328.04"
+    value: "332804"
     display_name: "Compresión"
   - 
-    value: "3328.05"
+    value: "332805"
     display_name: "Cristalización"
   - 
-    value: "3328.06"
+    value: "332806"
     display_name: "Desionización"
   - 
-    value: "3328.07"
+    value: "332807"
     display_name: "Destilación y condensación"
   - 
-    value: "3328.08"
+    value: "332808"
     display_name: "Desecación"
   - 
-    value: "3328.09"
+    value: "332809"
     display_name: "Evaporación"
   - 
-    value: "3328.10"
+    value: "332810"
     display_name: "Filtración"
   - 
-    value: "3328.11"
+    value: "332811"
     display_name: "Flotación"
   - 
-    value: "3328.12"
+    value: "332812"
     display_name: "Circulación a través de medios porosos"
   - 
-    value: "3328.13"
+    value: "332813"
     display_name: "Fluidización de sólidos"
   - 
-    value: "3328.14"
+    value: "332814"
     display_name: "Liofilización"
   - 
-    value: "3328.15"
+    value: "332815"
     display_name: "Manejo de sólidos"
   - 
-    value: "3328.16"
+    value: "332816"
     display_name: "Transferencia de calor"
   - 
-    value: "3328.17"
+    value: "332817"
     display_name: "Extracción de líquido-líquido"
   - 
-    value: "3328.18"
+    value: "332818"
     display_name: "Transferencia de masa"
   - 
-    value: "3328.19"
+    value: "332819"
     display_name: "Mezclado"
   - 
-    value: "3328.20"
+    value: "332820"
     display_name: "Tubos, válvulas y accesorios de montaje"
   - 
-    value: "3328.21"
+    value: "332821"
     display_name: "Bombeo"
   - 
-    value: "3328.22"
+    value: "332822"
     display_name: "Tamizado"
   - 
-    value: "3328.23"
+    value: "332823"
     display_name: "Sedimentación"
   - 
-    value: "3328.24"
+    value: "332824"
     display_name: "Trituración"
   - 
-    value: "3328.25"
+    value: "332825"
     display_name: "Extracción sólido-líquido"
   - 
-    value: "3328.26"
+    value: "332826"
     display_name: "Refrigeración"
   - 
-    value: "3328.27"
+    value: "332827"
     display_name: "Transferencia vapor-líquido"
   - 
-    value: "3328.99"
+    value: "332899"
     display_name: "Otras (especificar)"
   - 
     value: "3329"
     display_name: "Planificación urbana"
   - 
-    value: "3329.01"
+    value: "332901"
     display_name: "Códigos de edificación"
   - 
-    value: "3329.02"
+    value: "332902"
     display_name: "Comunicaciones"
   - 
-    value: "3329.03"
+    value: "332903"
     display_name: "Organización comunitaria"
   - 
-    value: "3329.04"
+    value: "332904"
     display_name: "Uso del suelo"
   - 
-    value: "3329.05"
+    value: "332905"
     display_name: "Desarrollo regional"
   - 
-    value: "3329.06"
+    value: "332906"
     display_name: "Servicios sanitarios"
   - 
-    value: "3329.07"
+    value: "332907"
     display_name: "Transporte"
   - 
-    value: "3329.08"
+    value: "332908"
     display_name: "Medio urbano"
   - 
-    value: "3329.09"
+    value: "332909"
     display_name: "Relaciones urbano-rurales"
   - 
-    value: "3329.99"
+    value: "332999"
     display_name: "Otras (especificar)"
   - 
     value: "3399"
@@ -5347,109 +5347,109 @@ unesco:
     value: "5101"
     display_name: "Antropología cultural"
   - 
-    value: "5101.01"
+    value: "510101"
     display_name: "Adorno"
   - 
-    value: "5101.02"
+    value: "510102"
     display_name: "Vestido"
   - 
-    value: "5101.03"
+    value: "510103"
     display_name: "Danzas, fiestas"
   - 
-    value: "5101.04"
+    value: "510104"
     display_name: "Etnomusicología"
   - 
-    value: "5101.05"
+    value: "510105"
     display_name: "Etnolingüística"
   - 
-    value: "5101.06"
+    value: "510106"
     display_name: "Museología"
   - 
-    value: "5101.07"
+    value: "510107"
     display_name: "Mitos"
   - 
-    value: "5101.08"
+    value: "510108"
     display_name: "Magia"
   - 
-    value: "5101.09"
+    value: "510109"
     display_name: "Poemas, relatos"
   - 
-    value: "5101.10"
+    value: "510110"
     display_name: "Religión"
   - 
-    value: "5101.11"
+    value: "510111"
     display_name: "Hechicería"
   - 
-    value: "5101.12"
+    value: "510112"
     display_name: "Simbolismo"
   - 
-    value: "5101.13"
+    value: "510113"
     display_name: "Medicina tradicional"
   - 
-    value: "5101.14"
+    value: "510114"
     display_name: "Tradición"
   - 
-    value: "5101.99"
+    value: "510199"
     display_name: "Otras (especificar)"
   - 
     value: "5102"
     display_name: "Etnografía y etnología"
   - 
-    value: "5102.01"
+    value: "510201"
     display_name: "Agricultura"
   - 
-    value: "5102.02"
+    value: "510202"
     display_name: "Armas"
   - 
-    value: "5102.03"
+    value: "510203"
     display_name: "Trueque"
   - 
-    value: "5102.04"
+    value: "510204"
     display_name: "Intercambio"
   - 
-    value: "5102.05"
+    value: "510205"
     display_name: "Hábitat"
   - 
-    value: "5102.06"
+    value: "510206"
     display_name: "Habilidades artesanales"
   - 
-    value: "5102.07"
+    value: "510207"
     display_name: "Caza"
   - 
-    value: "5102.08"
+    value: "510208"
     display_name: "Pesca"
   - 
-    value: "5102.09"
+    value: "510209"
     display_name: "Forraje"
   - 
-    value: "5102.10"
+    value: "510210"
     display_name: "Metalurgia"
   - 
-    value: "5102.11"
+    value: "510211"
     display_name: "Ganadería"
   - 
-    value: "5102.99"
+    value: "510299"
     display_name: "Otras (especificar)"
   - 
     value: "5103"
     display_name: "Antropología social"
   - 
-    value: "5103.01"
+    value: "510301"
     display_name: "Jefatura y realeza"
   - 
-    value: "5103.02"
+    value: "510302"
     display_name: "Filiación, familia y parentesco"
   - 
-    value: "5103.03"
+    value: "510303"
     display_name: "Nomadismo"
   - 
-    value: "5103.04"
+    value: "510304"
     display_name: "Esclavitud y servidumbre"
   - 
-    value: "5103.05"
+    value: "510305"
     display_name: "Guerra"
   - 
-    value: "5103.99"
+    value: "510399"
     display_name: "Otras (especificar)"
   - 
     value: "5199"
@@ -5461,178 +5461,178 @@ unesco:
     value: "5201"
     display_name: "Fertilidad"
   - 
-    value: "5201.01"
+    value: "520101"
     display_name: "Indice de natalidad"
   - 
-    value: "5201.02"
+    value: "520102"
     display_name: "Fertilidad general"
   - 
-    value: "5201.03"
+    value: "520103"
     display_name: "Ilegitimidad"
   - 
-    value: "5201.04"
+    value: "520104"
     display_name: "Indice de matrimonios"
   - 
-    value: "5201.05"
+    value: "520105"
     display_name: "Esterilidad y fecundidad"
   - 
-    value: "5201.99"
+    value: "520199"
     display_name: "Otras (especificar)"
   - 
     value: "5202"
     display_name: "Demografía general"
   - 
-    value: "5202.01"
+    value: "520201"
     display_name: "Metodología de investigación"
   - 
-    value: "5202.02"
+    value: "520202"
     display_name: "Metodología de análisis"
   - 
-    value: "5202.03"
+    value: "520203"
     display_name: "Teoría"
   - 
-    value: "5202.99"
+    value: "520299"
     display_name: "Otras (especificar)"
   - 
     value: "5203"
     display_name: "Demografía geográfica"
   - 
-    value: "5203.01"
+    value: "520301"
     display_name: "Movilidad y migraciones interiores"
   - 
-    value: "5203.02"
+    value: "520302"
     display_name: "Movilidad y migraciones internacionales"
   - 
-    value: "5203.03"
+    value: "520303"
     display_name: "Demografía local"
   - 
-    value: "5203.04"
+    value: "520304"
     display_name: "Demografía regional"
   - 
-    value: "5203.05"
+    value: "520305"
     display_name: "Demografía rural"
   - 
-    value: "5203.06"
+    value: "520306"
     display_name: "Demografía urbana"
   - 
-    value: "5203.99"
+    value: "520399"
     display_name: "Otras (especificar)"
   - 
     value: "5204"
     display_name: "Demografía histórica"
   - 
-    value: "5204.01"
+    value: "520401"
     display_name: "Fertilidad e índice de matrimonios"
   - 
-    value: "5204.02"
+    value: "520402"
     display_name: "Cuestiones metodológicas"
   - 
-    value: "5204.03"
+    value: "520403"
     display_name: "Migraciones"
   - 
-    value: "5204.04"
+    value: "520404"
     display_name: "Mortalidad"
   - 
-    value: "5204.05"
+    value: "520405"
     display_name: "Fuentes de observación"
   - 
-    value: "5204.06"
+    value: "520406"
     display_name: "Cuestiones teóricas"
   - 
-    value: "5204.99"
+    value: "520499"
     display_name: "Otras (especificar)"
   - 
     value: "5205"
     display_name: "Mortalidad"
   - 
-    value: "5205.01"
+    value: "520501"
     display_name: "Causas de mortalidad"
   - 
-    value: "5205.02"
+    value: "520502"
     display_name: "Mortalidad general"
   - 
-    value: "5205.03"
+    value: "520503"
     display_name: "Mortalidad infantil"
   - 
-    value: "5205.04"
+    value: "520504"
     display_name: "Mortalidad prenatal y perinatal"
   - 
-    value: "5205.05"
+    value: "520505"
     display_name: "Relación de variables"
   - 
-    value: "5205.99"
+    value: "520599"
     display_name: "Otras (especificar)"
   - 
     value: "5206"
     display_name: "Características de la población"
   - 
-    value: "5206.01"
+    value: "520601"
     display_name: "Población activa"
   - 
-    value: "5206.02"
+    value: "520602"
     display_name: "Distribución de edad"
   - 
-    value: "5206.03"
+    value: "520603"
     display_name: "Envejecimiento de la población"
   - 
-    value: "5206.04"
+    value: "520604"
     display_name: "Características biológicas"
   - 
-    value: "5206.05"
+    value: "520605"
     display_name: "Características epidemiológicas"
   - 
-    value: "5206.06"
+    value: "520606"
     display_name: "Estructuras demográficas generales"
   - 
-    value: "5206.07"
+    value: "520607"
     display_name: "Morbilidad"
   - 
-    value: "5206.08"
+    value: "520608"
     display_name: "Genética de la población"
   - 
-    value: "5206.09"
+    value: "520609"
     display_name: "Sexo"
   - 
-    value: "5206.10"
+    value: "520610"
     display_name: "Características socio-económicas"
   - 
-    value: "5206.99"
+    value: "520699"
     display_name: "Otras (especificar)"
   - 
     value: "5207"
     display_name: "Tamaño de la población y evolución demográfica"
   - 
-    value: "5207.01"
+    value: "520701"
     display_name: "Cálculo demográfico"
   - 
-    value: "5207.02"
+    value: "520702"
     display_name: "Transición demográfica"
   - 
-    value: "5207.03"
+    value: "520703"
     display_name: "Análisis demográfico"
   - 
-    value: "5207.04"
+    value: "520704"
     display_name: "Censos de población y recogida de otros datos"
   - 
-    value: "5207.05"
+    value: "520705"
     display_name: "Estimaciones de población"
   - 
-    value: "5207.06"
+    value: "520706"
     display_name: "Previsiones de población"
   - 
-    value: "5207.07"
+    value: "520707"
     display_name: "Crecimiento de la población"
   - 
-    value: "5207.08"
+    value: "520708"
     display_name: "Modelos de población"
   - 
-    value: "5207.09"
+    value: "520709"
     display_name: "Proyecciones de población"
   - 
-    value: "5207.10"
+    value: "520710"
     display_name: "Estadística de poblaciones"
   - 
-    value: "5207.99"
+    value: "520799"
     display_name: "Otras (especificar)"
   - 
     value: "5299"
@@ -5644,343 +5644,343 @@ unesco:
     value: "5301"
     display_name: "Política fiscal y hacienda publica nacionales"
   - 
-    value: "5301.01"
+    value: "530101"
     display_name: "Política fiscal y deuda publica"
   - 
-    value: "5301.02"
+    value: "530102"
     display_name: "Hacienda publica (presupuesto)"
   - 
-    value: "5301.99"
+    value: "530199"
     display_name: "Otras (especificar)"
   - 
     value: "5302"
     display_name: "Econometría"
   - 
-    value: "5302.01"
+    value: "530201"
     display_name: "Indicadores económicos"
   - 
-    value: "5302.02"
+    value: "530202"
     display_name: "Modelos econométricos"
   - 
-    value: "5302.03"
+    value: "530203"
     display_name: "Proyección económica"
   - 
-    value: "5302.04"
+    value: "530204"
     display_name: "Estadística económica"
   - 
-    value: "5302.05"
+    value: "530205"
     display_name: "Series cronológicas económicas"
   - 
-    value: "5302.99"
+    value: "530299"
     display_name: "Otras (especificar)"
   - 
     value: "5303"
     display_name: "Contabilidad pública"
   - 
-    value: "5303.01"
+    value: "530301"
     display_name: "Cuentas financieras"
   - 
-    value: "5303.02"
+    value: "530302"
     display_name: "Riqueza nacional y balanza de pagos"
   - 
-    value: "5303.03"
+    value: "530303"
     display_name: "Contabilidad de la renta nacional"
   - 
-    value: "5303.04"
+    value: "530304"
     display_name: "Entrada-salida"
   - 
-    value: "5303.05"
+    value: "530305"
     display_name: "Cuentas sociales"
   - 
-    value: "5303.99"
+    value: "530399"
     display_name: "Otros (especificar)"
   - 
     value: "5304"
     display_name: "Actividad económica"
   - 
-    value: "5304.01"
+    value: "530401"
     display_name: "Consumo, ahorro, inversión"
   - 
-    value: "5304.02"
+    value: "530402"
     display_name: "Distribución"
   - 
-    value: "5304.03"
+    value: "530403"
     display_name: "Comercio interior"
   - 
-    value: "5304.04"
+    value: "530404"
     display_name: "Comercio exterior"
   - 
-    value: "5304.05"
+    value: "530405"
     display_name: "Seguros"
   - 
-    value: "5304.06"
+    value: "530406"
     display_name: "Dinero y operaciones bancarias"
   - 
-    value: "5304.07"
+    value: "530407"
     display_name: "Producción"
   - 
-    value: "5304.08"
+    value: "530408"
     display_name: "Redistribución"
   - 
-    value: "5304.99"
+    value: "530499"
     display_name: "Otras (especificar)"
   - 
     value: "5305"
     display_name: "Sistemas económicos"
   - 
-    value: "5305.01"
+    value: "530501"
     display_name: "Sistemas económicos capitalistas"
   - 
-    value: "5305.02"
+    value: "530502"
     display_name: "Sistemas económicos colectivistas"
   - 
-    value: "5305.03"
+    value: "530503"
     display_name: "Sistemas económicos comparados"
   - 
-    value: "5305.04"
+    value: "530504"
     display_name: "Sistemas económicos socialistas"
   - 
-    value: "5305.99"
+    value: "530599"
     display_name: "Otras (especificar)"
   - 
     value: "5306"
     display_name: "Economía del cambio tecnológico"
   - 
-    value: "5306.01"
+    value: "530601"
     display_name: "Economía de la investigación y del desarrollo experimental"
   - 
-    value: "5306.02"
+    value: "530602"
     display_name: "Innovación tecnológica"
   - 
-    value: "5306.03"
+    value: "530603"
     display_name: "Transferencia de tecnología"
   - 
-    value: "5306.99"
+    value: "530699"
     display_name: "Otras (especificar)"
   - 
     value: "5307"
     display_name: "Teoría económica"
   - 
-    value: "5307.01"
+    value: "530701"
     display_name: "Formación de capital"
   - 
-    value: "5307.02"
+    value: "530702"
     display_name: "Teoría del crédito"
   - 
-    value: "5307.03"
+    value: "530703"
     display_name: "Modelos y teorías del desarrollo económico"
   - 
-    value: "5307.04"
+    value: "530704"
     display_name: "Estudios de desarrollo económico"
   - 
-    value: "5307.05"
+    value: "530705"
     display_name: "Equilibrio económico"
   - 
-    value: "5307.06"
+    value: "530706"
     display_name: "Fluctuaciones económicas"
   - 
-    value: "5307.07"
+    value: "530707"
     display_name: "Previsión económica"
   - 
-    value: "5307.08"
+    value: "530708"
     display_name: "Teoría del crecimiento económico"
   - 
-    value: "5307.09"
+    value: "530709"
     display_name: "Teoría de la planificación económica"
   - 
-    value: "5307.10"
+    value: "530710"
     display_name: "Teoría y modelos de empleo"
   - 
-    value: "5307.11"
+    value: "530711"
     display_name: "Teoría fiscal"
   - 
-    value: "5307.12"
+    value: "530712"
     display_name: "Teoría del comercio internacional"
   - 
-    value: "5307.13"
+    value: "530713"
     display_name: "Teoría de la inversión"
   - 
-    value: "5307.14"
+    value: "530714"
     display_name: "Teoría macroeconómica"
   - 
-    value: "5307.15"
+    value: "530715"
     display_name: "Teoría microeconómica"
   - 
-    value: "5307.16"
+    value: "530716"
     display_name: "Teoría monetaria"
   - 
-    value: "5307.17"
+    value: "530717"
     display_name: "Teoría del ahorro"
   - 
-    value: "5307.18"
+    value: "530718"
     display_name: "Teorías de la estabilización"
   - 
-    value: "5307.19"
+    value: "530719"
     display_name: "Teoría del bienestar"
   - 
-    value: "5307.99"
+    value: "530799"
     display_name: "Otras (especificar)"
   - 
     value: "5308"
     display_name: "Economía general"
   - 
-    value: "5308.01"
+    value: "530801"
     display_name: "Metodología económica"
   - 
-    value: "5308.02"
+    value: "530802"
     display_name: "Comportamiento del consumidor"
   - 
-    value: "5308.03"
+    value: "530803"
     display_name: "Historia del pensamiento económico"
   - 
-    value: "5308.99"
+    value: "530899"
     display_name: "Otras (especificar)"
   - 
     value: "5309"
     display_name: "Organización de la industrial y política económica pública"
   - 
-    value: "5309.01"
+    value: "530901"
     display_name: "Concentración económica"
   - 
-    value: "5309.02"
+    value: "530902"
     display_name: "Integración económica"
   - 
-    value: "5309.03"
+    value: "530903"
     display_name: "Regulación gubernamental del sector privado"
   - 
-    value: "5309.04"
+    value: "530904"
     display_name: "Estructura del mercado"
   - 
-    value: "5309.05"
+    value: "530905"
     display_name: "Monopolio y competencia"
   - 
-    value: "5309.06"
+    value: "530906"
     display_name: "Empresas publicas"
   - 
-    value: "5309.07"
+    value: "530907"
     display_name: "Empresas de servicios públicos"
   - 
-    value: "5309.99"
+    value: "530999"
     display_name: "Otras (especificar)"
   - 
     value: "5310"
     display_name: "Economía internacional"
   - 
-    value: "5310.01"
+    value: "531001"
     display_name: "Balanza de pagos"
   - 
-    value: "5310.02"
+    value: "531002"
     display_name: "Ayuda exterior"
   - 
-    value: "5310.03"
+    value: "531003"
     display_name: "Ayuda internacional"
   - 
-    value: "5310.04"
+    value: "531004"
     display_name: "Operaciones comerciales internacionales"
   - 
-    value: "5310.05"
+    value: "531005"
     display_name: "Política económica internacional"
   - 
-    value: "5310.06"
+    value: "531006"
     display_name: "Financiación internacional"
   - 
-    value: "5310.07"
+    value: "531007"
     display_name: "Inversión exterior"
   - 
-    value: "5310.08"
+    value: "531008"
     display_name: "Acuerdos monetarios internacionales"
   - 
-    value: "5310.09"
+    value: "531009"
     display_name: "Relaciones comerciales internacionales"
   - 
-    value: "5310.90"
+    value: "531090"
     display_name: "Economía internacional: Area Americana"
   - 
-    value: "5310.91"
+    value: "531091"
     display_name: "Economía internacional: Area Europea"
   - 
-    value: "5310.99"
+    value: "531099"
     display_name: "Otras (especificar)"
   - 
     value: "5311"
     display_name: "Organización y dirección de empresas"
   - 
-    value: "5311.01"
+    value: "531101"
     display_name: "Publicidad"
   - 
-    value: "5311.02"
+    value: "531102"
     display_name: "Gestión financiera"
   - 
-    value: "5311.03"
+    value: "531103"
     display_name: "Estudios industriales"
   - 
-    value: "5311.04"
+    value: "531104"
     display_name: "Organización de recursos humanos"
   - 
-    value: "5311.05"
+    value: "531105"
     display_name: "Marketing (comercialización)"
   - 
-    value: "5311.06"
+    value: "531106"
     display_name: "Estudio de mercados"
   - 
-    value: "5311.07"
+    value: "531107"
     display_name: "Investigación operativa"
   - 
-    value: "5311.08"
+    value: "531108"
     display_name: "Niveles óptimos de producción"
   - 
-    value: "5311.09"
+    value: "531109"
     display_name: "Organización de la producción"
   - 
-    value: "5311.10"
+    value: "531110"
     display_name: "Dirección de ventas"
   - 
-    value: "5311.99"
+    value: "531199"
     display_name: "Otras (especificar)"
   - 
     value: "5312"
     display_name: "Economía sectorial"
   - 
-    value: "5312.01"
+    value: "531201"
     display_name: "Agricultura, silvicultura, pesca"
   - 
-    value: "5312.02"
+    value: "531202"
     display_name: "Servicios comunitarios, sociales e individuales"
   - 
-    value: "5312.03"
+    value: "531203"
     display_name: "Construcción"
   - 
-    value: "5312.04"
+    value: "531204"
     display_name: "Educación"
   - 
-    value: "5312.05"
+    value: "531205"
     display_name: "Energía"
   - 
-    value: "5312.06"
+    value: "531206"
     display_name: "Finanzas y seguros"
   - 
-    value: "5312.07"
+    value: "531207"
     display_name: "Sanidad"
   - 
-    value: "5312.08"
+    value: "531208"
     display_name: "Fabricación"
   - 
-    value: "5312.09"
+    value: "531209"
     display_name: "Minería"
   - 
-    value: "5312.10"
+    value: "531210"
     display_name: "Investigación y desarrollo"
   - 
-    value: "5312.11"
+    value: "531211"
     display_name: "Comercio"
   - 
-    value: "5312.12"
+    value: "531212"
     display_name: "Transportes y comunicaciones"
   - 
-    value: "5312.90"
+    value: "531290"
     display_name: "Economía sectorial. Turismo"
   - 
-    value: "5312.99"
+    value: "531299"
     display_name: "Otras (especificar)"
   - 
     value: "5399"
@@ -5992,19 +5992,19 @@ unesco:
     value: "5401"
     display_name: "Geografía económica"
   - 
-    value: "5401.01"
+    value: "540101"
     display_name: "Distribución de recursos naturales"
   - 
-    value: "5401.02"
+    value: "540102"
     display_name: "Geografía de las actividades"
   - 
-    value: "5401.03"
+    value: "540103"
     display_name: "Utilización de la tierra"
   - 
-    value: "5401.04"
+    value: "540104"
     display_name: "Desarrollo regional"
   - 
-    value: "5401.99"
+    value: "540199"
     display_name: "Otras (especificar)"
   - 
     value: "5402"
@@ -6013,37 +6013,37 @@ unesco:
     value: "5403"
     display_name: "Geografía humana"
   - 
-    value: "5403.01"
+    value: "540301"
     display_name: "Geografía cultural"
   - 
-    value: "5403.02"
+    value: "540302"
     display_name: "Demogeografía"
   - 
-    value: "5403.03"
+    value: "540303"
     display_name: "Geografía lingüística"
   - 
-    value: "5403.04"
+    value: "540304"
     display_name: "Geografía de la religión"
   - 
-    value: "5403.05"
+    value: "540305"
     display_name: "Geografía política"
   - 
-    value: "5403.06"
+    value: "540306"
     display_name: "Geografía social"
   - 
-    value: "5403.99"
+    value: "540399"
     display_name: "Otras (especificar)"
   - 
     value: "5404"
     display_name: "Geografía regional"
   - 
-    value: "5404.01"
+    value: "540401"
     display_name: "Geografía urbana"
   - 
-    value: "5404.02"
+    value: "540402"
     display_name: "Geografía rural"
   - 
-    value: "5404.99"
+    value: "540499"
     display_name: "Otras (especificar)"
   - 
     value: "5499"
@@ -6058,178 +6058,178 @@ unesco:
     value: "5502"
     display_name: "Historia general"
   - 
-    value: "5502.01"
+    value: "550201"
     display_name: "Historia comparada"
   - 
-    value: "5502.02"
+    value: "550202"
     display_name: "Historiografía"
   - 
-    value: "5502.03"
+    value: "550203"
     display_name: "Monografías históricas"
   - 
-    value: "5502.04"
+    value: "550204"
     display_name: "Teorías y métodos"
   - 
-    value: "5502.99"
+    value: "550299"
     display_name: "Otras (especificar)"
   - 
     value: "5503"
     display_name: "Historia de países"
   - 
-    value: "5503.01"
+    value: "550301"
     display_name: "Historia local"
   - 
-    value: "5503.02"
+    value: "550302"
     display_name: "Historia regional"
   - 
-    value: "5503.99"
+    value: "550399"
     display_name: "Otras (especificar)"
   - 
     value: "5504"
     display_name: "Historia por épocas"
   - 
-    value: "5504.01"
+    value: "550401"
     display_name: "Historia antigua"
   - 
-    value: "5504.02"
+    value: "550402"
     display_name: "Historia contemporánea"
   - 
-    value: "5504.03"
+    value: "550403"
     display_name: "Historia medieval"
   - 
-    value: "5504.04"
+    value: "550404"
     display_name: "Historia moderna"
   - 
-    value: "5504.05"
+    value: "550405"
     display_name: "Prehistoria"
   - 
-    value: "5504.99"
+    value: "550499"
     display_name: "Otras (especificar)"
   - 
     value: "5505"
     display_name: "Ciencias auxiliares de la historia"
   - 
-    value: "5505.01"
+    value: "550501"
     display_name: "Arqueología"
   - 
-    value: "5505.02"
+    value: "550502"
     display_name: "Ciencia de la cerámica"
   - 
-    value: "5505.03"
+    value: "550503"
     display_name: "Epigrafía"
   - 
-    value: "5505.04"
+    value: "550504"
     display_name: "Heráldica"
   - 
-    value: "5505.05"
+    value: "550505"
     display_name: "Iconografía"
   - 
-    value: "5505.06"
+    value: "550506"
     display_name: "Numismática"
   - 
-    value: "5505.07"
+    value: "550507"
     display_name: "Onomástica"
   - 
-    value: "5505.08"
+    value: "550508"
     display_name: "Paleografía"
   - 
-    value: "5505.09"
+    value: "550509"
     display_name: "Papirología"
   - 
-    value: "5505.10"
+    value: "550510"
     display_name: "Filología"
   - 
-    value: "5505.11"
+    value: "550511"
     display_name: "Sigilografía"
   - 
-    value: "5505.12"
+    value: "550512"
     display_name: "Estratigrafía"
   - 
-    value: "5505.99"
+    value: "550599"
     display_name: "Otras (especificar)"
   - 
     value: "5506"
     display_name: "Historia por especialidades"
   - 
-    value: "5506.01"
+    value: "550601"
     display_name: "Historia de la arquitectura"
   - 
-    value: "5506.02"
+    value: "550602"
     display_name: "Historia del arte"
   - 
-    value: "5506.03"
+    value: "550603"
     display_name: "Historia de la astronomía"
   - 
-    value: "5506.04"
+    value: "550604"
     display_name: "Historia de la biología"
   - 
-    value: "5506.05"
+    value: "550605"
     display_name: "Historia de la química"
   - 
-    value: "5506.06"
+    value: "550606"
     display_name: "Historia de la economía"
   - 
-    value: "5506.07"
+    value: "550607"
     display_name: "Historia de la educación"
   - 
-    value: "5506.08"
+    value: "550608"
     display_name: "Historia de la geografía"
   - 
-    value: "5506.09"
+    value: "550609"
     display_name: "Historia de la geología"
   - 
-    value: "5506.10"
+    value: "550610"
     display_name: "Historia de las relaciones internacionales"
   - 
-    value: "5506.11"
+    value: "550611"
     display_name: "Historia del periodismo"
   - 
-    value: "5506.12"
+    value: "550612"
     display_name: "Historia del derecho y de las instituciones jurídicas"
   - 
-    value: "5506.13"
+    value: "550613"
     display_name: "Historia de la literatura"
   - 
-    value: "5506.14"
+    value: "550614"
     display_name: "Historia de la lingüística"
   - 
-    value: "5506.15"
+    value: "550615"
     display_name: "Historia de la lógica"
   - 
-    value: "5506.16"
+    value: "550616"
     display_name: "Historia de la magistratura"
   - 
-    value: "5506.17"
+    value: "550617"
     display_name: "Historia de la medicina"
   - 
-    value: "5506.18"
+    value: "550618"
     display_name: "Historia de la filosofía"
   - 
-    value: "5506.19"
+    value: "550619"
     display_name: "Historia de la física"
   - 
-    value: "5506.20"
+    value: "550620"
     display_name: "Historia de las ideas políticas"
   - 
-    value: "5506.21"
+    value: "550621"
     display_name: "Historia de las religiones"
   - 
-    value: "5506.22"
+    value: "550622"
     display_name: "Historia de la ciencia"
   - 
-    value: "5506.23"
+    value: "550623"
     display_name: "Historia de la sociología"
   - 
-    value: "5506.24"
+    value: "550624"
     display_name: "Historia de la tecnología"
   - 
-    value: "5506.25"
+    value: "550625"
     display_name: "Historia de la guerra"
   - 
-    value: "5506.90"
+    value: "550690"
     display_name: "Historia de la botánica"
   - 
-    value: "5506.99"
+    value: "550699"
     display_name: "Otras (especificar)"
   - 
     value: "5599"
@@ -6244,88 +6244,88 @@ unesco:
     value: "5602"
     display_name: "Teoría y métodos generales"
   - 
-    value: "5602.01"
+    value: "560201"
     display_name: "Derecho común anglosajón"
   - 
-    value: "5602.02"
+    value: "560202"
     display_name: "Derecho comparado"
   - 
-    value: "5602.03"
+    value: "560203"
     display_name: "Filosofía del derecho"
   - 
-    value: "5602.04"
+    value: "560204"
     display_name: "Derecho de la antigüedad"
   - 
-    value: "5602.05"
+    value: "560205"
     display_name: "Derecho natural"
   - 
-    value: "5602.06"
+    value: "560206"
     display_name: "Legislación"
   - 
-    value: "5602.99"
+    value: "560299"
     display_name: "Otras (especificar)"
   - 
     value: "5603"
     display_name: "Derecho internacional"
   - 
-    value: "5603.01"
+    value: "560301"
     display_name: "Derecho aeronáutico"
   - 
-    value: "5603.02"
+    value: "560302"
     display_name: "Derecho del mar"
   - 
-    value: "5603.03"
+    value: "560303"
     display_name: "Derecho sobre el espacio ultraterrestre"
   - 
-    value: "5603.04"
+    value: "560304"
     display_name: "Derecho sobre los fondos marinos"
   - 
-    value: "5603.99"
+    value: "560399"
     display_name: "Otras (especificar)"
   - 
     value: "5604"
     display_name: "Organización jurídica"
   - 
-    value: "5604.01"
+    value: "560401"
     display_name: "Funcionarios de justicia y procesos judiciales"
   - 
-    value: "5604.02"
+    value: "560402"
     display_name: "Magistratura"
   - 
-    value: "5604.03"
+    value: "560403"
     display_name: "Tribunales"
   - 
-    value: "5604.99"
+    value: "560499"
     display_name: "Otras (especificar)"
   - 
     value: "5605"
     display_name: "Derecho y legislación nacionales"
   - 
-    value: "5605.01"
+    value: "560501"
     display_name: "Derecho administrativo"
   - 
-    value: "5605.02"
+    value: "560502"
     display_name: "Derecho civil"
   - 
-    value: "5605.03"
+    value: "560503"
     display_name: "Derecho mercantil"
   - 
-    value: "5605.04"
+    value: "560504"
     display_name: "Derecho constitucional"
   - 
-    value: "5605.05"
+    value: "560505"
     display_name: "Derecho penal"
   - 
-    value: "5605.06"
+    value: "560506"
     display_name: "Derecho fiscal"
   - 
-    value: "5605.07"
+    value: "560507"
     display_name: "Derecho público"
   - 
-    value: "5605.08"
+    value: "560508"
     display_name: "Derecho privado"
   - 
-    value: "5605.99"
+    value: "560599"
     display_name: "Otras (especificar)"
   - 
     value: "5699"
@@ -6337,55 +6337,55 @@ unesco:
     value: "5701"
     display_name: "Lingüística aplicada"
   - 
-    value: "5701.01"
+    value: "570101"
     display_name: "Resúmenes"
   - 
-    value: "5701.02"
+    value: "570102"
     display_name: "Documentación automatizada"
   - 
-    value: "5701.03"
+    value: "570103"
     display_name: "Bilingüismo"
   - 
-    value: "5701.04"
+    value: "570104"
     display_name: "Lingüística informatizada"
   - 
-    value: "5701.05"
+    value: "570105"
     display_name: "Lenguajes documentales"
   - 
-    value: "5701.06"
+    value: "570106"
     display_name: "Documentación"
   - 
-    value: "5701.07"
+    value: "570107"
     display_name: "Lengua y literatura"
   - 
-    value: "5701.08"
+    value: "570108"
     display_name: "Lenguaje infantil"
   - 
-    value: "5701.09"
+    value: "570109"
     display_name: "Traducción automática"
   - 
-    value: "5701.10"
+    value: "570110"
     display_name: "Patología y corrección del lenguaje"
   - 
-    value: "5701.11"
+    value: "570111"
     display_name: "Enseñanza de lenguas"
   - 
-    value: "5701.12"
+    value: "570112"
     display_name: "Traducción"
   - 
-    value: "5701.99"
+    value: "570199"
     display_name: "Otras (especificar)"
   - 
     value: "5702"
     display_name: "Lingüística diacrónica"
   - 
-    value: "5702.01"
+    value: "570201"
     display_name: "Lingüística histórica"
   - 
-    value: "5702.02"
+    value: "570202"
     display_name: "Etimología"
   - 
-    value: "5702.99"
+    value: "570299"
     display_name: "Otras (especificar)"
   - 
     value: "5703"
@@ -6397,46 +6397,46 @@ unesco:
     value: "5705"
     display_name: "Lingüística sincrónica"
   - 
-    value: "5705.01"
+    value: "570501"
     display_name: "Lingüística comparada"
   - 
-    value: "5705.02"
+    value: "570502"
     display_name: "Etnolingüística"
   - 
-    value: "5705.03"
+    value: "570503"
     display_name: "Lexicografía"
   - 
-    value: "5705.04"
+    value: "570504"
     display_name: "Lexicología"
   - 
-    value: "5705.05"
+    value: "570505"
     display_name: "Fonética"
   - 
-    value: "5705.06"
+    value: "570506"
     display_name: "Fonología"
   - 
-    value: "5705.07"
+    value: "570507"
     display_name: "Psicolingüística"
   - 
-    value: "5705.08"
+    value: "570508"
     display_name: "Semántica"
   - 
-    value: "5705.09"
+    value: "570509"
     display_name: "Semiología"
   - 
-    value: "5705.10"
+    value: "570510"
     display_name: "Sociolingüística"
   - 
-    value: "5705.11"
+    value: "570511"
     display_name: "Ortografía"
   - 
-    value: "5705.12"
+    value: "570512"
     display_name: "Estilística (estilo y retórica)"
   - 
-    value: "5705.13"
+    value: "570513"
     display_name: "Sintaxis, análisis sintáctico"
   - 
-    value: "5705.99"
+    value: "570599"
     display_name: "Otras (especificar)"
   - 
     value: "5799"
@@ -6448,70 +6448,70 @@ unesco:
     value: "5801"
     display_name: "Teoría y métodos educativos"
   - 
-    value: "5801.01"
+    value: "580101"
     display_name: "Medios audiovisuales"
   - 
-    value: "5801.02"
+    value: "580102"
     display_name: "Pedagogía comparada"
   - 
-    value: "5801.03"
+    value: "580103"
     display_name: "Desarrollo del programa de estudios"
   - 
-    value: "5801.04"
+    value: "580104"
     display_name: "Teorías educativas"
   - 
-    value: "5801.05"
+    value: "580105"
     display_name: "Pedagogía experimental"
   - 
-    value: "5801.06"
+    value: "580106"
     display_name: "Evaluación de alumnos"
   - 
-    value: "5801.07"
+    value: "580107"
     display_name: "Métodos pedagógicos"
   - 
-    value: "5801.08"
+    value: "580108"
     display_name: "Enseñanza programada"
   - 
-    value: "5801.99"
+    value: "580199"
     display_name: "Otras (especificar)"
   - 
     value: "5802"
     display_name: "Organización y planificación de la educación"
   - 
-    value: "5802.01"
+    value: "580201"
     display_name: "Educación de adultos"
   - 
-    value: "5802.02"
+    value: "580202"
     display_name: "Organización y dirección de las instituciones educativas"
   - 
-    value: "5802.03"
+    value: "580203"
     display_name: "Desarrollo de asignaturas"
   - 
-    value: "5802.04"
+    value: "580204"
     display_name: "Niveles y temas de educación"
   - 
-    value: "5802.05"
+    value: "580205"
     display_name: "Educación especial: minusválidos y deficientes mentales"
   - 
-    value: "5802.06"
+    value: "580206"
     display_name: "Análisis, realización de modelos y planificación estadística"
   - 
-    value: "5802.07"
+    value: "580207"
     display_name: "Formación profesional"
   - 
-    value: "5802.99"
+    value: "580299"
     display_name: "Otras (especificar)"
   - 
     value: "5803"
     display_name: "Preparación y empleo de profesores"
   - 
-    value: "5803.01"
+    value: "580301"
     display_name: "Carreras y categoría del profesorado"
   - 
-    value: "5803.02"
+    value: "580302"
     display_name: "Preparación de profesores"
   - 
-    value: "5803.99"
+    value: "580399"
     display_name: "Otras (especificar)"
   - 
     value: "5899"
@@ -6523,76 +6523,76 @@ unesco:
     value: "5901"
     display_name: "Relaciones internacionales"
   - 
-    value: "5901.01"
+    value: "590101"
     display_name: "Cooperación internacional"
   - 
-    value: "5901.02"
+    value: "590102"
     display_name: "Organizaciones internacionales"
   - 
-    value: "5901.03"
+    value: "590103"
     display_name: "Política internacional"
   - 
-    value: "5901.04"
+    value: "590104"
     display_name: "Tratados y acuerdos internacionales"
   - 
-    value: "5901.05"
+    value: "590105"
     display_name: "Problemas de las relaciones internacionales"
   - 
-    value: "5901.99"
+    value: "590199"
     display_name: "Otras (especificar)"
   - 
     value: "5902"
     display_name: "Ciencias políticas"
   - 
-    value: "5902.01"
+    value: "590201"
     display_name: "Política agrícola"
   - 
-    value: "5902.02"
+    value: "590202"
     display_name: "Política cultural"
   - 
-    value: "5902.03"
+    value: "590203"
     display_name: "Política comercial"
   - 
-    value: "5902.04"
+    value: "590204"
     display_name: "Política de comunicaciones"
   - 
-    value: "5902.05"
+    value: "590205"
     display_name: "Política demográfica"
   - 
-    value: "5902.06"
+    value: "590206"
     display_name: "Política económica"
   - 
-    value: "5902.07"
+    value: "590207"
     display_name: "Política educativa"
   - 
-    value: "5902.08"
+    value: "590208"
     display_name: "Política del medio ambiente"
   - 
-    value: "5902.09"
+    value: "590209"
     display_name: "Política exterior"
   - 
-    value: "5902.10"
+    value: "590210"
     display_name: "Política sanitaria"
   - 
-    value: "5902.11"
+    value: "590211"
     display_name: "Política industrial"
   - 
-    value: "5902.12"
+    value: "590212"
     display_name: "Política de la información"
   - 
-    value: "5902.13"
+    value: "590213"
     display_name: "Planificación política"
   - 
-    value: "5902.14"
+    value: "590214"
     display_name: "Política científica y tecnológica"
   - 
-    value: "5902.15"
+    value: "590215"
     display_name: "Política social"
   - 
-    value: "5902.16"
+    value: "590216"
     display_name: "Política de transportes"
   - 
-    value: "5902.99"
+    value: "590299"
     display_name: "Otras (especificar)"
   - 
     value: "5903"
@@ -6601,73 +6601,73 @@ unesco:
     value: "5904"
     display_name: "Instituciones políticas"
   - 
-    value: "5904.01"
+    value: "590401"
     display_name: "Poder ejecutivo"
   - 
-    value: "5904.02"
+    value: "590402"
     display_name: "Poder judicial"
   - 
-    value: "5904.03"
+    value: "590403"
     display_name: "Poder legislativo"
   - 
-    value: "5904.04"
+    value: "590404"
     display_name: "Relaciones entre los poderes"
   - 
-    value: "5904.99"
+    value: "590499"
     display_name: "Otras (especificar)"
   - 
     value: "5905"
     display_name: "Vida política"
   - 
-    value: "5905.01"
+    value: "590501"
     display_name: "Elecciones"
   - 
-    value: "5905.02"
+    value: "590502"
     display_name: "Comportamiento político"
   - 
-    value: "5905.03"
+    value: "590503"
     display_name: "Grupos políticos"
   - 
-    value: "5905.04"
+    value: "590504"
     display_name: "Liderazgo político"
   - 
-    value: "5905.05"
+    value: "590505"
     display_name: "Movimientos políticos"
   - 
-    value: "5905.06"
+    value: "590506"
     display_name: "Partidos políticos"
   - 
-    value: "5905.99"
+    value: "590599"
     display_name: "Otras (especificar)"
   - 
     value: "5906"
     display_name: "Sociología política"
   - 
-    value: "5906.01"
+    value: "590601"
     display_name: "Derechos humanos"
   - 
-    value: "5906.02"
+    value: "590602"
     display_name: "Lenguas"
   - 
-    value: "5906.03"
+    value: "590603"
     display_name: "Minorías"
   - 
-    value: "5906.04"
+    value: "590604"
     display_name: "Raza"
   - 
-    value: "5906.05"
+    value: "590605"
     display_name: "Religión"
   - 
-    value: "5906.06"
+    value: "590606"
     display_name: "Conflictos sociales"
   - 
-    value: "5906.99"
+    value: "590699"
     display_name: "Otras (especificar)"
   - 
     value: "5907"
     display_name: "Sistemas políticos"
   - 
-    value: "5907.90"
+    value: "590790"
     display_name: "Sistemas políticos: Area Americana"
   - 
     value: "5908"
@@ -6676,40 +6676,40 @@ unesco:
     value: "5909"
     display_name: "Administración pública"
   - 
-    value: "5909.01"
+    value: "590901"
     display_name: "Gestión administrativa"
   - 
-    value: "5909.02"
+    value: "590902"
     display_name: "Instituciones centrales"
   - 
-    value: "5909.03"
+    value: "590903"
     display_name: "Administración civil"
   - 
-    value: "5909.04"
+    value: "590904"
     display_name: "Servicios públicos"
   - 
-    value: "5909.05"
+    value: "590905"
     display_name: "Instituciones regionales"
   - 
-    value: "5909.99"
+    value: "590999"
     display_name: "Otras (especificar)"
   - 
     value: "5910"
     display_name: "Opinión pública"
   - 
-    value: "5910.01"
+    value: "591001"
     display_name: "Información"
   - 
-    value: "5910.02"
+    value: "591002"
     display_name: "Medios de comunicación de masas"
   - 
-    value: "5910.03"
+    value: "591003"
     display_name: "Prensa"
   - 
-    value: "5910.04"
+    value: "591004"
     display_name: "Propaganda"
   - 
-    value: "5910.99"
+    value: "591099"
     display_name: "Otras (especificar)"
   - 
     value: "5999"
@@ -6721,352 +6721,352 @@ unesco:
     value: "6101"
     display_name: "Patología"
   - 
-    value: "6101.01"
+    value: "610101"
     display_name: "Desórdenes del comportamiento"
   - 
-    value: "6101.02"
+    value: "610102"
     display_name: "Comportamiento desviado"
   - 
-    value: "6101.03"
+    value: "610103"
     display_name: "Deficiencia mental"
   - 
-    value: "6101.04"
+    value: "610104"
     display_name: "Psicopatología"
   - 
-    value: "6101.99"
+    value: "610199"
     display_name: "Otras (especificar)"
   - 
     value: "6102"
     display_name: "Psicología del niño y del adolescente"
   - 
-    value: "6102.01"
+    value: "610201"
     display_name: "Psicología evolutiva"
   - 
-    value: "6102.02"
+    value: "610202"
     display_name: "Problemas de aprendizaje"
   - 
-    value: "6102.03"
+    value: "610203"
     display_name: "Deficiencia mental"
   - 
-    value: "6102.04"
+    value: "610204"
     display_name: "Psicología escolar"
   - 
-    value: "6102.05"
+    value: "610205"
     display_name: "Patología del lenguaje"
   - 
-    value: "6102.99"
+    value: "610299"
     display_name: "Otras (especificar)"
   - 
     value: "6103"
     display_name: "Asesoramiento y orientación"
   - 
-    value: "6103.01"
+    value: "610301"
     display_name: "Terapia del comportamiento"
   - 
-    value: "6103.02"
+    value: "610302"
     display_name: "Psicología de la orientación"
   - 
-    value: "6103.03"
+    value: "610303"
     display_name: "Asesoramiento y orientación educacional"
   - 
-    value: "6103.04"
+    value: "610304"
     display_name: "Terapia de grupo"
   - 
-    value: "6103.05"
+    value: "610305"
     display_name: "Deficiencia mental"
   - 
-    value: "6103.06"
+    value: "610306"
     display_name: "Psicoanálisis"
   - 
-    value: "6103.07"
+    value: "610307"
     display_name: "Psicoterapia"
   - 
-    value: "6103.08"
+    value: "610308"
     display_name: "Rehabilitación"
   - 
-    value: "6103.09"
+    value: "610309"
     display_name: "Orientación profesional"
   - 
-    value: "6103.99"
+    value: "610399"
     display_name: "Otras (especificar)"
   - 
     value: "6104"
     display_name: "Psicopedagogía"
   - 
-    value: "6104.01"
+    value: "610401"
     display_name: "Procesos cognitivos"
   - 
-    value: "6104.02"
+    value: "610402"
     display_name: "Métodos educativos"
   - 
-    value: "6104.03"
+    value: "610403"
     display_name: "Leyes del aprendizaje"
   - 
-    value: "6104.04"
+    value: "610404"
     display_name: "Psicolingüística"
   - 
-    value: "6104.99"
+    value: "610499"
     display_name: "Otras (especificar)"
   - 
     value: "6105"
     display_name: "Evaluación y diagnóstico en psicología"
   - 
-    value: "6105.01"
+    value: "610501"
     display_name: "Psicología diferencial"
   - 
-    value: "6105.02"
+    value: "610502"
     display_name: "Diseño experimental"
   - 
-    value: "6105.03"
+    value: "610503"
     display_name: "Teoría de la medición"
   - 
-    value: "6105.04"
+    value: "610504"
     display_name: "Estadística"
   - 
-    value: "6105.05"
+    value: "610505"
     display_name: "Psicometría"
   - 
-    value: "6105.06"
+    value: "610506"
     display_name: "Análisis a escala"
   - 
-    value: "6105.07"
+    value: "610507"
     display_name: "Elaboración de tests"
   - 
-    value: "6105.08"
+    value: "610508"
     display_name: "Teoría de tests"
   - 
-    value: "6105.09"
+    value: "610509"
     display_name: "Validez de tests"
   - 
-    value: "6105.99"
+    value: "610599"
     display_name: "Otras (especificar)"
   - 
     value: "6106"
     display_name: "Psicología experimental"
   - 
-    value: "6106.01"
+    value: "610601"
     display_name: "Actividad cerebral"
   - 
-    value: "6106.02"
+    value: "610602"
     display_name: "Psicología comparada"
   - 
-    value: "6106.03"
+    value: "610603"
     display_name: "Emoción"
   - 
-    value: "6106.04"
+    value: "610604"
     display_name: "Análisis experimental de la conducta"
   - 
-    value: "6106.05"
+    value: "610605"
     display_name: "Niveles de actividad"
   - 
-    value: "6106.06"
+    value: "610606"
     display_name: "Procesos de la memoria"
   - 
-    value: "6106.07"
+    value: "610607"
     display_name: "Procesos mentales"
   - 
-    value: "6106.08"
+    value: "610608"
     display_name: "Motivación"
   - 
-    value: "6106.09"
+    value: "610609"
     display_name: "Procesos de percepción"
   - 
-    value: "6106.10"
+    value: "610610"
     display_name: "Psicología fisiológica"
   - 
-    value: "6106.11"
+    value: "610611"
     display_name: "Reacción, reflejos"
   - 
-    value: "6106.12"
+    value: "610612"
     display_name: "Procesos sensoriales"
   - 
-    value: "6106.99"
+    value: "610699"
     display_name: "Otras (especificar)"
   - 
     value: "6107"
     display_name: "Psicología general"
   - 
-    value: "6107.01"
+    value: "610701"
     display_name: "Metodología"
   - 
-    value: "6107.02"
+    value: "610702"
     display_name: "Teoría y sistemas"
   - 
-    value: "6107.99"
+    value: "610799"
     display_name: "Otras (especificar)"
   - 
     value: "6108"
     display_name: "Psicología de la vejez"
   - 
-    value: "6108.01"
+    value: "610801"
     display_name: "Muerte"
   - 
-    value: "6108.02"
+    value: "610802"
     display_name: "Madurez"
   - 
-    value: "6108.03"
+    value: "610803"
     display_name: "Senectud"
   - 
-    value: "6108.99"
+    value: "610899"
     display_name: "Otras (especificar)"
   - 
     value: "6109"
     display_name: "Psicología industrial"
   - 
-    value: "6109.01"
+    value: "610901"
     display_name: "Prevención de accidentes"
   - 
-    value: "6109.02"
+    value: "610902"
     display_name: "Motivación y actitudes"
   - 
-    value: "6109.03"
+    value: "610903"
     display_name: "Planificación y evaluación de puestos de trabajo"
   - 
-    value: "6109.04"
+    value: "610904"
     display_name: "Relaciones trabajadores-directivos"
   - 
-    value: "6109.05"
+    value: "610905"
     display_name: "Comportamiento en la organización"
   - 
-    value: "6109.06"
+    value: "610906"
     display_name: "Selección de personal"
   - 
-    value: "6109.07"
+    value: "610907"
     display_name: "Evaluación del rendimiento"
   - 
-    value: "6109.99"
+    value: "610999"
     display_name: "Otras (especificar)"
   - 
     value: "6110"
     display_name: "Parapsicología"
   - 
-    value: "6110.01"
+    value: "611001"
     display_name: "Percepción extrasensorial"
   - 
-    value: "6110.02"
+    value: "611002"
     display_name: "Hipnosis"
   - 
-    value: "6110.99"
+    value: "611099"
     display_name: "Otras (especificar)"
   - 
     value: "6111"
     display_name: "Personalidad"
   - 
-    value: "6111.01"
+    value: "611101"
     display_name: "Creatividad"
   - 
-    value: "6111.02"
+    value: "611102"
     display_name: "Cultura y personalidad"
   - 
-    value: "6111.03"
+    value: "611103"
     display_name: "Desarrollo de la personalidad"
   - 
-    value: "6111.04"
+    value: "611104"
     display_name: "Medida de la personalidad"
   - 
-    value: "6111.05"
+    value: "611105"
     display_name: "Estructura y dinámica de la personalidad"
   - 
-    value: "6111.06"
+    value: "611106"
     display_name: "Teoría de la personalidad"
   - 
-    value: "6111.99"
+    value: "611199"
     display_name: "Otras (especificar)"
   - 
     value: "6112"
     display_name: "Estudio psicológico de temas sociales"
   - 
-    value: "6112.01"
+    value: "611201"
     display_name: "Discriminación"
   - 
-    value: "6112.02"
+    value: "611202"
     display_name: "Fenómenos de grupos minoritarios"
   - 
-    value: "6112.03"
+    value: "611203"
     display_name: "Política gubernamental"
   - 
-    value: "6112.99"
+    value: "611299"
     display_name: "Otras (especificar)"
   - 
     value: "6113"
     display_name: "Psicofarmacología"
   - 
-    value: "6113.01"
+    value: "611301"
     display_name: "Alcoholismo"
   - 
-    value: "6113.02"
+    value: "611302"
     display_name: "Reacciones del comportamiento"
   - 
-    value: "6113.03"
+    value: "611303"
     display_name: "Abuso de drogas"
   - 
-    value: "6113.04"
+    value: "611304"
     display_name: "Efecto de las drogas"
   - 
-    value: "6113.05"
+    value: "611305"
     display_name: "Tratamiento de la drogadicción"
   - 
-    value: "6113.99"
+    value: "611399"
     display_name: "Otras (especificar)"
   - 
     value: "6114"
     display_name: "Psicología social"
   - 
-    value: "6114.01"
+    value: "611401"
     display_name: "Publicidad"
   - 
-    value: "6114.02"
+    value: "611402"
     display_name: "Actitudes"
   - 
-    value: "6114.03"
+    value: "611403"
     display_name: "Comportamiento colectivo"
   - 
-    value: "6114.04"
+    value: "611404"
     display_name: "Psicología comunitaria"
   - 
-    value: "6114.05"
+    value: "611405"
     display_name: "Resolución de conflictos"
   - 
-    value: "6114.06"
+    value: "611406"
     display_name: "Comportamiento del consumidor"
   - 
-    value: "6114.07"
+    value: "611407"
     display_name: "Cultura y personalidad"
   - 
-    value: "6114.08"
+    value: "611408"
     display_name: "Procesos y teoría de la decisión"
   - 
-    value: "6114.09"
+    value: "611409"
     display_name: "Psicología forense"
   - 
-    value: "6114.10"
+    value: "611410"
     display_name: "Interacción de grupos"
   - 
-    value: "6114.11"
+    value: "611411"
     display_name: "Procesos de grupos"
   - 
-    value: "6114.12"
+    value: "611412"
     display_name: "Liderazgo"
   - 
-    value: "6114.13"
+    value: "611413"
     display_name: "Marketing"
   - 
-    value: "6114.14"
+    value: "611414"
     display_name: "Comportamiento político"
   - 
-    value: "6114.15"
+    value: "611415"
     display_name: "Opinión pública"
   - 
-    value: "6114.16"
+    value: "611416"
     display_name: "Teoría de los roles"
   - 
-    value: "6114.17"
+    value: "611417"
     display_name: "Percepciones y movimientos sociales"
   - 
-    value: "6114.18"
+    value: "611418"
     display_name: "Comunicación simbólica"
   - 
-    value: "6114.99"
+    value: "611499"
     display_name: "Otras (especificar)"
   - 
     value: "6199"
@@ -7078,73 +7078,73 @@ unesco:
     value: "6201"
     display_name: "Arquitectura"
   - 
-    value: "6201.01"
+    value: "620101"
     display_name: "Diseño arquitectónico"
   - 
-    value: "6201.02"
+    value: "620102"
     display_name: "Jardines y parques"
   - 
-    value: "6201.03"
+    value: "620103"
     display_name: "Urbanismo"
   - 
-    value: "6201.99"
+    value: "620199"
     display_name: "Otras (especificar)"
   - 
     value: "6202"
     display_name: "Teoría, análisis y crítica literarias"
   - 
-    value: "6202.01"
+    value: "620201"
     display_name: "Crítica de textos"
   - 
-    value: "6202.02"
+    value: "620202"
     display_name: "Análisis literario"
   - 
-    value: "6202.03"
+    value: "620203"
     display_name: "Estilo y estética literarios"
   - 
-    value: "6202.04"
+    value: "620204"
     display_name: "Vocabulario literario"
   - 
-    value: "6202.05"
+    value: "620205"
     display_name: "Retórica"
   - 
-    value: "6202.99"
+    value: "620299"
     display_name: "Otras (especificar)"
   - 
     value: "6203"
     display_name: "Teoría, análisis y crítica de las Bellas Artes"
   - 
-    value: "6203.01"
+    value: "620301"
     display_name: "Cinematografía"
   - 
-    value: "6203.02"
+    value: "620302"
     display_name: "Baile, coreografía"
   - 
-    value: "6203.03"
+    value: "620303"
     display_name: "Artes decorativas"
   - 
-    value: "6203.04"
+    value: "620304"
     display_name: "Dibujo, grabado"
   - 
-    value: "6203.05"
+    value: "620305"
     display_name: "Estética de las Bellas Artes"
   - 
-    value: "6203.06"
+    value: "620306"
     display_name: "Música, musicología"
   - 
-    value: "6203.07"
+    value: "620307"
     display_name: "Pintura"
   - 
-    value: "6203.08"
+    value: "620308"
     display_name: "Fotografía"
   - 
-    value: "6203.09"
+    value: "620309"
     display_name: "Escultura"
   - 
-    value: "6203.10"
+    value: "620310"
     display_name: "Teatro"
   - 
-    value: "6203.99"
+    value: "620399"
     display_name: "Otras (especificar)"
   - 
     value: "6299"
@@ -7156,283 +7156,283 @@ unesco:
     value: "6301"
     display_name: "Sociología cultural"
   - 
-    value: "6301.01"
+    value: "630101"
     display_name: "Evolución cultural"
   - 
-    value: "6301.02"
+    value: "630102"
     display_name: "Relaciones culturales"
   - 
-    value: "6301.03"
+    value: "630103"
     display_name: "Folklore"
   - 
-    value: "6301.04"
+    value: "630104"
     display_name: "Relaciones interétnicas"
   - 
-    value: "6301.05"
+    value: "630105"
     display_name: "Lengua y cultura"
   - 
-    value: "6301.06"
+    value: "630106"
     display_name: "Civilización y caracteres nacionales"
   - 
-    value: "6301.07"
+    value: "630107"
     display_name: "Sociología del arte"
   - 
-    value: "6301.08"
+    value: "630108"
     display_name: "Sociología del Derecho"
   - 
-    value: "6301.09"
+    value: "630109"
     display_name: "Sociología de la literatura"
   - 
-    value: "6301.10"
+    value: "630110"
     display_name: "Sociología de la religión"
   - 
-    value: "6301.99"
+    value: "630199"
     display_name: "Otras (especificar)"
   - 
     value: "6302"
     display_name: "Sociología Experimental"
   - 
-    value: "6302.01"
+    value: "630201"
     display_name: "Recogida de datos de campo"
   - 
-    value: "6302.02"
+    value: "630202"
     display_name: "Psicología social"
   - 
-    value: "6302.03"
+    value: "630203"
     display_name: "Diseño de investigación social"
   - 
-    value: "6302.04"
+    value: "630204"
     display_name: "Métodos de investigación social"
   - 
-    value: "6302.99"
+    value: "630299"
     display_name: "Otras (especificar)"
   - 
     value: "6303"
     display_name: "Sociología general"
   - 
-    value: "6303.01"
+    value: "630301"
     display_name: "Sociología comparada"
   - 
-    value: "6303.02"
+    value: "630302"
     display_name: "Sociología histórica"
   - 
-    value: "6303.03"
+    value: "630303"
     display_name: "Metodología"
   - 
-    value: "6303.04"
+    value: "630304"
     display_name: "Sociografía"
   - 
-    value: "6303.05"
+    value: "630305"
     display_name: "Teoría"
   - 
-    value: "6303.99"
+    value: "630399"
     display_name: "Otras (especificar)"
   - 
     value: "6304"
     display_name: "Problemas internacionales"
   - 
-    value: "6304.01"
+    value: "630401"
     display_name: "Conflictos"
   - 
-    value: "6304.02"
+    value: "630402"
     display_name: "Solución de conflictos"
   - 
-    value: "6304.03"
+    value: "630403"
     display_name: "Guerra y paz"
   - 
-    value: "6304.99"
+    value: "630499"
     display_name: "Otras (especificar)"
   - 
     value: "6305"
     display_name: "Sociología matemática"
   - 
-    value: "6305.01"
+    value: "630501"
     display_name: "Medida y construcción de índices"
   - 
-    value: "6305.02"
+    value: "630502"
     display_name: "Elaboración de modelos"
   - 
-    value: "6305.03"
+    value: "630503"
     display_name: "Análisis estadístico"
   - 
-    value: "6305.99"
+    value: "630599"
     display_name: "Otras (especificar)"
   - 
     value: "6306"
     display_name: "Sociología del trabajo"
   - 
-    value: "6306.01"
+    value: "630601"
     display_name: "Burocracia"
   - 
-    value: "6306.02"
+    value: "630602"
     display_name: "Sociología educativa"
   - 
-    value: "6306.03"
+    value: "630603"
     display_name: "Sociología industrial"
   - 
-    value: "6306.04"
+    value: "630604"
     display_name: "Sociología médica"
   - 
-    value: "6306.05"
+    value: "630605"
     display_name: "Sociología de la educación"
   - 
-    value: "6306.06"
+    value: "630606"
     display_name: "Sociología del derecho"
   - 
-    value: "6306.07"
+    value: "630607"
     display_name: "Sociología de los medios de comunicación de masas"
   - 
-    value: "6306.08"
+    value: "630608"
     display_name: "Sociología de la ciencia"
   - 
-    value: "6306.99"
+    value: "630699"
     display_name: "Otras (especificar)"
   - 
     value: "6307"
     display_name: "Cambio y desarrollo social"
   - 
-    value: "6307.01"
+    value: "630701"
     display_name: "Evolución de las sociedades"
   - 
-    value: "6307.02"
+    value: "630702"
     display_name: "Países en vías de desarrollo"
   - 
-    value: "6307.03"
+    value: "630703"
     display_name: "Política social"
   - 
-    value: "6307.04"
+    value: "630704"
     display_name: "Seguridad social"
   - 
-    value: "6307.05"
+    value: "630705"
     display_name: "Servicios sociales"
   - 
-    value: "6307.06"
+    value: "630706"
     display_name: "Desarrollo socio-económico"
   - 
-    value: "6307.07"
+    value: "630707"
     display_name: "Tecnología y cambio social"
   - 
-    value: "6307.99"
+    value: "630799"
     display_name: "Otras (especificar)"
   - 
     value: "6308"
     display_name: "Comunicaciones sociales"
   - 
-    value: "6308.01"
+    value: "630801"
     display_name: "Signos"
   - 
-    value: "6308.02"
+    value: "630802"
     display_name: "Sociolingüística"
   - 
-    value: "6308.03"
+    value: "630803"
     display_name: "Símbolos"
   - 
-    value: "6308.99"
+    value: "630899"
     display_name: "Otras (especificar)"
   - 
     value: "6309"
     display_name: "Grupos Sociales"
   - 
-    value: "6309.01"
+    value: "630901"
     display_name: "Castas"
   - 
-    value: "6309.02"
+    value: "630902"
     display_name: "Elites"
   - 
-    value: "6309.03"
+    value: "630903"
     display_name: "Familia, parentesco"
   - 
-    value: "6309.04"
+    value: "630904"
     display_name: "Matrimonio"
   - 
-    value: "6309.05"
+    value: "630905"
     display_name: "Clases sociales"
   - 
-    value: "6309.06"
+    value: "630906"
     display_name: "Movilidad social"
   - 
-    value: "6309.07"
+    value: "630907"
     display_name: "Estratificación social"
   - 
-    value: "6309.08"
+    value: "630908"
     display_name: "Tribus"
   - 
-    value: "6309.09"
+    value: "630909"
     display_name: "Posición social de la mujer"
   - 
-    value: "6309.99"
+    value: "630999"
     display_name: "Otras (especificar)"
   - 
     value: "6310"
     display_name: "Problemas sociales"
   - 
-    value: "6310.01"
+    value: "631001"
     display_name: "Crimen"
   - 
-    value: "6310.02"
+    value: "631002"
     display_name: "Delincuencia"
   - 
-    value: "6310.03"
+    value: "631003"
     display_name: "Enfermedad"
   - 
-    value: "6310.04"
+    value: "631004"
     display_name: "Hambre"
   - 
-    value: "6310.05"
+    value: "631005"
     display_name: "Minusválidos"
   - 
-    value: "6310.06"
+    value: "631006"
     display_name: "Relaciones interraciales"
   - 
-    value: "6310.07"
+    value: "631007"
     display_name: "Inadaptados"
   - 
-    value: "6310.08"
+    value: "631008"
     display_name: "Pobreza"
   - 
-    value: "6310.09"
+    value: "631009"
     display_name: "Calidad de vida"
   - 
-    value: "6310.10"
+    value: "631010"
     display_name: "Conflicto social y adaptación"
   - 
-    value: "6310.11"
+    value: "631011"
     display_name: "Bienestar social"
   - 
-    value: "6310.12"
+    value: "631012"
     display_name: "Nivel de vida"
   - 
-    value: "6310.13"
+    value: "631013"
     display_name: "Terrorismo"
   - 
-    value: "6310.14"
+    value: "631014"
     display_name: "Desempleo"
   - 
-    value: "6310.99"
+    value: "631099"
     display_name: "Otras (especificar)"
   - 
     value: "6311"
     display_name: "Sociología de los asentamientos humanos"
   - 
-    value: "6311.01"
+    value: "631101"
     display_name: "Estudios de comunidad"
   - 
-    value: "6311.02"
+    value: "631102"
     display_name: "Sociología ecológica"
   - 
-    value: "6311.03"
+    value: "631103"
     display_name: "Sociología local"
   - 
-    value: "6311.04"
+    value: "631104"
     display_name: "Sociología rural"
   - 
-    value: "6311.05"
+    value: "631105"
     display_name: "Barrios bajos"
   - 
-    value: "6311.06"
+    value: "631106"
     display_name: "Sociología urbana"
   - 
-    value: "6311.99"
+    value: "631199"
     display_name: "Otras (especificar)"
   - 
     value: "6399"
@@ -7447,43 +7447,43 @@ unesco:
     value: "7102"
     display_name: "Ética de individuos"
   - 
-    value: "7102.01"
+    value: "710201"
     display_name: "Códigos de valores"
   - 
-    value: "7102.02"
+    value: "710202"
     display_name: "Códigos de conducta ética"
   - 
-    value: "7102.03"
+    value: "710203"
     display_name: "Motivación"
   - 
-    value: "7102.04"
+    value: "710204"
     display_name: "Ética filosófica"
   - 
-    value: "7102.05"
+    value: "710205"
     display_name: "Ética religiosa"
   - 
-    value: "7102.99"
+    value: "710299"
     display_name: "Otras (especificar)"
   - 
     value: "7103"
     display_name: "Ética de grupo"
   - 
-    value: "7103.01"
+    value: "710301"
     display_name: "Declaraciones internacionales"
   - 
-    value: "7103.02"
+    value: "710302"
     display_name: "Ética nacional"
   - 
-    value: "7103.03"
+    value: "710303"
     display_name: "Ética económica"
   - 
-    value: "7103.04"
+    value: "710304"
     display_name: "Ética de la ciencia"
   - 
-    value: "7103.05"
+    value: "710305"
     display_name: "Ética transnacional"
   - 
-    value: "7103.99"
+    value: "710399"
     display_name: "Otras (especificar)"
   - 
     value: "7104"
@@ -7498,148 +7498,148 @@ unesco:
     value: "7201"
     display_name: "Filosofía del conocimiento"
   - 
-    value: "7201.01"
+    value: "720101"
     display_name: "Aporética"
   - 
-    value: "7201.02"
+    value: "720102"
     display_name: "Epistemología"
   - 
-    value: "7201.03"
+    value: "720103"
     display_name: "Teoría del concepto"
   - 
-    value: "7201.04"
+    value: "720104"
     display_name: "Teoría del juicio"
   - 
-    value: "7201.05"
+    value: "720105"
     display_name: "Teoría de la percepción"
   - 
-    value: "7201.06"
+    value: "720106"
     display_name: "Teoría de la razón"
   - 
-    value: "7201.99"
+    value: "720199"
     display_name: "Otras (especificar)"
   - 
     value: "7202"
     display_name: "Antropología filosófica"
   - 
-    value: "7202.01"
+    value: "720201"
     display_name: "Estética"
   - 
-    value: "7202.02"
+    value: "720202"
     display_name: "Hermeneútica"
   - 
-    value: "7202.03"
+    value: "720203"
     display_name: "Problema alma-cuerpo"
   - 
-    value: "7202.04"
+    value: "720204"
     display_name: "Filosofía de la acción"
   - 
-    value: "7202.05"
+    value: "720205"
     display_name: "Filosofía de la imaginación"
   - 
-    value: "7202.06"
+    value: "720206"
     display_name: "Filosofía de la intersubjetividad"
   - 
-    value: "7202.07"
+    value: "720207"
     display_name: "Filosofía del lenguaje"
   - 
-    value: "7202.08"
+    value: "720208"
     display_name: "Filosofía de la voluntad"
   - 
-    value: "7202.99"
+    value: "720299"
     display_name: "Otras (especificar)"
   - 
     value: "7203"
     display_name: "Filosofía general"
   - 
-    value: "7203.01"
+    value: "720301"
     display_name: "Lógica dialéctica"
   - 
-    value: "7203.02"
+    value: "720302"
     display_name: "Materialismo dialéctico"
   - 
-    value: "7203.03"
+    value: "720303"
     display_name: "Metafísica, ontología"
   - 
-    value: "7203.04"
+    value: "720304"
     display_name: "Teología natural"
   - 
-    value: "7203.99"
+    value: "720399"
     display_name: "Otras (especificar)"
   - 
     value: "7204"
     display_name: "Sistemas filosóficos"
   - 
-    value: "7204.01"
+    value: "720401"
     display_name: "Filosofía antigua"
   - 
-    value: "7204.02"
+    value: "720402"
     display_name: "Filosofía moderna"
   - 
-    value: "7204.03"
+    value: "720403"
     display_name: "Filosofía actual"
   - 
-    value: "7204.04"
+    value: "720404"
     display_name: "Sistemas teológico-filosóficos"
   - 
-    value: "7204.99"
+    value: "720499"
     display_name: "Otras (especificar)"
   - 
     value: "7205"
     display_name: "Filosofía de la Ciencia"
   - 
-    value: "7205.01"
+    value: "720501"
     display_name: "Filosofía de la biología"
   - 
-    value: "7205.02"
+    value: "720502"
     display_name: "Filosofía de la lógica"
   - 
-    value: "7205.03"
+    value: "720503"
     display_name: "Filosofía de las matemáticas"
   - 
-    value: "7205.04"
+    value: "720504"
     display_name: "Filosofía de la física"
   - 
-    value: "7205.05"
+    value: "720505"
     display_name: "Filosofía de las ciencias sociales"
   - 
-    value: "7205.99"
+    value: "720599"
     display_name: "Otras (especificar)"
   - 
     value: "7206"
     display_name: "Filosofía de la naturaleza"
   - 
-    value: "7206.01"
+    value: "720601"
     display_name: "Filosofía de la vida"
   - 
-    value: "7206.02"
+    value: "720602"
     display_name: "Filosofía de la materia"
   - 
-    value: "7206.03"
+    value: "720603"
     display_name: "Filosofía del espacio y del tiempo"
   - 
-    value: "7206.99"
+    value: "720699"
     display_name: "Otras (especificar)"
   - 
     value: "7207"
     display_name: "Filosofía social"
   - 
-    value: "7207.01"
+    value: "720701"
     display_name: "Filosofia de la cultura"
   - 
-    value: "7207.02"
+    value: "720702"
     display_name: "Filosofía de la historia"
   - 
-    value: "7207.03"
+    value: "720703"
     display_name: "Filosofía de la técnica"
   - 
-    value: "7207.04"
+    value: "720704"
     display_name: "Filosofía política"
   - 
-    value: "7207.05"
+    value: "720705"
     display_name: "Teoría de las ideologías"
   - 
-    value: "7207.99"
+    value: "720799"
     display_name: "Otras (especificar)"
   - 
     value: "7208"

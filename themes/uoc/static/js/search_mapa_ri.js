@@ -72,6 +72,7 @@ var UOCSearchEngine = {
 		}
 		return UOCSearchEngine.endPointURI + queryString;
 	},
+	//to modify*********************************
 	getResultMarkup : function(item, idx){
 		var markup='<div class="col-xs-12 col-md-3" id="Result_'+idx+'">';
 		if(item.fields.content_type == "fitxa") {

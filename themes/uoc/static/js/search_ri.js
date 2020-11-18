@@ -451,16 +451,16 @@ function getResultMarkup(item, content_type, idx, listView){
 	}
 	
 	if(content_type == "fitxa"){
-			var posicio = item.fields.posicio;
-			var entradeta = item.fields.entradeta;
-			
-			if(typeof item.fields.posicio === 'undefined'){posicio=""}
-			if(typeof item.fields.entradeta === 'undefined'){entradeta=""}
+			var ambit = item.fields.ambit_especialitzacio;
+			var dept = item.fields.departament;
+
+			if(typeof item.fields.ambit_especialitzacio === 'undefined'){ambit="Salut pública i planetària"}
+			if(typeof item.fields.departament === 'undefined'){dept="eHealth Center"}
 
 			markup+="<a href='"+item.fields.url+"'>"
 			markup+='<div id="'+item.id+'" class="card card-people"><div class="card__contents img-wpr"><img src="'+item.fields.imatge_url+'" alt="" class="img-wpr__cover">';
 			markup+='<div class="img-wpr__contents"><p class="title">'+item.fields.nom_investigador+'</p>';
-			markup+='</div><span class="author">'+posicio+'<span class="description">'+ entradeta+'</span></span>';
+			markup+='</div><div class="row p-top-y p-x" style="width:100%;"><span class="h4 bold">'+ ambit + '</span><span class="h4 float-right">' + dept+'</span></div>';
 			markup+='</div></div></div></a>';
     } else if(content_type == "grup"){
 			markup+="<a href='"+item.fields.url+"'>"
