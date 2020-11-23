@@ -41,8 +41,8 @@ function getFormValues(){
 			searchParams.ods.push($(this).find('#name-ods').text());
 		});	
 	}
-	if($(".tab-content.cercaFiltres input.unesco").val().length>0){											//Unesco code
-		searchParams.unesco = $(".tab-content.cercaFiltres input.unesco").val();
+	if($(".tab-content.cercaFiltres select.unesco").val().length>0){											//Unesco code
+		searchParams.unesco = $(".tab-content.cercaFiltres select.unesco").val();
 	}
 	if($(".tab-content.cercaFiltres .tag-list.centre .active").length>0){									//Centres checked
 		searchParams.centre = [];
