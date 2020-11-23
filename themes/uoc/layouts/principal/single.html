@@ -94,13 +94,14 @@
 								<div class="full-width search-container-top">
 									<div class="col-xs-12">
 										<p><a href="javascript:;">{{ T "uoc_ri_home_search_consultaunesco" }}</a></p>
-										<input list="unesco-code-list" id="search-input" name="searchWords" aria-label='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' placeholder='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' title='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1 unesco" style="font-size: 16px;    height: 47px;"/>
-										<!--  <input type="search" id="search-input" aria-label="Cerca per codi" placeholder='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' name="searchWords" tabindex="0" value="" title='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1 unesco">-->
-										<datalist id="unesco-code-list">
+										<!--<input list="unesco-code-list" id="search-input" name="searchWords" aria-label='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' placeholder='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' title='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1 unesco" style="font-size: 16px;    height: 47px;"/>
+										 <input type="search" id="search-input" aria-label="Cerca per codi" placeholder='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' name="searchWords" tabindex="0" value="" title='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1 unesco">-->
+										<select id="search-input" name="searchWords" class="w100-inline-block unesco">
+												<option value="">{{ T "uoc_ri_home_search_allcodes" }}</option>
 											{{ range $index, $element := .Params.unesco }}
-												<option value="{{$element.value}}">{{$element.display_name}}</option>
+												<option value="{{$element.value}}">{{$element.value}} - {{$element.display_name}}</option>
 											{{ end }}
-										</datalist>
+										</select>
 									</div>
 								</div>
 										

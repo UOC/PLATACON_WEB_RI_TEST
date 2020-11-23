@@ -112,12 +112,18 @@
 																			</span>
 																		</div>
 																		<div class="col-xs-10 col-md-11 col-lg-9">
-																			<input list="unesco-code-list" id="search-input" name="searchWords" aria-label='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' placeholder='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' title='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1 unesco" style="font-size: 16px;    height: 47px;"/>
+																			<!--<input list="unesco-code-list" id="search-input" name="searchWords" aria-label='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' placeholder='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' title='{{T "uoc_ri_cercador_filtres_unesco_placeholder"}}' class="w100-inline-block page-module ruler ruler--thin ruler--primary font-alternate h1 unesco" style="font-size: 16px;    height: 47px;"/>
 																			<datalist id="unesco-code-list">
 																				{{ range $index, $element := .Params.unesco }}
 																				<option value="{{$element.value}}">{{$element.display_name}}</option>
 																				{{ end }}
-																			</datalist>
+																			</datalist>-->
+																			<select id="search-input" name="searchWords" class="w100-inline-block unesco">
+																				<option value="">{{ T "uoc_ri_home_search_allcodes" }}</option>
+																			{{ range $index, $element := .Params.unesco }}
+																				<option value="{{$element.value}}">{{$element.value}} - {{$element.display_name}}</option>
+																			{{ end }}
+																			</select>
 																		</div>
 																	</div>
 																</div>

@@ -151,7 +151,8 @@
 [uoc_ri_home_carousel_spinoff] other = "Spin-off"
 [uoc_ri_home_carousel_mesde] other = "more than"
 
-[uoc_ri_home_search_consultaunesco] other = "See all codes"
+[uoc_ri_home_search_consultaunesco] other = "Check the codes"
+[uoc_ri_home_search_allcodes] other = "All codes"
 [uoc_ri_home_search_aplicafiltres] other = "Apply filtres"
 
 [uoc_ri_home_centres] other = "Centres"
