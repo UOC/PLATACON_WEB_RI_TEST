@@ -206,9 +206,12 @@ function getSearchFormValues(){
 		});	
 	}
 
-	var unescoFreeTextSearch = $("#collapse-codi input[name='searchWords']").val();		//UNESCO Free text search
+	/*var unescoFreeTextSearch = $("#collapse-codi input[name='searchWords']").val();		//UNESCO Free text search
 	if (unescoFreeTextSearch != null && unescoFreeTextSearch != ""){
 		searchParams.unesco = unescoFreeTextSearch;
+	}*/
+	if($("select.unesco").val().length>0){											//Unesco code
+		searchParams.unesco = $("select.unesco").val();
 	}
 	
 	if($(".general-filter.centre input:checked").length>0){								//Centres checked
