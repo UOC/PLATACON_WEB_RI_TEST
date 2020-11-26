@@ -120,7 +120,7 @@ var UOCSearchEngine = {
 	},
 	//to modify*********************************
 	getResultMarkup : function(item, idx){
-		var markup='<div class="col-xs-12 col-md-3" id="Result_'+idx+'">';
+		var markup="";
 		/*if(item.fields.content_type == "fitxa") {
 			markup+="<a href='"+item.fields.url+"'>"
 			markup+='<div id="'+item.id+'" class="card card-people"><div class="card__contents img-wpr"><img src="'+item.fields.imatge_url+'" alt="" class="img-wpr__cover">';
@@ -129,13 +129,16 @@ var UOCSearchEngine = {
 			markup+='</div></div></a>';
 		} else */
 		if(item.fields.content_type == "grup"){
+			markup='<div class="col-xs-12 col-md-3" id="Result_'+idx+'">';
 			markup+="<a href='"+item.fields.url+"'>"
 			markup+='<div id="'+item.id+'" aria-label="region" class="card card-noimg"><div class="card__contents">';
 			markup+='<p class="title">'+item.fields.nom_grup+'</p><p>'+item.fields.descripcio+'</p>';
 			markup+='</div></div></a>';
+			markup+='</div>';
+			
 		}
-		markup+='</div>';
 		return markup;
+		
 	}
 }
 
