@@ -139,10 +139,11 @@
 [uoc_ri_cercador_solucions_serveis] other = "Serveis a l'empresa"
 [uoc_ri_cercador_spin_off] other = "Spin-Offs"
 
-[uoc_ri_mapaambits_cercaper_especialitzacio] other = "Cerca per àmbit d'especialització"
+[uoc_ri_mapaambits_cercaper_especialitzacio] other = "Àmbits d'especialització"
 [uoc_ri_mapaambits_cercaper_ambit] other = "Cerca per àmbit"
-[uoc_ri_mapaambits_cercaper_ambit_titol] other = "Àmbits generals"
+[uoc_ri_mapaambits_cercaper_general] other = "Àmbits generals"
 [uoc_ri_mapaambits_titol] other = "Descobreix com s'organitzen els grups de recerca per..."
+[uoc_ri_mapaambits_pdf] other = "Descarregar versió PDF"
 
 [uoc_ri_home_carousel_grups] other = "Grups de recerca"
 [uoc_ri_home_carousel_investigadors] other = "Investigadors"

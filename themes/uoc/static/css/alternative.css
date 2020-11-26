@@ -191,3 +191,8 @@
 dd {
     margin-bottom: 10px;
 }
+
+.pdf-rule > * {
+    text-decoration: none;
+    pointer-events: none;
+}

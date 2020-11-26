@@ -34,6 +34,53 @@ function getCurrentLanguage(){
 	}
 	return lang;
 }
+/***********************************************************************
+							GENERATE PDF								
+***********************************************************************/
+async function generalPDF(title) {
+
+	var printContents = $("#printFragmentGeneral").html();
+	var printWindow = window.open();
+	printWindow.document.write('<html><head>');
+	printWindow.document.write('<link rel="stylesheet" href="//cv.uoc.edu/UOC/GEFv2/gef/css/gef.css"></link>');
+	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/styles.css"></link>');
+	//printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/search.css"></link>');
+	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/alternative.css"></link><title>');
+	printWindow.document.write('</title></head>');
+
+	await new Promise(r => setTimeout(r, 500));
+
+	printWindow.document.write('<body class="pdf-rule"><h1>');
+	printWindow.document.write(title);
+	printWindow.document.write('</h1>');
+	printWindow.document.write(printContents);
+	printWindow.document.write('</body></html>');
+	
+	printWindow.document.close();
+	printWindow.print();
+}
+async function specialPDF(title) {
+
+	var printContents = $("#printFragmentSpecial").html();
+	var printWindow = window.open();
+	printWindow.document.write('<html><head>');
+	printWindow.document.write('<link rel="stylesheet" href="//cv.uoc.edu/UOC/GEFv2/gef/css/gef.css"></link>');
+	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/styles.css"></link>');
+	//printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/search.css"></link>');
+	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/alternative.css"></link><title>');
+	printWindow.document.write('</title></head>');
+
+	await new Promise(r => setTimeout(r, 500));
+
+	printWindow.document.write('<body class="pdf-rule"><h1>');
+	printWindow.document.write(title);
+	printWindow.document.write('</h1>');
+	printWindow.document.write(printContents);
+	printWindow.document.write('</body></html>');
+	
+	printWindow.document.close();
+	printWindow.print();
+}
 
 /***********************************************************************
 							SEARCH METHODS								
@@ -75,13 +122,14 @@ var UOCSearchEngine = {
 	//to modify*********************************
 	getResultMarkup : function(item, idx){
 		var markup='<div class="col-xs-12 col-md-3" id="Result_'+idx+'">';
-		if(item.fields.content_type == "fitxa") {
+		/*if(item.fields.content_type == "fitxa") {
 			markup+="<a href='"+item.fields.url+"'>"
 			markup+='<div id="'+item.id+'" class="card card-people"><div class="card__contents img-wpr"><img src="'+item.fields.imatge_url+'" alt="" class="img-wpr__cover">';
 			markup+='<div class="img-wpr__contents"><p class="title">'+item.fields.nom_investigador+'</p>';
 			markup+='</div><span class="author"><span class="description">'+item.fields.entradeta+'</span></span>';
 			markup+='</div></div></a>';
-		} else if(item.fields.content_type == "grup"){
+		} else */
+		if(item.fields.content_type == "grup"){
 			markup+="<a href='"+item.fields.url+"'>"
 			markup+='<div id="'+item.id+'" aria-label="region" class="card card-noimg"><div class="card__contents">';
 			markup+='<p class="title">'+item.fields.nom_grup+'</p><p>'+item.fields.descripcio+'</p>';
@@ -169,3 +217,4 @@ var literals = {
 		}
 	}
 };
+

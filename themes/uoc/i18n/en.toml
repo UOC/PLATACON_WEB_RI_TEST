@@ -139,10 +139,11 @@
 [uoc_ri_cercador_solucions_serveis] other = "Business Service"
 [uoc_ri_cercador_spin_off] other = "Spin-Offs"
 
-[uoc_ri_mapaambits_cercaper_especialitzacio] other = "Search by specialized areas"
+[uoc_ri_mapaambits_cercaper_especialitzacio] other = "Specialized areas"
 [uoc_ri_mapaambits_cercaper_ambit] other = "Search by areas"
-[uoc_ri_mapaambits_cercaper_ambit_titol] other = "General areas"
+[uoc_ri_mapaambits_cercaper_general] other = "General areas"
 [uoc_ri_mapaambits_titol] other = "Discover hoy research groups are organized by..."
+[uoc_ri_mapaambits_pdf] other = "Download PDF version"
 
 [uoc_ri_home_carousel_grups] other = "Research groups"
 [uoc_ri_home_carousel_investigadors] other = "Researchers"

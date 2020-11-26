@@ -23,13 +23,13 @@
 				<div class="filters-main-block block-with-text">
 					<div class="filters-main__box col-md-6">
 						<a id="tab-1" href="#tab-content-1" role="tab" aria-controls="tab-content-1" aria-selected="true" data-tab-trigger="" class="tab cercaAmbitEspecialitzacio">
-							<h3>{{ T "uoc_ri_cercador_filtres_ambitsespecialitzacio" }}</h3>
-							<p>{{ T "uoc_ri_mapaambits_cercaper_especialitzacio" }}</p>
+							<h3>{{ T "uoc_ri_mapaambits_cercaper_especialitzacio" }}</h3>
+							<p>{{ T "uoc_ri_mapaambits_cercaper_ambit" }}</p>
 						</a>
 					</div>
 					<div class="filters-main__box col-md-6">
 						<a id="tab-2" href="#tab-content-2" role="tab" aria-controls="tab-content-2" aria-selected="false" data-tab-trigger="" class="tab cercaAmbitGeneral">
-							<h3>{{ T "uoc_ri_mapaambits_cercaper_ambit_titol" }}</h3>
+							<h3>{{ T "uoc_ri_mapaambits_cercaper_general" }}</h3>
 							<p>{{ T "uoc_ri_mapaambits_cercaper_ambit" }}</p>
 						</a>
 					</div>
@@ -37,7 +37,7 @@
 				<div class="col-xs-12">
 					<div id="tab-content-1" data-tab-content="" role="tabpanel" aria-labelledby="tab-1" aria-hidden="true" class="tab-content cercaAmbitEspecialitzacio">
 						<section class="acordeon m-4y">
-							<div class="row">
+							<div id="printFragmentSpecial" class="row">
 								<div class="col-xs-12">
 									{{ range $index, $element := .Params.ambits_especialitzacio }}
 									<div class="js-collapse-group">
@@ -72,11 +72,15 @@
 									{{ end }}
 								</div>
 							</div>
+							<button class="btn btn--primary float-right m-top-2y" onclick='specialPDF({{ T "uoc_ri_mapaambits_cercaper_especialitzacio" }});'>
+								<span class="icon icon--pdf"></span>
+								<span class="h5">{{T "uoc_ri_mapaambits_pdf"}}</span>
+							</button>
 						</section>
 					</div>
 					<div id="tab-content-2" data-tab-content="" role="tabpanel" aria-labelledby="tab-2" aria-hidden="false" class="tab-content cercaAmbitGeneral">
 						<section class="acordeon m-4y">
-							<div class="row">
+							<div id="printFragmentGeneral" class="row">
 								<div class="col-xs-12">
 									{{ range $index, $element := .Params.ambit }}
 										<div class="js-collapse-group">
@@ -111,10 +115,15 @@
 									{{ end }}
 								</div>
 							</div>
+							<button class="btn btn--primary float-right m-top-2y" onclick='generalPDF({{ T "uoc_ri_mapaambits_cercaper_general" }});'>
+								<span class="icon icon--pdf"></span>
+								<span class="h5">{{T "uoc_ri_mapaambits_pdf"}}</span>
+							</button>
 						</section>
 					</div>
 				</div>
 			</div>
+			
 		</section>
 		{{ partial "footer.html" . }}
 	</div>
