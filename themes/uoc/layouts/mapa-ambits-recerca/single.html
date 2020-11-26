@@ -128,6 +128,11 @@
 		{{ partial "footer.html" . }}
 	</div>
 	{{ partial "ri_js_imports.html" . }}
+	
+	<script type="text/javascript">
+		console.log("{{ .Site.Params.apiPlatacon }}");
+		var apiPlatacon = '{{ .Site.Params.apiPlatacon }}';
+	</script>
 	<script src="/js/search_mapa_ri.js"></script>
 </body>
 </html>

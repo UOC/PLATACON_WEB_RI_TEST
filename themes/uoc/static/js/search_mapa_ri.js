@@ -85,9 +85,8 @@ async function specialPDF(title) {
 /***********************************************************************
 							SEARCH METHODS								
 ***********************************************************************/
-
 var UOCSearchEngine = {
-	endPointURI: "/api/search",
+	endPointURI: apiPlatacon + "/api/search",
 	query: function(searchParams, targetElement){
 		var url = UOCSearchEngine.buildQuery(searchParams);
 		$.ajax({
