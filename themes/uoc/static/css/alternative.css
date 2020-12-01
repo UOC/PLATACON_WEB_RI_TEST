@@ -193,6 +193,7 @@ dd {
 }
 
 .pdf-rule > * {
+    zoom:75%;
     text-decoration: none;
     pointer-events: none;
 }

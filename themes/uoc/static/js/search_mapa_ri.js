@@ -44,7 +44,6 @@ async function generalPDF(title) {
 	printWindow.document.write('<html><head>');
 	printWindow.document.write('<link rel="stylesheet" href="//cv.uoc.edu/UOC/GEFv2/gef/css/gef.css"></link>');
 	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/styles.css"></link>');
-	//printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/search.css"></link>');
 	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/alternative.css"></link><title>');
 	printWindow.document.write('</title></head>');
 
@@ -66,7 +65,6 @@ async function specialPDF(title) {
 	printWindow.document.write('<html><head>');
 	printWindow.document.write('<link rel="stylesheet" href="//cv.uoc.edu/UOC/GEFv2/gef/css/gef.css"></link>');
 	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/styles.css"></link>');
-	//printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/search.css"></link>');
 	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/alternative.css"></link><title>');
 	printWindow.document.write('</title></head>');
 
@@ -80,6 +78,7 @@ async function specialPDF(title) {
 	
 	printWindow.document.close();
 	printWindow.print();
+	printWindow.close();
 }
 
 /***********************************************************************
@@ -129,7 +128,7 @@ var UOCSearchEngine = {
 			markup+='</div></div></a>';
 		} else */
 		if(item.fields.content_type == "grup"){
-			markup='<div class="col-xs-12 col-md-3" id="Result_'+idx+'">';
+			markup='<div class="col-xs-12 col-sm-3" id="Result_'+idx+'">';
 			markup+="<a href='"+item.fields.url+"'>"
 			markup+='<div id="'+item.id+'" aria-label="region" class="card card-noimg"><div class="card__contents">';
 			markup+='<p class="title">'+item.fields.nom_grup+'</p><p>'+item.fields.descripcio+'</p>';
