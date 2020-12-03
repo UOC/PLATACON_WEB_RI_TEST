@@ -47,7 +47,7 @@ async function generalPDF(title) {
 	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/alternative.css"></link><title>');
 	printWindow.document.write('</title></head>');
 
-	await new Promise(r => setTimeout(r, 500));
+	await new Promise(r => setTimeout(r, 600));
 
 	printWindow.document.write('<body class="pdf-rule"><h1>');
 	printWindow.document.write(title);
@@ -68,7 +68,7 @@ async function specialPDF(title) {
 	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/alternative.css"></link><title>');
 	printWindow.document.write('</title></head>');
 
-	await new Promise(r => setTimeout(r, 500));
+	await new Promise(r => setTimeout(r, 600));
 
 	printWindow.document.write('<body class="pdf-rule"><h1>');
 	printWindow.document.write(title);
