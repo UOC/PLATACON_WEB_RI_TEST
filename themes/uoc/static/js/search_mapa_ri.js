@@ -84,7 +84,7 @@ async function specialPDF(title) {
 	
 	await new Promise(r => setTimeout(r, 600));
 	
-	//printWindow.document.close();
+	printWindow.document.close();
 	printWindow.print();
 	
 
