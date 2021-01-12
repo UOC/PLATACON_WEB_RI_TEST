@@ -457,8 +457,8 @@ function getResultMarkup(item, content_type, idx, listView){
 			var ambit = item.fields.ambit;
 			var dept = item.fields.departament;
 
-			if(typeof item.fields.ambit === 'undefined'){ambit="Arts i Humanitats"}
-			if(typeof item.fields.departament === 'undefined'){dept="Departament de Y"}
+			//if(typeof item.fields.ambit === 'undefined'){ambit="Arts i Humanitats"}
+			//if(typeof item.fields.departament === 'undefined'){dept="Departament de Y"}
 
 			markup+="<a href='"+item.fields.url+"'>"
 			markup+='<div id="'+item.id+'" class="card card-people"><div class="card__contents img-wpr"><img style="width:100%;" src="'+item.fields.imatge_url+'" alt="" class="img-wpr__cover">';
