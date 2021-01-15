@@ -457,13 +457,14 @@ function getResultMarkup(item, content_type, idx, listView){
 			var ambit = item.fields.ambit;
 			var dept = item.fields.departament;
 
-			//if(typeof item.fields.ambit === 'undefined'){ambit="Arts i Humanitats"}
-			//if(typeof item.fields.departament === 'undefined'){dept="Departament de Y"}
+			if(typeof item.fields.ambit === 'undefined'){ambit=''}
+			else{ambit += ','}
+			if(typeof item.fields.departament === 'undefined'){dept=''}
 
 			markup+="<a href='"+item.fields.url+"'>"
 			markup+='<div id="'+item.id+'" class="card card-people"><div class="card__contents img-wpr"><img style="width:100%;" src="'+item.fields.imatge_url+'" alt="" class="img-wpr__cover">';
 			markup+='<div class="img-wpr__contents"><span class="h5 bold">'+item.fields.nom_investigador+'</span></div>';
-			markup+='<div class="row" style="width:100%;"><div class="m-top-10y p-top-5y m-2x"><p class="float-right"><span class="bold">'+ ambit + ',</span> '+ dept+'</p></div></div>';
+			markup+='<div class="row" style="width:100%;"><div class="m-top-10y p-top-5y m-2x"><p class="float-right"><span class="bold">'+ ambit + '</span> '+ dept+'</p></div></div>';
 			markup+='</div></div></div></a>';
     } else if(content_type == "grup"){
 			markup+="<a href='"+item.fields.url+"'>"

@@ -60,7 +60,7 @@ async function generalPDF(title) {
 	printWindow.document.close();
 	printWindow.print();
 
-	await new Promise(r => setTimeout(r, 200));
+	await new Promise(r => setTimeout(r, 50));
 
 	
 	printWindow.close();
@@ -88,7 +88,7 @@ async function specialPDF(title) {
 	printWindow.print();
 	
 
-	await new Promise(r => setTimeout(r, 200));
+	await new Promise(r => setTimeout(r, 50));
 
 	
 	printWindow.close();
