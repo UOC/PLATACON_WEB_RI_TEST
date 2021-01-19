@@ -454,11 +454,11 @@ function getResultMarkup(item, content_type, idx, listView){
 	}
 	
 	if(content_type == "fitxa"){
-			var ambit = item.fields.ambit;
+			var ambit = item.fields.ambits;
 			var dept = item.fields.departament;
 
-			if(typeof item.fields.ambit === 'undefined'){ambit=''}
-			else{ambit += ','}
+			if(typeof item.fields.ambits === 'undefined'){ambit=''}
+			if(typeof item.fields.departament != 'undefined' && typeof item.fields.ambits != 'undefined'){ambit += ','}
 			if(typeof item.fields.departament === 'undefined'){dept=''}
 
 			markup+="<a href='"+item.fields.url+"'>"
