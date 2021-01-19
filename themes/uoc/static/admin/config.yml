@@ -3,7 +3,7 @@ backend:
   name: github
   branch: master
   repo: albirasolutions/UOC_WebRI
-  base_url: https://webri.albira.io # Path to ext auth provider
+  base_url: https://transfer-research.am.pre.uoc.es # Path to ext auth provider
   auth_endpoint: /api-oauth/auth
 media_folder: "static/img" # Media files will be stored in the repo under static/media/
 public_folder: "/img"
