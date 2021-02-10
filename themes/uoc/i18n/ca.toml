@@ -139,6 +139,8 @@
 [uoc_ri_cercador_solucions_serveis] other = "Serveis a l'empresa"
 [uoc_ri_cercador_spin_off] other = "Spin-Offs"
 
+[uoc_ri_cercador_llista_ambit] other = "Àmbit"
+
 [uoc_ri_mapaambits_cercaper_especialitzacio] other = "Àmbits d'especialització"
 [uoc_ri_mapaambits_cercaper_ambit] other = "Cerca per àmbit"
 [uoc_ri_mapaambits_cercaper_general] other = "Àmbits generals"

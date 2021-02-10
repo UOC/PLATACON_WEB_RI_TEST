@@ -454,7 +454,8 @@ function getResultMarkup(item, content_type, idx, listView){
 	}
 	
 	if(content_type == "fitxa"){
-			var ambit = item.fields.ambits;
+			var ambit = literalAmbit + ": ";
+			ambit += item.fields.ambits;
 			var dept = item.fields.departament;
 
 			if(typeof item.fields.ambits === 'undefined'){ambit=''}
