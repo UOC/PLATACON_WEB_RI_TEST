@@ -12,11 +12,14 @@ def search(event,context):
     term=args.get('s')
     centre=args.get('centre')
     sector=args.get('sector_productiu')
+    investigador=args.get('nom_investigador')
     """TRANSFORMING DATA TO BUILD QUERY"""
     if(centre!=None):
         centre=centre.split(',')
     if(sector!=None):
         sector=sector.split(',')
+    if(investigador!=None):
+        investigador=investigador.split(',')
     consulta="(and idioma:'%s' "%(idioma)
 
     """BUILDING QUERY"""
@@ -38,6 +41,14 @@ def search(event,context):
         for i in centre:
             element=i
             consulta +="centre: '%s' "%element
+
+    if investigador!=None:
+        existe=consulta.find('or')
+        if(existe== -1):
+            consulta+="(or "
+        for i in investigador:
+            element=i
+            consulta +="investigadors: '%s' "%element
 
     existe = consulta.find('or')
     if (existe != -1):

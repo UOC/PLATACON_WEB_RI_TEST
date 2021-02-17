@@ -123,11 +123,11 @@
 [uoc_ri_cercador_esborrafiltres] other = "Remove filters"
 [uoc_ri_cercador_cercar] other = "Search"
 
-[uoc_ri_cercador_filtres_ambitsespecialitzacio] other = "Specialization areas"
-[uoc_ri_cercador_filtres_ods] other = "ODS Objectives"
-[uoc_ri_cercador_filtres_unesco] other = "UNESCO code"
-[uoc_ri_cercador_filtres_unesco_placeholder] other = "Search by UNESCO code"
-[uoc_ri_cercador_filtres_centre] other = "Select a centre:"
+[uoc_ri_cercador_filtres_ambitsespecialitzacio] other = "Search by specialization areas"
+[uoc_ri_cercador_filtres_ods] other = "Search by ODS Objectives"
+[uoc_ri_cercador_filtres_unesco] other = "Search by UNESCO code"
+[uoc_ri_cercador_filtres_unesco_placeholder] other = "Codes"
+[uoc_ri_cercador_filtres_centre] other = "Select a center:"
 [uoc_ri_cercador_filtres_visualitzacio] other = "View results by:"
 [uoc_ri_cercador_filtres_sectors_productius] other = "Productive Sectors"
 
@@ -139,10 +139,13 @@
 [uoc_ri_cercador_solucions_serveis] other = "Business Service"
 [uoc_ri_cercador_spin_off] other = "Spin-Offs"
 
-[uoc_ri_mapaambits_cercaper_especialitzacio] other = "Search by specialized areas"
+[uoc_ri_cercador_llista_ambit] other = "Area"
+
+[uoc_ri_mapaambits_cercaper_especialitzacio] other = "Specialized areas"
 [uoc_ri_mapaambits_cercaper_ambit] other = "Search by areas"
-[uoc_ri_mapaambits_cercaper_ambit_titol] other = "General areas"
+[uoc_ri_mapaambits_cercaper_general] other = "General areas"
 [uoc_ri_mapaambits_titol] other = "Discover hoy research groups are organized by..."
+[uoc_ri_mapaambits_pdf] other = "Download PDF version"
 
 [uoc_ri_home_carousel_grups] other = "Research groups"
 [uoc_ri_home_carousel_investigadors] other = "Researchers"
@@ -151,7 +154,8 @@
 [uoc_ri_home_carousel_spinoff] other = "Spin-off"
 [uoc_ri_home_carousel_mesde] other = "more than"
 
-[uoc_ri_home_search_consultaunesco] other = "See all codes"
+[uoc_ri_home_search_consultaunesco] other = "Check the codes"
+[uoc_ri_home_search_allcodes] other = "All codes"
 [uoc_ri_home_search_aplicafiltres] other = "Apply filtres"
 
 [uoc_ri_home_centres] other = "Centres"

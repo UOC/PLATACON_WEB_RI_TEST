@@ -123,10 +123,10 @@
 [uoc_ri_cercador_esborrafiltres] other = "Esborrar filtres"
 [uoc_ri_cercador_cercar] other = "Cercar"
 
-[uoc_ri_cercador_filtres_ambitsespecialitzacio] other = "Àmbits d'especialització"
-[uoc_ri_cercador_filtres_ods] other = "Objectius ODS"
-[uoc_ri_cercador_filtres_unesco] other = "Codi UNESCO"
-[uoc_ri_cercador_filtres_unesco_placeholder] other = "Cerca per codi"
+[uoc_ri_cercador_filtres_ambitsespecialitzacio] other = "Cerca per àmbits d'especialització"
+[uoc_ri_cercador_filtres_ods] other = "Cerca per objectius ODS"
+[uoc_ri_cercador_filtres_unesco] other = "Cerca per codi UNESCO"
+[uoc_ri_cercador_filtres_unesco_placeholder] other = "Codis"
 [uoc_ri_cercador_filtres_centre] other = "Selecciona el centre:"
 [uoc_ri_cercador_filtres_visualitzacio] other = "Visualitza els resultats per:"
 [uoc_ri_cercador_filtres_sectors_productius] other = "Sectors productius"
@@ -139,10 +139,13 @@
 [uoc_ri_cercador_solucions_serveis] other = "Serveis a l'empresa"
 [uoc_ri_cercador_spin_off] other = "Spin-Offs"
 
-[uoc_ri_mapaambits_cercaper_especialitzacio] other = "Cerca per àmbit d'especialització"
+[uoc_ri_cercador_llista_ambit] other = "Àmbit"
+
+[uoc_ri_mapaambits_cercaper_especialitzacio] other = "Àmbits d'especialització"
 [uoc_ri_mapaambits_cercaper_ambit] other = "Cerca per àmbit"
-[uoc_ri_mapaambits_cercaper_ambit_titol] other = "Àmbits generals"
+[uoc_ri_mapaambits_cercaper_general] other = "Àmbits generals"
 [uoc_ri_mapaambits_titol] other = "Descobreix com s'organitzen els grups de recerca per..."
+[uoc_ri_mapaambits_pdf] other = "Descarregar versió PDF"
 
 [uoc_ri_home_carousel_grups] other = "Grups de recerca"
 [uoc_ri_home_carousel_investigadors] other = "Investigadors"
@@ -152,6 +155,7 @@
 [uoc_ri_home_carousel_mesde] other = "+ de"
 
 [uoc_ri_home_search_consultaunesco] other = "Consulta els codis"
+[uoc_ri_home_search_allcodes] other = "Tots els codis"
 [uoc_ri_home_search_aplicafiltres] other = "Aplicar filtres"
 
 [uoc_ri_home_centres] other = "Centres"

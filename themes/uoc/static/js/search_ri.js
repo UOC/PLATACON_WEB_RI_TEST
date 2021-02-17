@@ -206,9 +206,12 @@ function getSearchFormValues(){
 		});	
 	}
 
-	var unescoFreeTextSearch = $("#collapse-codi input[name='searchWords']").val();		//UNESCO Free text search
+	/*var unescoFreeTextSearch = $("#collapse-codi input[name='searchWords']").val();		//UNESCO Free text search
 	if (unescoFreeTextSearch != null && unescoFreeTextSearch != ""){
 		searchParams.unesco = unescoFreeTextSearch;
+	}*/
+	if($("select.unesco").val().length>0){											//Unesco code
+		searchParams.unesco = $("select.unesco").val();
 	}
 	
 	if($(".general-filter.centre input:checked").length>0){								//Centres checked
@@ -445,22 +448,24 @@ function getResultMarkup(item, content_type, idx, listView){
     //console.log("Results as list? "+listView)
 	var markup='';
 	if(listView){
-		markup='<div class="col-xs-12" id="'+content_type+'Result_'+idx+'">';
+		markup='<div class="col-xs-12" style="height: 50%;" id="'+content_type+'Result_'+idx+'">';
 	} else {
 		markup='<div class="col-xs-12 col-md-4" id="'+content_type+'Result_'+idx+'">';
 	}
 	
 	if(content_type == "fitxa"){
-			var posicio = item.fields.posicio;
-			var entradeta = item.fields.entradeta;
-			
-			if(typeof item.fields.posicio === 'undefined'){posicio=""}
-			if(typeof item.fields.entradeta === 'undefined'){entradeta=""}
+			var ambit = literalAmbit + ": ";
+			ambit += item.fields.ambits;
+			var dept = item.fields.departament;
+
+			if(typeof item.fields.ambits === 'undefined'){ambit=''}
+			if(typeof item.fields.departament != 'undefined' && typeof item.fields.ambits != 'undefined'){ambit += ','}
+			if(typeof item.fields.departament === 'undefined'){dept=''}
 
 			markup+="<a href='"+item.fields.url+"'>"
-			markup+='<div id="'+item.id+'" class="card card-people"><div class="card__contents img-wpr"><img src="'+item.fields.imatge_url+'" alt="" class="img-wpr__cover">';
-			markup+='<div class="img-wpr__contents"><p class="title">'+item.fields.nom_investigador+'</p>';
-			markup+='</div><span class="author">'+posicio+'<span class="description">'+ entradeta+'</span></span>';
+			markup+='<div id="'+item.id+'" class="card card-people"><div class="card__contents img-wpr"><img style="width:100%;" src="'+item.fields.imatge_url+'" alt="" class="img-wpr__cover">';
+			markup+='<div class="img-wpr__contents"><span class="h5 bold">'+item.fields.nom_investigador+'</span></div>';
+			markup+='<div class="row" style="width:100%;"><div class="m-top-10y p-top-5y m-2x"><p class="float-right"><span class="bold">'+ ambit + '</span> '+ dept+'</p></div></div>';
 			markup+='</div></div></div></a>';
     } else if(content_type == "grup"){
 			markup+="<a href='"+item.fields.url+"'>"
