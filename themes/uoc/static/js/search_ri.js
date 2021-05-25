@@ -8,7 +8,7 @@ $(".list-vist .vist-column").on("click", function(){
 var tab = 'cercadorFiltres';
 
 jQuery(document).ready(function ($) {
-	searchParams =	{};
+	var searchParams =	{};
 	searchParams.target = 'cercadorFiltres';
 
     searchParams=parseQueryString(location.search);
@@ -30,28 +30,28 @@ jQuery(document).ready(function ($) {
 			//console.log('Tab: cercadorTextual');
 			$(".tab.cercadorTextual h3").click();
 			tab = 'cercadorTextual';	
-			/*if(searchParams.s){
+			if(searchParams.s){
 				$(".cercadorTextual input#search").val(searchParams.s);
 				querySearchEngine(searchParams);
 				queryInnovaSolSearchEngine(searchParams);			
-			}*/
+			}
 		break;
 	}
 
 	$(".uoc_submitSearch_cercadorFiltres").click(function(e){		
-		submitSearch(e);
+		submitSearch(e, searchParams);
 	});
 	$("#collapse-codi input[name='search_sbm']").click(function(e){		
-		submitSearch(e);
+		submitSearch(e, searchParams);
 	});
 	$(".tab.cercadorFiltres h3").click(function(e){	
 		e.preventDefault();
 		searchParams =	{};
 		tab = 'cercadorFiltres';
-		submitSearch(e);
+		submitSearch(e, searchParams);
 	});	
 	$('.filters-main__box').click(function(e) {
-		submitSearch(e);
+		submitSearch(e, searchParams);
 	});
 	$(".cercadorTextual form").submit(function(e){ //Free text search
 		e.preventDefault();
@@ -83,7 +83,7 @@ jQuery(document).ready(function ($) {
 	});
 
 	$(".uoc_submitSearch_cercadorTextual").click(function(e){		
-		submitSearch(e);
+		submitSearch(e, searchParams);
 	});	
 
 	$(".tab.cercadorSectors h3").click(function(e){	
@@ -95,7 +95,7 @@ jQuery(document).ready(function ($) {
 	});	
 	
 	$(".uoc_submitSearch_cercadorSectors").click(function(e){		
-		submitSearch(e);
+		submitSearch(e, searchParams);
 	});
 });
 	
@@ -127,7 +127,7 @@ function getCurrentLanguage(){
 /***********************************************************************
 							FORM METHODS								
 ***********************************************************************/
-function submitSearch(caller){
+function submitSearch(caller, searchParams){
 	if(caller != null){
 		caller.preventDefault();	
 	}

@@ -142,10 +142,15 @@
 [uoc_ri_cercador_llista_ambit] other = "Ambito"
 
 [uoc_ri_mapaambits_cercaper_especialitzacio] other = "Ámbitos de especialización"
+[uoc_ri_mapaambits_cercaper_especialitzacio_pdf_title] other = "Mapa de investigación por ámbitos de especialización"
+[uoc_ri_mapaambits_cercaper_especialitzacio_pdf_description] other = "Organización de los grupos de investigación de la UOC por ámbitos de especialización"
 [uoc_ri_mapaambits_cercaper_ambit] other = "Busca por ámbito"
 [uoc_ri_mapaambits_cercaper_general] other = "Ámbitos generales"
+[uoc_ri_mapaambits_cercaper_general_pdf_title] other = "Mapa de investigación por ámbitos"
+[uoc_ri_mapaambits_cercaper_general_pdf_description] other = "Organización de los grupos de investigación de la UOC por ámbitos generales"
 [uoc_ri_mapaambits_titol] other = "Descubre cómo se organizan los grupos de investigación por..."
 [uoc_ri_mapaambits_pdf] other = "Descargar versión PDF"
+[uoc_ri_mapaambits_pdf_alert] other = "El contenido se descargará según las pestañas de ámbitos desplegadas en pantalla en ese momento."
 
 [uoc_ri_home_carousel_grups] other = "Grupos de investigación"
 [uoc_ri_home_carousel_investigadors] other = "Investigadores"

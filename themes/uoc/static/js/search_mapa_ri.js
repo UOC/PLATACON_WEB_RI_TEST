@@ -37,62 +37,26 @@ function getCurrentLanguage(){
 /***********************************************************************
 							GENERATE PDF								
 ***********************************************************************/
-async function generalPDF(title) {
+async function printPDF(title, description, content) {
 
-	var printContents = $("#printFragmentGeneral").html();
+	var printContents = $(content).html();
 	var printWindow = window.open();
 	printWindow.document.write('<html><head>');
 	printWindow.document.write('<link rel="stylesheet" href="//cv.uoc.edu/UOC/GEFv2/gef/css/gef.css"></link>');
 	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/styles.css"></link>');
-	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/alternative.css"></link><title>');
-	printWindow.document.write('</title></head>');
+	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/alternative.css"></link>');
+	printWindow.document.write('<title>UOC R&I Print</title></head>');
 
-
-	printWindow.document.write('<body class="pdf-rule"><h1>');
-	printWindow.document.write(title);
-	printWindow.document.write('</h1>');
+	printWindow.document.write('<body><div class="pdf-rule"><img src="/img/print-logo.png" alt="logo" style="width: 100%; max-height: none !important; height: auto !important;"><div class="center">');
+	printWindow.document.write('<h2>'+title+'</h2>');
+	printWindow.document.write('<h4>'+description+'</h4></div>');
 	printWindow.document.write(printContents);
-	printWindow.document.write('</body></html>');
-	
+	printWindow.document.write('</div></body></html>');
 
-	await new Promise(r => setTimeout(r, 600));
+	await new Promise(r => setTimeout(r, 1000));
 
 	printWindow.document.close();
 	printWindow.print();
-
-	await new Promise(r => setTimeout(r, 50));
-
-	
-	printWindow.close();
-}
-async function specialPDF(title) {
-
-	var printContents = $("#printFragmentSpecial").html();
-	var printWindow = window.open();
-	printWindow.document.write('<html><head>');
-	printWindow.document.write('<link rel="stylesheet" href="//cv.uoc.edu/UOC/GEFv2/gef/css/gef.css"></link>');
-	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/styles.css"></link>');
-	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/alternative.css"></link><title>');
-	printWindow.document.write('</title></head>');
-
-	printWindow.document.write('<body class="pdf-rule"><h1>');
-	printWindow.document.write(title);
-	printWindow.document.write('</h1>');
-	printWindow.document.write(printContents);
-	printWindow.document.write('</body></html>');
-
-	
-	await new Promise(r => setTimeout(r, 600));
-	
-	printWindow.document.close();
-	printWindow.print();
-	
-
-	await new Promise(r => setTimeout(r, 50));
-
-	
-	printWindow.close();
-
 }
 
 /***********************************************************************
@@ -111,10 +75,14 @@ var UOCSearchEngine = {
 				} else {
 					var items=data.hits.hit;
 					var result="<div class='card-in-acordeon'><div class='row'>";
+					let groupsFound=false;
 					for (var i = 0; i < items.length; i++) {
-						result+=UOCSearchEngine.getResultMarkup(items[i], i);
+						let response=UOCSearchEngine.getResultMarkup(items[i], i);
+						result+=response;
+						if(response) groupsFound=true;
 					}
 					result+="</div></div>";
+					if(!groupsFound) result="<p style='font-style:italic'>"+literals.results.noresults[getCurrentLanguage()]+"</p>";
 					targetElement.html(result);
 				}
 			}

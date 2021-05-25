@@ -192,8 +192,22 @@ dd {
     margin-bottom: 10px;
 }
 
-.pdf-rule > * {
+/* ----------------------------- Print CSS ---------------------- */
+
+.pdf-rule .center {
+    text-align: center;
+}
+.pdf-rule img {
+    display: none;
+}
+
+@media print {
+  .pdf-rule img {
+    display: block;
+  }
+  .pdf-rule {
     zoom:75%;
     text-decoration: none;
     pointer-events: none;
+  }
 }

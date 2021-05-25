@@ -72,10 +72,15 @@
 									{{ end }}
 								</div>
 							</div>
-							<button class="btn btn--primary float-right m-top-2y" onclick='specialPDF({{ T "uoc_ri_mapaambits_cercaper_especialitzacio" }});'>
-								<span class="icon icon--pdf"></span>
-								<span class="h5">{{T "uoc_ri_mapaambits_pdf"}}</span>
-							</button>
+							<div class="row">
+								<button class="btn btn--primary float-right m-top-2y" onclick='printPDF({{ T "uoc_ri_mapaambits_cercaper_especialitzacio_pdf_title" }}, {{ T "uoc_ri_mapaambits_cercaper_especialitzacio_pdf_description" }}, "#printFragmentSpecial");'>
+									<span class="icon icon--pdf"></span>
+									<span class="h5">{{T "uoc_ri_mapaambits_pdf"}}</span>
+								</button>
+							</div>
+							<div class="alert m-top-2y" role="alert" aria-atomic="true">
+							    {{T "uoc_ri_mapaambits_pdf_alert"}}
+							</div>
 						</section>
 					</div>
 					<div id="tab-content-2" data-tab-content="" role="tabpanel" aria-labelledby="tab-2" aria-hidden="false" class="tab-content cercaAmbitGeneral">
@@ -115,10 +120,15 @@
 									{{ end }}
 								</div>
 							</div>
-							<button class="btn btn--primary float-right m-top-2y" onclick='generalPDF({{ T "uoc_ri_mapaambits_cercaper_general" }});'>
-								<span class="icon icon--pdf"></span>
-								<span class="h5">{{T "uoc_ri_mapaambits_pdf"}}</span>
-							</button>
+							<div class="row">
+								<button class="btn btn--primary float-right m-top-2y" onclick='printPDF({{ T "uoc_ri_mapaambits_cercaper_general_pdf_title" }}, {{ T "uoc_ri_mapaambits_cercaper_general_pdf_description" }}, "#printFragmentGeneral");'>
+									<span class="icon icon--pdf"></span>
+									<span class="h5">{{T "uoc_ri_mapaambits_pdf"}}</span>
+								</button>
+							</div>
+							<div class="alert m-top-2y" role="alert" aria-atomic="true">
+							    {{T "uoc_ri_mapaambits_pdf_alert"}}
+							</div>
 						</section>
 					</div>
 				</div>
