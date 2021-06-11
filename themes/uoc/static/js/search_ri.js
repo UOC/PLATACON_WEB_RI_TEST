@@ -12,11 +12,11 @@ jQuery(document).ready(function ($) {
 	searchParams.target = 'cercadorFiltres';
 
     searchParams=parseQueryString(location.search);
-	//console.log('searchParams', searchParams);
+	console.log('searchParams', searchParams);
 	
 	switch(searchParams.target){
 		case 'cercadorFiltres':
-			//console.log('Tab: cercadorFiltres');
+			console.log('Tab: cercadorFiltres');
 			tab = 'cercadorFiltres';
 			querySearchEngine(searchParams);
 		break;
@@ -39,19 +39,19 @@ jQuery(document).ready(function ($) {
 	}
 
 	$(".uoc_submitSearch_cercadorFiltres").click(function(e){		
-		submitSearch(e, searchParams);
+		submitSearch(e);
 	});
 	$("#collapse-codi input[name='search_sbm']").click(function(e){		
-		submitSearch(e, searchParams);
+		submitSearch(e);
 	});
 	$(".tab.cercadorFiltres h3").click(function(e){	
 		e.preventDefault();
 		searchParams =	{};
 		tab = 'cercadorFiltres';
-		submitSearch(e, searchParams);
+		submitSearch(e);
 	});	
 	$('.filters-main__box').click(function(e) {
-		submitSearch(e, searchParams);
+		submitSearch(e);
 	});
 	$(".cercadorTextual form").submit(function(e){ //Free text search
 		e.preventDefault();
@@ -83,7 +83,7 @@ jQuery(document).ready(function ($) {
 	});
 
 	$(".uoc_submitSearch_cercadorTextual").click(function(e){		
-		submitSearch(e, searchParams);
+		submitSearch(e);
 	});	
 
 	$(".tab.cercadorSectors h3").click(function(e){	
@@ -95,7 +95,7 @@ jQuery(document).ready(function ($) {
 	});	
 	
 	$(".uoc_submitSearch_cercadorSectors").click(function(e){		
-		submitSearch(e, searchParams);
+		submitSearch(e);
 	});
 });
 	
@@ -127,12 +127,12 @@ function getCurrentLanguage(){
 /***********************************************************************
 							FORM METHODS								
 ***********************************************************************/
-function submitSearch(caller, searchParams){
+function submitSearch(caller){
 	if(caller != null){
 		caller.preventDefault();	
 	}
-	getSearchFormValues();
-	//console.log('submitSearch. Form values: ', searchParams);
+	searchParams = getSearchFormValues();
+	console.log('submitSearch. Form values: ', searchParams);
 
 	switch(tab){
 		case 'cercadorFiltres':
@@ -240,8 +240,11 @@ function getSearchFormValues(){
 			searchParams.visualitzacio.push("spin");
 		}
 	}*/
-	
-	
+
+	for (var key in searchParams) {
+		searchParams[key] = encodeURIComponent(searchParams[key]);
+	}
+	return searchParams;
 }
 
 
@@ -277,6 +280,9 @@ function querySearchEngine(searchParams){
 
 	var fitxaURL = buildQuery(searchParams)+"&tipus=fitxa";
 	var grupURL = buildQuery(searchParams)+"&tipus=grup";
+
+	console.log('URL cercador fitxa: ', fitxaURL);
+	console.log('URL cercador grup: ', grupURL);
 	
 	$(".cercadorFiltres .search").text("");
 	// Content_type: fitxa
