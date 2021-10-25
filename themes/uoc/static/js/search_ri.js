@@ -111,7 +111,7 @@ function parseQueryString(queryString){
 			var param = pairs[i].split("=");
 			var key = param[0];
 			var val = param[1];
-			searchParams[key] = val;
+			searchParams[key] = decodeURIComponent(val);
 		}
 	}
 	return searchParams;
