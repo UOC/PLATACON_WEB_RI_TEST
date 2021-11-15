@@ -30,11 +30,9 @@ jQuery(document).ready(function ($) {
 			//console.log('Tab: cercadorTextual');
 			$(".tab.cercadorTextual h3").click();
 			tab = 'cercadorTextual';	
-			if(searchParams.s){
-				$(".cercadorTextual input#search").val(searchParams.s);
-				querySearchEngine(searchParams);
-				queryInnovaSolSearchEngine(searchParams);			
-			}
+			$(".cercadorTextual input#search").val(searchParams.s);
+			querySearchEngine(searchParams);
+			queryInnovaSolSearchEngine(searchParams);			
 		break;
 	}
 
