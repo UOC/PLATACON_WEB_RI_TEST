@@ -86,8 +86,8 @@
 															{{ range $index, $element := .Params.ods }}
 															<div class="wrap-input">
 																<fieldset>
-																	<input role="group" aria-label="{{$element.display_name}}" type="checkbox" id="{{$element.value}}" value="{{$element.value}}">
-																	<label aria-label="{{$element.display_name}}" role="group" for="{{$element.value}}"><span class="sr-only">{{$element.display_name}}</span><img src="{{$element.img}}" alt=""></label>
+																	<input role="group" aria-label="{{$element.display_name}}" type="checkbox" id="ods_{{$index}}" value="{{$element.value}}">
+																	<label aria-label="{{$element.display_name}}" role="group" for="ods_{{$index}}"><span class="sr-only">{{$element.display_name}}</span><img src="{{$element.img}}" alt=""></label>
 																</fieldset>
 															</div>
 															{{ end }}
@@ -258,8 +258,8 @@
 													{{ range $index, $el := .Params.sector_productiu }}
 													<div class="wrap-input">
 														<fieldset>
-															<input role="group" aria-label="input{{$index}}" type="checkbox" id="sectors_{{$el.value}}" value="{{$el.value}}">
-															<label aria-label="label{{$index}}" for="sectors_{{$el.value}}">{{$el.display_name}}</label>
+															<input role="group" aria-label="input{{$index}}" type="checkbox" id="sectors_{{$index}}" value="{{$el.value}}">
+															<label aria-label="label{{$index}}" for="sectors_{{$index}}">{{$el.display_name}}</label>
 														</fieldset>
 													</div>
 													{{ end }}

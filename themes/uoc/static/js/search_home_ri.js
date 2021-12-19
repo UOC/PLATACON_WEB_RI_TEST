@@ -37,12 +37,12 @@ function getFormValues(){
 			});
 			if(searchParams.ambit_especialitzacio.includes($($(".tab-content.cercaFiltres .tag-list.ambits_especialitzacio li")[0]).attr("data-ambit"))){
 				delete searchParams["ambit_especialitzacio"];
+				searchParams.form_all_ambits_selected = true;
 			}
 		}
 		if($(".tab-content.cercaFiltres .tag-icons.ods .select-icon").length>0){								//ODS checked
 			searchParams.ods = [];
 			$(".tab-content.cercaFiltres .tag-icons.ods .select-icon").each(function( index ) {
-				console.log('ods:::::',$(this).text());
 				searchParams.ods.push($(this).find('#name-ods').text());
 			});	
 		}
@@ -78,14 +78,9 @@ function getFormValues(){
 function buildURL(searchParams,target){
 	//var cercadorURL comes from HUGO layout for home page
 	if(searchParams!=null){
-		var queryString = "?";
-		for (var key in searchParams) {
-			queryString+=key+"="+encodeURIComponent(searchParams[key])+"&";
-		}
-		queryString+="target="+target.trim();
-		//queryString = queryString.substring(0,queryString.length-1);		
-		cercadorURL += queryString;
-		
+		searchParams.target = target.trim();
+		var queryString="?s="+encodeURIComponent(JSON.stringify(searchParams));
+		cercadorURL += queryString;		
 	}
 	return cercadorURL;
 }

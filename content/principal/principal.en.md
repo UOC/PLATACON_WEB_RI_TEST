@@ -3,6 +3,9 @@ title: R&I in UOC
 language: en
 ambits_especialitzacio: 
   - 
+    display_name: "All"
+    value: ""
+  - 
     display_name: "Education and IT"
     value: "Education and IT"
   - 

@@ -13,6 +13,8 @@ jQuery(document).ready(function ($) {
 
     searchParams=parseQueryString(location.search);
 	console.log('searchParams', searchParams);
+
+	setSearchFormValues(searchParams);
 	
 	switch(searchParams.target){
 		case 'cercadorFiltres':
@@ -104,16 +106,13 @@ UTILS METHODS
 function parseQueryString(queryString){
 	var searchParams = {};
 	if(queryString!= null && queryString!=""){
-		var pairs = queryString.substring(1, queryString.length).split("&");
-		for (var i = 0; i < pairs.length; i++) {
-			var param = pairs[i].split("=");
-			var key = param[0];
-			var val = param[1];
-			searchParams[key] = decodeURIComponent(val);
-		}
+		var param = queryString.split("=");
+		var val = param[1];
+		searchParams = JSON.parse(decodeURIComponent(val));
 	}
 	return searchParams;
 }
+
 function getCurrentLanguage(){
 	var lang = document.documentElement.lang;
 	if(lang == null){
@@ -130,7 +129,6 @@ function submitSearch(caller){
 		caller.preventDefault();	
 	}
 	searchParams = getSearchFormValues();
-	console.log('submitSearch. Form values: ', searchParams);
 
 	switch(tab){
 		case 'cercadorFiltres':
@@ -169,15 +167,75 @@ function submitSearch(caller){
 		if(filtreV.includes("grup")){
 			$(".collapse.grup.results").removeClass("hidden");
 		}
-
-		console.log(filtreV);
 	}else{
 		$(".collapse.solucions.results").removeClass("hidden");
 		$(".collapse.spin.results").removeClass("hidden");
 		$(".collapse.fitxa.results").removeClass("hidden");
 		$(".collapse.grup.results").removeClass("hidden");
 	}	
+}
 
+function setSearchFormValues(searchParams){
+	//ambits d'especialització
+	if(searchParams.form_all_ambits_selected){
+		$("#collapse-ambits_especialitzacio input#ambit_especialitzacio_0").prop( "checked", true );
+	} else {
+		if(searchParams.ambit_especialitzacio && searchParams.ambit_especialitzacio.length>0){
+			for(ambit of searchParams.ambit_especialitzacio){
+				$("#collapse-ambits_especialitzacio input").each(function( index ) {
+					if($(this).val() == ambit) {
+						$("#collapse-ambits_especialitzacio input#ambit_especialitzacio_"+index).prop( "checked", true );
+					}
+				});	
+			}
+		}
+	}
+	//ods
+	if(searchParams.ods && searchParams.ods.length>0){
+		for(ods of searchParams.ods){
+			$("#collapse-ods input").each(function( index ) {
+				if($(this).val() == ods) {
+					$("#collapse-ods input#ods_"+index).prop( "checked", true );
+				}
+			});	
+		}
+	}
+	//centre
+	if(searchParams.target == 'cercadorFiltres'){
+		if(searchParams.centre && searchParams.centre.length>0){
+			for(centre of searchParams.centre){
+				$(".general-filter.centre input").each(function( index ) {
+					if($(this).val() == centre) {
+						$(".general-filter.centre input#center_"+index).prop( "checked", true );
+					}
+				});	
+			}
+		}
+	} else if(searchParams.target == 'cercadorSectors'){
+		if(searchParams.centre && searchParams.centre.length>0){
+			for(centre of searchParams.centre){
+				$(".general-filter.centre input").each(function( index ) {
+					if($(this).val() == centre) {
+						$(".general-filter.centre input#center_sectors_"+index).prop( "checked", true );
+					}
+				});	
+			}
+		}
+	}
+	//Unesco
+	if(searchParams.unesco){
+		$("select.unesco option[value="+searchParams.unesco+"]").attr('selected', 'selected');
+	}
+	//sectors productius
+	if(searchParams.sector_productiu && searchParams.sector_productiu.length>0){
+		for(sector of searchParams.sector_productiu){
+			$("#collapse-sector_productiu input").each(function( index ) {
+				if($(this).val() == sector) {
+					$("#collapse-sector_productiu input#sectors_"+index).prop( "checked", true );
+				}
+			});	
+		}
+	}
 }
 
 function getSearchFormValues(){
@@ -204,10 +262,6 @@ function getSearchFormValues(){
 		});	
 	}
 
-	/*var unescoFreeTextSearch = $("#collapse-codi input[name='searchWords']").val();		//UNESCO Free text search
-	if (unescoFreeTextSearch != null && unescoFreeTextSearch != ""){
-		searchParams.unesco = unescoFreeTextSearch;
-	}*/
 	if($("select.unesco").val().length>0){											//Unesco code
 		searchParams.unesco = $("select.unesco").val();
 	}
@@ -218,26 +272,6 @@ function getSearchFormValues(){
 			searchParams.centre.push($(this).val());
 		});	
 	}
-	/*if($(".general-filter.visualitzacio input:checked").length>0){
-		searchParams.visualitzacio = [];
-		$(".general-filter.visualitzacio input:checked").each(function( index ) {
-			searchParams.visualitzacio.push($(this).val());
-		});
-	} else {
-		searchParams.visualitzacio = [];
-		if(tab=="cercadorFiltres") {
-			searchParams.visualitzacio.push("grup");
-			searchParams.visualitzacio.push("fitxa");
-		} else if(tab=="cercadorSectors"){
-			searchParams.visualitzacio.push("solucions");
-			searchParams.visualitzacio.push("spin");
-		} else if(tab=="cercadorTextual"){
-			searchParams.visualitzacio.push("grup");
-			searchParams.visualitzacio.push("fitxa");
-			searchParams.visualitzacio.push("solucions");
-			searchParams.visualitzacio.push("spin");
-		}
-	}*/
 
 	for (var key in searchParams) {
 		searchParams[key] = encodeURIComponent(searchParams[key]);
