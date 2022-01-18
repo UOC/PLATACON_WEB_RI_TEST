@@ -2,45 +2,9 @@
 	"type" : "add",
 	"id" : {{ .Params.id | jsonify }},
 	"fields" : {
-		{{- $lang := .Params.language }}
-		{{- if ne $lang nil }}"idioma": {{ $lang | jsonify }},{{ end }}
-		{{- if and (isset .Params "imatge") (ne .Params.imatge nil) }}
-			{{- if and (isset .Params.imatge "url") (ne .Params.imatge.url nil) }}
-				"imatge_url": {{ .Params.imatge.url | jsonify }},
-			{{- end }}
-			{{- $textImatge := index (.Params.imatge.textImatge) 0 }}
-			{{- if and (isset $textImatge "alt") (ne $textImatge.alt nil) }}"imatge_alt": {{ $textImatge.alt | jsonify }}, {{ end }}
-			{{- if and (isset $textImatge "titol") (ne $textImatge.titol nil) }}"imatge_title": {{ $textImatge.titol | jsonify }},{{ end }}
-		{{- end }}
-		{{- if ne $.Params.nomCompleto nil }}"nom_investigador": {{ .Params.nomCompleto | jsonify }},{{ end }}
-		{{- if ne .Params.descripcioList nil }}
-			{{- $descripcio := index (.Params.descripcioList) 0 }}
-			"descripcio": {{ $descripcio.descripcio | jsonify }}, 
-		{{- end }}
-		{{- if ne .Params.nom nil }}"nom_grup": {{ .Params.nom | jsonify }}, {{ end }}
-		{{- $ambits := newScratch }}
-		{{- range .Params.ambitList }}{{ $ambit := index (.textAmbit) 0 }}{{ $ambits.Add "myScratch" (slice $ambit.descripcio) }}{{ end }}
-		{{- if ne ($ambits.Get "myScratch") nil }}"ambits": {{ $ambits.Get "myScratch" | jsonify }},{{ end }}
-		{{- $ambits := newScratch }}
-		{{- if and (isset .Params "ambitsExpecialitzacio") (ne .Params.ambitsEspecialitzacio nil) }}
-			{{- $ambits := newScratch }}
-			{{- range .Params.ambitsEspecialitzacio }}{{ $ambit := index (.textAmbit) 0 }}{{ if and (isset $ambit "descripcio") (ne $ambit.descripcio nil) }}{{ $ambits.Add "myScratch" (slice $ambit.descripcio) }}{{ end }}{{ end }}
-		{{- end }}
-		{{- $centres := newScratch }}
-		{{- range .Params.centreList }}{{ $centre := index (.textCentre) 0 }}{{ $centres.Add "myScratch" (slice $centre.descripcio) }}{{ end }}
-		{{- if ne ($centres.Get "myScratch") nil }}"centres": {{ $centres.Get "myScratch" | jsonify }},{{ end }}
-		{{- $odss := newScratch }}
-		{{- range .Params.odsList }}{{ $ods := index (.textODS) 0 }}{{ $odss.Add "myScratch" (slice $ods.descripcio) }}{{ end }}
-		{{- if ne ($odss.Get "myScratch") nil }}"ods": {{ $odss.Get "myScratch" | jsonify }},{{ end }}
-		{{- $projectes := newScratch }}
-		{{- range .Params.recercaTransferencia.llistaProjectes }}{{ $proj := index (.projecte.projecteText) 0 }}{{ if and (isset $proj "descripcio") (ne $proj.descripcio nil) }}{{ $projectes.Add "myScratch" (slice $proj.descripcio) }}{{ end }}{{ end }}
-		{{- if ne ($projectes.Get "myScratch") nil }}"projectes_noms" : {{ $projectes.Get "myScratch" | jsonify }},{{ end }}
-		{{- $publicacions := newScratch }}
-		{{- range .Params.publicacionsList }}{{ $publi := index (.publicacio.publicacioText) 0 }}{{ if and (isset $publi "descripcio") (ne $publi.descripcio nil) }}{{ $publicacions.Add "myScratch" (slice $publi.descripcio) }}{{ end }}{{ end }}
-		{{- if ne ($publicacions.Get "myScratch") nil }}"publicacions_descripcions": {{ $publicacions.Get "myScratch" | jsonify }},{{ end }}
 		"content": "",
 		"content_encoding": "utf-8",
-		"content_type": "grup",
+		"content_type": "solucions",
 		"resourcename": "{{ .Params.idp | jsonify }}",
 		"url": {{ .Params.uri | jsonify }}
 	}

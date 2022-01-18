@@ -3,3 +3,4 @@
   apiRI = ""
   authProviderBaseUrl = ""
   githubRepo = "UOC/PLATACON_WEB_RI_TEST"
+  talentUrl = "https://talent.am.test.uoc.es"
