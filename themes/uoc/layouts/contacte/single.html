@@ -78,6 +78,12 @@
 													<label aria-label="no_soc_un_robot" for="notARobot">{{ T "uoc_contact_not_a_robot" }}</label>
 												</fieldset>
                       </div>
+                      <div class="form-group">
+                      	<fieldset>
+													<input  aria-label="gdpr_input" type="checkbox" id="gdpr" value="" required>
+													<label aria-label="gdpr" for="gdpr"><a href="#modal" title="Abrir ventana modal" aria-label="Abrir ventana modal" role="button" data-modal-trigger>{{ $elem.gdpr }}</a></label>
+												</fieldset>
+                      </div>
                       <button type="submit" name="form_estudiants" class="btn btn--primary btn--block">{{ T "uoc_contact_send" }}</button>
 										</form>
 									</div>
@@ -94,7 +100,7 @@
 										</p>
 										<p>
 											{{ range $elem.urls }}
-												{{ . }}<br>
+												<a href="{{ . }}" target="_blank">{{ . }}</a><br>
 											{{ end }}
 										</p>
 									</div>
@@ -115,6 +121,31 @@
 		{{ partial "footer.html" . }}
 	</div>
 	{{ partial "ri_js_imports.html" . }}
+
+	<div id="modal" class="modal" data-modal>
+	  <div role="dialog" aria-labelledby="modal-title1" aria-describedby="modal-body1" class="modal__dialog" data-modal-dialog>
+	    <div class="modal__content">
+	      <div class="modal__header">
+	        <button aria-label="Cerrar" class="modal__close">
+	          <span aria-hidden="true" class="icon icon--close"></span>
+	          <span class="icon-alt">Cerrar</span>
+	        </button>
+	        <h4 id="modal-title1" class="h4">{{ .Params.gdpr.title }}</h4>
+	      </div>
+	      <div id="modal-body1" class="modal__body">
+	        <p>{{ .Params.gdpr.content_1 }}</p>
+	        <p>
+	        	{{ .Params.gdpr.content_2 }}<br>
+	        	{{ .Params.gdpr.content_3 }}<br>
+	        	{{ .Params.gdpr.content_4 }}<br>
+	        	{{ .Params.gdpr.content_5 }}<br>
+	        	{{ .Params.gdpr.content_6_1 }}<a href="mailto:{{ .Params.gdpr.content_6_2 }}">{{ .Params.gdpr.content_6_2 }}</a>{{ .Params.gdpr.content_6_3 }}<br>
+	        	{{ .Params.gdpr.content_7_1 }}<a href="{{ .Params.gdpr.content_7_2 }}" target="_blank">{{ .Params.gdpr.content_7_2 }}</a>
+	        </p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
   <script type="text/javascript">
 

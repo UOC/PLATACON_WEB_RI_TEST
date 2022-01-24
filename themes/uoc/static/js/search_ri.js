@@ -414,7 +414,6 @@ function queryInnovaSolSearchEngine(searchParams){
 				console.log("DATA SOLUCION FOUND->"+data.hits.found)          
                 var items=data.hits.hit;
                 var lista=["solucio_tec","patent","servei","spin_off"];
-                var items=data.hits.hit;
                 var dataPaginationGrupSolTec = [];
                 var dataPaginationGrupPatent = [];
                 var dataPaginationGrupServei = [];
