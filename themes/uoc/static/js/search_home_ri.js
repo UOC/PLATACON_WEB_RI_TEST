@@ -32,7 +32,6 @@ function getFormValues(){
 		if($(".tab-content.cercaFiltres .tag-list.ambits_especialitzacio .active").length>0){									//Ambits checked
 			searchParams.ambit_especialitzacio = [];
 			$(".tab-content.cercaFiltres .tag-list.ambits_especialitzacio .active").each(function( index ) {
-				console.log('adding value--->',$(this).attr("data-ambit"));
 				searchParams.ambit_especialitzacio.push($(this).attr("data-ambit"));
 			});
 			if(searchParams.ambit_especialitzacio.includes($($(".tab-content.cercaFiltres .tag-list.ambits_especialitzacio li")[0]).attr("data-ambit"))){
@@ -52,7 +51,6 @@ function getFormValues(){
 		if($(".tab-content.cercaFiltres .tag-list.centre .active").length>0){									//Centres checked
 			searchParams.centre = [];
 			$(".tab-content.cercaFiltres .tag-list.centre .active").each(function( index ) {
-				console.log('adding value--->',$(this).text());
 				searchParams.centre.push($(this).text());
 			});	
 		}
@@ -60,14 +58,12 @@ function getFormValues(){
 		if($(".tab-content.cercaSectors .tag-list.centre .active").length>0){									//Centres checked
 			searchParams.centre = [];
 			$(".tab-content.cercaSectors .tag-list.centre .active").each(function( index ) {
-				console.log('adding value--->',$(this).text());
 				searchParams.centre.push($(this).text());
 			});
 		}
 		if($(".tab-content.cercaSectors .tag-list.sector_productiu .active").length>0){									//sector_productiu checked
 			searchParams.sector_productiu = [];
 			$(".tab-content.cercaSectors .tag-list.sector_productiu .active").each(function( index ) {
-				console.log('adding value--->',$(this).text());
 				searchParams.sector_productiu.push($(this).text());
 			});
 		}

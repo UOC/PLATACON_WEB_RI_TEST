@@ -1,6 +1,6 @@
 {	"title" : "R&I in UOC",
 	"ambits_especialitzacio" : [
-		{"display_name" : "All areas", "value" : ""},
+		{"display_name" : "All areas", "value" : "All areas"},
 		{"display_name" : "Education and IT", "value" : "Education and IT"},
 		{"display_name" : "Social networking", "value" : "Social networking"},
 		{"display_name" : "City and Community", "value" : "City and Community"},

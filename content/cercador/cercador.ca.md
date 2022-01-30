@@ -1,6 +1,6 @@
 { "title" : "R&I a la UOC",
   "ambits_especialitzacio" : [ 
-    {"display_name" : "Tots", "value" : ""},
+    {"display_name" : "Tots", "value" : "Tots"},
     {"display_name" : "Educació i TIC", "value" : "Educació i TIC"}, 
     {"display_name" : "Societat en xarxa", "value" : "Societat en xarxa"}, 
     {"display_name" : "Ciutat i Comunitat", "value" : "Ciutat i Comunitat"}, 

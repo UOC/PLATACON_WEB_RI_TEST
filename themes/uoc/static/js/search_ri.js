@@ -253,6 +253,10 @@ function getSearchFormValues(){
 		$("#collapse-ambits_especialitzacio input:checked").each(function( index ) {
 			searchParams.ambit_especialitzacio.push($(this).val());
 		});	
+		if(searchParams.ambit_especialitzacio.includes('Tots') || searchParams.ambit_especialitzacio.includes('Todos') || searchParams.ambit_especialitzacio.includes('All areas')){
+			delete searchParams["ambit_especialitzacio"];
+			searchParams.form_all_ambits_selected = true;
+		}
 	}
 
 	if($("#collapse-ods input:checked").length>0){										//Ods checked
@@ -330,12 +334,11 @@ function querySearchEngine(searchParams){
 	}).done(
 		function(data, returnCode, request){
 			if(data.hits.found == 0){
-				console.log('querySearchEngine fitxa - zero hits found')
 				var dataPaginationFitxa = ["<p style='font-style:italic'>"+literals.noresults+"</p>"];
 				initPagination(dataPaginationFitxa, "fitxa");
 			} else {
 				var items=data.hits.hit;
-				console.log('querySearchEngine fitxa found -> ' +data.hits.found)
+				items = items.filter(item => item.fields.nom_investigador);
 				items.sort((a,b) => (a.fields.nom_investigador.toLowerCase() > b.fields.nom_investigador.toLowerCase()) ? 1 : ((b.fields.nom_investigador.toLowerCase() > a.fields.nom_investigador.toLowerCase()) ? -1 : 0));
 				var dataPaginationFitxa = [];
 				for (var i = 0; i < items.length; i++) {
