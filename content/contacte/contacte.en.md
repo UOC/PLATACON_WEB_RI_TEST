@@ -2,43 +2,28 @@
 	"title" : "R&I in UOC",
 	"sections" : [
 		{
-			"title" : "Digitalització de l'art, la cultura i el patrimoni",
-			"form" : "true",
-			"name" : "Unitat de Transferència del Coneixement",
-			"addr_1" : "Av. Carl Friedrich Gauss, 5, Edifici B3",
-			"addr_2" : "08060 Castelldefels (Barcelona)",
+			"name" : "Àrea de Recerca i Innovació",
+			"addr_1" : "Edifici 22@",
+			"addr_2" : "Rambla del Poblenou, 156",
+			"addr_3" : "08018 Barcelona",
 			"phones" : ["+34 934 50 52 00"],
-			"urls" : ["www.uoc.edu/portal/en/in3", "www.uoc.edu"]
-		},
-		{
-			"title" : "Seu Poblenou",
-			"form" : "true",
-			"name" : "Edifici 22@",
-			"addr_1" : "Rambla del Poblenou, 156",
-			"addr_2" : "08018 Barcelona",
-			"phones" : ["+00 000 00 00 00", "+00 000 00 00 01"],
-			"urls" : ["www.google.es"]
-		},
-		{
-			"title" : "Seu Central",
-			"form" : "false",
-			"name" : "Seu Central",
-			"addr_1" : "Avenida Tibidabo, 39-43",
-			"addr_2" : "08035 Barcelona",
-			"phones" : ["+00 000 00 00 00", "+00 000 00 00 01"],
-			"urls" : ["www.google.es"]
+			"email" : "area_ri@uoc.edu",
+			"urls" : ["https://research.uoc.edu/portal/en/ri/activitat-rdi/serveis-gestio-rdi/serveis-gestio-rdi.html"],
+			"youtube" : "https://www.youtube.com/embed/F9MD_IgBiMc",
+			"gdpr" : "I accept and consent to my personal data being managed in order to respond to the enquiry made"
 		}
 	],
-	"motius" : [
-		{"display_name" : "Select an option", "value" : ""},
-		{"display_name" : "Matriculació", "value" : "80#00#00#5285"},
-		{"display_name" : "Accés", "value" : "71#00#00#5290"},
-		{"display_name" : "Convalidacions", "value" : "73#00#00#5301"},
-		{"display_name" : "Beques", "value" : "75#00#00#5296"},
-		{"display_name" : "Avaluació", "value" : "74#00#00#5297"},
-		{"display_name" : "Recursos d'aprenentatge", "value" : "83#00#00#5298"},
-		{"display_name" : "Títols", "value" : "84#00#00#5299"},
-		{"display_name" : "Contacte i seus", "value" : "77#00#00#5300"},
-		{"display_name" : "Altres", "value" : "86#02#00#5284"}
-	]
+	"gdpr" : {
+		"title" : "ACCEPTANCE TREATMENT OF PERSONAL DATA PROCESSING:",
+		"content_1" : "I consent to the UOC processing the personal data provided in order to respond to the enquiry as follows:",
+		"content_2" : "DATA CONTROLLER: Fundació per a la Universitat Oberta de Catalunya.",
+		"content_3" : "PURPOSE: Respond to the enquiry made.",
+		"content_4" : "LAWFUL BASIS: The data subject's consent.",
+		"content_5" : "RECIPIENTS: No data to be transferred to third parties.",
+		"content_6_1" : "RIGHTS: You can at any time exercise your rights to access, rectification, deletion, opposition and other legally established rights by emailing ",
+		"content_6_2" : "fuoc_pd@uoc.edu",
+		"content_6_3" : " attaching a photocopy of a legally valid identity document.",
+		"content_7_1" : "Fully detailed information on this subject can be found in our privacy policy: ",
+		"content_7_2" : "http://www.uoc.edu/portal/en/_peu/avis_legal/politica-privacitat/index.html"
+	} 
 }
