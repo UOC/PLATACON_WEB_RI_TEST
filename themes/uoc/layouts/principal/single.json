@@ -73,7 +73,9 @@
 			{{with $s.Params.investigadors}}
 				{{$.Scratch.Set "investigadors" slice }}
 				{{- range .}}
-					{{$.Scratch.Add "investigadors" (slice .name)}}
+					{{if ne .name nil}}
+						{{$.Scratch.Add "investigadors" (slice .name)}}
+					{{end}}
 				{{end}}
 
 				{{if ne (index ($.Scratch.Get "investigadors") 0 ) nil}}
