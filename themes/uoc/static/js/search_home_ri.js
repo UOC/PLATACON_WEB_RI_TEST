@@ -76,6 +76,7 @@ function buildURL(searchParams,target){
 	if(searchParams!=null){
 		searchParams.target = target.trim();
 		var queryString="?s="+encodeURIComponent(JSON.stringify(searchParams));
+		cercadorURL = cercadorURL.split("?s=")[0]; // Delete old parameters
 		cercadorURL += queryString;		
 	}
 	return cercadorURL;
