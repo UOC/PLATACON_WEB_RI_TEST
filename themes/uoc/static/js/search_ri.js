@@ -107,7 +107,7 @@ function parseQueryString(queryString){
 	var searchParams = {};
 	if(queryString!= null && queryString!=""){
 		var param = queryString.split("=");
-		var val = param[1];
+		var val = param[param.length - 1];
 		searchParams = JSON.parse(decodeURIComponent(val));
 	}
 	return searchParams;
