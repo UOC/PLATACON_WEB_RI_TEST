@@ -18,11 +18,9 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<ul>
-							<li><span aria-hidden="true" class="icon icon--user"></span><span class="title">45</span>{{ T "uoc_ri_home_carousel_grups" }}</li>
-							<li><span aria-hidden="true" class="icon icon--search"></span><span class="title">1.200</span>{{ T "uoc_ri_home_carousel_investigadors" }}</li>
-							<li><span aria-hidden="true" class="icon icon--lab"></span><span class="title">2</span>{{ T "uoc_ri_home_carousel_centres" }}</li>
-							<li><span aria-hidden="true" class="icon icon--pencil"></span><span class="title">{{ T "uoc_ri_home_carousel_mesde" }} 100</span>{{ T "uoc_ri_home_carousel_solucions" }}</li>
-							<li><span aria-hidden="true" class="icon icon--profile"></span><span class="title">3</span>{{ T "uoc_ri_home_carousel_spinoff" }}</li>
+							{{ range .Params.infografia }}
+								<li><span aria-hidden="true" class="icon {{.icon}}"></span><span class="title">{{.number}}</span>{{.display_name}}</li>
+							{{ end }}
 						</ul>
 					</div>
 				</div>
