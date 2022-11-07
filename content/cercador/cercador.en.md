@@ -3,14 +3,8 @@
 		{"display_name" : "All areas", "value" : "All areas"},
 		{"display_name" : "Education and IT", "value" : "Education and IT"},
 		{"display_name" : "Social networking", "value" : "Social networking"},
-		{"display_name" : "City and Community", "value" : "City and Community"},
-		{"display_name" : "Creativity and digital culture", "value" : "Creativity and digital culture"},
-		{"display_name" : "Languages and cultures", "value" : "Languages and cultures"},
-		{"display_name" : "Knowledge", "value" : "Knowledge"},
-		{"display_name" : "Rights, politics and Internet", "value" : "Rights, politics and Internet"},
 		{"display_name" : "Public and planetary health", "value" : "Internet intelligence technologies"},
-		{"display_name" : "Internet intelligence technologies", "value" : "Internet intelligence technologies"},
-		{"display_name" : "Collaborative economy", "value" : "Collaborative economy"}
+		{"display_name" : "Other", "value" : "Other"}
 	], 
 	"ods" : [
 		{"display_name" : "(en)Fi de la pobresa", "value" : "Fi de la pobresa", "img":"/img/icons/icon_ods_color_01.svg"},

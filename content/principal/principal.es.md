@@ -12,29 +12,11 @@ ambits_especialitzacio:
     display_name: "Sociedad en red"
     value: "Sociedad en red"
   - 
-    display_name: "Ciudad y Comunidad"
-    value: "Ciudad y Comunidad"
-  - 
-    display_name: "Creatividad y cultura digital"
-    value: "Creatividad y cultura digital"
-  - 
-    display_name: "Lenguas y culturas"
-    value: "Lenguas y culturas"
-  - 
-    display_name: "Governanza del conocimiento"
-    value: "Governanza del conocimiento"
-  - 
-    display_name: "Derecho, política e Internet"
-    value: "Derecho, política e Internet"
-  - 
     display_name: "Salud pública i planetaria"
     value: "Salud pública i planetaria"
   - 
-    display_name: "Tecnologías de internet de inteligencia"
-    value: "Tecnologías de internet de inteligencia"
-  - 
-    display_name: "Economia colaborativa"
-    value: "Economia colaborativa"
+    display_name: "Otros"
+    value: "Otros"
 ods: 
   - 
     display_name: "Fi de la pobresa"
@@ -7673,4 +7655,21 @@ sector_productiu:
     value: Salud - eHealth
   - display_name: Educación - eLearning
     value: Educación - eLearning
+
+infografia:
+  - display_name: Grupos de investigación
+    number: 45
+    icon: icon--user
+  - display_name: Investigadores
+    number: 1200
+    icon: icon--search
+  - display_name: Centros de investigación
+    number: 2
+    icon: icon--lab
+  - display_name: Soluciones innovadoras para empresas
+    number: + de 100
+    icon: icon--pencil
+  - display_name: Spin-off
+    number: 3
+    icon: icon--profile        
 ---

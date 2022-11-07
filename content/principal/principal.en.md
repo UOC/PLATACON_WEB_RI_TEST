@@ -12,29 +12,11 @@ ambits_especialitzacio:
     display_name: "Social networking"
     value: "Social networking"
   - 
-    display_name: "City and Community"
-    value: "City and Community"
-  - 
-    display_name: "Creativity and digital culture"
-    value: "Creativity and digital culture"
-  - 
-    display_name: "Languages and cultures"
-    value: "Languages and cultures"
-  - 
-    display_name: "Knowledge"
-    value: "Knowledge"
-  - 
-    display_name: "Rights, politics and Internet"
-    value: "Rights, politics and Internet"
-  - 
     display_name: "Public and planetary health"
     value: "Public and planetary health"
   - 
-    display_name: "Internet intelligence technologies"
-    value: "Internet intelligence technologies"
-  - 
-    display_name: "Collaborative economy"
-    value: "Collaborative economy"
+    display_name: "Other"
+    value: "Other"
 ods: 
   - 
     display_name: "Fi de la pobresa"
@@ -7674,4 +7656,22 @@ sector_productiu:
     value: eHealth
   - display_name: Education - eLearning
     value: Education - eLearning
+
+infografia:
+  - display_name: Research groups
+    number: 45
+    icon: icon--user
+  - display_name: Researchers
+    number: 1200
+    icon: icon--search
+  - display_name: Research centres
+    number: 2
+    icon: icon--lab
+  - display_name: Innovative solutions for businesses
+    number: more than 100
+    icon: icon--pencil
+  - display_name: Spin-off
+    number: 3
+    icon: icon--profile
+
 ---
