@@ -80,7 +80,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: list
         fields:
           - {label: "Campo", name: "display_name", widget: string}
-          - {label: "Valor", name: "value", widget: string}   
+          - {label: "Valor", name: "value", widget: string, required: false}   
       - label: "ODS"
         name: "ods"
         widget: list
@@ -132,7 +132,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: list
         fields:
           - {label: "Field", name: "display_name", widget: string}
-          - {label: "value", name: "value", widget: string}   
+          - {label: "value", name: "value", widget: string, required: false}   
       - label: "SDG"
         name: "ods"
         widget: list
