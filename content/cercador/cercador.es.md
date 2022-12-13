@@ -3,7 +3,7 @@
 		{"display_name" : "Todos", "value" : "Todos"},
 		{"display_name" : "Educación y TIC", "value" : "Educación y TIC"},
 		{"display_name" : "Sociedad en red", "value" : "Sociedad en red"},
-		{"display_name" : "Salud pública i planetaria", "value" : "Salud pública i planetaria"},
+		{"display_name" : "Salud digital", "value" : "Salud digital"},
 		{"display_name" : "Otros", "value" : "Otros"}
 	], 
 	"ods" : [
@@ -28,7 +28,6 @@
 	"centre" : [
 		{"display_name" : "IN3", "value" : "IN3"},
 		{"display_name" : "e-Health Center", "value" : "eHealth Center"},
-		{"display_name" : "e-Learn Center", "value" : "eLearn Center"},
 		{"display_name" : "Estudis", "value" : "Estudis"}
 	],
 	"sector_productiu" : [

@@ -12,8 +12,8 @@ ambits_especialitzacio:
     display_name: "Societat en xarxa"
     value: "Societat en xarxa"
   - 
-    display_name: "Salut pública i planetària"
-    value: "Salut pública i planetària"
+    display_name: "Salut digital"
+    value: "Salut digital"
   - 
     display_name: "Altres"
     value: "Altres"

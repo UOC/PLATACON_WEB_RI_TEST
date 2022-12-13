@@ -12,8 +12,8 @@ ambits_especialitzacio:
     display_name: "Social networking"
     value: "Social networking"
   - 
-    display_name: "Public and planetary health"
-    value: "Public and planetary health"
+    display_name: "Digital health"
+    value: "Digital health"
   - 
     display_name: "Other"
     value: "Other"
