@@ -110,6 +110,12 @@ centre:
   - 
     display_name: "Estudis"
     value: "Estudis"
+  - 
+    display_name: "e-Health Center"
+    value: "e-Health Center"
+  - 
+    display_name: "e-Learn Center"
+    value: "e-Learn Center"
 unesco: 
   - 
     value: "11"

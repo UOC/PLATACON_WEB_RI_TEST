@@ -26,8 +26,10 @@
 		{"display_name" : "Aliança pel objectius", "value" : "Aliança pel objectius", "img":"/img/icons/icon_ods_color_17.svg"}
 	],
   "centre" : [ 
-    {"display_name" : "IN3", "value" : "IN3"}, 
-    {"display_name" : "Estudis", "value" : "Estudis"} 
+		{"display_name" : "IN3", "value" : "IN3"},
+		{"display_name" : "e-Health Center", "value" : "e-Health Center"},
+		{"display_name" : "e-Learn Center", "value" : "e-Learn Center"},
+		{"display_name" : "Estudis", "value" : "Estudis"}
   ],
   "sector_productiu" : [
       {"display_name" : "Art, Turisme i Llengües", "value" : "Art, Turisme i Llengües"},
