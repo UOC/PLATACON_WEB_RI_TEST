@@ -27,7 +27,7 @@
 	],
 	"centre" : [
 		{"display_name" : "IN3", "value" : "IN3"},
-		{"display_name" : "e-Health Center", "value" : "eHealth Center"},
+		{"display_name" : "eHealth Center", "value" : "eHealth Center"},
 		{"display_name" : "Estudis", "value" : "Estudis"}
 	],
 	"sector_productiu" : [
