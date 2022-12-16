@@ -1,231 +1,419 @@
-[uoc] other = "UOC"
-[uoc_ri] other = "R&I"
-[uoc_x] other = "UOC X"
-[uoc_corp] other = "UOC Corporate"
-[uoc_alumni] other = "UOC Alumni"
-[uoc_media] other = "UOC Media"
+[uoc] 
+other = "UOC"
+[uoc_ri] 
+other = "R&I"
+[uoc_x] 
+other = "UOC X"
+[uoc_corp] 
+other = "UOC Corporate"
+[uoc_alumni] 
+other = "UOC Alumni"
+[uoc_media] 
+other = "UOC Media"
 
-[uoc_meta_autor] other = "Universitat Oberta de Catalunya"
-[uoc_meta_keywords] other = "recerca, innovacio, transferencia, research, r&i, in3, eLC, escola de doctorat, uoc"
-[uoc_meta_description] other = "Coneix UOC R&I i l'activitat de recerca que se'n deriva. Innovació, recerca, transferència..."
+[uoc_meta_autor] 
+other = "Universitat Oberta de Catalunya"
+[uoc_meta_keywords] 
+other = "recerca, innovacio, transferencia, research, r&i, in3, eLC, escola de doctorat, uoc"
+[uoc_meta_description] 
+other = "Coneix UOC R&I i l'activitat de recerca que se'n deriva. Innovació, recerca, transferència..."
 
-[uoc_head_title] other = "UOC R&I - UOC (Universitat Oberta de Catalunya)"
-[uoc_head_description] other = "La UOC és una universitat online que ofereix cursos de grau, postgraus, màsters i idiomes"
+[uoc_head_title] 
+other = "UOC R&I - UOC (Universitat Oberta de Catalunya)"
+[uoc_head_description] 
+other = "La UOC és una universitat online que ofereix cursos de grau, postgraus, màsters i idiomes"
 
-[uoc_title] other = "Universitat Oberta de Catalunya"
-[uoc_title_menu] other = "Universitat Oberta<br aria-hidden='true'>de Catalunya"
-[uoc_title_ri] other = "UOC R&I"
-[uoc_social_more] other = "Ver más redes"
-[uoc_social] other = "En la red"
+[uoc_title] 
+other = "Universitat Oberta de Catalunya"
+[uoc_title_menu] 
+other = "Universitat Oberta<br aria-hidden='true'>de Catalunya"
+[uoc_title_ri] 
+other = "UOC R&I"
+[uoc_social_more] 
+other = "Ver más redes"
+[uoc_social] 
+other = "En la red"
 
-[uoc_lang] other = "(es)"
-[uoc_lang_button] other = "ES"
+[uoc_lang] 
+other = "(es)"
+[uoc_lang_button] 
+other = "ES"
 
-[uoc_lang_catalan] other = "Català"
-[uoc_lang_spanish] other = "Castellà"
-[uoc_lang_english] other = "Inglés"
+[uoc_lang_catalan] 
+other = "Català"
+[uoc_lang_spanish] 
+other = "Castellà"
+[uoc_lang_english] 
+other = "Inglés"
 
-[uoc_grup_expert] other = "Expert en"
+[uoc_grup_expert] 
+other = "Expert en"
 
-[uoc_grup_investigator] other = "Investigador principal" 
-[uoc_grup_ambit] other = "Ámbito" 
-[uoc_grup_center] other = "Centro" 
-[uoc_grup_code_unesco] other = "Colabora con" 
+[uoc_grup_investigator] 
+other = "Investigador principal" 
+[uoc_grup_ambit] 
+other = "Ámbito" 
+[uoc_grup_center] 
+other = "Centro" 
+[uoc_grup_code_unesco] 
+other = "Colabora con" 
 
-[uoc_grup_ods] other = "ODS" 
+[uoc_grup_ods] 
+other = "ODS" 
 
-[uoc_grup_menu_about] other = "Sobre el grupo" 
-[uoc_grup_menu_members] other = "Miembros" 
-[uoc_grup_menu_research] other = "Investigación y transferencia" 
-[uoc_grup_menu_publications] other = "Publicaciones" 
-[uoc_grup_menu_contact] other = "Contacto" 
+[uoc_grup_menu_about] 
+other = "Sobre el grupo" 
+[uoc_grup_menu_members] 
+other = "Miembros" 
+[uoc_grup_menu_research] 
+other = "Investigación y transferencia" 
+[uoc_grup_menu_publications] 
+other = "Publicaciones" 
+[uoc_grup_menu_contact] 
+other = "Contacto" 
 
-[uoc_grup_members_main] other = "Investigador principal" 
+[uoc_grup_members_main] 
+other = "Investigador principal" 
 
-[uoc_grup_research_lines] other = "Línias de investigación del grupo" 
-[uoc_grup_research_projects] other = "Proyectos" 
-[uoc_grup_research_transfer] other = "Transferencia" 
-[uoc_grup_research_other] other = "Otras actividades de investigación" 
+[uoc_grup_research_lines] 
+other = "Línias de investigación del grupo" 
+[uoc_grup_research_projects] 
+other = "Proyectos" 
+[uoc_grup_research_transfer] 
+other = "Transferencia" 
+[uoc_grup_research_other] 
+other = "Otras actividades de investigación" 
 
-[uoc_grup_footer_ri] other = "UOC R&I"
-[uoc_grup_footer_ri_org] other = "Com s'organitza l'R&I" 
-[uoc_grup_footer_ri_transfer] other = "Transferència" 
-[uoc_grup_footer_ri_collab] other = "Règim de col·laboració" 
-[uoc_grup_footer_ri_researchers] other = "Personal investigador" 
-[uoc_grup_footer_ri_visitants] other = "Professors visitants" 
-[uoc_grup_footer_ri_org_href] other = "https://research.uoc.edu/portal/es/ri/investigadors/organitzacio/index.html" 
-[uoc_grup_footer_ri_transfer_href] other = "https://research.uoc.edu/portal/es/ri/colaboracio/transferencia/index.html" 
-[uoc_grup_footer_ri_collab_href] other = "https://research.uoc.edu/portal/es/ri/colaboracio/regims-colaboracio/index.html" 
-[uoc_grup_footer_ri_researchers_href] other = "" 
-[uoc_grup_footer_ri_visitants_href] other = "https://research.uoc.edu/portal/es/ri/investigadors/professor-visitant/index.html" 
+[uoc_grup_footer_ri] 
+other = "UOC R&I"
+[uoc_grup_footer_ri_org] 
+other = "Com s'organitza l'R&I" 
+[uoc_grup_footer_ri_transfer] 
+other = "Transferència" 
+[uoc_grup_footer_ri_collab] 
+other = "Règim de col·laboració" 
+[uoc_grup_footer_ri_researchers] 
+other = "Personal investigador" 
+[uoc_grup_footer_ri_visitants] 
+other = "Professors visitants" 
+[uoc_grup_footer_ri_org_href] 
+other = "https://research.uoc.edu/portal/es/ri/investigadors/organitzacio/index.html" 
+[uoc_grup_footer_ri_transfer_href] 
+other = "https://research.uoc.edu/portal/es/ri/colaboracio/transferencia/index.html" 
+[uoc_grup_footer_ri_collab_href] 
+other = "https://research.uoc.edu/portal/es/ri/colaboracio/regims-colaboracio/index.html" 
+[uoc_grup_footer_ri_researchers_href] 
+other = "" 
+[uoc_grup_footer_ri_visitants_href] 
+other = "https://research.uoc.edu/portal/es/ri/investigadors/professor-visitant/index.html" 
 
-[uoc_grup_footer_explore] other = "Explora" 
-[uoc_grup_footer_explore_days] other = "Difusión y jornadas"
-[uoc_grup_footer_explore_hubbik] other = "Hubbik"
-[uoc_grup_footer_explore_prod] other = "Producció científica"
-[uoc_grup_footer_explore_projects] other = "Projectes d'R+I"
-[uoc_grup_footer_explore_memos] other = "Memòries d'R+I"
-[uoc_grup_footer_explore_catalog] other = "Catàleg d'oferta científico técnica" 
+[uoc_grup_footer_explore] 
+other = "Explora" 
+[uoc_grup_footer_explore_days] 
+other = "Difusión y jornadas"
+[uoc_grup_footer_explore_hubbik] 
+other = "Hubbik"
+[uoc_grup_footer_explore_prod] 
+other = "Producció científica"
+[uoc_grup_footer_explore_projects] 
+other = "Projectes d'R+I"
+[uoc_grup_footer_explore_memos] 
+other = "Memòries d'R+I"
+[uoc_grup_footer_explore_catalog] 
+other = "Catàleg d'oferta científico técnica" 
 
-[uoc_grup_footer_explore_days_href] other = "https://research.uoc.edu/opencms_portal2/opencms/ES/ri/agenda/list.html"
-[uoc_grup_footer_explore_hubbik_href] other = "https://hubbik.uoc.edu/es"
-[uoc_grup_footer_explore_prod_href] other = "https://research.uoc.edu/opencms_portal2/opencms/ES/ri/projectes-publicacions/publicacions/list.html"
-[uoc_grup_footer_explore_projects_href] other = "https://research.uoc.edu/opencms_portal2/opencms/ES/ri/projectes-publicacions/projectes/list.html"
-[uoc_grup_footer_explore_memos_href] other = "https://research.uoc.edu/opencms_portal2/opencms/ES/ri/projectes-publicacions/memories/list.html"
-[uoc_grup_footer_explore_catalog_href] other = "http://openaccess.uoc.edu/webapps/o2/?locale=es"
+[uoc_grup_footer_explore_days_href] 
+other = "https://research.uoc.edu/opencms_portal2/opencms/ES/ri/agenda/list.html"
+[uoc_grup_footer_explore_hubbik_href] 
+other = "https://hubbik.uoc.edu/es"
+[uoc_grup_footer_explore_prod_href] 
+other = "https://research.uoc.edu/opencms_portal2/opencms/ES/ri/projectes-publicacions/publicacions/list.html"
+[uoc_grup_footer_explore_projects_href] 
+other = "https://research.uoc.edu/opencms_portal2/opencms/ES/ri/projectes-publicacions/projectes/list.html"
+[uoc_grup_footer_explore_memos_href] 
+other = "https://research.uoc.edu/opencms_portal2/opencms/ES/ri/projectes-publicacions/memories/list.html"
+[uoc_grup_footer_explore_catalog_href] 
+other = "http://openaccess.uoc.edu/webapps/o2/?locale=es"
 
-[uoc_grup_footer_support] other = "Suport activitat R&I" 
-[uoc_grup_footer_support_library] other = "Biblioteca de recerca" 
-[uoc_grup_footer_support_vigilance] other = "Vigilància tecnològica" 
-[uoc_grup_footer_support_intranet] other = "La intranet de l'OSRT" 
+[uoc_grup_footer_support] 
+other = "Suport activitat R&I" 
+[uoc_grup_footer_support_library] 
+other = "Biblioteca de recerca" 
+[uoc_grup_footer_support_vigilance] 
+other = "Vigilància tecnològica" 
+[uoc_grup_footer_support_intranet] 
+other = "La intranet de l'OSRT" 
 
-[uoc_grup_footer_support_library_href] other = "http://biblioteca.uoc.edu/es/recerca" 
-[uoc_grup_footer_support_vigilance_href] other = "https://research.uoc.edu/portal/es/ri/activitat-rdi/vigilancia-tecnologica/index.html" 
-[uoc_grup_footer_support_intranet_href] other = "" 
+[uoc_grup_footer_support_library_href] 
+other = "http://biblioteca.uoc.edu/es/recerca" 
+[uoc_grup_footer_support_vigilance_href] 
+other = "https://research.uoc.edu/portal/es/ri/activitat-rdi/vigilancia-tecnologica/index.html" 
+[uoc_grup_footer_support_intranet_href] 
+other = "" 
 
-[uoc_grup_footer_osrt] other = "L'OSRT" 
-[uoc_grup_footer_osrt_contact] other = "Contacta'ns" 
-[uoc_grup_footer_osrt_team] other = "Equipo" 
-[uoc_grup_footer_osrt_team_href] other = "https://research.uoc.edu/portal/es/ri/activitat-rdi/equip/index.html" 
+[uoc_grup_footer_osrt] 
+other = "L'OSRT" 
+[uoc_grup_footer_osrt_contact] 
+other = "Contacta'ns" 
+[uoc_grup_footer_osrt_team] 
+other = "Equipo" 
+[uoc_grup_footer_osrt_team_href] 
+other = "https://research.uoc.edu/portal/es/ri/activitat-rdi/equip/index.html" 
 
-[uoc_grup_footer_about] other = "Sobre el web" 
-[uoc_grup_footer_about_rss] other = "RSS" 
-[uoc_grup_footer_about_legal] other = "Aviso legal" 
-[uoc_grup_footer_about_access] other = "Accessibilidad" 
-[uoc_grup_footer_about_hr] other = "HR Excellence in Research" 
-[uoc_grup_footer_about_legal_href] other = "https://www.uoc.edu/portal/es/_peu/avis_legal/index.html" 
-[uoc_grup_footer_about_access_href] other = "https://www.uoc.edu/portal/es/_peu/sobre_el_web/index.html" 
-[uoc_grup_footer_about_hr_href] other = "https://research.uoc.edu/portal/es/ri/activitat-rdi/hrs4r/index.html" 
+[uoc_grup_footer_about] 
+other = "Sobre el web" 
+[uoc_grup_footer_about_rss] 
+other = "RSS" 
+[uoc_grup_footer_about_legal] 
+other = "Aviso legal" 
+[uoc_grup_footer_about_access] 
+other = "Accessibilidad" 
+[uoc_grup_footer_about_hr] 
+other = "HR Excellence in Research" 
+[uoc_grup_footer_about_legal_href] 
+other = "https://www.uoc.edu/portal/es/_peu/avis_legal/index.html" 
+[uoc_grup_footer_about_access_href] 
+other = "https://www.uoc.edu/portal/es/_peu/sobre_el_web/index.html" 
+[uoc_grup_footer_about_hr_href] 
+other = "https://research.uoc.edu/portal/es/ri/activitat-rdi/hrs4r/index.html" 
 
-[uoc_grup_footer_social] other = "Xarxes socials (ca)" 
-[uoc_grup_footer_social_more] other = "Més" 
-[uoc_grup_footer_social_twitter_account1] other = "@UOCorst" 
-[uoc_grup_footer_social_twitter_account2] other = "@UOC_research" 
+[uoc_grup_footer_social] 
+other = "Xarxes socials (ca)" 
+[uoc_grup_footer_social_more] 
+other = "Més" 
+[uoc_grup_footer_social_twitter_account1] 
+other = "@UOCorst" 
+[uoc_grup_footer_social_twitter_account2] 
+other = "@UOC_research" 
 
-[uoc_grup_footer_links_new_window] other = "(El link s'obre en finestra nova)" 
+[uoc_grup_footer_links_new_window] 
+other = "(El link s'obre en finestra nova)" 
 
-[uoc_grup_footer_links_acup] other = "Associació Catalana d'Universitats Públiques (ACUP)" 
-[uoc_grup_footer_links_acup_acronym] other = "ACUP" 
-[uoc_grup_footer_links_vives] other = "Xarxa Vives d'Universitats" 
-[uoc_grup_footer_links_eua] other = "European Universities Association (EUA)"
+[uoc_grup_footer_links_acup] 
+other = "Associació Catalana d'Universitats Públiques (ACUP)" 
+[uoc_grup_footer_links_acup_acronym] 
+other = "ACUP" 
+[uoc_grup_footer_links_vives] 
+other = "Xarxa Vives d'Universitats" 
+[uoc_grup_footer_links_eua] 
+other = "European Universities Association (EUA)"
 
-[uoc_ri_menuitem_explore] other = "Explora R&I en la UOC"
-[uoc_ri_menuitem_researchmap] other = "Mapa de investigación por ámbitos"
-[uoc_ri_menuitem_broadcast] other = "Difusión"
-[uoc_ri_menuitem_contact] other = "Contacto"
+[uoc_ri_menuitem_explore] 
+other = "Explora R&I en la UOC"
+[uoc_ri_menuitem_researchmap] 
+other = "Mapa de investigación por ámbitos"
+[uoc_ri_menuitem_broadcast] 
+other = "Difusión"
+[uoc_ri_menuitem_contact] 
+other = "Contacto"
 
-[uoc_ri_cercadortab_filtres] other = "¿Quieres saber qué y quién investiga en la UOC?"
-[uoc_ri_cercadortab_sectors] other = "¿Buscas una solución innovadora para tú empresa?"
-[uoc_ri_cercadortab_text] other = "¿Prefieres hacer una búsqueda por palabras?"
+[uoc_ri_cercadortab_filtres] 
+other = "¿Quieres saber qué y quién investiga en la UOC?"
+[uoc_ri_cercadortab_sectors] 
+other = "¿Buscas una solución innovadora para tú empresa?"
+[uoc_ri_cercadortab_text] 
+other = "¿Prefieres hacer una búsqueda por palabras?"
 
-[uoc_ri_cercador_cercaper] other = "Busca por:"
-[uoc_ri_cercador_cercapersector] other = "Busca por sector productivo:"
-[uoc_ri_cercador_esborrafiltres] other = "Borrar filtros"
-[uoc_ri_cercador_cercar] other = "Buscar"
+[uoc_ri_cercador_cercaper] 
+other = "Busca por:"
+[uoc_ri_cercador_cercapersector] 
+other = "Busca por sector productivo:"
+[uoc_ri_cercador_esborrafiltres] 
+other = "Borrar filtros"
+[uoc_ri_cercador_cercar] 
+other = "Buscar"
 
-[uoc_ri_cercador_filtres_ambitsespecialitzacio] other = "Buscar por ámbitos de especialización"
-[uoc_ri_cercador_filtres_ods] other = "Buscar por objetivos ODS"
-[uoc_ri_cercador_filtres_unesco] other = "Buscar por código UNESCO"
-[uoc_ri_cercador_filtres_unesco_placeholder] other = "Códigos"
-[uoc_ri_cercador_filtres_centre] other = "Selecciona el centro adscrito:"
-[uoc_ri_cercador_filtres_visualitzacio] other = "Visualiza los resultados por:"
-[uoc_ri_cercador_filtres_sectors_productius] other = "Sectores productivos"
+[uoc_ri_cercador_filtres_ambitsespecialitzacio] 
+other = "Buscar por ámbitos de especialización"
+[uoc_ri_cercador_filtres_ods] 
+other = "Buscar por objetivos ODS"
+[uoc_ri_cercador_filtres_unesco] 
+other = "Buscar por código UNESCO"
+[uoc_ri_cercador_filtres_unesco_placeholder] 
+other = "Códigos"
+[uoc_ri_cercador_filtres_centre] 
+other = "Selecciona el centro adscrito:"
+[uoc_ri_cercador_filtres_visualitzacio] 
+other = "Visualiza los resultados por:"
+[uoc_ri_cercador_filtres_sectors_productius] 
+other = "Sectores productivos"
 
-[uoc_ri_cercador_grups] other = "Grupos de investigación"
-[uoc_ri_cercador_investigadors] other = "Investigadores"
-[uoc_ri_cercador_solucions] other = "Soluciones Innovadoras"
-[uoc_ri_cercador_solucions_tec] other ="Soluciones Tecnologicas"
-[uoc_ri_cercador_solucions_patents] other = "Patentes"
-[uoc_ri_cercador_solucions_serveis] other = "Servicio a la empresa"
-[uoc_ri_cercador_spin_off] other = "Spin-Offs"
+[uoc_ri_cercador_grups] 
+other = "Grupos de investigación"
+[uoc_ri_cercador_investigadors] 
+other = "Investigadores"
+[uoc_ri_cercador_solucions] 
+other = "Soluciones Innovadoras"
+[uoc_ri_cercador_solucions_tec] 
+other ="Soluciones Tecnologicas"
+[uoc_ri_cercador_solucions_patents] 
+other = "Patentes"
+[uoc_ri_cercador_solucions_serveis] 
+other = "Servicio a la empresa"
+[uoc_ri_cercador_spin_off] 
+other = "Spin-Offs"
 
-[uoc_ri_cercador_llista_ambit] other = "Ambito"
+[uoc_ri_cercador_llista_ambit] 
+other = "Ambito"
 
-[uoc_ri_mapaambits_cercaper_especialitzacio] other = "Ámbitos de especialización"
-[uoc_ri_mapaambits_cercaper_especialitzacio_pdf_title] other = "Mapa de investigación por ámbitos de especialización"
-[uoc_ri_mapaambits_cercaper_especialitzacio_pdf_description] other = "Organización de los grupos de investigación de la UOC por ámbitos de especialización"
-[uoc_ri_mapaambits_cercaper_ambit] other = "Busca por ámbito"
-[uoc_ri_mapaambits_cercaper_general] other = "Ámbitos generales"
-[uoc_ri_mapaambits_cercaper_general_pdf_title] other = "Mapa de investigación por ámbitos"
-[uoc_ri_mapaambits_cercaper_general_pdf_description] other = "Organización de los grupos de investigación de la UOC por ámbitos generales"
-[uoc_ri_mapaambits_titol] other = "Descubre cómo se organizan los grupos de investigación por..."
-[uoc_ri_mapaambits_pdf] other = "Descargar versión PDF"
-[uoc_ri_mapaambits_pdf_alert] other = "El contenido se descargará según las pestañas de ámbitos desplegadas en pantalla en ese momento."
+[uoc_ri_mapaambits_cercaper_especialitzacio] 
+other = "Ámbitos de especialización"
+[uoc_ri_mapaambits_cercaper_especialitzacio_pdf_title] 
+other = "Mapa de investigación por ámbitos de especialización"
+[uoc_ri_mapaambits_cercaper_especialitzacio_pdf_description] 
+other = "Organización de los grupos de investigación de la UOC por ámbitos de especialización"
+[uoc_ri_mapaambits_cercaper_ambit] 
+other = "Busca por ámbito"
+[uoc_ri_mapaambits_cercaper_general] 
+other = "Ámbitos generales"
+[uoc_ri_mapaambits_cercaper_general_pdf_title] 
+other = "Mapa de investigación por ámbitos"
+[uoc_ri_mapaambits_cercaper_general_pdf_description] 
+other = "Organización de los grupos de investigación de la UOC por ámbitos generales"
+[uoc_ri_mapaambits_titol] 
+other = "Descubre cómo se organizan los grupos de investigación por..."
+[uoc_ri_mapaambits_pdf] 
+other = "Descargar versión PDF"
+[uoc_ri_mapaambits_pdf_alert] 
+other = "El contenido se descargará según las pestañas de ámbitos desplegadas en pantalla en ese momento."
 
-[uoc_ri_home_carousel_grups] other = "Grupos de investigación"
-[uoc_ri_home_carousel_investigadors] other = "Investigadores"
-[uoc_ri_home_carousel_centres] other = "Centros de investigación"
-[uoc_ri_home_carousel_solucions] other = "Soluciones innovadoras para empresas"
-[uoc_ri_home_carousel_spinoff] other = "Spin-off"
-[uoc_ri_home_carousel_mesde] other = "+ de"
+[uoc_ri_home_carousel_grups] 
+other = "Grupos de investigación"
+[uoc_ri_home_carousel_investigadors] 
+other = "Investigadores"
+[uoc_ri_home_carousel_centres] 
+other = "Centros de investigación"
+[uoc_ri_home_carousel_solucions] 
+other = "Soluciones innovadoras para empresas"
+[uoc_ri_home_carousel_spinoff] 
+other = "Spin-off"
+[uoc_ri_home_carousel_mesde] 
+other = "+ de"
 
-[uoc_ri_home_search_consultaunesco] other = "Consulta los códigos"
-[uoc_ri_home_search_allcodes] other = "Todos los códigos"
-[uoc_ri_home_search_aplicafiltres] other = "Aplicar filtros"
+[uoc_ri_home_search_consultaunesco] 
+other = "Consulta los códigos"
+[uoc_ri_home_search_allcodes] 
+other = "Todos los códigos"
+[uoc_ri_home_search_aplicafiltres] 
+other = "Aplicar filtros"
 
-[uoc_ri_home_centres] other = "Centros"
-[uoc_ri_home_difusions] other = "Highlights"
+[uoc_ri_home_centres] 
+other = "Centros"
+[uoc_ri_home_difusions] 
+other = "Highlights"
 
-[uoc_difusio] other = "Difusión"
+[uoc_difusio] 
+other = "Difusión"
 
-[uoc_contact_parlem] other = "¿Hablamos?"
-[uoc_contact_parlem_subtitle] other = "Responderemos en 24 horas los 365 días del año"
-[uoc_contact_fields_name] other = "Nombre"
-[uoc_contact_fields_middlename] other = "Primer apellido"
-[uoc_contact_fields_lastname] other = "Segundo apellido"
-[uoc_contact_fields_phone] other = "Teléfono"
-[uoc_contact_fields_email] other = "Correo electrónico"
-[uoc_contact_fields_company] other = "Empresa/Institución"
-[uoc_contact_fields_subject] other = "Asunto"
-[uoc_contact_fields_textarea] other = "Tu consulta... / Limitación de 2500 caracteres"
-[uoc_contact_send] other = "Envia tu consulta"
-[uoc_contact_not_a_robot] other = "No soy un robot"
-[uoc_contact_response] other = "El mensaje se ha enviado correctamente. Gracias"
+[uoc_contact_parlem] 
+other = "¿Hablamos?"
+[uoc_contact_parlem_subtitle] 
+other = "Responderemos en 24 horas los 365 días del año"
+[uoc_contact_fields_name] 
+other = "Nombre"
+[uoc_contact_fields_middlename] 
+other = "Primer apellido"
+[uoc_contact_fields_lastname] 
+other = "Segundo apellido"
+[uoc_contact_fields_phone] 
+other = "Teléfono"
+[uoc_contact_fields_email] 
+other = "Correo electrónico"
+[uoc_contact_fields_company] 
+other = "Empresa/Institución"
+[uoc_contact_fields_subject] 
+other = "Asunto"
+[uoc_contact_fields_textarea] 
+other = "Tu consulta... / Limitación de 2500 caracteres"
+[uoc_contact_send] 
+other = "Envia tu consulta"
+[uoc_contact_not_a_robot] 
+other = "No soy un robot"
+[uoc_contact_response] 
+other = "El mensaje se ha enviado correctamente. Gracias"
 
-[uoc_pagination_next] other = "Siguiente"
-[uoc_pagination_prev] other = "Anterior"
+[uoc_pagination_next] 
+other = "Siguiente"
+[uoc_pagination_prev] 
+other = "Anterior"
 
-[uoc_search_noresults] other = "No se han encontrado resultados con los filtros utilizados."
-[uoc_search_connerror] other = "No se ha podido comunicar con el servicio de búsqueda."
-[uoc_language_change] other = "Cambio de idioma"
-[uoc_language_close] other = "Cerrar idioma (x)"
-[uoc_mainmenu_label] other = "Menú principal"
+[uoc_search_noresults] 
+other = "No se han encontrado resultados con los filtros utilizados."
+[uoc_search_connerror] 
+other = "No se ha podido comunicar con el servicio de búsqueda."
+[uoc_language_change] 
+other = "Cambio de idioma"
+[uoc_language_close] 
+other = "Cerrar idioma (x)"
+[uoc_mainmenu_label] 
+other = "Menú principal"
 
-[uoc_ri_tipologia] other = 'Tipología'
-[uoc_ri_sector] other = 'Sector'
-[uoc_ri_centre] other = 'Centro'
-[uoc_ri_keywords] other = 'Keywords'
-[uoc_ri_about_tec] other = 'Sobre la tecnología'
-[uoc_ri_about_pat] other = 'Sobre la patente'
-[uoc_ri_about_serv] other = 'Sobre el servicio'
-[uoc_ri_about_spin] other = 'Sobre el spin-off'
-[uoc_ri_aspect_innov] other = 'Aspectos Innovadores'
-[uoc_ri_apps] other = 'Aplicaciones'
-[uoc_ri_research_groups] other = 'Grupos de investigación'
-[uoc_ri_researchers] other = 'Investigadores'
-[uoc_ri_contacte] other = 'Contacto'
-[uoc_ri_casos_exit] other = "Casos de Éxito"
-[uoc_ri_productes_serveis] other = "Productos/Servicios"
-[uoc_ri_clients] other = "Clientes"
+[uoc_ri_tipologia] 
+other = 'Tipología'
+[uoc_ri_sector] 
+other = 'Sector'
+[uoc_ri_centre] 
+other = 'Centro'
+[uoc_ri_keywords] 
+other = 'Keywords'
+[uoc_ri_about_tec] 
+other = 'Sobre la tecnología'
+[uoc_ri_about_pat] 
+other = 'Sobre la patente'
+[uoc_ri_about_serv] 
+other = 'Sobre el servicio'
+[uoc_ri_about_spin] 
+other = 'Sobre el spin-off'
+[uoc_ri_aspect_innov] 
+other = 'Aspectos Innovadores'
+[uoc_ri_apps] 
+other = 'Aplicaciones'
+[uoc_ri_research_groups] 
+other = 'Grupos de investigación'
+[uoc_ri_researchers] 
+other = 'Investigadores'
+[uoc_ri_contacte] 
+other = 'Contacto'
+[uoc_ri_casos_exit] 
+other = "Casos de Éxito"
+[uoc_ri_productes_serveis] 
+other = "Productos/Servicios"
+[uoc_ri_clients] 
+other = "Clientes"
 
-[uoc_ri_docs] other = "Documentos Relacionados"
-[uoc_ri_detail_social_media] other = "En la red"
+[uoc_ri_docs] 
+other = "Documentos Relacionados"
+[uoc_ri_detail_social_media] 
+other = "En la red"
 
-[uoc_ri_difusio_novetats] other = "Consulta las últimas novedades, noticias y casos de éxito de la R&I en la UOC"
-[uoc_ri_difusio_noticia] other = "Notícia"
-[uoc_ri_difusio_esdeveniment] other = "Evento"
+[uoc_ri_difusio_novetats] 
+other = "Consulta las últimas novedades, noticias y casos de éxito de la R&I en la UOC"
+[uoc_ri_difusio_noticia] 
+other = "Notícia"
+[uoc_ri_difusio_esdeveniment] 
+other = "Evento"
 
-[uoc_ri_noticia] other = "#Notícia"
-[uoc_ri_esdeveniment] other = "#Evento"
+[uoc_ri_noticia] 
+other = "#Notícia"
+[uoc_ri_esdeveniment] 
+other = "#Evento"
 
-[uoc_ri_esdeveniment_On] other = "Dónde"
-[uoc_ri_esdeveniment_Quan] other = "Cuándo"
-[uoc_ri_casos_link] other = "Enlace al caso de éxito"
+[uoc_ri_esdeveniment_On] 
+other = "Dónde"
+[uoc_ri_esdeveniment_Quan] 
+other = "Cuándo"
+[uoc_ri_casos_link] 
+other = "Enlace al caso de éxito"
 
-[uoc_ri_cercador_llista_simple] other = "Vista de lista"
-[uoc_ri_cercador_llista_bloc] other = "Vista de bloque"
-[uoc_ri_cercador_paraulesACercar] other = "Palabras de búsqueda"
+[uoc_ri_cercador_llista_simple] 
+other = "Vista de lista"
+[uoc_ri_cercador_llista_bloc] 
+other = "Vista de bloque"
+[uoc_ri_cercador_paraulesACercar] 
+other = "Palabras de búsqueda"
 
-[uoc_ri_esdeveniment_inscripcio] other = "Inscripción"
+[uoc_ri_esdeveniment_inscripcio] 
+other = "Inscripción"
 
-[uoc_ri_difusions_link] other = "Enlace externo"
+[uoc_ri_difusions_link] 
+other = "Enlace externo"

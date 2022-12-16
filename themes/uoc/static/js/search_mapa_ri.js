@@ -76,6 +76,13 @@ var UOCSearchEngine = {
 					var items=data.hits.hit;
 					var result="<div class='card-in-acordeon'><div class='row'>";
 					let groupsFound=false;
+					//sort returned grups by name
+					items.sort(function (a, b) {
+						//nom_grup could be null if the element is a pdi element
+						let nameGroupA = a.fields.nom_grup != null ? a.fields.nom_grup : "";
+						let nameGroupB = b.fields.nom_grup != null ? b.fields.nom_grup : "";
+						return nameGroupA.localeCompare(nameGroupB);
+					});
 					for (var i = 0; i < items.length; i++) {
 						let response=UOCSearchEngine.getResultMarkup(items[i], i);
 						result+=response;
