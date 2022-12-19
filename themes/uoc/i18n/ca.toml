@@ -133,7 +133,7 @@ other = "https://research.uoc.edu/opencms_portal2/opencms/CA/ri/projectes-public
 [uoc_grup_footer_explore_memos_href] 
 other = "https://research.uoc.edu/opencms_portal2/opencms/CA/ri/projectes-publicacions/memories/list.html"
 [uoc_grup_footer_explore_catalog_href] 
-other = "http://openaccess.uoc.edu/webapps/o2/?locale=es" 
+other = "https://openaccess.uoc.edu/"
 
 [uoc_grup_footer_support] 
 other = "Suport activitat R&I" 
@@ -142,7 +142,7 @@ other = "Biblioteca de recerca"
 [uoc_grup_footer_support_vigilance] 
 other = "Vigilància tecnològica" 
 [uoc_grup_footer_support_intranet] 
-other = "La intranet de l'OSRT" 
+other = "La intranet de l'ARI" 
 [uoc_grup_footer_support_library_href] 
 other = "http://biblioteca.uoc.edu/ca/recerca" 
 [uoc_grup_footer_support_vigilance_href] 
@@ -151,7 +151,7 @@ other = "https://research.uoc.edu/portal/ca/ri/activitat-rdi/vigilancia-tecnolog
 other = "" 
 
 [uoc_grup_footer_osrt] 
-other = "L'OSRT" 
+other = "L'ARI" 
 [uoc_grup_footer_osrt_contact] 
 other = "Contacta'ns" 
 [uoc_grup_footer_osrt_team] 
@@ -174,7 +174,7 @@ other = "https://www.uoc.edu/portal/ca/_peu/avis_legal/index.html"
 [uoc_grup_footer_about_access_href] 
 other = "https://www.uoc.edu/portal/ca/_peu/sobre_el_web/index.html" 
 [uoc_grup_footer_about_hr_href] 
-other = "https://research.uoc.edu/portal/ca/ri/activitat-rdi/hrs4r/index.html" 
+other = "https://research.uoc.edu/portal/en/ri/colaboracio/hrs4r/index.html"
 
 [uoc_grup_footer_social] 
 other = "Xarxes socials (ca)" 
@@ -183,7 +183,7 @@ other = "Més"
 [uoc_grup_footer_social_twitter_account1] 
 other = "@UOCorst" 
 [uoc_grup_footer_social_twitter_account2] 
-other = "@UOC_research" 
+other = "@UOCotri" 
 
 [uoc_grup_footer_links_new_window] 
 other = "(El link s'obre en finestra nova)" 
