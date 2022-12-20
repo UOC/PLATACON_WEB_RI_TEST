@@ -16,12 +16,12 @@ other = "Universitat Oberta de Catalunya"
 [uoc_meta_keywords] 
 other = "recerca, innovacio, transferencia, research, r&i, in3, eLC, escola de doctorat, uoc"
 [uoc_meta_description] 
-other = "Coneix UOC R&I i l'activitat de recerca que se'n deriva. Innovació, recerca, transferència..."
+other = "Conoce UOC R&I y la actividad de investigación que se deriva. Innovación, investigación, transferencia..."
 
 [uoc_head_title] 
 other = "UOC R&I - UOC (Universitat Oberta de Catalunya)"
 [uoc_head_description] 
-other = "La UOC és una universitat online que ofereix cursos de grau, postgraus, màsters i idiomes"
+other = "La UOC es una universidad online que ofrece cursos de grado, postgrados, másteres e idiomas"
 
 [uoc_title] 
 other = "Universitat Oberta de Catalunya"
@@ -40,14 +40,14 @@ other = "(es)"
 other = "ES"
 
 [uoc_lang_catalan] 
-other = "Català"
+other = "Catalán"
 [uoc_lang_spanish] 
-other = "Castellà"
+other = "Castellano"
 [uoc_lang_english] 
 other = "Inglés"
 
 [uoc_grup_expert] 
-other = "Expert en"
+other = "Experto en"
 
 [uoc_grup_investigator] 
 other = "Investigador principal" 
@@ -76,7 +76,7 @@ other = "Contacto"
 other = "Investigador principal" 
 
 [uoc_grup_research_lines] 
-other = "Línias de investigación del grupo" 
+other = "Líneas de investigación del grupo" 
 [uoc_grup_research_projects] 
 other = "Proyectos" 
 [uoc_grup_research_transfer] 
@@ -87,15 +87,15 @@ other = "Otras actividades de investigación"
 [uoc_grup_footer_ri] 
 other = "UOC R&I"
 [uoc_grup_footer_ri_org] 
-other = "Com s'organitza l'R&I" 
+other = "Cómo se organiza el R&I" 
 [uoc_grup_footer_ri_transfer] 
-other = "Transferència" 
+other = "Transferencia" 
 [uoc_grup_footer_ri_collab] 
-other = "Règim de col·laboració" 
+other = "Régimen de colaboración" 
 [uoc_grup_footer_ri_researchers] 
 other = "Personal investigador" 
 [uoc_grup_footer_ri_visitants] 
-other = "Professors visitants" 
+other = "Profesores visitantes" 
 [uoc_grup_footer_ri_org_href] 
 other = "https://research.uoc.edu/portal/es/ri/investigadors/organitzacio/index.html" 
 [uoc_grup_footer_ri_transfer_href] 
@@ -114,13 +114,13 @@ other = "Difusión y jornadas"
 [uoc_grup_footer_explore_hubbik] 
 other = "Hubbik"
 [uoc_grup_footer_explore_prod] 
-other = "Producció científica"
+other = "Producción científica"
 [uoc_grup_footer_explore_projects] 
-other = "Projectes d'R+I"
+other = "Proyectos d'R+I"
 [uoc_grup_footer_explore_memos] 
-other = "Memòries d'R+I"
+other = "Memorias d'R+I"
 [uoc_grup_footer_explore_catalog] 
-other = "Catàleg d'oferta científico técnica" 
+other = "Catálogo de oferta científico técnica" 
 
 [uoc_grup_footer_explore_days_href] 
 other = "https://research.uoc.edu/opencms_portal2/opencms/ES/ri/agenda/list.html"
@@ -136,13 +136,13 @@ other = "https://research.uoc.edu/opencms_portal2/opencms/ES/ri/projectes-public
 other = "https://openaccess.uoc.edu/"
 
 [uoc_grup_footer_support] 
-other = "Suport activitat R&I" 
+other = "Soporte actividad R&I" 
 [uoc_grup_footer_support_library] 
-other = "Biblioteca de recerca" 
+other = "Biblioteca de investigación" 
 [uoc_grup_footer_support_vigilance] 
-other = "Vigilància tecnològica" 
+other = "Vigilancia tecnológica" 
 [uoc_grup_footer_support_intranet] 
-other = "La intranet de l'ARI" 
+other = "La intranet del ARI" 
 
 [uoc_grup_footer_support_library_href] 
 other = "http://biblioteca.uoc.edu/es/recerca" 
@@ -152,16 +152,16 @@ other = "https://research.uoc.edu/portal/es/ri/activitat-rdi/vigilancia-tecnolog
 other = "" 
 
 [uoc_grup_footer_osrt] 
-other = "L'ARI" 
+other = "El ARI" 
 [uoc_grup_footer_osrt_contact] 
-other = "Contacta'ns" 
+other = "Contáctanos" 
 [uoc_grup_footer_osrt_team] 
 other = "Equipo" 
 [uoc_grup_footer_osrt_team_href] 
 other = "https://research.uoc.edu/portal/es/ri/activitat-rdi/equip/index.html" 
 
 [uoc_grup_footer_about] 
-other = "Sobre el web" 
+other = "Sobre la web" 
 [uoc_grup_footer_about_rss] 
 other = "RSS" 
 [uoc_grup_footer_about_legal] 
@@ -175,19 +175,19 @@ other = "https://www.uoc.edu/portal/es/_peu/avis_legal/index.html"
 [uoc_grup_footer_about_access_href] 
 other = "https://www.uoc.edu/portal/es/_peu/sobre_el_web/index.html" 
 [uoc_grup_footer_about_hr_href] 
-other = "https://research.uoc.edu/portal/en/ri/colaboracio/hrs4r/index.html"
+other = "https://research.uoc.edu/portal/es/ri/colaboracio/hrs4r/index.html"
 
 [uoc_grup_footer_social] 
-other = "Xarxes socials (ca)" 
+other = "Redes sociales (ca)" 
 [uoc_grup_footer_social_more] 
-other = "Més" 
+other = "Más" 
 [uoc_grup_footer_social_twitter_account1] 
 other = "@UOCorst" 
 [uoc_grup_footer_social_twitter_account2] 
 other = "@UOCotri" 
 
 [uoc_grup_footer_links_new_window] 
-other = "(El link s'obre en finestra nova)" 
+other = "(El link se abre en una ventana nueva)" 
 
 [uoc_grup_footer_links_acup] 
 other = "Associació Catalana d'Universitats Públiques (ACUP)" 
@@ -245,7 +245,7 @@ other = "Investigadores"
 [uoc_ri_cercador_solucions] 
 other = "Soluciones Innovadoras"
 [uoc_ri_cercador_solucions_tec] 
-other ="Soluciones Tecnologicas"
+other ="Soluciones Tecnológicas"
 [uoc_ri_cercador_solucions_patents] 
 other = "Patentes"
 [uoc_ri_cercador_solucions_serveis] 
@@ -254,7 +254,7 @@ other = "Servicio a la empresa"
 other = "Spin-Offs"
 
 [uoc_ri_cercador_llista_ambit] 
-other = "Ambito"
+other = "Ámbito"
 
 [uoc_ri_mapaambits_cercaper_especialitzacio] 
 other = "Ámbitos de especialización"
@@ -389,7 +389,7 @@ other = "En la red"
 [uoc_ri_difusio_novetats] 
 other = "Consulta las últimas novedades, noticias y casos de éxito de la R&I en la UOC"
 [uoc_ri_difusio_noticia] 
-other = "Notícia"
+other = "Noticia"
 [uoc_ri_difusio_esdeveniment] 
 other = "Evento"
 
