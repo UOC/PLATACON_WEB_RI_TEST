@@ -5044,8 +5044,8 @@ ambits_especialitzacio:
     value: ""
   - display_name: Education and IT
     value: Education and IT
-  - display_name: Social networking
-    value: Social networking
+  - display_name: Network society
+    value: Network society
   - display_name: Digital health
     value: Digital health
   - display_name: Other
