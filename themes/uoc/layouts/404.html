@@ -2,7 +2,29 @@
 <html lang="{{.Site.Language.Lang}}">
 
 <head>
-    {{ partial "head.html" . }}
+    <title>{{with .Params.general.nom}}{{.}} - {{end}}{{with .Params.general.titol}}{{.}} - {{end}}{{ T "uoc_title_ri"}}</title>&#x9;
+    <meta charset="UTF-8">&#x9;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">&#x9;
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="author" content='{{ T "uoc_meta_autor"}}'>&#x9;
+    <meta name="keywords" content='{{ T "uoc_meta_keywords"}}'>&#x9;
+    <meta name="description" content='{{ T "uoc_meta_description"}}'>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KK9DCJ');</script>
+    <!-- End Google Tag Manager -->
+    
+    <link rel="stylesheet" href="//cv.uoc.edu/UOC/GEFv2/gef/css/gef.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/search.css">
+    <link rel="stylesheet" type="text/css" href="/css/alternative.css">
+    <link rel="stylesheet" type="text/css" href="/css/lib/ol.css">
+    <link rel="stylesheet" type="text/plain" href="/css/lib/leaflet.css">
+    <link rel="stylesheet" type="text/plain" href="/css/lib/esri-leaflet-geocoder.css">
 </head>
 
 <body>
