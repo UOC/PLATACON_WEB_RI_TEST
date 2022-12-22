@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "UOC Web R&I"
  
 theme = "uoc"
 uglyurls = true
@@ -8,10 +8,17 @@ uglyurls = true
 DefaultContentLanguage = "ca"
 DefaultContentLanguageInSubdir = "true"
 
-disableKinds = ["home","section","taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+disableKinds = ["home","section","taxonomy", "taxonomyTerm", "RSS"]
+
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
 [permalinks]
-  grup = "grup/:filename"
+  grups = "grups/:filename"
   principal = "/index"
   solucio_tec = "/solucio_tec/:filename"
   patent = "/patent/:filename"
@@ -30,7 +37,6 @@ disableKinds = ["home","section","taxonomy", "taxonomyTerm", "RSS", "sitemap", "
   [languages.en]
     url = "/en/"
     languageName = "English"
-
 
 [deployment]
 # By default, files are uploaded in an arbitrary order.
