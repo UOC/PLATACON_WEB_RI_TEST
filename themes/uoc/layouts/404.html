@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{.Site.Language.Lang}}">
+
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<body>
+    {{ partial "google_code_body.html" . }}
+	{{ partial "header.html" . }}
+	<div id="main-content" class="site-wrapper">
+        <h1 id="title"><a href="{{ "" | relLangURL }}">Page not found - Go Home</a></h1>
+        {{ partial "footer.html" . }}
+    </div>    
+</body>
+</html>
