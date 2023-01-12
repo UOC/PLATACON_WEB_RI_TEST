@@ -116,9 +116,9 @@ other = "Hubbik"
 [uoc_grup_footer_explore_prod] 
 other = "Producción científica"
 [uoc_grup_footer_explore_projects] 
-other = "Proyectos d'R+I"
+other = "Proyectos de R&I"
 [uoc_grup_footer_explore_memos] 
-other = "Memorias d'R+I"
+other = "Memorias de R&I"
 [uoc_grup_footer_explore_catalog] 
 other = "Catálogo de oferta científico técnica" 
 
@@ -198,6 +198,8 @@ other = "Xarxa Vives d'Universitats"
 [uoc_grup_footer_links_eua] 
 other = "European Universities Association (EUA)"
 
+[uoc_ri_ri_UOC] 
+other = "R&I en la UOC"
 [uoc_ri_menuitem_explore] 
 other = "Explora R&I en la UOC"
 [uoc_ri_menuitem_researchmap] 

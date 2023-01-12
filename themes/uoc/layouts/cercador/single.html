@@ -14,21 +14,21 @@
 <body onload="paint()">
 	{{ partial "google_code_body.html" . }}
 	{{ partial "header.html" . }}
-	<div class="site-wrapper"> 
+	<section class="site-wrapper"> 
 		<section data-tab-system="" class="filters-main search-list-collapse">
 			<div class="row">
 				<ul class="filters-main-block" role="tablist">
-					<li role="presentation" class="filters-main__box border-green box-green-selected col-xs-12">
+					<li role="presentation" class="filters-main__box border-light-blue box-light-blue-selected col-xs-12">
 						<a id="tab-1" href="#tab-content-1" role="tab" aria-controls="tab-content-1" aria-selected="true" data-tab-trigger="" class="tab is-active cercadorFiltres">
 							<h3>{{ T "uoc_ri_cercadortab_filtres" }}</h3>
 						</a>
 					</li>
-					<li role="presentation" class="filters-main__box border-green col-xs-12">
+					<li role="presentation" class="filters-main__box border-light-blue col-xs-12">
 						<a id="tab-2" href="#tab-content-2" role="tab" aria-controls="tab-content-2" aria-selected="false" data-tab-trigger="" class="tab cercadorSectors">
 							<h3>{{ T "uoc_ri_cercadortab_sectors" }}</h3>
 						</a>
 					</li>
-					<li role="presentation" class="filters-main__box border-green col-xs-12">
+					<li role="presentation" class="filters-main__box border-light-blue col-xs-12">
 						<a id="tab-3" href="#tab-content-3" role="tab" aria-controls="tab-content-3" aria-selected="false" data-tab-trigger="" class="tab cercadorTextual">
 							<h3>{{ T "uoc_ri_cercadortab_text" }}</h3>
 						</a>
@@ -44,8 +44,8 @@
 								<div class="col-xs-6">
 									<div class="list-vist">
 										<ul role="list">
-											<li class="vist-column js-Column active" role="listitem"><a><span class="icon icon--list-full"></a></span></li>
-											<li class="vist-list js-List" role="listitem"><a><span class="icon icon--list-simple"></span></a></li>
+											<li class="vist-column js-Column active" role="listitem"><a href><span class="icon icon--list-full"></a></span></li>
+											<li class="vist-list js-List" role="listitem"><a href><span class="icon icon--list-simple"></span></a></li>
 										</ul>
 									</div>
 								</div>
@@ -105,7 +105,7 @@
 															<form action="" class="search-form-container filters-main-search">
 																<div class="search-container-top">
 																	<div class="row">
-																		<div class="col-xs-2 col-md-1 col-lg-3 bg-green-light hover--dynamic-hover">
+																		<div class="col-xs-2 col-md-1 col-lg-3 bg-blue-light hover--dynamic-hover">
 																			<span aria-hidden="true"  class="icon-container hover--dynamic-hover">
 																				<input type="submit" value="Cerca" name="search_sbm" title='{{ T "uoc_ri_cercador_cercar" }}' onclick="" class="w100-inline-block">
 																				<span aria-hidden="true"  class="icon icon--search"></span>
@@ -649,8 +649,8 @@
 				</div>
 			
 		</section>
-		{{ partial "footer.html" . }}
-	</div>
+	</section>
+	{{ partial "footer.html" . }}
 	{{ partial "ri_js_imports.html" . }}
 	<script src="/js/search_ri.js"></script>
 	<script src="/js/lib/pagination.min.js"></script>

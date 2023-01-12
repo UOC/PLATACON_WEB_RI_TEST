@@ -42,7 +42,7 @@ async function printPDF(title, description, content) {
 	var printContents = $(content).html();
 	var printWindow = window.open();
 	printWindow.document.write('<html><head>');
-	printWindow.document.write('<link rel="stylesheet" href="//cv.uoc.edu/UOC/GEFv2/gef/css/gef.css"></link>');
+	printWindow.document.write('<link rel="stylesheet" href="//cv.uoc.edu/UOC/GEFv2/gef/css/gef.min.css?v=2.2.1"></link>');
 	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/styles.css"></link>');
 	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/alternative.css"></link>');
 	printWindow.document.write('<title>UOC R&I Print</title></head>');

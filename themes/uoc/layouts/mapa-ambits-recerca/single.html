@@ -8,11 +8,11 @@
 <body>
 	{{ partial "google_code_body.html" . }}
 	{{ partial "header.html" . }}
-	<div class="site-wrapper"> 
+	<section class="site-wrapper"> 
 		<section class="titol-pagina">
 			<div class="row">
 				<div class="col-xs-12">
-					<div class="page-title title-border-green">
+					<div class="page-title title-border-light-blue">
 						<h2>{{ T "uoc_ri_mapaambits_titol" }}</h2>
 					</div>
 				</div>
@@ -135,8 +135,8 @@
 			</div>
 			
 		</section>
-		{{ partial "footer.html" . }}
-	</div>
+	</section>
+	{{ partial "footer.html" . }}
 	{{ partial "ri_js_imports.html" . }}
 	
 	<script type="text/javascript">

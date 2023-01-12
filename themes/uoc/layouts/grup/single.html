@@ -8,11 +8,11 @@
 <body>
 	{{ partial "google_code_body.html" . }}
 	{{ partial "header.html" . }}
-	<div class="site-wrapper">
+	<section class="site-wrapper">
 		<section class="info-general">
 			<div class="row">
 				<div class="col-xs-12">
-					<div class="page-title title-border-green">
+					<div class="page-title title-border-light-blue">
 						<h2>{{ .Params.nom }}</h2>
 					</div>
 				</div>
@@ -427,8 +427,8 @@
 				</div>
 			</div>
 		</section>
-			{{ partial "footer.html" . }}
-	</div>
+	</section>
+	{{ partial "footer.html" . }}
 	<script src="/js/lib/jquery-3.3.1.min.js"></script>
 	<script src="/js/scripts_ri.js"></script>
 	<script src="/js/custom_ri.js"></script>

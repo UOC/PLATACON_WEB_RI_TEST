@@ -112,13 +112,13 @@ other = "https://research.uoc.edu/portal/ca/ri/investigadors/professor-visitant/
 [uoc_grup_footer_explore] 
 other = "Explora" 
 [uoc_grup_footer_explore_days] 
-other = "Difusió i Jornades"
+other = "Difusió i jornades"
 [uoc_grup_footer_explore_prod] 
 other = "Producció científica"
 [uoc_grup_footer_explore_projects] 
-other = "Projectes d'R+I"
+other = "Projectes d'R&I"
 [uoc_grup_footer_explore_memos] 
-other = "Memòries d'R+I"
+other = "Memòries d'R&I"
 [uoc_grup_footer_explore_catalog] 
 other = "Catàleg d'oferta científico técnica" 
 
@@ -197,6 +197,8 @@ other = "Xarxa Vives d'Universitats"
 [uoc_grup_footer_links_eua] 
 other = "European Universities Association (EUA)"
 
+[uoc_ri_ri_UOC] 
+other = "R&I a la UOC"
 [uoc_ri_menuitem_explore] 
 other = "Explora l'R&I a la UOC"
 [uoc_ri_menuitem_researchmap] 

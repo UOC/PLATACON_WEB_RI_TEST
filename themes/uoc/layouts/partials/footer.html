@@ -1,4 +1,4 @@
-<footer class="green-footer">
+<footer class="green-footer site-wrapper">
 	
 
 	{{ $url := (split .Permalink "/") }}
@@ -199,7 +199,7 @@
               </div>
 					</div>
 					<div class="col-xs-12 col-clear col-xs-12 col-clear page-footer-bottom">
-						<div class="col-xs-12 col-md-3 col-lg-2 col-clear page-bg pull-right">
+						<div class="col-xs-12 col-md-2 col-clear page-bg pull-right">
 							<div class="brand-box">
 								<div class="brand-box-content">
 									<ul class="social-links ruler ruler--thin ruler--secondary">
@@ -215,7 +215,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-12 col-md-9 col-lg-10 default-bg">
+						<div class="col-xs-12 col-md-10 default-bg">
 							<ul class="footer-text">
 								<li><a onclick="_gaq.push(['_trackEvent','Footer','Footer Links(Associacions)', '{{ T "uoc_grup_footer_links_acup_acronym"}} ({{ T "uoclang"}})']);" href="http://www.acup.cat/index.php?lang=ca" target="_blank"
 										title='{{ T "uoc_grup_footer_links_acup_acronym"}} {{ T "uoc_grup_footer_links_new_window"}}' aria-label='{{ T "uoc_grup_footer_links_acup_acronym"}} {{ T "uoc_grup_footer_links_new_window"}}'>{{ T "uoc_grup_footer_links_acup"}}</a></li>
@@ -228,22 +228,23 @@
 					</div>
 				</div>
 			</div>
-
-			<nav aria-label="Marques UOC"
-				class="col-xs-offset-3 col-xs-6 col-clear nav-brands-container nav-brands-reverse col-clear nav-brands-desktop">
+			<nav aria-label="Marques UOC" class="col-xs-offset-3 col-xs-6 col-clear nav-brands-container nav-brands-reverse col-clear nav-brands-desktop">
 				<ul class="nav-brands">
-					<li class="col-xs-12 col-md-2 selected"><a tabindex="0"	onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc"}}']);" href="https://www.uoc.edu/portal/ca/index.html" 
-						target="_self" class="w100-inline-block ruler ruler--secondary"><span class="brand-text">{{ T "uoc"}}</span></a></li>
-					<li class="col-xs-12 col-md-2"><a tabindex="0" onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc_title_ri"}}']);"	href="https://www.uoc.edu/portal/ca/ri/index.html" 
-						target="_self" class="w100-inline-block ruler ruler--ri"><span class="brand-text">{{ T "uoc_title_ri"}}</span></a></li>
-					<li class="col-xs-12 col-md-2"><a tabindex="0" onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc_x"}}']);" href="//x.uoc.edu/?ac=2535&amp;src=2535&amp;utm_source=LinkWebUOC&amp;utm_medium=Referrals&amp;utm_campaign=WebUOC&amp;utm_term&amp;utm_content=LinkEstudis"
-						target="_self" class="w100-inline-block ruler ruler--x"><span class="brand-text">{{ T "uoc_x"}}</span></a></li>
-					<li class="col-xs-12 col-md-2"><a tabindex="0" onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc_corp"}}']);" href="https://www.uoc.edu/portal/ca/corporate/index.html" 
-						target="_self" class="w100-inline-block ruler ruler--corporate"><span class="brand-text">{{ T "uoc_corp"}}</span></a></li>
-					<li class="col-xs-12 col-md-2"><a tabindex="0" onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc_alumni"}}']);" href="https://alumni.uoc.edu/opencms_alumni/opencms/ca/index.html" 
-						target="_self" class="w100-inline-block ruler ruler--alumni"><span class="brand-text">{{ T "uoc_alumni"}}</span></a></li>
-					<li class="col-xs-12 col-md-2"><a tabindex="0" onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc_media"}}']);" href="https://www.uoc.edu/portal/ca/media/index.html" 
-						target="_self" class="w100-inline-block ruler ruler--media"><span class="brand-text">{{ T "uoc_media"}}</span></a></li>
+					<li class="col-xs-12 col-md-2 selected">
+						<a tabindex="0"	onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc"}}']);" href="https://www.uoc.edu/portal/ca/index.html" target="_self" class="w100-inline-block ruler ruler--secondary">
+							<span class="brand-text">{{ T "uoc"}}</span>
+						</a>
+					</li>
+					<li class="col-xs-12 col-md-2">
+						<a tabindex="0" onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc_corp"}}']);" href="https://www.uoc.edu/portal/ca/corporate/index.html" target="_self" class="w100-inline-block ruler ruler--corporate">
+							<span class="brand-text">{{ T "uoc_corp"}}</span>
+						</a>
+					</li>
+					<li class="col-xs-12 col-md-2">
+						<a tabindex="0" onclick="_gaq.push(['_trackEvent','Header','Links Header', '{{ T "uoc_alumni"}}']);" href="https://alumni.uoc.edu/opencms_alumni/opencms/ca/index.html" target="_self" class="w100-inline-block ruler ruler--alumni">
+							<span class="brand-text">{{ T "uoc_alumni"}}</span>
+						</a>
+					</li>
 				</ul>
 			</nav>
 		</footer>

@@ -28,23 +28,23 @@
 		</div>
 	</section>
 
-	<div id="main-content" class="site-wrapper">
+	<section id="main-content" class="site-wrapper">
 		<section data-tab-system="" class="filters-main">
 			<div class="row">
 				<ul class="filters-main-block" role="tablist">
-					<li class="filters-main__box border-green" role="presentation">
+					<li class="filters-main__box border-light-blue" role="presentation">
 						<a id="tab-1" href="#tab-content-1" role="tab" aria-controls="tab-content-1" aria-selected="false" data-tab-trigger="" class="tab cercaFiltres">
 							<h3>{{ T "uoc_ri_cercadortab_filtres" }}</h3>
 							<span class="icon icon--arrow-down" aria-hidden='false'></span>
 						</a>
 					</li>
-					<li class="filters-main__box border-green" role="presentation">
+					<li class="filters-main__box border-light-blue" role="presentation">
 						<a id="tab-3" href="#tab-content-3" role="tab" aria-controls="tab-content-3" aria-selected="false" data-tab-trigger="" class="tab cercaSectors">
 							<h3>{{ T "uoc_ri_cercadortab_sectors" }}</h3>
 							<span class="icon icon--arrow-down" aria-hidden='false'></span>
 						</a>
 					</li>
-					<li class="filters-main__box border-green" role="presentation">
+					<li class="filters-main__box border-light-blue" role="presentation">
 						<a id="tab-2" href="#tab-content-2" role="tab" aria-controls="tab-content-2" aria-selected="false" data-tab-trigger="" class="tab cercaTextual">
 							<h3>{{ T "uoc_ri_cercadortab_text" }}</h3>
 							<span class="icon icon--arrow-down" aria-hidden='false'></span>
@@ -173,18 +173,18 @@
 											<div class="row" role="list">
 												{{ range $index, $element := .Params.centres_home }}
 													<div class="col-xs-12 col-md-3 centresHomeList" role="listitem">
-														<a class="card-absolute-link" href="{{$element.url}}" title="{{$element.title}}" aria-hidden='true'  tabindex="-1" target='_blank' aria-labelledby='centresHome_{{$index}}'></a>
-														<div class="card card--brand-corporate">
-															<div class="card__contents">
-																<h3 ><a id="centresHome_{{$index}}" href="{{$element.url}}">
-																	{{$element.title}}
-																	<span class="visually-hidden">{{T "uoc_ri_difusions_link"}}</span>
-																</a></h3>
-																<p>{{$element.description}}</p>
-																<div class="card-link-icon"><span class="icon icon--external-link" aria-hidden="true"></span></div>
+														<a href="{{$element.url}}" title="{{$element.title}}" aria-hidden='true'  tabindex="-1" target='_blank' aria-labelledby='centresHome_{{$index}}'>
+															<div class="card card--brand-corporate">
+																<div class="card__contents">
+																	<h3 id="centresHome_{{$index}}">
+																		{{$element.title}}
+																		<span class="visually-hidden">{{T "uoc_ri_difusions_link"}}</span>
+																	</h3>
+																	<p>{{$element.description}}</p>
+																	<div class="card-link-icon"><span class="icon icon--external-link" aria-hidden="true"></span></div>
+																</div>
 															</div>
-														</div>
-														
+														</a>
 													</div>
 												{{ end }}
 											</div>
@@ -239,8 +239,8 @@
 			</div>
 			
 		</section>
-		{{ partial "footer.html" . }}
-	</div>
+	</section>
+	{{ partial "footer.html" . }}
 	
 	{{ partial "ri_js_imports.html" . }}
 	<script src="/js/search_home_ri.js"></script>

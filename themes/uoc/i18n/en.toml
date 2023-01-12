@@ -119,7 +119,7 @@ other = "Scientific production"
 [uoc_grup_footer_explore_projects] 
 other = "R&I projects"
 [uoc_grup_footer_explore_memos] 
-other = "R+D+I reports"
+other = "R&I reports"
 [uoc_grup_footer_explore_catalog] 
 other = "Institutional research repository" 
 
@@ -198,6 +198,8 @@ other = "Xarxa Vives d'Universitats"
 [uoc_grup_footer_links_eua] 
 other = "European Universities Association (EUA)"
 
+[uoc_ri_ri_UOC] 
+other = "R&I in UOC"
 [uoc_ri_menuitem_explore] 
 other = "Explore R&I in UOC"
 [uoc_ri_menuitem_researchmap] 

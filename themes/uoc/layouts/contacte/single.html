@@ -8,12 +8,12 @@
 <body>
 	{{ partial "google_code_body.html" . }}
 	{{ partial "header.html" . }}
-	<div class="site-wrapper"> 
+	<section class="site-wrapper"> 
 		{{ range $index, $elem := .Params.sections }}
 			<section data-collapse-system="" class="destacado-contacto">
 				<div class="row">
 					<div data-collapse="" class="col-xs-12 col-clear collapse__wrapper uncollapsed">
-						<div class="page-title title-border-green">
+						<div class="page-title title-border-light-blue">
 							<h2>{{ T "uoc_contact_parlem" }}</h2>
 							<div class="page-title-collapsible"><a data-collapse-trigger="" data-collapse-system-trigger="" href="#" role="button" title="Texto descriptivo" aria-label="Texto descriptivo" aria-expanded="true" aria-controls="collapse__content{{ $index }}" class="collapse__trigger"><span aria-hidden="false" class="icon icon--arrow-down icon--after is-active-hidden float-right"></span><span aria-hidden="true" class="icon icon--arrow-up icon--after is-active-visible float-right"></span></a></div>
 						</div>
@@ -118,8 +118,8 @@
 				</div>
 			</section>
 		{{ end }}
-		{{ partial "footer.html" . }}
-	</div>
+	</section>
+	{{ partial "footer.html" . }}
 	{{ partial "ri_js_imports.html" . }}
 
 	<div id="modal" class="modal" data-modal>

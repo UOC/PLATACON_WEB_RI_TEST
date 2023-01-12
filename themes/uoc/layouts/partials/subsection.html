@@ -13,28 +13,4 @@
     <br>
 {{end}}
 {{with (index . 0).docs_rels}}
-<div class="card-in-acordeon" aria-hidden="true">
-    
-    <h4 class = "h4">{{ T "uoc_ri_docs" }}</h4>
-    {{$scratch := newScratch}}
-    {{$scratch.Set "idx" 1}}
-    {{ range . }}
-        {{ with .file}}
-            <div class="row" >
-                {{$doc := (print "static/" .)}}
-                {{$url := . }}
-                {{ with os.FileExists $doc}}
-                    {{$stat := os.Stat $doc }}
-                    <a id="docs" href="{{ $url }}" target="_blank" title='{{ T "uoc_ri_docs" }} ({{$scratch.Get "idx"}})'>
-                        <span class="icon icon--material-pdf" ></span>
-                        <!--File size in MB with 3 dec-->
-                        <span class="h5">{{index $doc 2}} ({{div (math.Round (div $stat.Size 1048.576)) 1000}} MB)</span>
-                    </a>
-                {{ end }}
-            </div>
-        {{ end }}
-        {{$scratch.Set "idx" (add ($scratch.Get "idx") 1)}}
-    {{end}}
-    
-    
-</div>{{end}}
+{{end}}

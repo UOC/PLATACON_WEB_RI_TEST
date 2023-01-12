@@ -1,139 +1,106 @@
-<header id="main-header-4" class="brand-header brand-ri header-4 uoc-ri" style="margin-bottom:0; z-index:1;">
-		<div class="header-container clearfix">
-			<div class="col-xs-12 col-clear nav-menu-top">
-				<div class="col-xs-2 col-sm-1 top-logo top-logo-desktop">
-					<a href="{{ "/" | relLangURL }}"><img src="/img/logo-uoc-ri-white.png" alt='{{ T "uoc_title"}} logo'></a>
-				</div>
-				<div class="col-xs-10 col-md-8 col-lg-8"><span
-						class="ruler ruler--dynamic ruler--white w100-inline-block"></span>
-					<h1 class="nav-menu-title title-more-size"> {{ T "uoc_ri"}}</h1><span
-						class="ruler ruler--dynamic ruler--white w100-inline-block"></span>
-				</div>
-				<div class="col-md-2 hidden-xs hidden-md"><span
-						class="ruler ruler--dynamic ruler--white w100-inline-block"></span>
-					<p class="nav-menu-title-aside"> {{ T "uoc_title"}}</p><span
-						class="ruler ruler--dynamic ruler--white w100-inline-block"></span>
-				</div>
-				<div class="col-md-1 hidden-xs hidden-md"><span
-						class="ruler ruler--dynamic ruler--white w100-inline-block">
-						<div data-dropdown="" class="dropdown language-drop-down">
-							<button data-dropdown-trigger="" aria-label='{{T "uoc_language_change" }} ({{ .Lang }})' aria-expanded="false"
-								aria-controls="dropdown__content4"
-								class="btn btn--primary dropdown__trigger">{{ T "uoc_lang_button" }}<span
-									class="icon icon--arrow-down icon--small bold m-left-x2"></span></button>
-							<div id="dropdown__content3" class="dropdown__content dropdown__list">
-								<button aria-label='{{T "uoc_language_close"}}' aria-controls="dropdown__content3"
-									data-dropdown-trigger="" class="btn btn--primary close"><span aria-hidden="true"
-									class="icon icon--close"></span></button>
-								{{ if .IsTranslated }}
-									<ul data-animated="false">
-										{{ range .AllTranslations }}
-											{{ if eq $.Site.Language.LanguageName .Language.LanguageName }}
-												<li class="dropdown__item is-active" aria-current="true">
-													<a href="#" lang="{{ .Language }}" class="dropdown__link">{{ .Language.LanguageName }}</a>
-												</li>
-											{{ else }}
-												<li class="dropdown__item" aria-current="false">
-													<a href="{{ .RelPermalink }}" lang="{{ .Language }}"
-														class="dropdown__link">{{ .Language.LanguageName }}</a>
-												</li>
-											{{ end }}
-										{{ end}}
-									</ul>
-								{{ end }}
+<header>
+	<div id="main-header-4" class="brand-header brand-secondary header-4">
+		 <div class="header-container clearfix">
+				<div class="col-clear nav-menu-top">
+					 <!-- Desktop version -->
+					 <div class="hidden-xs hidden-sm hidden-md">
+							<div class="top-logo top-logo-desktop"><a href="{{ "/index.html" | relLangURL }}"><img src="/img/logo-uoc-white.png" alt="Logo UOC"></a></div>
+							<div class="header-with-logo">
+								<div class="col-md-2">
+									<span class="ruler ruler--dynamic ruler--white w100-inline-block"></span>
+									<p class="nav-menu-title-aside"> {{ T "uoc_title"}}</p>
+									<span class="ruler ruler--dynamic ruler--white w100-inline-block"></span>
+							 	</div>
+								 <div class="col-md-9 col-lg-9">
+										<span class="ruler ruler--dynamic ruler--white w100-inline-block"></span>
+										<p class="nav-menu-title title-more-size"> {{ T "uoc_ri"}}</p>
+										<span class="ruler ruler--dynamic ruler--white w100-inline-block"></span>
+								 </div>
+								 <div class="col-md-1">
+										<span class="ruler ruler--dynamic ruler--white w100-inline-block"></span>
+										<div class="dropdown language-drop-down" data-dropdown="">
+											 <button class="btn dropdown__trigger" data-dropdown-trigger="" aria-label='{{T "uoc_language_change" }} ({{ .Lang }})' aria-expanded="false" aria-controls="dropdown__content4">{{ T "uoc_lang_button" }}<span class="icon icon--arrow-down icon--small bold m-left-x2" aria-hidden="true"></span></button>
+											 <div class="dropdown__content dropdown__list" id="dropdown__content4">
+													{{ if .IsTranslated }}
+														 <ul data-animated="false">
+																{{ range .AllTranslations }}
+																	 {{ if eq $.Site.Language.LanguageName .Language.LanguageName }}
+																			<li class="dropdown__item is-active" aria-current="true"><a href="#" lang="{{ .Language }}" class="dropdown__link">{{ .Language.LanguageName }}</a></li>
+																	 {{ else }}
+																			<li class="dropdown__item" aria-current="false"><a href="{{ .RelPermalink }}" lang="{{ .Language }}" class="dropdown__link">{{ .Language.LanguageName }}</a></li>
+																	 {{ end }}
+																{{ end}}
+														 </ul>
+													{{ end }}
+													<button class="btn btn--close" aria-label="Cerrar cambio de idioma (X)" aria-controls="dropdown__content4" data-dropdown-close=""><span class="icon icon--close" aria-hidden="true"></span></button>
+											 </div>
+										</div>
+										<span class="ruler ruler--dynamic ruler--white w100-inline-block"></span>
+								 </div>
 							</div>
-						</div>
-					</span><span class="ruler ruler--dynamic ruler--white w100-inline-block"></span><span
-						class="col-xs-1 hidden-lg hidden-xl">
-						<!-- botón de menú en tablet-->
-						<button title="Menu" aria-label="Menu" accesskey="m" aria-expanded="false"
-							aria-controls="main-nav-menu" data-scroll-toggle="" data-scroll-container="#main-header"
-							data-toggle="#main-nav-menu, .mobile-menu"
-							data-toggle-hide-class="hidden-xs hidden-sm hidden-md"
-							data-toggle-class-target-value="active" data-toggle-class-target="#main-header" tabindex="0"
-							class="mobile-button mobile-button-tablet p-bottom-y noscript"><span aria-hidden="true"
-								class="icon icon--zhamburguer"></span></button>
-						<noscript><a href="#main-nav-menu" aria-label="Menu" accesskey="m" aria-expanded="false"
-								aria-controls="search-form-container-mobile" data-toggle="#main-nav-menu, .mobile-menu"
-								data-toggle-hide-class="hidden-xs hidden-sm hidden-md"
-								data-toggle-class-target-value="active" data-toggle-class-target="#main-header"
-								tabindex="0" class="mobile-button mobile-button-tablet p-bottom-y"><span
-									aria-hidden="true" class="icon icon--zhamburguer"></span></a></noscript></span>
-				</div>
-			</div>
-			<div class="col-xs-12 col-clear nav-menu-top">
-				<!-- Desktop Header-->
-				<div class="hidden-xs hidden-sm">
-					<div class="col-xs-2 col-sm-1 top-logo hidden-lg hidden-xl hidden-sm hidden-md"><a href=""
-							class="top-logo"><img src="/img/logo-uoc-ri-mobile.png" alt="Logo UOC"></a></div>
-				</div>
-				<!-- Mobile Header-->
-				<div class="hidden-lg hidden-xl">
-					<!-- header-mobile.inc-->
-					<!-- Menu closed-->
-					<div class="mobile-menu">
-						<div class="menu-mobile-container">
-							<div class="mobile-buttons">
-								<div class="col-xs-4 p-left-x2">
-									<button aria-label="Menu" title="Menu" accesskey="m" aria-expanded="false"
-										aria-controls="main-nav-menu" data-scroll-toggle=""
-										data-scroll-container="#main-header" data-toggle="#main-nav-menu, .mobile-menu"
-										data-toggle-hide-class="hidden-xs hidden-sm hidden-md"
-										data-toggle-class-target-value="active" data-toggle-class-target="#main-header"
-										tabindex="0"
-										class="mobile-button non-active-color hover--dynamic-hover noscript menu-bar"><span
-											aria-hidden="true" class="icon icon--zhamburguer"></span></button>
-									<noscript><a href="#main-nav-menu" aria-label="Menu" title="Menu" accesskey="m"
-											aria-expanded="false" aria-controls="search-form-container-mobile"
-											data-toggle="#main-nav-menu, .mobile-menu"
-											data-toggle-hide-class="hidden-xs hidden-sm hidden-md" tabindex="0"
-											class="mobile-button non-active-color hover--dynamic-hover"><span
-												aria-hidden="true" class="icon icon--zhamburguer"></span></a></noscript>
-								</div>
+					 </div>
+					 <!-- Mobile version -->
+					 <div class="hidden-lg hidden-xl">
+							<div class="mobile-menu">
+								 <div class="menu-mobile-container">
+										<div class="top-logo"><a href="{{ "/index.html" | relLangURL }}"><img src="/img/logo-uoc-white.png" alt="Logo UOC"></a></div>
+										<div class="top-slogan">
+											<div class="col-xs-7 col-sm-7 title-wrapper"><span class="ruler ruler--double ruler--white ruler--dynamic nav-menu-title">Universitat Oberta&nbsp;<br aria-hidden="true">de Catalunya</span></div>
+											<div class="col-xs-5 col-sm-5 title-wrapper"><span class="ruler ruler--double ruler--white ruler--dynamic nav-menu-title left-title">R&amp;I</span></div>
+										</div>
+										<div class="mobile-buttons">
+											 <div class="virtual-campus-button-container-mobile border-color-dynamic"><a  href="#main-nav-menu" aria-label="Menu" title="Menu" accesskey="m"
+													aria-expanded="false" aria-controls="search-form-container-mobile"
+													data-toggle="#main-nav-menu"
+													data-toggle-hide-class="hidden-xs hidden-sm hidden-md" tabindex="0"
+													class="mobile-button non-active-color hover--dynamic-hover"><span aria-hidden="true" class="icon icon--zhamburguer"></span><span class="icon-alt">Menu</span></a></div>
+										</div>
+								 </div>
 							</div>
-						</div>
-					</div>
-					<!-- Menu open-->
-					<div class="hidden-xs hidden-sm hidden-md mobile-menu">
-						<button data-scroll-unlock="" data-scroll-container="#main-header"
-							data-toggle="#main-nav-menu, .mobile-menu"
-							data-toggle-hide-class="hidden-xs hidden-sm hidden-md"
-							data-toggle-class-target-value="active"
-							data-toggle-class-target="#main-header, .mobile-menu" aria-label="Tancar menú"
-							class="pull-right clickable btn-close"><span aria-hidden="true"
-								class="icon icon--close"></span></button>
-					</div>
+					 </div>
 				</div>
-			</div>
-			<!-- Navigation -->
-			<div class="col-xs-12 col-clear nav-menu-container uoc-ri"> 
-	            {{ with .Site.GetPage "/principal" }}<h2>{{ .Title }}</h2>{{ end }}
-	          <div id="nav-menu-scrollable-container-expand" style="margin-bottom: 1em;">
-	            <div id="nav-menu-scrollable-container" class="nav-menu-scrollable-container">
-	              <nav id="main-nav-menu" aria-label="Menú de navegació" class="nav-menu nav-menu-soft-dropdown hidden-xs hidden-sm hidden-md">
-	                <ul role="tablist">
-	                  <li tabindex="-1" class="col-xs-12 col-lg-2" >
-	                    <button onclick="location.href='{{ "index.html" | relLangURL }}';" value="{{ T "uoc_ri_menuitem_explore" }}" class="clickable" role="tab"><span>{{ T "uoc_ri_menuitem_explore" }}</span></button>
-	                  </li>
-	                  <li tabindex="-1" class="col-xs-12 col-lg-2">
-	                    <button onclick="location.href='{{ "mapa-ambits-recerca/mapa-ambits-recerca.html" | relLangURL }}';" value="{{ T "uoc_ri_menuitem_researchmap" }}" class="clickable" role="tab"><span>{{ T "uoc_ri_menuitem_researchmap" }}</span></button>
-					  </li>
-					  <li tabindex="-1" class="col-xs-12 col-lg-2">
-						<button onclick="location.href='{{ "difusions/difusions.html" | relLangURL }}';" value="{{ T "uoc_ri_menuitem_broadcast" }}" class="clickable" role="tab"><span>{{ T "uoc_ri_menuitem_broadcast" }}</span></button>
-						</li>
-	                  <li tabindex="-1" class="col-xs-12 col-lg-2">
-	                    <button onclick="location.href='{{ "contacte/contacte.html" | relLangURL }}';" value="{{ T "uoc_ri_menuitem_contact" }}" class="clickable" role="tab"><span>{{ T "uoc_ri_menuitem_contact" }}</span></button>
-	                  </li>
-	                  <li tabindex="-1" class="col-xs-12 col-lg-2 hidden-xs hidden-sm hidden-md"><span class="borders"></span></li>
-	                  <li tabindex="-1" class="col-xs-12 col-lg-2 hidden-xs hidden-sm hidden-md"><span class="borders"></span></li>
-	                </ul>
-	              </nav>
-	            </div>
-	          </div>
-	        </div>
-			<!-- End navigation -->
-			<span id="campus-page-overlay" data-toggle-class-target="#campus-page-overlay"
-				data-toggle="#login-dropdown header" data-toggle-group=".dropdown-button-header"
-				class="page-overlay clickable hide"></span>
-		</div>
-	</header>
+		 </div>
+	</div>
+	<!-- Navigation -->
+	<div class="col-xs-12 col-clear"> 
+		 <div class="nav-menu-container uoc-ri">
+				<h1 class="m-2y">{{ T "uoc_ri_ri_UOC" }}</h1>
+				<div id="nav-menu-scrollable-container-expand" style="margin-bottom: 1em;">
+					 <div id="nav-menu-scrollable-container" class="nav-menu-scrollable-container">
+							<nav id="main-nav-menu" aria-label="Menú de navegació" class="nav-menu nav-menu-soft-dropdown hidden-xs hidden-sm hidden-md">
+								 <ul role="tablist">
+										<li tabindex="-1" class="col-xs-12 col-lg-2" >
+											 <button onclick="location.href='{{ "index.html" | relLangURL }}';" value="{{ T "uoc_ri_menuitem_explore" }}" class="clickable" role="tab"><span>{{ T "uoc_ri_menuitem_explore" }}</span></button>
+										</li>
+										<li tabindex="-1" class="col-xs-12 col-lg-2">
+											 <button onclick="location.href='{{ "mapa-ambits-recerca/mapa-ambits-recerca.html" | relLangURL }}';" value="{{ T "uoc_ri_menuitem_researchmap" }}" class="clickable" role="tab"><span>{{ T "uoc_ri_menuitem_researchmap" }}</span></button>
+										</li>
+										<li tabindex="-1" class="col-xs-12 col-lg-2">
+											 <button onclick="location.href='{{ "difusions/difusions.html" | relLangURL }}';" value="{{ T "uoc_ri_menuitem_broadcast" }}" class="clickable" role="tab"><span>{{ T "uoc_ri_menuitem_broadcast" }}</span></button>
+										</li>
+										<li tabindex="-1" class="col-xs-12 col-lg-2">
+											 <button onclick="location.href='{{ "contacte/contacte.html" | relLangURL }}';" value="{{ T "uoc_ri_menuitem_contact" }}" class="clickable" role="tab"><span>{{ T "uoc_ri_menuitem_contact" }}</span></button>
+										</li>
+										<li tabindex="-1" class="col-xs-12 col-lg-2 hidden-xs hidden-sm hidden-md"><span class="borders"></span></li>
+										<li tabindex="-1" class="col-xs-12 col-lg-2 hidden-xs hidden-sm hidden-md"><span class="borders"></span></li>
+								 </ul>
+								 <div class="hidden-lg hidden-xl ruler full-width p-x2 p-y2 m-2y">
+
+										{{ if .IsTranslated }}
+											 {{ range $elem_index, $elem_val := .AllTranslations }}
+													{{ if gt $elem_index 0 }}  /  {{end}}
+													{{ if eq $.Site.Language.LanguageName $elem_val.Language.LanguageName }}
+														 <b><a href="#" lang="{{ $elem_val.Language }}">{{ $elem_val.Language.LanguageName }}</a></b>
+													{{ else }}
+														 <a href="{{ $elem_val.RelPermalink }}" lang="{{ $elem_val.Language }}">{{ $elem_val.Language.LanguageName }}</a>
+													{{ end }}
+											 {{ end}}
+										{{ end }}
+								 </div>
+							</nav>
+					 </div>
+				</div>
+		 </div>
+	</div>
+	<!-- End navigation -->
+</header>

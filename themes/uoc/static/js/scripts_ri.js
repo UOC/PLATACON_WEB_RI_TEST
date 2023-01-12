@@ -146,14 +146,14 @@ jQuery(document).ready(function ($) {
     $('.filters-main__box').on('click', '.tab', function() {
         var $this = $(this).closest('.filters-main__box');
         //console.log('this...',$(this)[0].getAttribute("href"));
-        if(!$this.hasClass('box-green-selected')) {
-            $this.addClass('box-green-selected');
-            $this.siblings().removeClass('box-green-selected');
+        if(!$this.hasClass('box-light-blue-selected')) {
+            $this.addClass('box-light-blue-selected');
+            $this.siblings().removeClass('box-light-blue-selected');
             $('.filters-main__content').removeClass('hidde-content');
             $($(this)[0].getAttribute("href")).show().siblings("div").hide();
         } else {
-            $this.removeClass('box-green-selected');
-            $this.siblings().removeClass('box-green-selected');
+            $this.removeClass('box-light-blue-selected');
+            $this.siblings().removeClass('box-light-blue-selected');
             $('.filters-main__content').addClass('hidde-content');
         }
         var ref = $(this)[0];
