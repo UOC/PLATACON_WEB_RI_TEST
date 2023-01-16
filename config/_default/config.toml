@@ -6,7 +6,7 @@ theme = "uoc"
 uglyurls = true
 
 DefaultContentLanguage = "ca"
-DefaultContentLanguageInSubdir = "true"
+DefaultContentLanguageInSubdir = "false"
 
 disableKinds = ["home","section","taxonomy", "taxonomyTerm", "RSS"]
 
