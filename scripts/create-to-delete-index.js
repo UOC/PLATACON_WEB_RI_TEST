@@ -28,7 +28,7 @@ if(previousIndexList && currentIndexList) {
     
     if(cloudSearchDeleteList.length) {
         var json = JSON.stringify(cloudSearchDeleteList);
-        fs.writeFileSync('./ca/index-to-delete.json', json, 'utf8');
+        fs.writeFileSync('./index-to-delete.json', json, 'utf8');
     }
     console.log('Finished!');
     
