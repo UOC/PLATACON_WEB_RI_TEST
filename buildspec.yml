@@ -28,7 +28,7 @@ phases:
             echo "index.json does not exist"
           else
             echo "index.json exists"
-            aws s3 cp s3://${BUCKET_S3}/${DEST_FOLDER}/index.json ./previous-index.json
+            aws s3 cp s3://${BUCKET_S3}/${DEST_FOLDER}/es/index.json ./previous-index.json
             node ../scripts/create-to-delete-index.js
           fi   
       - aws s3 cp index.html s3://${BUCKET_S3}/${DEST_FOLDER}/index.html

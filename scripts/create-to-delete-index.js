@@ -7,8 +7,8 @@
 var fs = require('fs');
 
 //Assumes from public folder
-var previousIndexList = JSON.parse(fs.readFileSync('./ca/previous-index.json', 'utf8')); //has been downloaded previously from S3 bucket
-var currentIndexList = JSON.parse(fs.readFileSync('./ca/index.json', 'utf8'));
+var previousIndexList = JSON.parse(fs.readFileSync('./previous-index.json', 'utf8')); //has been downloaded previously from S3 bucket
+var currentIndexList = JSON.parse(fs.readFileSync('./index.json', 'utf8'));
 
 
 if(previousIndexList && currentIndexList) {
