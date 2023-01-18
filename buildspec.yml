@@ -23,7 +23,7 @@ phases:
       - node ./scripts/update-netlify-config.js
       - cd public/ && loose-envify ./admin/main.js > updated-main.js && mv updated-main.js main.js
       - |
-          aws s3api head-object --bucket ${BUCKET_S3} --key ${DEST_FOLDER}/index.json || not_exist=true
+          aws s3api head-object --bucket ${BUCKET_S3} --key ${DEST_FOLDER}/es/index.json || not_exist=true
           if [ $not_exist ]; then
             echo "index.json does not exist"
           else
@@ -35,19 +35,19 @@ phases:
       - aws s3 cp 404.html s3://${BUCKET_S3}/${DEST_FOLDER}/404.html
       - aws s3 cp robots.txt s3://${BUCKET_S3}/${DEST_FOLDER}/robots.txt
       - aws s3 cp sitemap.xml s3://${BUCKET_S3}/${DEST_FOLDER}/sitemap.xml
-      - cd ./centres && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/centres 
-      - cd ./cercador && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/cercador 
-      - cd ./contacte && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/contacte
-      - cd ./difusions && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/difusions  
-      - cd ./esdeveniment && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/esdeveniment 
-      - cd ./mapa-ambits-recerca && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/mapa-ambits-recerca 
-      - cd ./noticia && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/noticia 
-      - cd ./patent && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/patent 
-      - cd ./sectors && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/sectors 
-      - cd ./servei && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/servei 
-      - cd ./solucio_tec && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/solucio_tec 
-      - cd ./spin_off && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/spin_off 
-      - cd ./admin && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/admin 
+      - cd ../centres && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/centres 
+      - cd ../cercador && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/cercador 
+      - cd ../contacte && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/contacte
+      - cd ../difusions && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/difusions  
+      - cd ../esdeveniment && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/esdeveniment 
+      - cd ../mapa-ambits-recerca && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/mapa-ambits-recerca 
+      - cd ../noticia && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/noticia 
+      - cd ../patent && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/patent 
+      - cd ../sectors && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/sectors 
+      - cd ../servei && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/servei 
+      - cd ../solucio_tec && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/solucio_tec 
+      - cd ../spin_off && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/spin_off 
+      - cd ../admin && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/admin 
       - cd ../ca && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/ca 
       - cd ../es && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/es 
       - cd ../en && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/en 
