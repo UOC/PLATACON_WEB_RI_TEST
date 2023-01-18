@@ -23,15 +23,30 @@ phases:
       - node ./scripts/update-netlify-config.js
       - cd public/ && loose-envify ./admin/main.js > updated-main.js && mv updated-main.js main.js
       - |
-          aws s3api head-object --bucket ${BUCKET_S3} --key ${DEST_FOLDER}/ca/index.json || not_exist=true
+          aws s3api head-object --bucket ${BUCKET_S3} --key ${DEST_FOLDER}/index.json || not_exist=true
           if [ $not_exist ]; then
             echo "index.json does not exist"
           else
             echo "index.json exists"
-            aws s3 cp s3://${BUCKET_S3}/${DEST_FOLDER}/ca/index.json ./ca/previous-index.json
+            aws s3 cp s3://${BUCKET_S3}/${DEST_FOLDER}/index.json ./previous-index.json
             node ../scripts/create-to-delete-index.js
           fi   
       - aws s3 cp index.html s3://${BUCKET_S3}/${DEST_FOLDER}/index.html
+      - aws s3 cp 404.html s3://${BUCKET_S3}/${DEST_FOLDER}/404.html
+      - aws s3 cp robots.txt s3://${BUCKET_S3}/${DEST_FOLDER}/robots.txt
+      - aws s3 cp sitemap.xml s3://${BUCKET_S3}/${DEST_FOLDER}/sitemap.xml
+      - cd ./centres && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/centres 
+      - cd ./cercador && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/cercador 
+      - cd ./contacte && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/contacte
+      - cd ./difusions && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/difusions  
+      - cd ./esdeveniment && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/esdeveniment 
+      - cd ./mapa-ambits-recerca && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/mapa-ambits-recerca 
+      - cd ./noticia && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/noticia 
+      - cd ./patent && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/patent 
+      - cd ./sectors && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/sectors 
+      - cd ./servei && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/servei 
+      - cd ./solucio_tec && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/solucio_tec 
+      - cd ./spin_off && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/spin_off 
       - cd ./admin && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/admin 
       - cd ../ca && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/ca 
       - cd ../es && aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}/es 
@@ -42,9 +57,9 @@ phases:
       - |
           if [ "${UPLOAD_TO_CLOUDSEARCH}" == "true" ]; then
             echo "Uploading data to cloudsearch"
-            cd .. && aws cloudsearchdomain --endpoint-url ${CLOUDSEARCH_URL} upload-documents --content-type application/json --documents ./ca/index.json
-            if test -f "./ca/index-to-delete.json"; then
-                aws cloudsearchdomain --endpoint-url ${CLOUDSEARCH_URL} upload-documents --content-type application/json --documents ./ca/index-to-delete.json
+            cd .. && aws cloudsearchdomain --endpoint-url ${CLOUDSEARCH_URL} upload-documents --content-type application/json --documents ./index.json
+            if test -f "./index-to-delete.json"; then
+                aws cloudsearchdomain --endpoint-url ${CLOUDSEARCH_URL} upload-documents --content-type application/json --documents ./index-to-delete.json
             fi
           fi
     finally:
