@@ -419,3 +419,6 @@ other = "Sign IN"
 
 [uoc_ri_difusions_link] 
 other = "External link"
+
+[404_not_found]
+other = "Page not found. Click <a href='{{ .home_link }}' style='text-decoration: underline;'>here</a> to return to the main page"

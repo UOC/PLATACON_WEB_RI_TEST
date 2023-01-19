@@ -419,3 +419,6 @@ other = "Inscripción"
 
 [uoc_ri_difusions_link] 
 other = "Enlace externo"
+
+[404_not_found]
+other = "Página no encontrada. Haz clic <a href='{{ .home_link }}' style='text-decoration: underline;'>aquí</a> para volver a la página principal"

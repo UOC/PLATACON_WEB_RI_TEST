@@ -31,7 +31,9 @@
     {{ partial "google_code_body.html" . }}
 	{{ partial "header.html" . }}
 	<div id="main-content" class="site-wrapper">
-        <h1 id="title"><a href="{{ "/index.html" | relLangURL }}">Page not found - Go Home</a></h1>
+            {{ $home_link := "index.html" | relLangURL }}
+            {{ $links := dict "home_link" $home_link}}
+        <h1 id="title">{{ T "404_not_found" $links | safeHTML}}</h1>
         {{ partial "footer.html" . }}
     </div>    
 </body>
