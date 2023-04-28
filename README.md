@@ -2,7 +2,7 @@
 
 ## Start hugo server
 ````
-node ./bin/rename-languages.js
+node ./scripts/rename-languages.js
 hugo server
 ````
 The script rename-languages.js updates the suffix of files in content, e.g., cercador-ca.md becomes cercador.ca.md
