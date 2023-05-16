@@ -5037,7 +5037,7 @@ unesco:
     display_name: Doctrinas filosóficas
   - value: "7299"
     display_name: Otras especialidades filosóficas (especificar)
-title: R&I en la UOC
+title: R&I en la UOC [es]
 language: es
 ambits_especialitzacio:
   - display_name: Todos
@@ -5125,7 +5125,7 @@ centre:
   - display_name: Estudis
     value: Estudis
   - display_name: eHealth Center
-    value: eHealth Center   
+    value: eHealth Center
 infografia:
   - display_name: Grupos de investigación
     number: "51"
