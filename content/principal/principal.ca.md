@@ -5050,6 +5050,8 @@ ambits_especialitzacio:
     value: Salut digital
   - display_name: Altres
     value: Altres
+  - display_name: Nous
+    value: Nous
 ods:
   - display_name: Fi de la pobresa
     value: Fi de la pobresa
