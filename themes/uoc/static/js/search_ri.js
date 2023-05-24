@@ -484,6 +484,21 @@ function queryInnovaSolSearchEngine(searchParams){
 	});
 }
 
+/**
+* This method replaces the url domain with localhost domain
+* when we are in development mode (when localhost is the current location).
+* */
+function urlReplace(url) {
+	if (window.location.host.indexOf('localhost') !== -1) {
+		var urlNew = new URL(url);
+		urlNew.host = 'localhost';
+		urlNew.protocol = window.location.protocol;
+		return urlNew.toString();
+	}
+
+	return url;
+}
+
 function getResultMarkup(item, content_type, idx, listView){
     //console.log("Results as list? "+listView)
 	var markup='';
@@ -502,13 +517,13 @@ function getResultMarkup(item, content_type, idx, listView){
 			if(typeof item.fields.departament != 'undefined' && typeof item.fields.ambits != 'undefined'){ambit += ','}
 			if(typeof item.fields.departament === 'undefined'){dept=''}
 
-			markup+="<a href='"+item.fields.url+"'>"
+			markup+="<a href='"+urlReplace(item.fields.url)+"'>"
 			markup+='<div id="'+item.id+'" class="card card-people"><div class="card__contents img-wpr"><img style="width:100%;" src="'+item.fields.imatge_url+'" alt="" class="img-wpr__cover">';
 			markup+='<div class="img-wpr__contents"><span class="h5 bold">'+item.fields.nom_investigador+'</span></div>';
 			markup+='<div class="row" style="width:100%;"><div class="m-top-10y p-top-5y m-2x"><p class="float-right"><span class="bold">'+ ambit + '</span> '+ dept+'</p></div></div>';
 			markup+='</div></div></div></a>';
     } else if(content_type == "grup"){
-			markup+="<a href='"+item.fields.url+"'>"
+			markup+="<a href='"+urlReplace(item.fields.url)+"'>"
 			markup+='<div id="'+item.id+'" aria-label="region" class="card card-noimg"><div class="card__contents">';
 			markup+='<h4 class="title">'+item.fields.nom_grup+'</h4><p>'+item.fields.descripcio+'</p>';
             markup+='</div></div></a>';
@@ -517,7 +532,7 @@ function getResultMarkup(item, content_type, idx, listView){
 			var text_breu = item.fields.text_breu;
 			if(typeof item.fields.text_breu === 'undefined'){text_breu=""}
 
-			markup+="<a href='"+item.fields.url+"'>"
+			markup+="<a href='"+urlReplace(item.fields.url)+"'>"
 			markup+='<div id="'+item.id+'" aria-label="region" class="card card-noimg"><div class="card__contents">';
 			markup+='<h4 class="title">'+item.fields.name+'</h4><p>'+text_breu+'</p>';
 			markup+='</div></div></a>';
