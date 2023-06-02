@@ -15,3 +15,7 @@ the multi-language static files.
 node ./bin/rename-languages.js -
 ````
 WARNING: It's very important to run the previous script before committing any files to the repository.
+
+## Workarounds
+
+If you edit any CSS included at head.html, it's highly recommended to update the cssVersion parameter at config/_default/config.toml for properly spread CSS changes.
