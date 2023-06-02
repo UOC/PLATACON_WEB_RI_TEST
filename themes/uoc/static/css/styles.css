@@ -18130,3 +18130,40 @@ footer div#footer-4 ul li a img {
     width: 100%;
     height: 100%;
 }
+
+.col-custom-footer{
+  width: 100%;
+}
+
+.disclaimer-next-generation{
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.disclaimer-next-generation img{
+  float: left;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .col-custom-footer {
+    float: left;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 20%;
+  }
+  
+  .col-custom-footer:first-of-type{
+    padding-left: 0;
+  }
+
+  .col-custom-footer:last-of-type {
+    padding-right: 0;
+  }
+
+  .disclaimer-next-generation img {
+    max-width: 50%;
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+}
