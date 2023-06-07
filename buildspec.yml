@@ -41,5 +41,5 @@ phases:
             fi
           fi
     finally:
-      - aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --paths "/admin/*,/ca/*,/es/*,/en/*,/js/*,/css/*,/img/*,/api-ri/*"
+      - aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --paths "/index.html,/admin/*,/ca/*,/es/*,/en/*,/js/*,/css/*,/img/*,/api-ri/*"
       - echo "Script finished running"
