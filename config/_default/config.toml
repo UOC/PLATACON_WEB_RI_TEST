@@ -61,7 +61,6 @@ URL = "s3://uocwebrisupport?region=eu-west-1"
   authProviderBaseUrl = "https://transfer.research.uoc.edu"
   githubRepo = "albirasolutions/UOC_WebRI"
   talentUrl = "http://localhost:3333"
-  cssVersion = "v1.0"
   
 [security.funcs]
   getenv = ['^HUGO_', '^CI$', 'CB_URL_BADGE']
