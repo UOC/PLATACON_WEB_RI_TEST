@@ -37,14 +37,14 @@ function getCurrentLanguage(){
 /***********************************************************************
 							GENERATE PDF								
 ***********************************************************************/
-async function printPDF(title, description, content) {
+async function printPDF(title, description, content, stylesPath) {
 
 	var printContents = $(content).html();
 	var printWindow = window.open();
 	printWindow.document.write('<html><head>');
-	printWindow.document.write('<link rel="stylesheet" href="//cv.uoc.edu/UOC/GEFv2/gef/css/gef.min.css?v=2.2.1"></link>');
-	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/styles.css"></link>');
-	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/alternative.css"></link>');
+	printWindow.document.write('<link rel="stylesheet" href="//cv.uoc.edu/UOC/GEFv2/gef/css/gef.min.css?v=2.2.1" />');
+	printWindow.document.write('<link rel="stylesheet" type="text/css" href="'+stylesPath+'" />');
+	printWindow.document.write('<link rel="stylesheet" type="text/css" href="/css/alternative.css" />');
 	printWindow.document.write('<title>UOC R&I Print</title></head>');
 
 	printWindow.document.write('<body><div class="pdf-rule"><img src="/img/print-logo.png" alt="logo" style="width: 100%; max-height: none !important; height: auto !important;"><div class="center">');

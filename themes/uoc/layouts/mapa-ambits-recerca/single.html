@@ -1,3 +1,5 @@
+{{- $styles := resources.Get "css/styles.css" | resources.Minify | resources.Fingerprint }}
+
 <!DOCTYPE html>
 <html lang="{{.Site.Language.Lang}}">
 
@@ -73,7 +75,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<button class="btn btn--primary float-right m-top-2y" onclick='printPDF({{ T "uoc_ri_mapaambits_cercaper_especialitzacio_pdf_title" }}, {{ T "uoc_ri_mapaambits_cercaper_especialitzacio_pdf_description" }}, "#printFragmentSpecial");'>
+								<button class="btn btn--primary float-right m-top-2y" onclick='printPDF({{ T "uoc_ri_mapaambits_cercaper_especialitzacio_pdf_title" }}, {{ T "uoc_ri_mapaambits_cercaper_especialitzacio_pdf_description" }}, "#printFragmentSpecial", "{{ $styles.RelPermalink }}");'>
 									<span class="icon icon--pdf"></span>
 									<span class="h5">{{T "uoc_ri_mapaambits_pdf"}}</span>
 								</button>
@@ -121,7 +123,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<button class="btn btn--primary float-right m-top-2y" onclick='printPDF({{ T "uoc_ri_mapaambits_cercaper_general_pdf_title" }}, {{ T "uoc_ri_mapaambits_cercaper_general_pdf_description" }}, "#printFragmentGeneral");'>
+								<button class="btn btn--primary float-right m-top-2y" onclick='printPDF({{ T "uoc_ri_mapaambits_cercaper_general_pdf_title" }}, {{ T "uoc_ri_mapaambits_cercaper_general_pdf_description" }}, "#printFragmentGeneral", "{{ $styles.RelPermalink }}");'>
 									<span class="icon icon--pdf"></span>
 									<span class="h5">{{T "uoc_ri_mapaambits_pdf"}}</span>
 								</button>

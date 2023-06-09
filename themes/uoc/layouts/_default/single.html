@@ -10,7 +10,8 @@
 	<meta name="keywords" content='{{ T "uoc_meta_keywords"}}'>&#x9;
 	<meta name="description" content='{{ T "uoc_meta_description"}}'>
 	<link rel="stylesheet" href="http://cv.uoc.edu/UOC/GEFv2/gef/css/gef.min.css?v=2.2.1">
-	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	{{- $styles := resources.Get "css/styles.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous">
 </head>
 
 <body>
