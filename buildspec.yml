@@ -41,5 +41,5 @@ phases:
             fi
           fi
     finally:
-      - aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --invalidation-batch invalidation-batch.json
+      - aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --invalidation-batch file://invalidation-batch.json
       - echo "Script finished running"

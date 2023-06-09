@@ -28,5 +28,6 @@
       "/solucio_tec/*",  
       "/spin_off/*"
     ]
-  }
+  },
+  "CallerReference": "buildspec-test"
 }
