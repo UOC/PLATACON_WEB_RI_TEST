@@ -1,0 +1,32 @@
+{
+  "Paths": {
+    "Quantity": 25,
+    "Items": [
+      "/api-ri/*",
+      "/404.html",
+      "/admin/*",
+      "/ca/*",
+      "/centres/*",
+      "/cercador/*",
+      "/contacte/*",
+      "/css/*",
+      "/difusions/*",
+      "/en/*",
+      "/es/*", 
+      "/esdeveniment/*",
+      "/img/*",
+      "/index.html",
+      "/index.json",
+      "/js/*",  
+      "/mapa-ambits-recerca/*",  
+      "/noticia/*",  
+      "/patent/*",  
+      "/robots.txt",  
+      "/sectors/*",  
+      "/servei/*",  
+      "/sitemap.xml",  
+      "/solucio_tec/*",  
+      "/spin_off/*"
+    ]
+  }
+}
