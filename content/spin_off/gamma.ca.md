@@ -85,22 +85,22 @@ grups_recerca:
   - id: '6002'
     name: MeL
     description: Management & eLearning
-    url: 'https://transfer-research.am.pre.uoc.es/ca/mel.html'
+    url: 'https://transfer-research.pre.uoc.edu/ca/mel.html'
     url_img: >-
-      https://transfer-research.am.pre.uoc.es/img/api/grupsrecerca/60/image/1573920260582
+      https://transfer-research.pre.uoc.edu/img/api/grupsrecerca/60/image/1573920260582
 investigadors:
   - id: '19929902'
     name: 'Marco Simó, Josep Maria'
-    url: 'https://talent.am.pre.uoc.es/ca/josep-maria-marco-simo.html'
-    url_img: 'https://talent.am.pre.uoc.es/img/api/pdi/199299/image/1574954315497'
+    url: 'https://talent.pre.uoc.edu/ca/josep-maria-marco-simo.html'
+    url_img: 'https://talent.pre.uoc.edu/img/api/pdi/199299/image/1574954315497'
   - id: '19934002'
     name: 'Cobarsí Morales, Josep'
-    url: 'https://talent.am.pre.uoc.es/ca/josep-cobarsi-morales.html'
-    url_img: 'https://talent.am.pre.uoc.es/img/api/pdi/199340/image/1573925681278'
+    url: 'https://talent.pre.uoc.edu/ca/josep-cobarsi-morales.html'
+    url_img: 'https://talent.pre.uoc.edu/img/api/pdi/199340/image/1573925681278'
 contacte:
   - address: 'adreça '
     email: e@mail.com
-    image: 'https://talent.am.pre.uoc.es/img/api/pdi/665775/image/1573925440895'
+    image: 'https://talent.pre.uoc.edu/img/api/pdi/665775/image/1573925440895'
     telefon: '123456789'
     text: Pere
   - address: 'adreça '

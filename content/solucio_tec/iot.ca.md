@@ -23,13 +23,13 @@ grups_recerca:
   - id: '902'
     name: MEDIACCIONS
     description: Metacampus Real
-    url: 'https://transfer-research.am.pre.uoc.es/ca/mediaccions.html'
+    url: 'https://transfer-research.pre.uoc.edu/ca/mediaccions.html'
     url_img: >-
-      https://transfer-research.am.pre.uoc.es/img/api/grupsrecerca/9/image/1573919706793
+      https://transfer-research.pre.uoc.edu/img/api/grupsrecerca/9/image/1573919706793
 investigadors:
   - id: '66577502'
     name: 'Creus Quinteros, Amalia Susana'
-    url: 'https://talent.am.pre.uoc.es/ca/creus-quinteros-amalia-susana.html'
-    url_img: 'https://talent.am.pre.uoc.es/img/api/pdi/665775/image/1573925440895'
+    url: 'https://talent.pre.uoc.edu/ca/creus-quinteros-amalia-susana.html'
+    url_img: 'https://talent.pre.uoc.edu/img/api/pdi/665775/image/1573925440895'
 ---
 
