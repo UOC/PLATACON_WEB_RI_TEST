@@ -2,7 +2,7 @@ var grups = [];
 var grupsSelectOptions = [];
 var investigadors = [];
 var investigadorsSelectOptions = [];
-var plataconApiUrl = "https://transfer-research.pre.uoc.edu";
+var plataconApiUrl = "https://transfer-research.test.uoc.edu";
 
 // Get Grups from API
 fetch( plataconApiUrl + '/api/search?idioma=ca&tipus=grup',
