@@ -1,6 +1,6 @@
 ---
 title: epsilon
-language: ca
+language: en
 general:
   nom: Patent epsilon
   centre: Estudis
@@ -13,6 +13,6 @@ about:
   - titol: test
     descripcio: test
 grups_recerca:
-  - id: "2602"
-  - id: "6402"
+  - id: "2603"
+  - id: "6403"
 ---
