@@ -7,13 +7,14 @@
     "uoc_webri": "looper.js"
   },
   "scripts": {
-    "start": "node ./scripts/rename-languages.js && hugo --environment dev serve",    
+    "start": "node ./scripts/rename-languages.js && node ./scripts/get-data.js && hugo --environment dev serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "js-yaml": "^3.13.1",
-    "loose-envify": "^1.4.0"
+    "loose-envify": "^1.4.0",
+    "node-fetch": "^2.6.12"
   }
 }

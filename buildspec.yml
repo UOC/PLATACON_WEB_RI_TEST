@@ -15,8 +15,9 @@ phases:
     commands:
       - node ./scripts/replace-platacon-url.js
       - node ./scripts/rename-languages.js
+      - node ./scripts/get-data.js
     finally:
-      - echo "Finished renaming language files"
+      - echo "Finished executing pre-build scripts"
   build:
     commands:
       - hugo --environment ${ENV}

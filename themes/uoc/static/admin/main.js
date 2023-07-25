@@ -22,10 +22,7 @@ fetch( plataconApiUrl + '/api/search?idioma=ca&tipus=grup',
       for (var i=0; i < grupsResponse.length; i++){
         grups.push({
           id: grupsResponse[i].id,
-          name: grupsResponse[i].fields.nom_grup,
-          description: grupsResponse[i].fields.descripcio,
-          url: grupsResponse[i].fields.url,
-          url_img: grupsResponse[i].fields.imatge_url
+          name: grupsResponse[i].fields.nom_grup
         })
         grupsSelectOptions.push({label: grupsResponse[i].fields.nom_grup, value: grupsResponse[i].id})
       }

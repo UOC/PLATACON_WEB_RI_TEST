@@ -120,7 +120,6 @@
                         {{else if eq $type "patent"}}{{ T "uoc_ri_about_pat" }}
                         {{else if eq $type "servei"}}{{ T "uoc_ri_about_serv" }}
                         {{else}}{{ T "uoc_ri_about_spin" }}{{end}}
-                        
                     </span></a>
                 </li>{{end}}
                 {{with .Params.aspectes_innovadors}}                   
@@ -153,7 +152,7 @@
                     aria-controls="tab-content-casos" aria-selected="false" data-tab-trigger=""
                     class="tab"><span>{{ T "uoc_ri_casos_exit" }}</span></a>
                 </li>{{end}}
-                {{with or .Params.grup_recerca .Params.investigadors}}          
+                {{with or .Params.grups_recerca .Params.investigadors}}          
                 <li role="presentation">
                     <a id="tab-grups" href="#tab-content-grups" role="tab"
                     aria-controls="tab-content-grups" aria-selected="false" data-tab-trigger=""
@@ -315,19 +314,14 @@
                     </div>
                     <div id="collapseResearch" class="contentCollapse show">
                         <div class="row">
-                            {{ range .}}
-                                <div class="col-md-4 col-xs-12">
-                                    <a href="{{.url}}">
-                                        <div class="card card-noimg" style="background-color: rgb(205, 245, 223);" role="region">
-                                            
-                                            <div class="card__contents">
-                                                <div class = "h4"><strong>{{ .name }}</strong></div>
-                                                <div>{{ .description }}</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            {{end}}
+                            {{ range $grup := . }}
+                                {{ with $grup_json := index site.Data (printf "grups_recerca.%s" $.Site.Language.Lang) }}
+                                    {{ with $group_data := where $grup_json.hits.hit "id" $grup.id }}
+                                        {{ $group_data := index $group_data 0 }}
+                                        {{ partial "card_grup.html" (dict "context" . "url" $group_data.fields.url "description" $group_data.fields.descripcio "name" $group_data.fields.nom_grup)}}
+                                    {{ end }}
+                                {{ end }}
+                            {{ end }}
                         </div>
                     </div>
                 </div>

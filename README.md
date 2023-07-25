@@ -3,9 +3,12 @@
 ## Start hugo server
 ````
 node ./scripts/rename-languages.js
+node ./scripts/get-data.js
 hugo server
 ````
 The script rename-languages.js updates the suffix of files in content, e.g., cercador-ca.md becomes cercador.ca.md
+
+The script get-data is going to download the required information for some templates.
 
 The reason why this is necessary is because NetlifyCMS is not able to save files with suffixes. However, hugo needs the language suffix to generate 
 the multi-language static files.
