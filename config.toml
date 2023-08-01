@@ -1,0 +1,42 @@
+baseURL = "http://localhost/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+ 
+theme = "uoc"
+uglyurls = true
+
+DefaultContentLanguage = "ca"
+DefaultContentLanguageInSubdir = "true"
+
+disableKinds = ["home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+
+ignoreFiles = [ "./data/README.md" ]
+
+[permalinks]
+  grup = "/:filename"
+  principal = "/index"
+
+[languages]
+  [languages.ca]
+    url = "/ca/"
+    languageName = "Català"
+
+  [languages.es]
+    url = "/es/"
+    languageName = "Castellano"
+
+  [languages.en]
+    url = "/en/"
+    languageName = "English"
+
+
+
+[outputs]
+  page = ["HTML"] 
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = [":git", "lastmod", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
+
