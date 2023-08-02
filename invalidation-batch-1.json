@@ -1,6 +1,6 @@
 {
   "Paths": {
-    "Quantity": 25,
+    "Quantity": 15,
     "Items": [
       "/api-ri/*",
       "/404.html",
@@ -16,17 +16,7 @@
       "/esdeveniment/*",
       "/img/*",
       "/index.html",
-      "/index.json",
-      "/js/*",  
-      "/mapa-ambits-recerca/*",  
-      "/noticia/*",  
-      "/patent/*",  
-      "/robots.txt",  
-      "/sectors/*",  
-      "/servei/*",  
-      "/sitemap.xml",  
-      "/solucio_tec/*",  
-      "/spin_off/*"
+      "/index.json"
     ]
   },
   "CallerReference": "buildspec-test"
