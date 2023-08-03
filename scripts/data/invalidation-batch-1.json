@@ -12,12 +12,12 @@
       "/css/*",
       "/difusions/*",
       "/en/*",
-      "/es/*", 
+      "/es/*",
       "/esdeveniment/*",
       "/img/*",
       "/index.html",
       "/index.json"
     ]
   },
-  "CallerReference": "buildspec-test"
+  "CallerReference": "invalidation-batch-1"
 }

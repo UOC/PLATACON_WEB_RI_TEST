@@ -42,19 +42,5 @@ phases:
             fi
           fi
     finally:
-      - invalidation_id=$(aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --invalidation-batch file://invalidation-batch-1.json)
-      - |
-        while true
-        do
-            invalidation_status=$(aws cloudfront get-invalidation --distribution-id ${DISTRIBUTION_ID} --id $invalidation_id --query 'Invalidation.Status' --output text)
-            if [ "$invalidation_status" == "Completed" ]
-            then
-                echo "Invalidation completed, starting next invalidation"
-                aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --invalidation-batch file://invalidation-batch-2.json
-                break
-            else
-                echo "Invalidation still in progress. Waiting..."
-                sleep 60
-            fi
-        done
+      - bash ./scripts/invalidations.sh
       - echo "Script finished running"
