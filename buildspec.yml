@@ -46,7 +46,7 @@ phases:
       - |
         while true
         do
-            invalidation_status=$(aws cloudfront get-invalidation --distribution-id <DistributionID> --id $invalidation_id --query 'Invalidation.Status' --output text)
+            invalidation_status=$(aws cloudfront get-invalidation --distribution-id ${DISTRIBUTION_ID} --id $invalidation_id --query 'Invalidation.Status' --output text)
             if [ "$invalidation_status" == "Completed" ]
             then
                 echo "Invalidation completed, starting next invalidation"
