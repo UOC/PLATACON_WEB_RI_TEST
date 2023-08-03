@@ -14,7 +14,7 @@ function check_invalidations_in_progress() {
 
 function create_invalidation() {
     local paths_file=$1
-    aws cloudfront create-invalidation --distribution-id "$DISTRIBUTION_ID" --invalidation-batch "file://data/$paths_file"
+    aws cloudfront create-invalidation --distribution-id "$DISTRIBUTION_ID" --invalidation-batch "file://scripts/data/$paths_file"
     echo "Se ha lanzado una nueva invalidación para el archivo: $paths_file."
 }
 
