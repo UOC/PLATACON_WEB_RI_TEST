@@ -13,6 +13,17 @@ if (!fs.existsSync(folderPath)) {
   fs.mkdirSync(folderPath);
 }
 
+function sortData(data) {
+  data.hits.hit = data.hits.hit.sort((a, b) => {
+    // Parseamos los id como números enteros antes de compararlos
+    const idA = parseInt(a.id);
+    const idB = parseInt(b.id);
+
+    return idA - idB;
+  });
+  return data
+}
+
 function getGrupsRecerca() {
   const apiSearchEndpoint = new URL(`${platacon_url}${endpointSearch}`);
   for (const lang of langs) {
@@ -29,8 +40,8 @@ function getGrupsRecerca() {
     .then(response => response.json())
     .then(data => {
       console.info(`Guardando los resultados del idioma ${lang}`);
-      const filename = `${folderPath}/${grups_recerca_filename}.${lang}.json`;
-      fs.writeFile(filename, JSON.stringify(data, null, 2), err => {
+      const filename = `${folderPath}/${grups_recerca_filename}.${lang}.json`;      
+      fs.writeFile(filename, JSON.stringify(sortData(data), null, 2), err => {
         if (err) {
           console.error('Error al guardar el archivo JSON:', err);
         } else {
