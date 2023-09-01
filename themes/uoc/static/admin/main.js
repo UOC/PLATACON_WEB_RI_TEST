@@ -76,11 +76,13 @@ var GrupsCustomList = createClass({
           if(grups.length){
             var grupObjects = grups.filter(obj => {return obj.id === grupId});
             var entriesArray = [];
-            entriesArray.push(["id", grupId]);
-            entriesArray.push(["name", grupObjects[0].name]);
-            entriesArray.push(["description", grupObjects[0].description]);
-            entriesArray.push(["url", grupObjects[0].url]);
-            entriesArray.push(["url_img", (grupObjects[0].url_img == null || grupObjects[0].url_img == undefined) ? '' : grupObjects[0].url_img ]);
+            if(grupObjects){
+              entriesArray.push(["id", grupId]);
+              entriesArray.push(["name", grupObjects[0].name]);
+              entriesArray.push(["description", grupObjects[0].description]);
+              entriesArray.push(["url", grupObjects[0].url]);
+              entriesArray.push(["url_img", (grupObjects[0].url_img == null || grupObjects[0].url_img == undefined) ? '' : grupObjects[0].url_img ]);
+            }
             if(entriesArray.length > 0) {
               this.props.value._tail.array[i]._root.entries = entriesArray;
             }
