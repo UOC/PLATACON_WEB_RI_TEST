@@ -14,3 +14,6 @@ jspm_packages
 images/.directory
 package-lock.json
 .hugo_build.lock
+
+# IDE files
+.idea

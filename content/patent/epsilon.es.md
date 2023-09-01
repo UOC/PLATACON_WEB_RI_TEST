@@ -14,5 +14,4 @@ about:
     descripcio: test
 grups_recerca:
   - id: "2601"
-  - id: "6401"
 ---
