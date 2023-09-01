@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "node ./scripts/rename-languages.js && node ./scripts/get-data.js && hugo --environment dev serve",
+    "update:grups_recerca": "node ./scripts/get-data",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
