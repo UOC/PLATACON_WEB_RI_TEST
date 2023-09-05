@@ -76,7 +76,7 @@ var GrupsCustomList = createClass({
           if(grups.length){
             var grupObjects = grups.filter(obj => {return obj.id === grupId});
             var entriesArray = [];
-            if(grupObjects){
+            if(grupObjects && grupObjects.length > 0){
               entriesArray.push(["id", grupId]);
               entriesArray.push(["name", grupObjects[0].name]);
               entriesArray.push(["description", grupObjects[0].description]);
