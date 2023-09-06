@@ -32,7 +32,7 @@ phases:
             aws s3 cp s3://${BUCKET_S3}/${DEST_FOLDER}/es/index.json ./previous-index.json
             node ../scripts/create-to-delete-index.js
           fi   
-      - aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER}
+      - aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER} --delete
       - |
           if [ "${UPLOAD_TO_CLOUDSEARCH}" == "true" ]; then
             echo "Uploading data to cloudsearch"
