@@ -26,7 +26,7 @@ about:
       consultoria.
 
 
-      #### Els trets diferenciadors de la seva activitat són:
+      #### Els trets diferenciadors de la seva activitat són aquests:
 
 
       * Metodologies i dissenys presentats i compartits en obert: el disseny de
