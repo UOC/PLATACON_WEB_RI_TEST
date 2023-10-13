@@ -1540,7 +1540,7 @@ header:not(.header-services) .smaller .nav-dropdown.desktop-lang-dropdown {
 .header-with-logo {
   display: inline-block;
   vertical-align: top;
-  width: calc(95% - 65px);
+  width: calc(100% - 67px);
 }
 .brand-header .mobile-menu .mobile-button .icon {
   bottom: -4px;
@@ -18166,4 +18166,8 @@ footer div#footer-4 ul li a img {
     margin-right: 2rem;
     margin-bottom: 0;
   }
+}
+
+.disclaimer-fecyt > p {
+  margin: 12px 0 -4px 14px;
 }

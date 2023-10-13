@@ -198,6 +198,9 @@ other = "Xarxa Vives d'Universitats"
 [uoc_grup_footer_links_eua] 
 other = "European Universities Association (EUA)"
 
+[uoc_ri_disclaimer_label]
+other = "Con la colaboración de:"
+
 [uoc_ri_ri_UOC] 
 other = "R&I en la UOC"
 [uoc_ri_menuitem_explore] 
