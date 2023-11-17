@@ -7,8 +7,8 @@
 		{"display_name" : "Other", "value" : "Other"}
 	], 
 	"ambit" : [
-		{"display_name" : "Social studies", "value" : "Social studies"},
-		{"display_name" : "Health studies", "value" : "Health studies"},
+		{"display_name" : "Social Sciences", "value" : "Social Sciences"},
+		{"display_name" : "Health Sciences", "value" : "Health Sciences"},
 		{"display_name" : "Arts and Humanity", "value" : "Arts and Humanity"},
 		{"display_name" : "IT", "value" : "IT"}
 	]
