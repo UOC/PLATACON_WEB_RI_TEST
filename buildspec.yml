@@ -33,6 +33,11 @@ phases:
             node ../scripts/create-to-delete-index.js
           fi   
       - aws s3 sync . s3://${BUCKET_S3}/${DEST_FOLDER} --delete --exclude "ca/grups/*" --exclude "es/grups/*" --exclude "en/grups/*"  --exclude "css/*_gr.css"  --exclude "css/*_gr.js"
+      - echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=https://www.uoc.edu"></head><body></body></html>' > /tmp/redirection-default.html
+      - aws s3api put-object --bucket ${BUCKET_S3} --content-type text/html --key ${DEST_FOLDER}/ --body /tmp/redirection-default.html
+      - aws s3api put-object --bucket ${BUCKET_S3} --content-type text/html --key ${DEST_FOLDER}/ca/ --body /tmp/redirection-default.html
+      - aws s3api put-object --bucket ${BUCKET_S3} --content-type text/html --key ${DEST_FOLDER}/es/ --body /tmp/redirection-default.html
+      - aws s3api put-object --bucket ${BUCKET_S3} --content-type text/html --key ${DEST_FOLDER}/en/ --body /tmp/redirection-default.html
       - |
           if [ "${UPLOAD_TO_CLOUDSEARCH}" == "true" ]; then
             echo "Uploading data to cloudsearch"
